@@ -1,0 +1,78 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>player.CreateNextBot( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=player.CreateNextBot">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/player/CreateNextBot" title="Special:WhatLinksHere/player/CreateNextBot">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">3</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Similar to the serverside command "bot", this function creates a new Player bot with the given name. This bot will not obey to the usual "bot_*" commands, and it's the same bot base used in TF2 and CS:S.
+</p><p>The best way to control the behaviour of a Player bot right now is to use the <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/StartCommand" title="GM/StartCommand">StartCommand</a> hook and modify its input serverside.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Despite this Player being fake, it has to be removed from the server by using <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/Kick" title="Player/Kick">Kick</a> and <b>NOT</b> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/Remove" title="Entity/Remove">Remove</a>.
+Also keep in mind that these bots still use player slots, so you won't be able to spawn them in singleplayer!
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Any Bot created using this method will be considered UnAuthed by Garry's Mod
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> botName</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The name of the bot, using an already existing name will append brackets at the end of it with a number pertaining it.
+</p>
+Example: "Bot name test", "Bot name test(1)".</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a></span>
+</p>
+<div style="margin-left: 32px;">
+The newly created Player bot. Returns NULL if there's no Player slots available to host it.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Create a bot if that is possible.
+</p>
+<pre><code data-language="lua">local listBots = {}
+
+function CreateBot()
+
+    if (&#160;!game.SinglePlayer() &amp;&amp; player.GetCount() &lt; game.MaxPlayers() ) then 
+
+        local num = #listBots
+
+        listBots[ num ] = player.CreateNextBot(&quot;Bot_&quot; .. ( num + 1 ) )
+
+	    return listBots[ num ]
+
+    else
+
+	    print( &quot;Can't create bot!&quot; )
+
+    end
+
+end</code></pre>
+<p><br />
+</p>
+
+

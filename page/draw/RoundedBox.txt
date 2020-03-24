@@ -1,0 +1,76 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>draw.RoundedBox( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=draw.RoundedBox">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/modules/draw.lua#L164-L173">View Source</a> - <a href="/page/Special:WhatLinksHere/draw/RoundedBox" title="Special:WhatLinksHere/draw/RoundedBox">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_6"><span class="tocnumber">7</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Draws a rounded rectangle.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>If you intend to draw a non-rounded rectangle, then it's more efficient to use <a href="/page/Category_colon_surface" title="Category:surface">surface</a>.<a href="/page/surface/DrawRect" title="surface/DrawRect">DrawRect</a>.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is a rendering function that requires a 2D rendering context.<br />This means that it will only work in <a href="/page/Category_colon_2D_Rendering_Hooks" title="Category:2D Rendering Hooks">hooks with a 2D rendering context</a>.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> cornerRadius</span>
+</p>
+<div style="margin-left: 32px;">
+Radius of the rounded corners, works best with a multiple of 2.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> x</span>
+</p>
+<div style="margin-left: 32px;">
+The x coordinate of the top left of the rectangle.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> y</span>
+</p>
+<div style="margin-left: 32px;">
+The y coordinate of the top left of the rectangle.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> width</span>
+</p>
+<div style="margin-left: 32px;">
+The width of the rectangle.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> height</span>
+</p>
+<div style="margin-left: 32px;">
+The height of the rectangle.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_6">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> color</span>
+</p>
+<div style="margin-left: 32px;">
+The color to fill the rectangle with. Uses the <a href="/page/Structures/Color" title="Structures/Color">Color structure</a>.</div>
+</div>
+
+

@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DIconBrowser&#58;OnChange( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DIconBrowser.OnChange">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DIconBrowser/OnChange" title="Special:WhatLinksHere/DIconBrowser/OnChange">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelHook">Description<span style="display: none;"><a href="/page/Form:PanelHook" title="Form:PanelHook">PanelHook</a></span></span></h1>
+<p>Called when the selected icon was changed. Use <a href="/page/Category_colon_DIconBrowser" title="Category:DIconBrowser">DIconBrowser</a>:<a href="/page/DIconBrowser/GetSelectedIcon" title="DIconBrowser/GetSelectedIcon">GetSelectedIcon</a> to get the selected icon's filepath.
+</p>
+
+

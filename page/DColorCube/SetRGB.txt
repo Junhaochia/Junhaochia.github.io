@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DColorCube&#58;SetRGB( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DColorCube.SetRGB">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DColorCube/SetRGB" title="Special:WhatLinksHere/DColorCube/SetRGB">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div>
+<p>Used internally to set the real "output" color of the panel.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> clr</span>
+</p>
+<div style="margin-left: 32px;">
+A <a href="/page/Structures/Color" title="Structures/Color">Color structure</a></div>
+</div>
+
+

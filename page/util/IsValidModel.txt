@@ -1,0 +1,40 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>util.IsValidModel( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=util.IsValidModel">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/util/IsValidModel" title="Special:WhatLinksHere/util/IsValidModel">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Checks if the specified model is valid.
+</p><p>A model is considered invalid in following cases:
+</p>
+<ul><li> Starts with a space or <b>maps</b>
+</li><li> Doesn't start with <b>models</b>
+</li><li> Contains any of the following:
+<ul><li> _gestures
+</li><li> _animations
+</li><li> _postures
+</li><li> _gst
+</li><li> _pst
+</li><li> _shd
+</li><li> _ss
+</li><li> _anm
+</li><li> .bsp
+</li><li> cs_fix
+</li></ul>
+</li><li> On server: If the model isn't precached, if the model file doesn't exist on the disk
+</li><li> If precache failed
+</li><li> Model is the error model
+</li></ul>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> modelName</span>
+</p>
+<div style="margin-left: 32px;">
+Name/Path of the model to check.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether the model is valid or not. Returns false clientside if the model is not precached by the server.</div>
+</div>
+
+

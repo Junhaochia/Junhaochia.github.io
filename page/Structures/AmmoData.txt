@@ -1,0 +1,152 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/AmmoData" title="Special:WhatLinksHere/Structures/AmmoData">What links here?</a></div>Table structure that describes a Source Engine ammo type.
+<p>See <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/AddAmmoType" title="game/AddAmmoType">AddAmmoType</a> and <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/GetAmmoData" title="game/GetAmmoData">GetAmmoData</a>.
+<br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> dmgtype
+</td>
+<td>
+<p>Damage type using <a href="/page/Enums/DMG" title="Enums/DMG">DMG_ Enums</a>.
+</p><p>Related function is <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/GetAmmoDamageType" title="game/GetAmmoDamageType">GetAmmoDamageType</a>.
+</p><p><b>Default:</b> DMG_BULLET
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> force
+</td>
+<td>
+<p>The force of the ammo.
+</p><p>Related function is <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/GetAmmoForce" title="game/GetAmmoForce">GetAmmoForce</a>.
+</p><p><b>Default:</b> 1000
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> maxsplash
+</td>
+<td>
+<p>The maximum water splash size.
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> minsplash
+</td>
+<td>
+<p>The minimum water splash size.
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> name
+</td>
+<td>
+<p>Name of the ammo.
+</p><p>Related functions are <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/GetAmmoName" title="game/GetAmmoName">GetAmmoName</a> and <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/GetAmmoID" title="game/GetAmmoID">GetAmmoID</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> npcdmg
+</td>
+<td>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Can also be a string pointing to a convar. The value will automatically update with the convar's.
+</p>
+</td></tr></table>
+<p>The damage dealt to NPCs.
+</p><p>Related function is <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/GetAmmoNPCDamage" title="game/GetAmmoNPCDamage">GetAmmoNPCDamage</a>.
+</p><p><b>Default:</b> 10
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> plydmg
+</td>
+<td>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Can also be a string pointing to a convar. The value will automatically update with the convar's.
+</p>
+</td></tr></table>
+<p>The damage dealt to players.
+</p><p>Related function is <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/GetAmmoPlayerDamage" title="game/GetAmmoPlayerDamage">GetAmmoPlayerDamage</a>.
+</p><p><b>Default:</b> 10
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> tracer
+</td>
+<td>
+<p>Tracer type using <a href="/page/Enums/TRACER" title="Enums/TRACER">TRACER_ Enums</a>.
+</p><p><b>Default:</b> TRACER_NONE
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> maxcarry
+</td>
+<td>
+<p>Maximum amount of ammo of this type the player should be able to carry in reserve.
+</p><p>Related function is <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/GetAmmoMax" title="game/GetAmmoMax">GetAmmoMax</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Can also be a string pointing to a convar. The value will automatically update with the convar's.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>gmod_maxammo will override this value if set to above 0.
+</p>
+</td></tr></table>
+<p><b>Default:</b> 9999
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> flags
+</td>
+<td>
+<p>Flags for the ammo type using <a href="/page/Enums/AMMO" title="Enums/AMMO">AMMO_ Enums</a>.
+</p><p><b>Default:</b> 0
+</p>
+</td></tr></table>
+
+

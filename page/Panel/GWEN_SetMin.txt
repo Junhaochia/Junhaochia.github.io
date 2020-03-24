@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;GWEN_SetMin( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.GWEN_SetMin">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/GWEN_SetMin" title="Special:WhatLinksHere/Panel/GWEN SetMin">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div> Used by <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/ApplyGWEN" title="Panel/ApplyGWEN">ApplyGWEN</a> to apply the <i>Min</i> property to a <a href="/page/Category_colon_DNumberWang" title="Category:DNumberWang">DNumberWang</a>, <a href="/page/Category_colon_Slider" title="Category:Slider">Slider</a>, <a href="/page/Category_colon_DNumSlider" title="Category:DNumSlider">DNumSlider</a> or <a href="/page/Category_colon_DNumberScratch" title="Category:DNumberScratch">DNumberScratch</a>. This calls <i>SetMin</i> on one of the previously listed methods.
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> minValue</span>
+</p>
+<div style="margin-left: 32px;">
+The minimum value the element is to permit.</div>
+</div>
+
+

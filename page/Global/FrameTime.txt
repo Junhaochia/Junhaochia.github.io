@@ -1,0 +1,48 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>FrameTime( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=FrameTime">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/FrameTime" title="Special:WhatLinksHere/Global/FrameTime">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">2</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the <a href="/page/Global/CurTime" title="Global/CurTime">CurTime</a>-based time in seconds it took to render the last frame.
+</p><p>This should be used for frame/tick based timing, such as movement prediction or animations.
+</p><p>For real-time-based frame time that isn't affected by host_timescale, use <a href="/page/Global/RealFrameTime" title="Global/RealFrameTime">RealFrameTime</a>. RealFrameTime is more suited for things like GUIs or HUDs.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+time (in seconds)</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Print the frame time
+</p>
+<pre><code data-language="lua">print(FrameTime())</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">0.014999999664724</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Get the servers/clients tickrate/fps
+</p>
+<pre><code data-language="lua">print(&quot;Tick: &quot;..(1/FrameTime()))</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">Tick: 66.666668156783</div>
+
+

@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>CNavArea&#58;GetAdjacentAreas( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CNavArea.GetAdjacentAreas">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CNavArea/GetAdjacentAreas" title="Special:WhatLinksHere/CNavArea/GetAdjacentAreas">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns a table of all the <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavAreas</a> that have a ( one and two way ) connection <b>from</b> this <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>.
+</p><p>If an area has a one-way incoming connection to this <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>, then it will <b>not</b> be returned from this function, use <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/GetIncomingConnections" title="CNavArea/GetIncomingConnections">GetIncomingConnections</a> to get all one-way incoming connections.
+</p><p>See <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/GetAdjacentAreasAtSide" title="CNavArea/GetAdjacentAreasAtSide">GetAdjacentAreasAtSide</a> for a function that only returns areas from one side/direction.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+A table of all <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> that have a ( one and two way ) connection <b>from</b> this <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>. <br />Returns an empty table if this area has no outgoing connections to any other areas.</div>
+</div>
+
+

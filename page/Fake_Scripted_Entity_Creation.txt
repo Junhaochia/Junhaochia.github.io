@@ -1,0 +1,243 @@
+<p>Sometimes you may need to create a new entity based on an engine entity (this means that it is not scripted). You may want to do this if you want to keep interesting properties of an engine entity but you want to modify it by adding or modifying methods.
+</p><p>In my example, you will not be able to use ENTITY hooks. Any hook has to be hard-coded in the footer of the code so it is triggered, like for any other engine entity. For example, you will be unable to simply add an <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Use" title="ENTITY/Use">Use</a> or an <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Think" title="ENTITY/Think">Think</a> method for them to work: you have to make the code that will trigger them. (I may add some examples in the future.)
+</p><p>In this example I create a new class <i>prop_vehicle_mr</i> based on a <i>prop_dynamic</i>. I could not create a real scripted entity because if I do so and I parent it to another entity (to a <i>prop_vehicle_jeep</i> for example), the physics object does not move with it! So I needed to use a new class derivated from <i>prop_dynamic</i>, because the physics object will by glued the entity itself.
+</p><p>In addition, this fake SENT footer is written in a way that can replace any method included in the metatable and that cannot be replaced in a standard SENT. In this example I replace the <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetMaterial" title="Entity/SetMaterial">SetMaterial</a> method in order to change the default material when resetting it.
+</p><p>Please note: the method and properties are only available <b>serverside</b>! This means that it will be seen <b>clientside</b> simply as an entity of its base class, except the classname: the methods and the properties will be that of the base class. (I may modify this in the future through a hook.)
+</p><p>Here I show you step by step how to write a fake scripted entity. This may to be done in a scripted entity file but it is supposed to work in any other place. The file of this example is: <i>lua/entities/prop_vehicle_mr.lua</i>
+</p>
+<hr />
+<p><b>First step: the header</b>
+</p><p>The headers prepares the structure of the fake scripted entity.
+</p>
+<pre><code data-language="lua">ENT.Type = &quot;anim&quot;
+local ENT = {}
+local BaseClass = FindMetaTable(&quot;Entity&quot;)
+local BaseClassName = &quot;prop_dynamic&quot;
+local ClassName = &quot;prop_vehicle_mr&quot;</code></pre>
+<p>First we define the Type of the fake SENT. It is certainly useless.
+</p><p>Then we create a clean ENT table, so nothing will be inherited from the SENT system.
+</p><p>We load the BaseClass which contains all default methods and all default properties for entities. It will be modified in the footer.
+</p><p>We specify the BaseClassName and the ClassName so the script knows what it has to deal with.
+</p>
+<hr />
+<p><b>Second step: the classic <a href="/page/Global/AddCSLuaFile" title="Global/AddCSLuaFile">AddCSLuaFile</a></b>
+</p>
+<pre><code data-language="lua">AddCSLuaFile()</code></pre>
+<hr />
+<p><b>Third step: the content</b>
+</p><p>Here is where you will put default properties, methods and hooks for your fake SENT.
+</p><p>Stay aware of what you are doing while replacing methods from the metatable (BaseClass): it is dangerous and it might conflict with something else.
+</p>
+<pre><code data-language="lua">local old_SetMaterial = BaseClass.SetMaterial
+function ENT:SetMaterial (materialName)
+	if materialName&#160;!= nil and materialName&#160;!= &quot;&quot; then
+		return old_SetMaterial(self, materialName)
+	else
+		if self.DefaultMaterial&#160;!= nil then
+			return old_SetMaterial(self, self.DefaultMaterial)
+		else
+			return old_SetMaterial(self, &quot;&quot;)
+		end
+	end
+end</code></pre>
+<p>Somewhere else, after creating an entity of this class, I may change the default material for this entity:
+</p>
+<pre><code data-language="lua">MyEntity.DefaultMaterial = &quot;materialname&quot;</code></pre>
+<p>Here are some examples of hooks that you may use. Remember: hooks that are not in this example are not implemented, it is your job.
+</p>
+<pre><code data-language="lua">function ENT:Initialize ()
+end</code></pre>
+<p>In this example the implementation of the hook <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Initialize" title="ENTITY/Initialize">Initialize</a> in the footer makes that it is <b>not</b> called when you use <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/Spawn" title="Entity/Spawn">Spawn</a>. Instead it is called immediatly when using <a href="/page/Category_colon_ents" title="Category:ents">ents</a>.<a href="/page/ents/Create" title="ents/Create">Create</a>.
+</p><p>Avoid using <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/Spawn" title="Entity/Spawn">Spawn</a> on the fake SENT itself in this hook as this should be done by the script that created the entity. The risk is that <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/Spawn" title="Entity/Spawn">Spawn</a> may be called twice.
+</p>
+<hr />
+<p><b>Fourth step: the footer</b>
+</p><p>The footer is the most important part of the fake SENT: it modifies the Lua functions to create the expected entity.
+</p>
+<pre><code data-language="lua">local old_FindByClass = ents.FindByClass
+function ents.FindByClass (class, ...)
+	if class == ClassName then  -- Look for ClassName excluding anything else.
+		local entities = {}
+		for _, ent in pairs(old_FindByClass(BaseClassName)) do
+			if ent:GetClass() == ClassName then
+				entities[#entities+1] = ent
+			end
+		end
+		return entities
+	elseif class == BaseClassName then -- Look for BaseClassName excluding ClassName.
+		local entities = {}
+		for _, ent in pairs(old_FindByClass(BaseClassName)) do
+			if ent:GetClass()&#160;!= ClassName then
+				entities[#entities+1] = ent
+			end
+		end
+		return entities
+	else
+		return old_FindByClass(class, ...)
+	end
+end</code></pre>
+<p>When calling <a href="/page/Category_colon_ents" title="Category:ents">ents</a>.<a href="/page/ents/FindByClass" title="ents/FindByClass">FindByClass</a>("prop_vehicle_mr") we want to get a table containing all entities of the class <i>prop_vehicle_mr</i>. Without the code, the table would be always empty.
+</p><p>When calling <a href="/page/Category_colon_ents" title="Category:ents">ents</a>.<a href="/page/ents/FindByClass" title="ents/FindByClass">FindByClass</a>("prop_dynamic") we want to get a table containing all entities of the class <i>prop_dynamic</i>, except that of the class <i>prop_vehicle_mr</i>. Without the code, the table would also contain entities of the class <i>prop_vehicle_mr</i>.
+</p><p>In other cases, <a href="/page/Category_colon_ents" title="Category:ents">ents</a>.<a href="/page/ents/FindByClass" title="ents/FindByClass">FindByClass</a> will work like before.
+</p>
+<pre><code data-language="lua">local old_GetClass = BaseClass.GetClass
+function BaseClass:GetClass (...)
+	-- if self[ClassName] then -- Non-networked classname
+	if self:GetNWBool(ClassName, false) then -- Networked classname
+		return ClassName
+	else
+		return old_GetClass(self, ...)
+	end
+end</code></pre>
+<p>We change the <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetClass" title="Entity/GetClass">GetClass</a> method in the Entity datatable so the proper value is returned for fake SENTs.
+</p><p>For some reason, the fake SENT class may need not to be shared with the client. In this case, use comment and uncomment the proper lines here and in the <i>ents.Create</i> block below.
+</p>
+<pre><code data-language="lua">local SENT_values = {}
+for FuncName, Func in pairs(ENT) do
+	if isfunction(Func) then -- This is a function value.
+		local old_Func = BaseClass[FuncName]
+		if isfunction(old_Func) then -- The method is re-defined in the base class.
+			BaseClass[FuncName] = function (self, ...)
+				if self:GetClass() == ClassName then
+					return Func(self, ...)
+				else
+					return old_Func(self, ...)
+				end
+			end
+		else -- The method is not defined in the base class.
+			SENT_values[FuncName] = Func
+		end
+	else -- This is a value that is not a function.
+		SENT_values[FuncName] = Func
+	end
+end</code></pre>
+<p>We modify all methods that exist in the Entity datatable that are defined in the content.
+</p><p>We add all methods that do not exist in the Entity datatable in a table to be added by <a href="/page/Category_colon_ents" title="Category:ents">ents</a>.<a href="/page/ents/Create" title="ents/Create">Create</a>.
+</p><p>We add all properties in a table to be added by <a href="/page/Category_colon_ents" title="Category:ents">ents</a>.<a href="/page/ents/Create" title="ents/Create">Create</a>.
+</p>
+<pre><code data-language="lua">local old_Create = ents.Create
+function ents.Create (class, ...)
+	if class == ClassName then
+		local ent = old_Create(BaseClassName, ...)
+		if IsValid(ent) then
+			-- ent[ClassName] = true -- Non-networked classname
+			ent:SetNWBool(ClassName, true) -- Networked classname
+			for k, v in pairs(SENT_values) do
+				ent[k] = v
+			end
+			if isfunction(ent.Initialize) then
+				ent:Initialize()
+			end
+		end
+		return ent
+	else
+		return old_Create(class, ...)
+	end
+end</code></pre>
+<p>We modify the <a href="/page/Category_colon_ents" title="Category:ents">ents</a>.<a href="/page/ents/Create" title="ents/Create">Create</a> function. It adds a flag to mark the name of the fake SENT and it adds all properties and methods that are in the <i>SENT_values</i> table.
+</p>
+<hr />
+<p>Here is the complete example, free to use:
+</p>
+<pre><code data-language="lua">-- This is not a real scripted class. It is derivated from prop_dynamic and it will be recognized as this by the engine and by some Lua functions.
+-- The prop_dynamic class has a fixed physics that cannot move without the prop itself. This is what I need.
+
+
+--## Header data ##--
+ENT.Type = &quot;anim&quot;
+local ENT = {}
+local BaseClass = FindMetaTable(&quot;Entity&quot;)
+local BaseClassName = &quot;prop_dynamic&quot;
+local ClassName = &quot;prop_vehicle_mr&quot;
+
+
+--## Code that would be nearly written for a normal scripted entity ##--
+AddCSLuaFile()
+
+-- If the default material is not the model's one, then it should be set again when a Material tool tries to set the default material.
+local old_SetMaterial = BaseClass.SetMaterial
+function ENT:SetMaterial (materialName)
+	if materialName&#160;!= nil and materialName&#160;!= &quot;&quot; then
+		return old_SetMaterial(self, materialName)
+	else
+		if self.DefaultMaterial&#160;!= nil then
+			return old_SetMaterial(self, self.DefaultMaterial)
+		else
+			return old_SetMaterial(self, &quot;&quot;)
+		end
+	end
+end
+
+function ENT:Initialize ()
+end
+
+
+--## Footer treatment ##--
+local old_FindByClass = ents.FindByClass
+function ents.FindByClass (class, ...)
+	if class == ClassName then  -- Look for ClassName excluding anything else.
+		local entities = {}
+		for _, ent in pairs(old_FindByClass(BaseClassName)) do
+			if ent:GetClass() == ClassName then
+				entities[#entities+1] = ent
+			end
+		end
+		return entities
+	elseif class == BaseClassName then -- Look for BaseClassName excluding ClassName.
+		local entities = {}
+		for _, ent in pairs(old_FindByClass(BaseClassName)) do
+			if ent:GetClass()&#160;!= ClassName then
+				entities[#entities+1] = ent
+			end
+		end
+		return entities
+	else
+		return old_FindByClass(class, ...)
+	end
+end
+local old_GetClass = BaseClass.GetClass
+function BaseClass:GetClass (...)
+	-- if self[ClassName] then -- Non-networked classname
+	if self:GetNWBool(ClassName, false) then -- Networked classname
+		return ClassName
+	else
+		return old_GetClass(self, ...)
+	end
+end
+local SENT_values = {}
+for FuncName, Func in pairs(ENT) do
+	if isfunction(Func) then -- This is a function value.
+		local old_Func = BaseClass[FuncName]
+		if isfunction(old_Func) then -- The method is re-defined in the base class.
+			BaseClass[FuncName] = function (self, ...)
+				if self:GetClass() == ClassName then
+					return Func(self, ...)
+				else
+					return old_Func(self, ...)
+				end
+			end
+		else -- The method is not defined in the base class.
+			SENT_values[FuncName] = Func
+		end
+	else -- This is a value that is not a function.
+		SENT_values[FuncName] = Func
+	end
+end
+local old_Create = ents.Create
+function ents.Create (class, ...)
+	if class == ClassName then
+		local ent = old_Create(BaseClassName, ...)
+		if IsValid(ent) then
+			-- ent[ClassName] = true -- Non-networked classname
+			ent:SetNWBool(ClassName, true) -- Networked classname
+			for k, v in pairs(SENT_values) do
+				ent[k] = v
+			end
+		end
+		return ent
+	else
+		return old_Create(class, ...)
+	end
+end</code></pre>
+
+

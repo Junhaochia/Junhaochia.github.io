@@ -1,0 +1,63 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/OBS_MODE" title="Special:WhatLinksHere/Enums/OBS MODE">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/SetObserverMode" title="Player/SetObserverMode">SetObserverMode</a>, <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/GetObserverMode" title="Player/GetObserverMode">GetObserverMode</a> and <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/Spectate" title="Player/Spectate">Spectate</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> OBS_MODE_NONE
+</td>
+<td> 0
+</td>
+<td> Not spectating
+</td></tr>
+<tr>
+<td> OBS_MODE_DEATHCAM
+</td>
+<td> 1
+</td>
+<td>
+</td></tr>
+<tr>
+<td> OBS_MODE_FREEZECAM
+</td>
+<td> 2
+</td>
+<td> TF2-like freezecam
+</td></tr>
+<tr>
+<td> OBS_MODE_FIXED
+</td>
+<td> 3
+</td>
+<td> Same as OBS_MODE_CHASE, but you can't rotate the view
+</td></tr>
+<tr>
+<td> OBS_MODE_IN_EYE
+</td>
+<td> 4
+</td>
+<td> First person cam
+</td></tr>
+<tr>
+<td> OBS_MODE_CHASE
+</td>
+<td> 5
+</td>
+<td> Chase cam, 3rd person cam, free rotation around the spectated target
+</td></tr>
+<tr>
+<td> OBS_MODE_ROAMING
+</td>
+<td> 6
+</td>
+<td> Free roam/noclip-alike. Does not work from <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerDeath" title="GM/PlayerDeath">PlayerDeath</a>
+</td></tr></table>
+
+

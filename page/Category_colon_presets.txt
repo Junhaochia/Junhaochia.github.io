@@ -1,0 +1,19 @@
+<p>The presets library lets you add and modify the pre-set options for scripted tools (selected via the white bar at the top of each tools control panel).
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "presets"</h2>
+<p>The following 7 pages are in this category, out of 7 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>P</h3>
+<ul><li><a href="/page/presets/Add" title="presets/Add">presets/Add</a></li>
+<li><a href="/page/presets/BadNameAlert" title="presets/BadNameAlert">presets/BadNameAlert</a></li>
+<li><a href="/page/presets/Exists" title="presets/Exists">presets/Exists</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/presets/GetTable" title="presets/GetTable">presets/GetTable</a></li>
+<li><a href="/page/presets/OverwritePresetPrompt" title="presets/OverwritePresetPrompt">presets/OverwritePresetPrompt</a></li>
+<li><a href="/page/presets/Remove" title="presets/Remove">presets/Remove</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/presets/Rename" title="presets/Rename">presets/Rename</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

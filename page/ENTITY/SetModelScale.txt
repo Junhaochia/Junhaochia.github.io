@@ -1,0 +1,62 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetModelScale( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetModelScale">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetModelScale" title="Special:WhatLinksHere/Entity/SetModelScale">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Scales the model of the entity, if the entity is a <a href="/page/Category_colon_Player" title="Category:Player">Player</a> or an <a href="/page/Category_colon_NPC" title="Category:NPC">NPC</a> the hitboxes will be scaled as well.
+</p><p>For some entities, calling <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/Activate" title="Entity/Activate">Activate</a> after this will scale the collision bounds and <a href="/page/Category_colon_PhysObj" title="Category:PhysObj">PhysObj</a> as well; be wary as there's no optimization being done internally and highly complex collision models might crash the server.
+</p><p>This is the same system used in TF2 for the Mann Vs Machine robots.
+</p><p>To resize the entity along any axis, use <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/EnableMatrix" title="Entity/EnableMatrix">EnableMatrix</a> instead.
+</p><p>If your old scales are wrong due to a recent update, use <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetLegacyTransform" title="Entity/SetLegacyTransform">SetLegacyTransform</a> as a quick fix.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>The hull does not scale properly with this function.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/2193">#2193</a></b>
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This does not scale procedural bones and disables IK.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3502">#3502</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> scale</span>
+</p>
+<div style="margin-left: 32px;">
+A float to scale the model by. 0 will not draw anything. &lt; 0 will draw the model inverted.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> deltaTime=0</span>
+</p>
+<div style="margin-left: 32px;">
+Transition time of the scale change, set to 0 to modify the scale right away.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>From the "Biggify" option of right clicking an npc
+</p>
+<pre><code data-language="lua">ent:SetModelScale( ent:GetModelScale() * 1.25, 1 )</code></pre>
+<p><br />
+</p>
+
+

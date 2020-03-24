@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>ENTITY:OnRemove( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ENTITY.OnRemove">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ENTITY/OnRemove" title="Special:WhatLinksHere/ENTITY/OnRemove">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when the entity is about to be removed.
+</p><p>See also <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/CallOnRemove" title="Entity/CallOnRemove">CallOnRemove</a>, which can even be used on engine (non-Lua) entities.
+</p>
+<h2> <span class="mw-headline" id="Clientside_behaviour_remarks">Clientside behaviour remarks</span></h2>
+<div class="validatepage"><span>Validation required.</span><br />
+This page contains possibly incorrect or incomplete information. Further testing is required.</div>
+<p>This hook may be called at odd times (when entity has actually not yet been removed from the server). This happens during fullupdate with the <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Initialize" title="ENTITY/Initialize">Initialize</a> function not being called even when the entity reappears.
+You can debug this behaviour by enabling cheats and running <b>cl_fullupdate</b> on the client.
+</p><p><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/NotifyShouldTransmit" title="GM/NotifyShouldTransmit">NotifyShouldTransmit</a> can be used to circumvent this problem. <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Think" title="ENTITY/Think">Think</a> can also be used to detect that the entity has reappeared. You may reinitialize any necessary data in these hooks.
+</p>
+
+

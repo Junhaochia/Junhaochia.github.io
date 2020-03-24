@@ -1,0 +1,37 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;Activate( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.Activate">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/Activate" title="Special:WhatLinksHere/Entity/Activate">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Activates the entity. This needs to be used on some entities (like constraints) after being spawned.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>For some entity types when this function is used after <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetModelScale" title="Entity/SetModelScale">SetModelScale</a>, the physics object will be recreated with the new scale. <a rel="nofollow" class="external text" href="https://github.com/ValveSoftware/source-sdk-2013/blob/55ed12f8d1eb6887d348be03aee5573d44177ffb/mp/src/game/server/baseanimating.cpp#L321-L327">Source-sdk-2013</a>
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This crashes the game with scaled vehicles.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3372">#3372</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Spawns a 'sent_ball' on the player.
+</p>
+<pre><code data-language="lua">function ENT:SpawnMe(ply)
+	local SpawningPos = ply:GetPos()
+	local ent = ents.Create(&quot;sent_ball&quot;)
+	ent:SetPos( SpawningPos ) 
+	ent:Spawn()
+	ent:Activate()
+end</code></pre>
+<p><br />
+</p>
+
+

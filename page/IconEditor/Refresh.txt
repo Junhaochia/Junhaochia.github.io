@@ -1,0 +1,8 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>IconEditor&#58;Refresh( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IconEditor.Refresh">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IconEditor/Refresh" title="Special:WhatLinksHere/IconEditor/Refresh">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Updates the internal <a href="/page/Category_colon_DAdjustableModelPanel" title="Category:DAdjustableModelPanel">DAdjustableModelPanel</a> and <a href="/page/Category_colon_SpawnIcon" title="Category:SpawnIcon">SpawnIcon</a>.
+</p><p>This should be called immediately after setting the SpawnIcon with <a href="/page/Category_colon_IconEditor" title="Category:IconEditor">IconEditor</a>:<a href="/page/IconEditor/SetIcon" title="IconEditor/SetIcon">SetIcon</a>.
+</p>
+
+

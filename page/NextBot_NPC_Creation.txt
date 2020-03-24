@@ -1,0 +1,426 @@
+<p>Nextbot is what the AI in Team Fortress 2 and Left 4 Dead use.
+This tutorial will go over the steps for a simple AI that will search for enemies (you) and chase them until they die or are too far away. It will also do some random other stuff when there are not any enemies.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Lets_get_started"><span class="tocnumber">1</span> <span class="toctext">Lets get started</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#The_code"><span class="tocnumber">2</span> <span class="toctext">The code</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#The_basic_stuff_we_need_for_entities"><span class="tocnumber">2.1</span> <span class="toctext">The basic stuff we need for entities</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Enemy_related_stuff"><span class="tocnumber">2.2</span> <span class="toctext">Enemy related stuff</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Coroutines"><span class="tocnumber">2.3</span> <span class="toctext">Coroutines</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#The_.22brain.22_of_our_bot"><span class="tocnumber">2.4</span> <span class="toctext">The "brain" of our bot</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#What_is_the_ChaseEnemy.28.29_function.3F"><span class="tocnumber">2.5</span> <span class="toctext">What is the ChaseEnemy() function?</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Almost_done"><span class="tocnumber">2.6</span> <span class="toctext">Almost done</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Challenges"><span class="tocnumber">3</span> <span class="toctext">Challenges</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#The_full_code"><span class="tocnumber">4</span> <span class="toctext">The full code</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Useful_Console_Commands"><span class="tocnumber">5</span> <span class="toctext">Useful Console Commands</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Further_Examples"><span class="tocnumber">6</span> <span class="toctext">Further Examples</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lets_get_started"> Lets get started </span></h1>
+<p>First create the .lua file for your entity. The one I made for this tutorial is in "addons/Nextbot_tut/lua/entities" and is named "simple_nextbot.lua".
+Now open that file so you can start adding the code.
+</p>
+<h1> <span class="mw-headline" id="The_code"> The code </span></h1>
+<h2> <span class="mw-headline" id="The_basic_stuff_we_need_for_entities"> The basic stuff we need for entities </span></h2>
+<p>Start off with defining the base entity to use and making it spawnable.
+Pretty much the same as any other entity so far
+Here we set the model and define some variables we will use later.
+</p>
+<pre><code data-language="lua">AddCSLuaFile()
+
+ENT.Base 			= &quot;base_nextbot&quot;
+ENT.Spawnable		= true
+
+function ENT:Initialize()
+
+	self:SetModel( &quot;models/hunter.mdl&quot; )
+	
+	self.LoseTargetDist	= 2000	-- How far the enemy has to be before we lose them
+	self.SearchRadius 	= 1000	-- How far to search for enemies
+	
+end</code></pre>
+<h2> <span class="mw-headline" id="Enemy_related_stuff"> Enemy related stuff </span></h2>
+<p>This adds some useful functions for enemy related stuff. An NPC/bot isn't complete if it can't target stuff, right? These include a function to check if there is still an enemy or if it got away and a function to search for enemies.
+I've added all sorts of comments so you know exactly what they do.
+</p>
+<pre><code data-language="lua">----------------------------------------------------
+-- ENT:Get/SetEnemy()
+-- Simple functions used in keeping our enemy saved
+----------------------------------------------------
+function ENT:SetEnemy(ent)
+	self.Enemy = ent
+end
+function ENT:GetEnemy()
+	return self.Enemy
+end
+
+----------------------------------------------------
+-- ENT:HaveEnemy()
+-- Returns true if we have an enemy
+----------------------------------------------------
+function ENT:HaveEnemy()
+	-- If our current enemy is valid
+	if ( self:GetEnemy() and IsValid(self:GetEnemy()) ) then
+		-- If the enemy is too far
+		if ( self:GetRangeTo(self:GetEnemy():GetPos()) &gt; self.LoseTargetDist ) then
+			-- If the enemy is lost then call FindEnemy() to look for a new one
+			-- FindEnemy() will return true if an enemy is found, making this function return true
+			return self:FindEnemy()
+		-- If the enemy is dead( we have to check if its a player before we use Alive() )
+		elseif ( self:GetEnemy():IsPlayer() and&#160;!self:GetEnemy():Alive() ) then
+			return self:FindEnemy()		-- Return false if the search finds nothing
+		end	
+		-- The enemy is neither too far nor too dead so we can return true
+		return true
+	else
+		-- The enemy isn't valid so lets look for a new one
+		return self:FindEnemy()
+	end
+end
+
+----------------------------------------------------
+-- ENT:FindEnemy()
+-- Returns true and sets our enemy if we find one
+----------------------------------------------------
+function ENT:FindEnemy()
+	-- Search around us for entities
+	-- This can be done any way you want eg. ents.FindInCone() to replicate eyesight
+	local _ents = ents.FindInSphere( self:GetPos(), self.SearchRadius )
+	-- Here we loop through every entity the above search finds and see if it's the one we want
+	for k,v in ipairs( _ents ) do
+		if ( v:IsPlayer() ) then
+			-- We found one so lets set it as our enemy and return true
+			self:SetEnemy(v)
+			return true
+		end
+	end	
+	-- We found nothing so we will set our enemy as nil (nothing) and return false
+	self:SetEnemy(nil)
+	return false
+end</code></pre>
+<h2> <span class="mw-headline" id="Coroutines"> Coroutines </span></h2>
+<p>Now that the bot can find enemies we need to get it to actually do something other then just having an enemy.
+This next part is where most of our AI will be set up.
+The function is a coroutine, or pretty much a giant looping section of code, except you can pause it for a period of time using coroutine.wait( time ).
+Coroutines allow you to do things in a timed order, letting you pause the function so we can make the bot face the player or play an animation.
+And since its all inside a while true loop, it will run for as long as the bot exists. So after your ai has finished running everything it can do, it will go back and do it again.
+Here is an example of a very simple bot.
+</p>
+<pre><code data-language="lua">function ENT:RunBehaviour()
+
+	while ( true ) do							-- Here is the loop, it will run forever
+
+		self:StartActivity( ACT_WALK )			-- Walk animation
+		self.loco:SetDesiredSpeed( 200 )		-- Walk speed
+		self:MoveToPos( self:GetPos() + Vector( math.Rand( -1, 1 ), math.Rand( -1, 1 ), 0 ) * 400 ) -- Walk to a random place within about 400 units (yielding)
+		self:StartActivity( ACT_IDLE )			-- Idle animation
+		coroutine.wait(2)						-- Pause for 2 seconds
+
+		coroutine.yield()
+		-- The function is done here, but will start back at the top of the loop and make the bot walk somewhere else
+	end
+
+end</code></pre>
+<p>Pretty straight forward right? Walk to a random spot and sit idle for 2 seconds before walking to another random spot.
+As nice as this is its not what we want, up next is a much better AI.
+</p>
+<h2> <span class="mw-headline" id="The_.22brain.22_of_our_bot"> The "brain" of our bot </span></h2>
+<p>As scary as this code may look to some, it is actually pretty simple:
+</p>
+<ul><li> Check if we have an enemy, if not it will look for one using the above HaveEnemy() function.
+</li><li> If there is an enemy then play some animations and run at the player.
+</li><li> If there are not any enemies, then walk to a random spot.
+</li><li> Stand idle for 2 seconds.
+</li></ul>
+<p>Not that bad right? Have a look at the code, I've flooded it with comments so you should know what everything does
+</p>
+<pre><code data-language="lua">----------------------------------------------------
+-- ENT:RunBehaviour()
+-- This is where the meat of our AI is
+----------------------------------------------------
+function ENT:RunBehaviour()
+	-- This function is called when the entity is first spawned, it acts as a giant loop that will run as long as the NPC exists
+	while ( true ) do
+		-- Lets use the above mentioned functions to see if we have/can find a enemy
+		if ( self:HaveEnemy() ) then
+			-- Now that we have a enemy, the code in this block will run
+			self.loco:FaceTowards(self:GetEnemy():GetPos())	-- Face our enemy
+			self:PlaySequenceAndWait( &quot;plant&quot; )		-- Lets make a pose to show we found a enemy
+			self:PlaySequenceAndWait( &quot;hunter_angry&quot; )-- Play an animation to show the enemy we are angry
+			self:PlaySequenceAndWait( &quot;unplant&quot; )	-- Get out of the pose
+			self:StartActivity( ACT_RUN )			-- Set the animation
+			self.loco:SetDesiredSpeed( 450 )		-- Set the speed that we will be moving at. Don't worry, the animation will speed up/slow down to match
+			self.loco:SetAcceleration(900)			-- We are going to run at the enemy quickly, so we want to accelerate really fast
+			self:ChaseEnemy( ) 						-- The new function like MoveToPos that will be looked at soon.
+			self.loco:SetAcceleration(400)			-- Set this back to its default since we are done chasing the enemy
+			self:PlaySequenceAndWait( &quot;charge_miss_slide&quot; )	-- Lets play a fancy animation when we stop moving
+			self:StartActivity( ACT_IDLE )			--We are done so go back to idle
+			-- Now once the above function is finished doing what it needs to do, the code will loop back to the start
+			-- unless you put stuff after the if statement. Then that will be run before it loops
+		else
+			-- Since we can't find an enemy, lets wander
+			-- Its the same code used in Garry's test bot
+			self:StartActivity( ACT_WALK )			-- Walk anmimation
+			self.loco:SetDesiredSpeed( 200 )		-- Walk speed
+			self:MoveToPos( self:GetPos() + Vector( math.Rand( -1, 1 ), math.Rand( -1, 1 ), 0 ) * 400 ) -- Walk to a random place within about 400 units (yielding)
+			self:StartActivity( ACT_IDLE )
+		end
+		-- At this point in the code the bot has stopped chasing the player or finished walking to a random spot
+		-- Using this next function we are going to wait 2 seconds until we go ahead and repeat it 
+		coroutine.wait(2)
+		
+	end
+
+end	</code></pre>
+<h2> <span class="mw-headline" id="What_is_the_ChaseEnemy.28.29_function.3F"> What is the ChaseEnemy() function? </span></h2>
+<p>After looking through the code you probably noticed a function that isn't anywhere in the wiki and not yet posted in this tutorial.
+ChaseEnemy() is what we will be looking at now, its pretty much identical to the MoveToPos function Garry made in the Nextbot base except for some useful changes:
+</p>
+<ul><li> It builds a path to follow leading directly to the set enemy.
+</li><li> Keep updating the path as the enemy and the bot moves around.
+</li><li> Stop chasing the enemy if we don't have one any more. Using the HaveEnemy() function.
+</li></ul>
+<p>This is what it looks like:
+</p>
+<pre><code data-language="lua">----------------------------------------------------
+-- ENT:ChaseEnemy()
+-- Works similarly to Garry's MoveToPos function
+--  except it will constantly follow the
+--  position of the enemy until there no longer
+--  is an enemy.
+----------------------------------------------------
+function ENT:ChaseEnemy( options )
+
+	local options = options or {}
+	local path = Path( &quot;Follow&quot; )
+	path:SetMinLookAheadDistance( options.lookahead or 300 )
+	path:SetGoalTolerance( options.tolerance or 20 )
+	path:Compute( self, self:GetEnemy():GetPos() )		-- Compute the path towards the enemy's position
+
+	if (&#160;!path:IsValid() ) then return &quot;failed&quot; end
+
+	while ( path:IsValid() and self:HaveEnemy() ) do
+	
+		if ( path:GetAge() &gt; 0.1 ) then					-- Since we are following the player we have to constantly remake the path
+			path:Compute(self, self:GetEnemy():GetPos())-- Compute the path towards the enemy's position again
+		end
+		path:Update( self )								-- This function moves the bot along the path
+		
+		if ( options.draw ) then path:Draw() end
+		-- If we're stuck then call the HandleStuck function and abandon
+		if ( self.loco:IsStuck() ) then
+			self:HandleStuck()
+			return &quot;stuck&quot;
+		end
+
+		coroutine.yield()
+
+	end
+
+	return &quot;ok&quot;
+
+end</code></pre>
+<p>Have a look at Garry's function and then this one and see what was changed in more detail.
+</p>
+<h2> <span class="mw-headline" id="Almost_done"> Almost done </span></h2>
+<p>Now that the bot is complete you will want to add it to the NPC spawn tab. Pretty easy, but here is the code used for this tutorial anyways:
+</p>
+<pre><code data-language="lua">list.Set( &quot;NPC&quot;, &quot;simple_nextbot&quot;, {
+	Name = &quot;Simple bot&quot;,
+	Class = &quot;simple_nextbot&quot;,
+	Category = &quot;NextBot&quot;
+})</code></pre>
+<p>When you use this just replace both "simple_nextbot" with the file name of the bot and the rest is pretty easy to figure out yourself.
+</p>
+<h1> <span class="mw-headline" id="Challenges"> Challenges </span></h1>
+<p>You now have a basic bot running around the map and that's pretty much it. Here are some things you can try on your own to spice it up:
+</p>
+<ul><li> Search for more then just players
+</li><li> Play sounds when its wandering around.
+</li><li> Only search for enemies that are in front of it, not all around.
+</li><li> Make it hide if the enemy is holding a shotgun.
+</li><li> Stop chasing the enemy when it's really close and do a melee attack.
+</li></ul>
+<h1> <span class="mw-headline" id="The_full_code"> The full code </span></h1>
+<pre><code data-language="lua">AddCSLuaFile()
+
+ENT.Base 			= &quot;base_nextbot&quot;
+ENT.Spawnable		= true
+
+function ENT:Initialize()
+
+	self:SetModel( &quot;models/hunter.mdl&quot; )
+	
+	self.LoseTargetDist	= 2000	-- How far the enemy has to be before we lose them
+	self.SearchRadius 	= 1000	-- How far to search for enemies
+	
+end
+
+----------------------------------------------------
+-- ENT:Get/SetEnemy()
+-- Simple functions used in keeping our enemy saved
+----------------------------------------------------
+function ENT:SetEnemy(ent)
+	self.Enemy = ent
+end
+function ENT:GetEnemy()
+	return self.Enemy
+end
+
+----------------------------------------------------
+-- ENT:HaveEnemy()
+-- Returns true if we have a enemy
+----------------------------------------------------
+function ENT:HaveEnemy()
+	-- If our current enemy is valid
+	if ( self:GetEnemy() and IsValid(self:GetEnemy()) ) then
+		-- If the enemy is too far
+		if ( self:GetRangeTo(self:GetEnemy():GetPos()) &gt; self.LoseTargetDist ) then
+			-- If the enemy is lost then call FindEnemy() to look for a new one
+			-- FindEnemy() will return true if an enemy is found, making this function return true
+			return self:FindEnemy()
+		-- If the enemy is dead( we have to check if its a player before we use Alive() )
+		elseif ( self:GetEnemy():IsPlayer() and&#160;!self:GetEnemy():Alive() ) then
+			return self:FindEnemy()		-- Return false if the search finds nothing
+		end	
+		-- The enemy is neither too far nor too dead so we can return true
+		return true
+	else
+		-- The enemy isn't valid so lets look for a new one
+		return self:FindEnemy()
+	end
+end
+
+----------------------------------------------------
+-- ENT:FindEnemy()
+-- Returns true and sets our enemy if we find one
+----------------------------------------------------
+function ENT:FindEnemy()
+	-- Search around us for entities
+	-- This can be done any way you want eg. ents.FindInCone() to replicate eyesight
+	local _ents = ents.FindInSphere( self:GetPos(), self.SearchRadius )
+	-- Here we loop through every entity the above search finds and see if it's the one we want
+	for k,v in ipairs( _ents ) do
+		if ( v:IsPlayer() ) then
+			-- We found one so lets set it as our enemy and return true
+			self:SetEnemy(v)
+			return true
+		end
+	end	
+	-- We found nothing so we will set our enemy as nil (nothing) and return false
+	self:SetEnemy(nil)
+	return false
+end
+
+----------------------------------------------------
+-- ENT:RunBehaviour()
+-- This is where the meat of our AI is
+----------------------------------------------------
+function ENT:RunBehaviour()
+	-- This function is called when the entity is first spawned. It acts as a giant loop that will run as long as the NPC exists
+	while ( true ) do
+		-- Lets use the above mentioned functions to see if we have/can find a enemy
+		if ( self:HaveEnemy() ) then
+			-- Now that we have an enemy, the code in this block will run
+			self.loco:FaceTowards(self:GetEnemy():GetPos())	-- Face our enemy
+			self:PlaySequenceAndWait( &quot;plant&quot; )		-- Lets make a pose to show we found a enemy
+			self:PlaySequenceAndWait( &quot;hunter_angry&quot; )-- Play an animation to show the enemy we are angry
+			self:PlaySequenceAndWait( &quot;unplant&quot; )	-- Get out of the pose
+			self:StartActivity( ACT_RUN )			-- Set the animation
+			self.loco:SetDesiredSpeed( 450 )		-- Set the speed that we will be moving at. Don't worry, the animation will speed up/slow down to match
+			self.loco:SetAcceleration(900)			-- We are going to run at the enemy quickly, so we want to accelerate really fast
+			self:ChaseEnemy( ) 						-- The new function like MoveToPos.
+			self.loco:SetAcceleration(400)			-- Set this back to its default since we are done chasing the enemy
+			self:PlaySequenceAndWait( &quot;charge_miss_slide&quot; )	-- Lets play a fancy animation when we stop moving
+			self:StartActivity( ACT_IDLE )			--We are done so go back to idle
+			-- Now once the above function is finished doing what it needs to do, the code will loop back to the start
+			-- unless you put stuff after the if statement. Then that will be run before it loops
+		else
+			-- Since we can't find an enemy, lets wander
+			-- Its the same code used in Garry's test bot
+			self:StartActivity( ACT_WALK )			-- Walk anmimation
+			self.loco:SetDesiredSpeed( 200 )		-- Walk speed
+			self:MoveToPos( self:GetPos() + Vector( math.Rand( -1, 1 ), math.Rand( -1, 1 ), 0 ) * 400 ) -- Walk to a random place within about 400 units (yielding)
+			self:StartActivity( ACT_IDLE )
+		end
+		-- At this point in the code the bot has stopped chasing the player or finished walking to a random spot
+		-- Using this next function we are going to wait 2 seconds until we go ahead and repeat it 
+		coroutine.wait(2)
+		
+	end
+
+end	
+
+----------------------------------------------------
+-- ENT:ChaseEnemy()
+-- Works similarly to Garry's MoveToPos function
+--  except it will constantly follow the
+--  position of the enemy until there no longer
+--  is one.
+----------------------------------------------------
+function ENT:ChaseEnemy( options )
+
+	local options = options or {}
+	local path = Path( &quot;Follow&quot; )
+	path:SetMinLookAheadDistance( options.lookahead or 300 )
+	path:SetGoalTolerance( options.tolerance or 20 )
+	path:Compute( self, self:GetEnemy():GetPos() )		-- Compute the path towards the enemies position
+
+	if (&#160;!path:IsValid() ) then return &quot;failed&quot; end
+
+	while ( path:IsValid() and self:HaveEnemy() ) do
+	
+		if ( path:GetAge() &gt; 0.1 ) then					-- Since we are following the player we have to constantly remake the path
+			path:Compute(self, self:GetEnemy():GetPos())-- Compute the path towards the enemy's position again
+		end
+		path:Update( self )								-- This function moves the bot along the path
+		
+		if ( options.draw ) then path:Draw() end
+		-- If we're stuck, then call the HandleStuck function and abandon
+		if ( self.loco:IsStuck() ) then
+			self:HandleStuck()
+			return &quot;stuck&quot;
+		end
+
+		coroutine.yield()
+
+	end
+
+	return &quot;ok&quot;
+
+end
+
+list.Set( &quot;NPC&quot;, &quot;simple_nextbot&quot;, {
+	Name = &quot;Simple bot&quot;,
+	Class = &quot;simple_nextbot&quot;,
+	Category = &quot;NextBot&quot;
+})</code></pre>
+<h1> <span class="mw-headline" id="Useful_Console_Commands"> Useful Console Commands </span></h1>
+<p>Here are some useful console commands that can help you create and debug your <a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBots</a>.
+</p>
+<table class="wikitable">
+<tr>
+<th> Command
+</th>
+<th> Description
+</th></tr>
+<tr>
+<td> nav_edit 1
+</td>
+<td> Allows you to see and edit the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Navigation_Meshes">navigation meshes</a> that the NextBots use.
+</td></tr>
+<tr>
+<td> nb_debug &lt;values&gt;
+</td>
+<td> Allows you to debug various parts of nextbots. Values can be combined with a space.<br /><br />Possible values are:<br />BEHAVIOR, LOOK_AT, PATH, ANIMATION, LOCOMOTION, VISION, HEARING, EVENTS, ERRORS
+</td></tr></table>
+<h1> <span class="mw-headline" id="Further_Examples"> Further Examples </span></h1>
+<p>Here are some further examples to guide you.
+</p><p><a rel="nofollow" class="external text" href="https://github.com/raubana/garrysmod_nextbot_demos/tree/master/lua/entities">Useful NextBot examples by raubana</a>
+</p>
+
+

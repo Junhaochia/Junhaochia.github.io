@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>SANDBOX:PaintWorldTips( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=SANDBOX.PaintWorldTips">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/SANDBOX/PaintWorldTips" title="Special:WhatLinksHere/SANDBOX/PaintWorldTips">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called from <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDPaint" title="GM/HUDPaint">HUDPaint</a> to draw world tips. By default, enabling cl_drawworldtooltips will stop world tips from being drawn here.<br />
+See <a href="/page/Global/AddWorldTip" title="Global/AddWorldTip">AddWorldTip</a> for more information.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This cannot be used with <a href="/page/Category_colon_hook" title="Category:hook">hook</a>.<a href="/page/hook/Add" title="hook/Add">Add</a>
+</p>
+</td></tr></table>
+
+

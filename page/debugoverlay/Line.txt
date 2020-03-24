@@ -1,0 +1,60 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>debugoverlay.Line( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=debugoverlay.Line">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/debugoverlay/Line" title="Special:WhatLinksHere/debugoverlay/Line">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Displays a coloured line at the specified position.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This function will silently fail if the <b>developer</b> <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> is set to 0.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> pos1</span>
+</p>
+<div style="margin-left: 32px;">
+First position of the line</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> pos2</span>
+</p>
+<div style="margin-left: 32px;">
+Second position of the line</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> lifetime=1</span>
+</p>
+<div style="margin-left: 32px;">
+Number of seconds to appear</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> color=Color( 255, 255, 255 )</span>
+</p>
+<div style="margin-left: 32px;">
+The color of the line. Uses the <a href="/page/Structures/Color" title="Structures/Color">Color structure</a></div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> ignoreZ=false</span>
+</p>
+<div style="margin-left: 32px;">
+If true, will draw on top of everything; ignoring the Z buffer</div>
+</div>
+
+

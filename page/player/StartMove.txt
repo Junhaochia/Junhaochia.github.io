@@ -1,0 +1,48 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>PLAYER:StartMove( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PLAYER.StartMove">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/gamemodes/base/gamemode/shared.lua#L197">View Source</a> - <a href="/page/Special:WhatLinksHere/PLAYER/StartMove" title="Special:WhatLinksHere/PLAYER/StartMove">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">4</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called from <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/CreateMove" title="GM/CreateMove">CreateMove</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This hook will not work if the current gamemode overrides <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/SetupMove" title="GM/SetupMove">SetupMove</a> and does not call this hook.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This hook is run after the <a href="/page/Category_colon_drive" title="Category:drive">drive</a>.<a href="/page/drive/StartMove" title="drive/StartMove">StartMove</a> has been called.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a> mv</span>
+</p>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a> cmd</span>
+</p>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Return true to prevent default action</div>
+</div>
+
+

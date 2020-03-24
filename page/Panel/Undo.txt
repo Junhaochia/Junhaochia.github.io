@@ -1,0 +1,8 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;Undo( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.Undo">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/Undo" title="Special:WhatLinksHere/Panel/Undo">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Restores the last saved state (caret position and the text inside) of a <a href="/page/Category_colon_TextEntry" title="Category:TextEntry">TextEntry</a>. Should act identically to pressing CTRL+Z in a <a href="/page/Category_colon_TextEntry" title="Category:TextEntry">TextEntry</a>.
+</p><p>See also <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SaveUndoState" title="Panel/SaveUndoState">SaveUndoState</a>.
+</p>
+
+

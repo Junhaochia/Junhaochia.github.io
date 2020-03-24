@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>utf8.force( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=utf8.force">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/modules/utf8.lua#L298-L333">View Source</a> - <a href="/page/Special:WhatLinksHere/utf8/force" title="Special:WhatLinksHere/utf8/force">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Forces a string to contain only valid UTF-8 data. Invalid sequences are replaced with U+FFFD (the Unicode replacement character).
+</p><p>This is a lazy way for users to ensure a string contains only valid UTF-8 data.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> string</span>
+</p>
+<div style="margin-left: 32px;">
+The string that will become a valid UTF-8 string.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a></span>
+</p>
+<div style="margin-left: 32px;">
+The UTF-8 string.</div>
+</div>
+
+

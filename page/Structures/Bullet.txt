@@ -1,0 +1,159 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/Bullet" title="Special:WhatLinksHere/Structures/Bullet">What links here?</a></div>Tables used for bullets see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/FireBullets" title="Entity/FireBullets">FireBullets</a> and <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/EntityFireBullets" title="GM/EntityFireBullets">EntityFireBullets</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>
+</td>
+<td> Attacker
+</td>
+<td>
+<p>The entity that should be reported as attacker eg. a player
+</p><p>By default this would be set to the entity <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/FireBullets" title="Entity/FireBullets">FireBullets</a> is called on.
+</p><p><b>Default:</b> self
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_function" title="Category:function">function</a>
+</td>
+<td> Callback
+</td>
+<td>
+<p>Function to be called <b>after</b> the bullet was fired. The arguments are:
+</p>
+<ul><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> attacker
+</li><li> <a href="/page/Category_colon_table" title="Category:table">table</a> tr - See <a href="/page/Structures/TraceResult" title="Structures/TraceResult">TraceResult structure</a>
+</li><li> <a href="/page/Category_colon_CTakeDamageInfo" title="Category:CTakeDamageInfo">CTakeDamageInfo</a> dmgInfo
+</li></ul>
+<p><b>Default:</b> nil
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Damage
+</td>
+<td>
+<p>The damage dealt by the bullet
+</p><p><b>Default:</b> 1
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Force
+</td>
+<td>
+<p>The force of the bullets
+</p><p><b>Default:</b> 1
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Distance
+</td>
+<td>
+<p>Maximum distance the bullet can travel
+</p><p><b>Default:</b> 56756
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> HullSize
+</td>
+<td>
+<p>The hull size of the bullet
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Num
+</td>
+<td>
+<p>The amount of bullets to fire
+</p><p><b>Default:</b> 1
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Tracer
+</td>
+<td>
+<p>Show tracer for every x bullets
+</p><p><b>Default:</b> 1
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> AmmoType
+</td>
+<td>
+<p>The ammunition name
+</p><p><b>Default:</b> ""
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> TracerName
+</td>
+<td>
+<p>The tracer name. You can find a list of default effects <a href="/page/Effects" title="Effects">here</a>.
+</p><p><b>Default:</b> nil
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> Dir
+</td>
+<td>
+<p>The fire direction
+</p><p><b>Default:</b> Vector( 0, 0, 0 )
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> Spread
+</td>
+<td>
+<p>The spread, only x and y are needed
+</p><p><b>Default:</b> Vector( 0, 0, 0 )
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> Src
+</td>
+<td>
+<p>The position to fire the bullets from
+</p><p><b>Default:</b> Vector( 0, 0, 0 )
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>
+</td>
+<td> IgnoreEntity
+</td>
+<td>
+<p>The entity that the bullet will ignore when it will be shot.
+</p><p><b>Default:</b> NULL
+</p>
+</td></tr></table>
+
+

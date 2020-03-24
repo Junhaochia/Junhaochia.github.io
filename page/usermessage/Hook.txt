@@ -1,0 +1,51 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>usermessage.Hook( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=usermessage.Hook">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/usermessage/Hook" title="Special:WhatLinksHere/usermessage/Hook">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />You should be using <a href="/page/Category_colon_net" title="Category:net">net library</a> instead</div>
+<p>Sets a hook for the specified to be called when a usermessage with the specified name arrives.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>Usermessages have a limit of only 256 bytes!
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+The message name to hook to.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> callback</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The function to be called if the specified message was received.
+Parameters (Optional):
+</p>
+<ul><li> <a href="/page/Category_colon_bf_read" title="Category:bf read">bf_read</a> msg
+</li><li> <a href="/page/Category_colon_vararg" title="Category:vararg">vararg</a> preArgs</div>
+</li></ul>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_vararg" title="Category:vararg">vararg</a> preArgs=nil</span>
+</p>
+<div style="margin-left: 32px;">
+Arguments that are passed to the callback function when the hook is called. *ring ring*</div>
+</div>
+
+

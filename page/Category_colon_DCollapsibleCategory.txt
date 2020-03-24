@@ -1,0 +1,102 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:DCollapsibleCategory.png" class="image" title="Example DCollapsibleCategory"><img alt="Example DCollapsibleCategory" src="/images/4/40/DCollapsibleCategory.png" width="266" height="20" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DCollapsibleCategory">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DCollapsibleCategory" title="Special:WhatLinksHere/Category:DCollapsibleCategory">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>The collapsible category allows you to create numerous sections of controls, and have the ability to contract/expand them.
+</p><p>Consider using <a href="/page/Category_colon_DCategoryList" title="Category:DCategoryList">DCategoryList</a> if you plan on using more than 1 of these.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a DCollapsibleCategory panel.
+</p>
+<pre><code data-language="lua">local frame = vgui.Create( &quot;DFrame&quot; )
+frame:SetSize( 300, 300 )
+frame:Center()
+frame:MakePopup()
+
+local DCollapsible = vgui.Create( &quot;DCollapsibleCategory&quot;, frame )    // Create a collapsible category
+DCollapsible:SetPos( 25, 50 )                                             // Set position
+DCollapsible:SetSize( 250, 100 )                                          // Set size
+DCollapsible:SetExpanded( 0 )                                             // Is it expanded when you open the panel?
+DCollapsible:SetLabel( &quot;Collapsible Category&quot; )                           // Set the name ( label )
+   
+local DermaList = vgui.Create( &quot;DPanelList&quot;, DermaPanel )   // Make a list of items to add to our category ( collection of controls )
+DermaList:SetSpacing( 5 )                             // Set the spacing between items
+DermaList:EnableHorizontal( false )                   // Only vertical items
+DermaList:EnableVerticalScrollbar( true )             // Enable the scrollbar if ( the contents are too wide
+DCollapsible:SetContents(DermaList)                   // Add DPanelList to our Collapsible Category
+   
+local CategoryContentOne = vgui.Create( &quot;DCheckBoxLabel&quot; )    // This section creates a checkbox and
+CategoryContentOne:SetText( &quot;God mode&quot; )                      // sets up its settings
+CategoryContentOne:SetConVar( &quot;sbox_godmode&quot; )
+CategoryContentOne:SetValue( 0 )
+CategoryContentOne:SizeToContents()
+DermaList:AddItem( CategoryContentOne )                       // Add the checkbox to the category
+   
+local CategoryContentTwo = vgui.Create( &quot;DLabel&quot; )            // Make some more content
+CategoryContentTwo:SetText( &quot;Hello&quot; )
+DermaList:AddItem( CategoryContentTwo )                       // Add it to the categoryDCollapsible:SetContents( DermaList )   // Set the contents of the category to the list</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:DCollapsibleCategoryContracted.png" class="image" title="Not opened"><img alt="Not opened" src="/images/6/61/DCollapsibleCategoryContracted.png" width="300" height="200" /></a>
+<a href="/page/File:DCollapsibleCategoryExpanded.png" class="image" title="Opened"><img alt="Opened" src="/images/5/5f/DCollapsibleCategoryExpanded.png" width="300" height="200" /></a></div>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DCollapsibleCategory"</h2>
+<p>The following 21 pages are in this category, out of 21 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DCollapsibleCategory/Add" title="DCollapsibleCategory/Add">DCollapsibleCategory/Add</a></li>
+<li><a href="/page/DCollapsibleCategory/AnimSlide" title="DCollapsibleCategory/AnimSlide">DCollapsibleCategory/AnimSlide</a></li>
+<li><a href="/page/DCollapsibleCategory/DoExpansion" title="DCollapsibleCategory/DoExpansion">DCollapsibleCategory/DoExpansion</a></li>
+<li><a href="/page/DCollapsibleCategory/GetAnimTime" title="DCollapsibleCategory/GetAnimTime">DCollapsibleCategory/GetAnimTime</a></li>
+<li><a href="/page/DCollapsibleCategory/GetExpanded" title="DCollapsibleCategory/GetExpanded">DCollapsibleCategory/GetExpanded</a></li>
+<li><a href="/page/DCollapsibleCategory/GetList" title="DCollapsibleCategory/GetList">DCollapsibleCategory/GetList</a></li>
+<li><a href="/page/DCollapsibleCategory/GetPadding" title="DCollapsibleCategory/GetPadding">DCollapsibleCategory/GetPadding</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DCollapsibleCategory/GetPaintBackground" title="DCollapsibleCategory/GetPaintBackground">DCollapsibleCategory/GetPaintBackground</a></li>
+<li><a href="/page/DCollapsibleCategory/GetStartHeight" title="DCollapsibleCategory/GetStartHeight">DCollapsibleCategory/GetStartHeight</a></li>
+<li><a href="/page/DCollapsibleCategory/OnToggle" title="DCollapsibleCategory/OnToggle">DCollapsibleCategory/OnToggle</a></li>
+<li><a href="/page/DCollapsibleCategory/SetAnimTime" title="DCollapsibleCategory/SetAnimTime">DCollapsibleCategory/SetAnimTime</a></li>
+<li><a href="/page/DCollapsibleCategory/SetContents" title="DCollapsibleCategory/SetContents">DCollapsibleCategory/SetContents</a></li>
+<li><a href="/page/DCollapsibleCategory/SetExpanded" title="DCollapsibleCategory/SetExpanded">DCollapsibleCategory/SetExpanded</a></li>
+<li><a href="/page/DCollapsibleCategory/SetLabel" title="DCollapsibleCategory/SetLabel">DCollapsibleCategory/SetLabel</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DCollapsibleCategory/SetList" title="DCollapsibleCategory/SetList">DCollapsibleCategory/SetList</a></li>
+<li><a href="/page/DCollapsibleCategory/SetPadding" title="DCollapsibleCategory/SetPadding">DCollapsibleCategory/SetPadding</a></li>
+<li><a href="/page/DCollapsibleCategory/SetPaintBackground" title="DCollapsibleCategory/SetPaintBackground">DCollapsibleCategory/SetPaintBackground</a></li>
+<li><a href="/page/DCollapsibleCategory/SetStartHeight" title="DCollapsibleCategory/SetStartHeight">DCollapsibleCategory/SetStartHeight</a></li>
+<li><a href="/page/DCollapsibleCategory/Toggle" title="DCollapsibleCategory/Toggle">DCollapsibleCategory/Toggle</a></li>
+<li><a href="/page/DCollapsibleCategory/UnselectAll" title="DCollapsibleCategory/UnselectAll">DCollapsibleCategory/UnselectAll</a></li>
+<li><a href="/page/DCollapsibleCategory/UpdateAltLines" title="DCollapsibleCategory/UpdateAltLines">DCollapsibleCategory/UpdateAltLines</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

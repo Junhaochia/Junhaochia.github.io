@@ -1,0 +1,29 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;SetPhysicsAttacker( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetPhysicsAttacker">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetPhysicsAttacker" title="Special:WhatLinksHere/Entity/SetPhysicsAttacker">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the player who gets credit if this entity kills something with physics damage within the time limit.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This can only be called on props.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ent</span>
+</p>
+<div style="margin-left: 32px;">
+Player who gets the kills. Setting this to a non-player entity will not work.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> timeLimit=5</span>
+</p>
+<div style="margin-left: 32px;">
+Time in seconds until the entity forgets its physics attacker and prevents it from getting the kill credit.</div>
+</div>
+
+

@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>engine.VideoSettings( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=engine.VideoSettings">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/engine/VideoSettings" title="Special:WhatLinksHere/engine/VideoSettings">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns video recording settings set by <a href="/page/Category_colon_video" title="Category:video">video</a>.<a href="/page/video/Record" title="video/Record">Record</a>. Used by Demo-To-Video feature.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+The video recording settings, see <a href="/page/Structures/VideoData" title="Structures/VideoData">VideoData structure</a>.</div>
+</div>
+
+

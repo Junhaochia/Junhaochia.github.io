@@ -1,0 +1,32 @@
+<p>Textures and Materials are an important integral features of the Source engine. However, they can be very confusing and intimidating for anyone not familiar with them. This article will attempt to explain what they are and how to use them.
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="What_is_a_texture.3F"> What is a texture? </span></h2>
+<p>A texture is a <a href="https://en.wikipedia.org/wiki/bitmap" class="extiw" title="wikipedia:bitmap">bitmap image</a>, meaning it has a concrete width and height in pixels, and each pixel has a certain color (and in some cases, an <a href="https://en.wikipedia.org/wiki/alpha_channel" class="extiw" title="wikipedia:alpha channel">alpha value</a>). Textures are used for various purposes. The most obvious use for them is to define what an object should look like, in color, but a texture can also be used as a <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Bump_map">bumpmaps</a> - where the red, green and blue values of each pixel are creatively used to specify its 3D direction. There are other ways that textures are used, but the way a texture is <i>used</i> doesn't change how the texture is <i>stored</i> - it is always a bitmap image.
+</p><p>Textures in Garry's Mod are stored in the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Valve_Texture_Format">Valve Texture Format</a>, or VTF. A good third-party tool for creating, viewing and editing VTF textures is <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/VTFEdit">VTFEdit</a> (<a rel="nofollow" class="external text" href="http://nemesis.thewavelength.net/index.php?p=41">download</a>).
+</p><p><br />
+In Lua, a texture is represented with <a href="/page/Category_colon_ITexture" title="Category:ITexture">ITexture</a>
+</p>
+<h2> <span class="mw-headline" id="What_is_a_material.3F"> What is a material? </span></h2>
+<p>A material is a collection of one <a href="/page/Category_colon_Shaders" title="Category:Shaders">shader</a> and any number of parameters. In almost all cases, at least one of the parameters will refer to a texture.
+</p><p>Materials are used <i>mostly</i> for rendering, but also have other effects - for example, the material will decide what sound a surface should make when it is hit.
+</p><p>Materials (besides those created with <a href="/page/Global/CreateMaterial" title="Global/CreateMaterial">CreateMaterial</a>) are stored in the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Valve_Material_Type">Valve Material Type</a> or VMT format, which is a plain-text format describing the shader and all material parameters.
+</p><p>Perhaps the easiest way to understand this is through example. In Garry's Mod, the material "phoenix_storms/plastic" is saved as "phoenix_storms/plastic.vmt", and contains:
+</p>
+<pre class="plain">&quot;VertexLitGeneric&quot;
+{
+	&quot;$basetexture&quot; &quot;phoenix_storms/plastic&quot;
+	&quot;$surfaceprop&quot; &quot;plastic&quot;
+	&quot;$bumpmap&quot; &quot;phoenix_storms/plastic_bump&quot;
+	&quot;$phong&quot;     &quot;1&quot;
+	&quot;$halflambert&quot;	1
+ 	&quot;$phongexponent&quot;   &quot;60&quot;
+ 	&quot;$phongboost&quot;   &quot;2&quot;
+ 	&quot;$phongfresnelranges&quot;   &quot;[.5 .8 1]&quot;
+}
+</code></pre>
+<p>Here, the shader is <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/VertexLitGeneric">VertexLitGeneric</a> and there are 8 parameters. The "$basetexture" parameter "phoenix_storms/plastic" is a texture's name (garrysmod/materials/phoenix_storms/plastic.vtf), and defines the visual look of the material. The "$bumpmap" parameter also refers to a texture, but this one defines the "3D effect" applied to the otherwise flat texture. The "$surfaceprop" parameter affects various things, for example the sound the surface makes when it's hit or the sound of the footsteps when walked on.
+</p><p>The other parameters further affect the way it is rendered - mostly how lighting should affect it.
+</p>
+
+

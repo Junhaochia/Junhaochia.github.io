@@ -1,0 +1,12 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DTooltip&#58;OpenForPanel( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DTooltip.OpenForPanel">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DTooltip/OpenForPanel" title="Special:WhatLinksHere/DTooltip/OpenForPanel">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sets up the tooltip for display for given panel and starts the timer.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> pnl</span>
+</p>
+</div>
+
+

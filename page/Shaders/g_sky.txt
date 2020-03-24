@@ -1,0 +1,82 @@
+<p>This shader was especially designed to be used with with maps, in particular the cube maps(up, down, front, back, left, right), they allow to modify the ambiance of a map.
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> $bottomcolor
+</td>
+<td> The top bottom of the texture(used for gradient)
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> $duskcolor
+</td>
+<td> The dusk color
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $duskscale
+</td>
+<td> The scale of the dusk
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $duskintensity
+</td>
+<td> The intensity of the dusk
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $fadebias
+</td>
+<td> The fade bias
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $hdrscale
+</td>
+<td> The HDR scale
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> $suncolor
+</td>
+<td> The color of the sun
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> $sunnormal
+</td>
+<td> The normal of the sun
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $sunsize
+</td>
+<td> The size of the sun
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> $topcolor
+</td>
+<td> The top color of the texture(used for gradient)
+</td></tr></table>
+
+

@@ -1,0 +1,100 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>ENTITY:SpawnFunction( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ENTITY.SpawnFunction">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ENTITY/SpawnFunction" title="Special:WhatLinksHere/ENTITY/SpawnFunction">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">6</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>This is the spawn function. It's called when a player spawns the entity from the spawnmenu.
+</p><p>If you want to make your SENT spawnable you need this function to properly create the entity.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>Unlike other ENTITY functions, the "self" parameter of this function is not an entity but rather the table used to generate the SENT. This table is equivalent to <a href="/page/Category_colon_scripted_ents" title="Category:scripted ents">scripted_ents</a>.<a href="/page/scripted_ents/GetStored" title="scripted ents/GetStored">GetStored</a>("ent_name").
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply</span>
+</p>
+<div style="margin-left: 32px;">
+The player that is spawning this SENT</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> tr</span>
+</p>
+<div style="margin-left: 32px;">
+A <a href="/page/Structures/TraceResult" title="Structures/TraceResult">TraceResult structure</a> from player eyes to their aim position</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> ClassName</span>
+</p>
+<div style="margin-left: 32px;">
+The classname of your entity</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>This is how it is defined in sent_ball
+</p>
+<pre><code data-language="lua">function ENT:SpawnFunction( ply, tr, ClassName )
+
+	if (&#160;!tr.Hit ) then return end
+
+	local SpawnPos = tr.HitPos + tr.HitNormal * 16
+
+	local ent = ents.Create( ClassName )
+	ent:SetPos( SpawnPos )
+	ent:SetBallSize( math.random( 16, 48 ) )
+	ent:Spawn()
+	ent:Activate()
+
+	return ent
+
+end</code></pre>
+<p><br />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>This is how base_edit spawns (also rotates the entity to face the player, remove * 10 if it spawns in the air)
+</p>
+<pre><code data-language="lua">function ENT:SpawnFunction( ply, tr, ClassName )
+
+	if (&#160;!tr.Hit ) then return end
+	
+	local SpawnPos = tr.HitPos + tr.HitNormal * 10
+	local SpawnAng = ply:EyeAngles()
+	SpawnAng.p = 0
+	SpawnAng.y = SpawnAng.y + 180
+	
+	local ent = ents.Create( ClassName )
+	ent:SetPos( SpawnPos )
+	ent:SetAngles( SpawnAng )
+	ent:Spawn()
+	ent:Activate()
+	
+	return ent
+	
+end</code></pre>
+<p><br />
+</p>
+
+

@@ -1,0 +1,19 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DDragBase&#58;UpdateDropTarget( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DDragBase.UpdateDropTarget">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DDragBase/UpdateDropTarget" title="Special:WhatLinksHere/DDragBase/UpdateDropTarget">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div>
+<p>Internal function used in <a href="/page/Category_colon_DDragBase" title="Category:DDragBase">DDragBase</a>:<a href="/page/DDragBase/DropAction_Normal" title="DDragBase/DropAction Normal">DropAction_Normal</a>
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> drop</span>
+</p>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> pnl</span>
+</p>
+</div>
+
+

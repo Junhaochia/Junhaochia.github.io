@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Vehicle&#58;GetVehicleParams( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Vehicle.GetVehicleParams">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Vehicle/GetVehicleParams" title="Special:WhatLinksHere/Vehicle/GetVehicleParams">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the vehicle parameters of given vehicle.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+The vehicle parameters. See <a href="/page/Structures/VehicleParams" title="Structures/VehicleParams">VehicleParams structure</a></div>
+</div>
+
+

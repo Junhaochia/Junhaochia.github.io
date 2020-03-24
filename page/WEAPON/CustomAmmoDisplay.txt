@@ -1,0 +1,54 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>WEAPON:CustomAmmoDisplay( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=WEAPON.CustomAmmoDisplay">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/WEAPON/CustomAmmoDisplay" title="Special:WhatLinksHere/WEAPON/CustomAmmoDisplay">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">2</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Allows you to use any numbers you want for the ammo display on the HUD.
+</p><p>Can be useful for weapons that don't use standard ammo.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>The new ammo display settings. A table with 4 possible keys:
+</p>
+<ul><li> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> Draw - Whether to draw the ammo display or not
+</li><li> <a href="/page/Category_colon_number" title="Category:number">number</a> PrimaryClip - Amount of primary ammo in the clip
+</li><li> <a href="/page/Category_colon_number" title="Category:number">number</a> PrimaryAmmo - Amount of primary ammo in the reserves
+</li><li> <a href="/page/Category_colon_number" title="Category:number">number</a> SecondaryAmmo - Amount of secondary ammo. It is shown like alt-fire for SMG1 and AR2 are shown.
+</li></ul>
+There is <b>no</b> SecondaryClip!</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>How it would look with standard information
+</p>
+<pre><code data-language="lua">function SWEP:CustomAmmoDisplay()
+	self.AmmoDisplay = self.AmmoDisplay or {} 
+ 
+	self.AmmoDisplay.Draw = true //draw the display?
+ 
+	if self.Primary.ClipSize &gt; 0 then
+		self.AmmoDisplay.PrimaryClip = self:Clip1() //amount in clip
+		self.AmmoDisplay.PrimaryAmmo = self:Ammo1() //amount in reserve
+	end
+	if self.Secondary.ClipSize &gt; 0 then
+		self.AmmoDisplay.SecondaryAmmo = self:Ammo2() // amount of secondary ammo
+	end
+ 
+	return self.AmmoDisplay //return the table
+end</code></pre>
+<p><br />
+</p>
+
+

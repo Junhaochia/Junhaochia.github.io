@@ -1,0 +1,49 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/Color" title="Special:WhatLinksHere/Structures/Color">What links here?</a></div>Table created by the <a href="/page/Global/Color" title="Global/Color">Color</a> function and used in various situations.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> r
+</td>
+<td>
+<p>The red channel
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> g
+</td>
+<td>
+<p>The green channel
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> b
+</td>
+<td>
+<p>The blue channel
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> a
+</td>
+<td>
+<p>The alpha channel
+</p>
+</td></tr></table>
+
+

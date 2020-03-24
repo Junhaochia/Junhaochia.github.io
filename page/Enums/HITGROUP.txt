@@ -1,0 +1,79 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/HITGROUP" title="Special:WhatLinksHere/Enums/HITGROUP">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/ScalePlayerDamage" title="GM/ScalePlayerDamage">ScalePlayerDamage</a> and <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/ScaleNPCDamage" title="GM/ScaleNPCDamage">ScaleNPCDamage</a> and returned by <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/LastHitGroup" title="Player/LastHitGroup">LastHitGroup</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> HITGROUP_GENERIC
+</td>
+<td> 0
+</td>
+<td> 1:1 damage. Melee weapons typically hit this hitgroup.<br />
+<p>This hitgroup is not present on default player models.<br />It is unknown how this is generated in <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/ScalePlayerDamage" title="GM/ScalePlayerDamage">ScalePlayerDamage</a>, but it occurs when shot by NPCs ( npc_combine_s ) for example.
+</p>
+</td></tr>
+<tr>
+<td> HITGROUP_HEAD
+</td>
+<td> 1
+</td>
+<td> Head
+</td></tr>
+<tr>
+<td> HITGROUP_CHEST
+</td>
+<td> 2
+</td>
+<td> Chest
+</td></tr>
+<tr>
+<td> HITGROUP_STOMACH
+</td>
+<td> 3
+</td>
+<td> Stomach
+</td></tr>
+<tr>
+<td> HITGROUP_LEFTARM
+</td>
+<td> 4
+</td>
+<td> Left arm
+</td></tr>
+<tr>
+<td> HITGROUP_RIGHTARM
+</td>
+<td> 5
+</td>
+<td> Right arm
+</td></tr>
+<tr>
+<td> HITGROUP_LEFTLEG
+</td>
+<td> 6
+</td>
+<td> Left leg
+</td></tr>
+<tr>
+<td> HITGROUP_RIGHTLEG
+</td>
+<td> 7
+</td>
+<td> Right leg
+</td></tr>
+<tr>
+<td> HITGROUP_GEAR
+</td>
+<td> 10
+</td>
+<td> Gear. Supposed to be belt area.<br />This hitgroup is not present on default player models.
+</td></tr></table>
+
+

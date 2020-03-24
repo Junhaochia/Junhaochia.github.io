@@ -1,0 +1,37 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;Weapon_SetActivity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.Weapon_SetActivity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/Weapon_SetActivity" title="Special:WhatLinksHere/Entity/Weapon SetActivity">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the activity of the entity's active weapon.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This does nothing on the client.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Only works for CBaseCombatCharacter entities, which includes players and NPCs.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> act</span>
+</p>
+<div style="margin-left: 32px;">
+Activity number. See <a href="/page/Enums/ACT" title="Enums/ACT">ACT_ Enums</a>.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> duration</span>
+</p>
+<div style="margin-left: 32px;">
+How long the animation should take in seconds.</div>
+</div>
+
+

@@ -1,0 +1,40 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Vector&#58;ToScreen( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Vector.ToScreen">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Vector/ToScreen" title="Special:WhatLinksHere/Vector/ToScreen">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns where on the screen the specified position vector would appear. A related function is <a href="/page/Category_colon_gui" title="Category:gui">gui</a>.<a href="/page/gui/ScreenToVector" title="gui/ScreenToVector">ScreenToVector</a>, which converts a 2D coordinate to a 3D direction.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Should be called from a 3D rendering environment or after <a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/Start3D" title="cam/Start3D">Start3D</a> or it may not work correctly.
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>Errors in a render hook can make this value incorrect until the player restarts their game.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/462">#462</a></b>
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p><a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/Start3D" title="cam/Start3D">Start3D</a> or 3D context <a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/Start" title="cam/Start">Start</a> with non-default parameters incorrectly sets the reference FOV for this function, causing incorrect return values. This can be fixed by creating and ending a default 3D context (<a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/Start3D" title="cam/Start3D">Start3D</a> with no arguments).
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/1404">#1404</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+The created <a href="/page/Structures/ToScreenData" title="Structures/ToScreenData">ToScreenData structure</a>.</div>
+</div>
+
+

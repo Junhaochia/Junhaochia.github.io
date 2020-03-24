@@ -1,0 +1,29 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;GetBoneParent( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.GetBoneParent">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/GetBoneParent" title="Special:WhatLinksHere/Entity/GetBoneParent">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns parent bone of given bone.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Will return -1 for <a href="/page/Global/ClientsideModel" title="Global/ClientsideModel">ClientsideModel</a> until <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetupBones" title="Entity/SetupBones">SetupBones</a> is called on the entity.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> bone</span>
+</p>
+<div style="margin-left: 32px;">
+The bode ID of the bone to get parent of</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+Parent bone ID or -1 if we failed for some reason.</div>
+</div>
+
+

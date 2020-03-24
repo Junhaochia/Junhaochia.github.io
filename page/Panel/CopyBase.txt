@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;CopyBase( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.CopyBase">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/CopyBase" title="Special:WhatLinksHere/Panel/CopyBase">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Gets the size, position and dock state of the passed panel object, and applies it to this one.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> srcPanel</span>
+</p>
+<div style="margin-left: 32px;">
+The panel to copy the boundary and dock settings from.</div>
+</div>
+
+

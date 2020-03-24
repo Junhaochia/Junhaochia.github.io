@@ -1,0 +1,79 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>type( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=type">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/type" title="Special:WhatLinksHere/Global/type">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">3</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_3"><span class="tocnumber">6</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_3"><span class="tocnumber">6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns a string representing the name of the type of the passed object.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_any" title="Category:any">any</a> var</span>
+</p>
+<div style="margin-left: 32px;">
+The object to get the type of.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a></span>
+</p>
+<div style="margin-left: 32px;">
+The name of the object's type.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Print the name of a few types.
+</p>
+<pre><code data-language="lua">print( type(2) )
+print( type(&quot;hai&quot;) )
+print( type({}) )</code></pre>
+<p><b>Output:</b>
+</p>
+<pre class="plain">number
+string
+table</code></pre>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Returns "no value" if called with 0 arguments/parameters.
+</p>
+<pre><code data-language="lua">print( type() )</code></pre>
+<p><b>Output:</b>
+</p>
+<pre class="plain">no value</code></pre>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_3">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_3">Example</span></h2>
+<p>A list of code showing how you can use the type function in replacement with any of the "is" functions. (example being <a href="/page/Global/istable" title="Global/istable">istable</a>, <a href="/page/Global/isentity" title="Global/isentity">isentity</a>, etc.)
+</p>
+<pre><code data-language="lua">print(type(LocalPlayer()))
+print(type(Vector()))
+print(type(Angle()))
+print(type(Entity(num))) -- -&gt; num is the EntIndex for the entity
+print(type(vgui.Create(&quot;DFrame&quot;)))</code></pre>
+<p><b>Output:</b>
+</p>
+<pre class="plain">Player
+Vector
+Angle
+Entity
+Panel</code></pre>
+
+

@@ -1,0 +1,100 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/RENDERMODE" title="Special:WhatLinksHere/Enums/RENDERMODE">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetRenderMode" title="Entity/SetRenderMode">SetRenderMode</a> and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetRenderMode" title="Entity/GetRenderMode">GetRenderMode</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> RENDERMODE_NORMAL
+</td>
+<td> 0
+</td>
+<td> Default render mode. Transparently has no effect.
+</td></tr>
+<tr>
+<td> RENDERMODE_TRANSCOLOR
+</td>
+<td> 1
+</td>
+<td> Supports transparency.
+</td></tr>
+<tr>
+<td> RENDERMODE_TRANSTEXTURE
+</td>
+<td> 2
+</td>
+<td>
+</td></tr>
+<tr>
+<td> RENDERMODE_GLOW
+</td>
+<td> 3
+</td>
+<td> Intended for glowing sprites. Allows transparency, and forces the sprite or model to be rendered unlit.
+<p>The size of a sprite rendered with Glow is consistent with the screen size (unlike the alternative World Space Glow), making it appear larger at a distance, in comparison to the world.
+</p><p>The GlowProxySize keyvalue affects this Render Mode on sprites.
+</p>
+</td></tr>
+<tr>
+<td> RENDERMODE_TRANSALPHA
+</td>
+<td> 4
+</td>
+<td> Enables Alphatesting. Legacy port from Goldsource. Obsolete in Source due to Alphatesting being handled in materials. Does not allow transparency.
+<p>Use this to make alpha of <a href="/page/Global/Color" title="Global/Color">Color</a> work for your entity. For players, it must be set for their active weapon aswell.
+</p>
+</td></tr>
+<tr>
+<td> RENDERMODE_TRANSADD
+</td>
+<td> 5
+</td>
+<td> Add the material's color values to the existing image, instead of performing a multiplication. Sprites will appear through world geometry and the sprite/model will always brighten the world. Allows transparency.
+</td></tr>
+<tr>
+<td> RENDERMODE_ENVIROMENTAL
+</td>
+<td> 6
+</td>
+<td> Causes the material to be not be drawn at all, similarly to Don't Render.
+</td></tr>
+<tr>
+<td> RENDERMODE_TRANSADDFRAMEBLEND
+</td>
+<td> 7
+</td>
+<td> Functions like Additive, but also blends between animation frames. Requires the material to have a functioning animating texture. Allows transparency.
+</td></tr>
+<tr>
+<td> RENDERMODE_TRANSALPHADD
+</td>
+<td> 8
+</td>
+<td> Functions similarly to Additive, except that the alpha channel controls the opacity of the sprite. An example of use is for dark sprites, with an example material being sprites/strider_blackball.vmt.
+</td></tr>
+<tr>
+<td> RENDERMODE_WORLDGLOW
+</td>
+<td> 9
+</td>
+<td> Functions similarly to Glow, with the exception that the size of the sprite is relative to the world rather than the screen.
+<p>The GlowProxySize keyvalue affects this Render Mode on sprites.
+</p>
+</td></tr>
+<tr>
+<td> RENDERMODE_NONE
+</td>
+<td> 10
+</td>
+<td> The entity is still being drawn and networked albeit invisible, therefore not making this Render Mode ideal for performance reasons.
+<p>To completely avoid drawing and networking an entity, see EF_NODRAW.
+</p>
+</td></tr></table>
+
+

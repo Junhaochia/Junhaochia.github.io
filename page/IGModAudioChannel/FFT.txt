@@ -1,0 +1,41 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>IGModAudioChannel&#58;FFT( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IGModAudioChannel.FFT">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IGModAudioChannel/FFT" title="Special:WhatLinksHere/IGModAudioChannel/FFT">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">4</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Computes the <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Discrete_Fourier_transform">DFT (discrete Fourier transform)</a> of the sound channel.
+</p><p>The size parameter specifies the number of consecutive audio samples to use as the input to the DFT and is restricted to a power of two. A <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Hann_function">Hann window</a> is applied to the input data.
+</p><p>The computed DFT has the same number of frequency bins as the number of samples. Only half of this DFT is returned, since <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Discrete_Fourier_transform#The_real-input_DFT">the DFT magnitudes are symmetric for real input data</a>. The magnitudes of the DFT (values from 0 to 1) are used to fill the output table, starting at index 1.
+</p><p><b>Visualization protip:</b> For a size N DFT, bin k (1-indexed) corresponds to a frequency of (k - 1) / N * sampleRate.
+</p><p><b>Visualization protip:</b> Sound energy is proportional to the square of the magnitudes. Adding magnitudes together makes no sense physically, but adding energies does.
+</p><p><b>Visualization protip:</b> The human ear works on a logarithmic amplitude scale. You can convert to <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Decibel">decibels</a> by taking 20 log<sub>10</sub> of frequency magnitudes, or 10 log<sub>10</sub> of energy. The decibel values will range from -infinity to 0.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> tbl</span>
+</p>
+<div style="margin-left: 32px;">
+The table to output the DFT magnitudes (numbers between 0 and 1) into. Indices start from 1.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> size</span>
+</p>
+<div style="margin-left: 32px;">
+The number of samples to use. See <a href="/page/Enums/FFT" title="Enums/FFT">FFT_ Enums</a></div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The number of frequency bins that have been filled in the output table.</div>
+</div>
+
+

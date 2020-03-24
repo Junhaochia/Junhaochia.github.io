@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Player&#58;CrosshairDisable( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.CrosshairDisable">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/CrosshairDisable" title="Special:WhatLinksHere/Player/CrosshairDisable">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Disables the default player's crosshair. Can be reenabled with <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/CrosshairEnable" title="Player/CrosshairEnable">CrosshairEnable</a>. This will affect <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/DoDrawCrosshair" title="WEAPON/DoDrawCrosshair">DoDrawCrosshair</a>.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Disables crosshair of the first player on the server.
+</p>
+<pre><code data-language="lua">Entity( 1 ):CrosshairDisable()</code></pre>
+<p><br />
+</p>
+
+

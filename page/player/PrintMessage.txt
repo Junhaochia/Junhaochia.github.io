@@ -1,0 +1,57 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Player&#58;PrintMessage( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.PrintMessage">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/PrintMessage" title="Special:WhatLinksHere/Player/PrintMessage">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Displays a message either in their chat, console, or center of the screen. See also <a href="/page/Global/PrintMessage" title="Global/PrintMessage">PrintMessage</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>When called serverside, this uses the archaic user message system (the <a href="/page/Category_colon_umsg" title="Category:umsg">umsg library</a>) and hence is limited to &#8776;250 characters.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p><i>HUD_PRINTCENTER</i> will not work when this is called clientside.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> type</span>
+</p>
+<div style="margin-left: 32px;">
+Which type of message should be sent to the player (<a href="/page/Enums/HUD" title="Enums/HUD">HUD_ Enums</a>)</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> message</span>
+</p>
+<div style="margin-left: 32px;">
+Message to be sent to the player</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Prints into the first players chat: "I'm new here."
+</p>
+<pre><code data-language="lua">Entity(1):PrintMessage(HUD_PRINTTALK, &quot;I'm new here.&quot;)</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">I'm new here.</div>
+
+

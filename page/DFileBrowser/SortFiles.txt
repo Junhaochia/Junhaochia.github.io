@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DFileBrowser&#58;SortFiles( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DFileBrowser.SortFiles">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DFileBrowser/SortFiles" title="Special:WhatLinksHere/DFileBrowser/SortFiles">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sorts the file list.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is only functional when not using the model viewer. See <a href="/page/Category_colon_DFileBrowser" title="Category:DFileBrowser">DFileBrowser</a>:<a href="/page/DFileBrowser/SetModels" title="DFileBrowser/SetModels">SetModels</a>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> descending=false</span>
+</p>
+<div style="margin-left: 32px;">
+The sort order. <i>true</i> for descending (z-a), <i>false</i> for ascending (a-z).</div>
+</div>
+
+

@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>IMaterial&#58;SetFloat( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IMaterial.SetFloat">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IMaterial/SetFloat" title="Special:WhatLinksHere/IMaterial/SetFloat">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the specified material float to the specified float, does nothing on a type mismatch.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> materialFloat</span>
+</p>
+<div style="margin-left: 32px;">
+The name of the material float.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> float</span>
+</p>
+<div style="margin-left: 32px;">
+The new float value.</div>
+</div>
+
+

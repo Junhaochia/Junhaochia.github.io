@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>IMesh&#58;BuildFromTriangles( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IMesh.BuildFromTriangles">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IMesh/BuildFromTriangles" title="Special:WhatLinksHere/IMesh/BuildFromTriangles">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Builds the mesh from a table mesh vertexes.
+</p><p>See <a href="/page/Global/Mesh" title="Global/Mesh">Mesh</a> and <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/GetModelMeshes" title="util/GetModelMeshes">GetModelMeshes</a> for examples.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> vertexes</span>
+</p>
+<div style="margin-left: 32px;">
+A table consisting of <a href="/page/Structures/MeshVertex" title="Structures/MeshVertex">MeshVertex structures</a>.</div>
+</div>
+
+

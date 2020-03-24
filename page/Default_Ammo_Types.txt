@@ -1,0 +1,202 @@
+<h1> <span class="mw-headline" id="Default_Ammo_Types"> Default Ammo Types </span></h1>
+<p>Here is a list of all default ammo types for Garry's Mod.
+</p>
+<table class="wikitable">
+<tr>
+<th>ID
+</th>
+<th>Name
+</th>
+<th>Description
+</th></tr>
+<tr>
+<td>1
+</td>
+<td>AR2
+</td>
+<td>weapon_ar2 ammo
+</td></tr>
+<tr>
+<td>2
+</td>
+<td>AR2AltFire
+</td>
+<td>weapon_ar2 altfire ammo
+</td></tr>
+<tr>
+<td>3
+</td>
+<td>Pistol
+</td>
+<td>weapon_pistol ammo
+</td></tr>
+<tr>
+<td>4
+</td>
+<td>SMG1
+</td>
+<td>weapon_smg1 ammo
+</td></tr>
+<tr>
+<td>5
+</td>
+<td>357
+</td>
+<td>weapon_357 ammo
+</td></tr>
+<tr>
+<td>6
+</td>
+<td>XBowBolt
+</td>
+<td>weapon_crossbow ammo
+</td></tr>
+<tr>
+<td>7
+</td>
+<td>Buckshot
+</td>
+<td>weapon_shotgun ammo
+</td></tr>
+<tr>
+<td>8
+</td>
+<td>RPG_Round
+</td>
+<td>weapon_rpg ammo
+</td></tr>
+<tr>
+<td>9
+</td>
+<td>SMG1_Grenade
+</td>
+<td>weapon_smg1 altfire ammo
+</td></tr>
+<tr>
+<td>10
+</td>
+<td>Grenade
+</td>
+<td>weapon_frag ammo
+</td></tr>
+<tr>
+<td>11
+</td>
+<td>slam
+</td>
+<td>weapon_slam ammo
+</td></tr>
+<tr>
+<td>12
+</td>
+<td>AlyxGun
+</td>
+<td>weapon_alyxgun ammo
+</td></tr>
+<tr>
+<td>13
+</td>
+<td>SniperRound
+</td>
+<td>Combine Sniper ammo
+</td></tr>
+<tr>
+<td>14
+</td>
+<td>SniperPenetratedRound
+</td>
+<td>Combine Sniper alternate ammo
+</td></tr>
+<tr>
+<td>15
+</td>
+<td>Thumper
+</td>
+<td>
+</td></tr>
+<tr>
+<td>16
+</td>
+<td>Gravity
+</td>
+<td>
+</td></tr>
+<tr>
+<td>17
+</td>
+<td>Battery
+</td>
+<td>
+</td></tr>
+<tr>
+<td>18
+</td>
+<td>GaussEnergy
+</td>
+<td>
+</td></tr>
+<tr>
+<td>19
+</td>
+<td>CombineCannon
+</td>
+<td>
+</td></tr>
+<tr>
+<td>20
+</td>
+<td>AirboatGun
+</td>
+<td>Airboat mounted gun ammo
+</td></tr>
+<tr>
+<td>21
+</td>
+<td>StriderMinigun
+</td>
+<td>Strider minigun ammo
+</td></tr>
+<tr>
+<td>22
+</td>
+<td>HelicopterGun
+</td>
+<td>Attack Helicopter ammo
+</td></tr>
+<tr>
+<td>23
+</td>
+<td>9mmRound
+</td>
+<td>HL:S pistol ammo
+</td></tr>
+<tr>
+<td>24
+</td>
+<td>MP5_Grenade
+</td>
+<td>HL:S grenade ammo
+</td></tr>
+<tr>
+<td>25
+</td>
+<td>Hornet
+</td>
+<td>HL:S hornet ammo
+</td></tr>
+<tr>
+<td>26
+</td>
+<td>StriderMinigunDirect
+</td>
+<td>npc_strider "EnableAggressiveBehavior" ammo ( Less damage )
+</td></tr>
+<tr>
+<td>27
+</td>
+<td>CombineHeavyCannon
+</td>
+<td>The "Combine Autogun" ammo from Half-Life 2: Episode 2
+</td></tr></table>
+
+

@@ -1,0 +1,23 @@
+<h1> <span class="mw-headline" id="Ircalladdr_Functions"> Ircalladdr Functions </span></h1>
+<pre><code data-language="lua">lj_str_cmp
+lj_str_new
+lj_strscan_num
+lj_str_fromint
+lj_str_fromnum
+lj_tab_new1
+lj_tab_dup
+lj_tab_newkey
+lj_tab_len
+lj_gc_step_jit
+lj_gc_barrieruv
+lj_mem_newgco
+lj_math_random_step
+lj_vm_modi
+sinh
+cosh
+tanh
+fputc
+fwrite
+fflush</code></pre>
+
+

@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetLocalAngles( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetLocalAngles">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetLocalAngles" title="Special:WhatLinksHere/Entity/SetLocalAngles">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets angles relative to angles of <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetParent" title="Entity/GetParent">GetParent</a>
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a> ang</span>
+</p>
+<div style="margin-left: 32px;">
+The local angle</div>
+</div>
+
+

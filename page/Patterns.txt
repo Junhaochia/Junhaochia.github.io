@@ -1,0 +1,287 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What.27s_this_article_for.3F"><span class="tocnumber">1</span> <span class="toctext">What's this article for?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Getting_started"><span class="tocnumber">2</span> <span class="toctext">Getting started</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Special_characters"><span class="tocnumber">3</span> <span class="toctext">Special characters</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Character_classes"><span class="tocnumber">4</span> <span class="toctext">Character classes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Repetition_and_anchoring"><span class="tocnumber">4.1</span> <span class="toctext">Repetition and anchoring</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Captures"><span class="tocnumber">5</span> <span class="toctext">Captures</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Usage"><span class="tocnumber">6</span> <span class="toctext">Usage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#string.find"><span class="tocnumber">6.1</span> <span class="toctext">string.find</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#string.match"><span class="tocnumber">6.2</span> <span class="toctext">string.match</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#string.gmatch"><span class="tocnumber">6.3</span> <span class="toctext">string.gmatch</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#string.gsub"><span class="tocnumber">6.4</span> <span class="toctext">string.gsub</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Conclusion"><span class="tocnumber">7</span> <span class="toctext">Conclusion</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="What.27s_this_article_for.3F">What's this article for?</span></h2>
+<p>This article is for teaching you how to use Lua's pattern matching language. The pattern matching language (or <i>patterns</i> for short) provides advanced tools for searching and replacing recurring patterns in strings. These tools can be used for writing text data parsers, custom formatters and many other things that would take hundreds of lines of code.
+</p><p>A lot of the theory in this article is either copied or rewritten from the lua reference manual. You can see the manual section on patterns <a rel="nofollow" class="external text" href="https://www.lua.org/manual/5.2/manual.html#6.4.1">here</a>.
+</p>
+<h2> <span class="mw-headline" id="Getting_started">Getting started</span></h2>
+<p>An average pattern looks like this:
+</p><p><code>[%w_]+</code>
+</p><p>That specific pattern could be used for finding variable names (such as "hi_there", "h0w_are_you" etc.). What each character in the pattern does will be explained later in this article.
+</p><p>These functions can be used together with patterns:
+</p>
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a>.<a href="/page/string/find" title="string/find">find</a>
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a>.<a href="/page/string/match" title="string/match">match</a>
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a>.<a href="/page/string/gmatch" title="string/gmatch">gmatch</a>
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a>.<a href="/page/string/gsub" title="string/gsub">gsub</a>
+</li></ul>
+<p>I will try to use all of these functions and explain how each of them work in detail.
+</p>
+<h2> <span class="mw-headline" id="Special_characters">Special characters</span></h2>
+<p>There are a bunch of special characters that either escape other characters, or modify the pattern in some way.
+</p><p>These characters are:
+</p><p><code>^ $ ( )&#160;% . [ ] * + -&#160;?</code>
+</p><p>They can also be used in the pattern as normal characters by prefixing them with a "%" character, so "%%" becomes "%", "%[" becomes "[", etc.
+</p>
+<h2> <span class="mw-headline" id="Character_classes">Character classes</span></h2>
+<p>Character classes represent a set of characters. They can be either predefined sets or custom sets that can consist of the same predefined sets, ranges or any single characters.
+</p><p>Available character classes (custom and predefined):
+</p>
+<table class="wikitable">
+<tr>
+<th style="width:40px"> Class </th>
+<th> Description
+</th></tr>
+<tr>
+<td> <code>.</code> </td>
+<td> (a dot) represents all characters (will match any character)
+</td></tr>
+<tr>
+<td> <code>%a</code> </td>
+<td> represents all letters (from a to z upper and lower case)
+</td></tr>
+<tr>
+<td> <code>%c</code> </td>
+<td> represents all control characters (special characters "\t", "\n", etc.)
+</td></tr>
+<tr>
+<td> <code>%d</code> </td>
+<td> represents all digits (from 0 to 9)
+</td></tr>
+<tr>
+<td> <code>%l</code> </td>
+<td> represents all lowercase letters (any letter that is lower case)
+</td></tr>
+<tr>
+<td> <code>%p</code> </td>
+<td> represents all punctuation characters (".", ",", etc.)
+</td></tr>
+<tr>
+<td> <code>%s</code> </td>
+<td> represents all space characters (a normal space, tab, etc.)
+</td></tr>
+<tr>
+<td> <code>%u</code> </td>
+<td> represents all uppercase letters (any letter that is upper case)
+</td></tr>
+<tr>
+<td> <code>%w</code> </td>
+<td> represents all alphanumeric characters (all letters and numbers)
+</td></tr>
+<tr>
+<td> <code>%x</code> </td>
+<td> represents all hexadecimal digits (digits 0-9, letters a-f, and letters A-F)
+</td></tr>
+<tr>
+<td> <code>%z</code> </td>
+<td> represents the character with representation 0 (the null character "\0")
+</td></tr>
+<tr>
+<td> <code>%<i>x</i></code> </td>
+<td> (where x is any non-alphanumeric character) represents itself
+</td></tr>
+<tr>
+<td> <code>[<i>s</i>]</code> </td>
+<td> represents all characters in <i>s</i> as a union. You can see this used in the previous section. <i>[%w_]</i> will match any letter, digit and an underscore
+</td></tr>
+<tr>
+<td> <code>[^<i>s</i>]</code> </td>
+<td> represents the opposite of the union <i>s</i>, so <i>[^%w_]</i> matches everything that is not a letter, digit or underscore
+</td></tr></table>
+<ul><li> An upper case version of a predefined character set will represent the <b>opposite</b> of that set, so <i>%A</i> will match anything that is <b>not</b> a letter,
+</li><li> The starting and ending points of a range are separated with a hyphen "-", so <i>0-5</i> will match a digit from zero to five, <i>a-c</i> will match a, b or c.
+</li></ul>
+<h3> <span class="mw-headline" id="Repetition_and_anchoring">Repetition and anchoring</span></h3>
+<p>Characters in a string match a pattern in the following ways:
+</p>
+<ul><li> a single class will match a single character,
+</li><li> a single class followed by "+" will match one or more repetitions of characters and will match the longest sequence,
+</li><li> a single class followed by "-" will match zero or more repetitions of characters and will match the shortest sequence,
+</li><li> a single class followed by "*" will match zero or more repetitions of characters and will match the longest sequence,
+</li><li> a single class followed by "?" will match one or zero characters,
+</li><li>&#160;%n (where <i>n</i> is a digit between 1 and 9) will match the <i>n</i>th capture (see next section),
+</li><li>&#160;%b<i>xy</i> will match strings that start with <i>x</i> and end with <i>y</i>, "%b()" will match a string that starts with "(" and ends with ")".
+</li></ul>
+<p>Patterns can be anchored like so:
+</p>
+<ul><li> starting the pattern with "^" will match a string at the beginning,
+</li><li> ending the pattern with "$" will match a string at the end,
+</li><li> not anchoring the pattern will match a string at any position.
+</li></ul>
+<p>These two characters only have a meaning if positioned as stated above. At any other position, these characters have no meaning and represent themselves.
+</p>
+<h2> <span class="mw-headline" id="Captures">Captures</span></h2>
+<p>Patterns can also contain sub-patterns enclosed in "()". Captures are used in functions like string.match and string.gsub to return or substitute a specific match from the pattern. Examples on how to use these can be found below.
+</p>
+<h2> <span class="mw-headline" id="Usage">Usage</span></h2>
+<p>Now I'm going to show you how to actually use all that stuff above. The examples below explain how to use the four functions listed above.
+</p>
+<h3> <span class="mw-headline" id="string.find">string.find</span></h3>
+<pre><code data-language="lua">string.find( string str, string pattern [, number start [, boolean plain ]] )</code></pre>
+<p><i>str</i> is the string to search, <i>pattern</i> is the pattern string to find, <i>start</i> is the start index and <i>plain</i> is a boolean indicating whether to use a pattern search or just plain text search. The function returns the start and end indices (not start index and length) of the matching substring. If the pattern has captures, they will be returned after the indices. If a match couldn't be found, the function returns nil.
+</p><p>The following code will find the first word in the string.
+</p>
+<pre><code data-language="lua">
+local str = &quot;1. Don't spam!&quot;
+local pattern = &quot;([%a']+)&quot; -- will match a substring that has one or more letter or apostrophes (')
+local start, endpos, word = string.find( str, pattern )
+
+print( start, endpos, word )
+</code></pre>
+<p>Output:
+<br /><br /><samp>4	8	Don't</samp>
+</p><p>You probably think that this could be done with <a href="/page/Category_colon_string" title="Category:string">string</a>.<a href="/page/string/Explode" title="string/Explode">Explode</a> and a few loops, but look, we did it in three lines.
+</p><p>The following code will check if a string is safe to be used as a file name, by comparing it with a set of restricted characters.
+</p>
+<pre><code data-language="lua">
+local str = &quot;cry|*to&quot;
+local pattern = '[\\/:%*%?&quot;&lt;&gt;|]' -- a set of all restricted characters
+local start = string.find( str, pattern )
+
+print( &quot;String is &quot;..( ( start ~= nil ) and &quot;unsafe&quot; or &quot;safe&quot; ) )
+</code></pre>
+<p>Output:
+<br /><br /><samp>String is unsafe</samp>
+</p><p><a href="/page/Category_colon_string" title="Category:string">string</a>.<a href="/page/string/find" title="string/find">find</a> returns <i>nil</i> if no match is found. This means we can use boolean logic to print "unsafe" if a match is made, and "safe" otherwise.
+</p>
+<h3> <span class="mw-headline" id="string.match">string.match</span></h3>
+<pre><code data-language="lua">string.match( string str, string pattern [, number start] )</code></pre>
+<p><i>str</i> is the string to search, <i>pattern</i> is the pattern to find and <i>start</i> is the start position. If a there is a match, the function return the captures from the pattern, if there are no captures, it will return the whole match. If a match couldn't be found, the function will return <i>nil</i>.
+</p><p>The following code will parse a simple keyvalue line.
+</p>
+<pre><code data-language="lua">
+local str = &quot;key=  value&quot;
+--The following will match &quot;variable name, 0 or more spaces, equals sign, 0 or more spaces, variable name&quot;:
+local pattern = &quot;([%w_]+)%s*=%s*([%w_]+)&quot;
+local k, v = string.match( str, pattern )
+
+print( k, v )
+</code></pre>
+<p>Output:
+<br /><br /><samp>key	value</samp>
+</p><p>The following code will check if the string ends with a .lua extension.
+</p>
+<pre><code data-language="lua">
+local str = &quot;teel.lua&quot;
+local pattern = &quot;.+%.lua$&quot; -- anything until a dot and &quot;lua&quot; at the end of the string
+local match = string.match( str, pattern )
+
+print( &quot;String ends with &quot;..( ( match ) and &quot;.lua&quot; or &quot;something else&quot; ) )
+</code></pre>
+<p>Output:
+<br /><br /><samp>String ends with .lua</samp>
+</p>
+<h3> <span class="mw-headline" id="string.gmatch">string.gmatch</span></h3>
+<pre><code data-language="lua">string.gmatch( string str, string pattern )</code></pre>
+<p><i>str</i> is the string to search and <i>pattern</i> is the string to search for. The function returns an iterator function (special functions used by loops) that goes through every match in the string and returns the pattern's captures, if there are any, or the whole match if there are no captures. The function will not return nil in the case where a match couldn't be found, but an 'empty' iterator function that will not start a loop.
+</p><p>The following code goes through every word in the string.
+</p>
+<pre><code data-language="lua">
+local str = &quot;This is PATTERNS&quot;
+local pattern = &quot;%w+&quot; -- will match any word
+
+for word in string.gmatch( str, pattern ) do
+	
+	print( word )
+	
+end
+</code></pre>
+<p>Output:
+<br /><br /><samp>This
+is
+PATTERNS</samp>
+</p><p>Any pattern that you use in string.match can also be used in gmatch, but instead of finding only the first match, it will find every match in the string.
+</p><p>The following code uses the keyvalue parsing pattern but can now read a list of keyvalues.
+</p>
+<pre><code data-language="lua">
+local str = &quot;key = value key2 =  value2&quot;
+local pattern = &quot;([%w_]+)%s*=%s*([%w_]+)&quot; -- same pattern as above
+
+local tbl = { }
+for k, v in string.gmatch( str, pattern ) do
+	
+	tbl[ k ] = v
+	
+end
+
+PrintTable( tbl )
+</code></pre>
+<p>Output:
+<br /><br /><samp>key = value
+key2 = value2</samp>
+</p><p>The interesting thing is that the string can have any characters as separators between keyvalue pairs.
+</p>
+<h3> <span class="mw-headline" id="string.gsub">string.gsub</span></h3>
+<pre><code data-language="lua">string.gsub( string str, string pattern, string/table/function repl )</code></pre>
+<p><i>str</i> is the string to search in, <i>pattern</i> is the pattern to search for and <i>repl</i> is the value to replace with. The function returns <i>str</i> where all occurrences of pattern have been replaced with the value given by <i>repl</i> and, as the second argument, the total number of matches.
+</p><p><i>repl</i> can be the following things:
+</p>
+<ul><li> <b>a string</b> - in which case all occurrence of pattern are replaced with this string, the "%n" item is also supported with a special case of "%0" representing the whole match,
+</li><li> <b>a function</b> - in which case the passed function gets called with the match/captures as its argument(s) each time a match occurs, and the match is replaced with the value returned by the function,
+</li><li> <b>a table</b> - in which case the value indexed with the first capture (or the match if there are no captures) is returned.
+</li></ul>
+<p>If the function or table returns <i>nil</i> or <i>false</i>, the match gets ignored and nothing gets replaced.
+</p><p>The following code formats a keyvalue pair as an xml node.
+</p>
+<pre><code data-language="lua">
+local str = &quot;key = value&quot;
+local pattern = &quot;([%w_]+)%s*=%s*([%w_]+)&quot;
+local replacement = &quot;&lt;%1&gt;%2&lt;/%1&gt;&quot;
+
+local output = string.gsub( str, pattern, replacement )
+
+print( output )
+</code></pre>
+<p>Output:
+<br /><br /><samp>&lt;key&gt;value&lt;/key&gt;</samp>
+</p><p>The following example creates a function that works like the .NET formatting feature.
+</p>
+<pre><code data-language="lua">
+function string.format2( fmt, ... )
+	
+	// 'arg' is the ... combined in a table
+	return fmt:gsub( &quot;{(%d+)}&quot;, function( i ) return arg[ tostring( i ) + 1 ] end )
+	
+end
+
+local str = &quot;This is {0}, oh {1}..&quot;
+local repl1 = &quot;PATTERNS&quot;
+local repl2 = &quot;YEAH&quot;
+
+local output = string.format2( str, repl1, repl2 )
+
+print( output )
+</code></pre>
+<p>Output:
+<br /><br /><samp>This is PATTERNS, oh YEAH..</samp>
+</p>
+<h2> <span class="mw-headline" id="Conclusion">Conclusion</span></h2>
+<p>The article is finally over! I hope you learned something new from all of this. Lua's patterns are very powerful when used right. When making an addon that heavily relies on strings, patterns will most likely come in handy. You can find some new examples in either the <a rel="nofollow" class="external text" href="https://www.lua.org/manual/5.2/">Lua manual</a> or <a rel="nofollow" class="external text" href="https://www.lua.org/pil/">PIL</a>.
+</p><p>Good day!
+</p>
+<h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://www.lua.org/manual/5.3/manual.html#6.4.1">Official 5.3 Patterns Tutorial (PiL)</a>
+</li></ul>
+
+

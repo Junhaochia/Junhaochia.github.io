@@ -1,0 +1,109 @@
+<p>These hooks are used inside of a Lua effect. Lua effects are stored in either the <kbd>/lua/effects</kbd> directory or in a gamemode in <kbd>/gamemodes/&lt;gamemodename&gt;/entities/effects</kbd>.
+</p><p>Effects are entities with the class CLuaEffect, and as such, <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> functions are usable on them (using the <kbd>self</kbd> argument).
+</p><p>An EFFECT is made using either a combination of the <strong class="selflink">EFFECT</strong>:<a href="/page/EFFECT/Init" title="EFFECT/Init">Init</a>, <strong class="selflink">EFFECT</strong>:<a href="/page/EFFECT/Render" title="EFFECT/Render">Render</a> and optionally the <strong class="selflink">EFFECT</strong>:<a href="/page/EFFECT/Think" title="EFFECT/Think">Think</a> hook. Another way is to create all particles in one go in the <i>Init</i> hook and don't use the other hooks at all.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">1</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">1.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">2.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a particle effect using a combination of the Init and the Think hooks.
+</p>
+<pre><code data-language="lua">function EFFECT:Init( data )
+	self.data = data
+	self.particles = 4
+end
+
+function EFFECT:Think()
+	return true
+end
+
+function EFFECT:Render()
+	local vOffset = self.data:GetOrigin() + Vector( 0, 0, 0.2 )
+	local vAngle = self.data:GetAngles()
+	
+	local emitter = ParticleEmitter( vOffset, false )
+		for i=0, self.particles do
+			local particle = emitter:Add( &quot;effects/softglow&quot;, vOffset )
+			if particle then
+				particle:SetAngles( vAngle )
+				particle:SetVelocity( Vector( 0, 0, 15 ) )
+				particle:SetColor( 255, 102, 0 )
+				particle:SetLifeTime( 0 )
+				particle:SetDieTime( 0.2 )
+				particle:SetStartAlpha( 255 )
+				particle:SetEndAlpha( 0 )
+				particle:SetStartSize( 1.6 )
+				particle:SetStartLength( 1 )
+				particle:SetEndSize( 1.2 )
+				particle:SetEndLength( 4 )
+			end
+		end
+	emitter:Finish()
+end</code></pre>
+<p><br />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Creates a particle effect using only the Init hook. To use this effect in a loop one needs to create a new instance of this effect every drawn frame.
+</p>
+<pre><code data-language="lua">function EFFECT:Init( data )
+	local vOffset = data:GetOrigin() + Vector( 0, 0, 0.2 )
+	local vAngle = data:GetAngles()
+	local emitter = ParticleEmitter( vOffset, false )
+		for i=0,4 do
+			local particle = emitter:Add( &quot;effects/softglow&quot;, vOffset )
+			if particle then
+				particle:SetAngles( vAngle )
+				particle:SetVelocity( Vector( 0, 0, 15 ) )
+				particle:SetColor( 255, 102, 0 )
+				particle:SetLifeTime( 0 )
+				particle:SetDieTime( 0.2 )
+				particle:SetStartAlpha( 255 )
+				particle:SetEndAlpha( 0 )
+				particle:SetStartSize( 1.6 )
+				particle:SetStartLength( 1 )
+				particle:SetEndSize( 1.2 )
+				particle:SetEndLength( 4 )
+			end
+		end
+	emitter:Finish()
+end
+
+function EFFECT:Think()
+	return false
+end
+
+function EFFECT:Render()
+end</code></pre>
+<p><br />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "EFFECT Hooks"</h2>
+<p>The following 8 pages are in this category, out of 8 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>E</h3>
+<ul><li><a href="/page/EFFECT/EndTouch" title="EFFECT/EndTouch">EFFECT/EndTouch</a></li>
+<li><a href="/page/EFFECT/GetTracerShootPos" title="EFFECT/GetTracerShootPos">EFFECT/GetTracerShootPos</a></li>
+<li><a href="/page/EFFECT/Init" title="EFFECT/Init">EFFECT/Init</a></li></ul></td>
+<td><h3>E cont.</h3>
+<ul><li><a href="/page/EFFECT/PhysicsCollide" title="EFFECT/PhysicsCollide">EFFECT/PhysicsCollide</a></li>
+<li><a href="/page/EFFECT/Render" title="EFFECT/Render">EFFECT/Render</a></li>
+<li><a href="/page/EFFECT/StartTouch" title="EFFECT/StartTouch">EFFECT/StartTouch</a></li></ul></td>
+<td><h3>E cont.</h3>
+<ul><li><a href="/page/EFFECT/Think" title="EFFECT/Think">EFFECT/Think</a></li>
+<li><a href="/page/EFFECT/Touch" title="EFFECT/Touch">EFFECT/Touch</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

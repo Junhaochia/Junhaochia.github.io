@@ -1,0 +1,48 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;ManipulateBoneScale( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.ManipulateBoneScale">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/ManipulateBoneScale" title="Special:WhatLinksHere/Entity/ManipulateBoneScale">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets custom bone scale.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>When used serverside, this method produces a huge network consumption!
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This does not scale procedural bones.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3502">#3502</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> boneID</span>
+</p>
+<div style="margin-left: 32px;">
+Index of the bone you want to manipulate</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> scale</span>
+</p>
+<div style="margin-left: 32px;">
+<p>Scale vector to apply. Note that the scale is relative to the original bone scale, not relative to the world or the entity.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>The vector will be normalised if its longer than 32 units.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/1249">#1249</a></b>
+</p>
+</td></tr></table></div>
+</div>
+
+

@@ -1,0 +1,78 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Player&#58;SendLua( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.SendLua">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/SendLua" title="Special:WhatLinksHere/Player/SendLua">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Executes a simple Lua string on the player.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>The string is limited to 254 bytes. Instead of sending Lua code with this function, consider using the <a href="/page/Category_colon_net" title="Category:net">net library</a> for more advanced server-client interaction, see example 2 for SendLua replacement
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> script</span>
+</p>
+<div style="margin-left: 32px;">
+The script to execute.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Sends "Hello World" to the client's console.
+</p>
+<pre><code data-language="lua">local pl = Entity( 1 )
+pl:SendLua( &quot;print( 'Hello World' )&quot; )</code></pre>
+<p><br />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Replacement of SendLua with <a href="/page/Category_colon_net" title="Category:net">net library</a>.
+</p>
+This example replaces <pre class="inline">ply:SendLua(&quot;chat.AddText(\&quot;Done\&quot;)&quot;)</code></pre>, <pre class="inline">ply:SendLua(&quot;chat.AddText(\&quot;Error! Wrong arguments\&quot;)&quot;)</code></pre> and <pre class="inline">ply:SendLua(&quot;chat.AddText(\&quot;An error occurred during runtime\&quot;)&quot;)</code></pre>
+<pre><code data-language="lua">-- SERVER
+local MSG_DONE,MSG_ERROR_ARGUMENTS,MSG_ERROR_RUNTIME = 0,1,2
+util.AddNetworkString(&quot;MsgForMyAddon&quot;)
+
+function SendMsg(ply,id)
+	net.Start(&quot;MsgForMyAddon&quot;)
+	net.WriteUInt(id,2) -- If you want to calculate required bits amount use ceil(log(amountOfMsgIncludingZero) / log(2))
+	net.Send(ply)
+end
+
+-- CLIENT
+local MSG_DONE,MSG_ERROR_ARGUMENTS,MSG_ERROR_RUNTIME = 0,1,2
+net.Receive(&quot;MsgForMyAddon&quot;,function()
+	local id,text = net.ReadUInt(2)
+	-- Note: I use if + elseif because I have only 3 different cases, if you have more than 5 cases or more complex code consider using a table lookup (table-set)
+	if id == MSG_DONE then
+		text = &quot;Done&quot;
+	elseif id == MSG_ERROR_ARGUMENTS then
+		text = &quot;Error! Wrong arguments&quot;
+	elseif id == MSG_ERROR_RUNTIME then
+		text = &quot;An error occurred during runtime&quot;
+	end
+
+	chat.AddText(text)
+end)</code></pre>
+<p><br />
+</p>
+
+

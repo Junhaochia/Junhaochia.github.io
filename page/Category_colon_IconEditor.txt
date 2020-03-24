@@ -1,0 +1,121 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:IconEditor.jpg" class="image" title="Example IconEditor"><img alt="Example IconEditor" src="/images/thumb/8/89/IconEditor.jpg/300px-IconEditor.jpg" width="300" height="232" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IconEditor">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:IconEditor" title="Special:WhatLinksHere/Category:IconEditor">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>An icon editor that permits a user to modify a <a href="/page/Category_colon_SpawnIcon" title="Category:SpawnIcon">SpawnIcon</a> and re-render it. This is used by the spawn menu and is what is shown when you right-click an icon and select <i>Edit Icon</i>.
+</p><p>This makes use of the <a href="/page/Category_colon_DAdjustableModelPanel" title="Category:DAdjustableModelPanel">DAdjustableModelPanel</a> element.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This panel is only available in Sandbox and Sandbox derived gamemodes!
+</p>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DFrame/Center" title="DFrame/Center">DFrame/Center</a></li>
+<li><a href="/page/DFrame/Close" title="DFrame/Close">DFrame/Close</a></li>
+<li><a href="/page/DFrame/GetBackgroundBlur" title="DFrame/GetBackgroundBlur">DFrame/GetBackgroundBlur</a></li>
+<li><a href="/page/DFrame/GetDeleteOnClose" title="DFrame/GetDeleteOnClose">DFrame/GetDeleteOnClose</a></li>
+<li><a href="/page/DFrame/GetDraggable" title="DFrame/GetDraggable">DFrame/GetDraggable</a></li>
+<li><a href="/page/DFrame/GetIsMenu" title="DFrame/GetIsMenu">DFrame/GetIsMenu</a></li>
+<li><a href="/page/DFrame/GetMinHeight" title="DFrame/GetMinHeight">DFrame/GetMinHeight</a></li>
+<li><a href="/page/DFrame/GetMinWidth" title="DFrame/GetMinWidth">DFrame/GetMinWidth</a></li>
+<li><a href="/page/DFrame/GetPaintShadow" title="DFrame/GetPaintShadow">DFrame/GetPaintShadow</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DFrame/GetScreenLock" title="DFrame/GetScreenLock">DFrame/GetScreenLock</a></li>
+<li><a href="/page/DFrame/GetSizable" title="DFrame/GetSizable">DFrame/GetSizable</a></li>
+<li><a href="/page/DFrame/GetTitle" title="DFrame/GetTitle">DFrame/GetTitle</a></li>
+<li><a href="/page/DFrame/IsActive" title="DFrame/IsActive">DFrame/IsActive</a></li>
+<li><a href="/page/DFrame/SetBackgroundBlur" title="DFrame/SetBackgroundBlur">DFrame/SetBackgroundBlur</a></li>
+<li><a href="/page/DFrame/SetDeleteOnClose" title="DFrame/SetDeleteOnClose">DFrame/SetDeleteOnClose</a></li>
+<li><a href="/page/DFrame/SetDraggable" title="DFrame/SetDraggable">DFrame/SetDraggable</a></li>
+<li><a href="/page/DFrame/SetIcon" title="DFrame/SetIcon">DFrame/SetIcon</a></li>
+<li><a href="/page/DFrame/SetIsMenu" title="DFrame/SetIsMenu">DFrame/SetIsMenu</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DFrame/SetMinHeight" title="DFrame/SetMinHeight">DFrame/SetMinHeight</a></li>
+<li><a href="/page/DFrame/SetMinWidth" title="DFrame/SetMinWidth">DFrame/SetMinWidth</a></li>
+<li><a href="/page/DFrame/SetPaintShadow" title="DFrame/SetPaintShadow">DFrame/SetPaintShadow</a></li>
+<li><a href="/page/DFrame/SetScreenLock" title="DFrame/SetScreenLock">DFrame/SetScreenLock</a></li>
+<li><a href="/page/DFrame/SetSizable" title="DFrame/SetSizable">DFrame/SetSizable</a></li>
+<li><a href="/page/DFrame/SetTitle" title="DFrame/SetTitle">DFrame/SetTitle</a></li>
+<li><a href="/page/DFrame/ShowCloseButton" title="DFrame/ShowCloseButton">DFrame/ShowCloseButton</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates an SpawnIcon with model <tt>"models/props_borealis/bluebarrel001.mdl"</tt> and IconEditor to modify it.
+</p>
+<pre><code data-language="lua">local frame = vgui.Create( &quot;DFrame&quot; ) -- Container for the SpawnIcon
+frame:SetPos( 200, 200 )
+frame:SetSize( 200, 200 )
+frame:SetTitle( &quot;Icon Editor Example&quot; )
+frame:MakePopup()
+
+local icon = vgui.Create( &quot;SpawnIcon&quot; , frame ) -- SpawnIcon, with blue barrel model
+icon:Center()
+-- It is important below to include the SkinID (0 = default skin); the IconEditor will not work otherwise
+icon:SetModel( &quot;models/props_borealis/bluebarrel001.mdl&quot;, 0 )
+
+local editor = vgui.Create( &quot;IconEditor&quot; ) -- Create IconEditor
+editor:SetIcon( icon ) -- Set the SpawnIcon to modify
+editor:Refresh() -- Sets up the internal DAdjustableModelPanel and SpawnIcon
+editor:MakePopup()
+editor:Center()</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">A <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a> containing a <a href="/page/Category_colon_SpawnIcon" title="Category:SpawnIcon">SpawnIcon</a>, and a window identical to that in the <a href="#Preview">preview</a> above.</div>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "IconEditor"</h2>
+<p>The following 12 pages are in this category, out of 12 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>I</h3>
+<ul><li><a href="/page/IconEditor/AboveLayout" title="IconEditor/AboveLayout">IconEditor/AboveLayout</a></li>
+<li><a href="/page/IconEditor/BestGuessLayout" title="IconEditor/BestGuessLayout">IconEditor/BestGuessLayout</a></li>
+<li><a href="/page/IconEditor/FillAnimations" title="IconEditor/FillAnimations">IconEditor/FillAnimations</a></li>
+<li><a href="/page/IconEditor/FullFrontalLayout" title="IconEditor/FullFrontalLayout">IconEditor/FullFrontalLayout</a></li></ul></td>
+<td><h3>I cont.</h3>
+<ul><li><a href="/page/IconEditor/OriginLayout" title="IconEditor/OriginLayout">IconEditor/OriginLayout</a></li>
+<li><a href="/page/IconEditor/Refresh" title="IconEditor/Refresh">IconEditor/Refresh</a></li>
+<li><a href="/page/IconEditor/RenderIcon" title="IconEditor/RenderIcon">IconEditor/RenderIcon</a></li>
+<li><a href="/page/IconEditor/RightLayout" title="IconEditor/RightLayout">IconEditor/RightLayout</a></li></ul></td>
+<td><h3>I cont.</h3>
+<ul><li><a href="/page/IconEditor/SetDefaultLighting" title="IconEditor/SetDefaultLighting">IconEditor/SetDefaultLighting</a></li>
+<li><a href="/page/IconEditor/SetFromEntity" title="IconEditor/SetFromEntity">IconEditor/SetFromEntity</a></li>
+<li><a href="/page/IconEditor/SetIcon" title="IconEditor/SetIcon">IconEditor/SetIcon</a></li>
+<li><a href="/page/IconEditor/UpdateEntity" title="IconEditor/UpdateEntity">IconEditor/UpdateEntity</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

@@ -1,0 +1,69 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_URLLabel" title="Category:URLLabel">URLLabel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DLabelURL">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DLabelURL" title="Special:WhatLinksHere/Category:DLabelURL">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-1"><a href="#Methods"><span class="tocnumber">4</span> <span class="toctext">Methods</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>Underlined link label without a DoClick function. When a valid URL is set and the label is clicked, it will open a browser window and navigate to the address.
+</p><p>This panel uses <a href="/page/Category_colon_gui" title="Category:gui">gui</a>.<a href="/page/gui/OpenURL" title="gui/OpenURL">OpenURL</a> internally and its restrictions apply.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_URLLabel" title="Category:URLLabel">URLLabel</a> and its parents up to 3 levels deep:
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a DLabelURL that opens the wiki when clicked.
+</p>
+<pre><code data-language="lua">local frame = vgui.Create( &quot;DFrame&quot; )
+frame:SetSize(400,400)
+frame:SetTitle(&quot;Test panel&quot;)
+frame:Center()
+frame:MakePopup()
+
+local lbl = vgui.Create( &quot;DLabelURL&quot;, frame )
+lbl:SetPos(50, 50)
+lbl:SetSize(100, 50)
+lbl:SetColor(Color(255,255,255,255)) 
+lbl:SetText(&quot;I Love Gmod&quot;) 
+lbl:SetURL(&quot;http://steamcommunity.com/groups/glua&quot;)</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:dlabelurl.png" class="image"><img alt="dlabelurl.png" src="/images/b/b8/dlabelurl.png" width="407" height="147" /></a></div>
+<h1> <span class="mw-headline" id="Methods"> Methods </span></h1>
+<ul><li> <a href="/page/Special:FormEdit/PanelFunc/DLabelURL/GetAutoStretchVertical" class=" new" title="">GetAutoStretchVertical</a>
+</li><li> <a href="/page/Special:FormEdit/PanelFunc/DLabelURL/SetAutoStretchVertical" class=" new" title="">SetAutoStretchVertical</a>
+</li><li> <a href="/page/Special:FormEdit/PanelFunc/DLabelURL/UpdateColours" class=" new" title="">UpdateColours</a>
+</li></ul>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DLabelURL"</h2>
+<p>The following 7 pages are in this category, out of 7 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DLabelURL/GetColor" title="DLabelURL/GetColor">DLabelURL/GetColor</a></li>
+<li><a href="/page/DLabelURL/GetTextColor" title="DLabelURL/GetTextColor">DLabelURL/GetTextColor</a></li>
+<li><a href="/page/DLabelURL/GetTextStyleColor" title="DLabelURL/GetTextStyleColor">DLabelURL/GetTextStyleColor</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DLabelURL/SetColor" title="DLabelURL/SetColor">DLabelURL/SetColor</a></li>
+<li><a href="/page/DLabelURL/SetTextColor" title="DLabelURL/SetTextColor">DLabelURL/SetTextColor</a></li>
+<li><a href="/page/DLabelURL/SetTextStyleColor" title="DLabelURL/SetTextStyleColor">DLabelURL/SetTextStyleColor</a></li></ul></td>
+<td><h3>P</h3>
+<ul><li><a href="/page/Panel/SetURL" title="Panel/SetURL">Panel/SetURL</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

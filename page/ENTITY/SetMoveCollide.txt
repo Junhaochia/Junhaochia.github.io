@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetMoveCollide( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetMoveCollide">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetMoveCollide" title="Special:WhatLinksHere/Entity/SetMoveCollide">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the move collide type of the entity. The move collide is the way a physics object reacts to hitting an object - will it bounce, slide?
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> moveCollideType</span>
+</p>
+<div style="margin-left: 32px;">
+The move collide type, see <a href="/page/Enums/MOVECOLLIDE" title="Enums/MOVECOLLIDE">MOVECOLLIDE_ Enums</a></div>
+</div>
+
+

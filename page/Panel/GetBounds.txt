@@ -1,0 +1,45 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;GetBounds( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.GetBounds">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/GetBounds" title="Special:WhatLinksHere/Panel/GetBounds">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">2</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_2"><span class="tocnumber">3</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_3"><span class="tocnumber">4</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_4"><span class="tocnumber">5</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the position and size of the panel.
+</p><p>This is equivalent to calling <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/GetPos" title="Panel/GetPos">GetPos</a> and <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/GetSize" title="Panel/GetSize">GetSize</a> together.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The x coordinate of the panel, relative to its parent's top left.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_2">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The y coordinate of the panel, relative to its parent's top left.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_3">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The width of the panel.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_4">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The height of the panel.</div>
+</div>
+
+

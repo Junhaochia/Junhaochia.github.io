@@ -1,0 +1,8 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Vehicle&#58;ReleaseHandbrake( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Vehicle.ReleaseHandbrake">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Vehicle/ReleaseHandbrake" title="Special:WhatLinksHere/Vehicle/ReleaseHandbrake">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Releases the vehicle's handbrake (Jeep) so it can roll without any passengers.
+</p><p>This will be overwritten if the vehicle has a driver. Same as <a href="/page/Category_colon_Vehicle" title="Category:Vehicle">Vehicle</a>:<a href="/page/Vehicle/SetHandbrake" title="Vehicle/SetHandbrake">SetHandbrake</a>( false )
+</p>
+
+

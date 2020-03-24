@@ -1,0 +1,52 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>util.GetPData( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=util.GetPData">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/util.lua#L319">View Source</a> - <a href="/page/Special:WhatLinksHere/util/GetPData" title="Special:WhatLinksHere/util/GetPData">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">5</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Gets PData of an offline player using their SteamID
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This function internally uses <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/UniqueID" title="Player/UniqueID">UniqueID</a>, which can cause collisions (two or more players sharing the same PData entry). It's recommended that you don't use it. See the related wiki page for more information.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> steamID</span>
+</p>
+<div style="margin-left: 32px;">
+SteamID of the player</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+Variable name to get the value of</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> default</span>
+</p>
+<div style="margin-left: 32px;">
+The default value, in case there's nothing stored</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a></span>
+</p>
+<div style="margin-left: 32px;">
+The stored value</div>
+</div>
+
+

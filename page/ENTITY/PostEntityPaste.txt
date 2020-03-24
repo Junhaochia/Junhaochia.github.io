@@ -1,0 +1,64 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>ENTITY:PostEntityPaste( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ENTITY.PostEntityPaste">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ENTITY/PostEntityPaste" title="Special:WhatLinksHere/ENTITY/PostEntityPaste">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called after the <a href="/page/Category_colon_duplicator" title="Category:duplicator">duplicator library</a> pastes the entity, after the bone/entity modifiers have been applied to the entity.
+</p><p>This hook is called after <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/OnDuplicated" title="ENTITY/OnDuplicated">OnDuplicated</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The player who pasted the entity.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This may not be a valid player in some circumstances. For example, when a save is loaded from the main menu, this hook will be called before the player is spawned. This argument will be a NULL entity in that case.
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This will be nil for invalid players.
+</p><p><b>Pull Request: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/pull/1408">#1408</a></b>
+</p>
+</td></tr></table></div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ent</span>
+</p>
+<div style="margin-left: 32px;">
+The entity itself. Same as 'self'.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> createdEntities</span>
+</p>
+<div style="margin-left: 32px;">
+<p>All entities that are within the placed dupe.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>The keys of each value in this table are the original entity indexes when the duplication was created. This can be utilized to restore entity references that don't get saved in duplications.
+</p>
+</td></tr></table></div>
+</div>
+
+

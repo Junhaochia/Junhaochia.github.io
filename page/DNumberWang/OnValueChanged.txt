@@ -1,0 +1,81 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DNumberWang&#58;OnValueChanged( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DNumberWang.OnValueChanged">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DNumberWang/OnValueChanged" title="Special:WhatLinksHere/DNumberWang/OnValueChanged">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelHook"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelHook</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelHook">Description<span style="display: none;"><a href="/page/Form:PanelHook" title="Form:PanelHook">PanelHook</a></span></span></h1>
+<p>Internal function which is called when the number selector value is changed. This function is empty by default so it needs to be overridden in order to provide functionality.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> val</span>
+</p>
+<div style="margin-left: 32px;">
+The new value of the number selector.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a panel with two number selectors that play a male question sound byte and a female answer sound byte based on the new value of each number selector.
+</p>
+<pre><code data-language="lua">-- Background panel
+BGPanel = vgui.Create(&quot;DPanel&quot;)
+BGPanel:SetPos(20, 20)
+BGPanel:SetSize(100, 55)
+
+-- Statement label
+local lbl1 = vgui.Create(&quot;DLabel&quot;, BGPanel)
+lbl1:SetPos(5, 5)
+lbl1:SetSize(100, 20)
+lbl1:SetText(&quot;Statement: &quot;)
+lbl1:SetColor(Color(64, 64, 255))
+
+-- Response label
+local lbl2 = vgui.Create(&quot;DLabel&quot;, BGPanel)
+lbl2:SetPos(5, 30)
+lbl2:SetSize(100, 20)
+lbl2:SetText(&quot;Response: &quot;)
+lbl2:SetColor(Color(255, 0, 255))
+
+-- Number selector for &quot;questions&quot;
+local question = vgui.Create(&quot;DNumberWang&quot;, BGPanel)
+question:SetPos(65, 5)
+question:SetSize(30, 20)
+question:SetMinMax(1, 30)
+
+-- Number selector for answers
+local answer = vgui.Create(&quot;DNumberWang&quot;, BGPanel)
+answer:SetPos(65, 30)
+answer:SetSize(30, 20)
+answer:SetMinMax(1, 40)
+
+-- This is used to prevent overlapping talking
+local null = Sound(&quot;common/null.wav&quot;)
+
+-- Abstraction = cleaner code
+function TalkSound(snd)
+	EmitSound(snd, LocalPlayer():GetPos(), LocalPlayer():EntIndex(), CHAN_VOICE, 1, 80, 0, 100)
+end
+
+-- Play a statement based on new number
+function question:OnValueChanged(val)
+	TalkSound(null)
+	TalkSound(Sound(&quot;vo/npc/male01/question&quot;..string.format(&quot;%02d&quot;, val)..&quot;.wav&quot;))
+end
+
+-- Play an answer based on new number
+function answer:OnValueChanged(val)
+	TalkSound(null)
+	TalkSound(Sound(&quot;vo/npc/female01/answer&quot;..string.format(&quot;%02d&quot;, val)..&quot;.wav&quot;))
+end</code></pre>
+<p><br />
+</p>
+
+

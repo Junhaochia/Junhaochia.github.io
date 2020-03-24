@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>PANEL:OnChildAdded( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PANEL.OnChildAdded">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PANEL/OnChildAdded" title="Special:WhatLinksHere/PANEL/OnChildAdded">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called whenever a child was parented to the panel.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This is called before the panel's metatable is set.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/2759">#2759</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> child</span>
+</p>
+<div style="margin-left: 32px;">
+The child which was added.</div>
+</div>
+
+

@@ -1,0 +1,60 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetCollisionGroup( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetCollisionGroup">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetCollisionGroup" title="Special:WhatLinksHere/Entity/SetCollisionGroup">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the entity's collision group.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> group</span>
+</p>
+<div style="margin-left: 32px;">
+Collision group of the entity, see <a href="/page/Enums/COLLISION_GROUP" title="Enums/COLLISION GROUP">COLLISION_GROUP_ Enums</a></div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Showcase function that produces reliable player-player nocollision for targets.
+First argument is any player entity, second is an optional number for min time.
+After min time elapsed, no-collision will turn off once we are not penetrating any players.
+</p><p>Contains no fail-saves or checks.
+</p>
+<pre><code data-language="lua">function ActivateNoCollision(target, min)
+
+	local oldCollision = target:GetCollisionGroup() or COLLISION_GROUP_PLAYER
+	target:SetCollisionGroup(COLLISION_GROUP_PASSABLE_DOOR) -- Players can walk through target
+
+	if (min and (tonumber(min) &gt; 0)) then 
+
+		timer.Simple(min, function() --after 'min' seconds
+			timer.Create(target:SteamID64()..&quot;_checkBounds_cycle&quot;, 0.5, 0, function() -- check every half second
+				local penetrating = ( self:GetPhysicsObject() and self:GetPhysicsObject():IsPenetrating() ) or false --if we are penetrating an object
+				local tooNearPlayer = false --or inside a player's hitbox
+				for _, ply in pairs(player.GetAll()) do
+					if target:GetPos():DistToSqr(ply:GetPos()) &lt;= (80*80) then
+						tooNearPlayer = true
+					end
+				end
+				if not (penetrating and tooNearPlayer) then --if both false then 
+					target:SetCollisionGroup(oldCollision) -- Stop no-colliding by returning the original collision group (or default player collision)
+					timer.Destroy(target:SteamID64()..&quot;_checkBounds_cycle&quot;)
+				end
+			end)
+		end)
+	end
+end
+ActivateNoCollision(Entity( 1 ), 10)</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">You can walk through the player for 10 seconds</div>
+
+

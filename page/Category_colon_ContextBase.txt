@@ -1,0 +1,30 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ContextBase">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:ContextBase" title="Special:WhatLinksHere/Category:ContextBase">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>A base for all context menu panels ( The ones used for tool options in sandbox )
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "ContextBase"</h2>
+<p>The following 4 pages are in this category, out of 4 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>C</h3>
+<ul><li><a href="/page/ContextBase/ControlValues" title="ContextBase/ControlValues">ContextBase/ControlValues</a></li><li><a href="/page/ContextBase/ConVar" title="ContextBase/ConVar">ContextBase/ConVar</a></li><li><a href="/page/ContextBase/SetConVar" title="ContextBase/SetConVar">ContextBase/SetConVar</a></li><li><a href="/page/ContextBase/TestForChanges" title="ContextBase/TestForChanges">ContextBase/TestForChanges</a></li></ul></div>
+</div></div>

@@ -1,0 +1,76 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;AlphaTo( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.AlphaTo">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/AlphaTo" title="Special:WhatLinksHere/Panel/AlphaTo">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">6</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Uses animation to transition the current alpha value of a panel to a new alpha, over a set period of time and after a specified delay.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> alpha</span>
+</p>
+<div style="margin-left: 32px;">
+The alpha value (0-255) to approach.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> duration</span>
+</p>
+<div style="margin-left: 32px;">
+The time in seconds it should take to reach the alpha.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> delay=0</span>
+</p>
+<div style="margin-left: 32px;">
+The delay before the animation starts.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> callback</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The function to be called once the animation finishes. Arguments are:
+</p>
+<ul><li> <a href="/page/Category_colon_table" title="Category:table">table</a> animData - The <a href="/page/Structures/AnimationData" title="Structures/AnimationData">AnimationData structure</a> that was used.
+</li><li> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> pnl - The panel object whose alpha was changed.</div>
+</li></ul>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Make the derma frame fading out in 1 second.
+</p>
+<pre><code data-language="lua">local DermaPanel = vgui.Create( &quot;DFrame&quot; )
+DermaPanel:SetPos( 100, 100 )
+DermaPanel:SetSize( 300, 110 )
+DermaPanel:SetTitle( &quot;My derma frame&quot; )
+DermaPanel:SetDraggable( true )
+DermaPanel:MakePopup()
+
+local DermaButton = vgui.Create( &quot;DButton&quot;, DermaPanel )
+DermaButton:SetText( &quot;Fade out&quot; )
+DermaButton:SetPos( 25, 40 )
+DermaButton:SetSize( 250, 50 )
+DermaButton.DoClick = function(self)
+	DermaPanel:AlphaTo( 0, 1, 0, function() 	
+		DermaPanel:Remove() -- Remove the DFrame when the animation is over
+	end )
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:AlphaTo_Fade_Out.gif" class="image"><img alt="AlphaTo Fade Out.gif" src="/images/5/51/AlphaTo_Fade_Out.gif" width="400" height="200" /></a></div>
+
+

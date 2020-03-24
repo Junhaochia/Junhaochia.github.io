@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetWorldClicker( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetWorldClicker">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetWorldClicker" title="Special:WhatLinksHere/Panel/SetWorldClicker">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>This makes it so that when you're hovering over this panel you can `click` on the world. Your viewmodel will aim etc. This is primarily used for the Sandbox context menu.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This function doesn't scale with custom FOV specified by <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/CalcView" title="GM/CalcView">CalcView</a> or <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/TranslateFOV" title="WEAPON/TranslateFOV">TranslateFOV</a>.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3467">#3467</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> enabled</span>
+</p>
+</div>
+
+

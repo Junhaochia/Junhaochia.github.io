@@ -1,0 +1,108 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>draw.SimpleTextOutlined( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=draw.SimpleTextOutlined">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/modules/draw.lua#L96-L114">View Source</a> - <a href="/page/Special:WhatLinksHere/draw/SimpleTextOutlined" title="Special:WhatLinksHere/draw/SimpleTextOutlined">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_6"><span class="tocnumber">7</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_7"><span class="tocnumber">8</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_8"><span class="tocnumber">9</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_9"><span class="tocnumber">10</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">11</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_2"><span class="tocnumber">12</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Creates a simple line of text that is outlined.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is a rendering function that requires a 2D rendering context.<br />This means that it will only work in <a href="/page/Category_colon_2D_Rendering_Hooks" title="Category:2D Rendering Hooks">hooks with a 2D rendering context</a>.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> Text</span>
+</p>
+<div style="margin-left: 32px;">
+The text to draw.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> font="DermaDefault"</span>
+</p>
+<div style="margin-left: 32px;">
+The font name to draw with. See <a href="/page/Category_colon_surface" title="Category:surface">surface</a>.<a href="/page/surface/CreateFont" title="surface/CreateFont">CreateFont</a> to create your own, or <a href="/page/Default_Fonts" title="Default Fonts">here</a> for a list of default fonts.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> x=0</span>
+</p>
+<div style="margin-left: 32px;">
+The X Coordinate.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> y=0</span>
+</p>
+<div style="margin-left: 32px;">
+The Y Coordinate.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> color=Color( 255, 255, 255, 255 )</span>
+</p>
+<div style="margin-left: 32px;">
+The color of the text. Uses the <a href="/page/Structures/Color" title="Structures/Color">Color structure</a>.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_6">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> xAlign=TEXT_ALIGN_LEFT</span>
+</p>
+<div style="margin-left: 32px;">
+The alignment of the X Coordinate using <a href="/page/Enums/TEXT_ALIGN" title="Enums/TEXT ALIGN">TEXT_ALIGN_ Enums</a>.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_7">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> yAlign=TEXT_ALIGN_TOP</span>
+</p>
+<div style="margin-left: 32px;">
+The alignment of the Y Coordinate using <a href="/page/Enums/TEXT_ALIGN" title="Enums/TEXT ALIGN">TEXT_ALIGN_ Enums</a>.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_8">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> outlinewidth</span>
+</p>
+<div style="margin-left: 32px;">
+Width of the outline.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_9">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> outlinecolor=Color( 255, 255, 255, 255 )</span>
+</p>
+<div style="margin-left: 32px;">
+Color of the outline. Uses the <a href="/page/Structures/Color" title="Structures/Color">Color structure</a>.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The width of the text. Same value as if you were calling <a href="/page/Category_colon_surface" title="Category:surface">surface</a>.<a href="/page/surface/GetTextSize" title="surface/GetTextSize">GetTextSize</a>.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_2">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The height of the text. Same value as if you were calling <a href="/page/Category_colon_surface" title="Category:surface">surface</a>.<a href="/page/surface/GetTextSize" title="surface/GetTextSize">GetTextSize</a>.</div>
+</div>
+
+

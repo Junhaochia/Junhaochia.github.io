@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DCollapsibleCategory&#58;SetExpanded( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DCollapsibleCategory.SetExpanded">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DCollapsibleCategory/SetExpanded" title="Special:WhatLinksHere/DCollapsibleCategory/SetExpanded">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sets whether the <a href="/page/Category_colon_DCollapsibleCategory" title="Category:DCollapsibleCategory">DCollapsibleCategory</a> is expanded or not upon opening the container.
+</p><p>You should use <a href="/page/Category_colon_DCollapsibleCategory" title="Category:DCollapsibleCategory">DCollapsibleCategory</a>:<a href="/page/DCollapsibleCategory/Toggle" title="DCollapsibleCategory/Toggle">Toggle</a> or <a href="/page/Category_colon_DCollapsibleCategory" title="Category:DCollapsibleCategory">DCollapsibleCategory</a>:<a href="/page/DCollapsibleCategory/DoExpansion" title="DCollapsibleCategory/DoExpansion">DoExpansion</a> instead.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> expanded=true</span>
+</p>
+<div style="margin-left: 32px;">
+Whether it shall be expanded or not by default</div>
+</div>
+
+

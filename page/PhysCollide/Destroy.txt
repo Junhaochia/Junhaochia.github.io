@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>PhysCollide&#58;Destroy( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PhysCollide.Destroy">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PhysCollide/Destroy" title="Special:WhatLinksHere/PhysCollide/Destroy">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Destroys the <a href="/page/Category_colon_PhysCollide" title="Category:PhysCollide">PhysCollide</a> object.
+</p>
+
+

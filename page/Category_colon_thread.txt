@@ -1,0 +1,7 @@
+<p>Threads in Lua are returned by the <a href="/page/Category_colon_coroutine" title="Category:coroutine">coroutine</a>.<a href="/page/coroutine/create" title="coroutine/create">create</a> function. They have no properties or member functions, and are used by the <a href="/page/Category_colon_coroutine" title="Category:coroutine">coroutine</a>.<a href="/page/coroutine/resume" title="coroutine/resume">resume</a> function.
+</p><p>Be aware that coroutines are not multi-threading in the traditional sense. Coroutines are not run in parallel. See <a rel="nofollow" class="external text" href="http://lua-users.org/wiki/CoroutinesTutorial">here</a> for more information on Lua coroutines.
+</p>
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

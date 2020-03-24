@@ -1,0 +1,67 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/VehicleParams" title="Special:WhatLinksHere/Structures/VehicleParams">What links here?</a></div>The structure used by <a href="/page/Category_colon_Vehicle" title="Category:Vehicle">Vehicle</a>:<a href="/page/Vehicle/SetVehicleParams" title="Vehicle/SetVehicleParams">SetVehicleParams</a> and <a href="/page/Category_colon_Vehicle" title="Category:Vehicle">Vehicle</a>:<a href="/page/Vehicle/GetVehicleParams" title="Vehicle/GetVehicleParams">GetVehicleParams</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheelsPerAxle
+</td>
+<td>
+<p>Wheels per axle
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> axleCount
+</td>
+<td>
+<p>Number of axles
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> axles
+</td>
+<td>
+<p>A table of <a href="/page/Structures/VehicleParamsAxle" title="Structures/VehicleParamsAxle">VehicleParamsAxle structure</a> tables.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> body
+</td>
+<td>
+<p>See <a href="/page/Structures/VehicleParamsBody" title="Structures/VehicleParamsBody">VehicleParamsBody structure</a>
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> engine
+</td>
+<td>
+<p>See <a href="/page/Structures/VehicleParamsEngine" title="Structures/VehicleParamsEngine">VehicleParamsEngine structure</a>
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> steering
+</td>
+<td>
+<p>See <a href="/page/Structures/VehicleParamsSteering" title="Structures/VehicleParamsSteering">VehicleParamsSteering structure</a>
+</p>
+</td></tr></table>
+
+

@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DButton&#58;SetDrawBorder( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DButton.SetDrawBorder">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DButton/SetDrawBorder" title="Special:WhatLinksHere/DButton/SetDrawBorder">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.</div>
+<p>Does absolutely nothing at all. Default value is automatically set to true.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> draw</span>
+</p>
+<div style="margin-left: 32px;">
+Does nothing.</div>
+</div>
+
+

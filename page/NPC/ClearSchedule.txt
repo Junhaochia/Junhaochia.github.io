@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;ClearSchedule( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.ClearSchedule">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/ClearSchedule" title="Special:WhatLinksHere/NPC/ClearSchedule">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Stops the current schedule that the NPC is doing.
+</p>
+
+

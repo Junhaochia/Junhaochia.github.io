@@ -1,0 +1,25 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetAttachment( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetAttachment">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetAttachment" title="Special:WhatLinksHere/Entity/SetAttachment">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />You should be using <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetParent" title="Entity/SetParent">SetParent</a> instead.</div>
+<p>Parents the sprite to an attachment on another model.
+</p><p>Works only on env_sprite.
+</p><p>Despite existing on client, it doesn't actually do anything on client.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ent</span>
+</p>
+<div style="margin-left: 32px;">
+The entity to attach/parent to</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> attachment</span>
+</p>
+<div style="margin-left: 32px;">
+The attachment ID to parent to</div>
+</div>
+
+

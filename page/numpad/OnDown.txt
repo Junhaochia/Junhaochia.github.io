@@ -1,0 +1,53 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>numpad.OnDown( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=numpad.OnDown">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/numpad/OnDown" title="Special:WhatLinksHere/numpad/OnDown">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">6</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Calls a function registered with <a href="/page/Category_colon_numpad" title="Category:numpad">numpad</a>.<a href="/page/numpad/Register" title="numpad/Register">Register</a> when a player presses specified key.
+</p><p>See for key released action: <a href="/page/Category_colon_numpad" title="Category:numpad">numpad</a>.<a href="/page/numpad/OnUp" title="numpad/OnUp">OnUp</a>
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply</span>
+</p>
+<div style="margin-left: 32px;">
+The player whose numpad should be watched</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> key</span>
+</p>
+<div style="margin-left: 32px;">
+The key, corresponding to <a href="/page/Enums/KEY" title="Enums/KEY">KEY_ Enums</a></div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+The name of the function to run, corresponding with the one used in <a href="/page/Category_colon_numpad" title="Category:numpad">numpad</a>.<a href="/page/numpad/Register" title="numpad/Register">Register</a></div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_vararg" title="Category:vararg">vararg</a> ...</span>
+</p>
+<div style="margin-left: 32px;">
+Arguments to pass to the function passed to <a href="/page/Category_colon_numpad" title="Category:numpad">numpad</a>.<a href="/page/numpad/Register" title="numpad/Register">Register</a>.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The impulse ID</div>
+</div>
+
+

@@ -1,0 +1,38 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>CLuaParticle&#58;SetThinkFunction( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CLuaParticle.SetThinkFunction">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CLuaParticle/SetThinkFunction" title="Special:WhatLinksHere/CLuaParticle/SetThinkFunction">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the think function of the particle.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> thinkFunc</span>
+</p>
+<div style="margin-left: 32px;">
+<p>Think function. It has only one argument:<br />
+</p>
+<a href="/page/Category_colon_CLuaParticle" title="Category:CLuaParticle">CLuaParticle</a> particle - The particle the think hook is set on</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Example on how to use a think function, randomizes the colors of a particle
+</p>
+<pre><code data-language="lua">p:SetNextThink( 1e99 ) -- Makes sure the think hook is used on all particles of the particle emitter
+p:SetThinkFunction( function( pa )
+	pa:SetColor( math.random( 0, 255 ), math.random( 0, 255 ), math.random( 0, 255 ) ) -- Randomize it
+	pa:SetNextThink( 1e99 ) -- Makes sure the think hook is actually ran.
+end )</code></pre>
+<p><br />
+</p>
+
+

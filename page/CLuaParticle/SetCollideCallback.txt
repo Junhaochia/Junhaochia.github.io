@@ -1,0 +1,38 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>CLuaParticle&#58;SetCollideCallback( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CLuaParticle.SetCollideCallback">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CLuaParticle/SetCollideCallback" title="Special:WhatLinksHere/CLuaParticle/SetCollideCallback">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the function that gets called whenever the particle collides with the world.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> collideFunc</span>
+</p>
+<div style="margin-left: 32px;">
+<p>Collide callback, the arguments are:<br /><br />
+</p>
+<a href="/page/Category_colon_CLuaParticle" title="Category:CLuaParticle">CLuaParticle</a> particle - The particle itself<br /><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> hitPos - Position of the collision<br /><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> hitNormal - Direction of the collision, perpendicular to the hit surface</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates an explosion every time an particle collides with something.
+</p>
+<pre><code data-language="lua">MyParticle:SetCollideCallback( function( part, hitpos, hitnormal ) --This is an in-line function
+    local efdata = EffectData() --Grab base EffectData table
+    efdata:SetOrigin( hitpos ) --Sets the origin of it to the hitpos of the particle
+    util.Effect( &quot;Explosion&quot;, efdata ) --Create the effect
+end )</code></pre>
+<p><br />
+</p>
+
+

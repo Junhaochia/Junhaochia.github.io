@@ -1,0 +1,360 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/TYPE" title="Special:WhatLinksHere/Enums/TYPE">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_net" title="Category:net">net</a>.<a href="/page/net/ReadType" title="net/ReadType">ReadType</a> and returned by <a href="/page/Global/TypeID" title="Global/TypeID">TypeID</a><br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> TYPE_NONE
+</td>
+<td> -1
+</td>
+<td> Invalid type
+</td></tr>
+<tr>
+<td> TYPE_INVALID
+</td>
+<td> -1
+</td>
+<td> <div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />Use TYPE_NONE</div>
+</td></tr>
+<tr>
+<td> TYPE_NIL
+</td>
+<td> 0
+</td>
+<td> <a href="/page/Category_colon_nil" title="Category:nil">nil</a>
+</td></tr>
+<tr>
+<td> TYPE_BOOL
+</td>
+<td> 1
+</td>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td></tr>
+<tr>
+<td> TYPE_LIGHTUSERDATA
+</td>
+<td> 2
+</td>
+<td> <a href="/page/Category_colon_light_userdata" title="Category:light userdata">light userdata</a>
+</td></tr>
+<tr>
+<td> TYPE_NUMBER
+</td>
+<td> 3
+</td>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td></tr>
+<tr>
+<td> TYPE_STRING
+</td>
+<td> 4
+</td>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td></tr>
+<tr>
+<td> TYPE_TABLE
+</td>
+<td> 5
+</td>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td></tr>
+<tr>
+<td> TYPE_FUNCTION
+</td>
+<td> 6
+</td>
+<td> <a href="/page/Category_colon_function" title="Category:function">function</a>
+</td></tr>
+<tr>
+<td> TYPE_USERDATA
+</td>
+<td> 7
+</td>
+<td> <a href="/page/Category_colon_userdata" title="Category:userdata">userdata</a>
+</td></tr>
+<tr>
+<td> TYPE_THREAD
+</td>
+<td> 8
+</td>
+<td> <a href="/page/Category_colon_thread" title="Category:thread">thread</a>
+</td></tr>
+<tr>
+<td> TYPE_ENTITY
+</td>
+<td> 9
+</td>
+<td> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> and entity sub-classes including <a href="/page/Category_colon_Player" title="Category:Player">Player</a>, <a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a>, <a href="/page/Category_colon_NPC" title="Category:NPC">NPC</a>, <a href="/page/Category_colon_Vehicle" title="Category:Vehicle">Vehicle</a>, <a href="/page/Category_colon_CSEnt" title="Category:CSEnt">CSEnt</a>, and <a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBot</a>
+</td></tr>
+<tr>
+<td> TYPE_VECTOR
+</td>
+<td> 10
+</td>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td></tr>
+<tr>
+<td> TYPE_ANGLE
+</td>
+<td> 11
+</td>
+<td> <a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a>
+</td></tr>
+<tr>
+<td> TYPE_PHYSOBJ
+</td>
+<td> 12
+</td>
+<td> <a href="/page/Category_colon_PhysObj" title="Category:PhysObj">PhysObj</a>
+</td></tr>
+<tr>
+<td> TYPE_SAVE
+</td>
+<td> 13
+</td>
+<td> <a href="/page/Category_colon_ISave" title="Category:ISave">ISave</a>
+</td></tr>
+<tr>
+<td> TYPE_RESTORE
+</td>
+<td> 14
+</td>
+<td> <a href="/page/Category_colon_IRestore" title="Category:IRestore">IRestore</a>
+</td></tr>
+<tr>
+<td> TYPE_DAMAGEINFO
+</td>
+<td> 15
+</td>
+<td> <a href="/page/Category_colon_CTakeDamageInfo" title="Category:CTakeDamageInfo">CTakeDamageInfo</a>
+</td></tr>
+<tr>
+<td> TYPE_EFFECTDATA
+</td>
+<td> 16
+</td>
+<td> <a href="/page/Category_colon_CEffectData" title="Category:CEffectData">CEffectData</a>
+</td></tr>
+<tr>
+<td> TYPE_MOVEDATA
+</td>
+<td> 17
+</td>
+<td> <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>
+</td></tr>
+<tr>
+<td> TYPE_RECIPIENTFILTER
+</td>
+<td> 18
+</td>
+<td> <a href="/page/Category_colon_CRecipientFilter" title="Category:CRecipientFilter">CRecipientFilter</a>
+</td></tr>
+<tr>
+<td> TYPE_USERCMD
+</td>
+<td> 19
+</td>
+<td> <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>
+</td></tr>
+<tr>
+<td> TYPE_SCRIPTEDVEHICLE
+</td>
+<td> 20
+</td>
+<td> <div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />Leftover from GMod 13 Beta</div>
+</td></tr>
+<tr>
+<td> TYPE_MATERIAL
+</td>
+<td> 21
+</td>
+<td> <a href="/page/Category_colon_IMaterial" title="Category:IMaterial">IMaterial</a>
+</td></tr>
+<tr>
+<td> TYPE_PANEL
+</td>
+<td> 22
+</td>
+<td> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>
+</td></tr>
+<tr>
+<td> TYPE_PARTICLE
+</td>
+<td> 23
+</td>
+<td> <a href="/page/Category_colon_CLuaParticle" title="Category:CLuaParticle">CLuaParticle</a>
+</td></tr>
+<tr>
+<td> TYPE_PARTICLEEMITTER
+</td>
+<td> 24
+</td>
+<td> <a href="/page/Category_colon_CLuaEmitter" title="Category:CLuaEmitter">CLuaEmitter</a>
+</td></tr>
+<tr>
+<td> TYPE_TEXTURE
+</td>
+<td> 25
+</td>
+<td> <a href="/page/Category_colon_ITexture" title="Category:ITexture">ITexture</a>
+</td></tr>
+<tr>
+<td> TYPE_USERMSG
+</td>
+<td> 26
+</td>
+<td> <a href="/page/Category_colon_bf_read" title="Category:bf read">bf_read</a>
+</td></tr>
+<tr>
+<td> TYPE_CONVAR
+</td>
+<td> 27
+</td>
+<td> <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a>
+</td></tr>
+<tr>
+<td> TYPE_IMESH
+</td>
+<td> 28
+</td>
+<td> <a href="/page/Category_colon_IMesh" title="Category:IMesh">IMesh</a>
+</td></tr>
+<tr>
+<td> TYPE_MATRIX
+</td>
+<td> 29
+</td>
+<td> <a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>
+</td></tr>
+<tr>
+<td> TYPE_SOUND
+</td>
+<td> 30
+</td>
+<td> <a href="/page/Category_colon_CSoundPatch" title="Category:CSoundPatch">CSoundPatch</a>
+</td></tr>
+<tr>
+<td> TYPE_PIXELVISHANDLE
+</td>
+<td> 31
+</td>
+<td> <a href="/page/Category_colon_pixelvis_handle_t" title="Category:pixelvis handle t">pixelvis_handle_t</a>
+</td></tr>
+<tr>
+<td> TYPE_DLIGHT
+</td>
+<td> 32
+</td>
+<td> dlight_t. Metatable of a <a href="/page/Structures/DynamicLight" title="Structures/DynamicLight">DynamicLight structure</a>
+</td></tr>
+<tr>
+<td> TYPE_VIDEO
+</td>
+<td> 33
+</td>
+<td> <a href="/page/Category_colon_IVideoWriter" title="Category:IVideoWriter">IVideoWriter</a>
+</td></tr>
+<tr>
+<td> TYPE_FILE
+</td>
+<td> 34
+</td>
+<td> <a href="/page/Category_colon_File" title="Category:File">File</a>
+</td></tr>
+<tr>
+<td> TYPE_LOCOMOTION
+</td>
+<td> 35
+</td>
+<td> <a href="/page/Category_colon_CLuaLocomotion" title="Category:CLuaLocomotion">CLuaLocomotion</a>
+</td></tr>
+<tr>
+<td> TYPE_PATH
+</td>
+<td> 36
+</td>
+<td> <a href="/page/Category_colon_PathFollower" title="Category:PathFollower">PathFollower</a>
+</td></tr>
+<tr>
+<td> TYPE_NAVAREA
+</td>
+<td> 37
+</td>
+<td> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>
+</td></tr>
+<tr>
+<td> TYPE_SOUNDHANDLE
+</td>
+<td> 38
+</td>
+<td> <a href="/page/Category_colon_IGModAudioChannel" title="Category:IGModAudioChannel">IGModAudioChannel</a>
+</td></tr>
+<tr>
+<td> TYPE_NAVLADDER
+</td>
+<td> 39
+</td>
+<td> <a href="/page/Category_colon_CNavLadder" title="Category:CNavLadder">CNavLadder</a>
+</td></tr>
+<tr>
+<td> TYPE_PARTICLESYSTEM
+</td>
+<td> 40
+</td>
+<td> <a href="/page/Category_colon_CNewParticleEffect" title="Category:CNewParticleEffect">CNewParticleEffect</a>
+</td></tr>
+<tr>
+<td> TYPE_PROJECTEDTEXTURE
+</td>
+<td> 41
+</td>
+<td> <a href="/page/Category_colon_ProjectedTexture" title="Category:ProjectedTexture">ProjectedTexture</a>
+</td></tr>
+<tr>
+<td> TYPE_PHYSCOLLIDE
+</td>
+<td> 42
+</td>
+<td> <a href="/page/Category_colon_PhysCollide" title="Category:PhysCollide">PhysCollide</a>
+</td></tr>
+<tr>
+<td> TYPE_SURFACEINFO
+</td>
+<td> 43
+</td>
+<td> <a href="/page/Category_colon_SurfaceInfo" title="Category:SurfaceInfo">SurfaceInfo</a>
+</td></tr>
+<tr>
+<td> TYPE_COUNT
+</td>
+<td> 44
+</td>
+<td> Amount of TYPE_* enums
+</td></tr>
+<tr>
+<td> TYPE_COLOR
+</td>
+<td> 255
+</td>
+<td> Metatable of a <a href="/page/Structures/Color" title="Structures/Color">Color structure</a>.
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This doesn't actually represent a unique type returned by <a href="/page/Global/TypeID" title="Global/TypeID">TypeID</a>, but instead is a hack for networking colors with <a href="/page/Category_colon_net" title="Category:net">net</a>.<a href="/page/net/WriteType" title="net/WriteType">WriteType</a>.
+</p>
+</td></tr></table>
+</td></tr></table>
+
+

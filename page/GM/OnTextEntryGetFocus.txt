@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>GM:OnTextEntryGetFocus( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.OnTextEntryGetFocus">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/OnTextEntryGetFocus" title="Special:WhatLinksHere/GM/OnTextEntryGetFocus">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when a <a href="/page/Category_colon_DTextEntry" title="Category:DTextEntry">DTextEntry</a> gets focus.
+</p><p>This hook is run from <a href="/page/Category_colon_DTextEntry" title="Category:DTextEntry">DTextEntry</a>:<a href="/page/DTextEntry/OnGetFocus" title="DTextEntry/OnGetFocus">OnGetFocus</a> and <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/OnMousePressed" title="PANEL/OnMousePressed">OnMousePressed</a> of <a href="/page/Category_colon_DTextEntry" title="Category:DTextEntry">DTextEntry</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> panel</span>
+</p>
+<div style="margin-left: 32px;">
+The panel that got focus</div>
+</div>
+
+

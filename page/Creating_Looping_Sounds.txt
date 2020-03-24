@@ -1,0 +1,68 @@
+<p>When creating addons, you might need a sound file that is looping, but you are either too lazy to write a Lua hack to loop the sound, or you want to do it properly.
+</p><p>This tutorial will show you how do it properly, by altering the sound file.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Required_Software"><span class="tocnumber">1</span> <span class="toctext">Required Software</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Sound_file"><span class="tocnumber">2</span> <span class="toctext">Sound file</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Wavosaur"><span class="tocnumber">3</span> <span class="toctext">Wavosaur</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Simple_Looping"><span class="tocnumber">3.1</span> <span class="toctext">Simple Looping</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Previewing_Loops"><span class="tocnumber">3.2</span> <span class="toctext">Previewing Loops</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Looping_a_non-looping_sound"><span class="tocnumber">3.3</span> <span class="toctext">Looping a non-looping sound</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Advanced_Looping"><span class="tocnumber">3.4</span> <span class="toctext">Advanced Looping</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Saving"><span class="tocnumber">3.5</span> <span class="toctext">Saving</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Using_looping_sounds_in_Lua"><span class="tocnumber">4</span> <span class="toctext">Using looping sounds in Lua</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Required_Software">Required Software</span></h1>
+<p>You'll need software capable of adding looping points to audio files.
+</p><p>For the sake of this tutorial we will be using <a rel="nofollow" class="external text" href="http://www.wavosaur.com/">Wavosaur</a>, its portable, and most importantly, its free.
+</p><p><b>Audacity</b>, unfortunately, will not suffice.
+</p>
+<h1> <span class="mw-headline" id="Sound_file">Sound file</span></h1>
+<p>Not any sound can be made looping and still sound good. You'll always have to keep this in mind when searching for sounds.
+</p><p>This tutorial will only work on .wav sounds. Converting .mp3 to .wav is not so hard and can be done using Wavosaur, but be aware that it will inflate the filesize of your audio file.
+</p>
+<h1> <span class="mw-headline" id="Wavosaur">Wavosaur</span></h1>
+<p>Once you have downloaded Wavosaur, open it.
+</p><p>This is the screen you'll see:
+</p><p><a href="/page/File:Wavosaur.png" class="image"><img alt="Wavosaur.png" src="/images/6/69/Wavosaur.png" width="749" height="474" /></a>
+</p>
+<h2> <span class="mw-headline" id="Simple_Looping">Simple Looping</span></h2>
+<p>Now find your audio file and open it in Wavosaur, you can do it by drag'n'dropping the file onto the window.
+</p><p><a href="/page/File:Wavosaur_OpenFile.png" class="image"><img alt="Wavosaur OpenFile.png" src="/images/6/6e/Wavosaur_OpenFile.png" width="749" height="474" /></a>
+</p><p>If your sound file is initially meant to be looping, then all you have to do is press the "Create loop points" button.
+</p><p><a href="/page/File:Wavosaur_CreateLoop.png" class="image"><img alt="Wavosaur CreateLoop.png" src="/images/4/4d/Wavosaur_CreateLoop.png" width="117" height="56" /></a>
+</p><p>This will automatically place <b>Loop Start</b> point at the beginning of the audio file, and <b>Loop End</b> point at the end.
+</p><p>The end result will look like this:
+</p><p><a href="/page/File:Wavosaur_LoopedFile.png" class="image"><img alt="Wavosaur LoopedFile.png" src="/images/4/4a/Wavosaur_LoopedFile.png" width="749" height="474" /></a>
+</p>
+<h2> <span class="mw-headline" id="Previewing_Loops">Previewing Loops</span></h2>
+<p>To preview the loop from Wavosaur, you must make sure first, that sound playback is looped:
+</p><p><a href="/page/File:Wavosaur_LoopPlayback.png" class="image"><img alt="Wavosaur LoopPlayback.png" src="/images/1/1a/Wavosaur_LoopPlayback.png" width="221" height="56" /></a>
+</p><p>Then just hit play, and the whole sound file will play looped, regardless of whether you have loop points set or not.
+This will also work for a part of the sound.
+</p>
+<h2> <span class="mw-headline" id="Looping_a_non-looping_sound">Looping a non-looping sound</span></h2>
+<p>Now comes the hardest part. If your sound file is not meant to be looping i.e. it sounds bad ( clicks, noises, abrupt sound level changes ) when played over and over again, it'll be very hard to make the loop sound 'natural'. This is where you might need other software, such as Audacity ( or whichever you prefer ), to cut or modify the file to sound more or less 'natural' when playing in a loop.
+</p><p>This is what you can't do step-by-step, so you'll have to figure it out on your own. It is always easier for yourself to simply find already looping sounds, or at least sounds that are looped but without looping points.
+</p>
+<h2> <span class="mw-headline" id="Advanced_Looping">Advanced Looping</span></h2>
+<p>Not really 'advanced', but you can select a part of the sound file to be looped. An example of this would be the HL2 jeep sounds, which have only the last part of the sound looped.
+</p><p><a href="/page/File:Wavosaur_PartialLoop.png" class="image"><img alt="Wavosaur PartialLoop.png" src="/images/7/7f/Wavosaur_PartialLoop.png" width="532" height="218" /></a>
+</p><p>In this example the sound will play from the beginning, reaches <b>Loop End</b>, and then continues playing from <b>Loop Start</b> point. This is where the loop previews come in really handy.
+</p><p>To do this, simply select a part of the sound and press the "Create Loop Points" button. Make sure to preview the loop before saving!
+</p><p><a href="/page/File:Wavosaur_CreateLoop.png" class="image"><img alt="Wavosaur CreateLoop.png" src="/images/4/4d/Wavosaur_CreateLoop.png" width="117" height="56" /></a>
+</p>
+<h2> <span class="mw-headline" id="Saving">Saving</span></h2>
+<p>Once you are done looping, go to <b>File</b> &gt; <b>Save As...</b> and save your sound file as <b>.wav</b>.
+</p><p>Please note that resaving a looped file in other programs may erase your looping points. So make sure to add the looping points <b>the last</b>, after you have done all editing, if any were necessary.
+</p>
+<h1> <span class="mw-headline" id="Using_looping_sounds_in_Lua">Using looping sounds in Lua</span></h1>
+<p>The best function to handle looping sounds in Lua is <a href="/page/Global/CreateSound" title="Global/CreateSound">CreateSound</a>. It allows you to play and stop the sound on demand.
+</p>
+
+

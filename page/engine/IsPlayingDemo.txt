@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>engine.IsPlayingDemo( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=engine.IsPlayingDemo">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/engine/IsPlayingDemo" title="Special:WhatLinksHere/engine/IsPlayingDemo">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns true if we're currently playing a demo.
+</p><p>You will notice that there's no server-side version of this. That's because there is no server when playing a demo. Demos are both recorded and played back purely clientside.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether the game is currently playing a demo or not.</div>
+</div>
+
+

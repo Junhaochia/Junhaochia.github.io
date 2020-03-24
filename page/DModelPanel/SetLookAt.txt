@@ -1,0 +1,52 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DModelPanel&#58;SetLookAt( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DModelPanel.SetLookAt">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DModelPanel/SetLookAt" title="Special:WhatLinksHere/DModelPanel/SetLookAt">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelFunc"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelFunc</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Makes the panel's camera face the given position.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> pos</span>
+</p>
+<div style="margin-left: 32px;">
+The position to orient the camera toward.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a model panel focused on Colonel Odessa Cubbage's face.
+</p>
+<pre><code data-language="lua">BGPanel = vgui.Create(&quot;DPanel&quot;)
+BGPanel:SetPos(20, 20)
+BGPanel:SetSize(200, 200)		
+	
+local mdl = vgui.Create(&quot;DModelPanel&quot;, BGPanel)
+mdl:SetSize(BGPanel:GetSize())
+mdl:SetModel(&quot;models/player/odessa.mdl&quot;)
+
+function mdl:LayoutEntity( Entity ) return end	-- Disable cam rotation
+
+local headpos = mdl.Entity:GetBonePosition(mdl.Entity:LookupBone(&quot;ValveBiped.Bip01_Head1&quot;))
+mdl:SetLookAt(headpos)
+
+mdl:SetCamPos(headpos-Vector(-15, 0, 0))	-- Move cam in front of face
+
+--mdl.Entity:SetEyeTarget(headpos-Vector(-15, 0, 0))
+
+-- ^^ Makes Odessa look at the camera
+-- Commented out because the result is funnier without this</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><br /><br />
+<a href="/page/File:DModelPanel_SetLookAt_example1.jpg" class="image"><img alt="DModelPanel SetLookAt example1.jpg" src="/images/1/19/DModelPanel_SetLookAt_example1.jpg" width="200" height="200" /></a></div>
+
+

@@ -1,0 +1,19 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>PathFollower&#58;GetCursorData( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PathFollower.GetCursorData">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PathFollower/GetCursorData" title="Special:WhatLinksHere/PathFollower/GetCursorData">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the cursor data
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>A table with 3 keys:
+<a href="/page/Category_colon_number" title="Category:number">number</a> curvature <br />
+<a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> forward <br />
+<a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> pos <br />
+</p>
+<br /></div>
+</div>
+
+

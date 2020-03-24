@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;RemoveAllGestures( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.RemoveAllGestures">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/RemoveAllGestures" title="Special:WhatLinksHere/Entity/RemoveAllGestures">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Removes and stops all gestures.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This function only works on <a href="/page/BaseAnimatingOverlay" title="BaseAnimatingOverlay">BaseAnimatingOverlay</a> entites!
+</p>
+</td></tr></table>
+
+

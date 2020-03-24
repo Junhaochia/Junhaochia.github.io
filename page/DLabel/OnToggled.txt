@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DLabel&#58;OnToggled( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DLabel.OnToggled">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DLabel/OnToggled" title="Special:WhatLinksHere/DLabel/OnToggled">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelHook">Description<span style="display: none;"><a href="/page/Form:PanelHook" title="Form:PanelHook">PanelHook</a></span></span></h1>
+<p>Called when the toggle state of the label is changed by <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/Toggle" title="DLabel/Toggle">Toggle</a>.
+</p><p>In order to use toggle functionality, you must first call <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/SetIsToggle" title="DLabel/SetIsToggle">SetIsToggle</a> with <i>true</i>, as it is disabled by default.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> toggleState</span>
+</p>
+<div style="margin-left: 32px;">
+The new toggle state.</div>
+</div>
+
+

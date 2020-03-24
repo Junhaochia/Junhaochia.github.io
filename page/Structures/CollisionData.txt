@@ -1,0 +1,109 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/CollisionData" title="Special:WhatLinksHere/Structures/CollisionData">What links here?</a></div>Passed as argument of <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/PhysicsCollide" title="ENTITY/PhysicsCollide">PhysicsCollide</a>.
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Sometimes, the value of 'Speed' can be different from getting the length calculated from 'OurOldVelocity', even though they should be the same, or close to same. It's recommended to do 'OurOldVelocity:Length()' instead.
+</p>
+<pre><code data-language="lua">
+ENT:PhysicsCollide( colData, collider )
+    -- you may get two completely different values, and the second one should be more accurate.
+    print(colData.Speed)
+    print(colData.OurOldVelocity:Length())
+end
+</code></pre>
+</td></tr></table>
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> HitPos
+</td>
+<td>
+<p>The collision position
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>
+</td>
+<td> HitEntity
+</td>
+<td>
+<p>The other collision entity
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> OurOldVelocity
+</td>
+<td>
+<p>The entity's velocity before the collision
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_PhysObj" title="Category:PhysObj">PhysObj</a>
+</td>
+<td> HitObject
+</td>
+<td>
+<p>Other entity's physics object
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> DeltaTime
+</td>
+<td>
+<p>Time since the last collision <i>with this HitEntity</i>
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> TheirOldVelocity
+</td>
+<td>
+<p>Speed of the other entity before the collision
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Speed
+</td>
+<td>
+<p>The speed of the entity before the collision
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> HitNormal
+</td>
+<td>
+<p>Normal of the surface that hit the other entity
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_PhysObj" title="Category:PhysObj">PhysObj</a>
+</td>
+<td> PhysObject
+</td>
+<td>
+<p>Entity's physics object
+</p>
+</td></tr></table>
+
+

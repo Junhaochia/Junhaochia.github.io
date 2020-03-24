@@ -1,0 +1,31 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/AttachmentData" title="Special:WhatLinksHere/Structures/AttachmentData">What links here?</a></div>Table returned by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetAttachments" title="Entity/GetAttachments">GetAttachments</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> id
+</td>
+<td>
+<p>Index of the attachment.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> name
+</td>
+<td>
+<p>Name of the attachment.
+</p>
+</td></tr></table>
+
+

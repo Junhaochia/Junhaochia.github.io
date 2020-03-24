@@ -1,0 +1,59 @@
+<p>no value is a type in Lua representing no data. While this mostly appears the same as <a href="/page/Category_colon_nil" title="Category:nil">nil</a> from the Lua state, C functions will consider this distinct. This difference can be displayed from Lua with the <a href="/page/Global/type" title="Global/type">type</a> function which, unlike <a rel="nofollow" class="external text" href="https://www.lua.org/pil/2.html">vanilla Lua's type function</a>, will return "no value" when given no data.
+</p><p>Examples of the difference:
+</p>
+<pre>
+print(type())
+print(type(nil))
+</pre>
+<p>Returns:<br />no value<br />nil
+</p><p>In vanilla Lua 5.1-5.3, calling <a href="/page/Global/type" title="Global/type">type</a>() will result in the error "bad argument #1 to 'type' (value expected)" instead of returning "no value", making this property unique to GLua.
+</p>
+Functions that return nothing technically return no value, making <pre class="inline">return</pre> and <pre class="inline">return nil</pre> unique statements.
+<p>Example of this difference:
+</p>
+<pre>
+local function a()
+end
+
+-- Same as a
+local function b()
+	return
+end
+
+-- Difference from a and b
+local function c()
+	return nil
+end
+
+print(type(a()))
+print(type(b()))
+print(type(c()))
+</pre>
+<p>Returns:<br />no value<br />no value<br />nil
+</p><p>Lua variables cannot hold no value and instead will default to <a href="/page/Category_colon_nil" title="Category:nil">nil</a>.
+</p><p>Example of this behaviour:
+</p>
+<pre>
+local function a()
+end
+
+local d = a()
+print(type(d))
+</pre>
+<p>Returns:<br />nil
+</p><p>no value will be coerced to nil in value comparisons.
+</p><p>Example of this behaviour:
+</p>
+<pre>
+local function a()
+end
+
+print(a() == nil)
+print(not a())
+</pre>
+<p>Returns:<br />true<br />true
+</p>
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

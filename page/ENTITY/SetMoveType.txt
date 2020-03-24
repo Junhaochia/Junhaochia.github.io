@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetMoveType( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetMoveType">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetMoveType" title="Special:WhatLinksHere/Entity/SetMoveType">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the entity's move type. This should be called before initializing the physics object on the entity, unless it will override SetMoveType such as <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/PhysicsInitBox" title="Entity/PhysicsInitBox">PhysicsInitBox</a>.
+</p><p>Despite existing on client, it doesn't actually do anything on client.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> movetype</span>
+</p>
+<div style="margin-left: 32px;">
+The new movetype, see <a href="/page/Enums/MOVETYPE" title="Enums/MOVETYPE">MOVETYPE_ Enums</a></div>
+</div>
+
+

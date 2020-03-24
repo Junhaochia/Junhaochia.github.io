@@ -1,0 +1,87 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>cam.PushModelMatrix( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=cam.PushModelMatrix">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/cam/PushModelMatrix" title="Special:WhatLinksHere/cam/PushModelMatrix">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Pushes the specified matrix onto the render matrix stack. Unlike opengl, this will replace the current model matrix.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a> matrix</span>
+</p>
+<div style="margin-left: 32px;">
+The matrix to push.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> multiply=false</span>
+</p>
+<div style="margin-left: 32px;">
+If set, multiplies given matrix with currently active matrix (<a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/GetModelMatrix" title="cam/GetModelMatrix">GetModelMatrix</a>) before pushing.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Rotates and scales text in the center of the screen.
+</p>
+<pre><code data-language="lua">hook.Add(&quot;HUDPaint&quot;, &quot;2d rotation test&quot;, function()
+	local w, h = ScrW(), ScrH()
+	local t = RealTime()*50
+	
+	local mat = Matrix()
+
+	mat:Translate(Vector(w/2, h/2))
+	mat:Rotate(Angle(0,t,0))
+	mat:Scale(Vector(1,1,1) * math.sin(t/100) *10)
+	mat:Translate(-Vector(w/2, h/2))
+
+	cam.PushModelMatrix(mat)
+		surface.SetFont(&quot;DermaDefault&quot;)
+		surface.SetTextColor(255, 255, 255, 255)
+		surface.SetTextPos(w/2, h/2)
+		surface.DrawText(&quot;LOLLOLOLOL&quot;)
+	cam.PopModelMatrix()	
+end)</code></pre>
+<p><br />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Simple function to draw rotated text
+</p>
+<pre><code data-language="lua">function draw.TextRotated(text, x, y, color, font, ang)
+	render.PushFilterMag(TEXFILTER.ANISOTROPIC)
+	render.PushFilterMin(TEXFILTER.ANISOTROPIC)
+	surface.SetFont(font)
+	surface.SetTextColor(color)
+	surface.SetTextPos(0, 0)
+	local textWidth, textHeight = surface.GetTextSize( text )
+	local rad = -math.rad( ang )
+	x = x - ( math.cos( rad ) * textWidth / 2 + math.sin( rad ) * textHeight / 2 )
+	y = y + ( math.sin( rad ) * textWidth / 2 + math.cos( rad ) * textHeight / 2 )
+	local m = Matrix()
+	m:SetAngles(Angle(0, ang, 0))
+	m:SetTranslation(Vector(x, y, 0))
+	cam.PushModelMatrix(m)
+		surface.DrawText(text)
+	cam.PopModelMatrix()
+	render.PopFilterMag()
+	render.PopFilterMin()
+end</code></pre>
+<p><br />
+</p>
+
+

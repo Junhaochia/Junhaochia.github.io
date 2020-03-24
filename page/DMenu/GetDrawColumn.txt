@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DMenu&#58;GetDrawColumn( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DMenu.GetDrawColumn">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DMenu/GetDrawColumn" title="Special:WhatLinksHere/DMenu/GetDrawColumn">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Returns whether the <a href="/page/Category_colon_DMenu" title="Category:DMenu">DMenu</a> should draw the icon column with a different color or not.
+</p><p>See <a href="/page/Category_colon_DMenu" title="Category:DMenu">DMenu</a>:<a href="/page/DMenu/SetDrawColumn" title="DMenu/SetDrawColumn">SetDrawColumn</a>
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether to draw the column or not</div>
+</div>
+
+

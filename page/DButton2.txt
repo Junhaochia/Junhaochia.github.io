@@ -1,0 +1,135 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:DButton_small.png" class="image" title="Example DButton2"><img alt="Example DButton2" src="/images/d/da/DButton_small.png" width="120" height="60" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DButton2">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DButton2" title="Special:WhatLinksHere/DButton2">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">2.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Functions"><span class="tocnumber">4</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-1"><a href="#Overrides"><span class="tocnumber">5</span> <span class="toctext">Overrides</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">6</span> <span class="toctext">Inherited Functions</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>A standard Derma button.
+</p><p>By default, a <a href="/page/Category_colon_DButton" title="Category:DButton">DButton</a> is 22px tall.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a DAlphaBar and sets its value to 25%.
+</p>
+<pre><code data-language="lua">local DAlphaBar = vgui.Create( &quot;DAlphaBar&quot; )
+DAlphaBar:SetPos( 20, 30 )
+DAlphaBar:SetSize( 25, 125 )
+DAlphaBar:SetValue( 0.25 )
+DAlphaBar.OnChange = function( newvalue )
+	print( &quot;DAlphaBar value changed to &quot; .. newvalue )
+end</code></pre>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Creates a DAlphaBar and sets its value to 25%.
+</p>
+<pre><code data-language="lua">local DAlphaBar = vgui.Create( &quot;DAlphaBar&quot; )
+DAlphaBar:SetPos( 20, 30 )
+DAlphaBar:SetSize( 25, 125 )
+DAlphaBar:SetValue( 0.25 )
+DAlphaBar.OnChange = function( newvalue )
+	print( &quot;DAlphaBar value changed to &quot; .. newvalue )
+end</code></pre>
+<h1> <span class="mw-headline" id="Functions">Functions</span></h1>
+<p>Has the following functions:</p><div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DButton2/Test" title="DButton2/Test">DButton2/Test</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1> <span class="mw-headline" id="Overrides"> Overrides </span></h1>
+<p>Overrides the following hooks:
+</p>
+<div class="column3alt">
+<ul><li> <a href="/page/PANEL/Init" title="PANEL/Init">PANEL/Init</a>
+</li><li> <a href="/page/PANEL/Paint" title="PANEL/Paint">PANEL/Paint</a>
+</li><li> <a href="/page/PANEL/PerformLayout" title="PANEL/PerformLayout">PANEL/PerformLayout</a>
+</li><li> <a href="/page/PANEL/GenerateExample" title="PANEL/GenerateExample">PANEL/GenerateExample</a>
+</li></ul>
+</div>
+<p>Implements the following functions:
+</p>
+<div class="column3alt">
+<ul><li> <a href="/page/Panel/SetEnabled" title="Panel/SetEnabled">Panel/SetEnabled</a>
+</li></ul>
+</div>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:</p><div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DLabel/DoClick" title="DLabel/DoClick">DLabel/DoClick</a></li>
+<li><a href="/page/DLabel/DoClickInternal" title="DLabel/DoClickInternal">DLabel/DoClickInternal</a></li>
+<li><a href="/page/DLabel/DoDoubleClick" title="DLabel/DoDoubleClick">DLabel/DoDoubleClick</a></li>
+<li><a href="/page/DLabel/DoDoubleClickInternal" title="DLabel/DoDoubleClickInternal">DLabel/DoDoubleClickInternal</a></li>
+<li><a href="/page/DLabel/DoMiddleClick" title="DLabel/DoMiddleClick">DLabel/DoMiddleClick</a></li>
+<li><a href="/page/DLabel/DoRightClick" title="DLabel/DoRightClick">DLabel/DoRightClick</a></li>
+<li><a href="/page/DLabel/GetAutoStretchVertical" title="DLabel/GetAutoStretchVertical">DLabel/GetAutoStretchVertical</a></li>
+<li><a href="/page/DLabel/GetBright" title="DLabel/GetBright">DLabel/GetBright</a></li>
+<li><a href="/page/DLabel/GetColor" title="DLabel/GetColor">DLabel/GetColor</a></li>
+<li><a href="/page/DLabel/GetDark" title="DLabel/GetDark">DLabel/GetDark</a></li>
+<li><a href="/page/DLabel/GetDisabled" title="DLabel/GetDisabled">DLabel/GetDisabled</a></li>
+<li><a href="/page/DLabel/GetDoubleClickingEnabled" title="DLabel/GetDoubleClickingEnabled">DLabel/GetDoubleClickingEnabled</a></li>
+<li><a href="/page/DLabel/GetFont" title="DLabel/GetFont">DLabel/GetFont</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DLabel/GetHighlight" title="DLabel/GetHighlight">DLabel/GetHighlight</a></li>
+<li><a href="/page/DLabel/GetIsToggle" title="DLabel/GetIsToggle">DLabel/GetIsToggle</a></li>
+<li><a href="/page/DLabel/GetTextColor" title="DLabel/GetTextColor">DLabel/GetTextColor</a></li>
+<li><a href="/page/DLabel/GetTextStyleColor" title="DLabel/GetTextStyleColor">DLabel/GetTextStyleColor</a></li>
+<li><a href="/page/DLabel/GetToggle" title="DLabel/GetToggle">DLabel/GetToggle</a></li>
+<li><a href="/page/DLabel/OnDepressed" title="DLabel/OnDepressed">DLabel/OnDepressed</a></li>
+<li><a href="/page/DLabel/OnReleased" title="DLabel/OnReleased">DLabel/OnReleased</a></li>
+<li><a href="/page/DLabel/OnToggled" title="DLabel/OnToggled">DLabel/OnToggled</a></li>
+<li><a href="/page/DLabel/SetAutoStretchVertical" title="DLabel/SetAutoStretchVertical">DLabel/SetAutoStretchVertical</a></li>
+<li><a href="/page/DLabel/SetBright" title="DLabel/SetBright">DLabel/SetBright</a></li>
+<li><a href="/page/DLabel/SetColor" title="DLabel/SetColor">DLabel/SetColor</a></li>
+<li><a href="/page/DLabel/SetDark" title="DLabel/SetDark">DLabel/SetDark</a></li>
+<li><a href="/page/DLabel/SetDisabled" title="DLabel/SetDisabled">DLabel/SetDisabled</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DLabel/SetDoubleClickingEnabled" title="DLabel/SetDoubleClickingEnabled">DLabel/SetDoubleClickingEnabled</a></li>
+<li><a href="/page/DLabel/SetFont" title="DLabel/SetFont">DLabel/SetFont</a></li>
+<li><a href="/page/DLabel/SetHighlight" title="DLabel/SetHighlight">DLabel/SetHighlight</a></li>
+<li><a href="/page/DLabel/SetIsToggle" title="DLabel/SetIsToggle">DLabel/SetIsToggle</a></li>
+<li><a href="/page/DLabel/SetTextColor" title="DLabel/SetTextColor">DLabel/SetTextColor</a></li>
+<li><a href="/page/DLabel/SetTextStyleColor" title="DLabel/SetTextStyleColor">DLabel/SetTextStyleColor</a></li>
+<li><a href="/page/DLabel/SetToggle" title="DLabel/SetToggle">DLabel/SetToggle</a></li>
+<li><a href="/page/DLabel/Toggle" title="DLabel/Toggle">DLabel/Toggle</a></li>
+<li><a href="/page/DLabel/UpdateColours" title="DLabel/UpdateColours">DLabel/UpdateColours</a></li>
+<li><a href="/page/DLabel/UpdateFGColor" title="DLabel/UpdateFGColor">DLabel/UpdateFGColor</a></li>
+<li><a href="/page/Panel/SetContentAlignment" title="Panel/SetContentAlignment">Panel/SetContentAlignment</a></li>
+<li><a href="/page/Panel/SetText" title="Panel/SetText">Panel/SetText</a></li>
+<li><a href="/page/Panel/SetWrap" title="Panel/SetWrap">Panel/SetWrap</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+
+

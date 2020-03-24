@@ -1,0 +1,39 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>cam.Start2D( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=cam.Start2D">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/cam/Start2D" title="Special:WhatLinksHere/cam/Start2D">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets up a new 2D rendering context. Must be finished by <a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/End2D" title="cam/End2D">End2D</a>.
+</p><p>This is almost always used with a render target from the <a href="/page/Category_colon_render" title="Category:render">render library</a>. To set its position use <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/SetViewPort" title="render/SetViewPort">SetViewPort</a> with a target already stored.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This will put an identity matrix at the top of the model matrix stack. If you are trying to use <a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/PushModelMatrix" title="cam/PushModelMatrix">PushModelMatrix</a>, call it after this function and not before.
+</p>
+</td></tr></table>
+<p>
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is a function that starts a 2D rendering context.<br />This means that the only rendering functions will work after it are <a href="/page/Category_colon_2D_Rendering_Functions" title="Category:2D Rendering Functions">functions with a 2D rendering context</a>.
+</p>
+</td></tr></table>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Sets the viewport then draws on the view with 2d methods
+</p>
+<pre><code data-language="lua">local oldW, oldH = ScrW(), ScrH()
+render.SetViewPort( 0, 100, 50, 50 )
+cam.Start2D()
+	surface.SetDrawColor( 255, 255, 255 )
+	surface.DrawLine( 10, 10, 100, 100 )
+cam.End2D()
+render.SetViewPort( 0, 0, oldW, oldH )</code></pre>
+<p><br />
+</p>
+
+

@@ -1,0 +1,5 @@
+<p>This is a variable that will return the current folder name of the gamemode being run.
+</p><p>For example, If you are playing the gamemode "Trouble In Terrorist Town" this variable will = "terrortown"
+</p>
+
+

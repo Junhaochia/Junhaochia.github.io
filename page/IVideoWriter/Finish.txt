@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>IVideoWriter&#58;Finish( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IVideoWriter.Finish">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IVideoWriter/Finish" title="Special:WhatLinksHere/IVideoWriter/Finish">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Ends the video recording and dumps it to disk.
+</p>
+
+

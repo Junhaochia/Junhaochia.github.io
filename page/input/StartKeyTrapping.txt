@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>input.StartKeyTrapping( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=input.StartKeyTrapping">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/input/StartKeyTrapping" title="Special:WhatLinksHere/input/StartKeyTrapping">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Begins waiting for a key to be pressed so we can save it for <a href="/page/Category_colon_input" title="Category:input">input</a>.<a href="/page/input/CheckKeyTrapping" title="input/CheckKeyTrapping">CheckKeyTrapping</a>. Used by the <a href="/page/Category_colon_DBinder" title="Category:DBinder">DBinder</a>.
+</p>
+
+

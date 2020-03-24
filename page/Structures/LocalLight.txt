@@ -1,0 +1,141 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/LocalLight" title="Special:WhatLinksHere/Structures/LocalLight">What links here?</a></div>Table structure used for <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/SetLocalModelLights" title="render/SetLocalModelLights">SetLocalModelLights</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> type
+</td>
+<td>
+<p>The type of the light source, see <a href="/page/Enums/MATERIAL_LIGHT" title="Enums/MATERIAL LIGHT">MATERIAL_LIGHT_ Enums</a>.
+</p><p><b>Default:</b> MATERIAL_LIGHT_POINT
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> color
+</td>
+<td>
+<p>The color of the light source (x is red, y is green, z is blue). Values are not restricted to a specific range, higher values will result in a brighter light.
+</p><p><b>Default:</b> vector_origin
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> pos
+</td>
+<td>
+<p>The origin of the light in world coordinates.
+</p><p><b>Default:</b> vector_origin
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> dir
+</td>
+<td>
+<p>The direction of the light. Only required for directional and spot lights.
+</p><p><b>Default:</b> vector_origin
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> range
+</td>
+<td>
+<p>The maximum range of the light source. Does not actually control light attenuation. Usually left at 0 for infinite range.
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> angularFalloff
+</td>
+<td>
+<p>Angular falloff exponent for spot lights. Higher values result in a sharper transition between the inner cone and the outer cone.
+</p><p><b>Default:</b> 5
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> innerAngle
+</td>
+<td>
+<p>The inner cone angle for spot lights, in degrees. No angular falloff will occur inside that cone.
+</p><p><b>Default:</b> 45
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> outerAngle
+</td>
+<td>
+<p>The outer cone angle for spot lights, in degrees.
+</p><p><b>Default:</b> 45
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> fiftyPercentDistance
+</td>
+<td>
+<p>The distance at which the light will fade to 50% of its brightness.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> zeroPercentDistance
+</td>
+<td>
+<p>The distance at which the light will completely fade out.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> quadraticFalloff
+</td>
+<td>
+<p>The quadratic term of the light falloff. This will only be used if fiftyPercentDistance and zeroPercentDistance are not supplied, and allows finer control over light attenuation.
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> linearFalloff
+</td>
+<td>
+<p>The linear term of the light falloff. This will only be used if fiftyPercentDistance and zeroPercentDistance are not supplied, and allows finer control over light attenuation.
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> constantFalloff
+</td>
+<td>
+<p>The constant term of the light falloff. This will only be used if fiftyPercentDistance and zeroPercentDistance are not supplied, and allows finer control over light attenuation.
+</p><p><b>Default:</b> 1
+</p>
+</td></tr></table>
+
+

@@ -1,0 +1,45 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;GetColor( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.GetColor">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/GetColor" title="Special:WhatLinksHere/Entity/GetColor">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">2</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the color the entity is set to.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>The returned color will not have the color metatable.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/2407">#2407</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+The color of the entity as a <a href="/page/Structures/Color" title="Structures/Color">Color structure</a>.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<pre><code data-language="lua">for key, ply in pairs( player.GetAll( ) ) do -- Loop through all players on the server
+ local col = ply:GetColor( ); -- Gets the players color and assigns it to local variable col
+ 
+ print( &quot;Printing &quot; .. ply:Nick() .. &quot;'s color!&quot; ); -- Say we are printing the players name's color
+ PrintTable( col ); -- Pass col into PrintTable to print to contents of col
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">Loop through all players, and print their color.</div>
+
+

@@ -1,0 +1,68 @@
+<p>Developing for the Kinect is easier than you'd think.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Bone_Points"><span class="tocnumber">1</span> <span class="toctext">Bone Points</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#motionsensor_library"><span class="tocnumber">2</span> <span class="toctext">motionsensor library</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#motionsensor.DebugBones"><span class="tocnumber">2.1</span> <span class="toctext">motionsensor.DebugBones</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#motionsensor.IsAvailable.28.29"><span class="tocnumber">2.2</span> <span class="toctext">motionsensor.IsAvailable()</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#motionsensor.IsActive.28.29"><span class="tocnumber">2.3</span> <span class="toctext">motionsensor.IsActive()</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#motionsensor.Start.28.29"><span class="tocnumber">2.4</span> <span class="toctext">motionsensor.Start()</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Bone_Points">Bone Points</span></h1>
+<p>The kinect provides us with a number of vectors representing specific bones. These are encoded into the usercommand (in the same way that mouse buttons and view angles are) and are available on the player object serverside, and in multiplayer - for prediction purposes - clientside.
+</p><p>To access these points you can call
+</p>
+<pre><code data-language="lua">ply:MotionSensorPos( point_id )
+</code></pre>
+<p>Note that these positions aren't in world coordinates - so you will have to multiply them to get them to a usable size.
+</p><p>To access specific bones you can use these enums:
+</p>
+<pre><code data-language="lua">SENSORBONE.HIP
+SENSORBONE.SPINE
+SENSORBONE.SHOULDER
+SENSORBONE.HEAD
+SENSORBONE.SHOULDER_LEFT
+SENSORBONE.ELBOW_LEFT
+SENSORBONE.WRIST_LEFT
+SENSORBONE.HAND_LEFT
+SENSORBONE.SHOULDER_RIGHT
+SENSORBONE.ELBOW_RIGHT
+SENSORBONE.WRIST_RIGHT
+SENSORBONE.HAND_WRIGHT
+SENSORBONE.HIP_LEFT
+SENSORBONE.KNEE_LEFT
+SENSORBONE.ANKLE_LEFT
+SENSORBONE.FOOT_LEFT
+SENSORBONE.HIP_RIGHT
+SENSORBONE.KNEE_RIGHT
+SENSORBONE.ANKLE_RIGHT
+SENSORBONE.FOOT_RIGHT
+</code></pre>
+<h1> <span class="mw-headline" id="motionsensor_library"><a href="/page/Category_colon_motionsensor" title="Category:motionsensor">motionsensor library</a></span></h1>
+<p>The <a href="/page/Category_colon_motionsensor" title="Category:motionsensor">motionsensor library</a> offers direct access to the sensor clientside, and a few utility functions sharedside.
+</p>
+<h2> <span class="mw-headline" id="motionsensor.DebugBones">motionsensor.DebugBones</span></h2>
+<p>This table contains subtables of bone ids allowing you to iterate it and draw bones.
+</p>
+<pre><code data-language="lua">for k, v in pairs( motionsensor.DebugBones ) do
+
+	debugoverlay.Line( ply:MotionSensorPos( v[1] ), ply:MotionSensorPos( v[2] ), 0.5 )
+
+end
+</code></pre>
+<h2> <span class="mw-headline" id="motionsensor.IsAvailable.28.29"><a href="/page/Category_colon_motionsensor" title="Category:motionsensor">motionsensor</a>.<a href="/page/motionsensor/IsAvailable" title="motionsensor/IsAvailable">IsAvailable</a>()</span></h2>
+<p>Clientside - will return true if we have detected that there's a kinect connected to the PC.
+</p>
+<h2> <span class="mw-headline" id="motionsensor.IsActive.28.29"><a href="/page/Category_colon_motionsensor" title="Category:motionsensor">motionsensor</a>.<a href="/page/motionsensor/IsActive" title="motionsensor/IsActive">IsActive</a>()</span></h2>
+<p>Clientside - will return true if a kinect is connected - and active (ie - Start has been called).
+</p>
+<h2> <span class="mw-headline" id="motionsensor.Start.28.29"><a href="/page/Category_colon_motionsensor" title="Category:motionsensor">motionsensor</a>.<a href="/page/motionsensor/Start" title="motionsensor/Start">Start</a>()</span></h2>
+<p>Clientside - this starts access to the kinect sensor. Note that this usually freezes the game for a couple of seconds.
+</p>
+
+

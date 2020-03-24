@@ -1,0 +1,52 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DListView&#58;DoDoubleClick( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DListView.DoDoubleClick">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DListView/DoDoubleClick" title="Special:WhatLinksHere/DListView/DoDoubleClick">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelFunc"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelFunc</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Called when a line in the DListView is double clicked.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> lineID</span>
+</p>
+<div style="margin-left: 32px;">
+The line number of the double clicked line.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> line</span>
+</p>
+<div style="margin-left: 32px;">
+The double clicked <a href="/page/Category_colon_DListView_Line" title="Category:DListView Line">DListView_Line</a>.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Demonstrates the use of this function.
+</p>
+<pre><code data-language="lua">local DList = vgui.Create(&quot;DListView&quot;)
+DList:SetPos(5,50)
+DList:SetSize(150, 245)
+DList:AddColumn(&quot;Player Names&quot;)
+
+for k, v in pairs( player.GetAll() ) do
+	DList:AddLine(v:Name())
+end
+
+function DList:DoDoubleClick( lineID, line )
+	MsgN( &quot;Line &quot; .. lineID .. &quot; was double clicked!&quot; )
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">The double clicked line number is printed, e.g.<br /><br /><samp>Line 6 was double clicked!</samp></div>
+
+

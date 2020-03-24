@@ -1,0 +1,51 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/NavDir" title="Special:WhatLinksHere/Enums/NavDir">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> methods.
+These Enums correspond to each side of a <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>These enumerations do not exist in game and are listed here only for reference!
+</p>
+</td></tr></table><br /><br />
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> NORTH
+</td>
+<td> 0
+</td>
+<td> North from given <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>
+</td></tr>
+<tr>
+<td> EAST
+</td>
+<td> 1
+</td>
+<td> East from given <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>
+</td></tr>
+<tr>
+<td> SOUTH
+</td>
+<td> 2
+</td>
+<td> South from given <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>
+</td></tr>
+<tr>
+<td> WEST
+</td>
+<td> 3
+</td>
+<td> West from given <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>
+</td></tr></table>
+
+

@@ -1,0 +1,57 @@
+<p>You might want to include maps from Counter-Strike or Team Fortress on your server. Updating and copying the maps over can be a pain.
+</p>
+<h1> <span class="mw-headline" id="mount.cfg">mount.cfg</span></h1>
+<p>With mount.cfg you can specify folders to add to the filesystem. Garry's Mod will scan the folder, mount any sub-folders and vpk files inside the given folder.
+</p><p><b>mount.cfg</b> is located in <b>garrysmod/cfg/</b> and can be opened by any plain text editor - and should look something like this:
+</p>
+<pre>
+&quot;mountcfg&quot;
+{
+	&quot;cstrike&quot;	&quot;C:\steamcmd\steamapps\common\Counter-Strike Source Dedicated Server\cstrike&quot;
+	&quot;tf&quot;		&quot;C:\mytf2server\tf&quot;
+}</pre>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Linux paths cannot contain capital letters
+</p>
+</td></tr></table>
+<p>If you are on Linux and your games do not mount, make sure your directories do not contain capital letters like so:
+</p>
+<pre>
+&quot;mountcfg&quot;
+{
+	&quot;tf&quot;		&quot;/opt/team fortress 2 dedicated server/tf&quot;
+	&quot;episodic&quot;   	&quot;/home/gmod/steam/steamapps/common/half-life 2/episodic&quot; //HL2 Episode 1
+}</pre>
+<p>The key names ("tf", "cstrike" and "episodic" in this example) in the file tell Garry's Mod which game this path is for, i.e. which game should be marked as mounted for you. This affects <a href="/page/Global/IsMounted" title="Global/IsMounted">IsMounted</a> and subsequently tells addons which games are mounted and which aren't.
+</p><p>This method will also allow you to mount games (or folder addons) into <b>Hammer Editor</b>.
+</p>
+<h1> <span class="mw-headline" id="mountdepots.txt">mountdepots.txt</span></h1>
+<p>If you are experiencing:
+</p>
+<ul><li> Your clients are unable to spawn Hunters or NPCs from Half-Life: Source
+</li><li> Spawning the Jalopy doesn't do anything
+</li><li> Addons complaining that game content is not installed on the server, despite it being installed
+</li></ul>
+<p>Then you may need to ensure <b>mountdepots.txt</b> exists in <b>garrysmod/cfg/</b> with contents resembling:
+</p>
+<pre>
+&quot;gamedepotsystem&quot;
+{
+	&quot;cstrike&quot;	&quot;1&quot;
+	&quot;hl1&quot;		&quot;1&quot;
+	&quot;hl1_hd&quot;	&quot;1&quot;
+	&quot;hl2&quot;		&quot;1&quot;
+	&quot;hl2mp&quot;		&quot;1&quot;
+	&quot;episodic&quot;	&quot;1&quot;
+	&quot;ep2&quot;		&quot;1&quot;
+	&quot;lostcoast&quot;	&quot;1&quot;
+}</pre>
+<p>This will tell Garry's Mod that those games are installed and should be mounted (regardless of whether they are actually installed or not)
+</p><p>Mounting necessary games using the method above should resolve the issues as well.
+</p>
+
+

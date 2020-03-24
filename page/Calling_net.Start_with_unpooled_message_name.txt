@@ -1,0 +1,7 @@
+<p>When calling net.Start the message name should be pooled. This means that instead of sending the string over the network - it will be able to send a number representing the string.
+</p>
+To pool a string you need to call <pre><code data-language="lua">util.AddNetworkString( &quot;string&quot; )</code></pre> serverside before trying to send the message. Ideally you'd do this when your Lua files are being loaded - but where that's not possible you need to do it at least a couple of seconds before calling the message to be sure that it'll work.
+<p><a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/AddNetworkString" title="util/AddNetworkString">AddNetworkString</a> only needs to be called once - and can only be called serverside.
+</p>
+
+

@@ -1,0 +1,39 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>TypeID( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=TypeID">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/TypeID" title="Special:WhatLinksHere/Global/TypeID">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Gets the associated type ID of the variable. Unlike <a href="/page/Global/type" title="Global/type">type</a>, this does not work with <a href="/page/Category_colon_no_value" title="Category:no value">no value</a> - an argument must be provided.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This returns garbage for _LOADLIB objects.
+</p><p><b>Request Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-requests/issues/1120">#1120</a></b>
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This returns TYPE_NIL for <a href="/page/Category_colon_proto" title="Category:proto">protos</a>.
+</p><p><b>Request Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-requests/issues/1459">#1459</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_any" title="Category:any">any</a> variable</span>
+</p>
+<div style="margin-left: 32px;">
+The variable to get the type ID of.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The type ID of the variable. See the <a href="/page/Enums/TYPE" title="Enums/TYPE">TYPE_ Enums</a>.</div>
+</div>
+
+

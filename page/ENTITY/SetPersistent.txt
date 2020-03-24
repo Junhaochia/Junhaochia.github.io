@@ -1,0 +1,24 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetPersistent( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetPersistent">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetPersistent" title="Special:WhatLinksHere/Entity/SetPersistent">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="derivedonly"><span>This function or feature is only available in the Sandbox gamemode and its <a href="/page/Global/DeriveGamemode" title="Global/DeriveGamemode">derivatives</a>.</span></div>
+<p>Sets whether or not the given entity is persistent. A persistent entity will be saved on server shutdown and loaded back when the server starts up. Additionally, by default persistent entities cannot be grabbed with the physgun and tools cannot be used on them.
+</p><p>In sandbox, this can be set on an entity by opening the context menu, right clicking the entity, and choosing "Make Persistent".
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Persistence can only be enabled with the sbox_persist convar, which works as an identifier for the current set of persistent entities. An empty identifier (which is the default value) disables this feature.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> persist</span>
+</p>
+<div style="margin-left: 32px;">
+Whether or not the entity should be persistent.</div>
+</div>
+
+

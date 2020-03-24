@@ -1,0 +1,32 @@
+<p>The file library provides functions for finding, reading and writing to files. <br />
+The following path values are most commonly used:
+</p>
+<ul><li> “LUA” searches the lua files (in /lua/, in your gamemodes, in all the addons).
+</li><li> “GAME” searches all the mounted content (main folder, addons, mounted games etc).
+</li><li> “MOD” searches only the garrysmod folder.
+</li><li> “DATA” searches in the data folder.
+</li></ul>
+<p>For the full list of path values, type “path” in the console.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "file"</h2>
+<p>The following 12 pages are in this category, out of 12 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>F</h3>
+<ul><li><a href="/page/file/Append" title="file/Append">file/Append</a></li>
+<li><a href="/page/file/CreateDir" title="file/CreateDir">file/CreateDir</a></li>
+<li><a href="/page/file/Delete" title="file/Delete">file/Delete</a></li>
+<li><a href="/page/file/Exists" title="file/Exists">file/Exists</a></li></ul></td>
+<td><h3>F cont.</h3>
+<ul><li><a href="/page/file/Find" title="file/Find">file/Find</a></li>
+<li><a href="/page/file/IsDir" title="file/IsDir">file/IsDir</a></li>
+<li><a href="/page/file/Open" title="file/Open">file/Open</a></li>
+<li><a href="/page/file/Read" title="file/Read">file/Read</a></li></ul></td>
+<td><h3>F cont.</h3>
+<ul><li><a href="/page/file/Rename" title="file/Rename">file/Rename</a></li>
+<li><a href="/page/file/Size" title="file/Size">file/Size</a></li>
+<li><a href="/page/file/Time" title="file/Time">file/Time</a></li>
+<li><a href="/page/file/Write" title="file/Write">file/Write</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

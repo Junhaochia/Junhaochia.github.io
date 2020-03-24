@@ -1,0 +1,103 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/VideoData" title="Special:WhatLinksHere/Structures/VideoData">What links here?</a></div>Table used by <a href="/page/Category_colon_video" title="Category:video">video</a>.<a href="/page/video/Record" title="video/Record">Record</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> container
+</td>
+<td>
+<p>The video container format.<br /><br /><b>Valid options are:</b> webm, ogg
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> video
+</td>
+<td>
+<p>The video codec.<br /><br /><b>Valid options are:</b> vp8, theora
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> audio
+</td>
+<td>
+<p>The audio codec.<br /><br /><b>Valid options are:</b> vorbis
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> quality
+</td>
+<td>
+<p>The video quality
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> bitrate
+</td>
+<td>
+<p>The record bitrate
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> fps
+</td>
+<td>
+<p>Frames per second
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> lockfps
+</td>
+<td>
+<p>Lock the frame count per second
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> name
+</td>
+<td>
+<p>The file name for the video
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> width
+</td>
+<td>
+<p>The videos width
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> height
+</td>
+<td>
+<p>The videos height
+</p>
+</td></tr></table>
+
+

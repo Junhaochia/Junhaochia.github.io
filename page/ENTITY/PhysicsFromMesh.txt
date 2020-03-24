@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;PhysicsFromMesh( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.PhysicsFromMesh">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/PhysicsFromMesh" title="Special:WhatLinksHere/Entity/PhysicsFromMesh">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Initializes the physics mesh of the entity from a triangle soup defined by a table of vertices. The resulting mesh is hollow, may contain holes, and always has a volume of 0.
+</p><p>While this is very useful for static geometry such as terrain displacements, it is advised to use <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/PhysicsInitConvex" title="Entity/PhysicsInitConvex">PhysicsInitConvex</a> or <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/PhysicsInitMultiConvex" title="Entity/PhysicsInitMultiConvex">PhysicsInitMultiConvex</a> for moving solid objects instead.
+</p><p><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/EnableCustomCollisions" title="Entity/EnableCustomCollisions">EnableCustomCollisions</a> needs to be called if you want players to collide with the entity correctly.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> vertices</span>
+</p>
+<div style="margin-left: 32px;">
+A table consisting of <a href="/page/Structures/MeshVertex" title="Structures/MeshVertex">MeshVertex structure</a> (only the <i>pos</i> element is taken into account). Every 3 vertices define a triangle in the physics mesh.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Returns true on success, nil otherwise.</div>
+</div>
+
+

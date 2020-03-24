@@ -1,0 +1,15 @@
+<p>This article describes <b>Garry's Workshop Publisher</b>, a tool, which is used to create and update Workshop addons.
+</p><p>The tool is outdated and not recommended to use. No official download links are available.
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Addon_creation_and_updating"> Addon creation and updating </span></h2>
+<p>Addon creation and updating is described in next articles:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://facepunch.com/showthread.php?t=1244179">GMPublish</a> - New addon publisher (included in Garry's Mod)
+</li><li> <a rel="nofollow" class="external text" href="http://facepunch.com/showthread.php?t=1242185">GMad</a> - Addon Creator/Extractor (also included in Garry's Mod)
+</li><li> Both programs can be found in <b>&lt;STEAM LOCATION&gt;/steamapps/common/garrysmod/bin</b>
+</li><li> <a href="/page/Workshop_Addon_Creation" title="Workshop Addon Creation">How to create a new Workshop add-on</a>
+</li><li> <a href="/page/Workshop_Addon_Updating" title="Workshop Addon Updating">How to update an existing Workshop add-on</a>
+</li></ul>
+
+

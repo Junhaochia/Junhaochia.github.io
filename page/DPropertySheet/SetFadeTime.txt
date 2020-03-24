@@ -1,0 +1,44 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DPropertySheet&#58;SetFadeTime( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DPropertySheet.SetFadeTime">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DPropertySheet/SetFadeTime" title="Special:WhatLinksHere/DPropertySheet/SetFadeTime">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelFunc"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelFunc</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sets the amount of time (in seconds) it takes to fade between tabs.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> time=0.1</span>
+</p>
+<div style="margin-left: 32px;">
+The amount of time it takes (in seconds) to fade between tabs.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Sets the fade time to 0.5 seconds (500 milliseconds)
+</p>
+<pre><code data-language="lua">DPropertySheet.SetFadeTime(0.5)</code></pre>
+<p><br />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Sets the fade time to 2 seconds (2000 milliseconds)
+</p>
+<pre><code data-language="lua">DPropertySheet.SetFadeTime(2)</code></pre>
+<p><br />
+</p>
+
+

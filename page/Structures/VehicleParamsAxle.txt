@@ -1,0 +1,170 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/VehicleParamsAxle" title="Special:WhatLinksHere/Structures/VehicleParamsAxle">What links here?</a></div>The structure used by <a href="/page/Structures/VehicleParams" title="Structures/VehicleParams">VehicleParams structure</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> brakeFactor
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> offset
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> raytraceCenterOffset
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> raytraceOffset
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> suspension_maxBodyForce
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> suspension_springConstant
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> suspension_springDamping
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> suspension_springDampingCompression
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> suspension_stabilizerConstant
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> torqueFactor
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> wheelOffset
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheels_brakeMaterialIndex
+</td>
+<td>
+<p>Material index of braking material of the wheels. Upon braking, the wheels will be set to this material.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheels_damping
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheels_frictionScale
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheels_inertia
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheels_mass
+</td>
+<td>
+<p>Mass of each wheel.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheels_materialIndex
+</td>
+<td>
+<p>Material index of the wheels by default.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheels_radius
+</td>
+<td>
+<p>Radius of the wheels.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheels_rotdamping
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheels_skidMaterialIndex
+</td>
+<td>
+<p>Material index of skid material of the wheels. Upon skidding ( pressing Space and sliding the vehicle ), the wheels will be set to this material.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wheels_springAdditionalLength
+</td>
+<td>
+</td></tr></table>
+
+

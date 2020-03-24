@@ -1,0 +1,44 @@
+<p>This category lists all 2D rendering functions. These functions will only work when a 2D rendering context is available.
+Rendering context is only available in the current frame, so you cannot draw things from a timer.
+</p>
+<h3> <span class="mw-headline" id="See_also"> See also </span></h3>
+<p><a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/Start2D" title="cam/Start2D">Start2D</a>
+</p><p><a href="/page/Category_colon_2D_Rendering_Hooks" title="Category:2D Rendering Hooks">2D Rendering Hooks</a> - hooks that provide a 2D rendering context
+</p><p><a href="/page/Category_colon_3D_Rendering_Functions" title="Category:3D Rendering Functions">3D Rendering Functions</a>
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "2D Rendering Functions"</h2>
+<p>The following 26 pages are in this category, out of 26 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/draw/DrawText" title="draw/DrawText">draw/DrawText</a></li>
+<li><a href="/page/draw/GetFontHeight" title="draw/GetFontHeight">draw/GetFontHeight</a></li>
+<li><a href="/page/draw/NoTexture" title="draw/NoTexture">draw/NoTexture</a></li>
+<li><a href="/page/draw/RoundedBox" title="draw/RoundedBox">draw/RoundedBox</a></li>
+<li><a href="/page/draw/RoundedBoxEx" title="draw/RoundedBoxEx">draw/RoundedBoxEx</a></li>
+<li><a href="/page/draw/SimpleText" title="draw/SimpleText">draw/SimpleText</a></li>
+<li><a href="/page/draw/SimpleTextOutlined" title="draw/SimpleTextOutlined">draw/SimpleTextOutlined</a></li>
+<li><a href="/page/draw/Text" title="draw/Text">draw/Text</a></li>
+<li><a href="/page/draw/TextShadow" title="draw/TextShadow">draw/TextShadow</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/draw/TexturedQuad" title="draw/TexturedQuad">draw/TexturedQuad</a></li>
+<li><a href="/page/draw/WordBox" title="draw/WordBox">draw/WordBox</a></li></ul><h3>R</h3>
+<ul><li><a href="/page/render/DrawScreenQuad" title="render/DrawScreenQuad">render/DrawScreenQuad</a></li>
+<li><a href="/page/render/DrawScreenQuadEx" title="render/DrawScreenQuadEx">render/DrawScreenQuadEx</a></li>
+<li><a href="/page/render/DrawTextureToScreen" title="render/DrawTextureToScreen">render/DrawTextureToScreen</a></li>
+<li><a href="/page/render/DrawTextureToScreenRect" title="render/DrawTextureToScreenRect">render/DrawTextureToScreenRect</a></li>
+<li><a href="/page/render/SetLightmapTexture" title="render/SetLightmapTexture">render/SetLightmapTexture</a></li>
+<li><a href="/page/render/SetMaterial" title="render/SetMaterial">render/SetMaterial</a></li></ul><h3>S</h3>
+<ul><li><a href="/page/surface/DrawCircle" title="surface/DrawCircle">surface/DrawCircle</a></li></ul></td>
+<td><h3>S cont.</h3>
+<ul><li><a href="/page/surface/DrawLine" title="surface/DrawLine">surface/DrawLine</a></li>
+<li><a href="/page/surface/DrawOutlinedRect" title="surface/DrawOutlinedRect">surface/DrawOutlinedRect</a></li>
+<li><a href="/page/surface/DrawPoly" title="surface/DrawPoly">surface/DrawPoly</a></li>
+<li><a href="/page/surface/DrawRect" title="surface/DrawRect">surface/DrawRect</a></li>
+<li><a href="/page/surface/DrawText" title="surface/DrawText">surface/DrawText</a></li>
+<li><a href="/page/surface/DrawTexturedRect" title="surface/DrawTexturedRect">surface/DrawTexturedRect</a></li>
+<li><a href="/page/surface/DrawTexturedRectRotated" title="surface/DrawTexturedRectRotated">surface/DrawTexturedRectRotated</a></li>
+<li><a href="/page/surface/DrawTexturedRectUV" title="surface/DrawTexturedRectUV">surface/DrawTexturedRectUV</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

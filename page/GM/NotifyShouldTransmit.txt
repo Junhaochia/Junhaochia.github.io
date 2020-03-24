@@ -1,0 +1,37 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>GM:NotifyShouldTransmit( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.NotifyShouldTransmit">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/NotifyShouldTransmit" title="Special:WhatLinksHere/GM/NotifyShouldTransmit">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called whenever this entity changes its transmission state for this <a href="/page/Global/LocalPlayer" title="Global/LocalPlayer">LocalPlayer</a>, such as exiting or re entering the PVS.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is the best place to handle the reset of <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetPredictable" title="Entity/SetPredictable">SetPredictable</a>, as this would be usually called when the player lags and requests a full packet update
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>When the entity stops transmitting, <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/IsDormant" title="Entity/IsDormant">IsDormant</a> will only return true <b>after</b> this hook
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ent</span>
+</p>
+<div style="margin-left: 32px;">
+The entity that changed its transmission state.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> shouldtransmit</span>
+</p>
+<div style="margin-left: 32px;">
+True if we started transmitting to this client and false if we stopped.</div>
+</div>
+
+

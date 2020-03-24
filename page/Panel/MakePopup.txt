@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;MakePopup( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.MakePopup">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/MakePopup" title="Special:WhatLinksHere/Panel/MakePopup">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Focuses the panel and enables it to receive input.
+</p><p>This automatically calls <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetMouseInputEnabled" title="Panel/SetMouseInputEnabled">SetMouseInputEnabled</a> and <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetKeyboardInputEnabled" title="Panel/SetKeyboardInputEnabled">SetKeyboardInputEnabled</a> and sets them to true.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Panels derived from <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> will not work properly with this function. Due to this, any children will not be intractable with keyboard. Derive from <a href="/page/Category_colon_EditablePanel" title="Category:EditablePanel">EditablePanel</a> instead.
+</p>
+</td></tr></table>
+
+

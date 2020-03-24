@@ -1,0 +1,1879 @@
+<p>Pages that detail Garry's Mod bugs. This category is set automatically by <a href="/page/Template:Bug" title="Template:Bug">Template:Bug</a>.
+</p>
+<ul><li> Bugs from GitHub issues: <a href="/page/Property:Issue_Tracker_ID" title="Property:Issue Tracker ID">List</a> | <a href="/page/Special:SearchByProperty/Issue-20Tracker-20ID" title="Special:SearchByProperty/Issue-20Tracker-20ID">Search by ID</a>
+</li><li> Bugs from GitHub requests: <a href="/page/Property:Request_Tracker_ID" title="Property:Request Tracker ID">List</a> | <a href="/page/Special:SearchByProperty/Request-20Tracker-20ID" title="Special:SearchByProperty/Request-20Tracker-20ID">Search by ID</a>
+</li><li> Bugs with GitHub pull requests: <a href="/page/Property:Pull_Request_ID" title="Property:Pull Request ID">List</a> | <a href="/page/Special:SearchByProperty/Pull-20Request-20ID" title="Special:SearchByProperty/Pull-20Request-20ID">Search by ID</a>
+</li></ul>
+<table class="sortable wikitable smwtable">
+<tr><th class="Page">Page</th>
+<th class="Issue-Tracker-ID"><a href="/page/Property:Issue_Tracker_ID" title="Property:Issue Tracker ID">Issue Tracker ID</a></th>
+<th class="Request-Tracker-ID"><a href="/page/Property:Request_Tracker_ID" title="Property:Request Tracker ID">Request Tracker ID</a></th>
+<th class="Pull-Request-ID"><a href="/page/Property:Pull_Request_ID" title="Property:Pull Request ID">Pull Request ID</a></th>
+<th class="Category"><strong class="selflink">Category</strong></th></tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/CMoveData/GetVelocity" title="CMoveData/GetVelocity">CMoveData/GetVelocity</a></td>
+<td data-sort-value="3413" class="Issue-Tracker-ID">3413</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/CMoveData/SetAngles" title="CMoveData/SetAngles">CMoveData/SetAngles</a></td>
+<td data-sort-value="2382" class="Issue-Tracker-ID">2382</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/CMoveData/SetMoveAngles" title="CMoveData/SetMoveAngles">CMoveData/SetMoveAngles</a></td>
+<td data-sort-value="1181" class="Issue-Tracker-ID">1181</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/CSoundPatch/SetDSP" title="CSoundPatch/SetDSP">CSoundPatch/SetDSP</a></td>
+<td data-sort-value="4086" class="Issue-Tracker-ID">4086</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/CSoundPatch/Stop" title="CSoundPatch/Stop">CSoundPatch/Stop</a></td>
+<td data-sort-value="3260" class="Issue-Tracker-ID">3260</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Category_colon_DTextEntry" title="Category:DTextEntry">DTextEntry</a></td>
+<td data-sort-value="1588" class="Issue-Tracker-ID">1588</td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/AllowInput" title="DTextEntry/AllowInput">DTextEntry/AllowInput</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/CheckNumeric" title="DTextEntry/CheckNumeric">DTextEntry/CheckNumeric</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/GetAutoComplete" title="DTextEntry/GetAutoComplete">DTextEntry/GetAutoComplete</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/GetCursorColor" title="DTextEntry/GetCursorColor">DTextEntry/GetCursorColor</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/GetEnterAllowed" title="DTextEntry/GetEnterAllowed">DTextEntry/GetEnterAllowed</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/GetFloat" title="DTextEntry/GetFloat">DTextEntry/GetFloat</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/GetInt" title="DTextEntry/GetInt">DTextEntry/GetInt</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/GetNumeric" title="DTextEntry/GetNumeric">DTextEntry/GetNumeric</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/GetPlaceholderColor" title="DTextEntry/GetPlaceholderColor">DTextEntry/GetPlaceholderColor</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/GetTextColor" title="DTextEntry/GetTextColor">DTextEntry/GetTextColor</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/GetUpdateOnType" title="DTextEntry/GetUpdateOnType">DTextEntry/GetUpdateOnType</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/IsEditing" title="DTextEntry/IsEditing">DTextEntry/IsEditing</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/OnChange" title="DTextEntry/OnChange">DTextEntry/OnChange</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/OnEnter" title="DTextEntry/OnEnter">DTextEntry/OnEnter</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/OnGetFocus" title="DTextEntry/OnGetFocus">DTextEntry/OnGetFocus</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/OnKeyCodeTyped" title="DTextEntry/OnKeyCodeTyped">DTextEntry/OnKeyCodeTyped</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/OnTextChanged" title="DTextEntry/OnTextChanged">DTextEntry/OnTextChanged</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/OnValueChange" title="DTextEntry/OnValueChange">DTextEntry/OnValueChange</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/OpenAutoComplete" title="DTextEntry/OpenAutoComplete">DTextEntry/OpenAutoComplete</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/SetCursorColor" title="DTextEntry/SetCursorColor">DTextEntry/SetCursorColor</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/SetDisabled" title="DTextEntry/SetDisabled">DTextEntry/SetDisabled</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/SetEditable" title="DTextEntry/SetEditable">DTextEntry/SetEditable</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/SetEnterAllowed" title="DTextEntry/SetEnterAllowed">DTextEntry/SetEnterAllowed</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/SetFont" title="DTextEntry/SetFont">DTextEntry/SetFont</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/SetNumeric" title="DTextEntry/SetNumeric">DTextEntry/SetNumeric</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/SetPlaceholderColor" title="DTextEntry/SetPlaceholderColor">DTextEntry/SetPlaceholderColor</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/SetPlaceholderText" title="DTextEntry/SetPlaceholderText">DTextEntry/SetPlaceholderText</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/SetTextColor" title="DTextEntry/SetTextColor">DTextEntry/SetTextColor</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/DTextEntry/SetUpdateOnType" title="DTextEntry/SetUpdateOnType">DTextEntry/SetUpdateOnType</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/DTextEntry/SetValue" title="DTextEntry/SetValue">DTextEntry/SetValue</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Derma_Skin_Creation" title="Derma Skin Creation">Derma Skin Creation</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/ENTITY/Initialize" title="ENTITY/Initialize">ENTITY/Initialize</a></td>
+<td data-sort-value="2732" class="Issue-Tracker-ID">2732</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/ENTITY/PostEntityPaste" title="ENTITY/PostEntityPaste">ENTITY/PostEntityPaste</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1408" class="Pull-Request-ID">1408</td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">ENTITY/RenderOverride</a></td>
+<td data-sort-value="3292" class="Issue-Tracker-ID">3292<br />3299</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Help:Editing" title="Help:Editing">Editing</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Pull-Request-ID">1</td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/Activate" title="Entity/Activate">Entity/Activate</a></td>
+<td data-sort-value="3372" class="Issue-Tracker-ID">3372</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/CallOnRemove" title="Entity/CallOnRemove">Entity/CallOnRemove</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1275" class="Pull-Request-ID">1275</td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/DrawModel" title="Entity/DrawModel">Entity/DrawModel</a></td>
+<td data-sort-value="2688" class="Issue-Tracker-ID">2688<br />1558</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/EmitSound" title="Entity/EmitSound">Entity/EmitSound</a></td>
+<td data-sort-value="2651" class="Issue-Tracker-ID">2651</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/EnableMatrix" title="Entity/EnableMatrix">Entity/EnableMatrix</a></td>
+<td data-sort-value="3502" class="Issue-Tracker-ID">3502</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/EyeAngles" title="Entity/EyeAngles">Entity/EyeAngles</a></td>
+<td data-sort-value="1150" class="Issue-Tracker-ID">1150<br />2620</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/GetAngles" title="Entity/GetAngles">Entity/GetAngles</a></td>
+<td data-sort-value="3106" class="Issue-Tracker-ID">3106<br />3107<br />2764</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/GetAttachment" title="Entity/GetAttachment">Entity/GetAttachment</a></td>
+<td data-sort-value="1255" class="Issue-Tracker-ID">1255</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/GetAttachments" title="Entity/GetAttachments">Entity/GetAttachments</a></td>
+<td data-sort-value="3167" class="Issue-Tracker-ID">3167</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/GetBoneMatrix" title="Entity/GetBoneMatrix">Entity/GetBoneMatrix</a></td>
+<td data-sort-value="3285" class="Issue-Tracker-ID">3285<br />884</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/GetBonePosition" title="Entity/GetBonePosition">Entity/GetBonePosition</a></td>
+<td data-sort-value="3285" class="Issue-Tracker-ID">3285<br />884<br />3739</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/GetCollisionBounds" title="Entity/GetCollisionBounds">Entity/GetCollisionBounds</a></td>
+<td data-sort-value="223" class="Issue-Tracker-ID">223</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/GetColor" title="Entity/GetColor">Entity/GetColor</a></td>
+<td data-sort-value="2407" class="Issue-Tracker-ID">2407</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/GetMaterial" title="Entity/GetMaterial">Entity/GetMaterial</a></td>
+<td data-sort-value="3362" class="Issue-Tracker-ID">3362</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/GetMaterials" title="Entity/GetMaterials">Entity/GetMaterials</a></td>
+<td data-sort-value="3362" class="Issue-Tracker-ID">3362<br />3216</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/GetModel" title="Entity/GetModel">Entity/GetModel</a></td>
+<td data-sort-value="2246" class="Issue-Tracker-ID">2246</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/GetNWInt" title="Entity/GetNWInt">Entity/GetNWInt</a></td>
+<td data-sort-value="3374" class="Issue-Tracker-ID">3374</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/GetShouldPlayPickupSound" title="Entity/GetShouldPlayPickupSound">Entity/GetShouldPlayPickupSound</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1488" class="Pull-Request-ID">1488</td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/GetSubMaterial" title="Entity/GetSubMaterial">Entity/GetSubMaterial</a></td>
+<td data-sort-value="3362" class="Issue-Tracker-ID">3362</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/GetUnFreezable" title="Entity/GetUnFreezable">Entity/GetUnFreezable</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1488" class="Pull-Request-ID">1488</td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/GetVelocity" title="Entity/GetVelocity">Entity/GetVelocity</a></td>
+<td data-sort-value="774" class="Issue-Tracker-ID">774</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/GetWorldTransformMatrix" title="Entity/GetWorldTransformMatrix">Entity/GetWorldTransformMatrix</a></td>
+<td data-sort-value="2764" class="Issue-Tracker-ID">2764<br />3106<br />3107</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/HasBoneManipulations" title="Entity/HasBoneManipulations">Entity/HasBoneManipulations</a></td>
+<td data-sort-value="3131" class="Issue-Tracker-ID">3131</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/InitializeAsClientEntity" title="Entity/InitializeAsClientEntity">Entity/InitializeAsClientEntity</a></td>
+<td data-sort-value="3368" class="Issue-Tracker-ID">3368</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/IsConstrained" title="Entity/IsConstrained">Entity/IsConstrained</a></td>
+<td data-sort-value="3837" class="Issue-Tracker-ID">3837</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/IsPlayerHolding" title="Entity/IsPlayerHolding">Entity/IsPlayerHolding</a></td>
+<td data-sort-value="2046" class="Issue-Tracker-ID">2046</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/ManipulateBoneScale" title="Entity/ManipulateBoneScale">Entity/ManipulateBoneScale</a></td>
+<td data-sort-value="3502" class="Issue-Tracker-ID">3502<br />1249</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/NetworkVarNotify" title="Entity/NetworkVarNotify">Entity/NetworkVarNotify</a></td>
+<td></td>
+<td data-sort-value="324" class="Request-Tracker-ID">324</td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/NextThink" title="Entity/NextThink">Entity/NextThink</a></td>
+<td data-sort-value="3269" class="Issue-Tracker-ID">3269</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/PhysicsInit" title="Entity/PhysicsInit">Entity/PhysicsInit</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/PhysicsInitBox" title="Entity/PhysicsInitBox">Entity/PhysicsInitBox</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/PhysicsInitConvex" title="Entity/PhysicsInitConvex">Entity/PhysicsInitConvex</a></td>
+<td data-sort-value="3301" class="Issue-Tracker-ID">3301</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/PhysicsInitMultiConvex" title="Entity/PhysicsInitMultiConvex">Entity/PhysicsInitMultiConvex</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/PhysicsInitShadow" title="Entity/PhysicsInitShadow">Entity/PhysicsInitShadow</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/PhysicsInitSphere" title="Entity/PhysicsInitSphere">Entity/PhysicsInitSphere</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/PhysicsInitStatic" title="Entity/PhysicsInitStatic">Entity/PhysicsInitStatic</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/SendViewModelMatchingSequence" title="Entity/SendViewModelMatchingSequence">Entity/SendViewModelMatchingSequence</a></td>
+<td data-sort-value="3229" class="Issue-Tracker-ID">3229</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/SequenceDuration" title="Entity/SequenceDuration">Entity/SequenceDuration</a></td>
+<td data-sort-value="2783" class="Issue-Tracker-ID">2783</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/SetCycle" title="Entity/SetCycle">Entity/SetCycle</a></td>
+<td data-sort-value="3038" class="Issue-Tracker-ID">3038</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/SetFlexScale" title="Entity/SetFlexScale">Entity/SetFlexScale</a></td>
+<td data-sort-value="1779" class="Issue-Tracker-ID">1779</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/SetFriction" title="Entity/SetFriction">Entity/SetFriction</a></td>
+<td data-sort-value="1395" class="Issue-Tracker-ID">1395</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/SetGravity" title="Entity/SetGravity">Entity/SetGravity</a></td>
+<td data-sort-value="3648" class="Issue-Tracker-ID">3648</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/SetMaterial" title="Entity/SetMaterial">Entity/SetMaterial</a></td>
+<td data-sort-value="3362" class="Issue-Tracker-ID">3362</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/SetModelScale" title="Entity/SetModelScale">Entity/SetModelScale</a></td>
+<td data-sort-value="3502" class="Issue-Tracker-ID">3502<br />2193</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/SetNWInt" title="Entity/SetNWInt">Entity/SetNWInt</a></td>
+<td data-sort-value="3374" class="Issue-Tracker-ID">3374</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/SetPos" title="Entity/SetPos">Entity/SetPos</a></td>
+<td data-sort-value="2447" class="Issue-Tracker-ID">2447</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/SetPreventTransmit" title="Entity/SetPreventTransmit">Entity/SetPreventTransmit</a></td>
+<td data-sort-value="1736" class="Issue-Tracker-ID">1736</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Entity/SetSaveValue" title="Entity/SetSaveValue">Entity/SetSaveValue</a></td>
+<td data-sort-value="4065" class="Issue-Tracker-ID">4065</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Entity/SetSubMaterial" title="Entity/SetSubMaterial">Entity/SetSubMaterial</a></td>
+<td data-sort-value="3362" class="Issue-Tracker-ID">3362</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Enums/ACT" title="Enums/ACT">Enums/ACT</a></td>
+<td data-sort-value="3075" class="Issue-Tracker-ID">3075</td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Enums/FL" title="Enums/FL">Enums/FL</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/GM/AddDeathNotice" title="GM/AddDeathNotice">GM/AddDeathNotice</a></td>
+<td data-sort-value="2611" class="Issue-Tracker-ID">2611</td>
+<td></td>
+<td data-sort-value="1380" class="Pull-Request-ID">1380</td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/GM/CalcMainActivity" title="GM/CalcMainActivity">GM/CalcMainActivity</a></td>
+<td data-sort-value="3322" class="Issue-Tracker-ID">3322</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/GM/DrawPhysgunBeam" title="GM/DrawPhysgunBeam">GM/DrawPhysgunBeam</a></td>
+<td data-sort-value="3294" class="Issue-Tracker-ID">3294</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/GM/EntityEmitSound" title="GM/EntityEmitSound">GM/EntityEmitSound</a></td>
+<td data-sort-value="1021" class="Issue-Tracker-ID">1021</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/GM/OnPhysgunFreeze" title="GM/OnPhysgunFreeze">GM/OnPhysgunFreeze</a></td>
+<td data-sort-value="723" class="Issue-Tracker-ID">723</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/GM/OnViewModelChanged" title="GM/OnViewModelChanged">GM/OnViewModelChanged</a></td>
+<td data-sort-value="2473" class="Issue-Tracker-ID">2473</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/GM/PlayerAuthed" title="GM/PlayerAuthed">GM/PlayerAuthed</a></td>
+<td data-sort-value="3026" class="Issue-Tracker-ID">3026</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/GM/PlayerBindPress" title="GM/PlayerBindPress">GM/PlayerBindPress</a></td>
+<td data-sort-value="2888" class="Issue-Tracker-ID">2888<br />1176</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/GM/PlayerDeathThink" title="GM/PlayerDeathThink">GM/PlayerDeathThink</a></td>
+<td data-sort-value="1577" class="Issue-Tracker-ID">1577</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/GM/PlayerDisconnected" title="GM/PlayerDisconnected">GM/PlayerDisconnected</a></td>
+<td data-sort-value="3523" class="Issue-Tracker-ID">3523</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/GM/PlayerLeaveVehicle" title="GM/PlayerLeaveVehicle">GM/PlayerLeaveVehicle</a></td>
+<td data-sort-value="2619" class="Issue-Tracker-ID">2619</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/GM/PlayerSwitchWeapon" title="GM/PlayerSwitchWeapon">GM/PlayerSwitchWeapon</a></td>
+<td data-sort-value="2922" class="Issue-Tracker-ID">2922</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/GM/PostDrawTranslucentRenderables" title="GM/PostDrawTranslucentRenderables">GM/PostDrawTranslucentRenderables</a></td>
+<td data-sort-value="3295" class="Issue-Tracker-ID">3295<br />3296</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/GM/PreDrawTranslucentRenderables" title="GM/PreDrawTranslucentRenderables">GM/PreDrawTranslucentRenderables</a></td>
+<td data-sort-value="3295" class="Issue-Tracker-ID">3295<br />3296</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/GM/PreDrawViewModel" title="GM/PreDrawViewModel">GM/PreDrawViewModel</a></td>
+<td data-sort-value="3024" class="Issue-Tracker-ID">3024</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/GM/ShouldCollide" title="GM/ShouldCollide">GM/ShouldCollide</a></td>
+<td data-sort-value="642" class="Issue-Tracker-ID">642</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/GM/StartChat" title="GM/StartChat">GM/StartChat</a></td>
+<td data-sort-value="855" class="Issue-Tracker-ID">855</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global_States" title="Global States">Global States</a></td>
+<td></td>
+<td data-sort-value="91" class="Request-Tracker-ID">91</td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/ClientsideModel" title="Global/ClientsideModel">Global/ClientsideModel</a></td>
+<td data-sort-value="1387" class="Issue-Tracker-ID">1387<br />861<br />3184</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/ClientsideRagdoll" title="Global/ClientsideRagdoll">Global/ClientsideRagdoll</a></td>
+<td data-sort-value="1387" class="Issue-Tracker-ID">1387</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/CreateMaterial" title="Global/CreateMaterial">Global/CreateMaterial</a></td>
+<td data-sort-value="3103" class="Issue-Tracker-ID">3103<br />2511<br />1531</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/CreatePhysCollideBox" title="Global/CreatePhysCollideBox">Global/CreatePhysCollideBox</a></td>
+<td data-sort-value="3568" class="Issue-Tracker-ID">3568</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/CurTime" title="Global/CurTime">Global/CurTime</a></td>
+<td data-sort-value="3026" class="Issue-Tracker-ID">3026</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/DamageInfo" title="Global/DamageInfo">Global/DamageInfo</a></td>
+<td data-sort-value="2771" class="Issue-Tracker-ID">2771</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/DynamicLight" title="Global/DynamicLight">Global/DynamicLight</a></td>
+<td data-sort-value="3798" class="Issue-Tracker-ID">3798</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/EffectData" title="Global/EffectData">Global/EffectData</a></td>
+<td data-sort-value="2771" class="Issue-Tracker-ID">2771</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/EmitSound" title="Global/EmitSound">Global/EmitSound</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/Error" title="Global/Error">Global/Error</a></td>
+<td data-sort-value="2113" class="Issue-Tracker-ID">2113</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/EyeAngles" title="Global/EyeAngles">Global/EyeAngles</a></td>
+<td data-sort-value="2516" class="Issue-Tracker-ID">2516</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/EyePos" title="Global/EyePos">Global/EyePos</a></td>
+<td data-sort-value="2516" class="Issue-Tracker-ID">2516</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/EyeVector" title="Global/EyeVector">Global/EyeVector</a></td>
+<td data-sort-value="2516" class="Issue-Tracker-ID">2516</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/GetGlobalInt" title="Global/GetGlobalInt">Global/GetGlobalInt</a></td>
+<td data-sort-value="3374" class="Issue-Tracker-ID">3374</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/GetRenderTarget" title="Global/GetRenderTarget">Global/GetRenderTarget</a></td>
+<td data-sort-value="2885" class="Issue-Tracker-ID">2885</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/HSLToColor" title="Global/HSLToColor">Global/HSLToColor</a></td>
+<td data-sort-value="2407" class="Issue-Tracker-ID">2407</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/HSVToColor" title="Global/HSVToColor">Global/HSVToColor</a></td>
+<td data-sort-value="2407" class="Issue-Tracker-ID">2407</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/HTTP" title="Global/HTTP">Global/HTTP</a></td>
+<td data-sort-value="2232" class="Issue-Tracker-ID">2232</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/IsColor" title="Global/IsColor">Global/IsColor</a></td>
+<td data-sort-value="2407" class="Issue-Tracker-ID">2407</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/OpenFolder" title="Global/OpenFolder">Global/OpenFolder</a></td>
+<td data-sort-value="1532" class="Issue-Tracker-ID">1532</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/SetGlobalInt" title="Global/SetGlobalInt">Global/SetGlobalInt</a></td>
+<td data-sort-value="3374" class="Issue-Tracker-ID">3374</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/Sound" title="Global/Sound">Global/Sound</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/SoundDuration" title="Global/SoundDuration">Global/SoundDuration</a></td>
+<td data-sort-value="936" class="Issue-Tracker-ID">936</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/TimedSin" title="Global/TimedSin">Global/TimedSin</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/TypeID" title="Global/TypeID">Global/TypeID</a></td>
+<td></td>
+<td data-sort-value="1120" class="Request-Tracker-ID">1120<br />1459</td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/include" title="Global/include">Global/include</a></td>
+<td data-sort-value="1976" class="Issue-Tracker-ID">1976</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/pcall" title="Global/pcall">Global/pcall</a></td>
+<td data-sort-value="1976" class="Issue-Tracker-ID">1976<br />3112<br />2498<br />2036</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Global/require" title="Global/require">Global/require</a></td>
+<td data-sort-value="1041" class="Issue-Tracker-ID">1041</td>
+<td data-sort-value="813" class="Request-Tracker-ID">813</td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Global/xpcall" title="Global/xpcall">Global/xpcall</a></td>
+<td data-sort-value="1976" class="Issue-Tracker-ID">1976<br />2498<br />3112<br />2036</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/IGModAudioChannel/Stop" title="IGModAudioChannel/Stop">IGModAudioChannel/Stop</a></td>
+<td data-sort-value="1497" class="Issue-Tracker-ID">1497</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/IMaterial/GetColor" title="IMaterial/GetColor">IMaterial/GetColor</a></td>
+<td data-sort-value="2407" class="Issue-Tracker-ID">2407</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/IMaterial/GetShader" title="IMaterial/GetShader">IMaterial/GetShader</a></td>
+<td data-sort-value="3256" class="Issue-Tracker-ID">3256</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Category_colon_IMesh" title="Category:IMesh">IMesh</a></td>
+<td data-sort-value="2301" class="Issue-Tracker-ID">2301</td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/IMesh/BuildFromTriangles" title="IMesh/BuildFromTriangles">IMesh/BuildFromTriangles</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/IMesh/Destroy" title="IMesh/Destroy">IMesh/Destroy</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/IMesh/Draw" title="IMesh/Draw">IMesh/Draw</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="0" class="Category">No</td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/ITexture/GetColor" title="ITexture/GetColor">ITexture/GetColor</a></td>
+<td data-sort-value="2407" class="Issue-Tracker-ID">2407</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/NPC/GetEnemy" title="NPC/GetEnemy">NPC/GetEnemy</a></td>
+<td data-sort-value="3132" class="Issue-Tracker-ID">3132</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/NPC/GetTarget" title="NPC/GetTarget">NPC/GetTarget</a></td>
+<td data-sort-value="3132" class="Issue-Tracker-ID">3132</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/NextBot/BodyMoveXY" title="NextBot/BodyMoveXY">NextBot/BodyMoveXY</a></td>
+<td data-sort-value="3420" class="Issue-Tracker-ID">3420</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/PANEL/OnChildAdded" title="PANEL/OnChildAdded">PANEL/OnChildAdded</a></td>
+<td data-sort-value="2759" class="Issue-Tracker-ID">2759</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/PANEL/OnKeyCodePressed" title="PANEL/OnKeyCodePressed">PANEL/OnKeyCodePressed</a></td>
+<td data-sort-value="2886" class="Issue-Tracker-ID">2886</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/PANEL/OnKeyCodeReleased" title="PANEL/OnKeyCodeReleased">PANEL/OnKeyCodeReleased</a></td>
+<td data-sort-value="2886" class="Issue-Tracker-ID">2886</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Panel/DoModal" title="Panel/DoModal">Panel/DoModal</a></td>
+<td data-sort-value="3457" class="Issue-Tracker-ID">3457</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Panel/GetTextSize" title="Panel/GetTextSize">Panel/GetTextSize</a></td>
+<td data-sort-value="2576" class="Issue-Tracker-ID">2576</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Panel/GotoTextStart" title="Panel/GotoTextStart">Panel/GotoTextStart</a></td>
+<td data-sort-value="2239" class="Issue-Tracker-ID">2239</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Panel/InvalidateLayout" title="Panel/InvalidateLayout">Panel/InvalidateLayout</a></td>
+<td data-sort-value="2574" class="Issue-Tracker-ID">2574</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Panel/SetWorldClicker" title="Panel/SetWorldClicker">Panel/SetWorldClicker</a></td>
+<td data-sort-value="3467" class="Issue-Tracker-ID">3467</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Player/Freeze" title="Player/Freeze">Player/Freeze</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Player/GetCurrentCommand" title="Player/GetCurrentCommand">Player/GetCurrentCommand</a></td>
+<td data-sort-value="3302" class="Issue-Tracker-ID">3302</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Player/GetName" title="Player/GetName">Player/GetName</a></td>
+<td data-sort-value="3178" class="Issue-Tracker-ID">3178</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Player/GetSuitPower" title="Player/GetSuitPower">Player/GetSuitPower</a></td>
+<td data-sort-value="3449" class="Issue-Tracker-ID">3449</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Player/HasGodMode" title="Player/HasGodMode">Player/HasGodMode</a></td>
+<td data-sort-value="2038" class="Issue-Tracker-ID">2038</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Player/IsSuitEquipped" title="Player/IsSuitEquipped">Player/IsSuitEquipped</a></td>
+<td data-sort-value="3449" class="Issue-Tracker-ID">3449</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Player/LagCompensation" title="Player/LagCompensation">Player/LagCompensation</a></td>
+<td data-sort-value="3683" class="Issue-Tracker-ID">3683</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Player/Lock" title="Player/Lock">Player/Lock</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Player/Name" title="Player/Name">Player/Name</a></td>
+<td data-sort-value="3178" class="Issue-Tracker-ID">3178</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Player/Nick" title="Player/Nick">Player/Nick</a></td>
+<td data-sort-value="3178" class="Issue-Tracker-ID">3178</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Player/SetAllowWeaponsInVehicle" title="Player/SetAllowWeaponsInVehicle">Player/SetAllowWeaponsInVehicle</a></td>
+<td data-sort-value="3261" class="Issue-Tracker-ID">3261<br />1277</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Player/SetDuckSpeed" title="Player/SetDuckSpeed">Player/SetDuckSpeed</a></td>
+<td data-sort-value="2722" class="Issue-Tracker-ID">2722</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Player/SetHull" title="Player/SetHull">Player/SetHull</a></td>
+<td data-sort-value="3365" class="Issue-Tracker-ID">3365</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Player/SetNoCollideWithTeammates" title="Player/SetNoCollideWithTeammates">Player/SetNoCollideWithTeammates</a></td>
+<td data-sort-value="2757" class="Issue-Tracker-ID">2757</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Player/SetSuitPower" title="Player/SetSuitPower">Player/SetSuitPower</a></td>
+<td data-sort-value="3449" class="Issue-Tracker-ID">3449</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Player/SetWalkSpeed" title="Player/SetWalkSpeed">Player/SetWalkSpeed</a></td>
+<td data-sort-value="2030" class="Issue-Tracker-ID">2030</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Player/SpectateEntity" title="Player/SpectateEntity">Player/SpectateEntity</a></td>
+<td data-sort-value="3267" class="Issue-Tracker-ID">3267</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Player/SprintDisable" title="Player/SprintDisable">Player/SprintDisable</a></td>
+<td data-sort-value="2390" class="Issue-Tracker-ID">2390</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Player/SprintEnable" title="Player/SprintEnable">Player/SprintEnable</a></td>
+<td data-sort-value="2390" class="Issue-Tracker-ID">2390</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/ProjectedTexture/GetColor" title="ProjectedTexture/GetColor">ProjectedTexture/GetColor</a></td>
+<td data-sort-value="2407" class="Issue-Tracker-ID">2407</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Render_Order" title="Render Order">Render Order</a></td>
+<td data-sort-value="3024" class="Issue-Tracker-ID">3024</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Vector/ToScreen" title="Vector/ToScreen">Vector/ToScreen</a></td>
+<td data-sort-value="462" class="Issue-Tracker-ID">462<br />1404</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Vehicle/SetVehicleParams" title="Vehicle/SetVehicleParams">Vehicle/SetVehicleParams</a></td>
+<td data-sort-value="2625" class="Issue-Tracker-ID">2625</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/WEAPON/CalcView" title="WEAPON/CalcView">WEAPON/CalcView</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1348" class="Pull-Request-ID">1348</td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/WEAPON/DoDrawCrosshair" title="WEAPON/DoDrawCrosshair">WEAPON/DoDrawCrosshair</a></td>
+<td data-sort-value="2117" class="Issue-Tracker-ID">2117</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/WEAPON/Holster" title="WEAPON/Holster">WEAPON/Holster</a></td>
+<td data-sort-value="2854" class="Issue-Tracker-ID">2854<br />3133</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/WEAPON/Initialize" title="WEAPON/Initialize">WEAPON/Initialize</a></td>
+<td data-sort-value="3015" class="Issue-Tracker-ID">3015<br />2732</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/WEAPON/Think" title="WEAPON/Think">WEAPON/Think</a></td>
+<td data-sort-value="2855" class="Issue-Tracker-ID">2855</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Weapon/GetActivity" title="Weapon/GetActivity">Weapon/GetActivity</a></td>
+<td data-sort-value="2543" class="Issue-Tracker-ID">2543</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/Weapon/SetHoldType" title="Weapon/SetHoldType">Weapon/SetHoldType</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/Weapon/SetNextPrimaryFire" title="Weapon/SetNextPrimaryFire">Weapon/SetNextPrimaryFire</a></td>
+<td data-sort-value="3786" class="Issue-Tracker-ID">3786</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/cam/End" title="cam/End">cam/End</a></td>
+<td data-sort-value="1091" class="Issue-Tracker-ID">1091</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/cam/End2D" title="cam/End2D">cam/End2D</a></td>
+<td data-sort-value="1091" class="Issue-Tracker-ID">1091</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/cam/End3D" title="cam/End3D">cam/End3D</a></td>
+<td data-sort-value="1091" class="Issue-Tracker-ID">1091</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/cam/End3D2D" title="cam/End3D2D">cam/End3D2D</a></td>
+<td data-sort-value="1091" class="Issue-Tracker-ID">1091</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/cam/Start" title="cam/Start">cam/Start</a></td>
+<td data-sort-value="2682" class="Issue-Tracker-ID">2682</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/cam/Start3D" title="cam/Start3D">cam/Start3D</a></td>
+<td data-sort-value="2682" class="Issue-Tracker-ID">2682<br />1995</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/concommand/Add" title="concommand/Add">concommand/Add</a></td>
+<td data-sort-value="1183" class="Issue-Tracker-ID">1183</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/concommand/Remove" title="concommand/Remove">concommand/Remove</a></td>
+<td data-sort-value="1183" class="Issue-Tracker-ID">1183</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/cvars/AddChangeCallback" title="cvars/AddChangeCallback">cvars/AddChangeCallback</a></td>
+<td data-sort-value="3503" class="Issue-Tracker-ID">3503<br />1440<br />3740</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/engine/ActiveGamemode" title="engine/ActiveGamemode">engine/ActiveGamemode</a></td>
+<td data-sort-value="1988" class="Issue-Tracker-ID">1988</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/engine/LightStyle" title="engine/LightStyle">engine/LightStyle</a></td>
+<td data-sort-value="3626" class="Issue-Tracker-ID">3626</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/ents/CreateClientProp" title="ents/CreateClientProp">ents/CreateClientProp</a></td>
+<td data-sort-value="1387" class="Issue-Tracker-ID">1387<br />3268</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/ents/FindByModel" title="ents/FindByModel">ents/FindByModel</a></td>
+<td data-sort-value="2872" class="Issue-Tracker-ID">2872</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/game/AddAmmoType" title="game/AddAmmoType">game/AddAmmoType</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1487" class="Pull-Request-ID">1487</td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/game/CleanUpMap" title="game/CleanUpMap">game/CleanUpMap</a></td>
+<td data-sort-value="2874" class="Issue-Tracker-ID">2874<br />1142<br />3637</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/game/GetIPAddress" title="game/GetIPAddress">game/GetIPAddress</a></td>
+<td data-sort-value="3001" class="Issue-Tracker-ID">3001</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/game/IsDedicated" title="game/IsDedicated">game/IsDedicated</a></td>
+<td data-sort-value="1495" class="Issue-Tracker-ID">1495</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/game/SetSkillLevel" title="game/SetSkillLevel">game/SetSkillLevel</a></td>
+<td data-sort-value="3491" class="Issue-Tracker-ID">3491</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/gui/EnableScreenClicker" title="gui/EnableScreenClicker">gui/EnableScreenClicker</a></td>
+<td data-sort-value="982" class="Issue-Tracker-ID">982</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/gui/OpenURL" title="gui/OpenURL">gui/OpenURL</a></td>
+<td data-sort-value="3383" class="Issue-Tracker-ID">3383</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/math/calcBSplineN" title="math/calcBSplineN">math/calcBSplineN</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1477" class="Pull-Request-ID">1477</td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/os/date" title="os/date">os/date</a></td>
+<td data-sort-value="329" class="Issue-Tracker-ID">329</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/physenv/AddSurfaceData" title="physenv/AddSurfaceData">physenv/AddSurfaceData</a></td>
+<td data-sort-value="2604" class="Issue-Tracker-ID">2604</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/render/Capture" title="render/Capture">render/Capture</a></td>
+<td data-sort-value="2571" class="Issue-Tracker-ID">2571</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/render/Clear" title="render/Clear">render/Clear</a></td>
+<td data-sort-value="2085" class="Issue-Tracker-ID">2085</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/render/ClearDepth" title="render/ClearDepth">render/ClearDepth</a></td>
+<td data-sort-value="3317" class="Issue-Tracker-ID">3317</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/render/DrawLine" title="render/DrawLine">render/DrawLine</a></td>
+<td data-sort-value="1086" class="Issue-Tracker-ID">1086</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/render/EnableClipping" title="render/EnableClipping">render/EnableClipping</a></td>
+<td data-sort-value="3105" class="Issue-Tracker-ID">3105</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/render/Model" title="render/Model">render/Model</a></td>
+<td data-sort-value="3307" class="Issue-Tracker-ID">3307</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/render/PushFlashlightMode" title="render/PushFlashlightMode">render/PushFlashlightMode</a></td>
+<td data-sort-value="3029" class="Issue-Tracker-ID">3029</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/render/RenderView" title="render/RenderView">render/RenderView</a></td>
+<td data-sort-value="1330" class="Issue-Tracker-ID">1330</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/render/SetBlend" title="render/SetBlend">render/SetBlend</a></td>
+<td data-sort-value="3166" class="Issue-Tracker-ID">3166</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/render/SetLightingOrigin" title="render/SetLightingOrigin">render/SetLightingOrigin</a></td>
+<td data-sort-value="2804" class="Issue-Tracker-ID">2804</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/render/SuppressEngineLighting" title="render/SuppressEngineLighting">render/SuppressEngineLighting</a></td>
+<td data-sort-value="4070" class="Issue-Tracker-ID">4070</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/scripted_ents/Register" title="scripted ents/Register">scripted ents/Register</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1300" class="Pull-Request-ID">1300</td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/sound/Generate" title="sound/Generate">sound/Generate</a></td>
+<td data-sort-value="3360" class="Issue-Tracker-ID">3360<br />4082</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/sound/PlayFile" title="sound/PlayFile">sound/PlayFile</a></td>
+<td data-sort-value="2304" class="Issue-Tracker-ID">2304<br />1752</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/sound/PlayURL" title="sound/PlayURL">sound/PlayURL</a></td>
+<td data-sort-value="2296" class="Issue-Tracker-ID">2296</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/surface/DrawTexturedRectUV" title="surface/DrawTexturedRectUV">surface/DrawTexturedRectUV</a></td>
+<td data-sort-value="3173" class="Issue-Tracker-ID">3173</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/surface/GetDrawColor" title="surface/GetDrawColor">surface/GetDrawColor</a></td>
+<td data-sort-value="2407" class="Issue-Tracker-ID">2407</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/surface/GetTextColor" title="surface/GetTextColor">surface/GetTextColor</a></td>
+<td data-sort-value="2407" class="Issue-Tracker-ID">2407</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/system/HasFocus" title="system/HasFocus">system/HasFocus</a></td>
+<td data-sort-value="2424" class="Issue-Tracker-ID">2424</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/table/Inherit" title="table/Inherit">table/Inherit</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1304" class="Pull-Request-ID">1304</td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/util/JSONToTable" title="util/JSONToTable">util/JSONToTable</a></td>
+<td data-sort-value="3561" class="Issue-Tracker-ID">3561</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/util/PrecacheSound" title="util/PrecacheSound">util/PrecacheSound</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-odd">
+<td class="Page"><a href="/page/util/TableToJSON" title="util/TableToJSON">util/TableToJSON</a></td>
+<td data-sort-value="3561" class="Issue-Tracker-ID">3561</td>
+<td></td>
+<td></td>
+<td data-sort-value="1" class="Category"></td>
+</tr>
+<tr class="row-even">
+<td class="Page"><a href="/page/weapons/Register" title="weapons/Register">weapons/Register</a></td>
+<td></td>
+<td></td>
+<td data-sort-value="1300" class="Pull-Request-ID">1300</td>
+<td data-sort-value="1" class="Category"></td>
+</tr></table>
+
+
+<div lang="en" dir="ltr"><div id="mw-subcategories">
+<h2>Subcategories</h2>
+<p>This category has the following 2 subcategories, out of 2 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>D</h3>
+<ul><li><a href="/page/Category_colon_DTextEntry" title="Category:DTextEntry">DTextEntry</a></li></ul><h3>I</h3>
+<ul><li><a href="/page/Category_colon_IMesh" title="Category:IMesh">IMesh</a></li></ul></div>
+</div><div id="mw-pages">
+<h2>Pages in category "Bugs"</h2>
+<p>The following 199 pages are in this category, out of 199 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>C</h3>
+<ul><li><a href="/page/cam/End" title="cam/End">cam/End</a></li>
+<li><a href="/page/cam/End2D" title="cam/End2D">cam/End2D</a></li>
+<li><a href="/page/cam/End3D" title="cam/End3D">cam/End3D</a></li>
+<li><a href="/page/cam/End3D2D" title="cam/End3D2D">cam/End3D2D</a></li>
+<li><a href="/page/cam/Start" title="cam/Start">cam/Start</a></li>
+<li><a href="/page/cam/Start3D" title="cam/Start3D">cam/Start3D</a></li>
+<li><a href="/page/CMoveData/GetVelocity" title="CMoveData/GetVelocity">CMoveData/GetVelocity</a></li>
+<li><a href="/page/CMoveData/SetAngles" title="CMoveData/SetAngles">CMoveData/SetAngles</a></li>
+<li><a href="/page/CMoveData/SetMoveAngles" title="CMoveData/SetMoveAngles">CMoveData/SetMoveAngles</a></li>
+<li><a href="/page/concommand/Add" title="concommand/Add">concommand/Add</a></li>
+<li><a href="/page/concommand/Remove" title="concommand/Remove">concommand/Remove</a></li>
+<li><a href="/page/CSoundPatch/SetDSP" title="CSoundPatch/SetDSP">CSoundPatch/SetDSP</a></li>
+<li><a href="/page/CSoundPatch/Stop" title="CSoundPatch/Stop">CSoundPatch/Stop</a></li>
+<li><a href="/page/cvars/AddChangeCallback" title="cvars/AddChangeCallback">cvars/AddChangeCallback</a></li></ul><h3>D</h3>
+<ul><li><a href="/page/Derma_Skin_Creation" title="Derma Skin Creation">Derma Skin Creation</a></li></ul><h3>E</h3>
+<ul><li><a href="/page/engine/ActiveGamemode" title="engine/ActiveGamemode">engine/ActiveGamemode</a></li>
+<li><a href="/page/engine/LightStyle" title="engine/LightStyle">engine/LightStyle</a></li>
+<li><a href="/page/Entity/Activate" title="Entity/Activate">Entity/Activate</a></li>
+<li><a href="/page/Entity/CallOnRemove" title="Entity/CallOnRemove">Entity/CallOnRemove</a></li>
+<li><a href="/page/Entity/DrawModel" title="Entity/DrawModel">Entity/DrawModel</a></li>
+<li><a href="/page/Entity/EmitSound" title="Entity/EmitSound">Entity/EmitSound</a></li>
+<li><a href="/page/Entity/EnableMatrix" title="Entity/EnableMatrix">Entity/EnableMatrix</a></li>
+<li><a href="/page/Entity/EyeAngles" title="Entity/EyeAngles">Entity/EyeAngles</a></li>
+<li><a href="/page/Entity/GetAngles" title="Entity/GetAngles">Entity/GetAngles</a></li>
+<li><a href="/page/Entity/GetAttachment" title="Entity/GetAttachment">Entity/GetAttachment</a></li>
+<li><a href="/page/Entity/GetAttachments" title="Entity/GetAttachments">Entity/GetAttachments</a></li>
+<li><a href="/page/Entity/GetBoneMatrix" title="Entity/GetBoneMatrix">Entity/GetBoneMatrix</a></li>
+<li><a href="/page/Entity/GetBonePosition" title="Entity/GetBonePosition">Entity/GetBonePosition</a></li>
+<li><a href="/page/Entity/GetCollisionBounds" title="Entity/GetCollisionBounds">Entity/GetCollisionBounds</a></li>
+<li><a href="/page/Entity/GetColor" title="Entity/GetColor">Entity/GetColor</a></li>
+<li><a href="/page/Entity/GetMaterial" title="Entity/GetMaterial">Entity/GetMaterial</a></li>
+<li><a href="/page/Entity/GetMaterials" title="Entity/GetMaterials">Entity/GetMaterials</a></li>
+<li><a href="/page/Entity/GetModel" title="Entity/GetModel">Entity/GetModel</a></li>
+<li><a href="/page/Entity/GetNWInt" title="Entity/GetNWInt">Entity/GetNWInt</a></li>
+<li><a href="/page/Entity/GetShouldPlayPickupSound" title="Entity/GetShouldPlayPickupSound">Entity/GetShouldPlayPickupSound</a></li>
+<li><a href="/page/Entity/GetSubMaterial" title="Entity/GetSubMaterial">Entity/GetSubMaterial</a></li>
+<li><a href="/page/Entity/GetUnFreezable" title="Entity/GetUnFreezable">Entity/GetUnFreezable</a></li>
+<li><a href="/page/Entity/GetVelocity" title="Entity/GetVelocity">Entity/GetVelocity</a></li>
+<li><a href="/page/Entity/GetWorldTransformMatrix" title="Entity/GetWorldTransformMatrix">Entity/GetWorldTransformMatrix</a></li>
+<li><a href="/page/Entity/HasBoneManipulations" title="Entity/HasBoneManipulations">Entity/HasBoneManipulations</a></li>
+<li><a href="/page/ENTITY/Initialize" title="ENTITY/Initialize">ENTITY/Initialize</a></li>
+<li><a href="/page/Entity/InitializeAsClientEntity" title="Entity/InitializeAsClientEntity">Entity/InitializeAsClientEntity</a></li>
+<li><a href="/page/Entity/IsConstrained" title="Entity/IsConstrained">Entity/IsConstrained</a></li>
+<li><a href="/page/Entity/IsPlayerHolding" title="Entity/IsPlayerHolding">Entity/IsPlayerHolding</a></li>
+<li><a href="/page/Entity/ManipulateBoneScale" title="Entity/ManipulateBoneScale">Entity/ManipulateBoneScale</a></li>
+<li><a href="/page/Entity/NetworkVarNotify" title="Entity/NetworkVarNotify">Entity/NetworkVarNotify</a></li>
+<li><a href="/page/Entity/NextThink" title="Entity/NextThink">Entity/NextThink</a></li>
+<li><a href="/page/Entity/PhysicsInit" title="Entity/PhysicsInit">Entity/PhysicsInit</a></li>
+<li><a href="/page/Entity/PhysicsInitBox" title="Entity/PhysicsInitBox">Entity/PhysicsInitBox</a></li>
+<li><a href="/page/Entity/PhysicsInitConvex" title="Entity/PhysicsInitConvex">Entity/PhysicsInitConvex</a></li>
+<li><a href="/page/Entity/PhysicsInitMultiConvex" title="Entity/PhysicsInitMultiConvex">Entity/PhysicsInitMultiConvex</a></li>
+<li><a href="/page/Entity/PhysicsInitShadow" title="Entity/PhysicsInitShadow">Entity/PhysicsInitShadow</a></li>
+<li><a href="/page/Entity/PhysicsInitSphere" title="Entity/PhysicsInitSphere">Entity/PhysicsInitSphere</a></li>
+<li><a href="/page/Entity/PhysicsInitStatic" title="Entity/PhysicsInitStatic">Entity/PhysicsInitStatic</a></li>
+<li><a href="/page/ENTITY/PostEntityPaste" title="ENTITY/PostEntityPaste">ENTITY/PostEntityPaste</a></li>
+<li><a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">ENTITY/RenderOverride</a></li>
+<li><a href="/page/Entity/SendViewModelMatchingSequence" title="Entity/SendViewModelMatchingSequence">Entity/SendViewModelMatchingSequence</a></li>
+<li><a href="/page/Entity/SequenceDuration" title="Entity/SequenceDuration">Entity/SequenceDuration</a></li>
+<li><a href="/page/Entity/SetCycle" title="Entity/SetCycle">Entity/SetCycle</a></li>
+<li><a href="/page/Entity/SetFlexScale" title="Entity/SetFlexScale">Entity/SetFlexScale</a></li>
+<li><a href="/page/Entity/SetFriction" title="Entity/SetFriction">Entity/SetFriction</a></li>
+<li><a href="/page/Entity/SetGravity" title="Entity/SetGravity">Entity/SetGravity</a></li>
+<li><a href="/page/Entity/SetMaterial" title="Entity/SetMaterial">Entity/SetMaterial</a></li>
+<li><a href="/page/Entity/SetModelScale" title="Entity/SetModelScale">Entity/SetModelScale</a></li>
+<li><a href="/page/Entity/SetNWInt" title="Entity/SetNWInt">Entity/SetNWInt</a></li>
+<li><a href="/page/Entity/SetPos" title="Entity/SetPos">Entity/SetPos</a></li>
+<li><a href="/page/Entity/SetPreventTransmit" title="Entity/SetPreventTransmit">Entity/SetPreventTransmit</a></li></ul></td>
+<td><h3>E cont.</h3>
+<ul><li><a href="/page/Entity/SetSaveValue" title="Entity/SetSaveValue">Entity/SetSaveValue</a></li>
+<li><a href="/page/Entity/SetSubMaterial" title="Entity/SetSubMaterial">Entity/SetSubMaterial</a></li>
+<li><a href="/page/ents/CreateClientProp" title="ents/CreateClientProp">ents/CreateClientProp</a></li>
+<li><a href="/page/ents/FindByModel" title="ents/FindByModel">ents/FindByModel</a></li>
+<li><a href="/page/Enums/FL" title="Enums/FL">Enums/FL</a></li></ul><h3>G</h3>
+<ul><li><a href="/page/game/AddAmmoType" title="game/AddAmmoType">game/AddAmmoType</a></li>
+<li><a href="/page/game/CleanUpMap" title="game/CleanUpMap">game/CleanUpMap</a></li>
+<li><a href="/page/game/GetIPAddress" title="game/GetIPAddress">game/GetIPAddress</a></li>
+<li><a href="/page/game/IsDedicated" title="game/IsDedicated">game/IsDedicated</a></li>
+<li><a href="/page/game/SetSkillLevel" title="game/SetSkillLevel">game/SetSkillLevel</a></li>
+<li><a href="/page/Global_States" title="Global States">Global States</a></li>
+<li><a href="/page/Global/ClientsideModel" title="Global/ClientsideModel">Global/ClientsideModel</a></li>
+<li><a href="/page/Global/ClientsideRagdoll" title="Global/ClientsideRagdoll">Global/ClientsideRagdoll</a></li>
+<li><a href="/page/Global/CreateMaterial" title="Global/CreateMaterial">Global/CreateMaterial</a></li>
+<li><a href="/page/Global/CreatePhysCollideBox" title="Global/CreatePhysCollideBox">Global/CreatePhysCollideBox</a></li>
+<li><a href="/page/Global/CurTime" title="Global/CurTime">Global/CurTime</a></li>
+<li><a href="/page/Global/DamageInfo" title="Global/DamageInfo">Global/DamageInfo</a></li>
+<li><a href="/page/Global/DynamicLight" title="Global/DynamicLight">Global/DynamicLight</a></li>
+<li><a href="/page/Global/EffectData" title="Global/EffectData">Global/EffectData</a></li>
+<li><a href="/page/Global/EmitSound" title="Global/EmitSound">Global/EmitSound</a></li>
+<li><a href="/page/Global/Error" title="Global/Error">Global/Error</a></li>
+<li><a href="/page/Global/EyeAngles" title="Global/EyeAngles">Global/EyeAngles</a></li>
+<li><a href="/page/Global/EyePos" title="Global/EyePos">Global/EyePos</a></li>
+<li><a href="/page/Global/EyeVector" title="Global/EyeVector">Global/EyeVector</a></li>
+<li><a href="/page/Global/GetGlobalInt" title="Global/GetGlobalInt">Global/GetGlobalInt</a></li>
+<li><a href="/page/Global/GetRenderTarget" title="Global/GetRenderTarget">Global/GetRenderTarget</a></li>
+<li><a href="/page/Global/HSLToColor" title="Global/HSLToColor">Global/HSLToColor</a></li>
+<li><a href="/page/Global/HSVToColor" title="Global/HSVToColor">Global/HSVToColor</a></li>
+<li><a href="/page/Global/HTTP" title="Global/HTTP">Global/HTTP</a></li>
+<li><a href="/page/Global/include" title="Global/include">Global/include</a></li>
+<li><a href="/page/Global/IsColor" title="Global/IsColor">Global/IsColor</a></li>
+<li><a href="/page/Global/OpenFolder" title="Global/OpenFolder">Global/OpenFolder</a></li>
+<li><a href="/page/Global/pcall" title="Global/pcall">Global/pcall</a></li>
+<li><a href="/page/Global/require" title="Global/require">Global/require</a></li>
+<li><a href="/page/Global/SetGlobalInt" title="Global/SetGlobalInt">Global/SetGlobalInt</a></li>
+<li><a href="/page/Global/Sound" title="Global/Sound">Global/Sound</a></li>
+<li><a href="/page/Global/SoundDuration" title="Global/SoundDuration">Global/SoundDuration</a></li>
+<li><a href="/page/Global/TimedSin" title="Global/TimedSin">Global/TimedSin</a></li>
+<li><a href="/page/Global/TypeID" title="Global/TypeID">Global/TypeID</a></li>
+<li><a href="/page/Global/xpcall" title="Global/xpcall">Global/xpcall</a></li>
+<li><a href="/page/GM/AddDeathNotice" title="GM/AddDeathNotice">GM/AddDeathNotice</a></li>
+<li><a href="/page/GM/CalcMainActivity" title="GM/CalcMainActivity">GM/CalcMainActivity</a></li>
+<li><a href="/page/GM/DrawPhysgunBeam" title="GM/DrawPhysgunBeam">GM/DrawPhysgunBeam</a></li>
+<li><a href="/page/GM/EntityEmitSound" title="GM/EntityEmitSound">GM/EntityEmitSound</a></li>
+<li><a href="/page/GM/OnPhysgunFreeze" title="GM/OnPhysgunFreeze">GM/OnPhysgunFreeze</a></li>
+<li><a href="/page/GM/OnViewModelChanged" title="GM/OnViewModelChanged">GM/OnViewModelChanged</a></li>
+<li><a href="/page/GM/PlayerAuthed" title="GM/PlayerAuthed">GM/PlayerAuthed</a></li>
+<li><a href="/page/GM/PlayerBindPress" title="GM/PlayerBindPress">GM/PlayerBindPress</a></li>
+<li><a href="/page/GM/PlayerDeathThink" title="GM/PlayerDeathThink">GM/PlayerDeathThink</a></li>
+<li><a href="/page/GM/PlayerDisconnected" title="GM/PlayerDisconnected">GM/PlayerDisconnected</a></li>
+<li><a href="/page/GM/PlayerLeaveVehicle" title="GM/PlayerLeaveVehicle">GM/PlayerLeaveVehicle</a></li>
+<li><a href="/page/GM/PlayerSwitchWeapon" title="GM/PlayerSwitchWeapon">GM/PlayerSwitchWeapon</a></li>
+<li><a href="/page/GM/PostDrawTranslucentRenderables" title="GM/PostDrawTranslucentRenderables">GM/PostDrawTranslucentRenderables</a></li>
+<li><a href="/page/GM/PreDrawTranslucentRenderables" title="GM/PreDrawTranslucentRenderables">GM/PreDrawTranslucentRenderables</a></li>
+<li><a href="/page/GM/PreDrawViewModel" title="GM/PreDrawViewModel">GM/PreDrawViewModel</a></li>
+<li><a href="/page/GM/ShouldCollide" title="GM/ShouldCollide">GM/ShouldCollide</a></li>
+<li><a href="/page/GM/StartChat" title="GM/StartChat">GM/StartChat</a></li>
+<li><a href="/page/gui/EnableScreenClicker" title="gui/EnableScreenClicker">gui/EnableScreenClicker</a></li>
+<li><a href="/page/gui/OpenURL" title="gui/OpenURL">gui/OpenURL</a></li></ul><h3>I</h3>
+<ul><li><a href="/page/IGModAudioChannel/Stop" title="IGModAudioChannel/Stop">IGModAudioChannel/Stop</a></li>
+<li><a href="/page/IMaterial/GetColor" title="IMaterial/GetColor">IMaterial/GetColor</a></li>
+<li><a href="/page/IMaterial/GetShader" title="IMaterial/GetShader">IMaterial/GetShader</a></li>
+<li><a href="/page/ITexture/GetColor" title="ITexture/GetColor">ITexture/GetColor</a></li></ul><h3>M</h3>
+<ul><li><a href="/page/math/calcBSplineN" title="math/calcBSplineN">math/calcBSplineN</a></li></ul><h3>N</h3>
+<ul><li><a href="/page/NextBot/BodyMoveXY" title="NextBot/BodyMoveXY">NextBot/BodyMoveXY</a></li>
+<li><a href="/page/NPC/GetEnemy" title="NPC/GetEnemy">NPC/GetEnemy</a></li>
+<li><a href="/page/NPC/GetTarget" title="NPC/GetTarget">NPC/GetTarget</a></li></ul></td>
+<td><h3>O</h3>
+<ul><li><a href="/page/os/date" title="os/date">os/date</a></li></ul><h3>P</h3>
+<ul><li><a href="/page/Panel/DoModal" title="Panel/DoModal">Panel/DoModal</a></li>
+<li><a href="/page/Panel/GetTextSize" title="Panel/GetTextSize">Panel/GetTextSize</a></li>
+<li><a href="/page/Panel/GotoTextStart" title="Panel/GotoTextStart">Panel/GotoTextStart</a></li>
+<li><a href="/page/Panel/InvalidateLayout" title="Panel/InvalidateLayout">Panel/InvalidateLayout</a></li>
+<li><a href="/page/PANEL/OnChildAdded" title="PANEL/OnChildAdded">PANEL/OnChildAdded</a></li>
+<li><a href="/page/PANEL/OnKeyCodePressed" title="PANEL/OnKeyCodePressed">PANEL/OnKeyCodePressed</a></li>
+<li><a href="/page/PANEL/OnKeyCodeReleased" title="PANEL/OnKeyCodeReleased">PANEL/OnKeyCodeReleased</a></li>
+<li><a href="/page/Panel/SetWorldClicker" title="Panel/SetWorldClicker">Panel/SetWorldClicker</a></li>
+<li><a href="/page/physenv/AddSurfaceData" title="physenv/AddSurfaceData">physenv/AddSurfaceData</a></li>
+<li><a href="/page/Player/Freeze" title="Player/Freeze">Player/Freeze</a></li>
+<li><a href="/page/Player/GetCurrentCommand" title="Player/GetCurrentCommand">Player/GetCurrentCommand</a></li>
+<li><a href="/page/Player/GetName" title="Player/GetName">Player/GetName</a></li>
+<li><a href="/page/Player/GetSuitPower" title="Player/GetSuitPower">Player/GetSuitPower</a></li>
+<li><a href="/page/Player/HasGodMode" title="Player/HasGodMode">Player/HasGodMode</a></li>
+<li><a href="/page/Player/IsSuitEquipped" title="Player/IsSuitEquipped">Player/IsSuitEquipped</a></li>
+<li><a href="/page/Player/LagCompensation" title="Player/LagCompensation">Player/LagCompensation</a></li>
+<li><a href="/page/Player/Lock" title="Player/Lock">Player/Lock</a></li>
+<li><a href="/page/Player/Name" title="Player/Name">Player/Name</a></li>
+<li><a href="/page/Player/Nick" title="Player/Nick">Player/Nick</a></li>
+<li><a href="/page/Player/SetAllowWeaponsInVehicle" title="Player/SetAllowWeaponsInVehicle">Player/SetAllowWeaponsInVehicle</a></li>
+<li><a href="/page/Player/SetDuckSpeed" title="Player/SetDuckSpeed">Player/SetDuckSpeed</a></li>
+<li><a href="/page/Player/SetHull" title="Player/SetHull">Player/SetHull</a></li>
+<li><a href="/page/Player/SetNoCollideWithTeammates" title="Player/SetNoCollideWithTeammates">Player/SetNoCollideWithTeammates</a></li>
+<li><a href="/page/Player/SetSuitPower" title="Player/SetSuitPower">Player/SetSuitPower</a></li>
+<li><a href="/page/Player/SetWalkSpeed" title="Player/SetWalkSpeed">Player/SetWalkSpeed</a></li>
+<li><a href="/page/Player/SpectateEntity" title="Player/SpectateEntity">Player/SpectateEntity</a></li>
+<li><a href="/page/Player/SprintDisable" title="Player/SprintDisable">Player/SprintDisable</a></li>
+<li><a href="/page/Player/SprintEnable" title="Player/SprintEnable">Player/SprintEnable</a></li>
+<li><a href="/page/ProjectedTexture/GetColor" title="ProjectedTexture/GetColor">ProjectedTexture/GetColor</a></li></ul><h3>R</h3>
+<ul><li><a href="/page/Render_Order" title="Render Order">Render Order</a></li>
+<li><a href="/page/render/Capture" title="render/Capture">render/Capture</a></li>
+<li><a href="/page/render/Clear" title="render/Clear">render/Clear</a></li>
+<li><a href="/page/render/ClearDepth" title="render/ClearDepth">render/ClearDepth</a></li>
+<li><a href="/page/render/DrawLine" title="render/DrawLine">render/DrawLine</a></li>
+<li><a href="/page/render/EnableClipping" title="render/EnableClipping">render/EnableClipping</a></li>
+<li><a href="/page/render/Model" title="render/Model">render/Model</a></li>
+<li><a href="/page/render/PushFlashlightMode" title="render/PushFlashlightMode">render/PushFlashlightMode</a></li>
+<li><a href="/page/render/RenderView" title="render/RenderView">render/RenderView</a></li>
+<li><a href="/page/render/SetBlend" title="render/SetBlend">render/SetBlend</a></li>
+<li><a href="/page/render/SetLightingOrigin" title="render/SetLightingOrigin">render/SetLightingOrigin</a></li>
+<li><a href="/page/render/SuppressEngineLighting" title="render/SuppressEngineLighting">render/SuppressEngineLighting</a></li></ul><h3>S</h3>
+<ul><li><a href="/page/scripted_ents/Register" title="scripted ents/Register">scripted ents/Register</a></li>
+<li><a href="/page/sound/Generate" title="sound/Generate">sound/Generate</a></li>
+<li><a href="/page/sound/PlayFile" title="sound/PlayFile">sound/PlayFile</a></li>
+<li><a href="/page/sound/PlayURL" title="sound/PlayURL">sound/PlayURL</a></li>
+<li><a href="/page/surface/DrawTexturedRectUV" title="surface/DrawTexturedRectUV">surface/DrawTexturedRectUV</a></li>
+<li><a href="/page/surface/GetDrawColor" title="surface/GetDrawColor">surface/GetDrawColor</a></li>
+<li><a href="/page/surface/GetTextColor" title="surface/GetTextColor">surface/GetTextColor</a></li>
+<li><a href="/page/system/HasFocus" title="system/HasFocus">system/HasFocus</a></li></ul><h3>T</h3>
+<ul><li><a href="/page/table/Inherit" title="table/Inherit">table/Inherit</a></li></ul><h3>U</h3>
+<ul><li><a href="/page/util/JSONToTable" title="util/JSONToTable">util/JSONToTable</a></li>
+<li><a href="/page/util/PrecacheSound" title="util/PrecacheSound">util/PrecacheSound</a></li>
+<li><a href="/page/util/TableToJSON" title="util/TableToJSON">util/TableToJSON</a></li></ul><h3>V</h3>
+<ul><li><a href="/page/Vector/ToScreen" title="Vector/ToScreen">Vector/ToScreen</a></li>
+<li><a href="/page/Vehicle/SetVehicleParams" title="Vehicle/SetVehicleParams">Vehicle/SetVehicleParams</a></li></ul><h3>W</h3>
+<ul><li><a href="/page/WEAPON/CalcView" title="WEAPON/CalcView">WEAPON/CalcView</a></li>
+<li><a href="/page/WEAPON/DoDrawCrosshair" title="WEAPON/DoDrawCrosshair">WEAPON/DoDrawCrosshair</a></li>
+<li><a href="/page/Weapon/GetActivity" title="Weapon/GetActivity">Weapon/GetActivity</a></li>
+<li><a href="/page/WEAPON/Holster" title="WEAPON/Holster">WEAPON/Holster</a></li>
+<li><a href="/page/WEAPON/Initialize" title="WEAPON/Initialize">WEAPON/Initialize</a></li>
+<li><a href="/page/Weapon/SetHoldType" title="Weapon/SetHoldType">Weapon/SetHoldType</a></li>
+<li><a href="/page/Weapon/SetNextPrimaryFire" title="Weapon/SetNextPrimaryFire">Weapon/SetNextPrimaryFire</a></li>
+<li><a href="/page/WEAPON/Think" title="WEAPON/Think">WEAPON/Think</a></li>
+<li><a href="/page/weapons/Register" title="weapons/Register">weapons/Register</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

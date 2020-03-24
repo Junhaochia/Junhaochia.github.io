@@ -1,0 +1,52 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=TextEntry">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:TextEntry" title="Special:WhatLinksHere/Category:TextEntry">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>Basic text input field.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "TextEntry"</h2>
+<p>The following 20 pages are in this category, out of 20 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>P</h3>
+<ul><li><a href="/page/Panel/CopySelected" title="Panel/CopySelected">Panel/CopySelected</a></li>
+<li><a href="/page/Panel/CutSelected" title="Panel/CutSelected">Panel/CutSelected</a></li>
+<li><a href="/page/Panel/DrawTextEntryText" title="Panel/DrawTextEntryText">Panel/DrawTextEntryText</a></li>
+<li><a href="/page/Panel/GetCaretPos" title="Panel/GetCaretPos">Panel/GetCaretPos</a></li>
+<li><a href="/page/Panel/IsMultiline" title="Panel/IsMultiline">Panel/IsMultiline</a></li>
+<li><a href="/page/Panel/Paste" title="Panel/Paste">Panel/Paste</a></li>
+<li><a href="/page/Panel/SaveUndoState" title="Panel/SaveUndoState">Panel/SaveUndoState</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/Panel/SelectAll" title="Panel/SelectAll">Panel/SelectAll</a></li>
+<li><a href="/page/Panel/SelectAllOnFocus" title="Panel/SelectAllOnFocus">Panel/SelectAllOnFocus</a></li>
+<li><a href="/page/Panel/SelectAllText" title="Panel/SelectAllText">Panel/SelectAllText</a></li>
+<li><a href="/page/Panel/SelectNone" title="Panel/SelectNone">Panel/SelectNone</a></li>
+<li><a href="/page/Panel/SetAllowNonAsciiCharacters" title="Panel/SetAllowNonAsciiCharacters">Panel/SetAllowNonAsciiCharacters</a></li>
+<li><a href="/page/Panel/SetCaretPos" title="Panel/SetCaretPos">Panel/SetCaretPos</a></li>
+<li><a href="/page/Panel/SetDrawLanguageID" title="Panel/SetDrawLanguageID">Panel/SetDrawLanguageID</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/Panel/SetDrawLanguageIDAtLeft" title="Panel/SetDrawLanguageIDAtLeft">Panel/SetDrawLanguageIDAtLeft</a></li>
+<li><a href="/page/Panel/SetFontInternal" title="Panel/SetFontInternal">Panel/SetFontInternal</a></li>
+<li><a href="/page/Panel/SetMultiline" title="Panel/SetMultiline">Panel/SetMultiline</a></li>
+<li><a href="/page/Panel/SetText" title="Panel/SetText">Panel/SetText</a></li>
+<li><a href="/page/Panel/SetVerticalScrollbarEnabled" title="Panel/SetVerticalScrollbarEnabled">Panel/SetVerticalScrollbarEnabled</a></li>
+<li><a href="/page/Panel/Undo" title="Panel/Undo">Panel/Undo</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

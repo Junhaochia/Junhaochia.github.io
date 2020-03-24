@@ -1,0 +1,86 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Purpose"><span class="tocnumber">1</span> <span class="toctext">Purpose</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Opening"><span class="tocnumber">2</span> <span class="toctext">Opening</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Content"><span class="tocnumber">3</span> <span class="toctext">Content</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Left_panel"><span class="tocnumber">3.1</span> <span class="toctext">Left panel</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Spawnlists"><span class="tocnumber">3.1.1</span> <span class="toctext">Spawnlists</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Weapons"><span class="tocnumber">3.1.2</span> <span class="toctext">Weapons</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Entities"><span class="tocnumber">3.1.3</span> <span class="toctext">Entities</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#NPCs"><span class="tocnumber">3.1.4</span> <span class="toctext">NPCs</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Vehicles"><span class="tocnumber">3.1.5</span> <span class="toctext">Vehicles</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#Right_panel"><span class="tocnumber">3.2</span> <span class="toctext">Right panel</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Tools_tab"><span class="tocnumber">3.2.1</span> <span class="toctext">Tools tab</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Utilities_tab"><span class="tocnumber">3.2.2</span> <span class="toctext">Utilities tab</span></a>
+<ul>
+<li class="toclevel-4 tocsection-13"><a href="#User_category"><span class="tocnumber">3.2.2.1</span> <span class="toctext">User category</span></a></li>
+<li class="toclevel-4 tocsection-14"><a href="#Admin_category"><span class="tocnumber">3.2.2.2</span> <span class="toctext">Admin category</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-15"><a href="#Top_bar"><span class="tocnumber">3.2.3</span> <span class="toctext">Top bar</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Purpose"> Purpose </span></h1>
+<p>The Spawn Menu consists of all models, weapons, NPCs, entities and tools you can use in your game. From the menu you can spawn props, NPCs, weapons etc. and pick a tool to use with the <a href="/index.php?title=Toolgun&amp;action=edit&amp;redlink=1" class="new" title="Toolgun (page does not exist)">toolgun</a>.
+</p>
+<h1> <span class="mw-headline" id="Opening"> Opening </span></h1>
+<p>Open the Spawn Menu by simply pressing and holding <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">Q</span> or whatever button you have assigned in the <a href="/index.php?title=Game_Options&amp;action=edit&amp;redlink=1" class="new" title="Game Options (page does not exist)">Game Options</a>. When you have the Spawn Menu opened you will no longer control your crosshair but instead have a cursor which you can use to operate the spawn menu with.
+</p>
+<h1> <span class="mw-headline" id="Content"> Content </span></h1>
+<h2> <span class="mw-headline" id="Left_panel"> Left panel </span></h2>
+<p>The panel on the left, which is the biggest one on most screens, can be used to spawn <a href="/page/Spawning_Props" title="Spawning Props">Props</a>, <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/NPC">NPCs</a>, <a href="/index.php?title=Weapon&amp;action=edit&amp;redlink=1" class="new" title="Weapon (page does not exist)">weapons</a>, vehicles and <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Entity">entities</a>. It can also be used to access saved games and duplications.
+</p><p>To spawn a prop, NPC, weapon or entity, hover over the item you want to spawn and click with your <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;"><span title="Left mouse button"><img alt="LMB" src="/images/f/ff/Lmb.png" width="16" height="16" /></span></span> left mouse button.
+</p><p>For options relating to the item you are hovering over, <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;"><span title="Right mouse button"><img alt="RMB" src="/images/0/02/Rmb.png" width="16" height="16" /></span></span> rightclick on the item.
+</p>
+<h3> <span class="mw-headline" id="Spawnlists"> Spawnlists </span></h3>
+<p>The spawnlists tab has props which you can spawn by pressing <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;"><span title="Left mouse button"><img alt="LMB" src="/images/f/ff/Lmb.png" width="16" height="16" /></span></span> leftclick. The panel on the left of the list of props is customisable and can be looked through to find different props.
+</p>
+<h3> <span class="mw-headline" id="Weapons"> Weapons </span></h3>
+<p>While Garry's Mod is about building, the game is also popular for the variety of weapons on the workshop. Unlike the spawnlists (and for most of the spawn menu), the weapons tab is not customisable.
+</p>
+<h3> <span class="mw-headline" id="Entities"> Entities </span></h3>
+<p>An entity is a dynamic object, and can respond differently according to various inputs. A prop is a primitive type of entity and, whilst subject to physics, has no mind of its own. A wooden crate for example can be broken apart (this is a feature of the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Model">model</a>) but does nothing else. An entity can be programmed to do much more. It could look like a wooden crate, but perform actions such as moving around on its own, or allowing the player to fly around when broken.
+</p>
+<h3> <span class="mw-headline" id="NPCs"> NPCs </span></h3>
+<p><b>N</b>on <b>P</b>layer <b>C</b>haracter.
+It is exactly what it seems. These are basically entities that simulate intelligence and look like humans (or not).
+</p>
+<h3> <span class="mw-headline" id="Vehicles"> Vehicles </span></h3>
+<p>Vehicles are special classes of entities that can be driven (or ridden in, in some cases). They can be spawned in the same way as regular entities, but have different characteristics, and rely on vehicle scripts to determine their fundamental properties.
+</p>
+<h2> <span class="mw-headline" id="Right_panel"> Right panel </span></h2>
+<p>The right panel (by default) consists of a Tools tab and a Utilities tab. Addons can extend or add to these, but we're not going into detail about it here.
+</p>
+<h3> <span class="mw-headline" id="Tools_tab"> Tools tab </span></h3>
+<p>The tools tab is open by default when you load the game. It has a list on the left and a panel on the right.
+The list shows all the available tools, divided into categories. To select a tool, hover over it with your cursor and <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;"><span title="Left mouse button"><img alt="LMB" src="/images/f/ff/Lmb.png" width="16" height="16" /></span></span> leftclick on the item. Your toolgun will open if it's not yet open.
+The right panel shows the settings for the currently active tool. This varies from an empty box (like the <a href="/page/Tools/Remover" title="Tools/Remover">Remover</a> or <a href="/page/Tools/Axis" title="Tools/Axis">Axis</a> tool) or a long list of settings.
+</p>
+<h3> <span class="mw-headline" id="Utilities_tab"> Utilities tab </span></h3>
+<p>The Utilities tab has the same layout as the tools tab, but has a different purpose.
+</p><p>By default, the utilities tab has two categories, <i>User</i> and <i>Admin</i>.
+</p>
+<h4> <span class="mw-headline" id="User_category">User category</span></h4>
+<p>The User category has a clean up item and an undo item.
+</p><p>The clean up item opens a list of buttons which can be pressed to remove certain or all items from the map that are yours.
+The undo item opens a list of actions you performed, where the latest is shown on top and the first at the bottom. Clicking on an action in this list will undo it.
+</p>
+<h4> <span class="mw-headline" id="Admin_category">Admin category</span></h4>
+<p>The admin category has a clean up item and a settings item.
+</p><p>The clean up item is similar to its counterpart in the User category, except that it removes all items on the map whether they're yours or not. This also acts to <i>reset</i> the map.
+</p><p>The Settings item shows settings that apply to the world. These include gravity (600 = normal gravity), Player vs Player damage and the server password.
+</p>
+<h3> <span class="mw-headline" id="Top_bar"> Top bar </span></h3>
+<p>The top bar you can see is identical to the one you open using the <a href="/page/The_Context_Menu" title="The Context Menu">Context Menu</a>. See that page for its functions.
+</p>
+
+

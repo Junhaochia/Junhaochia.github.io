@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DMenu&#58;OptionSelected( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DMenu.OptionSelected">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DMenu/OptionSelected" title="Special:WhatLinksHere/DMenu/OptionSelected">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelHook">Description<span style="display: none;"><a href="/page/Form:PanelHook" title="Form:PanelHook">PanelHook</a></span></span></h1>
+<p>Called when a option has been selected
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> option</span>
+</p>
+<div style="margin-left: 32px;">
+The <a href="/page/Category_colon_DMenuOption" title="Category:DMenuOption">DMenuOption</a> that was selected</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> optionText</span>
+</p>
+<div style="margin-left: 32px;">
+The options text</div>
+</div>
+
+

@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>SANDBOX:PopulatePropMenu( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=SANDBOX.PopulatePropMenu">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/SANDBOX/PopulatePropMenu" title="Special:WhatLinksHere/SANDBOX/PopulatePropMenu">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>This hook makes the engine load the spawnlist text files.
+It calls <a href="/page/Category_colon_spawnmenu" title="Category:spawnmenu">spawnmenu</a>.<a href="/page/spawnmenu/PopulateFromEngineTextFiles" title="spawnmenu/PopulateFromEngineTextFiles">PopulateFromEngineTextFiles</a> by default.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Source code for this hook.
+</p>
+<pre><code data-language="lua">function GM:PopulatePropMenu()
+
+	-- This function makes the engine load the spawn menu text files.
+	-- We call it here so that any gamemodes not using the default 
+	-- spawn menu can totally not call it.
+	spawnmenu.PopulateFromEngineTextFiles()
+
+end</code></pre>
+<p><br />
+</p>
+
+

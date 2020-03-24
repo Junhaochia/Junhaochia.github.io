@@ -1,0 +1,49 @@
+<p>The game library provides functions to access various features in the game's engine, most of it's functions are related to controlling the map.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "game"</h2>
+<p>The following 37 pages are in this category, out of 37 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>G</h3>
+<ul><li><a href="/page/game/AddAmmoType" title="game/AddAmmoType">game/AddAmmoType</a></li>
+<li><a href="/page/game/AddDecal" title="game/AddDecal">game/AddDecal</a></li>
+<li><a href="/page/game/AddParticles" title="game/AddParticles">game/AddParticles</a></li>
+<li><a href="/page/game/BuildAmmoTypes" title="game/BuildAmmoTypes">game/BuildAmmoTypes</a></li>
+<li><a href="/page/game/CleanUpMap" title="game/CleanUpMap">game/CleanUpMap</a></li>
+<li><a href="/page/game/ConsoleCommand" title="game/ConsoleCommand">game/ConsoleCommand</a></li>
+<li><a href="/page/game/GetAmmoDamageType" title="game/GetAmmoDamageType">game/GetAmmoDamageType</a></li>
+<li><a href="/page/game/GetAmmoData" title="game/GetAmmoData">game/GetAmmoData</a></li>
+<li><a href="/page/game/GetAmmoForce" title="game/GetAmmoForce">game/GetAmmoForce</a></li>
+<li><a href="/page/game/GetAmmoID" title="game/GetAmmoID">game/GetAmmoID</a></li>
+<li><a href="/page/game/GetAmmoMax" title="game/GetAmmoMax">game/GetAmmoMax</a></li>
+<li><a href="/page/game/GetAmmoName" title="game/GetAmmoName">game/GetAmmoName</a></li>
+<li><a href="/page/game/GetAmmoNPCDamage" title="game/GetAmmoNPCDamage">game/GetAmmoNPCDamage</a></li></ul></td>
+<td><h3>G cont.</h3>
+<ul><li><a href="/page/game/GetAmmoPlayerDamage" title="game/GetAmmoPlayerDamage">game/GetAmmoPlayerDamage</a></li>
+<li><a href="/page/game/GetAmmoTypes" title="game/GetAmmoTypes">game/GetAmmoTypes</a></li>
+<li><a href="/page/game/GetGlobalCounter" title="game/GetGlobalCounter">game/GetGlobalCounter</a></li>
+<li><a href="/page/game/GetGlobalState" title="game/GetGlobalState">game/GetGlobalState</a></li>
+<li><a href="/page/game/GetIPAddress" title="game/GetIPAddress">game/GetIPAddress</a></li>
+<li><a href="/page/game/GetMap" title="game/GetMap">game/GetMap</a></li>
+<li><a href="/page/game/GetMapNext" title="game/GetMapNext">game/GetMapNext</a></li>
+<li><a href="/page/game/GetMapVersion" title="game/GetMapVersion">game/GetMapVersion</a></li>
+<li><a href="/page/game/GetSkillLevel" title="game/GetSkillLevel">game/GetSkillLevel</a></li>
+<li><a href="/page/game/GetTimeScale" title="game/GetTimeScale">game/GetTimeScale</a></li>
+<li><a href="/page/game/GetWorld" title="game/GetWorld">game/GetWorld</a></li>
+<li><a href="/page/game/IsDedicated" title="game/IsDedicated">game/IsDedicated</a></li>
+<li><a href="/page/game/KickID" title="game/KickID">game/KickID</a></li></ul></td>
+<td><h3>G cont.</h3>
+<ul><li><a href="/page/game/LoadNextMap" title="game/LoadNextMap">game/LoadNextMap</a></li>
+<li><a href="/page/game/MapLoadType" title="game/MapLoadType">game/MapLoadType</a></li>
+<li><a href="/page/game/MaxPlayers" title="game/MaxPlayers">game/MaxPlayers</a></li>
+<li><a href="/page/game/MountGMA" title="game/MountGMA">game/MountGMA</a></li>
+<li><a href="/page/game/RemoveRagdolls" title="game/RemoveRagdolls">game/RemoveRagdolls</a></li>
+<li><a href="/page/game/SetGlobalCounter" title="game/SetGlobalCounter">game/SetGlobalCounter</a></li>
+<li><a href="/page/game/SetGlobalState" title="game/SetGlobalState">game/SetGlobalState</a></li>
+<li><a href="/page/game/SetSkillLevel" title="game/SetSkillLevel">game/SetSkillLevel</a></li>
+<li><a href="/page/game/SetTimeScale" title="game/SetTimeScale">game/SetTimeScale</a></li>
+<li><a href="/page/game/SinglePlayer" title="game/SinglePlayer">game/SinglePlayer</a></li>
+<li><a href="/page/game/StartSpot" title="game/StartSpot">game/StartSpot</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

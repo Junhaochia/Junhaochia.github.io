@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DFileBrowser&#58;SetupFiles( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DFileBrowser.SetupFiles">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DFileBrowser/SetupFiles" title="Special:WhatLinksHere/DFileBrowser/SetupFiles">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div> Called to set up the <a href="/page/Category_colon_DListView" title="Category:DListView">DListView</a> or <a href="/page/Category_colon_DIconBrowser" title="Category:DIconBrowser">DIconBrowser</a> by <a href="/page/Category_colon_DFileBrowser" title="Category:DFileBrowser">DFileBrowser</a>:<a href="/page/DFileBrowser/Setup" title="DFileBrowser/Setup">Setup</a>.
+<p>The icon browser is used when in models mode. See <a href="/page/Category_colon_DFileBrowser" title="Category:DFileBrowser">DFileBrowser</a>:<a href="/page/DFileBrowser/SetModels" title="DFileBrowser/SetModels">SetModels</a>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether or not the files pane was set up successfully.</div>
+</div>
+
+

@@ -1,0 +1,56 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Mesh( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Mesh">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/Mesh" title="Special:WhatLinksHere/Global/Mesh">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">3</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns a new mesh object.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_IMaterial" title="Category:IMaterial">IMaterial</a> mat=nil</span>
+</p>
+<div style="margin-left: 32px;">
+The material the mesh is intended to be rendered with. It's merely a hint that tells that mesh what vertex format it should use.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_IMesh" title="Category:IMesh">IMesh</a></span>
+</p>
+<div style="margin-left: 32px;">
+The created object.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Draws a triangle near Vector( 0, 0, 0 ) in the map.
+</p>
+<pre><code data-language="lua">local mat = Material( &quot;editor/wireframe&quot; ) -- The material (a wireframe)
+local obj = Mesh() -- Create the IMesh object
+
+local verts = { -- A table of 3 vertices that form a triangle
+	{ pos = Vector( 0,  0,  0 ), u = 0, v = 0 }, -- Vertex 1
+	{ pos = Vector( 10, 0,  0 ), u = 1, v = 0 }, -- Vertex 2
+	{ pos = Vector( 10, 10, 0 ), u = 1, v = 1 }, -- Vertex 3
+}
+
+obj:BuildFromTriangles( verts ) -- Load the vertices into the IMesh object
+
+hook.Add( &quot;PostDrawOpaqueRenderables&quot;, &quot;IMeshTest&quot;, function()
+
+	render.SetMaterial( mat ) -- Apply the material
+	obj:Draw() -- Draw the mesh
+
+end )</code></pre>
+<p><br />
+</p>
+
+

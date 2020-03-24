@@ -1,0 +1,495 @@
+<p>This is a complete list of effects available to be used with <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/Effect" title="util/Effect">Effect</a>.
+</p>
+<h2> <span class="mw-headline" id="Engine_Effects">Engine Effects</span></h2>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td>ManhackSparks
+</td>
+<td>A large fountain of sparks
+</td></tr>
+<tr>
+<td>TeslaZap
+</td>
+<td>Lightning
+</td></tr>
+<tr>
+<td>TeslaHitboxes
+</td>
+<td>A load of lightning bolts flying in all directions, hard to get this working properly
+</td></tr>
+<tr>
+<td>CommandPointer
+</td>
+<td>The small red dot seen at the end of the hl2 RPGs laser beam
+</td></tr>
+<tr>
+<td>GunshipImpact
+</td>
+<td>A small pink pulse of energy, not sure why its named gunshipimpact
+</td></tr>
+<tr>
+<td>Smoke
+</td>
+<td>Creates a bunch of fucked up smoke that can't be deleted, not recommended
+</td></tr>
+<tr>
+<td>MuzzleFlash
+</td>
+<td>Makes a muzzle flash
+</td></tr>
+<tr>
+<td>BoltImpact
+</td>
+<td>Creates crossbow bolts that are stuck into walls/objects
+</td></tr>
+<tr>
+<td>RPGShotDown
+</td>
+<td>A large yellow flash and a metallic clanging sound
+</td></tr>
+<tr>
+<td>GlassImpact
+</td>
+<td>A small spray of glass shards, like when you shoot breakable windows
+</td></tr>
+<tr>
+<td>StunstickImpact
+</td>
+<td>A small flash and a few sparks
+</td></tr>
+<tr>
+<td>PhyscannonImpact
+</td>
+<td>The orange lightning beam that comes out of the grav gun when you punt something
+</td></tr>
+<tr>
+<td>HudBloodSplat
+</td>
+<td>
+</td></tr>
+<tr>
+<td>HunterMuzzleFlash
+</td>
+<td>Exactly what it says it is
+</td></tr>
+<tr>
+<td>GunshipMuzzleFlash
+</td>
+<td>Exactly what it says it is
+</td></tr>
+<tr>
+<td>ChopperMuzzleFlash
+</td>
+<td>Exactly what it says it is
+</td></tr>
+<tr>
+<td>AirboatMuzzleFlash
+</td>
+<td>Exactly what it says it is
+</td></tr>
+<tr>
+<td>AR2Impact
+</td>
+<td>A small flash of energy on a surface
+</td></tr>
+<tr>
+<td>AR2Explosion
+</td>
+<td>Pulse-rifle-schemed explosion.
+</td></tr>
+<tr>
+<td>AR2Tracer
+</td>
+<td>Self-describing. Visible from all directions except under it.
+</td></tr>
+<tr>
+<td>HelicopterTracer
+</td>
+<td>Similar to GunshipTracer effect
+</td></tr>
+<tr>
+<td>AirboatGunTracer
+</td>
+<td>Similar to the Pulse-rifle Tracer, only visible from above.
+</td></tr>
+<tr>
+<td>AirboatGunHeavyTracer
+</td>
+<td>Makes a bigger version of the Pulse-rifle Tracer.
+</td></tr>
+<tr>
+<td>GaussTracer
+</td>
+<td>Golden fading line
+</td></tr>
+<tr>
+<td>HunterTracer
+</td>
+<td>
+</td></tr>
+<tr>
+<td>StriderTracer
+</td>
+<td>Similar to AR2 tracer
+</td></tr>
+<tr>
+<td>GunshipTracer
+</td>
+<td>2x the size of the pulse-rifle tracer
+</td></tr>
+<tr>
+<td>HelicopterImpact
+</td>
+<td>Plays a flesh hit sound in player's game, the AR2impact effect and a sparkles effect.
+</td></tr>
+<tr>
+<td>AirboatGunImpact
+</td>
+<td>Makes a wooden, high-pitch "knock" sound
+</td></tr>
+<tr>
+<td>Impact
+</td>
+<td>Makes a bullet impact effect, with respective effects for the material
+</td></tr>
+<tr>
+<td>ImpactGauss
+</td>
+<td>Makes a plastic impact sound, no visible effects
+</td></tr>
+<tr>
+<td>ImpactJeep
+</td>
+<td>Makes a plastic impact sound, no visible effects
+</td></tr>
+<tr>
+<td>AntlionGib
+</td>
+<td>Sprays antlion innards everywhere
+</td></tr>
+<tr>
+<td>CrossbowLoad
+</td>
+<td>A small burst of sparks
+</td></tr>
+<tr>
+<td>VortDispel
+</td>
+<td>A large green pulse of energy that travels along the ground
+</td></tr>
+<tr>
+<td>ThumperDust
+</td>
+<td>A circle of dust that spreads outward
+</td></tr>
+<tr>
+<td>StriderBlood
+</td>
+<td>Looks like a giant spray of turds, commonly used by mingebags in sandbox
+</td></tr>
+<tr>
+<td>StriderMuzzleFlash
+</td>
+<td>Muzzle flash of the striders pulse cannon
+</td></tr>
+<tr>
+<td>cball_explode
+</td>
+<td>A small flash and a bigger burst of sparks
+</td></tr>
+<tr>
+<td>cball_bounce
+</td>
+<td>A small flash and a burst of sparks
+</td></tr>
+<tr>
+<td>ImpactGunship
+</td>
+<td>Makes a plastic impact sound, no visible effects
+</td></tr>
+<tr>
+<td>HL1ShellEject
+</td>
+<td>
+</td></tr>
+<tr>
+<td>HL1Gib
+</td>
+<td>A spray of giblets, they may have missing models or textures if you haven't mounted Half-Life: Source correctly
+</td></tr>
+<tr>
+<td>HL1GaussWallImpact2
+</td>
+<td>
+</td></tr>
+<tr>
+<td>HL1GaussWallImpact1
+</td>
+<td>
+</td></tr>
+<tr>
+<td>HL1GaussWallPunchExit
+</td>
+<td>
+</td></tr>
+<tr>
+<td>HL1GaussWallPunchEnter
+</td>
+<td>
+</td></tr>
+<tr>
+<td>HL1GaussReflect
+</td>
+<td>
+</td></tr>
+<tr>
+<td>HL1GaussBeamReflect
+</td>
+<td>
+</td></tr>
+<tr>
+<td>HL1GaussBeam
+</td>
+<td>
+</td></tr>
+<tr>
+<td>EjectBrass_338Mag
+</td>
+<td>CSS bullet shells
+</td></tr>
+<tr>
+<td>EjectBrass_762Nato
+</td>
+<td>CSS bullet shells
+</td></tr>
+<tr>
+<td>EjectBrass_556
+</td>
+<td>CSS bullet shells
+</td></tr>
+<tr>
+<td>EjectBrass_57
+</td>
+<td>CSS bullet shells
+</td></tr>
+<tr>
+<td>EjectBrass_12Gauge
+</td>
+<td>CSS bullet shells
+</td></tr>
+<tr>
+<td>EjectBrass_9mm
+</td>
+<td>CSS bullet shells
+</td></tr>
+<tr>
+<td>CS_MuzzleFlash_X
+</td>
+<td>CSS X shaped muzzle flash
+</td></tr>
+<tr>
+<td>CS_MuzzleFlash
+</td>
+<td>CSS muzzle flash
+</td></tr>
+<tr>
+<td>MuzzleEffect
+</td>
+<td>HL2 muzzle flash
+</td></tr>
+<tr>
+<td>MetalSpark
+</td>
+<td>The spark effect when a bullet strikes something made of metal
+</td></tr>
+<tr>
+<td>ElectricSpark
+</td>
+<td>Appears to make a small puff of smoke. Use SetMagnitude to add sparks.
+</td></tr>
+<tr>
+<td>Sparks
+</td>
+<td>Generic sparks, play with SetMagnitude, SetScale and SetRadius for desired effects
+</td></tr>
+<tr>
+<td>waterripple
+</td>
+<td>Creates a water ripple on a water surface when origin is near water.
+</td></tr>
+<tr>
+<td>gunshotsplash
+</td>
+<td>A small splash, like when you fire a gun into water
+</td></tr>
+<tr>
+<td>watersplash
+</td>
+<td>A small splash, like when you toss a prop into water
+</td></tr>
+<tr>
+<td>TracerSound
+</td>
+<td>Whoosh
+</td></tr>
+<tr>
+<td>ParticleTracer
+</td>
+<td>More stupid red X's, I'm certainly doing something wrong here
+</td></tr>
+<tr>
+<td>Tracer
+</td>
+<td>The default bullet tracer effect
+</td></tr>
+<tr>
+<td>ShotgunShellEject
+</td>
+<td>Shotgun shells
+</td></tr>
+<tr>
+<td>RifleShellEject
+</td>
+<td>SMG/Rifle shells
+</td></tr>
+<tr>
+<td>ShellEject
+</td>
+<td>Pistol shells
+</td></tr>
+<tr>
+<td>RagdollImpact
+</td>
+<td>Grey dust like when you shoot a ragdoll at a wall
+</td></tr>
+<tr>
+<td>HelicopterMegaBomb
+</td>
+<td>A large, bright flash
+</td></tr>
+<tr>
+<td>WaterSurfaceExplosion
+</td>
+<td>The explosion effect you get when you detonate grenades underwater
+</td></tr>
+<tr>
+<td>Explosion
+</td>
+<td>We all know exactly what this does
+</td></tr>
+<tr>
+<td>HunterDamage
+</td>
+<td>Sprays a bunch of flakes of material that resemble the hunters exoskeleton
+</td></tr>
+<tr>
+<td>BloodImpact
+</td>
+<td>A splatter of blood, the same one used when bullets hit a player
+</td></tr>
+<tr>
+<td>bloodspray
+</td>
+<td>A long spray of blood, set flags = 3, color = 0, scale = 6 for best results
+</td></tr>
+<tr>
+<td>WheelDust
+</td>
+<td>A large puff of barely visible brown dust
+</td></tr>
+<tr>
+<td>ShakeRopes
+</td>
+<td>Didn't do anything in my test
+</td></tr>
+<tr>
+<td>ParticleEffectStop
+</td>
+<td>Used internally to stop particle effects started by "ParticleEffect" effect.
+</td></tr>
+<tr>
+<td>ParticleEffect
+</td>
+<td>Spawns an orangebox particle effect, used internally by <a href="/page/Global/ParticleEffect" title="Global/ParticleEffect">ParticleEffect</a> and <a href="/page/Global/ParticleEffectAttach" title="Global/ParticleEffectAttach">ParticleEffectAttach</a>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Base_Gamemode_Effects">Base Gamemode Effects</span></h2>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td>dof_node
+</td>
+<td>Basic material effect used by depth of field effect.
+</td></tr>
+<tr>
+<td>ToolTracer
+</td>
+<td>The tool shoot effect used by the Tool Gun.
+</td></tr></table>
+<h2> <span class="mw-headline" id="Sandbox_Gamemode_Effects">Sandbox Gamemode Effects</span></h2>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td>balloon_pop
+</td>
+<td>Effect of a balloon popping.
+</td></tr>
+<tr>
+<td>entity_remove
+</td>
+<td>The sparks when you remove something
+</td></tr>
+<tr>
+<td>inflator_magic
+</td>
+<td>The sparks when you inflate a ragdoll
+</td></tr>
+<tr>
+<td>LaserTracer
+</td>
+<td>Laser shot effect usable by the turret tool.
+</td></tr>
+<tr>
+<td>phys_freeze
+</td>
+<td>The effect when you freeze something.
+</td></tr>
+<tr>
+<td>phys_unfreeze
+</td>
+<td>The effect when you unfreeze something.
+</td></tr>
+<tr>
+<td>propspawn
+</td>
+<td>The prop spawn effect when you spawn a prop (use effectdata:SetEntity( yourent ) )
+</td></tr>
+<tr>
+<td>selection_indicator
+</td>
+<td>Indicator effect used by the toolgun.
+</td></tr>
+<tr>
+<td>selection_ring
+</td>
+<td>Ring around used the selection_indicator effect.
+</td></tr>
+<tr>
+<td>wheel_indicator
+</td>
+<td>Indicator effect to show the direction of a wheel (used by the wheel toolgun).
+</td></tr></table>
+
+

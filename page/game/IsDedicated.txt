@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>game.IsDedicated( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=game.IsDedicated">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/game/IsDedicated" title="Special:WhatLinksHere/game/IsDedicated">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns true if the server is a dedicated server, false if it is a <a href="https://en.wikipedia.org/wiki/Listen_server" class="extiw" title="wikipedia:Listen server">Listen server</a> or a singleplayer game.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This always returns false on the client.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/1495">#1495</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Is the server dedicated or not.</div>
+</div>
+
+

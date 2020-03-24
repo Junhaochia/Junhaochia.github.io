@@ -1,0 +1,24 @@
+<p>The categories listed here will not appear at the bottom of a page, unless you have selected to show hidden categories in your user preferences.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-subcategories">
+<h2>Subcategories</h2>
+<p>This category has the following 12 subcategories, out of 12 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>B</h3>
+<ul><li><a href="/page/Category_colon_Broken_Argument" title="Category:Broken Argument">Broken Argument</a></li></ul><h3>D</h3>
+<ul><li><a href="/page/Category_colon_Documented_Functions" title="Category:Documented Functions">Documented Functions</a></li>
+<li><a href="/page/Category_colon_Documented_Hooks" title="Category:Documented Hooks">Documented Hooks</a></li></ul><h3>E</h3>
+<ul><li><a href="/page/Category_colon_Error" title="Category:Error">Error</a></li></ul></td>
+<td><h3>I</h3>
+<ul><li><a href="/page/Category_colon_Incomplete_Functions" title="Category:Incomplete Functions">Incomplete Functions</a></li>
+<li><a href="/page/Category_colon_Incomplete_Hooks" title="Category:Incomplete Hooks">Incomplete Hooks</a></li></ul><h3>P</h3>
+<ul><li><a href="/page/Category_colon_Pages_To_Validate" title="Category:Pages To Validate">Pages To Validate</a></li>
+<li><a href="/page/Category_colon_Pages_with_broken_file_links" title="Category:Pages with broken file links">Pages with broken file links</a></li></ul></td>
+<td><h3>S</h3>
+<ul><li><a href="/page/Category_colon_Source_Defined" title="Category:Source Defined">Source Defined</a></li>
+<li><a href="/page/Category_colon_Stub_Pages" title="Category:Stub Pages">Stub Pages</a></li></ul><h3>U</h3>
+<ul><li><a href="/page/Category_colon_Undocumented_Panels" title="Category:Undocumented Panels">Undocumented Panels</a></li>
+<li><a href="/page/Category_colon_Unknown_Realm" title="Category:Unknown Realm">Unknown Realm</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

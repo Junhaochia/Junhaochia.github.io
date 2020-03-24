@@ -1,0 +1,140 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>VMatrix&#58;Unpack( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=VMatrix.Unpack">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/VMatrix/Unpack" title="Special:WhatLinksHere/VMatrix/Unpack">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">2</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_2"><span class="tocnumber">3</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_3"><span class="tocnumber">4</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_4"><span class="tocnumber">5</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_5"><span class="tocnumber">6</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_6"><span class="tocnumber">7</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_7"><span class="tocnumber">8</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_8"><span class="tocnumber">9</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_9"><span class="tocnumber">10</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_10"><span class="tocnumber">11</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_11"><span class="tocnumber">12</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_12"><span class="tocnumber">13</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_13"><span class="tocnumber">14</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_14"><span class="tocnumber">15</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_15"><span class="tocnumber">16</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_16"><span class="tocnumber">17</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns each component of the matrix, expanding rows before columns.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(1, 1)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_2">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(1, 2)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_3">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(1, 3)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_4">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(1, 4)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_5">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(2, 1)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_6">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(2, 2)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_7">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(2, 3)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_8">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(2, 4)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_9">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(3, 1)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_10">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(3, 2)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_11">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(3, 3)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_12">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(3, 4)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_13">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(4, 1)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_14">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(4, 2)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_15">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(4, 3)</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_16">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a>:<a href="/page/VMatrix/GetField" title="VMatrix/GetField">GetField</a>(4, 4)</div>
+</div>
+
+

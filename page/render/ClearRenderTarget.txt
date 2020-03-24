@@ -1,0 +1,20 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>render.ClearRenderTarget( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.ClearRenderTarget">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/ClearRenderTarget" title="Special:WhatLinksHere/render/ClearRenderTarget">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Clears a render target
+</p><p>It uses <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/Clear" title="render/Clear">Clear</a> then <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/SetRenderTarget" title="render/SetRenderTarget">SetRenderTarget</a> on the modified render target.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_ITexture" title="Category:ITexture">ITexture</a> texture</span>
+</p>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> color</span>
+</p>
+<div style="margin-left: 32px;">
+The color, see <a href="/page/Structures/Color" title="Structures/Color">Color structure</a></div>
+</div>
+
+

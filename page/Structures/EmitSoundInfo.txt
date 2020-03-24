@@ -1,0 +1,126 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/EmitSoundInfo" title="Special:WhatLinksHere/Structures/EmitSoundInfo">What links here?</a></div>Passed as argument of <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/EntityEmitSound" title="GM/EntityEmitSound">EntityEmitSound</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> SoundName
+</td>
+<td>
+<p>The file path of the played sound.
+</p><p>Sounds prefixed with ) tell the sound engine that it is a spatial sound; this allows the sound to emit from a specific location within the world.
+</p><p>Sounds prefixed with ^ tell the sound engine that it is a distance based sound. The left channel of the .wav is the 'near' sound that will play when the sound originates close to you, and the right channel is the 'far' sound that will play when the sound originates far from you.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> OriginalSoundName
+</td>
+<td>
+<p>The original file path or soundscript name.
+</p><p>Even if the SoundName value is changed, the OriginalSoundName value will remain the same.
+</p><p>Sounds may be returned as soundscripts (for example, "Weapon_357.Single") instead of the sound's file path. You can use <a href="/page/Category_colon_sound" title="Category:sound">sound</a>.<a href="/page/sound/GetProperties" title="sound/GetProperties">GetProperties</a> to retrieve the actual file path.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> SoundTime
+</td>
+<td>
+<p>The time at which the sound should be played.
+</p><p>If equal to 0 or CurTime(), the sound is played immediately. If greater than CurTime(), the sound is played with a delay. If less than CurTime(), part of the sound is skipped.
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> DSP
+</td>
+<td>
+<p>The DSP (digital signal processing) preset applied to the sound.
+</p><p>There are approximately 134 different presets defined by the Source engine between 0 and 133. These presets represent different types of 'rooms' or environments.
+</p><p><a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Dsp_presets">List of DSP's</a>
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> SoundLevel
+</td>
+<td>
+<p>The sound's attenuation, a number between 0 (low) and 511 (high)
+</p><p>This determines how fast the sound drops away. A higher value means the sound can be heard farther away.
+</p><p>See <a href="/page/Enums/SNDLVL" title="Enums/SNDLVL">SNDLVL_ Enums</a>.
+</p><p><b>Default:</b> 75
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Pitch
+</td>
+<td>
+<p>The pitch of the played sound, a number between 0 (low) and 255 (high), where 100 is the sound's original pitch.
+</p><p><b>Default:</b> 100
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Flags
+</td>
+<td>
+<p>The bit flags of the played sound. See <a href="/page/Enums/SND" title="Enums/SND">SND_ Enums</a> for available options.
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Channel
+</td>
+<td>
+<p>The sound's channel. See <a href="/page/Enums/CHAN" title="Enums/CHAN">CHAN_ Enums</a> for available options.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Volume
+</td>
+<td>
+<p>The volume of the played sound, return as a decimal number between 0 (low) and 1 (high).
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>
+</td>
+<td> Entity
+</td>
+<td>
+<p>The entity that played the sound.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> Pos
+</td>
+<td>
+<p>The origin of the played sound.
+</p>
+</td></tr></table>
+
+

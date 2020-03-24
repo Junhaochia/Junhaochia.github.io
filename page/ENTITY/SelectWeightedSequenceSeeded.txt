@@ -1,0 +1,37 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SelectWeightedSequenceSeeded( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SelectWeightedSequenceSeeded">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SelectWeightedSequenceSeeded" title="Special:WhatLinksHere/Entity/SelectWeightedSequenceSeeded">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">4</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the sequence ID corresponding to given activity ID, and uses the provided seed for random selection. The seed should be the same server-side and client-side if used in a predicted environment.
+</p><p>See <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SelectWeightedSequence" title="Entity/SelectWeightedSequence">SelectWeightedSequence</a> for a provided-seed version of this function.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> act</span>
+</p>
+<div style="margin-left: 32px;">
+The activity ID, see <a href="/page/Enums/ACT" title="Enums/ACT">ACT_ Enums</a>.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> seed</span>
+</p>
+<div style="margin-left: 32px;">
+The seed to use for randomly selecting a sequence in the case the activity ID has multiple sequences bound to it. <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SelectWeightedSequence" title="Entity/SelectWeightedSequence">SelectWeightedSequence</a> uses the same seed as <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/SharedRandom" title="util/SharedRandom">SharedRandom</a> internally for this.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The sequence ID</div>
+</div>
+
+

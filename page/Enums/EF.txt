@@ -1,0 +1,91 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/EF" title="Special:WhatLinksHere/Enums/EF">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/AddEffects" title="Entity/AddEffects">AddEffects</a>, <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/RemoveEffects" title="Entity/RemoveEffects">RemoveEffects</a> and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/IsEffectActive" title="Entity/IsEffectActive">IsEffectActive</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> EF_BONEMERGE
+</td>
+<td> 1
+</td>
+<td> Performs bone merge on client side
+</td></tr>
+<tr>
+<td> EF_BONEMERGE_FASTCULL
+</td>
+<td> 128
+</td>
+<td> For use with EF_BONEMERGE. If this is set, then it places this ents origin at its parent and uses the parent's bbox + the max extents of the aiment. Otherwise, it sets up the parent's bones every frame to figure out where to place the aiment, which is inefficient because it'll setup the parent's bones even if the parent is not in the PVS.
+</td></tr>
+<tr>
+<td> EF_BRIGHTLIGHT
+</td>
+<td> 2
+</td>
+<td> DLIGHT centered at entity origin
+</td></tr>
+<tr>
+<td> EF_DIMLIGHT
+</td>
+<td> 4
+</td>
+<td> Player flashlight
+</td></tr>
+<tr>
+<td> EF_NOINTERP
+</td>
+<td> 8
+</td>
+<td> Don't interpolate the next frame
+</td></tr>
+<tr>
+<td> EF_NOSHADOW
+</td>
+<td> 16
+</td>
+<td> Disables shadow
+</td></tr>
+<tr>
+<td> EF_NODRAW
+</td>
+<td> 32
+</td>
+<td> Prevents the entity from drawing and networking.
+</td></tr>
+<tr>
+<td> EF_NORECEIVESHADOW
+</td>
+<td> 64
+</td>
+<td> Don't receive shadows
+</td></tr>
+<tr>
+<td> EF_ITEM_BLINK
+</td>
+<td> 256
+</td>
+<td> Makes the entity blink
+</td></tr>
+<tr>
+<td> EF_PARENT_ANIMATES
+</td>
+<td> 512
+</td>
+<td> Always assume that the parent entity is animating
+</td></tr>
+<tr>
+<td> EF_FOLLOWBONE
+</td>
+<td> 1024
+</td>
+<td> Internal flag that is set by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/FollowBone" title="Entity/FollowBone">FollowBone</a>
+</td></tr></table>
+
+

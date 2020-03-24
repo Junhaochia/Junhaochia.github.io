@@ -1,0 +1,13 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DSlider&#58;GetLockX( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DSlider.GetLockX">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DSlider/GetLockX" title="Special:WhatLinksHere/DSlider/GetLockX">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Returns the draggable panel's lock on the X axis.
+</p><p>See <a href="/page/Category_colon_DSlider" title="Category:DSlider">DSlider</a>:<a href="/page/DSlider/SetLockX" title="DSlider/SetLockX">SetLockX</a> for more info.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+</div>
+
+

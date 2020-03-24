@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>ai_schedule.New( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ai_schedule.New">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/modules/ai_schedule.lua#L96">View Source</a> - <a href="/page/Special:WhatLinksHere/ai_schedule/New" title="Special:WhatLinksHere/ai schedule/New">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Creates a schedule for scripted NPC.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+Name of the schedule.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+A table containing schedule information to be used with <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/StartSchedule" title="ENTITY/StartSchedule">StartSchedule</a>.</div>
+</div>
+
+

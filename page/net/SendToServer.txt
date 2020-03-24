@@ -1,0 +1,18 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>net.SendToServer( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=net.SendToServer">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/net/SendToServer" title="Special:WhatLinksHere/net/SendToServer">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sends the current message to the server.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Sends a simple "hello_world" message with the string "Hi" to the server
+</p>
+<pre><code data-language="lua">net.Start( &quot;hello_world&quot; )
+	net.WriteString( &quot;Hi&quot; )
+net.SendToServer()</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">The netmessage "hello_world" is sent to the server. The server can handle this with <a href="/page/net/Receive" title="net/Receive">net.Receive</a>.
+Remember that any client has the potential to send any net message at any time. On your server-side <a href="/page/net/Receive" title="net/Receive">net.Receive</a>, make sure to verify the message sender's permissions whenever you can and prevent expensive functions from being run too often.</div>
+
+

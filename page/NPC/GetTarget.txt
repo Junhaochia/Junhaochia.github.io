@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;GetTarget( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.GetTarget">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/GetTarget" title="Special:WhatLinksHere/NPC/GetTarget">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the NPC's current target set by <a href="/page/Category_colon_NPC" title="Category:NPC">NPC</a>:<a href="/page/NPC/SetTarget" title="NPC/SetTarget">SetTarget</a>.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This returns nil if the NPC has no target. You should use <a href="/page/Global/IsValid" title="Global/IsValid">IsValid</a> (which accounts for nil and NULL) on the return to verify validity of the target.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3132">#3132</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a></span>
+</p>
+<div style="margin-left: 32px;">
+Target entity</div>
+</div>
+
+

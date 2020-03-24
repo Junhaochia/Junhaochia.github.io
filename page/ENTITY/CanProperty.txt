@@ -1,0 +1,47 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>ENTITY:CanProperty( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ENTITY.CanProperty">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/gamemodes/sandbox/gamemode/shared.lua#L239-L241">View Source</a> - <a href="/page/Special:WhatLinksHere/ENTITY/CanProperty" title="Special:WhatLinksHere/ENTITY/CanProperty">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">4</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Controls if a property can be used on this entity or not.
+</p><p>This hook will only work in Sandbox derived gamemodes that do not have <a href="/page/Category_colon_SANDBOX_Hooks" title="Category:SANDBOX Hooks">SANDBOX</a>:<a href="/page/SANDBOX/CanProperty" title="SANDBOX/CanProperty">CanProperty</a> overridden.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This hook will work on ALL entities, not just the scripted ones (SENTs)
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply</span>
+</p>
+<div style="margin-left: 32px;">
+Player, that tried to use the property</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> property</span>
+</p>
+<div style="margin-left: 32px;">
+Class of the property that is tried to use, for example - bonemanipulate</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>Return false to disallow using that property, return true to allow.
+</p>
+You must return a value. Not returning anything can cause unexpected results.</div>
+</div>
+
+

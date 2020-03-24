@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;ConVarChanged( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.ConVarChanged">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/ConVarChanged" title="Special:WhatLinksHere/Panel/ConVarChanged">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Updates a panel object's associated console variable. This must first be set up with <a href="/page/Global/Derma_Install_Convar_Functions" title="Global/Derma Install Convar Functions">Derma_Install_Convar_Functions</a>, and have a ConVar set using <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetConVar" title="Panel/SetConVar">SetConVar</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> newValue</span>
+</p>
+<div style="margin-left: 32px;">
+The new value to set the associated console variable to.</div>
+</div>
+
+

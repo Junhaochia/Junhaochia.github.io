@@ -1,0 +1,107 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Basic_Understanding_of_C.2B.2B"><span class="tocnumber">1</span> <span class="toctext">Basic Understanding of C++</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Downloading_your_IDE"><span class="tocnumber">2</span> <span class="toctext">Downloading your IDE</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Garry.27s_Mod_Lua_Headers"><span class="tocnumber">3</span> <span class="toctext">Garry's Mod Lua Headers</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Creating_a_New_Project"><span class="tocnumber">4</span> <span class="toctext">Creating a New Project</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Setting_Up_the_Project"><span class="tocnumber">5</span> <span class="toctext">Setting Up the Project</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Properties"><span class="tocnumber">5.1</span> <span class="toctext">Properties</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Configuration_Properties"><span class="tocnumber">5.1.1</span> <span class="toctext">Configuration Properties</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#C.2FC.2B.2B"><span class="tocnumber">5.1.2</span> <span class="toctext">C/C++</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Main.cpp"><span class="tocnumber">6</span> <span class="toctext">Main.cpp</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Compiling"><span class="tocnumber">7</span> <span class="toctext">Compiling</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Basic_Understanding_of_C.2B.2B">Basic Understanding of C++</span></h1>
+<p>Before you continue you should already have a basic understanding of C++. I recommend reading up tutorials found <a rel="nofollow" class="external text" href="http://www.cplusplus.com">here</a>.
+</p>
+<h1> <span class="mw-headline" id="Downloading_your_IDE">Downloading your IDE</span></h1>
+<p>First of all you want to download <a rel="nofollow" class="external text" href="https://www.microsoft.com/visualstudio/eng/products/visual-studio-2010-express">Visual Studio 2010</a>. It's all personal preference what IDE you use. You can use 2012 or a 2013; you don't even have to use Visual Studio. Visual Studio 2010 is what I'm using for this tutorial, so I recommend using it if it's your first module.
+</p>
+<h1> <span class="mw-headline" id="Garry.27s_Mod_Lua_Headers">Garry's Mod Lua Headers</span></h1>
+<p>The headers you need and an example are <a rel="nofollow" class="external text" href="https://github.com/garrynewman/gmod-module-base">available here</a>.
+You'll need to click "Download Zip" found to the right of the page. From there extract the include folder somewhere, I recommend somewhere like "C:\Garry's Mod Lua Headers" or "C:\Users\&lt;username&gt;\Documents\Garry's Mod Lua Headers"
+</p>
+<h1> <span class="mw-headline" id="Creating_a_New_Project">Creating a New Project</span></h1>
+<p>Open your IDE, in this case Visual Studio 2010, then select new project.
+</p><p>Select "Win32" then click "OK". From here select Win32 Project make the name whatever you want. I recommend something like gm_test for your first module.
+</p><p><br />
+<a href="/page/File:New_Project_Info.png" class="image"><img alt="New Project Info.png" src="/images/c/c1/New_Project_Info.png" width="955" height="660" /></a>
+</p><p><br />
+There should be a Win32 Application Wizard opened, click next then under "Application type" select DLL. Then check the box "Empty project", finally click "Finish".
+</p><p><br />
+<a href="/page/File:Win32_Application_Wizard.png" class="image"><img alt="Win32 Application Wizard.png" src="/images/5/58/Win32_Application_Wizard.png" width="625" height="530" /></a>
+</p><p>Congratulations! You now have an empty project.
+</p>
+<h1> <span class="mw-headline" id="Setting_Up_the_Project">Setting Up the Project</span></h1>
+<p>Now that you have your empty project you need to set up some directories, add some files and set some properties. Firstly you need to right click the folder "Source Files" and then click "Add new item...".
+</p><p><br />
+<a href="/page/File:Add_new_item.png" class="image"><img alt="Add new item.png" src="/images/1/16/Add_new_item.png" width="582" height="420" /></a>
+</p><p><br />
+From inside here click "C++ file (.cpp)", name it "main".
+</p><p><br />
+<a href="/page/File:Add_new_main.png" class="image"><img alt="Add new main.png" src="/images/0/09/Add_new_main.png" width="955" height="660" /></a>
+</p><p><br />
+The the next thing you must do is set it to release mode. At the top, near the green play looking button, you should see "Debug" then "Win32". Open the drop down menu on "Debug" and set it to "Release".
+</p><p><br />
+<a href="/page/File:Set_to_release.png" class="image"><img alt="Set to release.png" src="/images/2/28/Set_to_release.png" width="497" height="99" /></a>
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Properties">Properties</span></h2>
+<p>Now right click your project, in this case "gm_test", and then click "Properties".
+</p><p><br />
+<a href="/page/File:Visual_Studios_properties.png" class="image"><img alt="Visual Studios properties.png" src="/images/4/44/Visual_Studios_properties.png" width="370" height="473" /></a>
+</p><p><br />
+</p>
+<h3> <span class="mw-headline" id="Configuration_Properties">Configuration Properties</span></h3>
+<p>Go into "Configuration Properties" and under "Project Defaults" then go to "Character Set" and select "Use Multi-Byte Character Set". This is helpful with strings so you don't have to use useless shit. Next in "Configuration Properties" make the "Target Name" something like "gmcl_test_win32" so that you can just drag and drop it into your lua/bin folder without having to rename it after every compile.
+</p><p><br />
+<a href="/page/File:Visual_Studios_configuration_properties.png" class="image"><img alt="Visual Studios configuration properties.png" src="/images/5/57/Visual_Studios_configuration_properties.png" width="851" height="604" /></a>
+</p><p><br />
+</p>
+<h3> <span class="mw-headline" id="C.2FC.2B.2B">C/C++</span></h3>
+<p>Now that that's out of the way, click the "C/C++" category and then select "Additional Include Directories", in the drop down menu, select "&lt;Edit...&gt;".
+</p><p><br />
+<a href="/page/File:Visual_Studios_ccplusplus_properties.png" class="image"><img alt="Visual Studios ccplusplus properties.png" src="/images/8/86/Visual_Studios_ccplusplus_properties.png" width="853" height="607" /></a>
+</p><p><br />
+From inside this menu select the little folder icon this should make a new blank entry. Double click it then select the "..." button.
+</p><p><br />
+<a href="/page/File:Visual_Studios_aditional_include_directories.png" class="image"><img alt="Visual Studios aditional include directories.png" src="/images/8/8f/Visual_Studios_aditional_include_directories.png" width="425" height="368" /></a>
+</p><p><br />
+Now go to where you saved your headers to, in this case "C:\Garry's Mod Headers\" from here go to "include\GarrysMod\Lua" then click "Select folder".
+Your full path should be something along the lines of "C:\Garry's Mod Headers\include\GarrysMod\Lua".
+</p><p><br />
+<a href="/page/File:Visual_Studios_aditional_folder_select.png" class="image"><img alt="Visual Studios aditional folder select.png" src="/images/5/5b/Visual_Studios_aditional_folder_select.png" width="814" height="540" /></a>
+</p><p><br />
+Click OK, then Click Apply, then Click OK again. You're almost ready to compile your first module.
+</p>
+<h1> <span class="mw-headline" id="Main.cpp">Main.cpp</span></h1>
+<p>Open up main.cpp and add the following code:
+</p>
+<pre><code data-language="lua">#define GMMODULE
+
+#include "Interface.h"
+
+// Called when the module opens
+GMOD_MODULE_OPEN()
+{
+    return 0;
+}
+// Called when the module closes
+GMOD_MODULE_CLOSE()
+{
+    return 0;
+}
+</code></pre>
+<h1> <span class="mw-headline" id="Compiling">Compiling</span></h1>
+<p>If done correctly, you should be able to compile it. Right click your project and click "Rebuild", note that it's a good habit to always select rebuild instead of build.
+</p><p><a href="/page/File:Visual_Studios_rebuild.png" class="image"><img alt="Visual Studios rebuild.png" src="/images/3/3a/Visual_Studios_rebuild.png" width="308" height="66" /></a>
+</p>
+
+

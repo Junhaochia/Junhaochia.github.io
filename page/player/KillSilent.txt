@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Player&#58;KillSilent( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.KillSilent">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/KillSilent" title="Special:WhatLinksHere/Player/KillSilent">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Kills a player without notifying the rest of the server.
+</p><p>This will call <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerSilentDeath" title="GM/PlayerSilentDeath">PlayerSilentDeath</a> instead of <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerDeath" title="GM/PlayerDeath">PlayerDeath</a>.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Silently kills the player.
+</p>
+<pre><code data-language="lua">Player(2):KillSilent()</code></pre>
+<p><br />
+</p>
+
+

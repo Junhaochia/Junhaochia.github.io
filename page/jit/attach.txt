@@ -1,0 +1,65 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>jit.attach( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=jit.attach">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/jit/attach" title="Special:WhatLinksHere/jit/attach">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>You can attach callbacks to a number of compiler events with jit.attach. The callback can be called:
+</p>
+<ul><li>when a function has been compiled to bytecode ("bc");
+</li><li>when trace recording starts or stops ("trace");
+</li><li>as a trace is being recorded ("record");
+</li><li>or when a trace exits through a side exit ("texit").
+</li></ul>
+<p>Set a callback with jit.attach(callback, "event") and clear the same callback with jit.attach(callback)
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This function isn't officially documented on LuJIT wiki, use it at your own risk.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> callback</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The callback function.
+</p><p>The arguments passed to the callback depend on the event being reported:
+</p>
+<ul><li>"bc":
+</li></ul>
+<p><a href="/page/Category_colon_function" title="Category:function">function</a> func - The function that's just been recorded<br />
+</p>
+<ul><li>"trace":
+</li></ul>
+<p><a href="/page/Category_colon_string" title="Category:string">string</a> what - description of the trace event: "flush", "start", "stop", "abort". Available for all events.<br />
+<a href="/page/Category_colon_number" title="Category:number">number</a> tr - The trace number. Not available for flush.<br />
+<a href="/page/Category_colon_function" title="Category:function">function</a> func - The function being traced. Available for start and abort.<br />
+<a href="/page/Category_colon_number" title="Category:number">number</a> pc - The program counter - the bytecode number of the function being recorded (if this a Lua function). Available for start and abort.<br />
+<a href="/page/Category_colon_number" title="Category:number">number</a> otr - start: the parent trace number if this is a side trace, abort: abort code<br />
+<a href="/page/Category_colon_string" title="Category:string">string</a> oex - start: the exit number for the parent trace, abort: abort reason (string)<br />
+</p>
+<ul><li>"record":
+</li></ul>
+<p><a href="/page/Category_colon_number" title="Category:number">number</a> tr - The trace number. Not available for flush.<br />
+<a href="/page/Category_colon_function" title="Category:function">function</a> func - The function being traced. Available for start and abort.<br />
+<a href="/page/Category_colon_number" title="Category:number">number</a> pc - The program counter - the bytecode number of the function being recorded (if this a Lua function). Available for start and abort.<br />
+<a href="/page/Category_colon_number" title="Category:number">number</a> depth - The depth of the inlining of the current bytecode.<br />
+</p>
+<ul><li>"texit":
+</li></ul>
+<p><a href="/page/Category_colon_number" title="Category:number">number</a> tr - The trace number. Not available for flush.<br />
+<a href="/page/Category_colon_number" title="Category:number">number</a> ex - The exit number<br />
+<a href="/page/Category_colon_number" title="Category:number">number</a> ngpr - The number of general-purpose and floating point registers that are active at the exit.<br />
+</p>
+<a href="/page/Category_colon_number" title="Category:number">number</a> nfpr - The number of general-purpose and floating point registers that are active at the exit.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> event</span>
+</p>
+<div style="margin-left: 32px;">
+The event to hook into.</div>
+</div>
+
+

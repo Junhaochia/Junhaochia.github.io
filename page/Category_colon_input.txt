@@ -1,0 +1,33 @@
+<p>The input library allows you to gather information about the clients input devices (mouse &amp; keyboard), such as the cursor position and whether a key is pressed or not.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "input"</h2>
+<p>The following 21 pages are in this category, out of 21 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>I</h3>
+<ul><li><a href="/page/input/CheckKeyTrapping" title="input/CheckKeyTrapping">input/CheckKeyTrapping</a></li>
+<li><a href="/page/input/GetCursorPos" title="input/GetCursorPos">input/GetCursorPos</a></li>
+<li><a href="/page/input/GetKeyCode" title="input/GetKeyCode">input/GetKeyCode</a></li>
+<li><a href="/page/input/GetKeyName" title="input/GetKeyName">input/GetKeyName</a></li>
+<li><a href="/page/input/IsButtonDown" title="input/IsButtonDown">input/IsButtonDown</a></li>
+<li><a href="/page/input/IsControlDown" title="input/IsControlDown">input/IsControlDown</a></li>
+<li><a href="/page/input/IsKeyDown" title="input/IsKeyDown">input/IsKeyDown</a></li></ul></td>
+<td><h3>I cont.</h3>
+<ul><li><a href="/page/input/IsKeyTrapping" title="input/IsKeyTrapping">input/IsKeyTrapping</a></li>
+<li><a href="/page/input/IsMouseDown" title="input/IsMouseDown">input/IsMouseDown</a></li>
+<li><a href="/page/input/IsShiftDown" title="input/IsShiftDown">input/IsShiftDown</a></li>
+<li><a href="/page/input/LookupBinding" title="input/LookupBinding">input/LookupBinding</a></li>
+<li><a href="/page/input/LookupKeyBinding" title="input/LookupKeyBinding">input/LookupKeyBinding</a></li>
+<li><a href="/page/input/SelectWeapon" title="input/SelectWeapon">input/SelectWeapon</a></li>
+<li><a href="/page/input/SetCursorPos" title="input/SetCursorPos">input/SetCursorPos</a></li></ul></td>
+<td><h3>I cont.</h3>
+<ul><li><a href="/page/input/StartKeyTrapping" title="input/StartKeyTrapping">input/StartKeyTrapping</a></li>
+<li><a href="/page/input/WasKeyPressed" title="input/WasKeyPressed">input/WasKeyPressed</a></li>
+<li><a href="/page/input/WasKeyReleased" title="input/WasKeyReleased">input/WasKeyReleased</a></li>
+<li><a href="/page/input/WasKeyTyped" title="input/WasKeyTyped">input/WasKeyTyped</a></li>
+<li><a href="/page/input/WasMouseDoublePressed" title="input/WasMouseDoublePressed">input/WasMouseDoublePressed</a></li>
+<li><a href="/page/input/WasMousePressed" title="input/WasMousePressed">input/WasMousePressed</a></li>
+<li><a href="/page/input/WasMouseReleased" title="input/WasMouseReleased">input/WasMouseReleased</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

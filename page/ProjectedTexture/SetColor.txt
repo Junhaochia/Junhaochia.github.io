@@ -1,0 +1,17 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>ProjectedTexture&#58;SetColor( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ProjectedTexture.SetColor">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ProjectedTexture/SetColor" title="Special:WhatLinksHere/ProjectedTexture/SetColor">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the color of the projected texture.
+</p><p>You must call <a href="/page/Category_colon_ProjectedTexture" title="Category:ProjectedTexture">ProjectedTexture</a>:<a href="/page/ProjectedTexture/Update" title="ProjectedTexture/Update">Update</a> after using this function for it to take effect.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> color</span>
+</p>
+<div style="margin-left: 32px;">
+<p>Must be a <a href="/page/Structures/Color" title="Structures/Color">Color structure</a>.
+</p>
+Unlike other projected textures, this color can only go up to 255.</div>
+</div>
+
+

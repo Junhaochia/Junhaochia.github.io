@@ -1,0 +1,30 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;GetPoseParameter( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.GetPoseParameter">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/GetPoseParameter" title="Special:WhatLinksHere/Entity/GetPoseParameter">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the pose parameter value
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+Pose parameter name to look up</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>Value of given pose parameter.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This value will be from 0 - 1 on the client and from minimum range to maximum range on the server! You'll have to <a href="/page/math/Remap" title="math/Remap">remap</a> this value clientside to <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetPoseParameterRange" title="Entity/GetPoseParameterRange">GetPoseParameterRange</a>'s returns if you want get the actual pose parameter value. See <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetPoseParameter" title="Entity/SetPoseParameter">SetPoseParameter</a>'s example.
+</p>
+</td></tr></table></div>
+</div>
+
+

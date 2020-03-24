@@ -1,0 +1,37 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Tool&#58;MakeGhostEntity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Tool.MakeGhostEntity">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/gamemodes/sandbox/entities/weapons/gmod_tool/ghostentity.lua#L6">View Source</a> - <a href="/page/Special:WhatLinksHere/Tool/MakeGhostEntity" title="Special:WhatLinksHere/Tool/MakeGhostEntity">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Initializes the ghost entity with the given model. Removes any old ghost entity if called multiple times.
+</p><p>The ghost is a regular prop_physics entity in singleplayer games, and a clientside prop in multiplayer games.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> model</span>
+</p>
+<div style="margin-left: 32px;">
+The model of the new ghost entity</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> pos</span>
+</p>
+<div style="margin-left: 32px;">
+Position to initialize the ghost entity at, usually not needed since this is updated in <a href="/page/Category_colon_Tool" title="Category:Tool">Tool</a>:<a href="/page/Tool/UpdateGhostEntity" title="Tool/UpdateGhostEntity">UpdateGhostEntity</a>.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a> angle</span>
+</p>
+<div style="margin-left: 32px;">
+Angle to initialize the ghost entity at, usually not needed since this is updated in <a href="/page/Category_colon_Tool" title="Category:Tool">Tool</a>:<a href="/page/Tool/UpdateGhostEntity" title="Tool/UpdateGhostEntity">UpdateGhostEntity</a>.</div>
+</div>
+
+

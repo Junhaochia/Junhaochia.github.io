@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>RegisterDermaMenuForClose( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=RegisterDermaMenuForClose">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/RegisterDermaMenuForClose" title="Special:WhatLinksHere/Global/RegisterDermaMenuForClose">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Registers a Derma element to be closed the next time <a href="/page/Global/CloseDermaMenus" title="Global/CloseDermaMenus">CloseDermaMenus</a> is called
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> menu</span>
+</p>
+<div style="margin-left: 32px;">
+Menu to be registered for closure</div>
+</div>
+
+

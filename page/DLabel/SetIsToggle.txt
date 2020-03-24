@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DLabel&#58;SetIsToggle( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DLabel.SetIsToggle">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DLabel/SetIsToggle" title="Special:WhatLinksHere/DLabel/SetIsToggle">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Enables or disables toggle functionality for a label. Retrieved with <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/GetIsToggle" title="DLabel/GetIsToggle">GetIsToggle</a>.
+</p><p>You must call this before using <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/SetToggle" title="DLabel/SetToggle">SetToggle</a>, <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/GetToggle" title="DLabel/GetToggle">GetToggle</a> or <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/Toggle" title="DLabel/Toggle">Toggle</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> allowToggle</span>
+</p>
+<div style="margin-left: 32px;">
+Whether or not to enable toggle functionality.</div>
+</div>
+
+

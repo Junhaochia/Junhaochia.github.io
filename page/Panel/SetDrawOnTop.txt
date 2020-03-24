@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetDrawOnTop( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetDrawOnTop">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetDrawOnTop" title="Special:WhatLinksHere/Panel/SetDrawOnTop">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Makes the panel render in front of all others, including the spawn menu and main menu.
+</p><p>Priority is given based on the last call, so of two panels that call this method, the second will draw in front of the first.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This only makes the panel <b>draw</b> above other panels. If there's another panel that would have otherwise covered it, users will not be able to interact with it.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> drawOnTop=false</span>
+</p>
+<div style="margin-left: 32px;">
+Whether or not to draw the panel in front of all others.</div>
+</div>
+
+

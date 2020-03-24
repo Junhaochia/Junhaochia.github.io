@@ -1,0 +1,36 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#SVN"><span class="tocnumber">1</span> <span class="toctext">SVN</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#What_Is_SVN"><span class="tocnumber">2</span> <span class="toctext">What Is SVN</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#How_to_Use_SVN"><span class="tocnumber">3</span> <span class="toctext">How to Use SVN</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#How_To_Use_SVN_.28Windows.29"><span class="tocnumber">3.1</span> <span class="toctext">How To Use SVN (Windows)</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="SVN"> SVN </span></h2>
+<p>The purpose of this page is to instruct in the use of SVN, not list respositories.
+Don't post any repositories on this page.<br />
+</p>
+<h2> <span class="mw-headline" id="What_Is_SVN"> What Is SVN </span></h2>
+<p>SVN is an archiving repository. With it you can freely change/update between versions of files and only download the changed files. In Garry's Mod, it is used as an easy updater since some addons are hundreds of megabytes in size and you don't want to have to redownload the whole thing for some minor update.
+</p>
+<h2> <span class="mw-headline" id="How_to_Use_SVN"> How to Use SVN </span></h2>
+<h3> <span class="mw-headline" id="How_To_Use_SVN_.28Windows.29"> How To Use SVN (Windows) </span></h3>
+<p>You will need a SVN Client. There are a few SVN Clients out there but <a rel="nofollow" class="external text" href="http://tortoisesvn.net/downloads.html">Tortoise SVN</a> is what this tutorial will be using.
+</p><p>Once you downloaded and installed Tortoise SVN, go to your Garry's Mod addons folder. By default this is:
+</p><p>32 bit operating systems<br />
+</p><p>C:\Program Files\Steam\Steamapps\common\GarrysMod\garrysmod\addons<br />
+</p><p>64 bit operating systems<br />
+</p><p>C:\Program Files (x86)\Steam\Steamapps\common\GarrysMod\garrysmod\addons<br />
+</p><p>Replace Username with the username you use to sign on to steam.
+</p><p>Make a new folder and name it to the name of the addon your going to download.
+Right click on your folder and you should get a SVN Checkout option on the folder
+</p><p><a href="/page/File:svn_checkout.jpg" class="image"><img alt="svn checkout.jpg" src="/images/3/37/svn_checkout.jpg" width="244" height="340" /></a>
+</p><p>Now select that and enter the URL of the addon you wish to download
+</p><p><a href="/page/File:svn_link.jpg" class="image"><img alt="svn link.jpg" src="/images/3/39/svn_link.jpg" width="696" height="309" /></a>
+</p><p>Press ok and the download will start. Once its finished, the addon should have been completely installed. If you need to update your addon later on, just right click that folder and press the SVN Update option and it will check for updates.
+</p>
+
+

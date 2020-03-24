@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Weapon&#58;SetClip1( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Weapon.SetClip1">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Weapon/SetClip1" title="Special:WhatLinksHere/Weapon/SetClip1">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Lets you change the number of bullets in the given weapons primary clip.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> ammo</span>
+</p>
+<div style="margin-left: 32px;">
+The amount of bullets the clip should contain</div>
+</div>
+
+

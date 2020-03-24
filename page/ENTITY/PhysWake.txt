@@ -1,0 +1,17 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;PhysWake( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.PhysWake">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/entity.lua#L144-L151">View Source</a> - <a href="/page/Special:WhatLinksHere/Entity/PhysWake" title="Special:WhatLinksHere/Entity/PhysWake">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Wakes up the entity's physics object
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>This is what the function does internally.
+</p>
+<pre><code data-language="lua">local phys = self:GetPhysicsObject()
+if (phys:IsValid()) then
+	phys:Wake()
+end</code></pre>
+<p><br />
+</p>
+
+

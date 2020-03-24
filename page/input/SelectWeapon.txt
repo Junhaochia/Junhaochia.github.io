@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>input.SelectWeapon( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=input.SelectWeapon">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/input/SelectWeapon" title="Special:WhatLinksHere/input/SelectWeapon">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Switches to the provided weapon on the next CUserCmd generation/CreateMove call. Direct binding to <a rel="nofollow" class="external text" href="https://github.com/LestaD/SourceEngine2007/blob/43a5c90a5ada1e69ca044595383be67f40b33c61/se2007/game/client/in_main.cpp#L929-L932">CInput::MakeWeaponSelection</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a> weapon</span>
+</p>
+<div style="margin-left: 32px;">
+The weapon entity to switch to.</div>
+</div>
+
+

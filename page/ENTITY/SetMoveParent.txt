@@ -1,0 +1,40 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetMoveParent( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetMoveParent">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetMoveParent" title="Special:WhatLinksHere/Entity/SetMoveParent">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the Movement Parent of an entity to another entity.
+</p><p>Similar to <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetParent" title="Entity/SetParent">SetParent</a>, except the object's coordinates are not translated automatically before parenting.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> Parent</span>
+</p>
+<div style="margin-left: 32px;">
+The entity to change this entity's Movement Parent to.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Sets the Movement Entity of a new entity to Player 1.
+</p>
+<pre><code data-language="lua">local hat = ents.Create(&quot;prop_physics&quot;)
+//Position and angles are relative to our future parent.
+hat:SetPos(Vector(0,0,10))
+hat:SetAngles(Angle(0,90,0))
+
+hat:SetMoveParent(Entity(1))
+
+hat:Spawn()</code></pre>
+<p><br />
+</p>
+
+

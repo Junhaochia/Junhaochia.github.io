@@ -1,0 +1,212 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Prerequisites"><span class="tocnumber">1</span> <span class="toctext">Prerequisites</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Creating_C.2B.2B_functions_for_Lua"><span class="tocnumber">2</span> <span class="toctext">Creating C++ functions for Lua</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Defining_Our_Function_in_C.2B.2B"><span class="tocnumber">2.1</span> <span class="toctext">Defining Our Function in C++</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Defining_Our_C.2B.2B_Function_in_Lua"><span class="tocnumber">2.2</span> <span class="toctext">Defining Our C++ Function in Lua</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Calling_Lua_Function_In_C.2B.2B"><span class="tocnumber">3</span> <span class="toctext">Calling Lua Function In C++</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Call_and_PCall"><span class="tocnumber">3.1</span> <span class="toctext">Call and PCall</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Calling_from_the_Global_Table"><span class="tocnumber">3.2</span> <span class="toctext">Calling from the Global Table</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Calling_Functions_Passed_as_Arguments"><span class="tocnumber">3.3</span> <span class="toctext">Calling Functions Passed as Arguments</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Getting_the_Return_Value"><span class="tocnumber">3.4</span> <span class="toctext">Getting the Return Value</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Prerequisites">Prerequisites</span></h1>
+<p>If you haven't already set up your IDE, it is recommended that you read this first: <a href="/page/Setting_Visual_Studio_Up_for_Making_Binary_Modules" title="Setting Visual Studio Up for Making Binary Modules">Setting Visual Studio Up for Making Binary Modules</a>.
+</p>
+<h1> <span class="mw-headline" id="Creating_C.2B.2B_functions_for_Lua">Creating C++ functions for Lua</span></h1>
+<p>Making C++ functions for Lua is absolutely essential for your binaries. Without it, your modules just won't be as useful. In this section I will cover how to create functions in C++ for use in Lua, checking the arguments and return values.
+</p>
+<h2> <span class="mw-headline" id="Defining_Our_Function_in_C.2B.2B">Defining Our Function in C++</span></h2>
+<p>The first thing we will do is define our C++ function.
+</p>
+<pre><code data-language="lua">int MyFirstFunction( lua_State* state )
+{
+    //We'll add stuff here in a sec
+}
+</code></pre>
+<p>Now that we have a blank function, lets have it return a value. To do this we push something onto the stack and then return the number of values we want to return. So in this case we'll push a bool, true, and then return 1.
+</p>
+<pre><code data-language="lua">int MyFirstFunction( lua_State* state )
+{
+    LUA-&gt;PushBool( true ); // Push our bool onto the stack.
+    
+    return 1; // How many values we are returning
+}
+</code></pre>
+<p>Now if we were to call this function in Lua, which we can't yet because we have only defined it in C++, then it would always return true.
+</p><p>Alright, so now that you have a basic understanding of how it works, let's make it more complex. How about we add a parameter and if it's over a certain value we return true, otherwise false.
+</p>
+<pre><code data-language="lua">int MyFirstFunction( lua_State* state )
+{
+    LUA-&gt;CheckType( 1, GarrysMod::Lua::Type::NUMBER ); // Make sure a number is the first argument
+    
+    double number = (LUA-&gt;GetNumber( 1 )); // Get the first argument
+
+    if (number &gt; 9.0) // If the number is over 9...
+    {
+        LUA-&gt;PushBool( true ); // push true...
+    }
+    else
+    {
+        LUA-&gt;PushBool( false ); // otherwise, push false false.
+    }
+    
+    return 1; // How many values we are returning
+}
+</code></pre>
+<p>Now that we have our function defined, it's
+</p>
+<h2> <span class="mw-headline" id="Defining_Our_C.2B.2B_Function_in_Lua">Defining Our C++ Function in Lua</span></h2>
+<p>So now that we have or function created, we need a way to call it in Lua. This is the easy part.
+</p>
+<pre><code data-language="lua">GMOD_MODULE_OPEN()
+{
+    LUA-&gt;PushSpecial( GarrysMod::Lua::SPECIAL_GLOB ); // Push the global table
+         LUA-&gt;PushCFunction( MyFirstFunction ); // Push our function
+         LUA-&gt;SetField( -2, "MyFirstFunction" ); // Set MyFirstFunction in lua to our C++ function
+    LUA-&gt;Pop(); // Pop the global table off the stack
+
+    return 0;
+}
+</code></pre>
+<p>This sets the Lua variable "MyFirstFunction" to the C++ function "MyFirstFunction", so you can call it in Lua using
+</p>
+<pre><code data-language="lua">MyFirstFunction( &lt;number&gt; )
+</code></pre>
+<p><br />
+</p><p><br />
+</p>
+<h1> <span class="mw-headline" id="Calling_Lua_Function_In_C.2B.2B">Calling Lua Function In C++</span></h1>
+<p>It is very useful if you know how to call Lua functions using Lua C. In this section I will cover how to calling functions and getting the return values. Now a brief explanation of how Call works. If I did the following:
+</p>
+<pre><code data-language="lua">LUA-&gt;Call( 0, 0 );
+</code></pre>
+<p>Then it would call my function with 0 arguments and not get a return value. The next example would call with 1 argument and still get no return value:
+</p>
+<pre><code data-language="lua">LUA-&gt;Call( 1, 0 );
+</code></pre>
+<p>My next example would pass 3 arguments and get 1 return value:
+</p>
+<pre><code data-language="lua">LUA-&gt;Call( 3, 1 );
+</code></pre>
+<p>Finally my last example would pass 2 arguments and get 4 return values:
+</p>
+<pre><code data-language="lua">LUA-&gt;Call( 2, 4 );
+</code></pre>
+<p><br />
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Call_and_PCall">Call and PCall</span></h2>
+<p>The only difference between Call and PCall is PCall is short for protected call. In other words if something goes horribly wrong, PCall won't freak out but call will. So it's a good habit to use PCall if your arguments aren't constants, but for these examples we will be using Call.
+</p><p><br />
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Calling_from_the_Global_Table">Calling from the Global Table</span></h2>
+<p>So calling from the global table is probably what you will use the most. It's very simple to call from the global table and easy. It just doesn't look very pretty.
+</p>
+<pre><code data-language="lua">LUA-&gt;PushSpecial( GarrysMod::Lua::SPECIAL_GLOB ); // Push the global table
+    LUA-&gt;GetField( -1, "print" ); // Get the print function
+    LUA-&gt;PushString( "Swag" ); // Push our argument
+    LUA-&gt;Call( 1, 0 ); // Call the function
+LUA-&gt;Pop(); // Pop the global table off the stack
+</code></pre>
+<p>This would output "Swag" in the console. Below is an example of using multiple arguments.
+</p>
+<pre><code data-language="lua">LUA-&gt;PushSpecial( GarrysMod::Lua::SPECIAL_GLOB ); // Push the global table
+    LUA-&gt;GetField( -1, "print" ); // Get the print function
+    LUA-&gt;PushString( "Swag" ); // Push our argument
+    LUA-&gt;PushNumber( 1337 ); // Push our second argument
+    LUA-&gt;Call( 2, 0 ); // Call the function
+LUA-&gt;Pop(); // Pop the global table off the stack
+</code></pre>
+<p>This would output "Swag 1337" in console. Below is an example of a pseudo-practical use.
+</p>
+<pre><code data-language="lua">int MyFirstFunction( lua_State* state )
+{
+    LUA-&gt;CheckType( 1, GarrysMod::Lua::Type::STRING ); // Make sure a string is the first argument
+
+    LUA-&gt;PushSpecial( GarrysMod::Lua::SPECIAL_GLOB ); // Push the global table
+        LUA-&gt;GetField( -1, "print" ); // Get the print function
+        LUA-&gt;Push( 1 ); // Push the first argument
+        LUA-&gt;Call( 1, 0 ); // Call the function
+    LUA-&gt;Pop(); // Pop the global table off the stack
+
+    return 0; // How many values we are returning
+}
+</code></pre>
+<p>If you wanted to call more than one functions you would do the following:
+</p>
+<pre><code data-language="lua">LUA-&gt;PushSpecial( GarrysMod::Lua::SPECIAL_GLOB ); // Push the global table
+    LUA-&gt;GetField( -1, "print" ); // Get the print function
+    LUA-&gt;PushString( "Swag" ); // Push our argument
+    LUA-&gt;Call( 1, 0 ); // Call the function
+
+    LUA-&gt;GetField( -1, "print" ); // Get the print function
+    LUA-&gt;PushString( "Garry feels like a new man." ); // Push our argument
+    LUA-&gt;Call( 1, 0 ); // Call the function
+
+    LUA-&gt;GetField( -1, "Msg" ); // Get the Msg function
+    LUA-&gt;PushString( "Double swag\n" ); // Push our argument
+    LUA-&gt;Call( 1, 0 ); // Call the function
+LUA-&gt;Pop(); // Pop the global table off the stack
+</code></pre>
+<p><br />
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Calling_Functions_Passed_as_Arguments">Calling Functions Passed as Arguments</span></h2>
+<p>Calling functions passed as arguments is very useful. In another section I will cover how to store a function and then call it later, but for now we will start with the basics.
+</p>
+<pre><code data-language="lua">int MyFirstFunction( lua_State* state )
+{
+    LUA-&gt;CheckType( 1, GarrysMod::Lua::Type::FUNCTION ); // Make sure the first argument is a function
+
+    LUA-&gt;PushString( "Hey... swag swag swag swag" ); // Push our argument
+    LUA-&gt;Push( 1 ); // Push the function
+    LUA-&gt;Call( 1, 0 ); // Call the function
+    
+    return 0;
+}
+</code></pre>
+<p>So now if you did something like below in Lua, it would output in console "Hey... swag swag swag swag"
+</p>
+<pre><code data-language="lua">MyFirstFunction( print )
+</code></pre>
+<p><br />
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Getting_the_Return_Value">Getting the Return Value</span></h2>
+<p>So you know how to call the functions, you just don't know how to get the return value. I will fix that for you. Below is an example of getting the return value of math.abs:
+</p>
+<pre><code data-language="lua">LUA-&gt;PushSpecial( GarrysMod::Lua::SPECIAL_GLOB ); // Push the global table
+    LUA-&gt;GetField( -1, "math" ); // Get the math table
+    LUA-&gt;GetField( -1, "abs" ); // Get the abs function from the math table
+    LUA-&gt;PushNumber( -666 ); // Push our argument
+    LUA-&gt;Call( 1, 1 ); // Call the function and get 1 return value
+    
+    int iReturnValue = (int)LUA-&gt;GetNumber( -1 );
+LUA-&gt;Pop( 3 ); // Pop the global table, the math table, and the return value off the stack
+</code></pre>
+<p>Now we have the return value of math.abs( -666 ) in iReturnValue. So iReturnValue is equal to 666. In the following example I get the result of math.abs( 1337 ) then I print it to my console.
+</p>
+<pre><code data-language="lua">LUA-&gt;PushSpecial( GarrysMod::Lua::SPECIAL_GLOB ); // Push the global table
+    LUA-&gt;GetField( -1, "math" ); // Get the math table
+    LUA-&gt;GetField( -1, "abs" ); // Get the abs function from the math table
+    LUA-&gt;PushNumber( -666 ); // Push our argument
+    LUA-&gt;Call( 1, 1 ); // Call the function and get 1 return value
+    
+    LUA-&gt;GetField( -3, "print" ); // Get the print function
+    LUA-&gt;Push( -2 ); // Push the return value
+    LUA-&gt;Call( 1, 0 ); // Call the print function
+LUA-&gt;Pop( 3 ); // Pop the global table, math table, and return value off the stack
+</code></pre>
+<p>This would output "666" to my console.
+</p>
+
+

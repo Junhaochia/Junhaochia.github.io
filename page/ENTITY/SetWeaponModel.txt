@@ -1,0 +1,136 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetWeaponModel( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetWeaponModel">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetWeaponModel" title="Special:WhatLinksHere/Entity/SetWeaponModel">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the model and associated weapon to this viewmodel entity.
+</p><p>This is used internally when the player switches weapon.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>View models are not drawn without a weapons associated to them.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This will silently fail if the entity is not a viewmodel.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> viewModel</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The model string to give to this viewmodel.
+</p>
+Example: "models/weapons/c_smg1.mdl"</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a> weapon=NULL</span>
+</p>
+<div style="margin-left: 32px;">
+The weapon entity to associate this viewmodel to.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Sets the model of the second viewmodel to the smg and associates it with the player's current weapon.
+</p>
+<pre><code data-language="lua">Entity( 1 ):GetViewModel( 1 ):SetWeaponModel( &quot;models/weapons/c_smg1.mdl&quot;, Entity( 1 ):GetActiveWeapon() )</code></pre>
+<p><br />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Initializes the extra viewmodel in Deploy and hides it again on Holster, also plays the attack animation on left and right click.
+</p>
+<pre><code data-language="lua">SWEP.ViewModel = &quot;models/weapons/v_pistol.mdl&quot;
+SWEP.UseHands = false
+SWEP.ViewModelFlip = false	--the default viewmodel won't be flipped
+SWEP.ViewModelFlip1 = true	--the second viewmodel will
+
+
+function SWEP:Deploy()
+	--get the second viewmodel
+	local viewmodel1 = self.Owner:GetViewModel( 1 )
+	if ( IsValid( viewmodel1 ) ) then
+		--associate its weapon to us
+		viewmodel1:SetWeaponModel( self.ViewModel , self )
+	end
+	
+	self:SendViewModelAnim( ACT_VM_DEPLOY , 1 )
+	
+	return true
+end
+
+function SWEP:Holster()
+	local viewmodel1 = self.Owner:GetViewModel( 1 )
+	if ( IsValid( viewmodel1 ) ) then
+		--set its weapon to nil, this way the viewmodel won't show up again
+		viewmodel1:SetWeaponModel( self.ViewModel , nil )
+	end
+	
+	return true
+end
+
+--since self:SendWeaponAnim always sends the animation to the first viewmodel, we need this as a replacement
+function SWEP:SendViewModelAnim( act , index , rate )
+	
+	if ( not game.SinglePlayer() and not IsFirstTimePredicted() ) then
+		return
+	end
+	
+	local vm = self.Owner:GetViewModel( index )
+	
+	if ( not IsValid( vm ) ) then
+		return
+	end
+	
+	local seq = vm:SelectWeightedSequence( act )
+	
+	if ( seq == -1 ) then
+		return
+	end
+	
+	vm:SendViewModelMatchingSequence( seq )
+	vm:SetPlaybackRate( rate or 1 )
+end
+
+function SWEP:PrimaryAttack()
+	
+	self:SendViewModelAnim( ACT_VM_PRIMARYATTACK , 0 )--target the first viewmodel
+	self:SetNextPrimaryFire( CurTime() + 0.25 )
+	
+end
+
+function SWEP:SecondaryAttack()
+	
+	self:SendViewModelAnim( ACT_VM_PRIMARYATTACK , 1 )--target the second
+	self:SetNextSecondaryFire( CurTime() + 0.25 )
+	
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="/page/File:SetWeaponModelExample.jpg" class="image"><img alt="SetWeaponModelExample.jpg" src="/images/thumb/e/e8/SetWeaponModelExample.jpg/400px-SetWeaponModelExample.jpg" width="400" height="300" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:SetWeaponModelExample.jpg" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div></div></div></div></div></div>
+
+

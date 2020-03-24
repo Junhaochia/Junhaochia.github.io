@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;IsSelectable( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.IsSelectable">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/IsSelectable" title="Special:WhatLinksHere/Panel/IsSelectable">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Determines if the panel object is selectable (like icons in the Spawn Menu, holding <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">⇧ Shift</span>). This is set with <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetSelectable" title="Panel/SetSelectable">SetSelectable</a>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether the panel is selectable or not.</div>
+</div>
+
+

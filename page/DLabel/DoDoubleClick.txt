@@ -1,0 +1,35 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DLabel&#58;DoDoubleClick( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DLabel.DoDoubleClick">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DLabel/DoDoubleClick" title="Special:WhatLinksHere/DLabel/DoDoubleClick">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelHook">Description<span style="display: none;"><a href="/page/Form:PanelHook" title="Form:PanelHook">PanelHook</a></span></span></h1>
+<p>Called when the label is double clicked by the player with left clicks.
+</p><p><a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/SetDoubleClickingEnabled" title="DLabel/SetDoubleClickingEnabled">SetDoubleClickingEnabled</a> must be set to true for this hook to work, which it is by default.
+</p><p>This will be called after <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/OnDepressed" title="DLabel/OnDepressed">OnDepressed</a> and <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/OnReleased" title="DLabel/OnReleased">OnReleased</a> and <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/DoClick" title="DLabel/DoClick">DoClick</a>.
+</p><p>See also <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/DoRightClick" title="DLabel/DoRightClick">DoRightClick</a> and <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/DoMiddleClick" title="DLabel/DoMiddleClick">DoMiddleClick</a>.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Opens a URL in Steam Overlay by double clicking the text "Click ME"!
+</p>
+<pre><code data-language="lua">local frame = vgui.Create( &quot;DFrame&quot; )
+frame:SetTitle( &quot;Double Click Example&quot; )
+frame:SetSize( 250, 100 )
+frame:Center()
+frame:MakePopup()
+
+local frame_label = vgui.Create( &quot;DLabel&quot;, frame )
+frame_label:SetPos( 10, 30 )
+frame_label:SetTextColor( Color( 255, 255, 255 ) )
+frame_label:SetText( &quot;Double click me!&quot; )
+frame_label:SizeToContents()
+frame_label:SetMouseInputEnabled( true )
+frame_label.DoDoubleClick = function()
+	gui.OpenURL(&quot;/&quot;)
+end
+
+-- Uncommentiing this will disable double clicking
+-- frame_label:SetDoubleClickingEnabled( false )</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:ClickMeDouble.png" class="image"><img alt="ClickMeDouble.png" src="/images/b/b0/ClickMeDouble.png" width="250" height="100" /></a></div>
+
+

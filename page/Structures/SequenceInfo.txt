@@ -1,0 +1,180 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/SequenceInfo" title="Special:WhatLinksHere/Structures/SequenceInfo">What links here?</a></div>Used by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetSequenceInfo" title="Entity/GetSequenceInfo">GetSequenceInfo</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> label
+</td>
+<td>
+<p>Name of the sequence.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> activityname
+</td>
+<td>
+<p>Name of the activity this sequence is attached to.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> activity
+</td>
+<td>
+<p>The activity ID associated with this sequence. See <a href="/page/Enums/ACT" title="Enums/ACT">ACT_ Enums</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> actweight
+</td>
+<td>
+<p>How likely this sequence is to be picked when playing an activity its attached to. -1 means this is the only sequence for that activity. (needs validation)
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> flags
+</td>
+<td>
+<p>The looping and other flags of this sequence.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> numevents
+</td>
+<td>
+<p>Number of animation events this sequence has.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> numblends
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> bbmin
+</td>
+<td>
+<p>Mins part of the bounding box for this sequence
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> bbmax
+</td>
+<td>
+<p>Maxs part of the bounding box for this sequence
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> fadeintime
+</td>
+<td>
+<p>ideal cross fade in time (0.2 default)
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> fadeouttime
+</td>
+<td>
+<p>ideal cross fade out time (0.2 default)
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> localentrynode
+</td>
+<td>
+<p>transition node at entry
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> localexitnode
+</td>
+<td>
+<p>transition node at exit
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> nodeflags
+</td>
+<td>
+<p>Transition rules
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> lastframe
+</td>
+<td>
+<p>Frame that should generate EndOFSequence
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> nextseq
+</td>
+<td>
+<p>If non 0, the next sequence for auto advancing sequences
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> pose
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> cycleposeindex
+</td>
+<td>
+<p>If non 0, index of pose parameter to be used as cycle index. This means that the sequence playback will be controlled by a pose parameter.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> anims
+</td>
+<td>
+<p>A 1-based array of all animationIDs associated with this sequence. For use with <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetAnimInfo" title="Entity/GetAnimInfo">GetAnimInfo</a>.
+</p>
+</td></tr></table>
+
+

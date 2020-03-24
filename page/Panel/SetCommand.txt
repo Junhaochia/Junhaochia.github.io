@@ -1,0 +1,60 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetCommand( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetCommand">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetCommand" title="Special:WhatLinksHere/Panel/SetCommand">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the action signal command that's fired when a <a href="/page/Category_colon_Button" title="Category:Button">Button</a> is clicked. The hook <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/ActionSignal" title="PANEL/ActionSignal">ActionSignal</a> is called as the click response.
+</p><p>This has no effect on buttons unless it has had its <i>AddActionSignalTarget</i> method called (an internal function not available by default in Garry's Mod LUA).
+</p><p>A better alternative is calling <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/Command" title="Panel/Command">Command</a> when a <a href="/page/Category_colon_DButton" title="Category:DButton">DButton</a> is clicked.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates an engine-based <a href="/page/Category_colon_Frame" title="Category:Frame">Frame</a> panel and changes the command that's fired when you click the white close button (by default the command is set to "Close").
+</p>
+<pre><code data-language="lua">-- Create a regular Frame panel
+TestFrame = vgui.Create(&quot;Frame&quot;)
+TestFrame:SetSize(200, 200)
+TestFrame:Center()
+TestFrame:MakePopup()
+TestFrame:SetVisible(true)
+
+local lbl = vgui.Create(&quot;DLabel&quot;, TestFrame)
+lbl:Dock(FILL)
+lbl:DockMargin(10, 10, 10, 10)
+lbl:SetText(&quot;Click the white button in the upper right corner of this window.&quot;)
+lbl:SetFont(&quot;ChatFont&quot;)
+lbl:SetWrap(true)
+
+-- Create a background panel so we can see the Frame's internal buttons
+local bg = vgui.Create(&quot;DPanel&quot;, TestFrame)
+bg:Dock(FILL)
+bg:SetBackgroundColor(Color(64, 64, 64, 192))
+bg:MoveToBack()
+
+-- Loop through Frame's internal components
+for _, child in pairs(TestFrame:GetChildren()) do
+
+	-- Disable frame sizing
+	if(string.find(child:GetName(), &quot;Grip&quot;)) then
+	
+		child:SetMouseInputEnabled(false)
+		
+	-- Fire the &quot;Testing&quot; command when we click the white button
+	elseif(child:GetName() == &quot;frame_close&quot;) then
+	
+		child:SetCommand(&quot;Testing&quot;)
+		
+	end
+	
+end
+
+function TestFrame:ActionSignal(signalName, signalValue)
+	
+	-- Show the signal name
+	lbl:SetText(&quot;Received command: \&quot;&quot;..signalName..&quot;\&quot;&quot;)
+
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><br /><br />
+<a href="/page/File:Panel_SetCommand_example1.gif" class="image"><img alt="Panel SetCommand example1.gif" src="/images/1/13/Panel_SetCommand_example1.gif" width="220" height="220" /></a></div>
+
+

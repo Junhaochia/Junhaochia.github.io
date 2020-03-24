@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>CMoveData&#58;GetAngles( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CMoveData.GetAngles">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CMoveData/GetAngles" title="Special:WhatLinksHere/CMoveData/GetAngles">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Gets the aim angle. On client is the same as <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetAngles" title="Entity/GetAngles">GetAngles</a>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a></span>
+</p>
+<div style="margin-left: 32px;">
+Aiming angle</div>
+</div>
+
+

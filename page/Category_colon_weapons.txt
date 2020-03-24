@@ -1,0 +1,10 @@
+<p>The weapons library allows you to access information about any scripted weapons loaded into the game, as well as register your own weapons.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "weapons"</h2>
+<p>The following 6 pages are in this category, out of 6 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>W</h3>
+<ul><li><a href="/page/weapons/Get" title="weapons/Get">weapons/Get</a></li><li><a href="/page/weapons/GetList" title="weapons/GetList">weapons/GetList</a></li><li><a href="/page/weapons/GetStored" title="weapons/GetStored">weapons/GetStored</a></li><li><a href="/page/weapons/IsBasedOn" title="weapons/IsBasedOn">weapons/IsBasedOn</a></li><li><a href="/page/weapons/OnLoaded" title="weapons/OnLoaded">weapons/OnLoaded</a></li><li><a href="/page/weapons/Register" title="weapons/Register">weapons/Register</a></li></ul></div>
+</div></div>

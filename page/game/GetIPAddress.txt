@@ -1,0 +1,31 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>game.GetIPAddress( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=game.GetIPAddress">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/game/GetIPAddress" title="Special:WhatLinksHere/game/GetIPAddress">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the public IP address and port of the current server. This will return the IP/port that you are connecting through when ran clientside.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Returns "0.0.0.0:0" in singleplayer.
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>Returns "0.0.0.0:<i>port</i>" on the server when called too early, including in <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/Initialize" title="GM/Initialize">Initialize</a> and <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/InitPostEntity" title="GM/InitPostEntity">InitPostEntity</a>. This bug seems to only happen the first time a server is launched, and will return the correct value after switching maps.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3001">#3001</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a></span>
+</p>
+<div style="margin-left: 32px;">
+The IP address and port in the format "x.x.x.x:x"</div>
+</div>
+
+

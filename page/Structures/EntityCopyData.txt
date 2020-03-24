@@ -1,0 +1,192 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/EntityCopyData" title="Special:WhatLinksHere/Structures/EntityCopyData">What links here?</a></div>Data structure used by the <a href="/page/Category_colon_duplicator" title="Category:duplicator">duplicator library</a> to store and load entity data.
+<p>It is created by <a href="/page/Category_colon_duplicator" title="Category:duplicator">duplicator</a>.<a href="/page/duplicator/CopyEntTable" title="duplicator/CopyEntTable">CopyEntTable</a> and can be loaded by <a href="/page/Category_colon_duplicator" title="Category:duplicator">duplicator</a>.<a href="/page/duplicator/CreateEntityFromTable" title="duplicator/CreateEntityFromTable">CreateEntityFromTable</a>.
+</p><p>It also shows up in several other contexts:
+</p>
+<ul><li> <a href="/page/Category_colon_duplicator" title="Category:duplicator">duplicator</a>.<a href="/page/duplicator/RegisterEntityClass" title="duplicator/RegisterEntityClass">RegisterEntityClass</a>
+</li><li> <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/OnEntityCopyTableFinish" title="ENTITY/OnEntityCopyTableFinish">OnEntityCopyTableFinish</a>
+</li><li> <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/OnDuplicated" title="ENTITY/OnDuplicated">OnDuplicated</a>
+</li></ul>
+<p>
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>In addition to all fields listed here, any field saved on the entity will be saved as-is to this table. For example, if you set ent.FavoriteFood = "Steak" before duplicating it, this structure will also contain the field FavoriteFood with the value "Steak".
+</p>
+</td></tr></table>
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Name
+</td>
+<td>
+<p>The entity's name, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetName" title="Entity/GetName">GetName</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Class
+</td>
+<td>
+<p>The entity's class name, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetClass" title="Entity/GetClass">GetClass</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> Pos
+</td>
+<td>
+<p>The entity's position, relative to the duplication origin point.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a>
+</td>
+<td> Angle
+</td>
+<td>
+<p>The entity's angle, relative to the duplication angle.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> DT
+</td>
+<td>
+<p>The entity's Network Vars, see <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/SetupDataTables" title="ENTITY/SetupDataTables">SetupDataTables</a> and <a href="/page/Networking_Entities" title="Networking Entities">Networking Entities</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Model
+</td>
+<td>
+<p>The entity's model, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetModel" title="Entity/GetModel">GetModel</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> ModelScale
+</td>
+<td>
+<p>The entity's model scale, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetModelScale" title="Entity/GetModelScale">GetModelScale</a>. This will only be present if the model scale isn't 1.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Skin
+</td>
+<td>
+<p>The entity's active skin, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetSkin" title="Entity/GetSkin">GetSkin</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> ColGroup
+</td>
+<td>
+<p>The entity's collision group, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetCollisionGroup" title="Entity/GetCollisionGroup">GetCollisionGroup</a>. Uses the <a href="/page/Enums/COLLISION_GROUP" title="Enums/COLLISION GROUP">COLLISION_GROUP_ Enums</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> Mins
+</td>
+<td>
+<p>The entity's collision bound minimums, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetCollisionBounds" title="Entity/GetCollisionBounds">GetCollisionBounds</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> Maxs
+</td>
+<td>
+<p>The entity's collision bound maximums, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetCollisionBounds" title="Entity/GetCollisionBounds">GetCollisionBounds</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> PhysicsObjects
+</td>
+<td>
+<p>Data about the entity's <a href="/page/Category_colon_PhysObj" title="Category:PhysObj">PhysObjs</a>, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetPhysicsObjectNum" title="Entity/GetPhysicsObjectNum">GetPhysicsObjectNum</a>. The key is the physics object index (starts from 0), and the value is a <a href="/page/Structures/PhysicsObjectSave" title="Structures/PhysicsObjectSave">PhysicsObjectSave structure</a>. Unlike other tables in this structure, if there are no physics objects for this entity this will be an empty table.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> FlexScale
+</td>
+<td>
+<p>The entity's Flex Scale, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetFlexScale" title="Entity/GetFlexScale">GetFlexScale</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> Flex
+</td>
+<td>
+<p>Each flex bone's flex weight, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetFlexWeight" title="Entity/GetFlexWeight">GetFlexWeight</a>. The key is the flex's index and the value is the weight. Only flexes with a non-default (nonzero) weight are listed, and if none exist, this field will be nil.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> BodyG
+</td>
+<td>
+<p>The entity's body groups, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetBodygroup" title="Entity/GetBodygroup">GetBodygroup</a>. The key is the bodygroup ID and the value is the assigned bodygroup number. Only body groups with a non-default (&gt; 0) value are listed, and if none exist, this field will be nil.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> BoneManip
+</td>
+<td>
+<p>Bone manipulation data, see <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/HasBoneManipulations" title="Entity/HasBoneManipulations">HasBoneManipulations</a>. The key is the bone index and the value is a <a href="/page/Structures/BoneManipulationData" title="Structures/BoneManipulationData">BoneManipulationData structure</a>. Only bones that have been manipulated with non-default values are listed, and if none exist, this field will be nil.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> MapCreationID
+</td>
+<td>
+<p>The entity's MapCreationID, only exists for entities that were created by the map. See <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/MapCreationID" title="Entity/MapCreationID">MapCreationID</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> WorkshopID
+</td>
+<td>
+<p>Deprecated, always 0. See <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetWorkshopID" title="Entity/GetWorkshopID">GetWorkshopID</a>.
+</p>
+</td></tr></table>
+
+

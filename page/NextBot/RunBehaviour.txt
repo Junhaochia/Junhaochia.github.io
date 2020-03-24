@@ -1,0 +1,53 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NEXTBOT:RunBehaviour( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NEXTBOT.RunBehaviour">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NEXTBOT/RunBehaviour" title="Special:WhatLinksHere/NEXTBOT/RunBehaviour">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>A hook called to process nextbot logic.
+</p><p>This hook runs in a <a href="/page/Category_colon_coroutine" title="Category:coroutine">coroutine</a> by default. It will only be called if <a href="/page/Category_colon_NEXTBOT_Hooks" title="Category:NEXTBOT Hooks">NEXTBOT</a>:<a href="/page/NEXTBOT/BehaveStart" title="NEXTBOT/BehaveStart">BehaveStart</a> is not overriden.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Example usage of the hook to make NextBot logic from the Example NextBot NPC shipped with the game.
+</p>
+<pre><code data-language="lua">function ENT:RunBehaviour()
+
+	while ( true ) do
+
+		-- walk somewhere random
+		self:StartActivity( ACT_WALK ) -- walk anims
+		self.loco:SetDesiredSpeed( 100 ) -- walk speeds
+		self:MoveToPos( self:GetPos() + Vector( math.Rand( -1, 1 ), math.Rand( -1, 1 ), 0 ) * 200 ) -- walk to a random place within about 200 units (yielding)
+
+		self:StartActivity( ACT_IDLE ) -- revert to idle activity
+
+		self:PlaySequenceAndWait( &quot;idle_to_sit_ground&quot; ) -- Sit on the floor
+		self:SetSequence( &quot;sit_ground&quot; ) -- Stay sitting
+		coroutine.wait( self:PlayScene( &quot;scenes/eli_lab/mo_gowithalyx01.vcd&quot; ) ) -- play a scene and wait for it to finish before progressing
+		self:PlaySequenceAndWait( &quot;sit_ground_to_idle&quot; ) -- Get up
+
+		-- find the furthest away hiding spot
+		local pos = self:FindSpot( &quot;random&quot;, { type = 'hiding', radius = 5000 } )
+
+		-- if the position is valid
+		if ( pos ) then
+			self:StartActivity( ACT_RUN ) -- run anim
+			self.loco:SetDesiredSpeed( 200 ) -- run speed
+			self:PlayScene( &quot;scenes/npc/female01/watchout.vcd&quot; ) -- shout something while we run just for a laugh
+			self:MoveToPos( pos ) -- move to position (yielding)
+			self:PlaySequenceAndWait( &quot;fear_reaction&quot; ) -- play a fear animation
+			self:StartActivity( ACT_IDLE ) -- when we finished, go into the idle anim
+		else
+
+			-- some activity to signify that we didn't find shit
+
+		end
+
+		coroutine.yield()
+
+	end
+
+
+end</code></pre>
+<p><br />
+</p>
+
+

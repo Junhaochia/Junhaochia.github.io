@@ -1,0 +1,8 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>render.PopFilterMin( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.PopFilterMin">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/PopFilterMin" title="Special:WhatLinksHere/render/PopFilterMin">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Pops the current texture minification filter from the filter stack.
+</p><p>See <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/PushFilterMin" title="render/PushFilterMin">PushFilterMin</a>
+</p>
+
+

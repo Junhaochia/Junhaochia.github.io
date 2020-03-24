@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;GetKeyValues( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.GetKeyValues">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/GetKeyValues" title="Special:WhatLinksHere/Entity/GetKeyValues">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns a table containing all key values the entity has.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This only includes engine defined key values. "targetname" is not an actual key value in-engine, use <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetName" title="Entity/GetName">GetName</a> for that instead. For custom key values, use <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/EntityKeyValue" title="GM/EntityKeyValue">EntityKeyValue</a> or <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/KeyValue" title="ENTITY/KeyValue">KeyValue</a> to capture and store them.
+</p>
+</td></tr></table>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+A table of key values.</div>
+</div>
+
+

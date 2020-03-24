@@ -1,0 +1,168 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/COLLISION_GROUP" title="Special:WhatLinksHere/Enums/COLLISION GROUP">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetCollisionGroup" title="Entity/SetCollisionGroup">SetCollisionGroup</a> and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetCollisionGroup" title="Entity/GetCollisionGroup">GetCollisionGroup</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> COLLISION_GROUP_NONE
+</td>
+<td> 0
+</td>
+<td> Normal
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_DEBRIS
+</td>
+<td> 1
+</td>
+<td> Collides with nothing but world and static stuff
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_DEBRIS_TRIGGER
+</td>
+<td> 2
+</td>
+<td> Same as debris, but hits triggers. Useful for an item that can be shot, but doesn't collide.
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_INTERACTIVE_DEBRIS
+</td>
+<td> 3
+</td>
+<td> Collides with everything except other interactive debris or debris
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_INTERACTIVE
+</td>
+<td> 4
+</td>
+<td> Collides with everything except interactive debris or debris
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_PLAYER
+</td>
+<td> 5
+</td>
+<td>
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_BREAKABLE_GLASS
+</td>
+<td> 6
+</td>
+<td> NPCs can see straight through an Entity with this applied.
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_VEHICLE
+</td>
+<td> 7
+</td>
+<td>
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_PLAYER_MOVEMENT
+</td>
+<td> 8
+</td>
+<td> For HL2, same as Collision_Group_Player, for TF2, this filters out other players and CBaseObjects
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_NPC
+</td>
+<td> 9
+</td>
+<td>
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_IN_VEHICLE
+</td>
+<td> 10
+</td>
+<td> Doesn't collide with anything, no traces
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_WEAPON
+</td>
+<td> 11
+</td>
+<td> Doesn't collide with players and vehicles
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_VEHICLE_CLIP
+</td>
+<td> 12
+</td>
+<td> Only collides with vehicles
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_PROJECTILE
+</td>
+<td> 13
+</td>
+<td>
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_DOOR_BLOCKER
+</td>
+<td> 14
+</td>
+<td> Blocks entities not permitted to get near moving doors
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_PASSABLE_DOOR
+</td>
+<td> 15
+</td>
+<td> Let's the Player through, nothing else.
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_DISSOLVING
+</td>
+<td> 16
+</td>
+<td> Things that are dissolving are in this group
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_PUSHAWAY
+</td>
+<td> 17
+</td>
+<td> Nonsolid on client and server, pushaway in player code
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_NPC_ACTOR
+</td>
+<td> 18
+</td>
+<td>
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_NPC_SCRIPTED
+</td>
+<td> 19
+</td>
+<td>
+</td></tr>
+<tr>
+<td> COLLISION_GROUP_WORLD
+</td>
+<td> 20
+</td>
+<td> Doesn't collide with players/props
+</td></tr>
+<tr>
+<td> LAST_SHARED_COLLISION_GROUP
+</td>
+<td> 21
+</td>
+<td> Amount of COLLISION_GROUP_ enumerations
+</td></tr></table>
+
+

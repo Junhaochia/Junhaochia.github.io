@@ -1,0 +1,10 @@
+<p>The os library is a standard Lua library originally intended to allow Lua access to various features of the Operating System it's running on, however many of the features and functions have been removed in Garry's Mod due to security issues. It's only used in Garry's Mod for date &amp; time operations.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "os"</h2>
+<p>The following 4 pages are in this category, out of 4 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>O</h3>
+<ul><li><a href="/page/os/clock" title="os/clock">os/clock</a></li><li><a href="/page/os/date" title="os/date">os/date</a></li><li><a href="/page/os/difftime" title="os/difftime">os/difftime</a></li><li><a href="/page/os/time" title="os/time">os/time</a></li></ul></div>
+</div></div>

@@ -1,0 +1,11 @@
+<p><b>CSEnt</b> is a client-side only entity which can be created with <a href="/page/Global/ClientsideModel" title="Global/ClientsideModel">ClientsideModel</a>, <a href="/page/Global/ClientsideRagdoll" title="Global/ClientsideRagdoll">ClientsideRagdoll</a>, <a href="/page/Global/ClientsideScene" title="Global/ClientsideScene">ClientsideScene</a>, and <a href="/page/Category_colon_ents" title="Category:ents">ents</a>.<a href="/page/ents/CreateClientProp" title="ents/CreateClientProp">CreateClientProp</a>.
+</p><p>Its base class is <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> so it inherits all of the <a href="/page/Category_colon_Client" title="Category:Client">Client</a> and <a href="/page/Category_colon_Shared" title="Category:Shared">Shared</a> functions used by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "CSEnt"</h2>
+<p>This category contains only the following page.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>C</h3>
+<ul><li><a href="/page/CSEnt/Remove" title="CSEnt/Remove">CSEnt/Remove</a></li></ul></div>
+</div></div>

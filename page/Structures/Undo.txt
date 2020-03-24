@@ -1,0 +1,58 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/Undo" title="Special:WhatLinksHere/Structures/Undo">What links here?</a></div>Table structure used by <a href="/page/Category_colon_undo" title="Category:undo">undo</a>.<a href="/page/undo/Do_Undo" title="undo/Do Undo">Do_Undo</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_Player" title="Category:Player">Player</a>
+</td>
+<td> Owner
+</td>
+<td>
+<p>The player responsible who owns the undo
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Name
+</td>
+<td>
+<p>The name of the text to report to the player
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> Entities
+</td>
+<td>
+<p>A table of entities to be removed by the undo
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> Functions
+</td>
+<td>
+<p>A table of {function_to_call, func_arg2, func_arg3}
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> CustomUndoText
+</td>
+<td>
+<p>A custom undo text to show the client
+</p>
+</td></tr></table>
+
+

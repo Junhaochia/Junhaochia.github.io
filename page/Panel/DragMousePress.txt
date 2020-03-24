@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;DragMousePress( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.DragMousePress">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/DragMousePress" title="Special:WhatLinksHere/Panel/DragMousePress">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called to inform the <a href="/page/Category_colon_dragndrop" title="Category:dragndrop">dragndrop library</a> that a mouse button is being held down on a panel object.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> mouseCode</span>
+</p>
+<div style="margin-left: 32px;">
+The code for the mouse button pressed, passed by, for example, <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/OnMousePressed" title="PANEL/OnMousePressed">OnMousePressed</a>. See the <a href="/page/Enums/MOUSE" title="Enums/MOUSE">MOUSE_ Enums</a>.</div>
+</div>
+
+

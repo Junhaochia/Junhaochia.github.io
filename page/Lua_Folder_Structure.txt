@@ -1,0 +1,43 @@
+<div class="markedfordeletion"><span>This page has been nominated for deletion.</span><br />Reason for deletion: This article contains outdated/incorrect information.</div>
+<p>The structure of the Lua folder can be confusing. Here's a rundown:
+</p>
+<ul><li> <b>lua</b>
+<ul><li> <b>autorun</b> - all files are automatically loaded on Lua start.
+<ul><li> <b>client</b> - autorun client scripts.
+</li><li> <b>server</b> - autorun server scripts.
+</li><li> <b>shared</b> - autorun shared (both cl_ and sv_) scripts.
+</li></ul>
+</li><li> <b>includes</b> - init.lua loaded on start.
+<ul><li> <b>enum</b> - Loaded on start. Contains all enum files.
+</li><li> <b>extensions</b> - Loaded on start. Extends existing libraries and types.
+</li><li> <b>modules</b> - Contains all modules.
+</li></ul>
+</li><li> _<b>downloaded</b> - Clientside downloaded files
+<ul><li> <b>.cache</b> - Contains cached versions of all downloaded files (to prevent constantly redownloading)
+</li></ul>
+</li><li> <b>postprocess</b> - Run by client on startup
+</li></ul>
+<hr />
+</li><li> <b>gamemodes</b> - Contains gamemodes. Gamemodes are only run when they're required (either by the map setting the gamemode or by another gamemode being derived from that gamemode).
+<ul><li> <b>base</b> - Entities in this folder exist in every Gamemode
+<ul><li> <b>entities</b> - All scripted items come under this directory.
+<ul><li> <b>weapons</b> - Scripted Weapons
+</li><li> <b>entities</b> - Scripted Entities
+</li><li> <b>effects</b> - Scripted Effects
+</li></ul>
+</li><li> <b>gamemode</b> - All Gamemode scripts go in here.
+</li></ul>
+</li><li> <b>other gamemodes</b>
+<ul><li> <b>entities</b> - All scripted items come under this directory.
+<ul><li> <b>weapons</b> - Scripted Weapons
+</li><li> <b>entities</b> - Scripted Entities
+</li><li> <b>effects</b> - Scripted Effects
+</li></ul>
+</li><li> <b>gamemode</b> - All Gamemode scripts go in here.
+</li></ul>
+</li></ul>
+</li></ul>
+<p><i>Source: <a rel="nofollow" class="external text" href="https://maurits.tv/data/garrysmod/wiki/wiki.garrysmod.com/index66fb-2.html">GMod Wiki</a></i>
+</p>
+
+

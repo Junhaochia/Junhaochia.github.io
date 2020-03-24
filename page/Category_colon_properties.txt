@@ -1,0 +1,10 @@
+<p>The properties library gives you access to the menu that shows up when right clicking entities while holding C.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "properties"</h2>
+<p>The following 5 pages are in this category, out of 5 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>P</h3>
+<ul><li><a href="/page/properties/Add" title="properties/Add">properties/Add</a></li><li><a href="/page/properties/CanBeTargeted" title="properties/CanBeTargeted">properties/CanBeTargeted</a></li><li><a href="/page/properties/GetHovered" title="properties/GetHovered">properties/GetHovered</a></li><li><a href="/page/properties/OnScreenClick" title="properties/OnScreenClick">properties/OnScreenClick</a></li><li><a href="/page/properties/OpenEntityMenu" title="properties/OpenEntityMenu">properties/OpenEntityMenu</a></li></ul></div>
+</div></div>

@@ -1,0 +1,43 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;Ignite( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.Ignite">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/Ignite" title="Special:WhatLinksHere/Entity/Ignite">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the entity on fire.
+</p><p>See also <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/Extinguish" title="Entity/Extinguish">Extinguish</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> length</span>
+</p>
+<div style="margin-left: 32px;">
+How long to keep the entity ignited. Not supplying this argument will not ignite the entity at all.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> radius=0</span>
+</p>
+<div style="margin-left: 32px;">
+The radius of the ignition, will ignite everything around the entity that is in this radius.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Ignite all props on the map for 30 seconds.
+</p>
+<pre><code data-language="lua">for k, v in pairs(ents.FindByClass(&quot;prop_physics&quot;)) do
+   v:Ignite(30)
+end</code></pre>
+<p><br />
+</p>
+
+

@@ -1,0 +1,34 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetSubMaterial( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetSubMaterial">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetSubMaterial" title="Special:WhatLinksHere/Entity/SetSubMaterial">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Overrides a single material on the model of this entity.
+</p><p>To set a Lua material created with <a href="/page/Global/CreateMaterial" title="Global/CreateMaterial">CreateMaterial</a>, just prepend a "!" to the material name.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>The server's value takes priority on the client.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3362">#3362</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> index=nil</span>
+</p>
+<div style="margin-left: 32px;">
+<p>Index of the material to override, acceptable values are from 0 to 31.
+</p><p>Indexes are by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetMaterials" title="Entity/GetMaterials">GetMaterials</a>, but you have to subtract 1 from them.
+</p>
+If called with no arguments, all sub materials will be reset.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> material=nil</span>
+</p>
+<div style="margin-left: 32px;">
+The material to override the default one with. Set to nil to revert to default material.</div>
+</div>
+
+

@@ -1,0 +1,36 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>IsFriendEntityName( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IsFriendEntityName">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/util.lua#L330-L332">View Source</a> - <a href="/page/Special:WhatLinksHere/Global/IsFriendEntityName" title="Special:WhatLinksHere/Global/IsFriendEntityName">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns if the given NPC class name is a friend.
+</p><p>Returns true if the entity name is one of the following:
+</p>
+<ul><li> "npc_alyx"
+</li><li> "npc_barney"
+</li><li> "npc_citizen"
+</li><li> "npc_dog"
+</li><li> "npc_eli"
+</li><li> "npc_fisherman"
+</li><li> "npc_gman"
+</li><li> "npc_kleiner"
+</li><li> "npc_magnusson"
+</li><li> "npc_monk"
+</li><li> "npc_mossman"
+</li><li> "npc_odessa"
+</li><li> "npc_vortigaunt"
+</li></ul>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> className</span>
+</p>
+<div style="margin-left: 32px;">
+Class name of the entity to check</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Is a friend</div>
+</div>
+
+

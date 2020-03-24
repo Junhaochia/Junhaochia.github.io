@@ -1,0 +1,82 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DCollapsibleCategory" title="Category:DCollapsibleCategory">DCollapsibleCategory</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DForm">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DForm" title="Special:WhatLinksHere/Category:DForm">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>An easy form with functions to quickly add form elements
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DCollapsibleCategory" title="Category:DCollapsibleCategory">DCollapsibleCategory</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DCollapsibleCategory/Add" title="DCollapsibleCategory/Add">DCollapsibleCategory/Add</a></li>
+<li><a href="/page/DCollapsibleCategory/AnimSlide" title="DCollapsibleCategory/AnimSlide">DCollapsibleCategory/AnimSlide</a></li>
+<li><a href="/page/DCollapsibleCategory/DoExpansion" title="DCollapsibleCategory/DoExpansion">DCollapsibleCategory/DoExpansion</a></li>
+<li><a href="/page/DCollapsibleCategory/GetAnimTime" title="DCollapsibleCategory/GetAnimTime">DCollapsibleCategory/GetAnimTime</a></li>
+<li><a href="/page/DCollapsibleCategory/GetExpanded" title="DCollapsibleCategory/GetExpanded">DCollapsibleCategory/GetExpanded</a></li>
+<li><a href="/page/DCollapsibleCategory/GetList" title="DCollapsibleCategory/GetList">DCollapsibleCategory/GetList</a></li>
+<li><a href="/page/DCollapsibleCategory/GetPadding" title="DCollapsibleCategory/GetPadding">DCollapsibleCategory/GetPadding</a></li>
+<li><a href="/page/DCollapsibleCategory/GetPaintBackground" title="DCollapsibleCategory/GetPaintBackground">DCollapsibleCategory/GetPaintBackground</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DCollapsibleCategory/GetStartHeight" title="DCollapsibleCategory/GetStartHeight">DCollapsibleCategory/GetStartHeight</a></li>
+<li><a href="/page/DCollapsibleCategory/OnToggle" title="DCollapsibleCategory/OnToggle">DCollapsibleCategory/OnToggle</a></li>
+<li><a href="/page/DCollapsibleCategory/SetAnimTime" title="DCollapsibleCategory/SetAnimTime">DCollapsibleCategory/SetAnimTime</a></li>
+<li><a href="/page/DCollapsibleCategory/SetContents" title="DCollapsibleCategory/SetContents">DCollapsibleCategory/SetContents</a></li>
+<li><a href="/page/DCollapsibleCategory/SetExpanded" title="DCollapsibleCategory/SetExpanded">DCollapsibleCategory/SetExpanded</a></li>
+<li><a href="/page/DCollapsibleCategory/SetLabel" title="DCollapsibleCategory/SetLabel">DCollapsibleCategory/SetLabel</a></li>
+<li><a href="/page/DCollapsibleCategory/SetList" title="DCollapsibleCategory/SetList">DCollapsibleCategory/SetList</a></li>
+<li><a href="/page/DCollapsibleCategory/SetPadding" title="DCollapsibleCategory/SetPadding">DCollapsibleCategory/SetPadding</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DCollapsibleCategory/SetPaintBackground" title="DCollapsibleCategory/SetPaintBackground">DCollapsibleCategory/SetPaintBackground</a></li>
+<li><a href="/page/DCollapsibleCategory/SetStartHeight" title="DCollapsibleCategory/SetStartHeight">DCollapsibleCategory/SetStartHeight</a></li>
+<li><a href="/page/DCollapsibleCategory/Toggle" title="DCollapsibleCategory/Toggle">DCollapsibleCategory/Toggle</a></li>
+<li><a href="/page/DCollapsibleCategory/UnselectAll" title="DCollapsibleCategory/UnselectAll">DCollapsibleCategory/UnselectAll</a></li>
+<li><a href="/page/DCollapsibleCategory/UpdateAltLines" title="DCollapsibleCategory/UpdateAltLines">DCollapsibleCategory/UpdateAltLines</a></li>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1> <span class="mw-headline" id="Methods"> Methods </span></h1>
+<ul><li> <a href="/page/Special:FormEdit/PanelFunc/DForm/GetAutoSize" class=" new" title="">GetAutoSize</a>
+</li><li> <a href="/page/Special:FormEdit/PanelFunc/DForm/GetPadding" class=" new" title="">GetPadding</a>
+</li><li> <a href="/page/Special:FormEdit/PanelFunc/DForm/GetSpacing" class=" new" title="">GetSpacing</a>
+</li><li> <a href="/page/Special:FormEdit/PanelFunc/DForm/SetAutoSize" class=" new" title="">SetAutoSize</a>
+</li><li> <a href="/page/Special:FormEdit/PanelFunc/DForm/SetPadding" class=" new" title="">SetPadding</a>
+</li><li> <a href="/page/Special:FormEdit/PanelFunc/DForm/SetSpacing" class=" new" title="">SetSpacing</a>
+</li></ul>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DForm"</h2>
+<p>The following 13 pages are in this category, out of 13 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DForm/AddItem" title="DForm/AddItem">DForm/AddItem</a></li>
+<li><a href="/page/DForm/Button" title="DForm/Button">DForm/Button</a></li>
+<li><a href="/page/DForm/CheckBox" title="DForm/CheckBox">DForm/CheckBox</a></li>
+<li><a href="/page/DForm/ComboBox" title="DForm/ComboBox">DForm/ComboBox</a></li>
+<li><a href="/page/DForm/ControlHelp" title="DForm/ControlHelp">DForm/ControlHelp</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DForm/Help" title="DForm/Help">DForm/Help</a></li>
+<li><a href="/page/DForm/ListBox" title="DForm/ListBox">DForm/ListBox</a></li>
+<li><a href="/page/DForm/NumberWang" title="DForm/NumberWang">DForm/NumberWang</a></li>
+<li><a href="/page/DForm/NumSlider" title="DForm/NumSlider">DForm/NumSlider</a></li>
+<li><a href="/page/DForm/PanelSelect" title="DForm/PanelSelect">DForm/PanelSelect</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DForm/Rebuild" title="DForm/Rebuild">DForm/Rebuild</a></li>
+<li><a href="/page/DForm/SetName" title="DForm/SetName">DForm/SetName</a></li>
+<li><a href="/page/DForm/TextEntry" title="DForm/TextEntry">DForm/TextEntry</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

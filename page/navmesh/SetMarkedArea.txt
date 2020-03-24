@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>navmesh.SetMarkedArea( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=navmesh.SetMarkedArea">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/navmesh/SetMarkedArea" title="Special:WhatLinksHere/navmesh/SetMarkedArea">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> as marked, so it can be used with editing console commands.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> area</span>
+</p>
+<div style="margin-left: 32px;">
+The <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> to set as the marked area.</div>
+</div>
+
+

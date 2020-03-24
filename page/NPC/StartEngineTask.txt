@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;StartEngineTask( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.StartEngineTask">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/StartEngineTask" title="Special:WhatLinksHere/NPC/StartEngineTask">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Forces the NPC to start an engine task, this has different results for every NPC.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> task</span>
+</p>
+<div style="margin-left: 32px;">
+The id of the task to start, see <a rel="nofollow" class="external text" href="https://github.com/ValveSoftware/source-sdk-2013/blob/55ed12f8d1eb6887d348be03aee5573d44177ffb/mp/src/game/server/ai_task.h#L89-L502">ai_task.h</a></div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> taskData</span>
+</p>
+<div style="margin-left: 32px;">
+The task data as a float, not all tasks make use of it.</div>
+</div>
+
+

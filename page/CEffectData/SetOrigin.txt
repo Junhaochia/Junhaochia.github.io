@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>CEffectData&#58;SetOrigin( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CEffectData.SetOrigin">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CEffectData/SetOrigin" title="Special:WhatLinksHere/CEffectData/SetOrigin">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the origin of the effect to be created with this effect data.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> origin</span>
+</p>
+<div style="margin-left: 32px;">
+Origin of the effect.</div>
+</div>
+
+

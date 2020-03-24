@@ -1,0 +1,102 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:DHorizontalDivider_ex1.png" class="image" title="Example DHorizontalDivider"><img alt="Example DHorizontalDivider" src="/images/thumb/c/c3/DHorizontalDivider_ex1.png/300px-DHorizontalDivider_ex1.png" width="300" height="188" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DPanel" title="Category:DPanel">DPanel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DHorizontalDivider">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DHorizontalDivider" title="Special:WhatLinksHere/Category:DHorizontalDivider">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>Creates an invisible vertical divider between two GUI elements.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DPanel" title="Category:DPanel">DPanel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/GetBackgroundColor" title="DPanel/GetBackgroundColor">DPanel/GetBackgroundColor</a></li>
+<li><a href="/page/DPanel/GetDisabled" title="DPanel/GetDisabled">DPanel/GetDisabled</a></li>
+<li><a href="/page/DPanel/GetDrawBackground" title="DPanel/GetDrawBackground">DPanel/GetDrawBackground</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/GetPaintBackground" title="DPanel/GetPaintBackground">DPanel/GetPaintBackground</a></li>
+<li><a href="/page/DPanel/SetBackgroundColor" title="DPanel/SetBackgroundColor">DPanel/SetBackgroundColor</a></li>
+<li><a href="/page/DPanel/SetDisabled" title="DPanel/SetDisabled">DPanel/SetDisabled</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/SetDrawBackground" title="DPanel/SetDrawBackground">DPanel/SetDrawBackground</a></li>
+<li><a href="/page/DPanel/SetPaintBackground" title="DPanel/SetPaintBackground">DPanel/SetPaintBackground</a></li>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Insert a horizontal divider between two <a href="/page/Category_colon_DPanel" title="Category:DPanel">DPanels</a> in a <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a>.
+</p>
+<pre><code data-language="lua">local f = vgui.Create( &quot;DFrame&quot; )
+f:SetSize( 400, 200 )
+f:Center()
+f:MakePopup()
+
+local LeftPanel = vgui.Create( &quot;DPanel&quot;, f ) -- Can be any panel, it will be stretched
+local RightPanel = vgui.Create( &quot;DPanel&quot;, f )
+
+local div = vgui.Create( &quot;DHorizontalDivider&quot;, f )
+div:Dock( FILL ) -- Make the divider fill the space of the DFrame
+div:SetLeft( LeftPanel ) -- Set what panel is in left side of the divider
+div:SetRight( RightPanel )
+div:SetDividerWidth( 4 ) -- Set the divider width. Default is 8
+div:SetLeftMin( 20 ) -- Set the Minimum width of left side
+div:SetRightMin( 20 )
+div:SetLeftWidth( 50 ) -- Set the default left side width</code></pre>
+<p><br />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DHorizontalDivider"</h2>
+<p>The following 19 pages are in this category, out of 19 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DHorizontalDivider/GetDividerWidth" title="DHorizontalDivider/GetDividerWidth">DHorizontalDivider/GetDividerWidth</a></li>
+<li><a href="/page/DHorizontalDivider/GetDragging" title="DHorizontalDivider/GetDragging">DHorizontalDivider/GetDragging</a></li>
+<li><a href="/page/DHorizontalDivider/GetHoldPos" title="DHorizontalDivider/GetHoldPos">DHorizontalDivider/GetHoldPos</a></li>
+<li><a href="/page/DHorizontalDivider/GetLeft" title="DHorizontalDivider/GetLeft">DHorizontalDivider/GetLeft</a></li>
+<li><a href="/page/DHorizontalDivider/GetLeftMin" title="DHorizontalDivider/GetLeftMin">DHorizontalDivider/GetLeftMin</a></li>
+<li><a href="/page/DHorizontalDivider/GetLeftWidth" title="DHorizontalDivider/GetLeftWidth">DHorizontalDivider/GetLeftWidth</a></li>
+<li><a href="/page/DHorizontalDivider/GetMiddle" title="DHorizontalDivider/GetMiddle">DHorizontalDivider/GetMiddle</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DHorizontalDivider/GetRight" title="DHorizontalDivider/GetRight">DHorizontalDivider/GetRight</a></li>
+<li><a href="/page/DHorizontalDivider/GetRightMin" title="DHorizontalDivider/GetRightMin">DHorizontalDivider/GetRightMin</a></li>
+<li><a href="/page/DHorizontalDivider/SetDividerWidth" title="DHorizontalDivider/SetDividerWidth">DHorizontalDivider/SetDividerWidth</a></li>
+<li><a href="/page/DHorizontalDivider/SetDragging" title="DHorizontalDivider/SetDragging">DHorizontalDivider/SetDragging</a></li>
+<li><a href="/page/DHorizontalDivider/SetHoldPos" title="DHorizontalDivider/SetHoldPos">DHorizontalDivider/SetHoldPos</a></li>
+<li><a href="/page/DHorizontalDivider/SetLeft" title="DHorizontalDivider/SetLeft">DHorizontalDivider/SetLeft</a></li>
+<li><a href="/page/DHorizontalDivider/SetLeftMin" title="DHorizontalDivider/SetLeftMin">DHorizontalDivider/SetLeftMin</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DHorizontalDivider/SetLeftWidth" title="DHorizontalDivider/SetLeftWidth">DHorizontalDivider/SetLeftWidth</a></li>
+<li><a href="/page/DHorizontalDivider/SetMiddle" title="DHorizontalDivider/SetMiddle">DHorizontalDivider/SetMiddle</a></li>
+<li><a href="/page/DHorizontalDivider/SetRight" title="DHorizontalDivider/SetRight">DHorizontalDivider/SetRight</a></li>
+<li><a href="/page/DHorizontalDivider/SetRightMin" title="DHorizontalDivider/SetRightMin">DHorizontalDivider/SetRightMin</a></li>
+<li><a href="/page/DHorizontalDivider/StartGrab" title="DHorizontalDivider/StartGrab">DHorizontalDivider/StartGrab</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

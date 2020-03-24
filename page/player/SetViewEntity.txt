@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Player&#58;SetViewEntity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.SetViewEntity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/SetViewEntity" title="Special:WhatLinksHere/Player/SetViewEntity">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Attaches the players view to the position and angles of the specified entity.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> viewEntity</span>
+</p>
+<div style="margin-left: 32px;">
+The entity to attach the player view to.</div>
+</div>
+
+

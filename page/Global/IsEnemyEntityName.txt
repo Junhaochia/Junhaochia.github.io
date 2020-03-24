@@ -1,0 +1,45 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>IsEnemyEntityName( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IsEnemyEntityName">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/util.lua#L317-L319">View Source</a> - <a href="/page/Special:WhatLinksHere/Global/IsEnemyEntityName" title="Special:WhatLinksHere/Global/IsEnemyEntityName">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns if the given NPC class name is an enemy.
+</p><p>Returns true if the entity name is one of the following:
+</p>
+<ul><li> "npc_antlion"
+</li><li> "npc_antlionguard"
+</li><li> "npc_antlionguardian"
+</li><li> "npc_barnacle"
+</li><li> "npc_breen"
+</li><li> "npc_clawscanner"
+</li><li> "npc_combine_s"
+</li><li> "npc_cscanner"
+</li><li> "npc_fastzombie"
+</li><li> "npc_fastzombie_torso"
+</li><li> "npc_headcrab"
+</li><li> "npc_headcrab_fast"
+</li><li> "npc_headcrab_poison"
+</li><li> "npc_hunter"
+</li><li> "npc_metropolice"
+</li><li> "npc_manhack"
+</li><li> "npc_poisonzombie"
+</li><li> "npc_strider"
+</li><li> "npc_stalker"
+</li><li> "npc_zombie"
+</li><li> "npc_zombie_torso"
+</li><li> "npc_zombine"
+</li></ul>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> className</span>
+</p>
+<div style="margin-left: 32px;">
+Class name of the entity to check</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Is an enemy</div>
+</div>
+
+

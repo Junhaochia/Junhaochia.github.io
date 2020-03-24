@@ -1,0 +1,33 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>GM:InitPostEntity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.InitPostEntity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/InitPostEntity" title="Special:WhatLinksHere/GM/InitPostEntity">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called after all the entities are initialized.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>At this point the client only knows about the entities that are within the spawnpoints' <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Potentially_visible_set">PVS</a>. For instance, if the server sends an entity that is not within this PVS, the client will receive it as NULL entity.
+</p>
+</td></tr></table>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Some message will be printed in the console when the entities initialize.
+</p>
+<pre><code data-language="lua">function GM:InitPostEntity()
+	print(&quot;All Entities have initialized&quot; )
+end
+
+-- That way you are overriding the default hook
+-- you can use hook.Add to make more functions get called when this event occurs
+
+hook.Add( &quot;InitPostEntity&quot;, &quot;some_unique_name&quot;, function()
+	print(&quot;Initialization hook called&quot;)
+end )</code></pre>
+<p><b>Output:</b>
+</p>
+<pre class="plain">Initialization hook called
+All Entities have initialized</code></pre>
+
+

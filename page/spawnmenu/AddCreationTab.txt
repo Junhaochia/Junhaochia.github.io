@@ -1,0 +1,75 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>spawnmenu.AddCreationTab( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=spawnmenu.AddCreationTab">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/spawnmenu/AddCreationTab" title="Special:WhatLinksHere/spawnmenu/AddCreationTab">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">7</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">7.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Inserts a new tab into the CreationMenus table, which will be used by the creation menu to generate its tabs (Spawnlists, Weapons, Entities, etc.)
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+What text will appear on the tab (I.E Spawnlists).</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> function</span>
+</p>
+<div style="margin-left: 32px;">
+The function called to generate the content of the tab.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> material="icon16/exclamation.png"</span>
+</p>
+<div style="margin-left: 32px;">
+Path to the material that will be used as an icon on the tab.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> order=1000</span>
+</p>
+<div style="margin-left: 32px;">
+The order in which this tab should be shown relative to the other tabs on the creation menu.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> tooltip=nil</span>
+</p>
+<div style="margin-left: 32px;">
+The tooltip to be shown for this tab.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>An excerpt from the Dupe creation menu tab.
+</p>
+<pre><code data-language="lua">spawnmenu.AddCreationTab( &quot;#spawnmenu.category.dupes&quot;, function()
+
+    HTML = vgui.Create( &quot;DHTML&quot; );
+        JS_Language( HTML )
+        HTML:SetAllowLua( true );
+        HTML:OpenURL( &quot;asset://garrysmod/html/dupes.html&quot; );
+        HTML:Call( &quot;SetDupeSaveState( &quot; .. tostring( DupeInClipboard ).. &quot; );&quot; );        
+
+    return HTML
+
+end, &quot;icon16/control_repeat_blue.png&quot;, 200 )</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">A new tab named "Dupes" will be placed in the creation menu.</div>
+
+

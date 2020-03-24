@@ -1,0 +1,48 @@
+<p>List of all possible functions to manipulate colors. Colors are implemented in Lua thus <a href="/page/Global/type" title="Global/type">type</a>(color) == "table" and <a href="/page/Global/TypeID" title="Global/TypeID">TypeID</a>(color) == TYPE_TABLE. For type checking use <a href="/page/Global/IsColor" title="Global/IsColor">IsColor</a>.
+</p><p>Created by <a href="/page/Global/Color" title="Global/Color">Color</a>, <a href="/page/Global/HSVToColor" title="Global/HSVToColor">HSVToColor</a>, and <a href="/page/Global/HSLToColor" title="Global/HSLToColor">HSLToColor</a>.
+</p>
+<h1> <span class="mw-headline" id="Fields">Fields</span></h1>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col">Type
+</th>
+<th scope="col">Name
+</th>
+<th scope="col">Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number </a>
+</td>
+<td> r
+</td>
+<td> The red component of the color.
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number </a>
+</td>
+<td> g
+</td>
+<td> The green component of the color.
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number </a>
+</td>
+<td> b
+</td>
+<td> The blue component of the color.
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number </a>
+</td>
+<td> a
+</td>
+<td> The alpha component of the color.
+</td></tr></table>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Color"</h2>
+<p>The following 6 pages are in this category, out of 6 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>C</h3>
+<ul><li><a href="/page/Color/SetUnpacked" title="Color/SetUnpacked">Color/SetUnpacked</a></li><li><a href="/page/Color/ToHSL" title="Color/ToHSL">Color/ToHSL</a></li><li><a href="/page/Color/ToHSV" title="Color/ToHSV">Color/ToHSV</a></li><li><a href="/page/Color/ToTable" title="Color/ToTable">Color/ToTable</a></li><li><a href="/page/Color/ToVector" title="Color/ToVector">Color/ToVector</a></li><li><a href="/page/Color/Unpack" title="Color/Unpack">Color/Unpack</a></li></ul></div>
+</div></div>

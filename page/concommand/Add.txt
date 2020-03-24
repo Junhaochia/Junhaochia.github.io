@@ -1,0 +1,105 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>concommand.Add( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=concommand.Add">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/modules/concommand.lua#L28">View Source</a> - <a href="/page/Special:WhatLinksHere/concommand/Add" title="Special:WhatLinksHere/concommand/Add">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">7</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">7.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">8</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">8.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Creates a console command that runs a function in lua with optional autocompletion function and help text.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This will fail if the concommand was previously removed with <a href="/page/Category_colon_concommand" title="Category:concommand">concommand</a>.<a href="/page/concommand/Remove" title="concommand/Remove">Remove</a> in a different realm (creating a command on the client that was removed from the server and vice-versa).
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/1183">#1183</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The command name to be used in console.<br /><br />
+</p>
+This cannot be a name of existing console command or console variable. It will silently fail if it is.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> callback</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The function to run when the concommand is executed. Arguments passed are:
+</p>
+<ul><li> <a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply - The player that ran the concommand. NULL entity if command was entered with the dedicated server console.
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> cmd - The concommand string (if one callback is used for several concommands).
+</li><li> <a href="/page/Category_colon_table" title="Category:table">table</a> args - A table of all string arguments.
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> argStr - The arguments as a string.</div>
+</li></ul>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> autoComplete=nil</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The function to call which should return a table of options for autocompletion. (<a href="/page/Autocomplete_Tutorial" title="Autocomplete Tutorial">Autocompletion Tutorial</a>)
+</p><p>This only properly works on the client since it is <b>not</b> networked. Arguments passed are:
+</p>
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> cmd - The concommand this autocompletion is for.
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> args - The arguments typed so far.</div>
+</li></ul>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> helpText=nil</span>
+</p>
+<div style="margin-left: 32px;">
+The text to display should a user run 'help cmdName'.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> flags=0</span>
+</p>
+<div style="margin-left: 32px;">
+Concommand modifier flags. See <a href="/page/Enums/FCVAR" title="Enums/FCVAR">FCVAR_ Enums</a>.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Adds a concommand <i>killyourself</i> which will kill the user.
+</p>
+<pre><code data-language="lua">concommand.Add(&quot;killyourself&quot;,function( ply, cmd, args )
+    ply:Kill()
+    print(&quot;You killed yourself!&quot;)
+end)</code></pre>
+<p><br />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>A concommand that prints the SteamID and nickname of every player on the server.
+</p>
+<pre><code data-language="lua">concommand.Add( &quot;retrieveplayers&quot;, function()  
+	for _, ply in ipairs( player.GetAll() ) do
+		print( ply:Nick() .. &quot;, &quot; .. ply:SteamID() .. &quot;\n&quot; )
+	end
+end)</code></pre>
+<p><br />
+</p>
+
+

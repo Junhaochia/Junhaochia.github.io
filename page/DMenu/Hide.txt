@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DMenu&#58;Hide( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DMenu.Hide">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DMenu/Hide" title="Special:WhatLinksHere/DMenu/Hide">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Used to safely hide (not remove) the menu. This will also hide any opened submenues recursively.
+</p>
+
+

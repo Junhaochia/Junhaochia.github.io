@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DCheckBoxLabel&#58;SetDark( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DCheckBoxLabel.SetDark">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DCheckBoxLabel/SetDark" title="Special:WhatLinksHere/DCheckBoxLabel/SetDark">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />You really should be using <a href="/page/Category_colon_DCheckBoxLabel" title="Category:DCheckBoxLabel">DCheckBoxLabel</a>:<a href="/page/DCheckBoxLabel/SetTextColor" title="DCheckBoxLabel/SetTextColor">SetTextColor</a> instread</div>
+<p>Sets the text of the <a href="/page/Category_colon_DCheckBoxLabel" title="Category:DCheckBoxLabel">DCheckBoxLabel</a> to be dark colored.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> darkify</span>
+</p>
+<div style="margin-left: 32px;">
+True to be dark, false to be default</div>
+</div>
+
+

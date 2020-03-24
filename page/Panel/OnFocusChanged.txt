@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>PANEL:OnFocusChanged( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PANEL.OnFocusChanged">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PANEL/OnFocusChanged" title="Special:WhatLinksHere/PANEL/OnFocusChanged">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called whenever the panel gained or lost focus.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/HasFocus" title="Panel/HasFocus">HasFocus</a> will only be updated on the next frame and will return the "old" value at the time this hook is run. Same goes for <a href="/page/Category_colon_vgui" title="Category:vgui">vgui</a>.<a href="/page/vgui/GetKeyboardFocus" title="vgui/GetKeyboardFocus">GetKeyboardFocus</a>.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> gained</span>
+</p>
+<div style="margin-left: 32px;">
+Is the focus was gained ( true ) or lost ( false )</div>
+</div>
+
+

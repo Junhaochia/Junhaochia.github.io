@@ -1,0 +1,69 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetConVar( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetConVar">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetConVar" title="Special:WhatLinksHere/Panel/SetConVar">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This function does not exist on all panels
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This function cannot interact with serverside convars unless you are host
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Blocked convars will not work with this, see <a href="/page/Blocked_ConCommands" title="Blocked ConCommands">Blocked ConCommands</a>
+</p>
+</td></tr></table>
+<p>Sets this panel's convar. When the convar changes this panel will update automatically.
+</p><p>For developer implementation, see <a href="/page/Global/Derma_Install_Convar_Functions" title="Global/Derma Install Convar Functions">Derma_Install_Convar_Functions</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> convar</span>
+</p>
+<div style="margin-left: 32px;">
+The console variable to check.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Makes a checkbox linked to the <b>cl_drawhud</b> convar.
+</p>
+<pre><code data-language="lua">local DermaPanel = vgui.Create( &quot;DFrame&quot; )
+DermaPanel:SetPos( 100, 100 )
+DermaPanel:SetSize( 300, 200 )
+DermaPanel:SetTitle( &quot;My new Derma frame&quot; )
+DermaPanel:SetDraggable( true )
+DermaPanel:MakePopup()
+
+local Checkbox = vgui.Create( &quot;DCheckBoxLabel&quot;, DermaPanel )
+Checkbox:SetConVar( &quot;cl_drawhud&quot; )
+Checkbox:SetText( &quot;Enable HUD?&quot; )
+Checkbox:SetPos( 5, 25 )
+Checkbox:SizeToContents()</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:panel_setcvar.png" class="image"><img alt="panel setcvar.png" src="/images/6/65/panel_setcvar.png" width="300" height="200" /></a></div>
+
+

@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;ClearEnemyMemory( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.ClearEnemyMemory">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/ClearEnemyMemory" title="Special:WhatLinksHere/NPC/ClearEnemyMemory">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Clears the Enemy from the NPC's memory, effectively forgetting it until met again with either the NPC vision or with <a href="/page/Category_colon_NPC" title="Category:NPC">NPC</a>:<a href="/page/NPC/UpdateEnemyMemory" title="NPC/UpdateEnemyMemory">UpdateEnemyMemory</a>.
+</p>
+
+

@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>File&#58;WriteULong( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=File.WriteULong">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/File/WriteULong" title="Special:WhatLinksHere/File/WriteULong">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Writes an unsigned 32-bit integer to the file.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> uint32</span>
+</p>
+<div style="margin-left: 32px;">
+The unsigned 32-bit integer to be written to the file.</div>
+</div>
+
+

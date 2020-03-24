@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>render.GetSuperFPTex( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.GetSuperFPTex">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/GetSuperFPTex" title="Special:WhatLinksHere/render/GetSuperFPTex">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns a floating point texture the same resolution as the screen.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>The <a href="/page/Shaders/gmodscreenspace" title="Shaders/gmodscreenspace">gmodscreenspace shader</a> doesn't behave as expected when drawing a floating-point texture to an integer texture (e.g. the default render target). Use an UnlitGeneric material instead
+</p>
+</td></tr></table>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_ITexture" title="Category:ITexture">ITexture</a></span>
+</p>
+<div style="margin-left: 32px;">
+Render target named "__rt_supertexture1"</div>
+</div>
+
+

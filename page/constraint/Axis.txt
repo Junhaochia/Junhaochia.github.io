@@ -1,0 +1,116 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>constraint.Axis( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=constraint.Axis">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/modules/constraint.lua#L779">View Source</a> - <a href="/page/Special:WhatLinksHere/constraint/Axis" title="Special:WhatLinksHere/constraint/Axis">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_6"><span class="tocnumber">7</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_7"><span class="tocnumber">8</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_8"><span class="tocnumber">9</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_9"><span class="tocnumber">10</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_10"><span class="tocnumber">11</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_11"><span class="tocnumber">12</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_12"><span class="tocnumber">13</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">14</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Creates an axis constraint.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> Ent1</span>
+</p>
+<div style="margin-left: 32px;">
+First entity.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> Ent2</span>
+</p>
+<div style="margin-left: 32px;">
+Second entity.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> Bone1</span>
+</p>
+<div style="margin-left: 32px;">
+Bone of first entity (0 for non-ragdolls)</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> Bone2</span>
+</p>
+<div style="margin-left: 32px;">
+Bone of second entity (0 for non-ragdolls)</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> LPos1</span>
+</p>
+<div style="margin-left: 32px;">
+Position on the first entity, in its local space coordinates.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_6">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> LPos2</span>
+</p>
+<div style="margin-left: 32px;">
+Position on the second entity, in its local space coordinates.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_7">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> forcelimit</span>
+</p>
+<div style="margin-left: 32px;">
+Amount of force until it breaks (0 = unbreakable)</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_8">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> torquelimit</span>
+</p>
+<div style="margin-left: 32px;">
+Amount of torque (rotational force) until it breaks (0 = unbreakable)</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_9">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> friction</span>
+</p>
+<div style="margin-left: 32px;">
+Constraint friction.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_10">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> nocollide</span>
+</p>
+<div style="margin-left: 32px;">
+Whether the entities should be no-collided.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_11">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> LocalAxis</span>
+</p>
+<div style="margin-left: 32px;">
+If you include the LocalAxis then LPos2 will not be used in the final constraint. However, LPos2 is still a required argument.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_12">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> DontAddTable</span>
+</p>
+<div style="margin-left: 32px;">
+Whether or not to add the constraint info on the entity table. See <a href="/page/Category_colon_constraint" title="Category:constraint">constraint</a>.<a href="/page/constraint/AddConstraintTable" title="constraint/AddConstraintTable">AddConstraintTable</a>.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a></span>
+</p>
+<div style="margin-left: 32px;">
+Constraint. Will return false if the constraint could not be created.</div>
+</div>
+
+

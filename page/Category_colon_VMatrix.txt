@@ -1,0 +1,44 @@
+<p>List of all possible functions to manipulate matrices.
+</p><p>This object can be created by <a href="/page/Global/Matrix" title="Global/Matrix">Matrix</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "VMatrix"</h2>
+<p>The following 31 pages are in this category, out of 31 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>V</h3>
+<ul><li><a href="/page/VMatrix/GetAngles" title="VMatrix/GetAngles">VMatrix/GetAngles</a></li>
+<li><a href="/page/VMatrix/GetField" title="VMatrix/GetField">VMatrix/GetField</a></li>
+<li><a href="/page/VMatrix/GetForward" title="VMatrix/GetForward">VMatrix/GetForward</a></li>
+<li><a href="/page/VMatrix/GetInverse" title="VMatrix/GetInverse">VMatrix/GetInverse</a></li>
+<li><a href="/page/VMatrix/GetInverseTR" title="VMatrix/GetInverseTR">VMatrix/GetInverseTR</a></li>
+<li><a href="/page/VMatrix/GetRight" title="VMatrix/GetRight">VMatrix/GetRight</a></li>
+<li><a href="/page/VMatrix/GetScale" title="VMatrix/GetScale">VMatrix/GetScale</a></li>
+<li><a href="/page/VMatrix/GetTranslation" title="VMatrix/GetTranslation">VMatrix/GetTranslation</a></li>
+<li><a href="/page/VMatrix/GetUp" title="VMatrix/GetUp">VMatrix/GetUp</a></li>
+<li><a href="/page/VMatrix/Identity" title="VMatrix/Identity">VMatrix/Identity</a></li>
+<li><a href="/page/VMatrix/Invert" title="VMatrix/Invert">VMatrix/Invert</a></li></ul></td>
+<td><h3>V cont.</h3>
+<ul><li><a href="/page/VMatrix/InvertTR" title="VMatrix/InvertTR">VMatrix/InvertTR</a></li>
+<li><a href="/page/VMatrix/IsIdentity" title="VMatrix/IsIdentity">VMatrix/IsIdentity</a></li>
+<li><a href="/page/VMatrix/IsRotationMatrix" title="VMatrix/IsRotationMatrix">VMatrix/IsRotationMatrix</a></li>
+<li><a href="/page/VMatrix/IsZero" title="VMatrix/IsZero">VMatrix/IsZero</a></li>
+<li><a href="/page/VMatrix/Rotate" title="VMatrix/Rotate">VMatrix/Rotate</a></li>
+<li><a href="/page/VMatrix/Scale" title="VMatrix/Scale">VMatrix/Scale</a></li>
+<li><a href="/page/VMatrix/ScaleTranslation" title="VMatrix/ScaleTranslation">VMatrix/ScaleTranslation</a></li>
+<li><a href="/page/VMatrix/Set" title="VMatrix/Set">VMatrix/Set</a></li>
+<li><a href="/page/VMatrix/SetAngles" title="VMatrix/SetAngles">VMatrix/SetAngles</a></li>
+<li><a href="/page/VMatrix/SetField" title="VMatrix/SetField">VMatrix/SetField</a></li>
+<li><a href="/page/VMatrix/SetForward" title="VMatrix/SetForward">VMatrix/SetForward</a></li></ul></td>
+<td><h3>V cont.</h3>
+<ul><li><a href="/page/VMatrix/SetRight" title="VMatrix/SetRight">VMatrix/SetRight</a></li>
+<li><a href="/page/VMatrix/SetScale" title="VMatrix/SetScale">VMatrix/SetScale</a></li>
+<li><a href="/page/VMatrix/SetTranslation" title="VMatrix/SetTranslation">VMatrix/SetTranslation</a></li>
+<li><a href="/page/VMatrix/SetUnpacked" title="VMatrix/SetUnpacked">VMatrix/SetUnpacked</a></li>
+<li><a href="/page/VMatrix/SetUp" title="VMatrix/SetUp">VMatrix/SetUp</a></li>
+<li><a href="/page/VMatrix/ToTable" title="VMatrix/ToTable">VMatrix/ToTable</a></li>
+<li><a href="/page/VMatrix/Translate" title="VMatrix/Translate">VMatrix/Translate</a></li>
+<li><a href="/page/VMatrix/Unpack" title="VMatrix/Unpack">VMatrix/Unpack</a></li>
+<li><a href="/page/VMatrix/Zero" title="VMatrix/Zero">VMatrix/Zero</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

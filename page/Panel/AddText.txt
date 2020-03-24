@@ -1,0 +1,9 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;AddText( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.AddText">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/AddText" title="Special:WhatLinksHere/Panel/AddText">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />Does nothing</div>
+<p>This function does nothing.
+</p>
+
+

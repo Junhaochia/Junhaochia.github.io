@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>cam.Start( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=cam.Start">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/cam/Start" title="Special:WhatLinksHere/cam/Start">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets up a new rendering context. This is an extended version of <a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/Start3D" title="cam/Start3D">Start3D</a> and <a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/Start2D" title="cam/Start2D">Start2D</a>. Must be finished by <a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/End3D" title="cam/End3D">End3D</a> or <a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/End2D" title="cam/End2D">End2D</a>.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This will not update current view properties for 3D contexts.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/2682">#2682</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> dataTbl</span>
+</p>
+<div style="margin-left: 32px;">
+Render context config. See <a href="/page/Structures/RenderCamData" title="Structures/RenderCamData">RenderCamData structure</a></div>
+</div>
+
+

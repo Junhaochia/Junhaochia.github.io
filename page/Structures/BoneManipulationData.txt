@@ -1,0 +1,48 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/BoneManipulationData" title="Special:WhatLinksHere/Structures/BoneManipulationData">What links here?</a></div>Structure used for storing/restoring bone manipulations.
+<p>Data is stored from <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetManipulateBoneScale" title="Entity/GetManipulateBoneScale">GetManipulateBoneScale</a>, <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetManipulateBoneAngles" title="Entity/GetManipulateBoneAngles">GetManipulateBoneAngles</a>, and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetManipulateBonePosition" title="Entity/GetManipulateBonePosition">GetManipulateBonePosition</a>.
+Data is restored using <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/ManipulateBoneScale" title="Entity/ManipulateBoneScale">ManipulateBoneScale</a>, <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/ManipulateBoneAngles" title="Entity/ManipulateBoneAngles">ManipulateBoneAngles</a>, and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/ManipulateBonePosition" title="Entity/ManipulateBonePosition">ManipulateBonePosition</a>.
+</p><p>The function <a href="/page/Category_colon_duplicator" title="Category:duplicator">duplicator</a>.<a href="/page/duplicator/DoBoneManipulator" title="duplicator/DoBoneManipulator">DoBoneManipulator</a> and <a href="/page/Structures/EntityCopyData" title="Structures/EntityCopyData">EntityCopyData structure</a> use a table
+containing a BoneManipulationData structure for each bone (that has manipulations applied) with the bone ID as the struct index in the table.
+</p><p>Fields <b>s</b>, <b>a</b>, and <b>p</b> are set if they don't equal <b>Vector( 1, 1, 1 )</b>, <b>Angle( 0, 0, 0 )</b>, and <b>Vector( 0, 0, 0 )</b> respectively.
+<br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> s
+</td>
+<td>
+<p>The entity's scale manipulation of the bone
+</p><p><b>Default:</b> nil
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a>
+</td>
+<td> a
+</td>
+<td>
+<p>The entity's angle manipulation of the bone
+</p><p><b>Default:</b> nil
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> p
+</td>
+<td>
+<p>The entity's position manipulation of the given bone
+</p><p><b>Default:</b> nil
+</p>
+</td></tr></table>
+
+

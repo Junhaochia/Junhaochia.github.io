@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>dragndrop.StopDragging( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=dragndrop.StopDragging">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/client/panel/dragdrop.lua#L116">View Source</a> - <a href="/page/Special:WhatLinksHere/dragndrop/StopDragging" title="Special:WhatLinksHere/dragndrop/StopDragging">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Stops the drag'n'drop and calls <a href="/page/Category_colon_dragndrop" title="Category:dragndrop">dragndrop</a>.<a href="/page/dragndrop/Clear" title="dragndrop/Clear">Clear</a>.
+</p>
+
+

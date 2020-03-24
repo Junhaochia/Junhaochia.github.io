@@ -1,0 +1,10 @@
+<p>The Kinect is a 3d-motionsensor made for Xbox 360 by Microsoft. <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Kinect">Read more</a><br /><br />
+Using a non xbox-slim version of it allows you to hook it up to your PC using the USB, or you could buy a converter if you have the xbox-slim version (orange USB).<br />
+<br />
+Using an offical API, Garry has implemented the kinect to work with Garrysmod. Developers can make their own addons using this functionality. Included with Garrysmod is the ability to control ragdolls with your own body, making cool machinimas and such.<br />
+<br />
+To make the Kinect work with Garrysmod, read this: <a href="/page/Using_The_Kinect" title="Using The Kinect">Using The Kinect</a><br />
+To develop addons for Kinect, read this: <a href="/page/Kinect_developing" title="Kinect developing">Kinect developing</a>
+</p>
+
+

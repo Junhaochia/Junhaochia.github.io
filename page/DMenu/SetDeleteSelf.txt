@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DMenu&#58;SetDeleteSelf( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DMenu.SetDeleteSelf">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DMenu/SetDeleteSelf" title="Special:WhatLinksHere/DMenu/SetDeleteSelf">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Set to true by default. IF set to true, the menu will be deleted when it is closed, not simply hidden.
+</p><p>This is used by <a href="/page/Category_colon_DMenuBar" title="Category:DMenuBar">DMenuBar</a>
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> newState</span>
+</p>
+<div style="margin-left: 32px;">
+true to delete menu on close, false to simply hide.</div>
+</div>
+
+

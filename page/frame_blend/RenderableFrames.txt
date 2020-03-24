@@ -1,0 +1,17 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>frame_blend.RenderableFrames( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=frame_blend.RenderableFrames">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/frame_blend/RenderableFrames" title="Special:WhatLinksHere/frame blend/RenderableFrames">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div><div class="validatepage"><span>Validation required.</span><br />
+This page contains possibly incorrect or incomplete information. Further testing is required.</div>
+<p>Returns amount of frames needed to render?
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+Amount of frames needed to render?</div>
+</div>
+
+

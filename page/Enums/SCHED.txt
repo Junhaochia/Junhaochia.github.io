@@ -1,0 +1,637 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/SCHED" title="Special:WhatLinksHere/Enums/SCHED">What links here?</a></div>
+<p>Enumerations for NPC schedules, used by <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/StartEngineSchedule" title="ENTITY/StartEngineSchedule">StartEngineSchedule</a> and <a href="/page/Category_colon_NPC" title="Category:NPC">NPC</a>:<a href="/page/NPC/SetSchedule" title="NPC/SetSchedule">SetSchedule</a>. Serverside only.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> LAST_SHARED_SCHEDULE
+</td>
+<td> 88
+</td>
+<td> The schedule enum limit
+</td></tr>
+<tr>
+<td> SCHED_AISCRIPT
+</td>
+<td> 56
+</td>
+<td> Begins AI script based on NPC's <i>m_hCine</i> save value.
+</td></tr>
+<tr>
+<td> SCHED_ALERT_FACE
+</td>
+<td> 5
+</td>
+<td> Idle stance and face ideal yaw angles.
+</td></tr>
+<tr>
+<td> SCHED_ALERT_FACE_BESTSOUND
+</td>
+<td> 6
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_ALERT_REACT_TO_COMBAT_SOUND
+</td>
+<td> 7
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_ALERT_SCAN
+</td>
+<td> 8
+</td>
+<td> Rotate 180 degrees and back to check for enemies.
+</td></tr>
+<tr>
+<td> SCHED_ALERT_STAND
+</td>
+<td> 9
+</td>
+<td> Remain idle until an enemy is heard or found.
+</td></tr>
+<tr>
+<td> SCHED_ALERT_WALK
+</td>
+<td> 10
+</td>
+<td> Walk until an enemy is heard or found.
+</td></tr>
+<tr>
+<td> SCHED_AMBUSH
+</td>
+<td> 52
+</td>
+<td> Remain idle until provoked or an enemy is found.
+</td></tr>
+<tr>
+<td> SCHED_ARM_WEAPON
+</td>
+<td> 48
+</td>
+<td> Performs ACT_ARM.
+</td></tr>
+<tr>
+<td> SCHED_BACK_AWAY_FROM_ENEMY
+</td>
+<td> 24
+</td>
+<td> Back away from enemy. If not possible to back away then go behind enemy.
+</td></tr>
+<tr>
+<td> SCHED_BACK_AWAY_FROM_SAVE_POSITION
+</td>
+<td> 26
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_BIG_FLINCH
+</td>
+<td> 23
+</td>
+<td> Heavy damage was taken for the first time in a while.
+</td></tr>
+<tr>
+<td> SCHED_CHASE_ENEMY
+</td>
+<td> 17
+</td>
+<td> Begin chasing an enemy.
+</td></tr>
+<tr>
+<td> SCHED_CHASE_ENEMY_FAILED
+</td>
+<td> 18
+</td>
+<td> Failed to chase enemy.
+</td></tr>
+<tr>
+<td> SCHED_COMBAT_FACE
+</td>
+<td> 12
+</td>
+<td> Face current enemy.
+</td></tr>
+<tr>
+<td> SCHED_COMBAT_PATROL
+</td>
+<td> 75
+</td>
+<td> Will walk around patrolling an area until an enemy is found.
+</td></tr>
+<tr>
+<td> SCHED_COMBAT_STAND
+</td>
+<td> 15
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_COMBAT_SWEEP
+</td>
+<td> 13
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_COMBAT_WALK
+</td>
+<td> 16
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_COWER
+</td>
+<td> 40
+</td>
+<td> When not moving, will perform ACT_COWER.
+</td></tr>
+<tr>
+<td> SCHED_DIE
+</td>
+<td> 53
+</td>
+<td> Regular NPC death.
+</td></tr>
+<tr>
+<td> SCHED_DIE_RAGDOLL
+</td>
+<td> 54
+</td>
+<td> Plays NPC death sound (doesn't kill NPC).
+</td></tr>
+<tr>
+<td> SCHED_DISARM_WEAPON
+</td>
+<td> 49
+</td>
+<td> Holsters active weapon. (Only works with NPC's that can holster weapons)
+</td></tr>
+<tr>
+<td> SCHED_DROPSHIP_DUSTOFF
+</td>
+<td> 79
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_DUCK_DODGE
+</td>
+<td> 84
+</td>
+<td> Preform Ducking animation. (Only works with npc_alyx)
+</td></tr>
+<tr>
+<td> SCHED_ESTABLISH_LINE_OF_FIRE
+</td>
+<td> 35
+</td>
+<td> Search for a place to shoot current enemy.
+</td></tr>
+<tr>
+<td> SCHED_ESTABLISH_LINE_OF_FIRE_FALLBACK
+</td>
+<td> 36
+</td>
+<td> Fallback from an established line of fire.
+</td></tr>
+<tr>
+<td> SCHED_FAIL
+</td>
+<td> 81
+</td>
+<td> Failed doing current schedule.
+</td></tr>
+<tr>
+<td> SCHED_FAIL_ESTABLISH_LINE_OF_FIRE
+</td>
+<td> 38
+</td>
+<td> Failed to establish a line of fire.
+</td></tr>
+<tr>
+<td> SCHED_FAIL_NOSTOP
+</td>
+<td> 82
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_FAIL_TAKE_COVER
+</td>
+<td> 31
+</td>
+<td> Failed to take cover.
+</td></tr>
+<tr>
+<td> SCHED_FALL_TO_GROUND
+</td>
+<td> 78
+</td>
+<td> Fall to ground when in the air.
+</td></tr>
+<tr>
+<td> SCHED_FEAR_FACE
+</td>
+<td> 14
+</td>
+<td> Will express fear face. (Only works on NPCs with expressions)
+</td></tr>
+<tr>
+<td> SCHED_FLEE_FROM_BEST_SOUND
+</td>
+<td> 29
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_FLINCH_PHYSICS
+</td>
+<td> 80
+</td>
+<td> Plays ACT_FLINCH_PHYSICS.
+</td></tr>
+<tr>
+<td> SCHED_FORCED_GO
+</td>
+<td> 71
+</td>
+<td> Force walk to position (debug).
+</td></tr>
+<tr>
+<td> SCHED_FORCED_GO_RUN
+</td>
+<td> 72
+</td>
+<td> Force run to position (debug).
+</td></tr>
+<tr>
+<td> SCHED_GET_HEALTHKIT
+</td>
+<td> 66
+</td>
+<td> Pick up item if within a radius of 5 units.
+</td></tr>
+<tr>
+<td> SCHED_HIDE_AND_RELOAD
+</td>
+<td> 50
+</td>
+<td> Take cover and reload weapon.
+</td></tr>
+<tr>
+<td> SCHED_IDLE_STAND
+</td>
+<td> 1
+</td>
+<td> Idle stance
+</td></tr>
+<tr>
+<td> SCHED_IDLE_WALK
+</td>
+<td> 2
+</td>
+<td> Walk to position.
+</td></tr>
+<tr>
+<td> SCHED_IDLE_WANDER
+</td>
+<td> 3
+</td>
+<td> Walk to random position within a radius of 200 units.
+</td></tr>
+<tr>
+<td> SCHED_INTERACTION_MOVE_TO_PARTNER
+</td>
+<td> 85
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_INTERACTION_WAIT_FOR_PARTNER
+</td>
+<td> 86
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_INVESTIGATE_SOUND
+</td>
+<td> 11
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_MELEE_ATTACK1
+</td>
+<td> 41
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_MELEE_ATTACK2
+</td>
+<td> 42
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_MOVE_AWAY
+</td>
+<td> 68
+</td>
+<td> Move away from player.
+</td></tr>
+<tr>
+<td> SCHED_MOVE_AWAY_END
+</td>
+<td> 70
+</td>
+<td> Stop moving and continue enemy scan.
+</td></tr>
+<tr>
+<td> SCHED_MOVE_AWAY_FAIL
+</td>
+<td> 69
+</td>
+<td> Failed to move away; stop moving.
+</td></tr>
+<tr>
+<td> SCHED_MOVE_AWAY_FROM_ENEMY
+</td>
+<td> 25
+</td>
+<td> Move away from enemy while facing it and checking for new enemies.
+</td></tr>
+<tr>
+<td> SCHED_MOVE_TO_WEAPON_RANGE
+</td>
+<td> 34
+</td>
+<td> Move to the range the weapon is preferably used at.
+</td></tr>
+<tr>
+<td> SCHED_NEW_WEAPON
+</td>
+<td> 63
+</td>
+<td> Pick up a new weapon if within a radius of 5 units.
+</td></tr>
+<tr>
+<td> SCHED_NEW_WEAPON_CHEAT
+</td>
+<td> 64
+</td>
+<td> Fail safe: Create the weapon that the NPC went to pick up if it was removed during pick up schedule.
+</td></tr>
+<tr>
+<td> SCHED_NONE
+</td>
+<td> 0
+</td>
+<td> No schedule is being performed.
+</td></tr>
+<tr>
+<td> SCHED_NPC_FREEZE
+</td>
+<td> 73
+</td>
+<td> Prevents movement until COND_NPC_UNFREEZE(68) is set.
+</td></tr>
+<tr>
+<td> SCHED_PATROL_RUN
+</td>
+<td> 76
+</td>
+<td> Run to random position and stop if enemy is heard or found.
+</td></tr>
+<tr>
+<td> SCHED_PATROL_WALK
+</td>
+<td> 74
+</td>
+<td> Walk to random position and stop if enemy is heard or found.
+</td></tr>
+<tr>
+<td> SCHED_PRE_FAIL_ESTABLISH_LINE_OF_FIRE
+</td>
+<td> 37
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_RANGE_ATTACK1
+</td>
+<td> 43
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_RANGE_ATTACK2
+</td>
+<td> 44
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_RELOAD
+</td>
+<td> 51
+</td>
+<td> Stop moving and reload until danger is heard.
+</td></tr>
+<tr>
+<td> SCHED_RUN_FROM_ENEMY
+</td>
+<td> 32
+</td>
+<td> Retreat from the established enemy.
+</td></tr>
+<tr>
+<td> SCHED_RUN_FROM_ENEMY_FALLBACK
+</td>
+<td> 33
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_RUN_FROM_ENEMY_MOB
+</td>
+<td> 83
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_RUN_RANDOM
+</td>
+<td> 77
+</td>
+<td> Run to random position within a radius of 500 units.
+</td></tr>
+<tr>
+<td> SCHED_SCENE_GENERIC
+</td>
+<td> 62
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_SCRIPTED_CUSTOM_MOVE
+</td>
+<td> 59
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_SCRIPTED_FACE
+</td>
+<td> 61
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_SCRIPTED_RUN
+</td>
+<td> 58
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_SCRIPTED_WAIT
+</td>
+<td> 60
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_SCRIPTED_WALK
+</td>
+<td> 57
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_SHOOT_ENEMY_COVER
+</td>
+<td> 39
+</td>
+<td> Shoot cover that the enemy is behind.
+</td></tr>
+<tr>
+<td> SCHED_SLEEP
+</td>
+<td> 87
+</td>
+<td> Sets the NPC to a sleep-like state.
+</td></tr>
+<tr>
+<td> SCHED_SMALL_FLINCH
+</td>
+<td> 22
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_SPECIAL_ATTACK1
+</td>
+<td> 45
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_SPECIAL_ATTACK2
+</td>
+<td> 46
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_STANDOFF
+</td>
+<td> 47
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_SWITCH_TO_PENDING_WEAPON
+</td>
+<td> 65
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_TAKE_COVER_FROM_BEST_SOUND
+</td>
+<td> 28
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_TAKE_COVER_FROM_ENEMY
+</td>
+<td> 27
+</td>
+<td> Take cover from current enemy.
+</td></tr>
+<tr>
+<td> SCHED_TAKE_COVER_FROM_ORIGIN
+</td>
+<td> 30
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_TARGET_CHASE
+</td>
+<td> 21
+</td>
+<td> Chase set NPC target.
+</td></tr>
+<tr>
+<td> SCHED_TARGET_FACE
+</td>
+<td> 20
+</td>
+<td> Face NPC target.
+</td></tr>
+<tr>
+<td> SCHED_VICTORY_DANCE
+</td>
+<td> 19
+</td>
+<td> Human victory dance.
+</td></tr>
+<tr>
+<td> SCHED_WAIT_FOR_SCRIPT
+</td>
+<td> 55
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_WAIT_FOR_SPEAK_FINISH
+</td>
+<td> 67
+</td>
+<td>
+</td></tr>
+<tr>
+<td> SCHED_WAKE_ANGRY
+</td>
+<td> 4
+</td>
+<td> Spot an enemy and go from an idle state to combat state.
+</td></tr></table>
+
+

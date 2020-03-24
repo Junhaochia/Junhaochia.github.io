@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>spawnmenu.GetCustomPropTable( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=spawnmenu.GetCustomPropTable">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/spawnmenu/GetCustomPropTable" title="Special:WhatLinksHere/spawnmenu/GetCustomPropTable">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Similar to <a href="/page/Category_colon_spawnmenu" title="Category:spawnmenu">spawnmenu</a>.<a href="/page/spawnmenu/GetPropTable" title="spawnmenu/GetPropTable">GetPropTable</a>, but only returns spawnlists created by addons via <a href="/page/Category_colon_spawnmenu" title="Category:spawnmenu">spawnmenu</a>.<a href="/page/spawnmenu/AddPropCategory" title="spawnmenu/AddPropCategory">AddPropCategory</a>.
+</p><p>These spawnlists are shown in a separate menu in-game.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+See <a href="/page/Category_colon_spawnmenu" title="Category:spawnmenu">spawnmenu</a>.<a href="/page/spawnmenu/GetPropTable" title="spawnmenu/GetPropTable">GetPropTable</a> for table format.</div>
+</div>
+
+

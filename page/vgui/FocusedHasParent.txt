@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>vgui.FocusedHasParent( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=vgui.FocusedHasParent">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/vgui/FocusedHasParent" title="Special:WhatLinksHere/vgui/FocusedHasParent">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns whether the currently focused panel is a child of the given one.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> parent</span>
+</p>
+<div style="margin-left: 32px;">
+The parent panel to check the currently focused one against. This doesn't need to be a direct parent (focused panel can be a child of a child and so on).</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether or not the focused panel is a child of the passed one.</div>
+</div>
+
+

@@ -1,0 +1,25 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>game.GetGlobalState( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=game.GetGlobalState">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/game/GetGlobalState" title="Special:WhatLinksHere/game/GetGlobalState">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns whether a Global State is off, active or dead ( inactive )
+</p><p>See <a href="/page/Global_States" title="Global States">Global States</a> for more information.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The name of the Global State to retrieve the state of.
+</p><p>If the Global State by that name does not exist, <b>GLOBAL_DEAD</b> will be returned.
+</p>
+See <a href="/page/Global_States" title="Global States">Global States</a> for a list of default global states.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The state of the Global State. See <a href="/page/Enums/GLOBAL" title="Enums/GLOBAL">GLOBAL_ Enums</a></div>
+</div>
+
+

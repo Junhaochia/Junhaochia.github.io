@@ -1,0 +1,18 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>ContextBase&#58;ControlValues( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ContextBase.ControlValues">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/vgui/contextbase.lua#L20-L25">View Source</a> - <a href="/page/Special:WhatLinksHere/ContextBase/ControlValues" title="Special:WhatLinksHere/ContextBase/ControlValues">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Called by spawnmenu functions (when creating a context menu) to fill this control with data.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> contextData</span>
+</p>
+<div style="margin-left: 32px;">
+<p>A two-membered table:
+</p>
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> convar - The console variable to use. Calls <a href="/page/Category_colon_ContextBase" title="Category:ContextBase">ContextBase</a>:<a href="/page/ContextBase/SetConVar" title="ContextBase/SetConVar">SetConVar</a>.
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> label - The text to display inside the control's label.</div>
+</li></ul>
+</div>
+
+

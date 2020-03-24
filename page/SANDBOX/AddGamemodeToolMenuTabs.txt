@@ -1,0 +1,10 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>SANDBOX:AddGamemodeToolMenuTabs( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=SANDBOX.AddGamemodeToolMenuTabs">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/SANDBOX/AddGamemodeToolMenuTabs" title="Special:WhatLinksHere/SANDBOX/AddGamemodeToolMenuTabs">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div>
+<p>This hook is used to add default tool tabs to spawnmenu.
+</p><p>Do not override or hook this function, use <a href="/page/Category_colon_SANDBOX_Hooks" title="Category:SANDBOX Hooks">SANDBOX</a>:<a href="/page/SANDBOX/AddToolMenuTabs" title="SANDBOX/AddToolMenuTabs">AddToolMenuTabs</a>!
+</p>
+
+

@@ -1,0 +1,29 @@
+<p>Replaces every pixel with a part of the texture set by $basetexture.
+The texture used must be power of 2 and be 8 times as high as wide in order to function.
+The shader replaces every pixel with a part of the texture depending on it's brightness.
+Dark areas will use the upper parts of the texture and brighter parts the lower parts of the texture.
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $scalex
+</td>
+<td> The size of the texturing on the x axis
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $scaley
+</td>
+<td> The size of the texturing on the y axis
+</td></tr></table>
+
+

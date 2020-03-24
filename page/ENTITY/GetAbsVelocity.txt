@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;GetAbsVelocity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.GetAbsVelocity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/GetAbsVelocity" title="Special:WhatLinksHere/Entity/GetAbsVelocity">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the entity's velocity.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Actually binds to CBaseEntity::GetLocalVelocity() which retrieves the velocity of the entity due to its movement in the world from forces such as gravity. Does not include velocity from entity-on-entity collision.
+</p>
+</td></tr></table>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a></span>
+</p>
+<div style="margin-left: 32px;">
+The velocity of the entity.</div>
+</div>
+
+

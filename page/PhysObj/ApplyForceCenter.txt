@@ -1,0 +1,67 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>PhysObj&#58;ApplyForceCenter( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PhysObj.ApplyForceCenter">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PhysObj/ApplyForceCenter" title="Special:WhatLinksHere/PhysObj/ApplyForceCenter">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Applies the specified force to the physics object. (in Newtons)
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This will not work on players, use <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetVelocity" title="Entity/SetVelocity">SetVelocity</a> instead.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> force</span>
+</p>
+<div style="margin-left: 32px;">
+The force to be applied.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>An entity that Simulates it's own gravity by applying a force downward on the entity based on the force equation.
+</p><p>(Force = mass * acceleration)
+</p><p>Since, by default, entities already have gravity. The default gravity must be turned off by adding "phys:EnableGravity(false)" in the entities Initialize function so that the default gravity doesn't interfere with our custom gravity.
+</p><p>NOTE: We can get the mass of the entity by using the GetMass() function.
+</p><p><br />
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<pre><code data-language="lua">-9.80665 (meters / second^2)  Is the approximate acceleration of objects on Earth due to gravity. (It is negative because gravity pushes things downwards.)
+</code></pre>
+</td></tr></table>
+<pre><code data-language="lua">function ENT:Initialize()
+    self:SetModel(&quot;models/hunter/blocks/cube1x1x1.mdl&quot;)
+	self:PhysicsInit(SOLID_VPHYSICS)
+	self:SetSolid(SOLID_VPHYSICS)
+	self:SetMoveType(MOVETYPE_VPHYSICS)
+
+    if phys:IsValid() then
+        phys:EnableGravity(false) -- This is required. Since we are creating our own gravity.
+        phys:Wake()
+    end
+end
+
+function ENT:PhysicsUpdate(phys)
+    local phys = self:GetPhysicsObject()
+    phys:ApplyForceCenter(Vector(0,0,phys:GetMass()*-9.80665))
+end</code></pre>
+<p><br />
+</p>
+
+

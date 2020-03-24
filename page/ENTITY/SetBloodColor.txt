@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;SetBloodColor( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetBloodColor">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetBloodColor" title="Special:WhatLinksHere/Entity/SetBloodColor">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the blood color this entity uses.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> bloodColor</span>
+</p>
+<div style="margin-left: 32px;">
+An integer corresponding to <a href="/page/Enums/BLOOD_COLOR" title="Enums/BLOOD COLOR">BLOOD_COLOR_ Enums</a>.</div>
+</div>
+
+

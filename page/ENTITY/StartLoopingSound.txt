@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;StartLoopingSound( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.StartLoopingSound">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/StartLoopingSound" title="Special:WhatLinksHere/Entity/StartLoopingSound">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Starts a "looping" sound. As with any other sound playing methods, this function expects the sound file to be looping itself and will not automatically loop a non looping sound file as one might expect.
+</p><p>This function is almost identical to <a href="/page/Global/CreateSound" title="Global/CreateSound">CreateSound</a>, with the exception of the sound being created in the STATIC channel and with normal attenuation.
+</p><p>See also <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/StopLoopingSound" title="Entity/StopLoopingSound">StopLoopingSound</a>
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> sound</span>
+</p>
+<div style="margin-left: 32px;">
+Sound to play. Can be either a sound script or a filepath.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The ID number of started sound starting with 0, or -1 if we failed for some reason.</div>
+</div>
+
+

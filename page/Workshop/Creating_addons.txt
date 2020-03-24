@@ -1,0 +1,134 @@
+<p>This page describes rules for all Steam Workshop submissions in Garry's Mod Hub.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Screenshots.2C_Artwork_and_Addon_Icons"><span class="tocnumber">1</span> <span class="toctext">Screenshots, Artwork and Addon Icons</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Steam_ToS_rules"><span class="tocnumber">1.1</span> <span class="toctext">Steam ToS rules</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Our_rules"><span class="tocnumber">1.2</span> <span class="toctext">Our rules</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Icon_specific_rules"><span class="tocnumber">1.3</span> <span class="toctext">Icon specific rules</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Videos"><span class="tocnumber">2</span> <span class="toctext">Videos</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Steam_ToS_rules_2"><span class="tocnumber">2.1</span> <span class="toctext">Steam ToS rules</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Our_rules_2"><span class="tocnumber">2.2</span> <span class="toctext">Our rules</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Other_notes"><span class="tocnumber">2.3</span> <span class="toctext">Other notes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Addons_.26_Collections"><span class="tocnumber">3</span> <span class="toctext">Addons &amp; Collections</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Steam_ToS_rules_3"><span class="tocnumber">3.1</span> <span class="toctext">Steam ToS rules</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Our_rules_3"><span class="tocnumber">3.2</span> <span class="toctext">Our rules</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Guides"><span class="tocnumber">4</span> <span class="toctext">Guides</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Steam_ToS_rules_4"><span class="tocnumber">4.1</span> <span class="toctext">Steam ToS rules</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Our_rules_4"><span class="tocnumber">4.2</span> <span class="toctext">Our rules</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Things_to_clear_up"><span class="tocnumber">5</span> <span class="toctext">Things to clear up</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#My_addon.2Fworkshop_item_was_marked_incompatible_or_banned.2C_what_do_I_do.3F"><span class="tocnumber">6</span> <span class="toctext">My addon/workshop item was marked incompatible or banned, what do I do?</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Screenshots.2C_Artwork_and_Addon_Icons">Screenshots, Artwork and Addon Icons</span></h1>
+<p>These rules apply to screenshots, artwork and addon icons.
+</p>
+<h2> <span class="mw-headline" id="Steam_ToS_rules">Steam ToS rules</span></h2>
+<p>Violating this will get your submission banned. It will only be viewable by you. (<a rel="nofollow" class="external text" href="https://support.steampowered.com/kb_article.php?ref=4506-DGHX-5190">Source</a>)
+</p>
+<ul><li> Your submission must not violate <a rel="nofollow" class="external text" href="https://store.steampowered.com/subscriber_agreement/">Steam Subscriber Agreement</a> or <a rel="nofollow" class="external text" href="https://store.steampowered.com/online_conduct/">Steam Online Conduct</a>.
+</li><li> Your submission must not contain offensive content. (e.g. racism, gore)
+</li><li> Your submission must not contain pornographic content. (e.g. pornographic sprays/decals, nudity)
+</li><li> You must be the owner of uploaded submission. Stolen artwork (even edited) is not allowed.
+</li></ul>
+<h2> <span class="mw-headline" id="Our_rules">Our rules</span></h2>
+<p>Violating these will get your submission incompatible. It will be viewable by you and your friends.
+</p>
+<ul><li> The submission must be made with Garry's Mod (except for icons). External modifications (Photoshop, etc) are allowed. If it is unclear, whether the submission was made with Garry's Mod or not, include a clear indication that it is.
+</li><li> Do not advertise servers in your artwork - Workshop is not an advertising board.
+</li></ul>
+<h2> <span class="mw-headline" id="Icon_specific_rules">Icon specific rules</span></h2>
+<ul><li> Must be relevant to the addon/collection
+</li><li> Must not be blank
+</li><li> Should have effort put into it. Random icons from google for the sake or uploading an addon are not allowed.
+</li></ul>
+<h1> <span class="mw-headline" id="Videos">Videos</span></h1>
+<p>These rules apply to videos.
+</p>
+<h2> <span class="mw-headline" id="Steam_ToS_rules_2">Steam ToS rules</span></h2>
+<p>Violating this will get your submission banned. It will only be viewable by you. (<a rel="nofollow" class="external text" href="https://support.steampowered.com/kb_article.php?ref=4506-DGHX-5190">Source</a>)
+</p>
+<ul><li> Your submission must not violate <a rel="nofollow" class="external text" href="https://store.steampowered.com/subscriber_agreement/">Steam Subscriber Agreement</a> or <a rel="nofollow" class="external text" href="https://store.steampowered.com/online_conduct/">Steam Online Conduct</a>.
+</li><li> Your submission must not contain pornographic content. (e.g. pornographic sprays/decals, nudity)
+</li><li> You must be the owner of uploaded submission. Stolen videos (reuploaded) are not allowed.
+</li></ul>
+<h2> <span class="mw-headline" id="Our_rules_2">Our rules</span></h2>
+<p>Violating these will get your submission incompatible. It will be viewable by you and your friends.
+</p>
+<ul><li> The submission must be made with Garry's Mod. External modifications (After Effects, etc) are allowed. If it is unclear, whether the submission was made with Garry's Mod or not, include a clear indication that it is.
+</li></ul>
+<h2> <span class="mw-headline" id="Other_notes">Other notes</span></h2>
+<p>You can monetise your videos with YouTube partner program and similar programs on other video hosting services.
+</p>
+<h1> <span class="mw-headline" id="Addons_.26_Collections">Addons &amp; Collections</span></h1>
+<p>Rules applied to Garry's Mod addons uploaded to Steam Workshop.
+</p>
+<h2> <span class="mw-headline" id="Steam_ToS_rules_3">Steam ToS rules</span></h2>
+<p>Violating this will get your submission banned. It will only be viewable by you.
+</p>
+<ul><li> Your submission must not violate <a rel="nofollow" class="external text" href="https://store.steampowered.com/subscriber_agreement/">Steam Subscriber Agreement</a> or <a rel="nofollow" class="external text" href="https://store.steampowered.com/online_conduct/">Steam Online Conduct</a>.
+</li><li> Your submission must not contain offensive content. (e.g. racism)
+</li><li> Your submission must not contain pornographic content. (e.g. pornographic sprays/decals, nudity) - this includes links to such content in description.
+</li></ul>
+<h2> <span class="mw-headline" id="Our_rules_3">Our rules</span></h2>
+<p>Violating these will get your submission incompatible. It will be viewable by you and your friends.
+</p>
+<ul><li> <b>Do not upload addons with malicious elements</b> - All addons containing any sort of exploits or backdoors will be removed. This includes giving yourself elevated access over other users (SteamID checks, Giving yourself Admin status, RunString, spawning entities, etc), forcing people to be connected to different servers against their will, crashing or otherwise preventing the player from using the addon in private or on their servers.
+</li><li> <b>Do not release stolen code</b> - All addons that are proven to have stolen code will also be taken down.
+</li><li> <b>Do not upload retail game content</b> - All addons containing any content from a paid game (e.g. CS:S, Portal or Half-Life 2 games) will be removed. This includes props that are required for your addons to work. <a rel="nofollow" class="external text" href="https://support.steampowered.com/kb_article.php?ref=2393-RUIG-0223">Your account can be terminated for this!</a> <a rel="nofollow" class="external autonumber" href="https://steamcommunity.com/app/4000/discussions/1/624075036453294488/#c624075036463641026">[1]</a>
+</li><li> <b>Avoid requiring other addons</b> - In some cases this is permissible - like if it's an addon for a gamemode. <b>If your addon does require another addon - it shouldn't error if that addon isn't present. It should just do nothing.</b>
+</li><li> <b>Avoid uploading packs</b> - Unless they're all your work. A pack of your maps is fine. A pack of maps you found that you think are cool is not fine. A pack of your weapons are fine. A pack of cool weapons you downloaded is not fine. You should use Workshop collections instead.
+</li><li> <b>Make an effort with the thumb</b> - Addons with blank or irrelevant thumbnails will be taken down. If you can't be bothered to make an icon for it then don't bother uploading it. You can learn how to update your icons <a href="/page/Workshop_Addon_Updating" title="Workshop Addon Updating">here</a>.
+</li><li> <b>Do not upload broken addons</b> - Erroring addons will be removed. This includes Lua errors, missing custom models, sounds or materials. You should test your addons in <a href="/page/Dev_Branch" title="Dev Branch">Dev Branch</a> to make sure it is not broken in the next version of the game.
+</li><li> <b>Do not upload multi-part addons</b> - What this means is that if your addon won't fit in a single addon - do not upload it.
+</li><li> <b>Do not reupload addons</b> - Reuploaded addons will be taken down. Search workshop before uploading. <b>Reuploading workshop addons is strictly forbidden, whatever the reupload reason is. (Even if the original workshop addon was removed)</b>
+</li><li> <b>Do not reupload newer versions of your addons</b> - Update the old one, don't upload a new one. Duplicates will be removed.
+</li><li> <b>Do not abuse tags </b> - Mistagged addons will be taken down. This is mostly applicable to the gamemode tag, if you are uploading a content pack for your server, tag it as such. (ServerContent) Having all of the tags on the same addon is also forbidden.
+</li><li> <b>Do not upload empty or placeholder addons</b> - Addons that require user to download something from description (an external link) are not allowed.
+</li><li> <b>Do not upload 'test' addons</b> - Addons with no content or barely any content are pointless and are not allowed. Make effort with the content you upload.
+</li><li> <b>Do not put intrusive/web advertisements into your addons</b> - Self-explanatory, Steam Workshop is a place for people to get their addons/mods, not adware. Any pop up ads are not allowed, including server ads. For server ads a <b>single</b> chat message is ok.
+</li><li> <b>Everyone is allowed to use addons you upload</b> - Steam Workshop is not your personal file hosting, it is a distribution service for user generated content. By uploading your addons to Steam Workshop you agree that anyone can download and use your uploaded content. Things like "you are not allowed to use this addon on your server" or "this was made for only this server" are not permitted on Steam Workshop. Adding code (or entities on your maps, etc.) that would discourage or prevent players from being able to your addon on their servers or in singleplayer falls into the "Malicious Code" category.
+</li></ul>
+<h1> <span class="mw-headline" id="Guides">Guides</span></h1>
+<p>Rules applied to guides.
+</p>
+<h2> <span class="mw-headline" id="Steam_ToS_rules_4">Steam ToS rules</span></h2>
+<p>Violating these rules will get your submission banned. It will only be viewable by you.
+</p>
+<ul><li> Your submission must not violate <a rel="nofollow" class="external text" href="https://store.steampowered.com/subscriber_agreement/">Steam Subscriber Agreement</a> or <a rel="nofollow" class="external text" href="https://store.steampowered.com/online_conduct/">Steam Online Conduct</a>.
+</li><li> Your submission must not contain offensive content. (e.g. racism, gore)
+</li><li> Your submission must not contain pornographic content. (e.g. pornographic sprays/decals, nudity)
+</li><li> You must be the owner of uploaded submission. Stolen guides (even edited) are not allowed.
+</li></ul>
+<h2> <span class="mw-headline" id="Our_rules_4">Our rules</span></h2>
+<p>Violating these will get your submission incompatible. It will be viewable by you and your friends.
+</p>
+<ul><li> It must be an actual guide or a tutorial
+</li><li> The submission must be made for Garry's Mod or Source Engine.
+</li><li> "Troll" guides, as well as "guides for the lolz" are not allowed. (e.g. How to walk forward)
+</li><li> Revealing the secret phrase for the "Secret Phrase" achievement. It's a secret.
+</li></ul>
+<h1> <span class="mw-headline" id="Things_to_clear_up">Things to clear up</span></h1>
+<p>You should avoid publishing this content.
+</p>
+<ul><li> Historical or religious figures or events (characters, recreations)
+</li></ul>
+<h1> <span class="mw-headline" id="My_addon.2Fworkshop_item_was_marked_incompatible_or_banned.2C_what_do_I_do.3F">My addon/workshop item was marked incompatible or banned, what do I do?</span></h1>
+<p>Do not reupload it. Read the rules for the workshop item type on this page. (If your addon was banned, read addon rules).
+</p><p>Look through each rule and see if your addon violates it. If it does, make sure it does not.
+</p><p>Once you fixed your addon, write to <a rel="nofollow" class="external text" href="mailto:robotboy655@facepunchstudios.com">robotboy655@facepunchstudios.com</a> for appealing your ban/flag for incompatible.
+</p>
+
+

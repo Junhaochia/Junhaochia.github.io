@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetAnimationEnabled( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetAnimationEnabled">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetAnimationEnabled" title="Special:WhatLinksHere/Panel/SetAnimationEnabled">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Enables or disables animations for the panel object by overriding the <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/AnimationThink" title="PANEL/AnimationThink">AnimationThink</a> hook to nil and back.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> enable</span>
+</p>
+<div style="margin-left: 32px;">
+Whether to enable or disable animations.</div>
+</div>
+
+

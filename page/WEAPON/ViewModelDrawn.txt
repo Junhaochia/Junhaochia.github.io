@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>WEAPON:ViewModelDrawn( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=WEAPON.ViewModelDrawn">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/WEAPON/ViewModelDrawn" title="Special:WhatLinksHere/WEAPON/ViewModelDrawn">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called straight after the view model has been drawn. This is called before <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawViewModel" title="GM/PostDrawViewModel">PostDrawViewModel</a> and <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/PostDrawViewModel" title="WEAPON/PostDrawViewModel">PostDrawViewModel</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ViewModel</span>
+</p>
+<div style="margin-left: 32px;">
+Players view model</div>
+</div>
+
+

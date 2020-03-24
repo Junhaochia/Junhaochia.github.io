@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Player&#58;SetMaxSpeed( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.SetMaxSpeed">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/SetMaxSpeed" title="Special:WhatLinksHere/Player/SetMaxSpeed">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the maximum speed which the player can move at.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is called automatically by the engine. If you wish to limit player speed without setting their run/sprint speeds, see <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/SetMaxClientSpeed" title="CMoveData/SetMaxClientSpeed">SetMaxClientSpeed</a>.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> walkSpeed</span>
+</p>
+<div style="margin-left: 32px;">
+The maximum speed.</div>
+</div>
+
+

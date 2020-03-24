@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>render.SupportsPixelShaders_1_4( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.SupportsPixelShaders_1_4">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/SupportsPixelShaders_1_4" title="Special:WhatLinksHere/render/SupportsPixelShaders 1 4">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns if the current settings and the system allow the usage of pixel shaders 1.4.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether Pixel Shaders 1.4 are supported or not.</div>
+</div>
+
+

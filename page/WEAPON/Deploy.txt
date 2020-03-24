@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>WEAPON:Deploy( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=WEAPON.Deploy">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/WEAPON/Deploy" title="Special:WhatLinksHere/WEAPON/Deploy">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when player has just switched to this weapon.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Due to this hook being predicted, it is not called clientside in singleplayer at all, and in multiplayer it will not be called clientside if the weapon is switched with <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/SelectWeapon" title="Player/SelectWeapon">SelectWeapon</a> or the "use" console command, however it will be called clientside with the default weapon selection menu and when using <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/SelectWeapon" title="CUserCmd/SelectWeapon">SelectWeapon</a>
+</p>
+</td></tr></table>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Return true to allow switching away from this weapon using lastinv command</div>
+</div>
+
+

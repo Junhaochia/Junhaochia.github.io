@@ -1,0 +1,37 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NEXTBOT:OnTraceAttack( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NEXTBOT.OnTraceAttack">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NEXTBOT/OnTraceAttack" title="Special:WhatLinksHere/NEXTBOT/OnTraceAttack">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when a trace attack is done against the nextbot, allowing override of the damage being dealt by altering the <a href="/page/Category_colon_CTakeDamageInfo" title="Category:CTakeDamageInfo">CTakeDamageInfo</a>.
+</p><p>This is called before <a href="/page/Category_colon_NEXTBOT_Hooks" title="Category:NEXTBOT Hooks">NEXTBOT</a>:<a href="/page/NEXTBOT/OnInjured" title="NEXTBOT/OnInjured">OnInjured</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_CTakeDamageInfo" title="Category:CTakeDamageInfo">CTakeDamageInfo</a> info</span>
+</p>
+<div style="margin-left: 32px;">
+The damage info</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> dir</span>
+</p>
+<div style="margin-left: 32px;">
+The direction the damage goes in</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> trace</span>
+</p>
+<div style="margin-left: 32px;">
+The <a href="/page/Structures/TraceResult" title="Structures/TraceResult">TraceResult structure</a> of the attack, containing the hitgroup.</div>
+</div>
+
+

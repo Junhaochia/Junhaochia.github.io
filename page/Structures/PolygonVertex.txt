@@ -1,0 +1,67 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/PolygonVertex" title="Special:WhatLinksHere/Structures/PolygonVertex">What links here?</a></div>A structure containing vertex information for use with <a href="/page/Category_colon_surface" title="Category:surface">surface</a>.<a href="/page/surface/DrawPoly" title="surface/DrawPoly">DrawPoly</a>.
+<p>UV coordinates describe which part of a given texture should be drawn at a vertex - your graphics card's interpolator will fill in space between vertices. UV coords range from 0-1, with 0 being top/left and 1 being bottom/right. If you're using a texture these are mandatory.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>You must pass a table of tables with this structure to the function. <b>You need to pass at least 3 points.</b>
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Your points must be defined in a <b>clockwise order.</b> Otherwise, your shape will not render.
+</p>
+</td></tr></table>
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> x
+</td>
+<td>
+<p>The x coordinate of the vertex.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> y
+</td>
+<td>
+<p>The y coordinate of the vertex.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> u
+</td>
+<td>
+<p>The u texture coordinate of the vertex. <i>Can be left blank.</i>
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> v
+</td>
+<td>
+<p>The v texture coordinate of the vertex. <i>Can be left blank.</i>
+</p>
+</td></tr></table>
+
+

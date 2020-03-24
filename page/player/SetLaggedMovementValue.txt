@@ -1,0 +1,31 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Player&#58;SetLaggedMovementValue( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.SetLaggedMovementValue">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/SetLaggedMovementValue" title="Special:WhatLinksHere/Player/SetLaggedMovementValue">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Slows down the player movement simulation by the timescale, this is used internally in the HL2 weapon stripping sequence.
+</p><p>It achieves such behavior by multiplying the <a href="/page/Global/FrameTime" title="Global/FrameTime">FrameTime</a> by the specified timescale at the start of the movement simulation and then restoring it afterwards.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is reset to 1 on spawn
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>There is no weapon counterpart to this, you'll have to hardcode the multiplier in the weapon or call <a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a>:<a href="/page/Weapon/SetNextPrimaryFire" title="Weapon/SetNextPrimaryFire">SetNextPrimaryFire</a> / <a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a>:<a href="/page/Weapon/SetNextSecondaryFire" title="Weapon/SetNextSecondaryFire">SetNextSecondaryFire</a> manually from a <a href="/page/Category_colon_Predicted_Hooks" title="Category:Predicted Hooks">Predicted Hook</a>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> timescale</span>
+</p>
+<div style="margin-left: 32px;">
+The timescale multiplier.</div>
+</div>
+
+

@@ -1,0 +1,60 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PresetEditor">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:PresetEditor" title="Special:WhatLinksHere/Category:PresetEditor">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div>A preset editor, which can be opened by <a href="/page/Category_colon_ControlPresets" title="Category:ControlPresets">ControlPresets</a>.
+<p>This control only exists in Sandbox derived gamemodes.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DFrame/Center" title="DFrame/Center">DFrame/Center</a></li>
+<li><a href="/page/DFrame/Close" title="DFrame/Close">DFrame/Close</a></li>
+<li><a href="/page/DFrame/GetBackgroundBlur" title="DFrame/GetBackgroundBlur">DFrame/GetBackgroundBlur</a></li>
+<li><a href="/page/DFrame/GetDeleteOnClose" title="DFrame/GetDeleteOnClose">DFrame/GetDeleteOnClose</a></li>
+<li><a href="/page/DFrame/GetDraggable" title="DFrame/GetDraggable">DFrame/GetDraggable</a></li>
+<li><a href="/page/DFrame/GetIsMenu" title="DFrame/GetIsMenu">DFrame/GetIsMenu</a></li>
+<li><a href="/page/DFrame/GetMinHeight" title="DFrame/GetMinHeight">DFrame/GetMinHeight</a></li>
+<li><a href="/page/DFrame/GetMinWidth" title="DFrame/GetMinWidth">DFrame/GetMinWidth</a></li>
+<li><a href="/page/DFrame/GetPaintShadow" title="DFrame/GetPaintShadow">DFrame/GetPaintShadow</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DFrame/GetScreenLock" title="DFrame/GetScreenLock">DFrame/GetScreenLock</a></li>
+<li><a href="/page/DFrame/GetSizable" title="DFrame/GetSizable">DFrame/GetSizable</a></li>
+<li><a href="/page/DFrame/GetTitle" title="DFrame/GetTitle">DFrame/GetTitle</a></li>
+<li><a href="/page/DFrame/IsActive" title="DFrame/IsActive">DFrame/IsActive</a></li>
+<li><a href="/page/DFrame/SetBackgroundBlur" title="DFrame/SetBackgroundBlur">DFrame/SetBackgroundBlur</a></li>
+<li><a href="/page/DFrame/SetDeleteOnClose" title="DFrame/SetDeleteOnClose">DFrame/SetDeleteOnClose</a></li>
+<li><a href="/page/DFrame/SetDraggable" title="DFrame/SetDraggable">DFrame/SetDraggable</a></li>
+<li><a href="/page/DFrame/SetIcon" title="DFrame/SetIcon">DFrame/SetIcon</a></li>
+<li><a href="/page/DFrame/SetIsMenu" title="DFrame/SetIsMenu">DFrame/SetIsMenu</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DFrame/SetMinHeight" title="DFrame/SetMinHeight">DFrame/SetMinHeight</a></li>
+<li><a href="/page/DFrame/SetMinWidth" title="DFrame/SetMinWidth">DFrame/SetMinWidth</a></li>
+<li><a href="/page/DFrame/SetPaintShadow" title="DFrame/SetPaintShadow">DFrame/SetPaintShadow</a></li>
+<li><a href="/page/DFrame/SetScreenLock" title="DFrame/SetScreenLock">DFrame/SetScreenLock</a></li>
+<li><a href="/page/DFrame/SetSizable" title="DFrame/SetSizable">DFrame/SetSizable</a></li>
+<li><a href="/page/DFrame/SetTitle" title="DFrame/SetTitle">DFrame/SetTitle</a></li>
+<li><a href="/page/DFrame/ShowCloseButton" title="DFrame/ShowCloseButton">DFrame/ShowCloseButton</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

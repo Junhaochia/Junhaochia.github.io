@@ -1,0 +1,173 @@
+<p>Hey there! Ever joined a DarkRP server and saw that sv_allowcslua was set to 1? You know you can use scripts on the server, but there is one problem, how do I make a script? How do I run it? What can I even do? Well, I am here to answer these questions. I'll answer a few questions you maybe thinking
+</p><p>Question: Can't I get VAC banned for this?
+Answer: No, you only get VAC banned for changing memory and inject dll's, the server is allowing us to do this.
+</p><p>Question: Can I hack the server, get the RCON and take control?
+Answer: No, unless there is an addon that has a backdoor/function we can abuse, you cannot and I will not teach it.
+</p><p>So, where do we start? I will assume you know the basic knowledge, and by "basic knowledge" I mean this:
+<a rel="nofollow" class="external free" href="/page/Category_colon_Beginner_Tutorials">http://wiki.garrysmod.com/page/Category_colon_Beginner_Tutorials</a>
+</p><p>That explains the basics, which is variables and if else statements, the other thing you should know is a function, basically, it contains code that we use a lot, and can reuse, for example we can have
+</p>
+<pre><code data-language="lua">
+function Hello()
+    print(&quot;Hello, world!&quot;)
+end
+</code></pre>
+<p>Then, we can type
+</p>
+<pre><code data-language="lua">
+Hello()
+</code></pre>
+<p>And it will run all the code inside that function, example being it would print "Hello, world!" to console.
+You will see how functions work better later on.
+</p><p>So, we have joined a DarkRP server and sv_alllowcslua is 1, we want to do some fun stuff to help us. Well to begin, we will need to know something called "Hooks", these are events. For example there is a "PlayerSay" hook, the hook is 'called' when someone says something, and when I say called, I mean ran, think of it as a function, so instead of doing Hello() manually, it does it automatically for us whenever that hook is 'called', so say if we did this
+</p>
+<pre><code data-language="lua">
+hook.Add(&quot;PlayerSay&quot;, &quot;UniqueName&quot;, Hello) // I will explain this next
+</code></pre>
+<p>It will run the Hello() function I made earlier.
+to create a hook we use hook.Add, then we put the hook name so we will use PlayerSay in this example, now we have
+</p>
+<pre><code data-language="lua">
+hook.Add(&quot;PlayerSay&quot; ... )
+</code></pre>
+<p>now we need a unique name after PlayerSay, just put something random there, after that, we put the function we want to run when the hook is called, example:
+</p>
+<pre><code data-language="lua">
+function Hello()
+    print(&quot;Hello, world!&quot;)
+end
+hook.Add(&quot;PlayerSay&quot;, &quot;UniqueName&quot;, Hello)
+</code></pre>
+<p>Just a note, everything is case sensitive, Hook.add is different to hook.Add, Playersay is different to PlayerSay, make sure you remember that.
+</p><p>To shorten the code down, we could actually make our function in the hook like so
+</p>
+<pre><code data-language="lua">
+hook.Add(&quot;PlayerSay&quot;, &quot;UniqueName&quot;, function()
+    print(&quot;Hello, world!&quot;)
+end)
+</code></pre>
+<p>This is the exact same as the previous code, except shorter.
+Now, if we look on the wiki for PlayerSay (<a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerSay" title="GM/PlayerSay">PlayerSay</a>)
+you can see it says that it has 3 arguments, a player, a string and a bool
+What this means, is not only does it call a function for us when someone talks, but it also gives us some information, it gives us the player talking, what they said and if they said it in team chat or not.
+To add this to the function we can do this
+</p>
+<pre><code data-language="lua">
+hook.Add(&quot;PlayerSay&quot;, &quot;UniqueName&quot;, function( ply, text, isTeam )
+       print(&quot;Hello, world!&quot;)
+end)
+</code></pre>
+<p>Now, we can use three variables called ply, text and isTeam. these are local variables meaning we can only use these in the function. We can use the ply variable as a normal player, all the player functions can be found here: <a rel="nofollow" class="external free" href="/page/Category_colon_Player">http://wiki.garrysmod.com/page/Category_colon_Player</a>
+But, if we are on the client, we cannot use all of them because GMod will only allow us to use Shared and Client functions.
+To see if it works on client, click on the function, in this example we will click on Player:Nick() (<a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/Nick" title="Player/Nick">Nick</a>)
+If you look at the bottom of the page, it says "Shared", which means both the server and client can use it, and hey we are a client, so we can use it!
+But, I have been misleading you a tiny bit, you see, if we look at the PlayerSay hook,and scroll to the bottom, you can see it says it's a server hook, so we cannot use this with sv_allowcslua 1
+</p><p>But that's okay, there is still plenty of other things we can do, I only used PlayerSay as an example to get you kinda familiar with what we are doing, if you are a bit lost, it's okay, I am not the greatest at explaining and it can be quite overwhelming. Let's continue to our first project and maybe you will get it, wallhack!
+</p><p>I will start of with wall-hack as it is very easy to do, and I can leave you with a task to do.
+First of all, you are going to want to create a file named whatever you want in the lua file of the core garrys mod folder ("Steam\steamapps\common\GarrysMod\garrysmod\lua") ,
+I will name mine test.lua, make sure you name it and save it as test.lua, not test.lua.txt,
+Also, I assume by this stage you have Notepad++ or Sublime or whatever you use, hopefully not notepad.
+So, we have our empty file.... What now?
+Well, I'm going to show you some functions and hooks, you can try to guess what to do, and then I'll show you what we're gonna do,
+the functions and hooks we will be using are:
+<a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawHalos" title="GM/PreDrawHalos">PreDrawHalos</a>,
+<a href="/page/Category_colon_halo" title="Category:halo">halo</a>.<a href="/page/halo/Add" title="halo/Add">Add</a> and
+<a href="/page/Category_colon_player" title="Category:player">player</a>.<a href="/page/player/GetAll" title="player/GetAll">GetAll</a>
+</p><p>Hmmm can you guess?
+</p><p>Now, I am not sure if you know what a for loop is, but if you don't it's really simple, it goes through every single object in a table and then you are able to run some code on each object individual,
+Which means, we can loop through all the players, and do a task on each individual player, remember this, you will need to know a for loop for a later task..
+</p><p>Did you guess it? If you guess that we are going to add a halo to every player, you were right!
+So, how do we do this, well first we set up our hook, remember? try to do it before me, rush ahead! guess what I am going to do, then check if your right.
+</p><p>So what is the PreDrawHalos hook and what does it do? It is called every frame, so it is always running, constantly, this is good because we want the halo to always be on their current position.
+</p><p>So, we need to setup the hook, like so
+</p>
+<pre><code data-language="lua">
+hook.Add(&quot;PreDrawHalos&quot;, &quot;xXx_WallHacksPro6969_xXx&quot;, function()
+
+end)
+</code></pre>
+<p>now we need to add our halo function but wait, what is the function, how does it work? well, a halo is pretty much an outline of an entity, and the wiki says it has 7 arguments, I will go over one by one.
+The first argument is the table of entities, did you know that player.GetAll() returns a table.. of guess what? Players!, and Players are considered entities.
+So we can use player.GetAll() as our first argument
+</p>
+<pre><code data-language="lua">
+halo.Add(player.GetAll() ... )
+</code></pre>
+<p>Our next argument is the color of the halo (outline), let's just use red, if you don't know how the Color function works, it has 3 arguments, (R)ed, (G)reen, (B)lue
+So, for red we do
+</p>
+<pre><code data-language="lua">
+halo.Add(player.GetAll(), Color(255, 0, 0) ... )
+</code></pre>
+<p>The next 2 arguments are the blurriness on the x and y axis, we don't want it to blur so we put 0.
+</p>
+<pre><code data-language="lua">
+halo.Add(player.GetAll(), Color(255, 0, 0), 0, 0 ... )
+</code></pre>
+<p>Now we have the last 3 arguments, the first one is passes, we can leave this at 2, the bigger this number, the more times per frame it's ran and it's more laggy, 2 will work fine for us,
+Next we have addictive, we will leave this to the default value of true since it's not important for us and as far as I know, doesn't affect anything.
+Lastly, the important one, ignoreZ, we want this to true, if it is false, we cannot see them through walls, what's the point of a wall hack if you can't see them behind a wall!.
+So that leaves us with
+</p>
+<pre><code data-language="lua">
+halo.Add(player.GetAll(), Color(255, 0, 0), 0, 0, 2, true, true )
+</code></pre>
+<p>And we will add it to the hook
+</p>
+<pre><code data-language="lua">
+hook.Add(&quot;PreDrawHalos&quot;, &quot;xXx_WallHacksPro6969_xXx&quot;, function()
+	halo.Add(player.GetAll(), Color(255, 0, 0), 0, 0, 2, true, true )
+end)
+</code></pre>
+<p>That is what your lua file should look like, if you save that, go into a server with sv_allowcslua 1, and type
+"lua_openscript_cl " then the file name including .lua at the end, it will work, and you will see everyone highlighted red.
+</p><p>So, we now have a wall hack for players, but what if we could see money printers? Well we can, there is a function called ents.FindByClass (<a href="/page/Category_colon_ents" title="Category:ents">ents</a>:<a href="/page/ents/FindByClass" title="ents/FindByClass">FindByClass</a>)
+We can do this, to get a table of entities with a certain name,
+so we can modify our script to
+</p>
+<pre><code data-language="lua">
+hook.Add(&quot;PreDrawHalos&quot;, &quot;xXx_WallHacksPro6969_xXx&quot;, function()
+	halo.Add(player.GetAll(), Color(255, 0, 0), 0, 0, 2, true, true )
+	halo.Add(ents.FindByClass(&quot;money_printer&quot;), Color(255, 0, 0), 0, 0, 2, true, true )
+end)
+</code></pre>
+<p>Different servers use different printer names, so just find the name and put it there, if you find printer names like
+money_printer_emerald
+money_printer_ruby
+instead of making a 2 halo's for each printer, you can do this
+</p>
+<pre><code data-language="lua">
+halo.Add(ents.FindByClass(&quot;money_printer_*&quot;), Color(255, 0, 0), 0, 0, 2, true, true )
+</code></pre>
+<p>That will highlight all entites that begin with money_printer_
+</p><p>Also, be sure to re-run the lua_openscript_cl command every time you change the code to re-run the code.
+</p><p>For those who think they are a bit ahead of the beginner stage:
+But, wouldn't it be cooler if we could see players through the wall, but their DarkRP job color was their color!
+Or, we could target a specific player in game by typing&#160;!find *name* and then&#160;!all to show all players?
+Well, you can!
+Here are some handy functions:
+<a href="/page/Category_colon_team" title="Category:team">team</a>.<a href="/page/team/GetColor" title="team/GetColor">GetColor</a>,
+<a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/Team" title="Player/Team">Team</a>,
+<a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/OnPlayerChat" title="GM/OnPlayerChat">OnPlayerChat</a>,
+<a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerConnect" title="GM/PlayerConnect">PlayerConnect</a>
+You will need to understand tables and for loops as well as if statements for this to work,
+Remember, there are many ways of doing this, chances are, yours will be different to mine, here is a efficiency tip, try not to run a for loop every frame, my method runs a for loop once, that's on script load, then uses the PlayerConnect hook to add a player to a table, that is my tip for you.
+</p><p>For those who think they cannot do the above task;
+I want you to make the money printers blue, and the players red.
+add a halo for weapons and money
+Think of something cool you could add
+</p><p>Lastly, for those that want to experiment, you should be able to use all these hooks:
+<a rel="nofollow" class="external free" href="/page/Category_colon_Shared_Hooks">http://wiki.garrysmod.com/page/Category_colon_Shared_Hooks</a>,
+<a rel="nofollow" class="external free" href="/page/Category_colon_Client_Hooks">http://wiki.garrysmod.com/page/Category_colon_Client_Hooks</a>
+</p><p>And these functions
+<a rel="nofollow" class="external free" href="/page/Category_colon_Shared">http://wiki.garrysmod.com/page/Category_colon_Shared</a>,
+<a rel="nofollow" class="external free" href="/page/Category_colon_Client">http://wiki.garrysmod.com/page/Category_colon_Client</a>
+</p><p>Just a tip, not all shared functions/hooks seem to work, that's just for me anyway.
+But all the client hooks and functions will work, if used correctly.
+</p><p><br />
+Note:
+I will add more fun stuff like a permanent weapon checker, and to post the code for the above tasks.
+This is my first proper tutorial, I hope it's helpful!
+</p>
+
+

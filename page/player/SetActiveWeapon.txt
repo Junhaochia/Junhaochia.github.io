@@ -1,0 +1,30 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Player&#58;SetActiveWeapon( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.SetActiveWeapon">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/SetActiveWeapon" title="Special:WhatLinksHere/Player/SetActiveWeapon">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the player's active weapon. You should use <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/SelectWeapon" title="CUserCmd/SelectWeapon">SelectWeapon</a> or <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/SelectWeapon" title="Player/SelectWeapon">SelectWeapon</a>, instead in most cases.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This function will not trigger the weapon switch event or associated equip animations. You can achieve this using <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/SelectWeapon" title="Player/SelectWeapon">SelectWeapon</a> with <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetClass" title="Entity/GetClass">GetClass</a>.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This will not call <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerSwitchWeapon" title="GM/PlayerSwitchWeapon">PlayerSwitchWeapon</a>.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a> weapon</span>
+</p>
+<div style="margin-left: 32px;">
+The weapon to equip.</div>
+</div>
+
+

@@ -1,0 +1,63 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DMenu&#58;AddCVar( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DMenu.AddCVar">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DMenu/AddCVar" title="Special:WhatLinksHere/DMenu/AddCVar">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelFunc"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelFunc</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">7</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Creates a <a href="/page/Category_colon_DMenuOptionCVar" title="Category:DMenuOptionCVar">DMenuOptionCVar</a> and adds it as an option into the menu. Checking and unchecking the option will alter the given console variable's value.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> strText</span>
+</p>
+<div style="margin-left: 32px;">
+The text of the button</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> convar</span>
+</p>
+<div style="margin-left: 32px;">
+The console variable to change</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> on</span>
+</p>
+<div style="margin-left: 32px;">
+The value of the console variable to set when the option is checked</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> off</span>
+</p>
+<div style="margin-left: 32px;">
+The value of the console variable to set when the option is unchecked</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> funcFunction=nil</span>
+</p>
+<div style="margin-left: 32px;">
+<p>If set, the function will be called every time the option is pressed/clicked/selected.
+</p><p>It will have only one argument:
+</p>
+<a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> pnl - The created <a href="/page/Category_colon_DMenuOptionCVar" title="Category:DMenuOptionCVar">DMenuOptionCVar</a>.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></span>
+</p>
+<div style="margin-left: 32px;">
+The created <a href="/page/Category_colon_DMenuOptionCVar" title="Category:DMenuOptionCVar">DMenuOptionCVar</a></div>
+</div>
+
+

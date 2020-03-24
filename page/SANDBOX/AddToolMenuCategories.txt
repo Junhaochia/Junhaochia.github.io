@@ -1,0 +1,20 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>SANDBOX:AddToolMenuCategories( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=SANDBOX.AddToolMenuCategories">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/SANDBOX/AddToolMenuCategories" title="Special:WhatLinksHere/SANDBOX/AddToolMenuCategories">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>This hook is used to add new categories to spawnmenu tool tabs.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Adds default categories to Utilities tab in spawnmenu.
+</p>
+<pre><code data-language="lua">local function CreateUtilitiesCategories()
+
+        spawnmenu.AddToolCategory( &quot;Utilities&quot;, &quot;User&quot;, &quot;#spawnmenu.utilities.user&quot; )
+        spawnmenu.AddToolCategory( &quot;Utilities&quot;, &quot;Admin&quot;, &quot;#spawnmenu.utilities.admin&quot; )
+
+end        
+hook.Add( &quot;AddToolMenuCategories&quot;, &quot;CreateUtilitiesCategories&quot;, CreateUtilitiesCategories )</code></pre>
+<p><br />
+</p>
+
+

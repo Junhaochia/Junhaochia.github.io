@@ -1,0 +1,59 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>GM:WeaponEquip( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.WeaponEquip">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/WeaponEquip" title="Special:WhatLinksHere/GM/WeaponEquip">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called as a weapon entity is picked up by a player.
+</p><p>See also <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerDroppedWeapon" title="GM/PlayerDroppedWeapon">PlayerDroppedWeapon</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>At the time when this hook is called <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetOwner" title="Entity/GetOwner">GetOwner</a> will return NULL. The owner is set on the next frame
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This will not be called when picking up a weapon you already have as the weapon will be removed and <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/EquipAmmo" title="WEAPON/EquipAmmo">EquipAmmo</a> will be called instead
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a> weapon</span>
+</p>
+<div style="margin-left: 32px;">
+The equipped weapon.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> owner</span>
+</p>
+<div style="margin-left: 32px;">
+The player that is picking up the weapon.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Drops the player's weapons as soon as they pick one up.
+</p>
+<pre><code data-language="lua">hook.Add( &quot;WeaponEquip&quot;, &quot;WeaponEquipExample&quot;, function( wep, ply )
+	timer.Simple( 0, function() ply:DropWeapon( wep ) end )
+end )</code></pre>
+<p><br />
+</p>
+
+

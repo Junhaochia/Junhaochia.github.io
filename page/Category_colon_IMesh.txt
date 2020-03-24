@@ -1,0 +1,19 @@
+<p>Renderable mesh object, can be used to create models on the fly. The only way to create your own IMesh object is to call <a href="/page/Global/Mesh" title="Global/Mesh">Mesh</a>.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>IMeshes only respond to one projected texture.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/2301">#2301</a></b>
+</p>
+</td></tr></table>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "IMesh"</h2>
+<p>The following 3 pages are in this category, out of 3 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>I</h3>
+<ul><li><a href="/page/IMesh/BuildFromTriangles" title="IMesh/BuildFromTriangles">IMesh/BuildFromTriangles</a></li><li><a href="/page/IMesh/Destroy" title="IMesh/Destroy">IMesh/Destroy</a></li><li><a href="/page/IMesh/Draw" title="IMesh/Draw">IMesh/Draw</a></li></ul></div>
+</div></div>

@@ -1,0 +1,25 @@
+<p>The saverestore library contains functions relating to the singleplayer save system built into the game.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "saverestore"</h2>
+<p>The following 13 pages are in this category, out of 13 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>S</h3>
+<ul><li><a href="/page/saverestore/AddRestoreHook" title="saverestore/AddRestoreHook">saverestore/AddRestoreHook</a></li>
+<li><a href="/page/saverestore/AddSaveHook" title="saverestore/AddSaveHook">saverestore/AddSaveHook</a></li>
+<li><a href="/page/saverestore/LoadEntity" title="saverestore/LoadEntity">saverestore/LoadEntity</a></li>
+<li><a href="/page/saverestore/LoadGlobal" title="saverestore/LoadGlobal">saverestore/LoadGlobal</a></li>
+<li><a href="/page/saverestore/PreRestore" title="saverestore/PreRestore">saverestore/PreRestore</a></li></ul></td>
+<td><h3>S cont.</h3>
+<ul><li><a href="/page/saverestore/PreSave" title="saverestore/PreSave">saverestore/PreSave</a></li>
+<li><a href="/page/saverestore/ReadTable" title="saverestore/ReadTable">saverestore/ReadTable</a></li>
+<li><a href="/page/saverestore/ReadVar" title="saverestore/ReadVar">saverestore/ReadVar</a></li>
+<li><a href="/page/saverestore/SaveEntity" title="saverestore/SaveEntity">saverestore/SaveEntity</a></li>
+<li><a href="/page/saverestore/SaveGlobal" title="saverestore/SaveGlobal">saverestore/SaveGlobal</a></li></ul></td>
+<td><h3>S cont.</h3>
+<ul><li><a href="/page/saverestore/WritableKeysInTable" title="saverestore/WritableKeysInTable">saverestore/WritableKeysInTable</a></li>
+<li><a href="/page/saverestore/WriteTable" title="saverestore/WriteTable">saverestore/WriteTable</a></li>
+<li><a href="/page/saverestore/WriteVar" title="saverestore/WriteVar">saverestore/WriteVar</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

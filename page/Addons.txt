@@ -1,0 +1,9 @@
+<p>Addons are files that add new content to your game, such as <a href="/index.php?title=model&amp;action=edit&amp;redlink=1" class="new" title="model (page does not exist)">models</a>, <a href="/index.php?title=vehicle&amp;action=edit&amp;redlink=1" class="new" title="vehicle (page does not exist)">vehicles</a>, <a href="/index.php?title=weapon&amp;action=edit&amp;redlink=1" class="new" title="weapon (page does not exist)">weapons</a>, <a href="/index.php?title=npc&amp;action=edit&amp;redlink=1" class="new" title="npc (page does not exist)">NPCs</a>, or <a href="/page/Using_Tools" title="Using Tools">tools</a> . Addons can be downloaded from the <a rel="nofollow" class="external text" href="https://steamcommunity.com/workshop/">Garry's Mod Workshop</a> through the Addons menu, located in the <a href="/page/Main_Menu" title="Main Menu">Main Menu</a>.
+</p>
+<ul><li> <a href="/page/Addons_Menu" title="Addons Menu">The Addons Menu</a>
+</li><li> <a href="/page/Addons_Usage" title="Addons Usage">Using Addons</a>
+</li><li> <a href="/page/Workshop_Addon_Creation" title="Workshop Addon Creation">How to upload your Addon to the Workshop</a>
+</li><li> <a href="/page/Workshop_Addon_Updating" title="Workshop Addon Updating">How to update your Addon on the Workshop</a>
+</li></ul>
+
+

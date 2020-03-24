@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Player( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/Player" title="Special:WhatLinksHere/Global/Player">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the player with the matching <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/UserID" title="Player/UserID">UserID</a>.
+</p><p>For a function that returns a player based on their <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/EntIndex" title="Entity/EntIndex">EntIndex</a>, see <a href="/page/Global/Entity" title="Global/Entity">Entity</a>.<br />
+For a function that returns a player based on their connection ID, see <a href="/page/Category_colon_player" title="Category:player">player</a>.<a href="/page/player/GetByID" title="player/GetByID">GetByID</a>.<br />
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> playerIndex</span>
+</p>
+<div style="margin-left: 32px;">
+The player index.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a></span>
+</p>
+<div style="margin-left: 32px;">
+The retrieved player.</div>
+</div>
+
+

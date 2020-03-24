@@ -1,0 +1,30 @@
+<p>Varargs are variable number of arguments, meaning the amount of arguments is undefined.
+The most notable function to take varargs is <a href="/page/Global/print" title="Global/print">print</a>.
+</p><p>To create a function with varargs, you must set the <b>last</b> parameter of the function to <b>...</b> (that's three periods). You may use a combination of normal arguments with varargs, but the varargs <b>must</b> appear as the last parameter. Inside of the function's body, you may access each argument by creating a table of the varargs with <b>{ ... }</b>
+</p><p>In the table, each key is the respective number of the argument, with the value being the value passed.
+</p><p>Varargs are stored at negative indices, so functions such as <a href="/page/Category_colon_debug" title="Category:debug">debug</a>.<a href="/page/debug/getlocal" title="debug/getlocal">getlocal</a> may access the values where -1 is the first vararg passed, -2 is the second, etc.
+</p><p>You may create varargs yourself with <a href="/page/Global/unpack" title="Global/unpack">unpack</a>.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Finds the average of a set of numbers.
+</p>
+<pre>function average(...)
+	local args = {...} 
+    local result = 0
+
+	for k, v in pairs(args) do
+		result = result + v
+	end
+
+	return result / #args
+end
+
+print(average(5, 15, 30, 7, 52))</pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">21.8</div>
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

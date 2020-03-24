@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Weapon&#58;HasAmmo( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Weapon.HasAmmo">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Weapon/HasAmmo" title="Special:WhatLinksHere/Weapon/HasAmmo">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns whether the weapon has ammo left or not. It will return false when there's no ammo left in the magazine <b>and</b> when there's no reserve ammo left.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This will return true for weapons like crowbar, gravity gun, etc.
+</p>
+</td></tr></table>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether the weapon has ammo or not.</div>
+</div>
+
+

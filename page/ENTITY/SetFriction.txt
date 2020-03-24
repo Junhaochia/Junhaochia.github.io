@@ -1,0 +1,31 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;SetFriction( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetFriction">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetFriction" title="Special:WhatLinksHere/Entity/SetFriction">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets how much friction an entity has when sliding against a surface. Entities default to 1 (100%) and can be higher or even negative.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Works only for MOVETYPE_STEP entities.
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This has no effect on players.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/1395">#1395</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> friction</span>
+</p>
+<div style="margin-left: 32px;">
+Friction multiplier</div>
+</div>
+
+

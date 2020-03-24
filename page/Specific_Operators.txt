@@ -1,0 +1,45 @@
+<p>Garry's Mod features a set of non-default operators and aliases of already existing ones.
+</p><p>The implemented operators include
+</p>
+<table class="wikitable">
+<tr>
+<th> Operator
+</th></tr>
+<tr>
+<td> continue
+</td></tr></table>
+<p>The implemented aliases are as following
+</p>
+<table class="wikitable">
+<tr>
+<th> Operator </th>
+<th> Alias
+</th></tr>
+<tr>
+<td> or </td>
+<td> &#124;&#124;
+</td></tr>
+<tr>
+<td> and </td>
+<td> &amp;&amp;
+</td></tr>
+<tr>
+<td> not </td>
+<td>&#160;!
+</td></tr>
+<tr>
+<td> ~= </td>
+<td>&#160;!=
+</td></tr>
+<tr>
+<td> --[[ ]] </td>
+<td> /* */
+</td></tr>
+<tr>
+<td> -- </td>
+<td> //
+</td></tr></table>
+<p>It is suggested to avoid using the custom operators if you wish to use your scripts outside of Garry's Mod, as they are incompatible with standard Lua.
+</p>
+
+

@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DHorizontalScroller&#58;MakeDroppable( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DHorizontalScroller.MakeDroppable">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DHorizontalScroller/MakeDroppable" title="Special:WhatLinksHere/DHorizontalScroller/MakeDroppable">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<div class="stubpage"><span>This article is a stub.</span><br />
+Please help the Garry's Mod wiki by adding to it.</div>
+<p>Same as <a href="/page/Category_colon_DDragBase" title="Category:DDragBase">DDragBase</a>:<a href="/page/DDragBase/MakeDroppable" title="DDragBase/MakeDroppable">MakeDroppable</a>.
+TODO: Transclude or whatever to here?
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+</div>
+
+

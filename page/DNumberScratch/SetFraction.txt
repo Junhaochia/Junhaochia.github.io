@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DNumberScratch&#58;SetFraction( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DNumberScratch.SetFraction">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DNumberScratch/SetFraction" title="Special:WhatLinksHere/DNumberScratch/SetFraction">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sets the value of the <a href="/page/Category_colon_DNumberScratch" title="Category:DNumberScratch">DNumberScratch</a> as a fraction, a value between 0 and 1 where 0 is the minimum and 1 is the maximum value of the <a href="/page/Category_colon_DNumberScratch" title="Category:DNumberScratch">DNumberScratch</a>
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> frac</span>
+</p>
+<div style="margin-left: 32px;">
+A value between 0 and 1</div>
+</div>
+
+

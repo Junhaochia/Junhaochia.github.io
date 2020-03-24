@@ -1,0 +1,48 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DColumnSheet&#58;AddSheet( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DColumnSheet.AddSheet">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DColumnSheet/AddSheet" title="Special:WhatLinksHere/DColumnSheet/AddSheet">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelFunc"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelFunc</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">5</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Adds a new column/tab.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+Name of the column/tab</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> pnl</span>
+</p>
+<div style="margin-left: 32px;">
+Panel to be used as contents of the tab. This normally would be a <a href="/page/Category_colon_DPanel" title="Category:DPanel">DPanel</a></div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> icon=nil</span>
+</p>
+<div style="margin-left: 32px;">
+Icon for the tab. This will ideally be a <a href="/page/Silkicons" title="Silkicons">silkicon</a>, but any material name can be used.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>A table containing the following keys:
+</p>
+<ul><li> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> Button - The created tab button that will switch to the given panel
+</li><li> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> Panel - The given panel to switch to when the button is pressed</div>
+</li></ul>
+</div>
+
+

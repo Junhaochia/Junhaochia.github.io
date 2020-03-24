@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="menu" title="Menu">&#160;</span>GM:CaptureVideo( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.CaptureVideo">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/menu/demo_to_video.lua#L286-310">View Source</a> - <a href="/page/Special:WhatLinksHere/GM/CaptureVideo" title="Special:WhatLinksHere/GM/CaptureVideo">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called each frame to record demos to video using <a href="/page/Category_colon_IVideoWriter" title="Category:IVideoWriter">IVideoWriter</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This hook is called every frame regardless of whether or not a demo is being recorded
+</p>
+</td></tr></table>
+
+

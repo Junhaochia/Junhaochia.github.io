@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>saverestore.LoadEntity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=saverestore.LoadEntity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/saverestore/LoadEntity" title="Special:WhatLinksHere/saverestore/LoadEntity">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Loads <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetTable" title="Entity/GetTable">GetTable</a> from the save game file that is being loaded and merges it with the given entitys <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetTable" title="Entity/GetTable">GetTable</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ent</span>
+</p>
+<div style="margin-left: 32px;">
+The entity which will receive the loaded values from the save.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_IRestore" title="Category:IRestore">IRestore</a> save</span>
+</p>
+<div style="margin-left: 32px;">
+The restore object to read the <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetTable" title="Entity/GetTable">GetTable</a> from.</div>
+</div>
+
+

@@ -1,0 +1,30 @@
+<h1> <span class="mw-headline" id="Meta_Tables"> Meta Tables </span></h1>
+<p>Meta tables allow you to add functions to all classes in the game at the same time.
+</p><p>For example, adding a function to "Entity" meta table like so:
+</p>
+<pre><code data-language="lua">
+local meta = FindMetaTable( &quot;Entity&quot; )
+
+function meta:ResetHealth()
+	self:SetHealth( self:GetMaxHealth() )
+end
+</code></pre>
+<p>Will allow you to use it on ALL entities like so:
+</p>
+<pre><code data-language="lua">
+local ply = Entity( 1 ) -- Gets the first player on the server
+ply:ResetHealth() -- We can call this function on any entity, including a player or an NPC.
+</code></pre>
+<p>However adding a function like this:
+</p>
+<pre><code data-language="lua">
+local ply = Entity( 1 )
+
+function ply:ResetHealth()
+	self:SetHealth( self:GetMaxHealth() )
+end</code></pre>
+<p>Will not allow you to use that function on any other entity BUT <a href="/page/Global/Entity" title="Global/Entity">Entity</a>( 1 )
+</p><p>A list of type meta tables that can be retrieved with <a href="/page/Global/FindMetaTable" title="Global/FindMetaTable">FindMetaTable</a> can be found on <a href="/page/Enums/TYPE" title="Enums/TYPE">TYPE_ Enums</a>.
+</p>
+
+

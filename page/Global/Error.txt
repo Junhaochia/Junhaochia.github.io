@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>Error( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Error">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/Error" title="Special:WhatLinksHere/Global/Error">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Throws an error. This is currently an alias of <a href="/page/Global/ErrorNoHalt" title="Global/ErrorNoHalt">ErrorNoHalt</a> despite it once throwing a halting error like <a href="/page/Global/error" title="Global/error">error</a> without the stack trace appended.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This function throws a non-halting error instead of a halting error.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/2113">#2113</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_vararg" title="Category:vararg">vararg</a> arguments</span>
+</p>
+<div style="margin-left: 32px;">
+Converts all arguments to strings and prints them with no spacing or line breaks.</div>
+</div>
+
+

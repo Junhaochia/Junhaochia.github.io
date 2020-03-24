@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>CLuaEmitter&#58;SetParticleCullRadius( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CLuaEmitter.SetParticleCullRadius">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CLuaEmitter/SetParticleCullRadius" title="Special:WhatLinksHere/CLuaEmitter/SetParticleCullRadius">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>The function name has not much in common with its actual function, it applies a radius to every particles that affects the building of the bounding box, as it, usually is constructed by the particle that has the lowest x, y and z and the highest x, y and z, this function just adds/subtracts the radius and inflates the bounding box.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> radius</span>
+</p>
+<div style="margin-left: 32px;">
+Particle radius.</div>
+</div>
+
+

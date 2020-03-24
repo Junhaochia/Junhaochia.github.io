@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DFileBrowser&#58;SetBaseFolder( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DFileBrowser.SetBaseFolder">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DFileBrowser/SetBaseFolder" title="Special:WhatLinksHere/DFileBrowser/SetBaseFolder">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sets the root directory/folder of the file tree.
+</p><p>This needs to be set for the file tree to be displayed.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> baseDir</span>
+</p>
+<div style="margin-left: 32px;">
+The path to the folder to use as the root.</div>
+</div>
+
+

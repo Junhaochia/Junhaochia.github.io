@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>ConVar&#58;SetString( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ConVar.SetString">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ConVar/SetString" title="Special:WhatLinksHere/ConVar/SetString">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets a ConVar's value to the input string. This can only be ran on ConVars created from within Lua.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> value</span>
+</p>
+<div style="margin-left: 32px;">
+Value to set the ConVar to.</div>
+</div>
+
+

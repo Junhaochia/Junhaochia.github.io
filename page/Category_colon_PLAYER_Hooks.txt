@@ -1,0 +1,41 @@
+<p>A list of hooks available in player classes.
+</p><p><br />
+</p>
+<h1> <span class="mw-headline" id="Fields">Fields</span></h1>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col">Type
+</th>
+<th scope="col">Name
+</th>
+<th scope="col">Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_Player" title="Category:Player">Player </a>
+</td>
+<td> Player
+</td>
+<td> The player for which a hook is called.
+</td></tr></table>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "PLAYER Hooks"</h2>
+<p>The following 12 pages are in this category, out of 12 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>P</h3>
+<ul><li><a href="/page/PLAYER/FinishMove" title="PLAYER/FinishMove">PLAYER/FinishMove</a></li>
+<li><a href="/page/PLAYER/GetHandsModel" title="PLAYER/GetHandsModel">PLAYER/GetHandsModel</a></li>
+<li><a href="/page/PLAYER/Init" title="PLAYER/Init">PLAYER/Init</a></li>
+<li><a href="/page/PLAYER/Loadout" title="PLAYER/Loadout">PLAYER/Loadout</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/PLAYER/Move" title="PLAYER/Move">PLAYER/Move</a></li>
+<li><a href="/page/PLAYER/PostDrawViewModel" title="PLAYER/PostDrawViewModel">PLAYER/PostDrawViewModel</a></li>
+<li><a href="/page/PLAYER/PreDrawViewModel" title="PLAYER/PreDrawViewModel">PLAYER/PreDrawViewModel</a></li>
+<li><a href="/page/PLAYER/SetModel" title="PLAYER/SetModel">PLAYER/SetModel</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/PLAYER/SetupDataTables" title="PLAYER/SetupDataTables">PLAYER/SetupDataTables</a></li>
+<li><a href="/page/PLAYER/Spawn" title="PLAYER/Spawn">PLAYER/Spawn</a></li>
+<li><a href="/page/PLAYER/StartMove" title="PLAYER/StartMove">PLAYER/StartMove</a></li>
+<li><a href="/page/PLAYER/ViewModelChanged" title="PLAYER/ViewModelChanged">PLAYER/ViewModelChanged</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

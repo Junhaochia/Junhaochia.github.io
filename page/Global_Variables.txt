@@ -1,0 +1,134 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#GLOBAL_TABLES"><span class="tocnumber">1</span> <span class="toctext">GLOBAL TABLES</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#GAMEMODE"><span class="tocnumber">1.1</span> <span class="toctext">GAMEMODE</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#GM"><span class="tocnumber">1.2</span> <span class="toctext">GM</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#ENT"><span class="tocnumber">1.3</span> <span class="toctext">ENT</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#SWEP"><span class="tocnumber">1.4</span> <span class="toctext">SWEP</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#EFFECT"><span class="tocnumber">1.5</span> <span class="toctext">EFFECT</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#G"><span class="tocnumber">1.6</span> <span class="toctext">_G</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#MODULES"><span class="tocnumber">1.7</span> <span class="toctext">_MODULES</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#NON_CONSTANTS"><span class="tocnumber">2</span> <span class="toctext">NON CONSTANTS</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#CLIENT"><span class="tocnumber">2.1</span> <span class="toctext">CLIENT</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#CLIENT_DLL"><span class="tocnumber">2.2</span> <span class="toctext">CLIENT_DLL</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#SERVER"><span class="tocnumber">2.3</span> <span class="toctext">SERVER</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#GAME_DLL"><span class="tocnumber">2.4</span> <span class="toctext">GAME_DLL</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#MENU_DLL"><span class="tocnumber">2.5</span> <span class="toctext">MENU_DLL</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#GAMEMODE_NAME"><span class="tocnumber">2.6</span> <span class="toctext">GAMEMODE_NAME</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#NULL"><span class="tocnumber">2.7</span> <span class="toctext">NULL</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#VERSION"><span class="tocnumber">2.8</span> <span class="toctext">VERSION</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#VERSIONSTR"><span class="tocnumber">2.9</span> <span class="toctext">VERSIONSTR</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#BRANCH"><span class="tocnumber">2.10</span> <span class="toctext">BRANCH</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#VERSION_2"><span class="tocnumber">2.11</span> <span class="toctext">_VERSION</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#g_Shortcuts"><span class="tocnumber">2.12</span> <span class="toctext">g_ Shortcuts</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#CONSTANTS"><span class="tocnumber">3</span> <span class="toctext">CONSTANTS</span></a>
+<ul>
+<li class="toclevel-2 tocsection-23"><a href="#MISC"><span class="tocnumber">3.1</span> <span class="toctext">MISC</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#ENUMS"><span class="tocnumber">3.2</span> <span class="toctext">ENUMS</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="GLOBAL_TABLES">GLOBAL TABLES</span></h1>
+<h2> <span class="mw-headline" id="GAMEMODE">GAMEMODE</span></h2>
+<p>The table of the currently active gamemode, outside the gamemode files.
+</p>
+<h2> <span class="mw-headline" id="GM">GM</span></h2>
+<p>Same as GAMEMODE, but only exists gamemode files. (gamemodes/&lt;gamemodeName&gt;/gamemode/*.lua)
+</p>
+<h2> <span class="mw-headline" id="ENT">ENT</span></h2>
+<p>Similar to GM, but for Scripted Entities. Exists only in the files defining the entity. (lua/entities/*.lua)
+</p>
+<h2> <span class="mw-headline" id="SWEP">SWEP</span></h2>
+<p>Similar to ENT, but for Scripted Weapons. Exists only in the files defining the weapon. (lua/weapons/*.lua)
+</p>
+<h2> <span class="mw-headline" id="EFFECT">EFFECT</span></h2>
+<p>Similar to ENT, but for Scripted Effects. Exists only in the files defining the effect. (lua/effects/*.lua)
+</p>
+<h2> <span class="mw-headline" id="G">_G</span></h2>
+<p>This table contains all global objects, including itself.
+</p>
+<h2> <span class="mw-headline" id="MODULES">_MODULES</span></h2>
+<p>Contains a list all modules loaded from /modules/.
+</p>
+<h1> <span class="mw-headline" id="NON_CONSTANTS">NON CONSTANTS</span></h1>
+<h2> <span class="mw-headline" id="CLIENT">CLIENT</span></h2>
+<p>This is true whenever the current script is executed on the client. ( client and menu states ) See <a href="/page/States" title="States">States</a>.
+</p>
+<h2> <span class="mw-headline" id="CLIENT_DLL">CLIENT_DLL</span></h2>
+<p>This is true whenever the current script is executed on the client state. See <a href="/page/States" title="States">States</a>.
+</p>
+<h2> <span class="mw-headline" id="SERVER">SERVER</span></h2>
+<p>This is true whenever the current script is executed on the server state. See <a href="/page/States" title="States">States</a>.
+</p>
+<h2> <span class="mw-headline" id="GAME_DLL">GAME_DLL</span></h2>
+<p>This is true whenever the current script is executed on the server state.
+</p>
+<h2> <span class="mw-headline" id="MENU_DLL">MENU_DLL</span></h2>
+<p>This is true when the script is being executed in the menu state. See <a href="/page/States" title="States">States</a>.
+</p>
+<h2> <span class="mw-headline" id="GAMEMODE_NAME">GAMEMODE_NAME</span></h2>
+<p>Contains the name of the current active gamemode
+</p>
+<h2> <span class="mw-headline" id="NULL">NULL</span></h2>
+<p>Represents a non existent entity
+</p>
+<h2> <span class="mw-headline" id="VERSION">VERSION</span></h2>
+<p>Returns the version number of GMod.
+</p>
+<h2> <span class="mw-headline" id="VERSIONSTR">VERSIONSTR</span></h2>
+<p>Returns a nicely formatted version of GMod.
+</p>
+<h2> <span class="mw-headline" id="BRANCH">BRANCH</span></h2>
+<p>Returns the branch the game is running on.
+</p>
+<h2> <span class="mw-headline" id="VERSION_2">_VERSION</span></h2>
+<p>Current Lua version. This returns "Lua 5.1" in GMod at the moment.
+</p>
+<h2> <span class="mw-headline" id="g_Shortcuts">g_ Shortcuts</span></h2>
+<p><span class="client" title="client">&#160;</span> Shortcut pointers to important clientside objects.
+</p>
+<table class="wikitable">
+<tr>
+<th> g_SkyPaint
+</th>
+<td> The active <i>env_skypaint</i> entity. (<a rel="nofollow" class="external text" href="https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/base/entities/entities/env_skypaint.lua#L131">View Source</a>)
+</td></tr>
+<tr>
+<th> g_ContextMenu
+</th>
+<td> Base panel used for context menus. (<a rel="nofollow" class="external text" href="https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/sandbox/gamemode/spawnmenu/contextmenu.lua#L143">View Source</a>)
+</td></tr>
+<tr>
+<th> g_VoicePanelList
+</th>
+<td> Base panel for displaying incoming/outgoing voice messages. (<a rel="nofollow" class="external text" href="https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/base/gamemode/cl_voice.lua#L135">View Source</a>)
+</td></tr>
+<tr>
+<th> g_SpawnMenu
+</th>
+<td> Base panel for the spawn menu. (<a rel="nofollow" class="external text" href="https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/sandbox/gamemode/spawnmenu/spawnmenu.lua#L207">View Source</a>)
+</td></tr></table>
+<h1> <span class="mw-headline" id="CONSTANTS">CONSTANTS</span></h1>
+<h2> <span class="mw-headline" id="MISC">MISC</span></h2>
+<pre><code data-language="lua">
+vector_origin		= Vector( 0, 0, 0 )
+vector_up	 		= Vector( 0, 0, 1 )
+angle_zero			= Angle( 0, 0, 0 )
+
+color_white 		= Color( 255, 255, 255, 255 )
+color_black 		= Color( 0, 0, 0, 255 )
+color_transparent 	= Color( 255, 255, 255, 0 )
+</code></pre>
+<h2> <span class="mw-headline" id="ENUMS">ENUMS</span></h2>
+<p>Almost all enumerations are globals.
+View them here <a href="/page/Category_colon_Enumerations" title="Category:Enumerations">Category:Enumerations</a>
+</p>
+
+

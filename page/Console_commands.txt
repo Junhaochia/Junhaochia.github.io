@@ -1,0 +1,34 @@
+<p>Console commands are easy to add and remove. This is actually one of the easiest things you can learn in Lua and yet it could mean a lot to your actual coding process and time you take up to code whatever you are coding.
+</p>
+<h2> <span class="mw-headline" id="What_are_console_commands.3F"> What are console commands? </span></h2>
+<p>Console commands can be called from the console of the server or client at any time and the function of the command will be executed. This allows the server owner or client to perform actions upon the server. For example, kicking a player.<br />
+<br />
+Please don't confuse console commands with <a href="/page/ConVars" title="ConVars">console variables</a>
+</p>
+<h2> <span class="mw-headline" id="How_do_I_add_them.3F"> How do I add them? </span></h2>
+<p>You can add console commands anywhere in your code by using the <a href="/page/Category_colon_concommand" title="Category:concommand">concommand</a>.<a href="/page/concommand/Add" title="concommand/Add">Add</a> function, just make sure that it is outside of any functions or hooks, so that the command will be added as soon as Lua system initializes.<br />
+<br />
+Here's an example console command:
+</p>
+<pre><code data-language="lua">
+concommand.Add( &quot;commandname&quot;, function( ply, cmd, args, str )
+   print( ply:Nick(), cmd )
+   PrintTable( args )
+end )
+</code></pre>
+<p>The first argument is the command name.<br />
+The second argument is a function which have 3 arguments:
+</p>
+<ul><li> Player - can either be a player object or, if called from the server, a NULL entity.
+</li><li> Command - the command entered.
+</li><li> Arguments - a table of strings containing the arguments entered. This is what you enter after the command, separated by a space (" ")
+</li><li> Full string - the whole text that was entered into the console.
+</li></ul>
+<h2> <span class="mw-headline" id="How_do_I_remove_them.3F"> How do I remove them? </span></h2>
+<p>You can remove console commands using the <a href="/page/Category_colon_concommand" title="Category:concommand">concommand</a>.<a href="/page/concommand/Remove" title="concommand/Remove">Remove</a> function as so:
+</p>
+<pre><code data-language="lua">concommand.Remove( &quot;commandname&quot; )</code></pre>
+<p>Note that only commands added by Lua can be removed.
+</p>
+
+

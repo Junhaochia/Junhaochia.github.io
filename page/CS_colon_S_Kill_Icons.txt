@@ -1,0 +1,203 @@
+<h1> <span class="mw-headline" id="CS:S_Kill_Icons"> CS:S Kill Icons </span></h1>
+<p>Here is a list of weapon icons included in the csd.ttf font.
+Capital letters give you different icons as you can see. By far the most useful of these is the capital "C" icon which is a plain skull and crossbones.
+</p>
+<table class="wikitable">
+<caption> Symbol List
+</caption>
+<tr>
+<th>Letter
+</th>
+<th>Capital Icon
+</th>
+<th>Lowercase Icon
+</th></tr>
+<tr>
+<td>A
+</td>
+<td>Sig 552
+</td>
+<td>USP/P228
+</td></tr>
+<tr>
+<td>B
+</td>
+<td>XM1014
+</td>
+<td>AK-47
+</td></tr>
+<tr>
+<td>C
+</td>
+<td>Skull and Crossbones
+</td>
+<td>Glock
+</td></tr>
+<tr>
+<td>D
+</td>
+<td>Headshot
+</td>
+<td>TMP
+</td></tr>
+<tr>
+<td>E
+</td>
+<td>Shield with hole
+</td>
+<td>Steyr AUG
+</td></tr>
+<tr>
+<td>F
+</td>
+<td>Medical Cross
+</td>
+<td>Deagle
+</td></tr>
+<tr>
+<td>G
+</td>
+<td>Stopwatch
+</td>
+<td>Dollar Sign
+</td></tr>
+<tr>
+<td>H
+</td>
+<td>Man symbol
+</td>
+<td>Sideways Lemon Grenade
+</td></tr>
+<tr>
+<td>I
+</td>
+<td>C4 Icon
+</td>
+<td>G3-SG1
+</td></tr>
+<tr>
+<td>J
+</td>
+<td>Shotgun Shell
+</td>
+<td>Knife
+</td></tr>
+<tr>
+<td>K
+</td>
+<td>Plus Sign
+</td>
+<td>M3 Super90
+</td></tr>
+<tr>
+<td>L
+</td>
+<td>Minus Sign
+</td>
+<td>Mac-10
+</td></tr>
+<tr>
+<td>M
+</td>
+<td>.45 Bullet
+</td>
+<td>P90
+</td></tr>
+<tr>
+<td>N
+</td>
+<td>5.56mm Bullet
+</td>
+<td>Scout Sniper
+</td></tr>
+<tr>
+<td>O
+</td>
+<td>Upright Lemon Grenade
+</td>
+<td>Sig 550
+</td></tr>
+<tr>
+<td>P
+</td>
+<td>Two Banded Canister Grenade
+</td>
+<td>Full Shield
+</td></tr>
+<tr>
+<td>Q
+</td>
+<td>One Banded Canister Grenade
+</td>
+<td>UMP
+</td></tr>
+<tr>
+<td>R
+</td>
+<td>9mm Bullet
+</td>
+<td>AWP
+</td></tr>
+<tr>
+<td>S
+</td>
+<td>5.7mm Bullet
+</td>
+<td>Dual Elites
+</td></tr>
+<tr>
+<td>T
+</td>
+<td>.357 Bullet
+</td>
+<td>FAMAS
+</td></tr>
+<tr>
+<td>U
+</td>
+<td>.50 Bullet
+</td>
+<td>Five-Seven
+</td></tr>
+<tr>
+<td>V
+</td>
+<td>7.62mm
+</td>
+<td>Galil
+</td></tr>
+<tr>
+<td>W
+</td>
+<td>.338 Bullet
+</td>
+<td>Colt M4
+</td></tr>
+<tr>
+<td>X
+</td>
+<td>
+</td>
+<td>MP5
+</td></tr>
+<tr>
+<td>Y
+</td>
+<td>
+</td>
+<td>USP/P228
+</td></tr>
+<tr>
+<td>Z
+</td>
+<td>
+</td>
+<td>Para M249
+</td></tr></table>
+<p>The letters x, y, and z do not have capital letter icons.
+The font also has numbers 0-9 you can use as well.
+</p><p>Here is an image that shows the letters in the format of: [Letter] [Uppercase Icon][Lowercase Icon]
+<a href="/page/File:csd_letters_chart.png" class="image"><img alt="csd letters chart.png" src="/images/thumb/f/f4/csd_letters_chart.png/800px-csd_letters_chart.png" width="800" height="437" /></a>
+</p>
+
+

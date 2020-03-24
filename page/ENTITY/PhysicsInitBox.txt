@@ -1,0 +1,60 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;PhysicsInitBox( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.PhysicsInitBox">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/PhysicsInitBox" title="Special:WhatLinksHere/Entity/PhysicsInitBox">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">4</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Makes the physics object of the entity a AABB.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>If the volume of the resulting box is 0 (the mins and maxs are the same), the mins and maxs will be changed to <a href="/page/Global/Vector" title="Global/Vector">Vector</a>( -1, -1, -1 ) and <a href="/page/Global/Vector" title="Global/Vector">Vector</a>( 1, 1, 1 ), respectively.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This function will automatically destroy any previous physics objects if successful and call <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetSolid" title="Entity/SetSolid">SetSolid</a>( SOLID_BBOX ), <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetMoveType" title="Entity/SetMoveType">SetMoveType</a>( MOVETYPE_VPHYSICS ), and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetCollisionBounds" title="Entity/SetCollisionBounds">SetCollisionBounds</a>( mins, maxs ).
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>Clientside physics objects are broken and do not move properly in some cases. Physics objects should only created on the server or you will experience incorrect physgun beam position, prediction issues, and other unexpected behavior.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> mins</span>
+</p>
+<div style="margin-left: 32px;">
+The minimum position of the box. This is automatically ordered with the maxs.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> maxs</span>
+</p>
+<div style="margin-left: 32px;">
+The maximum position of the box. This is automatically ordered with the mins.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Returns true on success, nil otherwise. This fails when the game cannot create any more <a href="/page/Category_colon_PhysCollide" title="Category:PhysCollide">PhysCollides</a>.</div>
+</div>
+
+

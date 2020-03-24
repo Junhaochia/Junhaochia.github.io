@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>numpad.FromButton( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=numpad.FromButton">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/numpad/FromButton" title="Special:WhatLinksHere/numpad/FromButton">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns true during a function added with <a href="/page/Category_colon_numpad" title="Category:numpad"> numpad</a>.<a href="/page/numpad/Register" title="numpad/Register">Register</a> when the third argument to <a href="/page/Category_colon_numpad" title="Category:numpad">numpad</a>.<a href="/page/numpad/Activate" title="numpad/Activate">Activate</a> is true.
+</p><p>This is caused when a numpad function is triggered by a button SENT being used.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+wasButton</div>
+</div>
+
+

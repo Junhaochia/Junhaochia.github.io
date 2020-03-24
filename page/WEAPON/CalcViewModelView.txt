@@ -1,0 +1,87 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>WEAPON:CalcViewModelView( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=WEAPON.CalcViewModelView">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/WEAPON/CalcViewModelView" title="Special:WhatLinksHere/WEAPON/CalcViewModelView">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">7</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_2"><span class="tocnumber">8</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">9</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">9.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Allows overriding the position and angle of the viewmodel. This hook only works if you haven't overridden <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/CalcViewModelView" title="GM/CalcViewModelView">CalcViewModelView</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ViewModel</span>
+</p>
+<div style="margin-left: 32px;">
+The viewmodel entity</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> OldEyePos</span>
+</p>
+<div style="margin-left: 32px;">
+Original position (before viewmodel bobbing and swaying)</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a> OldEyeAng</span>
+</p>
+<div style="margin-left: 32px;">
+Original angle (before viewmodel bobbing and swaying)</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> EyePos</span>
+</p>
+<div style="margin-left: 32px;">
+Current position</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a> EyeAng</span>
+</p>
+<div style="margin-left: 32px;">
+Current angle</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a></span>
+</p>
+<div style="margin-left: 32px;">
+New position</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_2">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a></span>
+</p>
+<div style="margin-left: 32px;">
+New angle</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>One way to change the viewmodel texture (skin) for your SWEP. Changing it from 0 to 1.
+</p><p>Remember to define the base path (<a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/$cdmaterials">$cdmaterials</a>) for your model when e.g. using <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Crowbar">Crowbar</a> to compile .smd to .mdl; or else you won't get any texture(s) applied. (the game won't know where to look) <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Category:QC_Commands">QC Commands</a>
+</p><p>And remember to use <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/$texturegroup">$texturegroup</a> for multiple skins.
+</p>
+<pre><code data-language="lua">function SWEP:CalcViewModelView(ViewModel, OldEyePos, OldEyeAng, EyePos, EyeAng)
+    -- Set skin to the SWEPs second skin; 1. Starts at 0
+    ViewModel:SetSkin(1)
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="/page/File:CalcViewModelView_ex1_skin0.JPG" class="image"><img alt="" src="/images/thumb/1/14/CalcViewModelView_ex1_skin0.JPG/200px-CalcViewModelView_ex1_skin0.JPG" width="200" height="112" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:CalcViewModelView_ex1_skin0.JPG" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Skin 0</div></div></div>
+<div class="thumb tleft"><div class="thumbinner" style="width:202px;"><a href="/page/File:CalcViewModelView_ex1_skin1.JPG" class="image"><img alt="" src="/images/thumb/e/e0/CalcViewModelView_ex1_skin1.JPG/200px-CalcViewModelView_ex1_skin1.JPG" width="200" height="112" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:CalcViewModelView_ex1_skin1.JPG" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Skin 1</div></div></div></div>
+
+

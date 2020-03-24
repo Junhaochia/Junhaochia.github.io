@@ -1,0 +1,78 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>WEAPON:CalcView( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=WEAPON.CalcView">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/WEAPON/CalcView" title="Special:WhatLinksHere/WEAPON/CalcView">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">6</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_2"><span class="tocnumber">7</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_3"><span class="tocnumber">8</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Allows you to adjust player view while this weapon in use.
+</p><p>This hook is called from the default implementation of <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/CalcView" title="GM/CalcView">CalcView</a> (<a rel="nofollow" class="external autonumber" href="https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/base/gamemode/cl_init.lua#L376-L383">[1]</a>). Therefore, it will not be called if any other hook added to CalcView returns any value, or if the current gamemode overrides the default hook and does not call the SWEP function.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>SWEPs that define this function will not work with the <a href="/page/Global/TauntCamera" title="Global/TauntCamera">taunt camera.</a>
+</p><p><b>Pull Request: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/pull/1348">#1348</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply</span>
+</p>
+<div style="margin-left: 32px;">
+The owner of weapon</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> pos</span>
+</p>
+<div style="margin-left: 32px;">
+Current position of players view</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a> ang</span>
+</p>
+<div style="margin-left: 32px;">
+Current angles of players view</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> fov</span>
+</p>
+<div style="margin-left: 32px;">
+Current FOV of players view</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a></span>
+</p>
+<div style="margin-left: 32px;">
+New position of players view</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_2">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a></span>
+</p>
+<div style="margin-left: 32px;">
+New angle of players view</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_3">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+New FOV of players view</div>
+</div>
+
+

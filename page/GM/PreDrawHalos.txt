@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>GM:PreDrawHalos( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.PreDrawHalos">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/modules/halo.lua#L148">View Source</a> - <a href="/page/Special:WhatLinksHere/GM/PreDrawHalos" title="Special:WhatLinksHere/GM/PreDrawHalos">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called before rendering the halos. This is the place to call <a href="/page/Category_colon_halo" title="Category:halo">halo</a>.<a href="/page/halo/Add" title="halo/Add">Add</a>. This hook is actually running inside of <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawEffects" title="GM/PostDrawEffects">PostDrawEffects</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is a rendering hook with a 3D rendering context.<br />This means that the only rendering functions will work in it are <a href="/page/Category_colon_3D_Rendering_Functions" title="Category:3D Rendering Functions">functions with a 3D rendering context</a>.
+</p>
+</td></tr></table>
+
+

@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NEXTBOT:BehaveStart( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NEXTBOT.BehaveStart">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NEXTBOT/BehaveStart" title="Special:WhatLinksHere/NEXTBOT/BehaveStart">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called to initialize the behaviour.
+</p><p>This is called automatically when the NextBot is created, you should not call it manually.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>You shouldn't override this unless you know what you are doing - it's used to kick off the <a href="/page/Category_colon_coroutine" title="Category:coroutine">coroutine</a> that runs the bot's behaviour. See <a href="/page/Category_colon_NEXTBOT_Hooks" title="Category:NEXTBOT Hooks">NEXTBOT</a>:<a href="/page/NEXTBOT/RunBehaviour" title="NEXTBOT/RunBehaviour">RunBehaviour</a> instead.
+</p>
+</td></tr></table>
+
+

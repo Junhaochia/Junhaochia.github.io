@@ -1,0 +1,56 @@
+<p>The table <i>type</i> is an object that can store multiple values.
+</p><p>The table <i>library</i> is a standard Lua library which provides functions to manipulate tables. In Garry's Mod there are several extra useful functions added to this library.
+</p><p>This category lists the functions available in the table <i>library</i>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "table"</h2>
+<p>The following 42 pages are in this category, out of 42 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>T</h3>
+<ul><li><a href="/page/table/Add" title="table/Add">table/Add</a></li>
+<li><a href="/page/table/ClearKeys" title="table/ClearKeys">table/ClearKeys</a></li>
+<li><a href="/page/table/CollapseKeyValue" title="table/CollapseKeyValue">table/CollapseKeyValue</a></li>
+<li><a href="/page/table/concat" title="table/concat">table/concat</a></li>
+<li><a href="/page/table/Copy" title="table/Copy">table/Copy</a></li>
+<li><a href="/page/table/CopyFromTo" title="table/CopyFromTo">table/CopyFromTo</a></li>
+<li><a href="/page/table/Count" title="table/Count">table/Count</a></li>
+<li><a href="/page/table/DeSanitise" title="table/DeSanitise">table/DeSanitise</a></li>
+<li><a href="/page/table/Empty" title="table/Empty">table/Empty</a></li>
+<li><a href="/page/table/FindNext" title="table/FindNext">table/FindNext</a></li>
+<li><a href="/page/table/FindPrev" title="table/FindPrev">table/FindPrev</a></li>
+<li><a href="/page/table/ForceInsert" title="table/ForceInsert">table/ForceInsert</a></li>
+<li><a href="/page/table/foreach" title="table/foreach">table/foreach</a></li>
+<li><a href="/page/table/ForEach" title="table/ForEach">table/ForEach</a></li></ul></td>
+<td><h3>T cont.</h3>
+<ul><li><a href="/page/table/foreachi" title="table/foreachi">table/foreachi</a></li>
+<li><a href="/page/table/GetFirstKey" title="table/GetFirstKey">table/GetFirstKey</a></li>
+<li><a href="/page/table/GetFirstValue" title="table/GetFirstValue">table/GetFirstValue</a></li>
+<li><a href="/page/table/GetKeys" title="table/GetKeys">table/GetKeys</a></li>
+<li><a href="/page/table/GetLastKey" title="table/GetLastKey">table/GetLastKey</a></li>
+<li><a href="/page/table/GetLastValue" title="table/GetLastValue">table/GetLastValue</a></li>
+<li><a href="/page/table/getn" title="table/getn">table/getn</a></li>
+<li><a href="/page/table/GetWinningKey" title="table/GetWinningKey">table/GetWinningKey</a></li>
+<li><a href="/page/table/HasValue" title="table/HasValue">table/HasValue</a></li>
+<li><a href="/page/table/Inherit" title="table/Inherit">table/Inherit</a></li>
+<li><a href="/page/table/insert" title="table/insert">table/insert</a></li>
+<li><a href="/page/table/IsEmpty" title="table/IsEmpty">table/IsEmpty</a></li>
+<li><a href="/page/table/IsSequential" title="table/IsSequential">table/IsSequential</a></li>
+<li><a href="/page/table/KeyFromValue" title="table/KeyFromValue">table/KeyFromValue</a></li></ul></td>
+<td><h3>T cont.</h3>
+<ul><li><a href="/page/table/KeysFromValue" title="table/KeysFromValue">table/KeysFromValue</a></li>
+<li><a href="/page/table/LowerKeyNames" title="table/LowerKeyNames">table/LowerKeyNames</a></li>
+<li><a href="/page/table/maxn" title="table/maxn">table/maxn</a></li>
+<li><a href="/page/table/Merge" title="table/Merge">table/Merge</a></li>
+<li><a href="/page/table/Random" title="table/Random">table/Random</a></li>
+<li><a href="/page/table/remove" title="table/remove">table/remove</a></li>
+<li><a href="/page/table/RemoveByValue" title="table/RemoveByValue">table/RemoveByValue</a></li>
+<li><a href="/page/table/Reverse" title="table/Reverse">table/Reverse</a></li>
+<li><a href="/page/table/Sanitise" title="table/Sanitise">table/Sanitise</a></li>
+<li><a href="/page/table/sort" title="table/sort">table/sort</a></li>
+<li><a href="/page/table/SortByKey" title="table/SortByKey">table/SortByKey</a></li>
+<li><a href="/page/table/SortByMember" title="table/SortByMember">table/SortByMember</a></li>
+<li><a href="/page/table/SortDesc" title="table/SortDesc">table/SortDesc</a></li>
+<li><a href="/page/table/ToString" title="table/ToString">table/ToString</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

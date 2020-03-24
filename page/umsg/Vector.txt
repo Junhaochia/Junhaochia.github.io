@@ -1,0 +1,17 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>umsg.Vector( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=umsg.Vector">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/umsg/Vector" title="Special:WhatLinksHere/umsg/Vector">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Writes a Vector to the usermessage.
+</p><p><br />
+</p>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />You should be using the <a href="/page/Category_colon_net" title="Category:net">net library</a> instead</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> vector</span>
+</p>
+<div style="margin-left: 32px;">
+The vector to be sent.</div>
+</div>
+
+

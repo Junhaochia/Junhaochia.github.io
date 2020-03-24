@@ -1,0 +1,36 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/NUM" title="Special:WhatLinksHere/Enums/NUM">What links here?</a></div>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>These only exist serverside.
+</p>
+</td></tr></table>
+<p>Various count enums.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> NUM_AI_CLASSES
+</td>
+<td> 36
+</td>
+<td> Amount of <a href="/page/Enums/CLASS" title="Enums/CLASS">CLASS_ Enums</a>. Used by <a href="/page/Global/Add_NPC_Class" title="Global/Add NPC Class">Add_NPC_Class</a>.
+</td></tr>
+<tr>
+<td> NUM_HULLS
+</td>
+<td> 10
+</td>
+<td> Amount of <a href="/page/Enums/HULL" title="Enums/HULL">HULL_ Enums</a>.
+</td></tr></table>
+
+

@@ -1,0 +1,30 @@
+<p>Hooks that are available in Menu <a href="/page/States" title="States">realm</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Menu Hooks"</h2>
+<p>The following 18 pages are in this category, out of 18 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>G</h3>
+<ul><li><a href="/page/GM/CaptureVideo" title="GM/CaptureVideo">GM/CaptureVideo</a></li>
+<li><a href="/page/GM/CloseDermaMenus" title="GM/CloseDermaMenus">GM/CloseDermaMenus</a></li>
+<li><a href="/page/GM/DrawOverlay" title="GM/DrawOverlay">GM/DrawOverlay</a></li>
+<li><a href="/page/GM/GameContentChanged" title="GM/GameContentChanged">GM/GameContentChanged</a></li>
+<li><a href="/page/GM/MenuStart" title="GM/MenuStart">GM/MenuStart</a></li>
+<li><a href="/page/GM/OnLuaError" title="GM/OnLuaError">GM/OnLuaError</a></li></ul></td>
+<td><h3>G cont.</h3>
+<ul><li><a href="/page/GM/StartGame" title="GM/StartGame">GM/StartGame</a></li>
+<li><a href="/page/GM/VGUIMousePressAllowed" title="GM/VGUIMousePressAllowed">GM/VGUIMousePressAllowed</a></li>
+<li><a href="/page/GM/VGUIMousePressed" title="GM/VGUIMousePressed">GM/VGUIMousePressed</a></li>
+<li><a href="/page/GM/WorkshopDownloadedFile" title="GM/WorkshopDownloadedFile">GM/WorkshopDownloadedFile</a></li>
+<li><a href="/page/GM/WorkshopDownloadFile" title="GM/WorkshopDownloadFile">GM/WorkshopDownloadFile</a></li>
+<li><a href="/page/GM/WorkshopDownloadProgress" title="GM/WorkshopDownloadProgress">GM/WorkshopDownloadProgress</a></li></ul></td>
+<td><h3>G cont.</h3>
+<ul><li><a href="/page/GM/WorkshopDownloadTotals" title="GM/WorkshopDownloadTotals">GM/WorkshopDownloadTotals</a></li>
+<li><a href="/page/GM/WorkshopEnd" title="GM/WorkshopEnd">GM/WorkshopEnd</a></li>
+<li><a href="/page/GM/WorkshopStart" title="GM/WorkshopStart">GM/WorkshopStart</a></li>
+<li><a href="/page/GM/WorkshopSubscriptionsProgress" title="GM/WorkshopSubscriptionsProgress">GM/WorkshopSubscriptionsProgress</a></li></ul><h3>P</h3>
+<ul><li><a href="/page/PANEL/OnActivate" title="PANEL/OnActivate">PANEL/OnActivate</a></li>
+<li><a href="/page/PANEL/OnDeactivate" title="PANEL/OnDeactivate">PANEL/OnDeactivate</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

@@ -1,0 +1,126 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/SURF" title="Special:WhatLinksHere/Enums/SURF">What links here?</a></div>
+<p>Surface flags, used by the <a href="/page/Structures/TraceResult" title="Structures/TraceResult">TraceResult structure</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> SURF_LIGHT
+</td>
+<td> 1
+</td>
+<td> Value will hold the light strength
+</td></tr>
+<tr>
+<td> SURF_SKY2D
+</td>
+<td> 2
+</td>
+<td> The surface is a 2D skybox
+</td></tr>
+<tr>
+<td> SURF_SKY
+</td>
+<td> 4
+</td>
+<td> This surface is a skybox, equivalent to HitSky in <a href="/page/Structures/TraceResult" title="Structures/TraceResult">TraceResult structure</a>
+</td></tr>
+<tr>
+<td> SURF_WARP
+</td>
+<td> 8
+</td>
+<td> This surface is animated water
+</td></tr>
+<tr>
+<td> SURF_TRANS
+</td>
+<td> 16
+</td>
+<td> This surface is translucent
+</td></tr>
+<tr>
+<td> SURF_NOPORTAL
+</td>
+<td> 32
+</td>
+<td> This surface cannot have portals placed on, used by Portal's gun
+</td></tr>
+<tr>
+<td> SURF_TRIGGER
+</td>
+<td> 64
+</td>
+<td> This surface is a trigger
+</td></tr>
+<tr>
+<td> SURF_NODRAW
+</td>
+<td> 128
+</td>
+<td> This surface is an invisible entity, equivalent to HitNoDraw in <a href="/page/Structures/TraceResult" title="Structures/TraceResult">TraceResult structure</a>
+</td></tr>
+<tr>
+<td> SURF_HINT
+</td>
+<td> 256
+</td>
+<td> Make a primary bsp splitter
+</td></tr>
+<tr>
+<td> SURF_SKIP
+</td>
+<td> 512
+</td>
+<td> This surface can be ignored by impact effects
+</td></tr>
+<tr>
+<td> SURF_NOLIGHT
+</td>
+<td> 1024
+</td>
+<td> This surface has no lights calculated
+</td></tr>
+<tr>
+<td> SURF_BUMPLIGHT
+</td>
+<td> 2048
+</td>
+<td> Calculate three lightmaps for the surface for bumpmapping
+</td></tr>
+<tr>
+<td> SURF_NOSHADOWS
+</td>
+<td> 4096
+</td>
+<td> No shadows are cast on this surface
+</td></tr>
+<tr>
+<td> SURF_NODECALS
+</td>
+<td> 8192
+</td>
+<td> No decals are applied to this surface
+</td></tr>
+<tr>
+<td> SURF_NOCHOP
+</td>
+<td> 16384
+</td>
+<td> Don't subdivide patches on this surface
+</td></tr>
+<tr>
+<td> SURF_HITBOX
+</td>
+<td> 32768
+</td>
+<td> This surface is part of an entity's hitbox
+</td></tr></table>
+
+

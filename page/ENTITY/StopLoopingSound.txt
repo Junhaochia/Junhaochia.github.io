@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;StopLoopingSound( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.StopLoopingSound">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/StopLoopingSound" title="Special:WhatLinksHere/Entity/StopLoopingSound">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Stops a sound created by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/StartLoopingSound" title="Entity/StartLoopingSound">StartLoopingSound</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> id</span>
+</p>
+<div style="margin-left: 32px;">
+The sound ID returned by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/StartLoopingSound" title="Entity/StartLoopingSound">StartLoopingSound</a></div>
+</div>
+
+

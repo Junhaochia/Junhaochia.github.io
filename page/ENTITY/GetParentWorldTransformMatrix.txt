@@ -1,0 +1,17 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;GetParentWorldTransformMatrix( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.GetParentWorldTransformMatrix">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/GetParentWorldTransformMatrix" title="Special:WhatLinksHere/Entity/GetParentWorldTransformMatrix">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the position and angle of the entity's move parent as a 3x4 matrix (<a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a> is 4x4 so the fourth row goes unused). The first three columns store the angle as a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Rotation_matrix">rotation matrix</a>, and the fourth column stores the position vector.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_VMatrix" title="Category:VMatrix">VMatrix</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>The position and angle matrix.
+</p><p>If the entity has no move parent, an identity matrix will be returned.
+</p>
+If the entity is <a rel="nofollow" class="external text" href="/page/Entity/GetParentAttachment">parented to attachment</a> 0 or the parent isn't a BaseAnimating entity, the equivalent of <pre class="inline">Entity:GetMoveParent():GetWorldTransformMatrix()</code></pre> will be returned.</div>
+</div>
+
+

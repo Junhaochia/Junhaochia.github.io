@@ -1,0 +1,55 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What_is_the_Dev_branch.3F"><span class="tocnumber">1</span> <span class="toctext">What is the Dev branch?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#What_are_the_changes.3F"><span class="tocnumber">2</span> <span class="toctext">What are the changes?</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Why_is_this_needed.3F"><span class="tocnumber">3</span> <span class="toctext">Why is this needed?</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Can_I_play_on_normal_servers_with_this_version_of_the_game.3F"><span class="tocnumber">4</span> <span class="toctext">Can I play on normal servers with this version of the game?</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#How_do_I_switch_to_the_Dev_branch.3F"><span class="tocnumber">5</span> <span class="toctext">How do I switch to the Dev branch?</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#How_do_I_switch_back.3F"><span class="tocnumber">6</span> <span class="toctext">How do I switch back?</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="What_is_the_Dev_branch.3F">What is the Dev branch?</span></h2>
+<p>Dev branch is the next version of Garry's Mod. It contains all the changes that will be included into the game in next update.
+</p>
+<h2> <span class="mw-headline" id="What_are_the_changes.3F">What are the changes?</span></h2>
+<p>You can find a full list of changes between the Dev branch and normal version of the game <a rel="nofollow" class="external text" href="/changelist/">here</a> and a live change list <a rel="nofollow" class="external text" href="http://gmod.facepunch.com/commits/">here</a>.
+</p>
+<h2> <span class="mw-headline" id="Why_is_this_needed.3F">Why is this needed?</span></h2>
+<p>This is needed for two reasons:
+</p>
+<ul><li> So that addon developers can adjust to upcoming changes
+</li><li> So you can test the changes and make sure next update will be less buggy by <a rel="nofollow" class="external text" href="/page/Crash_Reporting">reporting bugs</a>
+</li></ul>
+<h2> <span class="mw-headline" id="Can_I_play_on_normal_servers_with_this_version_of_the_game.3F">Can I play on normal servers with this version of the game?</span></h2>
+<p>Unfortunately, most of the time, no.
+</p><p>This does not mean you shouldn't use the Dev branch.
+</p><p>It is invaluable for us to have people test the game before the next update is out to make sure nothing breaks, or at least not that much.
+</p>
+<h2> <span class="mw-headline" id="How_do_I_switch_to_the_Dev_branch.3F">How do I switch to the Dev branch?</span></h2>
+<p>To switch to the Dev branch:
+</p>
+<ul><li> Right click on <b>Garry's Mod</b> in Steam and select <b>Properties</b>:
+</li></ul>
+<p><a href="/page/File:right_click_gmod.png" class="image"><img alt="right click gmod.png" src="/images/6/6a/right_click_gmod.png" width="242" height="281" /></a>
+</p>
+<ul><li> Go to <b>Betas</b> tab and select <b>dev - Development Branch</b> from the dropdown:
+</li></ul>
+<p><a href="/page/File:gmod_betas_dev.png" class="image"><img alt="gmod betas dev.png" src="/images/d/d4/gmod_betas_dev.png" width="616" height="285" /></a>
+</p>
+<ul><li> You can ignore the "Enter beta access code" field, it does nothing for Garry's Mod.
+</li></ul>
+<h2> <span class="mw-headline" id="How_do_I_switch_back.3F">How do I switch back?</span></h2>
+<p>To switch back to 'Live' branch:
+</p>
+<ul><li> Right click on <b>Garry's Mod</b> in Steam and select <b>Properties</b>:
+</li></ul>
+<p><a href="/page/File:right_click_gmod.png" class="image"><img alt="right click gmod.png" src="/images/6/6a/right_click_gmod.png" width="242" height="281" /></a>
+</p>
+<ul><li> Go to <b>Betas</b> tab and select <b>NONE - Opt out of all beta programs</b> from the dropdown:
+</li></ul>
+<p><a href="/page/File:gmod_betas_none.png" class="image"><img alt="gmod betas none.png" src="/images/1/1f/gmod_betas_none.png" width="616" height="329" /></a>
+</p>
+<ul><li> You can ignore the "Enter beta access code" field, it does nothing for Garry's Mod.
+</li></ul>
+
+

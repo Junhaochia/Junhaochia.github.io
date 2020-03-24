@@ -1,0 +1,157 @@
+<p>Garry's Mod adds a bunch of additional console commands and variables alongside with the Source Engine default ones.
+</p>
+<h2> <span class="mw-headline" id="Lua_related_console_variables">Lua related console variables</span></h2>
+<table class="wikitable">
+<tr>
+<th>Command
+</th>
+<th>Default
+</th>
+<th>Description
+</th></tr>
+<tr>
+<td>lua_error_url
+</td>
+<td>""
+</td>
+<td>Allows to override where to send all occurred Lua errors. If not set, it will send them to <a rel="nofollow" class="external text" href="http://errors.garrysmod.com">Garry's Mod Errors</a> website.
+</td></tr>
+<tr>
+<td>sv_allowcslua
+</td>
+<td>1
+</td>
+<td>Allow clients on the server to run lua_openscript_cl and lua_run_cl.
+</td></tr>
+<tr>
+<td>sv_kickerrornum
+</td>
+<td>0
+</td>
+<td>If a client's amount of clientside errors reaches this value, the client is automatically disconnected from the server. A value of 0 means disabling this functionality.
+</td></tr></table>
+<h2> <span class="mw-headline" id="Physics_Gun_specific_console_variables">Physics Gun specific console variables</span></h2>
+<table class="wikitable">
+<tr>
+<th>Command
+</th>
+<th>Default
+</th>
+<th>Description
+</th></tr>
+<tr>
+<td>physgun_DampingFactor
+</td>
+<td>0.8
+</td>
+<td>
+</td></tr>
+<tr>
+<td>physgun_timeToArrive
+</td>
+<td>0.05
+</td>
+<td>How fast the held entity should arrive to target position in front of the player
+</td></tr>
+<tr>
+<td>physgun_timeToArriveRagdoll
+</td>
+<td>0.1
+</td>
+<td>Same as above but for ragdolls
+</td></tr>
+<tr>
+<td>physgun_teleportDistance
+</td>
+<td>0
+</td>
+<td>If distance between target position and current position of held entity is greater than this, the held entity will teleport to target position, instead of trying to get there by "flying"
+</td></tr>
+<tr>
+<td>physgun_limited
+</td>
+<td>0
+</td>
+<td>When enabled the physgun can only pickup props and ragdolls.
+</td></tr>
+<tr>
+<td>physgun_rotation_sensitivity
+</td>
+<td>0.05
+</td>
+<td>The sensitivity of rotation
+</td></tr>
+<tr>
+<td>physgun_wheelspeed
+</td>
+<td>10
+</td>
+<td>The sensitivity of scrolling
+</td></tr>
+<tr>
+<td>physgun_maxAngular
+</td>
+<td>5000
+</td>
+<td>Max angular velocity of held entity
+</td></tr>
+<tr>
+<td>physgun_maxAngularDamping
+</td>
+<td>10000
+</td>
+<td>
+</td></tr>
+<tr>
+<td>physgun_maxSpeed
+</td>
+<td>5000
+</td>
+<td>Max velocity of held entity
+</td></tr>
+<tr>
+<td>physgun_maxSpeedDamping
+</td>
+<td>10000
+</td>
+<td>
+</td></tr>
+<tr>
+<td>gm_snapgrid
+</td>
+<td>0
+</td>
+<td>Snaps your props to a grid based on the value set
+</td></tr>
+<tr>
+<td>gm_snapangles
+</td>
+<td>45
+</td>
+<td>How many degrees should the entity snap when rotating with shift+e
+</td></tr></table>
+<h2> <span class="mw-headline" id="Miscellaneous_console_variables">Miscellaneous console variables</span></h2>
+<table class="wikitable">
+<tr>
+<th>Command
+</th>
+<th>Default
+</th>
+<th>Description
+</th></tr>
+<tr>
+<td>gmod_language
+</td>
+<td>en
+</td>
+<td>The ISO 639 lowercase language code to use in garrysmod.
+</td></tr>
+<tr>
+<td>cl_steamoverlay_pos
+</td>
+<td>1 (Top Right)
+</td>
+<td>Which corner to position the steam overlay notifications.<br />0=Top Left, 1=Top Right, 2=Bottom Left, 3=Bottom Right
+</td></tr></table>
+
+

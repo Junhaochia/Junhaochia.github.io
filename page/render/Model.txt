@@ -1,0 +1,43 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>render.Model( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.Model">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/client/render.lua#L192-L216">View Source</a> - <a href="/page/Special:WhatLinksHere/render/Model" title="Special:WhatLinksHere/render/Model">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Creates a new <a href="/page/Global/ClientsideModel" title="Global/ClientsideModel">ClientsideModel</a>, renders it at the specified pos/ang, and removes it. Can also be given an existing <a href="/page/Category_colon_CSEnt" title="Category:CSEnt">CSEnt</a> to reuse instead.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This function is only meant to be used in a single render pass kind of scenario, if you need to render a model continuously, use a cached <a href="/page/Global/ClientsideModel" title="Global/ClientsideModel">ClientsideModel</a> and provide it as a second argument.
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>Using this with a map model (<a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/GetWorld" title="game/GetWorld">GetWorld</a>():<a href="/page/Entity/GetModel" title="Entity/GetModel">GetModel</a>()) crashes the game.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3307">#3307</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> settings</span>
+</p>
+<div style="margin-left: 32px;">
+<p>Requires:
+</p>
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> model - The model to draw
+</li><li> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> pos - The position to draw the model at
+</li><li> <a href="/page/Category_colon_Angle" title="Category:Angle">Angle</a> angle - The angles to draw the model at</div>
+</li></ul>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_CSEnt" title="Category:CSEnt">CSEnt</a> ent=nil</span>
+</p>
+<div style="margin-left: 32px;">
+If provided, this entity will be reused instead of creating a new one with <a href="/page/Global/ClientsideModel" title="Global/ClientsideModel">ClientsideModel</a>. Note that the ent's model, position and angles will be changed, and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetNoDraw" title="Entity/SetNoDraw">SetNoDraw</a> will be set to true.</div>
+</div>
+
+

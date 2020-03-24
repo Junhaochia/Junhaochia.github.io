@@ -1,0 +1,68 @@
+<p>Binary modules allow you to extend Lua's functionality using C++.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Headers"><span class="tocnumber">1</span> <span class="toctext">Headers</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Building"><span class="tocnumber">2</span> <span class="toctext">Building</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#A_note_on_userdata_.26_metatables"><span class="tocnumber">3</span> <span class="toctext">A note on userdata &amp; metatables</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Naming_.26_Location"><span class="tocnumber">4</span> <span class="toctext">Naming &amp; Location</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Converting_From_GMod_12"><span class="tocnumber">5</span> <span class="toctext">Converting From GMod 12</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Headers">Headers</span></h1>
+<p>The headers you need and an example are <a rel="nofollow" class="external text" href="https://github.com/Facepunch/gmod-module-base/tree/development">available here</a>.
+</p>
+<h1> <span class="mw-headline" id="Building">Building</span></h1>
+<p>To turn the example into a visual studio project you should download <a rel="nofollow" class="external text" href="https://github.com/premake/premake-core">premake4</a>, place the premake5.exe file in the same directory as BuildProjects.bat (or ideally in your main windows folder), and then run BuildProjects.bat.
+</p><p>This will then create a folder called "windows-vs2010", which contains the Visual Studio project file.
+</p><p>Read up on how to use <a rel="nofollow" class="external text" href="https://github.com/premake/premake-core/wiki">Premake</a> to compile your modules for osx/linux.
+</p>
+<h1> <span class="mw-headline" id="A_note_on_userdata_.26_metatables">A note on userdata &amp; metatables</span></h1>
+<p>Userdata and metatables are handled differently in Garry's Mod. This helps the engine determine userdata type much faster.
+</p><p>First create your metatable (ideally in GMOD_MODULE_OPEN), then create a reference to it and store it globally in a variable.
+</p>
+<pre><code data-language="lua">LUA-&gt;CreateTable();
+
+    LUA-&gt;PushCFunction(gcDeleteWrapper);
+    LUA-&gt;SetField(-2, "__gc");
+
+    LUA-&gt;PushCFunction(toStringWrapper);
+    LUA-&gt;SetField(-2, "__tostring");
+
+    LUA-&gt;PushCFunction(indexWrapper);
+    LUA-&gt;SetField(-2, "__index");
+
+    LUA-&gt;PushCFunction(newIndexWrapper);
+    LUA-&gt;SetField(-2, "__newindex");
+
+metatable = LUA-&gt;ReferenceCreate();
+</code></pre>
+<p>To push your userdata to the stack:
+</p>
+<pre><code data-language="lua">    GarrysMod::Lua::UserData* ud = ( GarrysMod::Lua::UserData* )LUA-&gt;NewUserdata( sizeof( GarrysMod::Lua::UserData ) );
+    ud-&gt;data = pointer_to_your_c_class;
+    ud-&gt;type = your_type_id;
+    LUA-&gt;ReferencePush( metatable );
+    LUA-&gt;SetMetaTable(-2);
+</code></pre>
+<p>To get your userdata from the stack:
+</p>
+<pre><code data-language="lua">    GarrysMod::Lua::UserData* obj = (GarrysMod::Lua::UserData* )LUA-&gt;GetUserdata(position);
+    your_c_class* var = (your_c_class*)(obj-&gt;data);
+</code></pre>
+<h1> <span class="mw-headline" id="Naming_.26_Location">Naming &amp; Location</span></h1>
+<p>The module files should be placed in the garrysmod/lua/bin/ folder.
+</p><p>The names differ between platform and Lua realm.
+</p>
+<ul><li> gmcl_example_win32.dll - windows clientside module
+</li><li> gmsv_example_win32.dll - windows serverside/menu state module
+</li><li> gmcl_example_osx.dll - osx clientside module
+</li><li> gmsv_example_linux.dll - linux serverside/menu state module
+</li></ul>
+<h1> <span class="mw-headline" id="Converting_From_GMod_12">Converting From GMod 12</span></h1>
+<p>The interface in GMod 13 is very different to that of GMod 12 - the handy object wrappers are gone and the interface is very very similar to the standard Lua C API. Infact, nearly all of the functions in the interface work exactly the same way as their equivalents in the Lua C API, they're just named slightly differently.
+</p><p>You should be able to work out what most of the functions do from the example and the <a rel="nofollow" class="external text" href="https://www.lua.org/manual/5.2/manual.html#4.8">Lua C API Documentation</a>.
+</p><p>If you find this kind of stack-level programming too hard, BlackAwps has created some "backwards headers", which should work exactly how the GMod 12 interface worked, you can find them <a rel="nofollow" class="external text" href="https://bitbucket.org/breakpointservers/bkacjios-glua-modules/src">here</a>.
+</p>
+
+

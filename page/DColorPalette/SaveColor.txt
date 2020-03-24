@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DColorPalette&#58;SaveColor( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DColorPalette.SaveColor">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DColorPalette/SaveColor" title="Special:WhatLinksHere/DColorPalette/SaveColor">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Saves the color of given button across sessions.
+</p><p>The color is saved as a panel cookie, see <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetCookie" title="Panel/SetCookie">SetCookie</a> and <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetCookieName" title="Panel/SetCookieName">SetCookieName</a>.
+</p><p>It is expected that the amount of colors per palette (<a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetCookieName" title="Panel/SetCookieName">SetCookieName</a>) is the same every time.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> btn</span>
+</p>
+<div style="margin-left: 32px;">
+The button to save the color of. Used to get the ID of the button.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> clr</span>
+</p>
+<div style="margin-left: 32px;">
+The color to save to this button's index</div>
+</div>
+
+

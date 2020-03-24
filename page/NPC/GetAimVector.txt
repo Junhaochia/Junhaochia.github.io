@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;GetAimVector( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.GetAimVector">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/GetAimVector" title="Special:WhatLinksHere/NPC/GetAimVector">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the aim vector of the NPC. NPC alternative of <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/GetAimVector" title="Player/GetAimVector">GetAimVector</a>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a></span>
+</p>
+<div style="margin-left: 32px;">
+The aim direction of the NPC.</div>
+</div>
+
+

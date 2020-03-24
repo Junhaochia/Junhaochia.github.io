@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Player&#58;AnimRestartMainSequence( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.AnimRestartMainSequence">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/AnimRestartMainSequence" title="Special:WhatLinksHere/Player/AnimRestartMainSequence">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Restarts the main animation on the player, has the same effect as calling <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetCycle" title="Entity/SetCycle">SetCycle</a>( 0 ).
+</p>
+
+

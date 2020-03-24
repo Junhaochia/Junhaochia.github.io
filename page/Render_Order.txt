@@ -1,0 +1,589 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Render_Order"><span class="tocnumber">1</span> <span class="toctext">Render Order</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Hook_Blocks"><span class="tocnumber">2</span> <span class="toctext">Hook Blocks</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#DrawWaterReflections"><span class="tocnumber">2.1</span> <span class="toctext">DrawWaterReflections</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#DrawWorld"><span class="tocnumber">2.2</span> <span class="toctext">DrawWorld</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#DrawOpaqueRenderables"><span class="tocnumber">2.3</span> <span class="toctext">DrawOpaqueRenderables</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#DrawTranslucentRenderables"><span class="tocnumber">2.4</span> <span class="toctext">DrawTranslucentRenderables</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#DrawActiveHUD"><span class="tocnumber">2.5</span> <span class="toctext">DrawActiveHUD</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Render_Order"> Render Order </span></h1>
+<p>This is the call order for <a href="/page/Category_colon_Render_Hooks" title="Category:Render Hooks">render hooks</a>. The lower a hook is on the list, the higher priority it has for drawing. This list is only to be used for priority reference; in reality, while rendering a frame, the engine might call certain groups of hooks multiple times to achieve reflective properties, draw render targets, and fulfill <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/RenderView" title="render/RenderView">RenderView</a> or <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/RenderHUD" title="render/RenderHUD">RenderHUD</a> calls.
+</p><p><br />
+</p>
+<table class="wikitable">
+<tr>
+<th>Hook
+</th>
+<th>Render context
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreRender" title="GM/PreRender">PreRender</a>
+</td>
+<td>None
+</td>
+<td>Context must be setup with <a href="/page/Category_colon_cam" title="Category:cam">cam library</a> to draw
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/RenderScreen" title="WEAPON/RenderScreen">RenderScreen</a>
+</td>
+<td>None
+</td>
+<td>Call condition: Weapon is scripted. Context must be setup with <a href="/page/Category_colon_cam" title="Category:cam">cam library</a> to draw
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/RenderScene" title="GM/RenderScene">RenderScene</a>
+</td>
+<td>None
+</td>
+<td>Context must be setup with <a href="/page/Category_colon_cam" title="Category:cam">cam library</a> to draw. Returning true in this hook will skip all the way down to <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostRender" title="GM/PostRender">PostRender</a>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/DrawMonitors" title="GM/DrawMonitors">DrawMonitors</a>
+</td>
+<td>None
+</td>
+<td>Context must be setup with <a href="/page/Category_colon_cam" title="Category:cam">cam library</a> to draw
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawSkyBox" title="GM/PreDrawSkyBox">PreDrawSkyBox</a>
+</td>
+<td>3D
+</td>
+<td>Call condition: r_3dsky is enabled and <a href="/page/Global/EyePos" title="Global/EyePos">EyePos</a> is in world bounds
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/SetupSkyboxFog" title="GM/SetupSkyboxFog">SetupSkyboxFog</a>
+</td>
+<td>3D
+</td>
+<td>Call condition: r_3dsky is enabled and <a href="/page/Global/EyePos" title="Global/EyePos">EyePos</a> is in world bounds
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/TranslateFOV" title="WEAPON/TranslateFOV">TranslateFOV</a>
+</td>
+<td>3D
+</td>
+<td>Call condition: Weapon is scripted
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDraw2DSkyBox" title="GM/PostDraw2DSkyBox">PostDraw2DSkyBox</a>
+</td>
+<td>3D
+</td>
+<td>Call condition: r_skybox, r_drawopaqueworld, and r_drawworld are enabled, and <a href="/page/Global/EyePos" title="Global/EyePos">EyePos</a> is in world bounds
+</td></tr>
+<tr>
+<td><a href="#DrawOpaqueRenderables">DrawOpaqueRenderables</a>(false, r_skybox is enabled)
+</td>
+<td>3D
+</td>
+<td>Call condition: r_3dsky, r_drawentities, and r_drawopaquerenderables are enabled and <a href="/page/Global/EyePos" title="Global/EyePos">EyePos</a> is in world bounds. For opaque entities in the skybox
+</td></tr>
+<tr>
+<td><a href="#DrawTranslucentRenderables">DrawTranslucentRenderables</a>(false, r_skybox is enabled)
+</td>
+<td>3D
+</td>
+<td>Call condition: r_3dsky is enabled and <a href="/page/Global/EyePos" title="Global/EyePos">EyePos</a> is in world bounds. For translucent entities in the skybox
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawSkyBox" title="GM/PostDrawSkyBox">PostDrawSkyBox</a>
+</td>
+<td>3D
+</td>
+<td>Call condition: r_3dsky is enabled and <a href="/page/Global/EyePos" title="Global/EyePos">EyePos</a> is in world bounds
+</td></tr>
+<tr>
+<td><a href="#DrawWaterReflections">DrawWaterReflections</a>
+</td>
+<td>3D
+</td>
+<td>Call condition: r_WaterDrawReflection and r_drawworld is enabled and reflective water is visible
+</td></tr>
+<tr>
+<td><a href="#DrawWorld">DrawWorld</a>
+</td>
+<td>3D
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/GetMotionBlurValues" title="GM/GetMotionBlurValues">GetMotionBlurValues</a>
+</td>
+<td>3D
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawViewModel" title="GM/PreDrawViewModel">PreDrawViewModel</a>
+</td>
+<td>3D
+</td>
+<td>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This is called once with no arguments.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3024">#3024</a></b>
+</p>
+</td></tr></table>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Draw" title="ENTITY/Draw">Draw</a>
+</td>
+<td>3D
+</td>
+<td>For animated scripted entities with rendergroup RENDERGROUP_VIEWMODEL
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a>
+</td>
+<td>3D
+</td>
+<td>For non-viewmodel entities or viewmodels not linked to a weapon with rendergroup RENDERGROUP_VIEWMODEL
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawViewModel" title="GM/PreDrawViewModel">PreDrawViewModel</a>
+</td>
+<td>3D
+</td>
+<td>For engine "viewmodel" and "predicted_viewmodel" entities linked to a weapon
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/PreDrawViewModel" title="WEAPON/PreDrawViewModel">PreDrawViewModel</a>
+</td>
+<td>3D
+</td>
+<td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/784cd57576d85712fa13a7cea3a9523b4df966b0/garrysmod/gamemodes/base/gamemode/cl_init.lua#L580">Dependent on gamemode implementation</a>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a>
+</td>
+<td>3D
+</td>
+<td>For engine "viewmodel" and "predicted_viewmodel" entities linked to a weapon
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/ViewModelDrawn" title="WEAPON/ViewModelDrawn">ViewModelDrawn</a>
+</td>
+<td>3D
+</td>
+<td>For engine "viewmodel" and "predicted_viewmodel" entities linked to a weapon
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawViewModel" title="GM/PostDrawViewModel">PostDrawViewModel</a>
+</td>
+<td>3D
+</td>
+<td>For engine "viewmodel" and "predicted_viewmodel" entities linked to a weapon
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/PostDrawViewModel" title="WEAPON/PostDrawViewModel">PostDrawViewModel</a>
+</td>
+<td>3D
+</td>
+<td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/784cd57576d85712fa13a7cea3a9523b4df966b0/garrysmod/gamemodes/base/gamemode/cl_init.lua#L614">Dependent on gamemode implementation</a>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawPlayerHands" title="GM/PreDrawPlayerHands">PreDrawPlayerHands</a>
+</td>
+<td>3D
+</td>
+<td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/784cd57576d85712fa13a7cea3a9523b4df966b0/garrysmod/gamemodes/base/gamemode/cl_init.lua#L597">Dependent on gamemode implementation</a>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a>
+</td>
+<td>3D
+</td>
+<td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/784cd57576d85712fa13a7cea3a9523b4df966b0/garrysmod/gamemodes/base/gamemode/cl_init.lua#L600">Dependent on gamemode implementation</a>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawPlayerHands" title="GM/PostDrawPlayerHands">PostDrawPlayerHands</a>
+</td>
+<td>3D
+</td>
+<td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/784cd57576d85712fa13a7cea3a9523b4df966b0/garrysmod/gamemodes/base/gamemode/cl_init.lua#L605">Dependent on gamemode implementation</a>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/DrawTranslucent" title="ENTITY/DrawTranslucent">DrawTranslucent</a>
+</td>
+<td>3D
+</td>
+<td>For animated scripted entities with rendergroup RENDERGROUP_VIEWMODEL_TRANSLUCENT
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a>
+</td>
+<td>3D
+</td>
+<td>For entities with rendergroup RENDERGROUP_VIEWMODEL_TRANSLUCENT
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawEffects" title="GM/PreDrawEffects">PreDrawEffects</a>
+</td>
+<td>3D
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/RenderScreenspaceEffects" title="GM/RenderScreenspaceEffects">RenderScreenspaceEffects</a>
+</td>
+<td>2D
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawEffects" title="GM/PostDrawEffects">PostDrawEffects</a>
+</td>
+<td>2D
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawHalos" title="GM/PreDrawHalos">PreDrawHalos</a>
+</td>
+<td>2D
+</td>
+<td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/modules/halo.lua#L148">Hook called from Lua</a>, which means more <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawEffects" title="GM/PostDrawEffects">PostDrawEffects</a> hooks can be called afterward
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawHUD" title="GM/PreDrawHUD">PreDrawHUD</a>
+</td>
+<td>2D
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="#DrawActiveHUD">DrawActiveHUD</a>
+</td>
+<td>2D
+</td>
+<td>Call condition: r_drawvgui is enabled and game is not paused
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawHUD" title="GM/PostDrawHUD">PostDrawHUD</a>
+</td>
+<td>2D
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDShouldDraw" title="GM/HUDShouldDraw">HUDShouldDraw</a>
+</td>
+<td>2D
+</td>
+<td>Call condition: r_drawvgui is enabled. For NetGraph
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/DrawOverlay" title="GM/DrawOverlay">DrawOverlay</a>
+</td>
+<td>2D
+</td>
+<td>Call condition: r_drawvgui is enabled
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostRenderVGUI" title="GM/PostRenderVGUI">PostRenderVGUI</a>
+</td>
+<td>2D
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostRender" title="GM/PostRender">PostRender</a>
+</td>
+<td>None
+</td>
+<td>Context must be setup with <a href="/page/Category_colon_cam" title="Category:cam">cam library</a> to draw
+</td></tr></table>
+<h1> <span class="mw-headline" id="Hook_Blocks"> Hook Blocks </span></h1>
+<p>For simplicity, "blocks" of hooks will be defined to reduce the repetitive listing of the same functions. These blocks can also relate to groups of methods in the Source renderer that are called multiple times.
+</p>
+<h2> <span class="mw-headline" id="DrawWaterReflections"> DrawWaterReflections </span></h2>
+<table class="wikitable">
+<tr>
+<th>Hook
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/TranslateFOV" title="WEAPON/TranslateFOV">TranslateFOV</a>
+</td>
+<td>Call condition: Weapon is scripted
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/SetupWorldFog" title="GM/SetupWorldFog">SetupWorldFog</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDraw2DSkyBox" title="GM/PostDraw2DSkyBox">PostDraw2DSkyBox</a>
+</td>
+<td>Call condition: r_drawopaqueworld and r_drawworld are enabled
+</td></tr>
+<tr>
+<td><a href="#DrawOpaqueRenderables">DrawOpaqueRenderables</a>(false, true)
+</td>
+<td>Call condition: r_drawopaquerenderables is enabled. Draws reflections for opaque entities in the world not completely submerged in reflective water
+</td></tr>
+<tr>
+<td><a href="#DrawTranslucentRenderables">DrawTranslucentRenderables</a>(false, false)
+</td>
+<td>Draws reflections for translucent entities in the world not completely submerged in reflective water
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/TranslateFOV" title="WEAPON/TranslateFOV">TranslateFOV</a>
+</td>
+<td>Call condition: Weapon is scripted
+</td></tr>
+<tr>
+<td><a href="#DrawOpaqueRenderables">DrawOpaqueRenderables</a>(false, false)
+</td>
+<td>Call condition: r_drawopaquerenderables is enabled. Draws refractions for opaque entities in reflective water
+</td></tr>
+<tr>
+<td><a href="#DrawTranslucentRenderables">DrawTranslucentRenderables</a>(false, false)
+</td>
+<td>Draws refractions for translucent entities in reflective water
+</td></tr></table>
+<h2> <span class="mw-headline" id="DrawWorld"> DrawWorld </span></h2>
+<table class="wikitable">
+<tr>
+<th>Hook
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/TranslateFOV" title="WEAPON/TranslateFOV">TranslateFOV</a>
+</td>
+<td>Call condition: Weapon is scripted
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/NeedsDepthPass" title="GM/NeedsDepthPass">NeedsDepthPass</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/SetupWorldFog" title="GM/SetupWorldFog">SetupWorldFog</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="#DrawOpaqueRenderables">DrawOpaqueRenderables</a>(false, false)
+</td>
+<td>Call condition: r_drawentities and r_drawopaquerenderables are enabled. For opaque entities in the world not completely submerged in reflective water
+</td></tr>
+<tr>
+<td><a href="#DrawTranslucentRenderables">DrawTranslucentRenderables</a>(false, false)
+</td>
+<td>For translucent entities in the world not completely submerged in reflective water
+</td></tr></table>
+<h2> <span class="mw-headline" id="DrawOpaqueRenderables"> DrawOpaqueRenderables </span></h2>
+<p>This block specifies two boolean arguments that point to what PreDraw*Renderables and PostDraw*Renderables will be called with. The first arg is true if the rendering is writing to the depth buffer, and the second is true if the rendering is being done for skybox objects.
+</p><p><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PrePlayerDraw" title="GM/PrePlayerDraw">PrePlayerDraw</a> and <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostPlayerDraw" title="GM/PostPlayerDraw">PostPlayerDraw</a> will be called for every visible, opaque player, just as <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a> will be for every visible, opaque entity. The order in which entities are drawn is based on their distance from the viewport in the world, and thus the entity type hook pairings can be called in any order. In other words, the entity hooks can be called before the player hooks depending on the object render order. With that, the only guarenteed hook orderings are:
+</p>
+<ul><li> (<a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/ShouldDrawLocalPlayer" title="GM/ShouldDrawLocalPlayer">ShouldDrawLocalPlayer</a> is checked first if the player entity being drawn is the local player) -&gt; <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a> -&gt; <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PrePlayerDraw" title="GM/PrePlayerDraw">PrePlayerDraw</a> -&gt; <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostPlayerDraw" title="GM/PostPlayerDraw">PostPlayerDraw</a> for players
+</li><li> (<a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Draw" title="ENTITY/Draw">Draw</a> if the entity is scripted and animated) -&gt; <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a> for entities
+</li><li> (<a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/DrawWorldModel" title="WEAPON/DrawWorldModel">DrawWorldModel</a> if the weapon is scripted) -&gt; <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a> for weapons
+</li></ul>
+<p>Opaque rendergroups include RENDERGROUP_OPAQUE_HUGE, RENDERGROUP_OPAQUE, RENDERGROUP_BOTH, and RENDERGROUP_OPAQUE_BRUSH.
+</p>
+<table class="wikitable">
+<tr>
+<th>Hook
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawOpaqueRenderables" title="GM/PreDrawOpaqueRenderables">PreDrawOpaqueRenderables</a>(isDrawingDepth, isDrawingSkybox)
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/ShouldDrawLocalPlayer" title="GM/ShouldDrawLocalPlayer">ShouldDrawLocalPlayer</a>
+</td>
+<td>Called if the local player is opaque, the thirdperson concommand is not active, and <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/CalcView" title="GM/CalcView">CalcView</a> did not return a table with key "drawviewer" set to true. The return will be cached for all other relevant Draw*Renderables blocks so that it is only called once per frame
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a>
+</td>
+<td>For opaque players
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PrePlayerDraw" title="GM/PrePlayerDraw">PrePlayerDraw</a>
+</td>
+<td>For opaque players
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostPlayerDraw" title="GM/PostPlayerDraw">PostPlayerDraw</a>
+</td>
+<td>For opaque players
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Draw" title="ENTITY/Draw">Draw</a>
+</td>
+<td>For opaque, animated scriped entities
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a>
+</td>
+<td>For opaque entities
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/DrawWorldModel" title="WEAPON/DrawWorldModel">DrawWorldModel</a>
+</td>
+<td>For opaque scriped weapons
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a>
+</td>
+<td>For opaque weapons
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawOpaqueRenderables" title="GM/PostDrawOpaqueRenderables">PostDrawOpaqueRenderables</a>(isDrawingDepth, isDrawingSkybox)
+</td>
+<td>
+</td></tr></table>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="DrawTranslucentRenderables"> DrawTranslucentRenderables </span></h2>
+<p>All of the prior logic from DrawOpaqueRenderables applies here.
+</p><p>Translucent rendergroups include RENDERGROUP_TRANSLUCENT and RENDERGROUP_BOTH.
+</p>
+<table class="wikitable">
+<tr>
+<th>Hook
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawTranslucentRenderables" title="GM/PreDrawTranslucentRenderables">PreDrawTranslucentRenderables</a>(isDrawingDepth, isDrawingSkybox)
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/ShouldDrawLocalPlayer" title="GM/ShouldDrawLocalPlayer">ShouldDrawLocalPlayer</a>
+</td>
+<td>Called if the local player is translucent, the thirdperson concommand is not active, and <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/CalcView" title="GM/CalcView">CalcView</a> did not return a table with key "drawviewer" set to true. The return will be cached for all other relevant Draw*Renderables blocks so that it is only called once per frame
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a>
+</td>
+<td>For translucent players
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PrePlayerDraw" title="GM/PrePlayerDraw">PrePlayerDraw</a>
+</td>
+<td>For translucent players
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostPlayerDraw" title="GM/PostPlayerDraw">PostPlayerDraw</a>
+</td>
+<td>For translucent players
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Draw" title="ENTITY/Draw">Draw</a>
+</td>
+<td>For translucent, animated scriped entities
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a>
+</td>
+<td>For translucent entities
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/DrawWorldModelTranslucent" title="WEAPON/DrawWorldModelTranslucent">DrawWorldModelTranslucent</a>
+</td>
+<td>For translucent scriped weapons
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a>
+</td>
+<td>For translucent weapons
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/DrawPhysgunBeam" title="GM/DrawPhysgunBeam">DrawPhysgunBeam</a>
+</td>
+<td>For engine physgun_beam entities
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawTranslucentRenderables" title="GM/PostDrawTranslucentRenderables">PostDrawTranslucentRenderables</a>(isDrawingDepth, isDrawingSkybox)
+</td>
+<td>
+</td></tr></table>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="DrawActiveHUD"> DrawActiveHUD </span></h2>
+<table class="wikitable">
+<tr>
+<th>Hook
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDPaintBackground" title="GM/HUDPaintBackground">HUDPaintBackground</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/DrawHUDBackground" title="WEAPON/DrawHUDBackground">DrawHUDBackground</a>
+</td>
+<td>Call condition: Weapon is scripted
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDPaint" title="GM/HUDPaint">HUDPaint</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDDrawTargetID" title="GM/HUDDrawTargetID">HUDDrawTargetID</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDDrawPickupHistory" title="GM/HUDDrawPickupHistory">HUDDrawPickupHistory</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/DrawDeathNotice" title="GM/DrawDeathNotice">DrawDeathNotice</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/DrawHUD" title="WEAPON/DrawHUD">DrawHUD</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDDrawScoreBoard" title="GM/HUDDrawScoreBoard">HUDDrawScoreBoard</a>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/TranslateFOV" title="WEAPON/TranslateFOV">TranslateFOV</a>
+</td>
+<td>Call condition: Weapon is scripted
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/DoDrawCrosshair" title="WEAPON/DoDrawCrosshair">DoDrawCrosshair</a>
+</td>
+<td>Call condition: Weapon is scripted and has SWEP.DrawCrosshair set to true
+</td></tr>
+<tr>
+<td><a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDShouldDraw" title="GM/HUDShouldDraw">HUDShouldDraw</a>
+</td>
+<td>For CHudWeaponSelection
+</td></tr></table>
+
+

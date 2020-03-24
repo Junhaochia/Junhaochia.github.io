@@ -1,0 +1,42 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/MATERIAL_LIGHT" title="Special:WhatLinksHere/Enums/MATERIAL LIGHT">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/SetLocalModelLights" title="render/SetLocalModelLights">SetLocalModelLights</a>. Clientside only.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> MATERIAL_LIGHT_DISABLE
+</td>
+<td> 0
+</td>
+<td> No light
+</td></tr>
+<tr>
+<td> MATERIAL_LIGHT_POINT
+</td>
+<td> 1
+</td>
+<td> Point light
+</td></tr>
+<tr>
+<td> MATERIAL_LIGHT_DIRECTIONAL
+</td>
+<td> 2
+</td>
+<td> Directional light
+</td></tr>
+<tr>
+<td> MATERIAL_LIGHT_SPOT
+</td>
+<td> 3
+</td>
+<td> Spot light
+</td></tr></table>
+
+

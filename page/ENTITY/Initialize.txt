@@ -1,0 +1,75 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>ENTITY:Initialize( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ENTITY.Initialize">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ENTITY/Initialize" title="Special:WhatLinksHere/ENTITY/Initialize">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">2.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when the entity is created. This is called when you <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/Spawn" title="Entity/Spawn">Spawn</a> the custom entity.
+</p><p>This is called <b>after</b> <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/SetupDataTables" title="ENTITY/SetupDataTables">SetupDataTables</a> and <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/OnEntityCreated" title="GM/OnEntityCreated">OnEntityCreated</a>.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This is sometimes not called clientside. You can work around this by setting a variable in Initialize and check if it exists in <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Think" title="ENTITY/Think">Think</a>. See the example below.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/2732">#2732</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Example Initialize function
+</p>
+<pre><code data-language="lua">function ENT:Initialize()
+	-- Sets what model to use
+	self:SetModel( &quot;models/props/cs_assault/money.mdl&quot; )
+
+	-- Sets what color to use
+	self:SetColor( Color( 200, 255, 200 ) )
+
+	-- Physics stuff
+	self:SetMoveType( MOVETYPE_VPHYSICS )
+	self:SetSolid( SOLID_VPHYSICS )
+
+	-- Init physics only on server, so it doesn't mess up physgun beam
+	if ( SERVER ) then self:PhysicsInit( SOLID_VPHYSICS ) end
+	
+	-- Make prop to fall on spawn
+	local phys = self:GetPhysicsObject()
+	if ( IsValid( phys ) ) then phys:Wake() end
+end</code></pre>
+<p><br />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Fixes the function not being called clientside.
+</p>
+<pre><code data-language="lua">function SWEP:Initialize()
+	self.m_bInitialized = true
+
+	-- Other code
+end
+
+function SWEP:Think()
+	if (not self.m_bInitialized) then
+		self:Initialize()
+	end
+
+	-- Other code
+end</code></pre>
+<p><br />
+</p>
+
+

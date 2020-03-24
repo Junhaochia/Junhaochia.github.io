@@ -1,0 +1,88 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetBGColor( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetBGColor">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetBGColor" title="Special:WhatLinksHere/Panel/SetBGColor">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">6</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the background color of a panel such as a <a href="/page/Category_colon_RichText" title="Category:RichText">RichText</a>, <a href="/page/Category_colon_Label" title="Category:Label">Label</a> or <a href="/page/Category_colon_DColorCube" title="Category:DColorCube">DColorCube</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This doesn't apply to all VGUI elements and its function varies between them
+</p>
+</td></tr></table>
+<p>For <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a> elements, you must use <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetPaintBackgroundEnabled" title="Panel/SetPaintBackgroundEnabled">SetPaintBackgroundEnabled</a>( true ) before applying the color.
+</p><p>This will not work on setup of the panel - you should use this function in a hook like <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/ApplySchemeSettings" title="PANEL/ApplySchemeSettings">ApplySchemeSettings</a> or <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/PerformLayout" title="PANEL/PerformLayout">PerformLayout</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> r or color</span>
+</p>
+<div style="margin-left: 32px;">
+The red channel of the color, or a <a href="/page/Structures/Color" title="Structures/Color">Color structure</a>. If you pass the latter, the following three arguments are ignored.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> g</span>
+</p>
+<div style="margin-left: 32px;">
+The green channel of the color.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> b</span>
+</p>
+<div style="margin-left: 32px;">
+The blue channel of the color.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> a</span>
+</p>
+<div style="margin-left: 32px;">
+The alpha channel of the color.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a RichText panel that mimics a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Blue_Screen_of_Death">blue screen of death</a>.
+</p>
+<pre><code data-language="lua">-- Create a window frame
+TextFrame = vgui.Create(&quot;DFrame&quot;)
+TextFrame:SetSize(300, 100)
+TextFrame:Center()
+TextFrame:SetTitle(&quot;Windows XP Blue Screen&quot;)
+TextFrame:MakePopup()
+
+-- RichText panel
+local richtext = vgui.Create(&quot;RichText&quot;, TextFrame)
+richtext:Dock(FILL)
+
+-- Sample text
+richtext:SetText(&quot;A problem has been detected and Windows has been shut down to prevent damage to your computer.\n\nMOTHERBOARD_FRIED&quot;)
+
+-- When the panel is ready for layout, set the background color to blue
+function richtext:PerformLayout()
+	
+	self:SetBGColor(Color(0, 0, 255))
+	
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><br /><br />
+<a href="/page/File:RichText_SetBGColor_example1.png" class="image"><img alt="RichText SetBGColor example1.png" src="/images/2/2e/RichText_SetBGColor_example1.png" width="300" height="100" /></a></div>
+
+

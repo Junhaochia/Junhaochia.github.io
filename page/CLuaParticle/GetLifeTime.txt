@@ -1,0 +1,18 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>CLuaParticle&#58;GetLifeTime( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CLuaParticle.GetLifeTime">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CLuaParticle/GetLifeTime" title="Special:WhatLinksHere/CLuaParticle/GetLifeTime">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the 'life time' of the particle, how long the particle existed since its creation.
+</p><p>This value will always be between 0 and <a href="/page/Category_colon_CLuaParticle" title="Category:CLuaParticle">CLuaParticle</a>:<a href="/page/CLuaParticle/GetDieTime" title="CLuaParticle/GetDieTime">GetDieTime</a>.<br />
+It changes automatically as time goes.
+</p><p>It can be manipulated using <a href="/page/Category_colon_CLuaParticle" title="Category:CLuaParticle">CLuaParticle</a>:<a href="/page/CLuaParticle/SetLifeTime" title="CLuaParticle/SetLifeTime">SetLifeTime</a>.<br />
+If the life time of the particle will be more than <a href="/page/Category_colon_CLuaParticle" title="Category:CLuaParticle">CLuaParticle</a>:<a href="/page/CLuaParticle/GetDieTime" title="CLuaParticle/GetDieTime">GetDieTime</a>, it will be removed.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+How long the particle existed, in seconds.</div>
+</div>
+
+

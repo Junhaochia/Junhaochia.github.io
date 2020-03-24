@@ -1,0 +1,126 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:DMenu_ex1.png" class="image" title="Example DMenu"><img alt="Example DMenu" src="/images/2/2f/DMenu_ex1.png" width="268" height="67" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DScrollPanel" title="Category:DScrollPanel">DScrollPanel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DMenu">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DMenu" title="Special:WhatLinksHere/Category:DMenu">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>A simple menu with sub menu, icon and convar support.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DScrollPanel" title="Category:DScrollPanel">DScrollPanel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/GetBackgroundColor" title="DPanel/GetBackgroundColor">DPanel/GetBackgroundColor</a></li>
+<li><a href="/page/DPanel/GetDisabled" title="DPanel/GetDisabled">DPanel/GetDisabled</a></li>
+<li><a href="/page/DPanel/GetDrawBackground" title="DPanel/GetDrawBackground">DPanel/GetDrawBackground</a></li>
+<li><a href="/page/DPanel/GetPaintBackground" title="DPanel/GetPaintBackground">DPanel/GetPaintBackground</a></li>
+<li><a href="/page/DPanel/SetBackgroundColor" title="DPanel/SetBackgroundColor">DPanel/SetBackgroundColor</a></li>
+<li><a href="/page/DPanel/SetDisabled" title="DPanel/SetDisabled">DPanel/SetDisabled</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/SetDrawBackground" title="DPanel/SetDrawBackground">DPanel/SetDrawBackground</a></li>
+<li><a href="/page/DPanel/SetPaintBackground" title="DPanel/SetPaintBackground">DPanel/SetPaintBackground</a></li>
+<li><a href="/page/DScrollPanel/AddItem" title="DScrollPanel/AddItem">DScrollPanel/AddItem</a></li>
+<li><a href="/page/DScrollPanel/GetCanvas" title="DScrollPanel/GetCanvas">DScrollPanel/GetCanvas</a></li>
+<li><a href="/page/DScrollPanel/GetPadding" title="DScrollPanel/GetPadding">DScrollPanel/GetPadding</a></li>
+<li><a href="/page/DScrollPanel/GetVBar" title="DScrollPanel/GetVBar">DScrollPanel/GetVBar</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DScrollPanel/InnerWidth" title="DScrollPanel/InnerWidth">DScrollPanel/InnerWidth</a></li>
+<li><a href="/page/DScrollPanel/Rebuild" title="DScrollPanel/Rebuild">DScrollPanel/Rebuild</a></li>
+<li><a href="/page/DScrollPanel/ScrollToChild" title="DScrollPanel/ScrollToChild">DScrollPanel/ScrollToChild</a></li>
+<li><a href="/page/DScrollPanel/SetCanvas" title="DScrollPanel/SetCanvas">DScrollPanel/SetCanvas</a></li>
+<li><a href="/page/DScrollPanel/SetPadding" title="DScrollPanel/SetPadding">DScrollPanel/SetPadding</a></li>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a DMenu with a submenu.
+</p>
+<pre><code data-language="lua">local Menu = DermaMenu()
+
+-- Add a simple option.
+Menu:AddOption( &quot;Simple option&quot; )
+
+-- Simple option, but we're going to add an icon
+local btnWithIcon = Menu:AddOption( &quot;Option with icon&quot; )
+btnWithIcon:SetIcon( &quot;icon16/bug.png&quot; )	-- Icons are in materials/icon16 folder
+
+-- Adds a simple line spacer
+Menu:AddSpacer()
+
+-- Add a submenu
+local SubMenu = Menu:AddSubMenu( &quot;A Sub Menu&quot; )
+SubMenu:AddOption( &quot;Sub Option #1&quot; ):SetIcon( &quot;icon16/group.png&quot; )
+
+-- Add a submenu with icon
+local Child, Parent = Menu:AddSubMenu( &quot;A Sub Menu with Icon&quot; )
+Parent:SetIcon( &quot;icon16/arrow_refresh.png&quot; )
+Child:AddOption( &quot;Sub Option #2&quot; ):SetIcon( &quot;icon16/group.png&quot; )
+
+-- Open the menu
+Menu:Open()</code></pre>
+<p><br />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DMenu"</h2>
+<p>The following 27 pages are in this category, out of 27 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DMenu/AddCVar" title="DMenu/AddCVar">DMenu/AddCVar</a></li>
+<li><a href="/page/DMenu/AddOption" title="DMenu/AddOption">DMenu/AddOption</a></li>
+<li><a href="/page/DMenu/AddPanel" title="DMenu/AddPanel">DMenu/AddPanel</a></li>
+<li><a href="/page/DMenu/AddSpacer" title="DMenu/AddSpacer">DMenu/AddSpacer</a></li>
+<li><a href="/page/DMenu/AddSubMenu" title="DMenu/AddSubMenu">DMenu/AddSubMenu</a></li>
+<li><a href="/page/DMenu/ChildCount" title="DMenu/ChildCount">DMenu/ChildCount</a></li>
+<li><a href="/page/DMenu/ClearHighlights" title="DMenu/ClearHighlights">DMenu/ClearHighlights</a></li>
+<li><a href="/page/DMenu/CloseSubMenu" title="DMenu/CloseSubMenu">DMenu/CloseSubMenu</a></li>
+<li><a href="/page/DMenu/GetChild" title="DMenu/GetChild">DMenu/GetChild</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DMenu/GetDeleteSelf" title="DMenu/GetDeleteSelf">DMenu/GetDeleteSelf</a></li>
+<li><a href="/page/DMenu/GetDrawBorder" title="DMenu/GetDrawBorder">DMenu/GetDrawBorder</a></li>
+<li><a href="/page/DMenu/GetDrawColumn" title="DMenu/GetDrawColumn">DMenu/GetDrawColumn</a></li>
+<li><a href="/page/DMenu/GetMaxHeight" title="DMenu/GetMaxHeight">DMenu/GetMaxHeight</a></li>
+<li><a href="/page/DMenu/GetMinimumWidth" title="DMenu/GetMinimumWidth">DMenu/GetMinimumWidth</a></li>
+<li><a href="/page/DMenu/GetOpenSubMenu" title="DMenu/GetOpenSubMenu">DMenu/GetOpenSubMenu</a></li>
+<li><a href="/page/DMenu/Hide" title="DMenu/Hide">DMenu/Hide</a></li>
+<li><a href="/page/DMenu/HighlightItem" title="DMenu/HighlightItem">DMenu/HighlightItem</a></li>
+<li><a href="/page/DMenu/Open" title="DMenu/Open">DMenu/Open</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DMenu/OpenSubMenu" title="DMenu/OpenSubMenu">DMenu/OpenSubMenu</a></li>
+<li><a href="/page/DMenu/OptionSelected" title="DMenu/OptionSelected">DMenu/OptionSelected</a></li>
+<li><a href="/page/DMenu/OptionSelectedInternal" title="DMenu/OptionSelectedInternal">DMenu/OptionSelectedInternal</a></li>
+<li><a href="/page/DMenu/SetDeleteSelf" title="DMenu/SetDeleteSelf">DMenu/SetDeleteSelf</a></li>
+<li><a href="/page/DMenu/SetDrawBorder" title="DMenu/SetDrawBorder">DMenu/SetDrawBorder</a></li>
+<li><a href="/page/DMenu/SetDrawColumn" title="DMenu/SetDrawColumn">DMenu/SetDrawColumn</a></li>
+<li><a href="/page/DMenu/SetMaxHeight" title="DMenu/SetMaxHeight">DMenu/SetMaxHeight</a></li>
+<li><a href="/page/DMenu/SetMinimumWidth" title="DMenu/SetMinimumWidth">DMenu/SetMinimumWidth</a></li>
+<li><a href="/page/DMenu/SetOpenSubMenu" title="DMenu/SetOpenSubMenu">DMenu/SetOpenSubMenu</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

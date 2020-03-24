@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>IMaterial&#58;GetTexture( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IMaterial.GetTexture">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IMaterial/GetTexture" title="Special:WhatLinksHere/IMaterial/GetTexture">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns an <a href="/page/Category_colon_ITexture" title="Category:ITexture">ITexture</a> based on the passed shader parameter.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> param</span>
+</p>
+<div style="margin-left: 32px;">
+The <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Category:List_of_Shader_Parameters">shader parameter</a> to retrieve. This should normally be <i>$basetexture</i>.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_ITexture" title="Category:ITexture">ITexture</a></span>
+</p>
+<div style="margin-left: 32px;">
+The value of the shader parameter. Returns nothing if the param doesn't exist.</div>
+</div>
+
+

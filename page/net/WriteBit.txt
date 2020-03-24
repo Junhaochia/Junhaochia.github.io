@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>net.WriteBit( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=net.WriteBit">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/net/WriteBit" title="Special:WhatLinksHere/net/WriteBit">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Appends a boolean (as 1 or 0) to the current net message.
+</p><p>Please note that the bit is written here from a <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> (true/false) but <a href="/page/Category_colon_net" title="Category:net">net</a>.<a href="/page/net/ReadBit" title="net/ReadBit">ReadBit</a> returns a number.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> boolean</span>
+</p>
+<div style="margin-left: 32px;">
+Bit status (false = 0, true = 1)</div>
+</div>
+
+

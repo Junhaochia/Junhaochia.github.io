@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetExpensiveShadow( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetExpensiveShadow">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetExpensiveShadow" title="Special:WhatLinksHere/Panel/SetExpensiveShadow">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Adds a shadow falling to the bottom right corner of the panel's text. This has no effect on panels that do not derive from Label.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> distance</span>
+</p>
+<div style="margin-left: 32px;">
+The distance of the shadow from the panel.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> Color</span>
+</p>
+<div style="margin-left: 32px;">
+The color of the shadow. Uses the <a href="/page/Structures/Color" title="Structures/Color">Color structure</a>.</div>
+</div>
+
+

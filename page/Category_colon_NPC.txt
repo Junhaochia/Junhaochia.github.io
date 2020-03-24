@@ -1,0 +1,98 @@
+<p>This is a list of all methods only available for NPCs. It is also possible to call <a rel="nofollow" class="external text" href="/index.php?title=Category:Entity">Entity</a> functions on NPCs.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "NPC"</h2>
+<p>The following 86 pages are in this category, out of 86 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>N</h3>
+<ul><li><a href="/page/NPC/AddEntityRelationship" title="NPC/AddEntityRelationship">NPC/AddEntityRelationship</a></li>
+<li><a href="/page/NPC/AddRelationship" title="NPC/AddRelationship">NPC/AddRelationship</a></li>
+<li><a href="/page/NPC/AlertSound" title="NPC/AlertSound">NPC/AlertSound</a></li>
+<li><a href="/page/NPC/CapabilitiesAdd" title="NPC/CapabilitiesAdd">NPC/CapabilitiesAdd</a></li>
+<li><a href="/page/NPC/CapabilitiesClear" title="NPC/CapabilitiesClear">NPC/CapabilitiesClear</a></li>
+<li><a href="/page/NPC/CapabilitiesGet" title="NPC/CapabilitiesGet">NPC/CapabilitiesGet</a></li>
+<li><a href="/page/NPC/CapabilitiesRemove" title="NPC/CapabilitiesRemove">NPC/CapabilitiesRemove</a></li>
+<li><a href="/page/NPC/Classify" title="NPC/Classify">NPC/Classify</a></li>
+<li><a href="/page/NPC/ClearCondition" title="NPC/ClearCondition">NPC/ClearCondition</a></li>
+<li><a href="/page/NPC/ClearEnemyMemory" title="NPC/ClearEnemyMemory">NPC/ClearEnemyMemory</a></li>
+<li><a href="/page/NPC/ClearExpression" title="NPC/ClearExpression">NPC/ClearExpression</a></li>
+<li><a href="/page/NPC/ClearGoal" title="NPC/ClearGoal">NPC/ClearGoal</a></li>
+<li><a href="/page/NPC/ClearSchedule" title="NPC/ClearSchedule">NPC/ClearSchedule</a></li>
+<li><a href="/page/NPC/ConditionName" title="NPC/ConditionName">NPC/ConditionName</a></li>
+<li><a href="/page/NPC/Disposition" title="NPC/Disposition">NPC/Disposition</a></li>
+<li><a href="/page/NPC/DropWeapon" title="NPC/DropWeapon">NPC/DropWeapon</a></li>
+<li><a href="/page/NPC/ExitScriptedSequence" title="NPC/ExitScriptedSequence">NPC/ExitScriptedSequence</a></li>
+<li><a href="/page/NPC/FearSound" title="NPC/FearSound">NPC/FearSound</a></li>
+<li><a href="/page/NPC/FoundEnemySound" title="NPC/FoundEnemySound">NPC/FoundEnemySound</a></li>
+<li><a href="/page/NPC/GetActiveWeapon" title="NPC/GetActiveWeapon">NPC/GetActiveWeapon</a></li>
+<li><a href="/page/NPC/GetActivity" title="NPC/GetActivity">NPC/GetActivity</a></li>
+<li><a href="/page/NPC/GetAimVector" title="NPC/GetAimVector">NPC/GetAimVector</a></li>
+<li><a href="/page/NPC/GetArrivalActivity" title="NPC/GetArrivalActivity">NPC/GetArrivalActivity</a></li>
+<li><a href="/page/NPC/GetArrivalSequence" title="NPC/GetArrivalSequence">NPC/GetArrivalSequence</a></li>
+<li><a href="/page/NPC/GetBlockingEntity" title="NPC/GetBlockingEntity">NPC/GetBlockingEntity</a></li>
+<li><a href="/page/NPC/GetCurrentSchedule" title="NPC/GetCurrentSchedule">NPC/GetCurrentSchedule</a></li>
+<li><a href="/page/NPC/GetCurrentWeaponProficiency" title="NPC/GetCurrentWeaponProficiency">NPC/GetCurrentWeaponProficiency</a></li>
+<li><a href="/page/NPC/GetEnemy" title="NPC/GetEnemy">NPC/GetEnemy</a></li>
+<li><a href="/page/NPC/GetExpression" title="NPC/GetExpression">NPC/GetExpression</a></li></ul></td>
+<td><h3>N cont.</h3>
+<ul><li><a href="/page/NPC/GetHullType" title="NPC/GetHullType">NPC/GetHullType</a></li>
+<li><a href="/page/NPC/GetMovementActivity" title="NPC/GetMovementActivity">NPC/GetMovementActivity</a></li>
+<li><a href="/page/NPC/GetMovementSequence" title="NPC/GetMovementSequence">NPC/GetMovementSequence</a></li>
+<li><a href="/page/NPC/GetNPCState" title="NPC/GetNPCState">NPC/GetNPCState</a></li>
+<li><a href="/page/NPC/GetPathDistanceToGoal" title="NPC/GetPathDistanceToGoal">NPC/GetPathDistanceToGoal</a></li>
+<li><a href="/page/NPC/GetPathTimeToGoal" title="NPC/GetPathTimeToGoal">NPC/GetPathTimeToGoal</a></li>
+<li><a href="/page/NPC/GetShootPos" title="NPC/GetShootPos">NPC/GetShootPos</a></li>
+<li><a href="/page/NPC/GetTarget" title="NPC/GetTarget">NPC/GetTarget</a></li>
+<li><a href="/page/NPC/Give" title="NPC/Give">NPC/Give</a></li>
+<li><a href="/page/NPC/HasCondition" title="NPC/HasCondition">NPC/HasCondition</a></li>
+<li><a href="/page/NPC/IdleSound" title="NPC/IdleSound">NPC/IdleSound</a></li>
+<li><a href="/page/NPC/IsCurrentSchedule" title="NPC/IsCurrentSchedule">NPC/IsCurrentSchedule</a></li>
+<li><a href="/page/NPC/IsMoving" title="NPC/IsMoving">NPC/IsMoving</a></li>
+<li><a href="/page/NPC/IsRunningBehavior" title="NPC/IsRunningBehavior">NPC/IsRunningBehavior</a></li>
+<li><a href="/page/NPC/IsUnreachable" title="NPC/IsUnreachable">NPC/IsUnreachable</a></li>
+<li><a href="/page/NPC/LostEnemySound" title="NPC/LostEnemySound">NPC/LostEnemySound</a></li>
+<li><a href="/page/NPC/MaintainActivity" title="NPC/MaintainActivity">NPC/MaintainActivity</a></li>
+<li><a href="/page/NPC/MarkEnemyAsEluded" title="NPC/MarkEnemyAsEluded">NPC/MarkEnemyAsEluded</a></li>
+<li><a href="/page/NPC/MoveOrder" title="NPC/MoveOrder">NPC/MoveOrder</a></li>
+<li><a href="/page/NPC/NavSetGoal" title="NPC/NavSetGoal">NPC/NavSetGoal</a></li>
+<li><a href="/page/NPC/NavSetGoalTarget" title="NPC/NavSetGoalTarget">NPC/NavSetGoalTarget</a></li>
+<li><a href="/page/NPC/NavSetRandomGoal" title="NPC/NavSetRandomGoal">NPC/NavSetRandomGoal</a></li>
+<li><a href="/page/NPC/NavSetWanderGoal" title="NPC/NavSetWanderGoal">NPC/NavSetWanderGoal</a></li>
+<li><a href="/page/NPC/PlaySentence" title="NPC/PlaySentence">NPC/PlaySentence</a></li>
+<li><a href="/page/NPC/RemoveMemory" title="NPC/RemoveMemory">NPC/RemoveMemory</a></li>
+<li><a href="/page/NPC/RunEngineTask" title="NPC/RunEngineTask">NPC/RunEngineTask</a></li>
+<li><a href="/page/NPC/SentenceStop" title="NPC/SentenceStop">NPC/SentenceStop</a></li>
+<li><a href="/page/NPC/SetArrivalActivity" title="NPC/SetArrivalActivity">NPC/SetArrivalActivity</a></li>
+<li><a href="/page/NPC/SetArrivalDirection" title="NPC/SetArrivalDirection">NPC/SetArrivalDirection</a></li></ul></td>
+<td><h3>N cont.</h3>
+<ul><li><a href="/page/NPC/SetArrivalDistance" title="NPC/SetArrivalDistance">NPC/SetArrivalDistance</a></li>
+<li><a href="/page/NPC/SetArrivalSequence" title="NPC/SetArrivalSequence">NPC/SetArrivalSequence</a></li>
+<li><a href="/page/NPC/SetArrivalSpeed" title="NPC/SetArrivalSpeed">NPC/SetArrivalSpeed</a></li>
+<li><a href="/page/NPC/SetCondition" title="NPC/SetCondition">NPC/SetCondition</a></li>
+<li><a href="/page/NPC/SetCurrentWeaponProficiency" title="NPC/SetCurrentWeaponProficiency">NPC/SetCurrentWeaponProficiency</a></li>
+<li><a href="/page/NPC/SetEnemy" title="NPC/SetEnemy">NPC/SetEnemy</a></li>
+<li><a href="/page/NPC/SetExpression" title="NPC/SetExpression">NPC/SetExpression</a></li>
+<li><a href="/page/NPC/SetHullSizeNormal" title="NPC/SetHullSizeNormal">NPC/SetHullSizeNormal</a></li>
+<li><a href="/page/NPC/SetHullType" title="NPC/SetHullType">NPC/SetHullType</a></li>
+<li><a href="/page/NPC/SetLastPosition" title="NPC/SetLastPosition">NPC/SetLastPosition</a></li>
+<li><a href="/page/NPC/SetMaxRouteRebuildTime" title="NPC/SetMaxRouteRebuildTime">NPC/SetMaxRouteRebuildTime</a></li>
+<li><a href="/page/NPC/SetMovementActivity" title="NPC/SetMovementActivity">NPC/SetMovementActivity</a></li>
+<li><a href="/page/NPC/SetMovementSequence" title="NPC/SetMovementSequence">NPC/SetMovementSequence</a></li>
+<li><a href="/page/NPC/SetNPCState" title="NPC/SetNPCState">NPC/SetNPCState</a></li>
+<li><a href="/page/NPC/SetSchedule" title="NPC/SetSchedule">NPC/SetSchedule</a></li>
+<li><a href="/page/NPC/SetTarget" title="NPC/SetTarget">NPC/SetTarget</a></li>
+<li><a href="/page/NPC/StartEngineTask" title="NPC/StartEngineTask">NPC/StartEngineTask</a></li>
+<li><a href="/page/NPC/StopMoving" title="NPC/StopMoving">NPC/StopMoving</a></li>
+<li><a href="/page/NPC/TargetOrder" title="NPC/TargetOrder">NPC/TargetOrder</a></li>
+<li><a href="/page/NPC/TaskComplete" title="NPC/TaskComplete">NPC/TaskComplete</a></li>
+<li><a href="/page/NPC/TaskFail" title="NPC/TaskFail">NPC/TaskFail</a></li>
+<li><a href="/page/NPC/UpdateEnemyMemory" title="NPC/UpdateEnemyMemory">NPC/UpdateEnemyMemory</a></li>
+<li><a href="/page/NPC/UseActBusyBehavior" title="NPC/UseActBusyBehavior">NPC/UseActBusyBehavior</a></li>
+<li><a href="/page/NPC/UseAssaultBehavior" title="NPC/UseAssaultBehavior">NPC/UseAssaultBehavior</a></li>
+<li><a href="/page/NPC/UseFollowBehavior" title="NPC/UseFollowBehavior">NPC/UseFollowBehavior</a></li>
+<li><a href="/page/NPC/UseFuncTankBehavior" title="NPC/UseFuncTankBehavior">NPC/UseFuncTankBehavior</a></li>
+<li><a href="/page/NPC/UseLeadBehavior" title="NPC/UseLeadBehavior">NPC/UseLeadBehavior</a></li>
+<li><a href="/page/NPC/UseNoBehavior" title="NPC/UseNoBehavior">NPC/UseNoBehavior</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

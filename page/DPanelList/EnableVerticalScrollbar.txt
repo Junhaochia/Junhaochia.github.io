@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DPanelList&#58;EnableVerticalScrollbar( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DPanelList.EnableVerticalScrollbar">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DPanelList/EnableVerticalScrollbar" title="Special:WhatLinksHere/DPanelList/EnableVerticalScrollbar">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Enables/creates the vertical scroll bar so that the panel list can be scrolled through.
+</p>
+
+

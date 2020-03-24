@@ -1,0 +1,68 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>render.SetStencilFailOperation( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.SetStencilFailOperation">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/SetStencilFailOperation" title="Special:WhatLinksHere/render/SetStencilFailOperation">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the operation to be performed on the stencil buffer values if the compare function was not successful.
+Note that this takes place <b>before</b> depth testing.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> failOperation</span>
+</p>
+<div style="margin-left: 32px;">
+Fail operation function, see <a href="/page/Enums/STENCILOPERATION" title="Enums/STENCILOPERATION">STENCILOPERATION_ Enums</a></div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>This is one of the most useful things stencils can do - not render something to the screen and then allow you to draw with the shape it would have been if it <i>had</i> rendered.
+</p><p>You can see in the output screenshot that a partially obscured entity will still write its entire shape to the stencil buffer.
+</p>
+<pre><code data-language="lua">hook.Add( &quot;PostDrawOpaqueRenderables&quot;, &quot;Stencil Tutorial Example&quot;, function()
+
+	-- Reset everything to known good
+	render.SetStencilWriteMask( 0xFF )
+	render.SetStencilTestMask( 0xFF )
+	render.SetStencilReferenceValue( 0 )
+	-- render.SetStencilCompareFunction( STENCIL_ALWAYS )
+	render.SetStencilPassOperation( STENCIL_KEEP )
+	-- render.SetStencilFailOperation( STENCIL_KEEP )
+	render.SetStencilZFailOperation( STENCIL_KEEP )
+	render.ClearStencil()
+
+	-- Enable stencils
+	render.SetStencilEnable( true )
+	-- Set the reference value to 1. This is what the compare function tests against
+	render.SetStencilReferenceValue( 1 )
+	-- Only draw things if their pixels are currently 1. Currently this is nothing.
+	render.SetStencilCompareFunction( STENCIL_EQUAL )
+	-- If something fails to draw to the screen, set the pixels it would have drawn to 1
+	-- This includes if it's behind something.
+	render.SetStencilFailOperation( STENCIL_REPLACE )
+
+	-- Draw our entities. They will not draw, because everything is 0
+	for _, ent in pairs( ents.FindByClass( &quot;sent_stencil_test&quot; ) ) do
+		ent:DrawModel()
+	end
+
+	-- If we were to re-draw our entities, we'd see them, but otherwise they're invisible.
+	-- If we flush the screen, we can show the &quot;holes&quot; they've left in the stencil buffer
+	render.ClearBuffersObeyStencil(0, 148, 133, 255, false);
+
+	-- Let everything render normally again
+	render.SetStencilEnable( false )
+end )</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><div class="floatleft"><a href="/page/File:basic_fail_operation.jpg" class="image"><img alt="basic fail operation.jpg" src="/images/thumb/2/2c/basic_fail_operation.jpg/800px-basic_fail_operation.jpg" width="800" height="449" /></a></div></div>
+
+

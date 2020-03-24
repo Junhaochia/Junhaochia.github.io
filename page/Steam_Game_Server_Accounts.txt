@@ -1,0 +1,33 @@
+<p>With the December 2015 update Garry's Mod game servers may now use the Steam Game Server Accounts feature.
+</p>
+<h2> <span class="mw-headline" id="Why_do_I_need_a_Steam_Game_Server_Account.3F_What_does_it_do.3F">Why do I need a Steam Game Server Account? What does it do?</span></h2>
+<p>Essentially Steam Game Server Account helps your players find your server should the IP address of your server be changed.
+</p>
+<h2> <span class="mw-headline" id="How_to_get_a_Steam_Game_Server_Account.3F">How to get a Steam Game Server Account?</span></h2>
+<p>The process of setting this up for your server is pretty straight forward.
+</p><p>First log into your Steam account and follow this link:<br />
+<a rel="nofollow" class="external free" href="https://steamcommunity.com/dev/managegameservers">https://steamcommunity.com/dev/managegameservers</a>
+</p><p>Make sure your Steam account matches all the requirements, then enter the required information into the text boxes on the page.
+</p>
+<ul><li> The first field should always be set to 4000 for Garry's Mod.
+</li><li> The second field can be anything that will help you identify the specific server in a list of other Steam Game Server Accounts.
+</li></ul>
+<p>Then press Create.
+</p><p>After pressing Create, the page will reload and a new entry will be shown on the page, containing the memo, the login token and the app id for which the login token is generated for.
+</p><p>From this page you also can:
+</p>
+<ul><li> Delete any Login Tokens you own
+</li><li> Generate a new Login Token for given server ( You will need to change it on your server too )
+</li><li> Set another memo for any Login Token you own
+</li></ul>
+<p><b>WARNING! EACH SERVER MUST HAVE UNIQUE LOGIN TOKEN!</b>
+</p><p>Once you got your Login Token, copy it and add the following to your command line parameters:
+<code>+sv_setsteamaccount YOURLOGINTOKENHERE</code>
+and restart your server.
+</p><p>Your server will now have a static SteamID/Steam Account.
+</p>
+<h2> <span class="mw-headline" id="Tips">Tips</span></h2>
+<ul><li> Specifying an invalid / expired key will prevent the server from connecting to Steam servers. This can be intentionally used if you do not want to discard the public IP address of a development server.<pre>+sv_setsteamaccount &quot;IAmAnInvalidKey&quot;</pre>
+</li></ul>
+
+

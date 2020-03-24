@@ -1,0 +1,9 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>sql.Begin( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=sql.Begin">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/sql/Begin" title="Special:WhatLinksHere/sql/Begin">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Tells the engine a set of queries is coming. Will wait until <a href="/page/Category_colon_sql" title="Category:sql">sql</a>.<a href="/page/sql/Commit" title="sql/Commit">Commit</a> is called to run them.<br />
+This is most useful when you run more than 100+ queries.<br />
+</p>
+This is equivalent to <pre><code data-language="lua">sql.Query(&quot;BEGIN&quot;)</code></pre>
+
+

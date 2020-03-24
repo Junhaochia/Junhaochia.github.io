@@ -1,0 +1,48 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>IVideoWriter&#58;AddFrame( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IVideoWriter.AddFrame">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IVideoWriter/AddFrame" title="Special:WhatLinksHere/IVideoWriter/AddFrame">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Adds the current framebuffer to the video stream.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> frameTime</span>
+</p>
+<div style="margin-left: 32px;">
+Usually set to what <a href="/page/Global/FrameTime" title="Global/FrameTime">FrameTime</a> is, or simply 1/fps.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> downsample</span>
+</p>
+<div style="margin-left: 32px;">
+If true it will downsample the whole screenspace to the videos width and height, otherwise it will just record from the top left corner to the given width and height and therefor not the whole screen.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>If ActiveVideo was a <a href="/page/Category_colon_IVideoWriter" title="Category:IVideoWriter">IVideoWriter</a>, it would record the screen every frame.
+</p>
+<pre><code data-language="lua">--Taken from /lua/menu/video.lua
+
+hook.Add( &quot;DrawOverlay&quot;, &quot;CaptureFrames&quot;, function()
+
+	if (&#160;!ActiveVideo ) then return end
+	
+	ActiveVideo:AddFrame( FrameTime(), true );
+
+end )</code></pre>
+<p><br />
+</p>
+
+

@@ -1,0 +1,161 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/MASK" title="Special:WhatLinksHere/Enums/MASK">What links here?</a></div>
+<p>Enumerations used as trace masks in <a href="/page/Structures/Trace" title="Structures/Trace">Trace structure</a> and <a href="/page/Structures/HullTrace" title="Structures/HullTrace">HullTrace structure</a>. These enumerations are simply combinations of <a href="/page/Enums/CONTENTS" title="Enums/CONTENTS">CONTENTS_ Enums</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> MASK_ALL
+</td>
+<td> 4294967295
+</td>
+<td> Anything that is not empty space
+</td></tr>
+<tr>
+<td> MASK_BLOCKLOS
+</td>
+<td> 16449
+</td>
+<td> Anything that blocks line of sight for AI
+</td></tr>
+<tr>
+<td> MASK_BLOCKLOS_AND_NPCS
+</td>
+<td> 33570881
+</td>
+<td> Anything that blocks line of sight for AI or NPCs
+</td></tr>
+<tr>
+<td> MASK_CURRENT
+</td>
+<td> 16515072
+</td>
+<td> Water that is moving (may not work)
+</td></tr>
+<tr>
+<td> MASK_DEADSOLID
+</td>
+<td> 65547
+</td>
+<td> Anything that blocks corpse movement
+</td></tr>
+<tr>
+<td> MASK_NPCSOLID
+</td>
+<td> 33701899
+</td>
+<td> Anything that blocks NPC movement
+</td></tr>
+<tr>
+<td> MASK_NPCSOLID_BRUSHONLY
+</td>
+<td> 147467
+</td>
+<td> Anything that blocks NPC movement, except other NPCs
+</td></tr>
+<tr>
+<td> MASK_NPCWORLDSTATIC
+</td>
+<td> 131083
+</td>
+<td> The world entity
+</td></tr>
+<tr>
+<td> MASK_OPAQUE
+</td>
+<td> 16513
+</td>
+<td> Anything that blocks lighting
+</td></tr>
+<tr>
+<td> MASK_OPAQUE_AND_NPCS
+</td>
+<td> 33570945
+</td>
+<td> Anything that blocks lighting, including NPCs
+</td></tr>
+<tr>
+<td> MASK_PLAYERSOLID
+</td>
+<td> 33636363
+</td>
+<td> Anything that blocks player movement
+</td></tr>
+<tr>
+<td> MASK_PLAYERSOLID_BRUSHONLY
+</td>
+<td> 81931
+</td>
+<td> World + Brushes + Player Clips
+</td></tr>
+<tr>
+<td> MASK_SHOT
+</td>
+<td> 1174421507
+</td>
+<td> Anything that stops a bullet (including hitboxes)
+</td></tr>
+<tr>
+<td> MASK_SHOT_HULL
+</td>
+<td> 100679691
+</td>
+<td> Anything that stops a bullet (excluding hitboxes)
+</td></tr>
+<tr>
+<td> MASK_SHOT_PORTAL
+</td>
+<td> 33570819
+</td>
+<td> Solids except for grates
+</td></tr>
+<tr>
+<td> MASK_SOLID
+</td>
+<td> 33570827
+</td>
+<td> Anything that is (normally) solid
+</td></tr>
+<tr>
+<td> MASK_SOLID_BRUSHONLY
+</td>
+<td> 16395
+</td>
+<td> World + Brushes
+</td></tr>
+<tr>
+<td> MASK_SPLITAREAPORTAL
+</td>
+<td> 48
+</td>
+<td> Things that split area portals
+</td></tr>
+<tr>
+<td> MASK_VISIBLE
+</td>
+<td> 24705
+</td>
+<td> Anything that blocks line of sight for players
+</td></tr>
+<tr>
+<td> MASK_VISIBLE_AND_NPCS
+</td>
+<td> 33579137
+</td>
+<td> Anything that blocks line of sight for players, including NPCs
+</td></tr>
+<tr>
+<td> MASK_WATER
+</td>
+<td> 16432
+</td>
+<td> Anything that has water-like physics
+</td></tr></table>
+
+

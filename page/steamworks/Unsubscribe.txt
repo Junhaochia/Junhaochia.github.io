@@ -1,0 +1,36 @@
+<div class="function_line">
+<span class="menu" title="Menu">&#160;</span>steamworks.Unsubscribe( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=steamworks.Unsubscribe">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/steamworks/Unsubscribe" title="Special:WhatLinksHere/steamworks/Unsubscribe">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div> Unsubscribes to the specified workshop addon. Call <a href="/page/Category_colon_steamworks" title="Category:steamworks">steamworks</a>.<a href="/page/steamworks/ApplyAddons" title="steamworks/ApplyAddons">ApplyAddons</a> afterwards to update.
+<p>This function should <i>never</i> be called without a user's consent and should not be called if the addon is currently in use (aka: the user is not in the main menu) as it may result in unexpected behaviour.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> workshopItemID</span>
+</p>
+<div style="margin-left: 32px;">
+The ID of the Steam Workshop item we should unsubscribe from.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Unsubscribes from the Gm_construct_Beta Steam Workshop addon, if subscribed, and reloads addons afterwards
+</p>
+<pre><code data-language="lua">steamworks.Unsubscribe( 21197 )
+steamworks.ApplyAddons()</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">Unsubscribes from the gm_construct_beta addon, if subscribed.</div>
+
+

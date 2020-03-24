@@ -1,0 +1,113 @@
+<p>This page describes possible values for the second parameter of the <a href="/page/Global/Material" title="Global/Material">Material</a> function when importing .png or .jpg textures, as well as some specific material key-values being set in that process.
+</p><p>For a list of all flags that can be controlled by settings the $flags int, see <a rel="nofollow" class="external free" href="https://developer.valvesoftware.com/wiki/Material_Flags">https://developer.valvesoftware.com/wiki/Material_Flags</a>
+</p><p>Possible values are:
+</p>
+<table class="wikitable">
+<tr>
+<th> Value
+</th>
+<th> Description
+</th></tr>
+<tr>
+<td>vertexlitgeneric
+</td>
+<td>Sets the shader to <b>VertexLitGeneric</b> instead of <b>UnlitGeneric</b> when the material is created.
+<p><b>Currently Broken/Deprecated</b>
+</p>
+</td></tr>
+<tr>
+<td>nocull
+</td>
+<td>Sets the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/$nocull">$nocull</a> to 1 in the created material.
+</td></tr>
+<tr>
+<td>alphatest
+</td>
+<td>Sets the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/$alphatest">$alphatest</a> to 1 in the created material instead of <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/$vertexalpha">$vertexalpha</a> being set to 1.
+</td></tr>
+<tr>
+<td>mips
+</td>
+<td>Generates <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Mipmap">Mipmaps</a> for the imported texture, or sets <b>No Level Of Detail</b> and <b>No Mipmaps</b> if unset.
+</td></tr>
+<tr>
+<td>noclamp
+</td>
+<td>Makes the image able to tile when used with non standard UV maps or <a href="/page/Category_colon_surface" title="Category:surface">surface</a>.<a href="/page/surface/DrawTexturedRectUV" title="surface/DrawTexturedRectUV">DrawTexturedRectUV</a>. Sets the CLAMPS and CLAMPT flags if unset.
+</td></tr>
+<tr>
+<td>smooth
+</td>
+<td>If set does nothing, if unset - enables Point Samping (Texture Filtering) on the material as well as adds the <b>No Level Of Detail</b> flag to it.
+</td></tr></table>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Additional_Notes"><span class="tocnumber">1</span> <span class="toctext">Additional Notes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#vertexlitgeneric"><span class="tocnumber">1.1</span> <span class="toctext">vertexlitgeneric</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#nocull"><span class="tocnumber">1.2</span> <span class="toctext">nocull</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#alphatest"><span class="tocnumber">1.3</span> <span class="toctext">alphatest</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#mips"><span class="tocnumber">1.4</span> <span class="toctext">mips</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#noclamp"><span class="tocnumber">1.5</span> <span class="toctext">noclamp</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#smooth"><span class="tocnumber">1.6</span> <span class="toctext">smooth</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Additional_Notes"> Additional Notes </span></h1>
+<p>When you call <a href="/page/Global/Material" title="Global/Material">Material</a> with a file extension, the engine creates a material and a new texture from that file.
+</p><p>The created texture will have its size set to the closest <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Power_of_two">power of two</a> size.
+</p><p>The material is given the following parameters by default:
+</p>
+<pre>&quot;UnlitGeneric&quot;
+{
+	&quot;$basetexture&quot; &quot;&lt;set to the newly created texture&gt;&quot;
+	&quot;$vertexcolor&quot; &quot;1&quot;
+
+	&quot;$realwidth&quot; &quot;X&quot; // The width of the actual png/jpg file
+	&quot;$realheight&quot; &quot;X&quot; // The height of the actual png/jpg file
+
+	// Custom parameters
+	&quot;$nocull&quot; &quot;1&quot; // Only set if nocull parameter is given
+
+	&quot;$alphatest&quot; &quot;1&quot; // Only set if alphatest parameter is given
+	&quot;vertexalpha&quot; &quot;1&quot; // Only set if alphatest parameter is NOT given
+}</pre>
+<h2> <span class="mw-headline" id="vertexlitgeneric"> vertexlitgeneric </span></h2>
+<p><a href="/page/File:vertexlitgeneric.png" class="image"><img alt="vertexlitgeneric.png" src="/images/thumb/2/28/vertexlitgeneric.png/500px-vertexlitgeneric.png" width="500" height="313" /></a>
+</p><p>This is used in the VMT of most models that need correct lighting and shadows.
+You don't really need to worry about it for 2D textures though, since they don't need lighting.
+The other commonly used option is <b>unlitgeneric</b>, which makes the model have no lighting at all, similar to typing <b>mat_fullbright 1</b> in the console.
+It is unknown why it exists for 2D textures though, probably just for usage with <a href="/page/Global/Mesh" title="Global/Mesh">Mesh</a>.
+</p>
+<h2> <span class="mw-headline" id="nocull"> nocull </span></h2>
+<p><a href="/page/File:nocull.png" class="image"><img alt="nocull.png" src="/images/thumb/0/04/nocull.png/500px-nocull.png" width="500" height="313" /></a>
+</p><p>This makes the back of the texture get drawn all the time.
+If you're working in <a href="/page/Category_colon_cam" title="Category:cam">cam</a>.<a href="/page/cam/Start3D2D" title="cam/Start3D2D">Start3D2D</a> then it can help if you want a double sided texture.
+</p>
+<h2> <span class="mw-headline" id="alphatest"> alphatest </span></h2>
+<p><a href="/page/File:alphatest.png" class="image"><img alt="alphatest.png" src="/images/thumb/0/08/alphatest.png/500px-alphatest.png" width="500" height="313" /></a>
+</p><p>This makes the material have an alpha of either 0 or 1, instead of a range between those values.
+It makes the alpha edges look very hard, but it can fix some transparency related problems.
+It can be used to allow alpha in stencils. If you're trying to use a material in a stencil with an alpha channel, use alphatest.
+<a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/$translucent#Flickering_and_reversed_depth">It also allows the flashlight cast shadows from the material</a>.
+</p>
+<h2> <span class="mw-headline" id="mips"> mips </span></h2>
+<p><a href="/page/File:mips.png" class="image"><img alt="mips.png" src="/images/thumb/c/cc/mips.png/500px-mips.png" width="500" height="313" /></a>
+</p><p>This makes low-res versions of the texture that it swaps out as it gets smaller.
+It can help improve performance, and you usually can't see the difference.
+</p><p>This can improve smoothing if you're scaling down the texture a lot.
+</p>
+<h2> <span class="mw-headline" id="noclamp"> noclamp </span></h2>
+<p><a href="/page/File:noclamp.png" class="image"><img alt="noclamp.png" src="/images/thumb/3/32/noclamp.png/500px-noclamp.png" width="500" height="313" /></a>
+</p><p>This allows the texture to tile, so if you want a repeating pattern then it can help.
+<a href="/page/Category_colon_surface" title="Category:surface">surface</a>.<a href="/page/surface/DrawTexturedRectUV" title="surface/DrawTexturedRectUV">DrawTexturedRectUV</a> will help you draw a pattern.
+It also stops the edges getting stretched, which can make it look smoother.
+</p>
+<h2> <span class="mw-headline" id="smooth"> smooth </span></h2>
+<p><a href="/page/File:smooth.png" class="image"><img alt="smooth.png" src="/images/thumb/c/ca/smooth.png/500px-smooth.png" width="500" height="313" /></a>
+</p><p>This stops point sampling, which makes textures look like Minecraft.
+It makes the texture look smoother when you scale it.
+</p>
+
+

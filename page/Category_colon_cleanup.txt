@@ -1,0 +1,20 @@
+<p>The cleanup library allows you to control what happens to custom entities when the clean-up buttons are pressed in the Utilities tab of the Spawn menu (default Q).
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "cleanup"</h2>
+<p>The following 8 pages are in this category, out of 8 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>C</h3>
+<ul><li><a href="/page/cleanup/Add" title="cleanup/Add">cleanup/Add</a></li>
+<li><a href="/page/cleanup/CC_AdminCleanup" title="cleanup/CC AdminCleanup">cleanup/CC AdminCleanup</a></li>
+<li><a href="/page/cleanup/CC_Cleanup" title="cleanup/CC Cleanup">cleanup/CC Cleanup</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/cleanup/GetList" title="cleanup/GetList">cleanup/GetList</a></li>
+<li><a href="/page/cleanup/GetTable" title="cleanup/GetTable">cleanup/GetTable</a></li>
+<li><a href="/page/cleanup/Register" title="cleanup/Register">cleanup/Register</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/cleanup/ReplaceEntity" title="cleanup/ReplaceEntity">cleanup/ReplaceEntity</a></li>
+<li><a href="/page/cleanup/UpdateUI" title="cleanup/UpdateUI">cleanup/UpdateUI</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

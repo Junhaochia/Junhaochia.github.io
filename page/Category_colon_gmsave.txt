@@ -1,0 +1,10 @@
+<p>The gmsave library provides functions relating to the singleplayer save system in Garry's Mod.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "gmsave"</h2>
+<p>The following 5 pages are in this category, out of 5 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>G</h3>
+<ul><li><a href="/page/gmsave/LoadMap" title="gmsave/LoadMap">gmsave/LoadMap</a></li><li><a href="/page/gmsave/PlayerLoad" title="gmsave/PlayerLoad">gmsave/PlayerLoad</a></li><li><a href="/page/gmsave/PlayerSave" title="gmsave/PlayerSave">gmsave/PlayerSave</a></li><li><a href="/page/gmsave/SaveMap" title="gmsave/SaveMap">gmsave/SaveMap</a></li><li><a href="/page/gmsave/ShouldSaveEntity" title="gmsave/ShouldSaveEntity">gmsave/ShouldSaveEntity</a></li></ul></div>
+</div></div>

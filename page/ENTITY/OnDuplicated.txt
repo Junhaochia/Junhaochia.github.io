@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>ENTITY:OnDuplicated( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ENTITY.OnDuplicated">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ENTITY/OnDuplicated" title="Special:WhatLinksHere/ENTITY/OnDuplicated">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called on any entity after it has been created by the <a href="/page/Category_colon_duplicator" title="Category:duplicator">duplicator library</a> and before any bone/entity modifiers have been applied.
+</p><p>This hook is called after <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Initialize" title="ENTITY/Initialize">Initialize</a> and before <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/PostEntityPaste" title="ENTITY/PostEntityPaste">PostEntityPaste</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> entTable</span>
+</p>
+<div style="margin-left: 32px;">
+<a href="/page/Structures/EntityCopyData" title="Structures/EntityCopyData">EntityCopyData structure</a> of the source entity.</div>
+</div>
+
+

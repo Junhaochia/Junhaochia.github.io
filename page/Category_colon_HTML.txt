@@ -1,0 +1,73 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=HTML">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:HTML" title="Special:WhatLinksHere/Category:HTML">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>The HTML control can be used to display HTML code just like an internet browser. Unlike <a href="/page/Category_colon_DHTML" title="Category:DHTML">DHTML</a>, this control cannot accept user input or complex interaction, such as retrieving image data.
+</p><p><b>Blocked URL Extentions</b>
+</p><p><i>This means your url cannot end in any of these extensions, e.g.: (<a rel="nofollow" class="external free" href="http://yourdomain.com/garry.exe">http://yourdomain.com/garry.exe</a>)</i>
+</p>
+<ul><li> .exe
+</li><li> .bat
+</li><li> .dll
+</li><li> .zip
+</li><li> .mp3
+</li><li> .swf
+</li></ul>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates an HTML control in the center of screen, and makes it display <a rel="nofollow" class="external free" href="/">http://wiki.garrysmod.com/</a>
+</p>
+<pre><code data-language="lua">HTMLTest = vgui.Create( &quot;HTML&quot; )
+HTMLTest:SetPos( 50, 50 )
+HTMLTest:SetSize( ScrW() - 100, ScrH() - 100 )
+HTMLTest:OpenURL( &quot;wiki.garrysmod.com&quot; )</code></pre>
+<p><br />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "HTML"</h2>
+<p>The following 11 pages are in this category, out of 11 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DHTML/StopLoading" title="DHTML/StopLoading">DHTML/StopLoading</a></li></ul><h3>P</h3>
+<ul><li><a href="/page/Panel/GetHTMLMaterial" title="Panel/GetHTMLMaterial">Panel/GetHTMLMaterial</a></li>
+<li><a href="/page/Panel/GoBack" title="Panel/GoBack">Panel/GoBack</a></li>
+<li><a href="/page/Panel/GoForward" title="Panel/GoForward">Panel/GoForward</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/Panel/GoToHistoryOffset" title="Panel/GoToHistoryOffset">Panel/GoToHistoryOffset</a></li>
+<li><a href="/page/Panel/NewObject" title="Panel/NewObject">Panel/NewObject</a></li>
+<li><a href="/page/Panel/NewObjectCallback" title="Panel/NewObjectCallback">Panel/NewObjectCallback</a></li>
+<li><a href="/page/Panel/OpenURL" title="Panel/OpenURL">Panel/OpenURL</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/Panel/Refresh" title="Panel/Refresh">Panel/Refresh</a></li>
+<li><a href="/page/Panel/SetHTML" title="Panel/SetHTML">Panel/SetHTML</a></li>
+<li><a href="/page/Panel/UpdateHTMLTexture" title="Panel/UpdateHTMLTexture">Panel/UpdateHTMLTexture</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

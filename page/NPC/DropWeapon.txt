@@ -1,0 +1,56 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;DropWeapon( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.DropWeapon">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/DropWeapon" title="Special:WhatLinksHere/NPC/DropWeapon">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Forces the NPC to drop the specified weapon.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a> weapon=nil</span>
+</p>
+<div style="margin-left: 32px;">
+Weapon to be dropped. If unset, will default to the currently equipped weapon.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> target=nil</span>
+</p>
+<div style="margin-left: 32px;">
+If set, launches the weapon at given position. There is a limit to how far it is willing to throw the weapon. Overrides velocity argument.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> velocity=nil</span>
+</p>
+<div style="margin-left: 32px;">
+If set and previous argument is unset, launches the weapon with given velocity. If the velocity is higher than 400, it will be clamped to 400.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>A console command that makes all NPCs on the map throw their weapons at the player who executed the console command
+</p>
+<pre><code data-language="lua">concommand.Add( &quot;dropall&quot;,function( ply )
+	for id, ent in pairs( ents.GetAll() ) do
+		if ( ent:IsNPC() ) then
+			-- Some NPCs on some maps delete their weapons when the weapon is dropped, we don't want that.
+			ent:SetKeyValue( &quot;spawnflags&quot;, bit.band( ent:GetSpawnFlags(), bit.bnot( SF_NPC_NO_WEAPON_DROP ) ) )
+			ent:DropWeapon( nil, ply:GetPos() )
+		end
+	end
+end )</code></pre>
+<p><br />
+</p>
+
+

@@ -1,0 +1,48 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DColorCube&#58;GetRGB( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DColorCube.GetRGB">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DColorCube/GetRGB" title="Special:WhatLinksHere/DColorCube/GetRGB">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelFunc"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelFunc</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">2</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Returns the color cube's current set color.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+The set color, uses <a href="/page/Structures/Color" title="Structures/Color">Color structure</a>.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a color cube, sets the color to cyan, adjusts the saturation and value to 50% each, and prints out the final color.
+</p>
+<pre><code data-language="lua">local color_cube = vgui.Create(&quot;DColorCube&quot;)
+color_cube:SetSize(200, 200)
+color_cube:Center()
+
+-- Set color to cyan
+color_cube:SetColor(Color(0, 255, 255))
+
+-- 50% saturated, 50% valued
+color_cube:TranslateValues(0.5, 0.5)
+
+-- Print set color
+PrintTable(color_cube:GetRGB())</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><pre><code data-language="lua">r	=	63
+b	=	127
+a	=	255
+g	=	127
+</code></pre></div>
+
+

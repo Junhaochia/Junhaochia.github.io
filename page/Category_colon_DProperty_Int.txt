@@ -1,0 +1,26 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category:DProperty_Float" title="Category:DProperty Float">DProperty_Float</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DProperty_Int">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DProperty_Int" title="Special:WhatLinksHere/Category:DProperty Int">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div>Integer control for the <a href="/page/Category:DProperties" title="Category:DProperties">DProperties</a> panel.
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category:DProperty_Float" title="Category:DProperty Float">DProperty_Float</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

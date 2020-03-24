@@ -1,0 +1,31 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>GM:PlayerDeathThink( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.PlayerDeathThink">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/PlayerDeathThink" title="Special:WhatLinksHere/GM/PlayerDeathThink">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called every think while the player is dead. The return value will determine if the player respawns.
+</p><p>Overwriting this function will prevent players from respawning by pressing space or clicking.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This hook is not called for players with the <a href="/page/Enums/FL" title="Enums/FL">FL_FROZEN</a> flag applied.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/1577">#1577</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply</span>
+</p>
+<div style="margin-left: 32px;">
+The player affected in the hook.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Allow spawn</div>
+</div>
+
+

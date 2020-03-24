@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;CollisionRulesChanged( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.CollisionRulesChanged">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/CollisionRulesChanged" title="Special:WhatLinksHere/Entity/CollisionRulesChanged">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Declares that the collision rules of the entity have changed, and subsequent calls for <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/ShouldCollide" title="GM/ShouldCollide">ShouldCollide</a> with this entity may return a different value than they did previously.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This function must <b>not</b> be called inside of <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/ShouldCollide" title="GM/ShouldCollide">ShouldCollide</a>. Instead, it must be called in advance when the condition is known to change.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>Failure to use this function correctly will result in a crash of the physics engine.
+</p>
+</td></tr></table>
+
+

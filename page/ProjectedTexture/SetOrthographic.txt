@@ -1,0 +1,66 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>ProjectedTexture&#58;SetOrthographic( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ProjectedTexture.SetOrthographic">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ProjectedTexture/SetOrthographic" title="Special:WhatLinksHere/ProjectedTexture/SetOrthographic">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">7</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">7.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Changes the current projected texture between orthographic and perspective projection.
+</p><p>You must call <a href="/page/Category_colon_ProjectedTexture" title="Category:ProjectedTexture">ProjectedTexture</a>:<a href="/page/ProjectedTexture/Update" title="ProjectedTexture/Update">Update</a> after using this function for it to take effect.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> orthographic</span>
+</p>
+<div style="margin-left: 32px;">
+When false, all other arguments are ignored and the texture is reset to perspective projection.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> left</span>
+</p>
+<div style="margin-left: 32px;">
+The amount of units left from the projected texture's origin to project.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> top</span>
+</p>
+<div style="margin-left: 32px;">
+The amount of units upwards from the projected texture's origin to project.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> right</span>
+</p>
+<div style="margin-left: 32px;">
+The amount of units right from the projected texture's origin to project.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> bottom</span>
+</p>
+<div style="margin-left: 32px;">
+The amount of units downwards from the projected texture's origin to project.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Set the projected texture back to perspective projection.
+</p>
+<pre><code data-language="lua">ProjectedTexture:SetOrthographic( false )
+ProjectedTexture:Update()</code></pre>
+<p><br />
+</p>
+
+

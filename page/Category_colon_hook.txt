@@ -1,0 +1,10 @@
+<p>The hook library allows you to add hooks called by the game engine, allowing multiple scripts to modify game function.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "hook"</h2>
+<p>The following 5 pages are in this category, out of 5 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>H</h3>
+<ul><li><a href="/page/hook/Add" title="hook/Add">hook/Add</a></li><li><a href="/page/hook/Call" title="hook/Call">hook/Call</a></li><li><a href="/page/hook/GetTable" title="hook/GetTable">hook/GetTable</a></li><li><a href="/page/hook/Remove" title="hook/Remove">hook/Remove</a></li><li><a href="/page/hook/Run" title="hook/Run">hook/Run</a></li></ul></div>
+</div></div>

@@ -1,0 +1,92 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/RENDERGROUP" title="Special:WhatLinksHere/Enums/RENDERGROUP">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Global/ClientsideModel" title="Global/ClientsideModel">ClientsideModel</a>, ENT.RenderGroup in <a href="/page/Structures/ENT" title="Structures/ENT">ENT structure</a> and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetRenderGroup" title="Entity/GetRenderGroup">GetRenderGroup</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> RENDERGROUP_STATIC_HUGE
+</td>
+<td> 0
+</td>
+<td> Huge static prop, possibly leftover from goldsrc
+</td></tr>
+<tr>
+<td> RENDERGROUP_OPAQUE_HUGE
+</td>
+<td> 1
+</td>
+<td> Huge opaque entity, possibly leftover from goldsrc
+</td></tr>
+<tr>
+<td> RENDERGROUP_STATIC
+</td>
+<td> 6
+</td>
+<td> Static props?
+<p><br />
+</p>
+</td></tr>
+<tr>
+<td> RENDERGROUP_OPAQUE
+</td>
+<td> 7
+</td>
+<td> For non transparent/solid entities.
+<p><br />For scripted entities, this will have <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Draw" title="ENTITY/Draw">Draw</a> called
+</p>
+</td></tr>
+<tr>
+<td> RENDERGROUP_TRANSLUCENT
+</td>
+<td> 8
+</td>
+<td> For translucent/transparent entities
+<p><br />For scripted entities, this will have <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/DrawTranslucent" title="ENTITY/DrawTranslucent">DrawTranslucent</a> called
+</p>
+</td></tr>
+<tr>
+<td> RENDERGROUP_BOTH
+</td>
+<td> 9
+</td>
+<td> For both translucent/transparent and opaque/solid anim entities
+<p><br />For scripted entities, this will have both, <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Draw" title="ENTITY/Draw">Draw</a> and <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/DrawTranslucent" title="ENTITY/DrawTranslucent">DrawTranslucent</a> called
+</p>
+</td></tr>
+<tr>
+<td> RENDERGROUP_VIEWMODEL
+</td>
+<td> 10
+</td>
+<td> Solid weapon view models
+</td></tr>
+<tr>
+<td> RENDERGROUP_VIEWMODEL_TRANSLUCENT
+</td>
+<td> 11
+</td>
+<td> Transparent overlays etc
+</td></tr>
+<tr>
+<td> RENDERGROUP_OPAQUE_BRUSH
+</td>
+<td> 12
+</td>
+<td> For brush entities
+</td></tr>
+<tr>
+<td> RENDERGROUP_OTHER
+</td>
+<td> 13
+</td>
+<td> Unclassfied. Won't get drawn.
+</td></tr></table>
+
+

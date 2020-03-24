@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;NumSelectedChildren( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.NumSelectedChildren">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/NumSelectedChildren" title="Special:WhatLinksHere/Panel/NumSelectedChildren">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the number of children of the panel object that are selected. This is equivalent to calling <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/IsSelected" title="Panel/IsSelected">IsSelected</a> on all child objects and counting the number of returns that are <i>true</i>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The number of child objects that are currently selected. This does not include the parent object you are calling the method from.</div>
+</div>
+
+

@@ -1,0 +1,8 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>GM:OnContextMenuOpen( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.OnContextMenuOpen">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/OnContextMenuOpen" title="Special:WhatLinksHere/GM/OnContextMenuOpen">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when the context menu keybind (+menu_context) is pressed, which by default is C.
+</p><p>See also <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/OnContextMenuClose" title="GM/OnContextMenuClose">OnContextMenuClose</a>.
+</p>
+
+

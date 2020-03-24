@@ -1,0 +1,33 @@
+<p>Function to work with the <a rel="nofollow" class="external text" href="https://luajit.org/">LuaJIT</a> functionality of gmod.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "jit"</h2>
+<p>The following 21 pages are in this category, out of 21 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>J</h3>
+<ul><li><a href="/page/jit/arch" title="jit/arch">jit/arch</a></li>
+<li><a href="/page/jit/attach" title="jit/attach">jit/attach</a></li>
+<li><a href="/page/jit/flush" title="jit/flush">jit/flush</a></li>
+<li><a href="/page/jit/off" title="jit/off">jit/off</a></li>
+<li><a href="/page/jit/on" title="jit/on">jit/on</a></li>
+<li><a href="/page/jit/opt.start" title="jit/opt.start">jit/opt.start</a></li>
+<li><a href="/page/jit/os" title="jit/os">jit/os</a></li></ul></td>
+<td><h3>J cont.</h3>
+<ul><li><a href="/page/jit/status" title="jit/status">jit/status</a></li>
+<li><a href="/page/jit/util.funcbc" title="jit/util.funcbc">jit/util.funcbc</a></li>
+<li><a href="/page/jit/util.funcinfo" title="jit/util.funcinfo">jit/util.funcinfo</a></li>
+<li><a href="/page/jit/util.funck" title="jit/util.funck">jit/util.funck</a></li>
+<li><a href="/page/jit/util.funcuvname" title="jit/util.funcuvname">jit/util.funcuvname</a></li>
+<li><a href="/page/jit/util.ircalladdr" title="jit/util.ircalladdr">jit/util.ircalladdr</a></li>
+<li><a href="/page/jit/util.traceexitstub" title="jit/util.traceexitstub">jit/util.traceexitstub</a></li></ul></td>
+<td><h3>J cont.</h3>
+<ul><li><a href="/page/jit/util.traceinfo" title="jit/util.traceinfo">jit/util.traceinfo</a></li>
+<li><a href="/page/jit/util.traceir" title="jit/util.traceir">jit/util.traceir</a></li>
+<li><a href="/page/jit/util.tracek" title="jit/util.tracek">jit/util.tracek</a></li>
+<li><a href="/page/jit/util.tracemc" title="jit/util.tracemc">jit/util.tracemc</a></li>
+<li><a href="/page/jit/util.tracesnap" title="jit/util.tracesnap">jit/util.tracesnap</a></li>
+<li><a href="/page/jit/version" title="jit/version">jit/version</a></li>
+<li><a href="/page/jit/version_num" title="jit/version num">jit/version num</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

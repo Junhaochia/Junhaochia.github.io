@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>cookie.Set( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=cookie.Set">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/modules/cookie.lua#L105">View Source</a> - <a href="/page/Special:WhatLinksHere/cookie/Set" title="Special:WhatLinksHere/cookie/Set">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the value of a cookie, which is saved automatically by the <a href="/page/Category_colon_sql" title="Category:sql">sql library</a>.
+</p><p>These are stored in the *.db files - cl.db for clients, mn.db for menu state and sv.db for servers.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> key</span>
+</p>
+<div style="margin-left: 32px;">
+The name of the cookie that you want to set.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> value</span>
+</p>
+<div style="margin-left: 32px;">
+Value to store in the cookie.</div>
+</div>
+
+

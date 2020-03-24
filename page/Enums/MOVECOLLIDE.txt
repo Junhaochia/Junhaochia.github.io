@@ -1,0 +1,49 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/MOVECOLLIDE" title="Special:WhatLinksHere/Enums/MOVECOLLIDE">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetMoveCollide" title="Entity/SetMoveCollide">SetMoveCollide</a> and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetMoveCollide" title="Entity/GetMoveCollide">GetMoveCollide</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> MOVECOLLIDE_DEFAULT
+</td>
+<td> 0
+</td>
+<td> Default behavior
+</td></tr>
+<tr>
+<td> MOVECOLLIDE_FLY_BOUNCE
+</td>
+<td> 1
+</td>
+<td> Entity bounces, reflects, based on elasticity of surface and object - applies friction (adjust velocity)
+</td></tr>
+<tr>
+<td> MOVECOLLIDE_FLY_CUSTOM
+</td>
+<td> 2
+</td>
+<td> <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Touch" title="ENTITY/Touch">Touch</a> will modify the velocity however it likes
+</td></tr>
+<tr>
+<td> MOVECOLLIDE_FLY_SLIDE
+</td>
+<td> 3
+</td>
+<td> Entity slides along surfaces (no bounce) - applies friciton (adjusts velocity)
+</td></tr>
+<tr>
+<td> MOVECOLLIDE_COUNT
+</td>
+<td> 4
+</td>
+<td> Number of different movecollides
+</td></tr></table>
+
+

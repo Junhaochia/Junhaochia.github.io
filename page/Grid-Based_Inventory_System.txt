@@ -1,0 +1,426 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Prerequesites"><span class="tocnumber">1</span> <span class="toctext">Prerequesites</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Let.27s_Get_Started"><span class="tocnumber">2</span> <span class="toctext">Let's Get Started</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Final_Product"><span class="tocnumber">3</span> <span class="toctext">Final Product</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Test_Results"><span class="tocnumber">4</span> <span class="toctext">Test Results</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Prerequesites"> Prerequesites </span></h2>
+<ol><li> Lua knowledge.
+</li><li> An item system. Each item must have two functions:
+<ul><li> ITEM:GetIcon() -- Must return a Material() object.
+</li><li> ITEM:GetSize() -- Must return a width and height in cells.
+</li></ul>
+</li></ol>
+<p>A system like this can be found at the <a href="/page/Object_Oriented_Lua" title="Object Oriented Lua">Object Oriented Lua</a> tutorial.
+</p><p>Note that this tutorial only discusses clientside handling of an inventory.
+I'm too lazy for serverside networking...
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Let.27s_Get_Started"> Let's Get Started </span></h2>
+<p>So every item has a position in the backpack, and every item has a size in that backpack.
+To start, you'll need a table.
+We'll call it ply.Inv
+</p>
+<pre><code data-language="lua">local ply = LocalPlayer()
+ply.Inv = {}</code></pre>
+<p>ply.Inv will contain both the backpack AND the information about their inventory.
+</p><p>Let's create a few subtables and values in ply.Inv
+</p>
+<pre><code data-language="lua">ply.Inv.Backpack = {} --The actual backpack.
+ply.Inv.Equipped = {} --This is the equipped items, assuming it's going to be Diablo-Style.
+ply.Inv.Weight = 0
+</code></pre>
+<p>(You can create whatever values you will need for your system. Weight might not be necessary, etc.)
+</p><p>Next we're going to make the backpack table take the form of a 2-Dimensional table, with rows being the first key and each row containing columns. This would look something like:
+</p>
+<pre><code data-language="lua">for i=1,8 do --8 being the width of the backpack.
+      ply.Inv.Backpack[i] = {}
+end
+for k,v in pairs(ply.Inv.Backpack)do
+    for i=1,4 do --4 being the height of the backpack.
+        ply.Inv.Backpack[k][i] = false --False is a placeholder here. We'll overwrite that later.
+    end
+end
+</code></pre>
+<p>This will create an 8-wide, 4-tall 2D table.
+So to get the item at coordinate 2,4 you would do ply.Inv.Backpack[2][4]
+Simple enough.
+</p><p>But it's always simpler with a convenience function:
+</p>
+<pre><code data-language="lua"> local plymeta = FindMetaTable(&quot;Player&quot;)
+function plymeta:GetInvItem(x,y)
+     return self.Inv.Backpack[x][y]
+end
+</code></pre>
+<p>Ok, now to explain the basis of the system.
+The idea is this:
+We're going to create a new vgui element. This element will be a single square on the grid. With this we can have them shine and whatnot. When we finish designing this element we can replace the false's we set earlier.
+When we put an item in a place on the grid, we get the size of the item (width and height). We then tell all the squares in that area that there is now an item on them. We aren't going to root the item to all the squares; just to the one which is in the top left of the item. The one which tells all the other squares. This will be the item's parent square.
+So let's make these grid elements.
+</p>
+<pre><code data-language="lua">local PANEL = {}
+
+AccessorFunc(PANEL, &quot;m_ItemPanel&quot;, &quot;ItemPanel&quot;)
+AccessorFunc(PANEL, &quot;m_Color&quot;, &quot;Color&quot;)
+
+function PANEL:Init()
+    self.m_Coords = {x=0,y=0}
+    self:SetSize(30,30)
+    self:SetColor(Color(200,200,200))
+    self:SetItemPanel(false)
+
+    self:Receiver(&quot;invitem&quot;, function(pnl, item, drop, i, x, y) --Drag-drop functionality
+	if drop then
+		item = item[1]
+		local x1,y1 = pnl:GetPos()
+		local x2,y2 = item:GetPos()
+		if math.Dist(x1,y1,x2,y2) &lt;= 30 then --Find the top left slot.
+			if not pnl:GetItemPanel() then
+				local itm = item:GetItem()
+				local x,y = pnl:GetCoords()
+				local itmw, itmh = itm:GetSize() --GetSize needs to be a function in your items system.
+				local full = false
+				for i1=x, (x+itmw)-1 do
+					if full then break end
+					for i2=y, (y+itmh)-1 do
+						if LocalPlayer():GetInvItem(i1,i2):GetItemPanel() then --check if the panels in the area are full.
+							full = true
+							break
+						end
+					end
+				end
+				if not full then --If none of them are full then
+					for i1=x, (x+itmw)-1 do
+						for i2=y, (y+itmh)-1 do
+							LocalPlayer():GetInvItem(i1,i2):SetItemPanel(item) -- Tell all the things below it that they are now full of this item.
+						end
+					end
+					item:SetRoot(pnl) --like a parent, but not a parent.
+					item:SetPos(pnl:GetPos()) --move the item.
+				end
+			end
+		end
+	else
+		--Something about coloring of hovered slots.
+	end
+end, {})
+end
+
+function PANEL:SetCoords(x,y)
+     self.m_Coords[x] = x
+     self.m_Coords[y] = y
+end
+
+function PANEL:GetCoords()
+     return self.m_Coords[x], self.m_Coords[y]
+end
+
+local col
+function PANEL:Paint(w,h)
+     draw.NoTexture()
+     col = self:GetColor()
+     surface.SetDrawColor(col.r,col.g,col.b,255)
+     surface.DrawRect(0,0,w-2,h-2) --main square
+     surface.SetDrawColor(70,70,70,255)
+     surface.DrawRect(w-2,0,h,2) --borders
+     surface.DrawRect(0,h-2,2,w) -- ^
+end
+vgui.Register(&quot;InvSlot&quot;, PANEL, &quot;DPanel&quot;)
+</code></pre>
+<p>Done. Now we add the whole functionality.
+We have to assume that the item system involves unique items, not just arbitrary class id's, to identify each item.
+The best way to do this would be to link each item with an entity index. This would work if the items are all entities at some point.
+When you pick an item up it removes the entity version (saving its ent index) and when you drop it it creates a new entity of the same kind with the same info.
+This is all just concept. I'm not writing an item system in this tutorial.
+</p><p>So we would start by creating a slot panel for each inventory slot.
+</p>
+<pre><code data-language="lua">for k,v in pairs(ply.Inv.Backpack)do
+     for i=1,4 do --4 being the height of the backpack.
+          ply.Inv.Backpack[k][i] = vgui.Create(&quot;InvSlot&quot;)
+          ply.Inv.Backpack[k][i]:SetPos(k*30,i*30) --The icon is 30x30.
+          ply.Inv.Backpack[k][i]:SetCoords(k,i)
+     end
+end
+</code></pre>
+<p>Icons. Icon's everywhere.
+</p><p>Next let's make another vgui element. This will <i>represent</i> an item in your backpack.
+</p>
+<pre><code data-language="lua">local PANEL = {}
+
+AccessorFunc(PANEL, &quot;m_Item&quot;, &quot;Item&quot;)
+AccessorFunc(PANEL, &quot;m_Root&quot;, &quot;Root&quot;)
+
+function PANEL:Init()
+     self:SetSize(30,30)
+     self:SetItem(false) --false means no item.
+     self:SetColor(Color(100,100,100))
+     self:SetDroppable(&quot;invitem&quot;)
+end
+
+function PANEL:PaintOver(w,h)
+     draw.NoTexture()
+     if self:GetItem() then
+          surface.SetMaterial(self:GetItem():GetIcon()) --Your items must have a GetIcon method.
+          surface.DrawTexturedRect(0,0,w,h)
+     end
+end
+
+local col
+function PANEL:Paint(w,h)
+     draw.NoTexture()
+     col = self:GetColor()
+     surface.SetDrawColor(col.r,col.g,col.b,180)
+     surface.DrawRect(0,0,w,h) --background square
+end
+vgui.Register(&quot;InvItem&quot;, PANEL, &quot;DPanel&quot;)
+</code></pre>
+<p>Ok, so now we have the actual items.
+Remember we're only discussing the basics of a backpack system. You can add more if you want later.
+Next, let's create a function which finds out whether there is room in the backpack for a given item.
+If there is room it will return the panel to root to. If not then it will return false.
+</p>
+<pre><code data-language="lua">function IsRoomFor(item) --note that item must be an actual item, not a InvItem panel.
+	for k,v in ipairs(LocalPlayer().Inv.Backpack) do
+		for k2, pnl in ipairs(LocalPlayer().Inv.Backpack[v])do
+			if not pnl:GetItemPanel() then
+				local x,y = pnl:GetCoords()
+				local itmw, itmh = item:GetSize() --GetSize needs to be a function in your items system.
+				local full = false
+				for i1=x, (x+itmw)-1 do
+					if full then break end
+					for i2=y, (y+itmh)-1 do
+						if LocalPlayer():GetInvItem(i1,i2):GetItemPanel() then --check if the panels in the area are full.
+							full = true
+							break
+						end
+					end
+				end
+				if full then
+					return pnl --If there's room then return the open panel.
+				end
+			end
+		end
+	end
+	return false --if not, then return false.
+end
+</code></pre>
+<p>Most of this code is copied from the drag-n-drop functionality from earlier.
+Next, let's make items get picked up.
+</p>
+<pre><code data-language="lua">function PickupItem(item)
+	local place = IsRoomFor(item)
+	if place then
+		
+		local itm = vgui.Create(&quot;InvItem&quot;) --create a new item panel.
+		itm:SetItem(item)
+		itm:SetRoot(place)
+		itm:SetPos(place:GetPos())
+		
+		local x,y = place:GetCoords()
+		local itmw, itmh = item:GetSize() --GetSize needs to be a function in your items system.
+		for i1=x, (x+itmw)-1 do
+			for i2=y, (y+itmh)-1 do
+				LocalPlayer():GetInvItem(i1,i2):SetItemPanel(itm) -- Tell all the things below it that they are now full of this item.
+			end
+		end
+		
+		return true --successfully picked item up.
+		
+	else
+		return false --no room.
+	end
+end
+</code></pre>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="Final_Product"> Final Product </span></h2>
+<pre><code data-language="lua">local ply = LocalPlayer()
+ply.Inv = {}
+ply.Inv.Backpack = {} --The actual backpack.
+ply.Inv.Equipped = {} --This is the equipped items, assuming it's going to be Diablo-Style.
+ply.Inv.Weight = 0
+
+for i=1,8 do --8 being the width of the backpack.
+      ply.Inv.Backpack[i] = {}
+end
+for k,v in pairs(ply.Inv.Backpack)do
+    for i=1,4 do --4 being the height of the backpack.
+        ply.Inv.Backpack[k][i] = false --False is a placeholder here. We'll overwrite that later.
+    end
+end
+
+local plymeta = FindMetaTable(&quot;Player&quot;)
+function plymeta:GetInvItem(x,y)
+    return self.Inv.Backpack[x][y]
+end
+
+local PANEL = {}
+
+AccessorFunc(PANEL, &quot;m_ItemPanel&quot;, &quot;ItemPanel&quot;)
+AccessorFunc(PANEL, &quot;m_Color&quot;, &quot;Color&quot;)
+
+function PANEL:Init()
+    self.m_Coords = {x=0,y=0}
+    self:SetSize(30,30)
+    self:SetColor(Color(200,200,200))
+    self:SetItemPanel(false)
+
+    self:Receiver(&quot;invitem&quot;, function(pnl, item, drop, i, x, y) --Drag-drop
+	if drop then
+		item = item[1]
+		local x1,y1 = pnl:GetPos()
+		local x2,y2 = item:GetPos()
+		if math.Dist(x1,y1,x2,y2) &lt;= 30 then --Find the top left slot.
+			if not pnl:GetItemPanel() then
+				local itm = item:GetItem()
+				local x,y = pnl:GetCoords()
+				local itmw, itmh = itm:GetSize() --GetSize needs to be a function in your items system.
+				local full = false
+				for i1=x, (x+itmw)-1 do
+					if full then break end
+					for i2=y, (y+itmh)-1 do
+						if LocalPlayer():GetInvItem(i1,i2):GetItemPanel() then --check if the panels in the area are full.
+							full = true
+							break
+						end
+					end
+				end
+				if not full then --If none of them are full then
+					for i1=x, (x+itmw)-1 do
+						for i2=y, (y+itmh)-1 do
+							LocalPlayer():GetInvItem(i1,i2):SetItemPanel(item) -- Tell all the things below it that they are now full of this item.
+						end
+					end
+					item:SetRoot(pnl) --like a parent, but not a parent.
+					item:SetPos(pnl:GetPos()) --move the item.
+				end
+			end
+		end
+	else
+		--Something about coloring of hovered slots.
+	end
+end, {})
+end
+
+function PANEL:SetCoords(x,y)
+     self.m_Coords[x] = x
+     self.m_Coords[y] = y
+end
+
+function PANEL:GetCoords()
+     return self.m_Coords[x], self.m_Coords[y]
+end
+
+local col
+function PANEL:Paint(w,h)
+     draw.NoTexture()
+     col = self:GetColor()
+     surface.SetDrawColor(col.r,col.g,col.b,255)
+     surface.DrawRect(0,0,w-2,h-2) --main square
+     surface.SetDrawColor(70,70,70,255)
+     surface.DrawRect(w-2,0,2,h) --borders
+     surface.DrawRect(0,h-2,w,2) -- ^
+end
+vgui.Register(&quot;InvSlot&quot;, PANEL, &quot;DPanel&quot;)
+
+local dfram = vgui.Create(&quot;DFrame&quot;)
+dfram:SetSize(ScrW()/2, ScrH()/2)
+dfram:Center()
+dfram:MakePopup()
+for k,v in pairs(ply.Inv.Backpack)do
+     for i=1,4 do --4 being the height of the backpack.
+          ply.Inv.Backpack[k][i] = vgui.Create(&quot;InvSlot&quot;, dfram)
+          ply.Inv.Backpack[k][i]:SetPos((k*30)+100,(i*30)+100) --The icon is 30x30.
+          ply.Inv.Backpack[k][i]:SetCoords(k,i)
+     end
+end
+
+PANEL = {}
+
+AccessorFunc(PANEL, &quot;m_Item&quot;, &quot;Item&quot;)
+AccessorFunc(PANEL, &quot;m_Root&quot;, &quot;Root&quot;)
+
+function PANEL:Init()
+     self:SetSize(30,30)
+     self:SetItem(false) --false means no item.
+     self:SetColor(Color(100,100,100))
+     self:SetDroppable(&quot;invitem&quot;)
+end
+
+function PANEL:PaintOver(w,h)
+     draw.NoTexture()
+     if self:GetItem() then
+          surface.SetMaterial(self:GetItem():GetIcon()) --Your items must have a&#160;:GetIcon function.
+          surface.DrawTexturedRect(0,0,w,h)
+     end
+end
+
+local col
+function PANEL:Paint(w,h)
+     draw.NoTexture()
+     col = self:GetColor()
+     surface.SetDrawColor(col.r,col.g,col.b,180)
+     surface.DrawRect(0,0,w,h) --background square
+end
+vgui.Register(&quot;InvItem&quot;, PANEL, &quot;DPanel&quot;)
+
+function IsRoomFor(item) --note that item must be an actual item, not a InvItem panel.
+	for k,v in ipairs(LocalPlayer().Inv.Backpack) do
+		for k2, pnl in ipairs(LocalPlayer().Inv.Backpack[v])do
+			if not pnl:GetItemPanel() then
+				local x,y = pnl:GetCoords()
+				local itmw, itmh = item:GetSize() --GetSize needs to be a function in your items system.
+				local full = false
+				for i1=x, (x+itmw)-1 do
+					if full then break end
+					for i2=y, (y+itmh)-1 do
+						if LocalPlayer():GetInvItem(i1,i2):GetItemPanel() then --check if the panels in the area are full.
+							full = true
+							break
+						end
+					end
+				end
+				if full then
+					return pnl --If there's room then return the open panel.
+				end
+			end
+		end
+	end
+	return false --if not, then return false.
+end
+
+function PickupItem(item)
+	local place = IsRoomFor(item)
+	if place then
+		
+		local itm = vgui.Create(&quot;InvItem&quot;) --create a new item panel.
+		itm:SetItem(item)
+		itm:SetRoot(place)
+		itm:SetPos(place:GetPos())
+		
+		local x,y = place:GetCoords()
+		local itmw, itmh = item:GetSize() --GetSize needs to be a function in your items system.
+		for i1=x, (x+itmw)-1 do
+			for i2=y, (y+itmh)-1 do
+				LocalPlayer():GetInvItem(i1,i2):SetItemPanel(itm) -- Tell all the things below it that they are now full of this item.
+			end
+		end
+		
+		return true --successfully picked item up.
+		
+	else
+		return false --no room.
+	end
+end
+</code></pre>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="Test_Results"> Test Results </span></h2>
+<p><a href="/page/File:grid_example.jpg" class="image"><img alt="grid example.jpg" src="/images/a/a3/grid_example.jpg" width="871" height="664" /></a>
+</p><p><br />
+--<a href="/page/User:Bobblehead" title="User:Bobblehead">Bobblehead</a> 00:03, 13 December 2014 (UTC)
+</p>
+
+

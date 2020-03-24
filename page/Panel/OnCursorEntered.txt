@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>PANEL:OnCursorEntered( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PANEL.OnCursorEntered">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PANEL/OnCursorEntered" title="Special:WhatLinksHere/PANEL/OnCursorEntered">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called whenever the cursor entered the panels bounds.
+</p>
+
+

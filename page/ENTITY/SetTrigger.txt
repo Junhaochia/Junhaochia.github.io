@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;SetTrigger( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetTrigger">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetTrigger" title="Special:WhatLinksHere/Entity/SetTrigger">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Marks the entity as a trigger, so it will generate <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/StartTouch" title="ENTITY/StartTouch">StartTouch</a>, <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Touch" title="ENTITY/Touch">Touch</a> and <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/EndTouch" title="ENTITY/EndTouch">EndTouch</a> callbacks.
+</p><p>Internally this is stored as <a href="/page/Enums/FSOLID" title="Enums/FSOLID">FSOLID_TRIGGER</a> flag.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> maketrigger</span>
+</p>
+<div style="margin-left: 32px;">
+Make the entity trigger or not</div>
+</div>
+
+

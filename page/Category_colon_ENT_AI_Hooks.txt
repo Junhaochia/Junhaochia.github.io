@@ -1,0 +1,39 @@
+<p>This category lists all entity AI hooks.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "ENT AI Hooks"</h2>
+<p>The following 27 pages are in this category, out of 27 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>E</h3>
+<ul><li><a href="/page/ENTITY/DoingEngineSchedule" title="ENTITY/DoingEngineSchedule">ENTITY/DoingEngineSchedule</a></li>
+<li><a href="/page/ENTITY/DoSchedule" title="ENTITY/DoSchedule">ENTITY/DoSchedule</a></li>
+<li><a href="/page/ENTITY/EndTouch" title="ENTITY/EndTouch">ENTITY/EndTouch</a></li>
+<li><a href="/page/ENTITY/EngineScheduleFinish" title="ENTITY/EngineScheduleFinish">ENTITY/EngineScheduleFinish</a></li>
+<li><a href="/page/ENTITY/ExpressionFinished" title="ENTITY/ExpressionFinished">ENTITY/ExpressionFinished</a></li>
+<li><a href="/page/ENTITY/GetAttackSpread" title="ENTITY/GetAttackSpread">ENTITY/GetAttackSpread</a></li>
+<li><a href="/page/ENTITY/GetRelationship" title="ENTITY/GetRelationship">ENTITY/GetRelationship</a></li>
+<li><a href="/page/ENTITY/NextTask" title="ENTITY/NextTask">ENTITY/NextTask</a></li>
+<li><a href="/page/ENTITY/OnCondition" title="ENTITY/OnCondition">ENTITY/OnCondition</a></li></ul></td>
+<td><h3>E cont.</h3>
+<ul><li><a href="/page/ENTITY/OnTakeDamage" title="ENTITY/OnTakeDamage">ENTITY/OnTakeDamage</a></li>
+<li><a href="/page/ENTITY/OnTaskComplete" title="ENTITY/OnTaskComplete">ENTITY/OnTaskComplete</a></li>
+<li><a href="/page/ENTITY/RunAI" title="ENTITY/RunAI">ENTITY/RunAI</a></li>
+<li><a href="/page/ENTITY/RunEngineTask" title="ENTITY/RunEngineTask">ENTITY/RunEngineTask</a></li>
+<li><a href="/page/ENTITY/RunTask" title="ENTITY/RunTask">ENTITY/RunTask</a></li>
+<li><a href="/page/ENTITY/ScheduleFinished" title="ENTITY/ScheduleFinished">ENTITY/ScheduleFinished</a></li>
+<li><a href="/page/ENTITY/SelectSchedule" title="ENTITY/SelectSchedule">ENTITY/SelectSchedule</a></li>
+<li><a href="/page/ENTITY/SetTask" title="ENTITY/SetTask">ENTITY/SetTask</a></li>
+<li><a href="/page/ENTITY/StartEngineSchedule" title="ENTITY/StartEngineSchedule">ENTITY/StartEngineSchedule</a></li></ul></td>
+<td><h3>E cont.</h3>
+<ul><li><a href="/page/ENTITY/StartEngineTask" title="ENTITY/StartEngineTask">ENTITY/StartEngineTask</a></li>
+<li><a href="/page/ENTITY/StartSchedule" title="ENTITY/StartSchedule">ENTITY/StartSchedule</a></li>
+<li><a href="/page/ENTITY/StartTask" title="ENTITY/StartTask">ENTITY/StartTask</a></li>
+<li><a href="/page/ENTITY/StartTouch" title="ENTITY/StartTouch">ENTITY/StartTouch</a></li>
+<li><a href="/page/ENTITY/TaskFinished" title="ENTITY/TaskFinished">ENTITY/TaskFinished</a></li>
+<li><a href="/page/ENTITY/TaskTime" title="ENTITY/TaskTime">ENTITY/TaskTime</a></li>
+<li><a href="/page/ENTITY/Touch" title="ENTITY/Touch">ENTITY/Touch</a></li>
+<li><a href="/page/ENTITY/UpdateTransmitState" title="ENTITY/UpdateTransmitState">ENTITY/UpdateTransmitState</a></li>
+<li><a href="/page/ENTITY/Use" title="ENTITY/Use">ENTITY/Use</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

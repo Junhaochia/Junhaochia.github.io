@@ -1,0 +1,8 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;Spawn( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.Spawn">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/Spawn" title="Special:WhatLinksHere/Entity/Spawn">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Initializes the entity and starts its networking. If called on a player, it will respawn them.
+</p><p>This calls <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Initialize" title="ENTITY/Initialize">Initialize</a> on Lua-defined entities.
+</p>
+
+

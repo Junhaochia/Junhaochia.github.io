@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>CNewParticleEffect&#58;SetSortOrigin( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CNewParticleEffect.SetSortOrigin">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CNewParticleEffect/SetSortOrigin" title="Special:WhatLinksHere/CNewParticleEffect/SetSortOrigin">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the sort origin for given particle system. This is used as a helper to determine which particles are in front of which.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> origin</span>
+</p>
+<div style="margin-left: 32px;">
+The new sort origin.</div>
+</div>
+
+

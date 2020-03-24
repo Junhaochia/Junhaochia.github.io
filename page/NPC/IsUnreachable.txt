@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;IsUnreachable( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.IsUnreachable">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/IsUnreachable" title="Special:WhatLinksHere/NPC/IsUnreachable">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns whether the entity given can be reached by this NPC.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> testEntity</span>
+</p>
+<div style="margin-left: 32px;">
+The entity to test.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+If the entity is reachable or not.</div>
+</div>
+
+

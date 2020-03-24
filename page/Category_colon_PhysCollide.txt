@@ -1,0 +1,11 @@
+<p>A PhysCollide holds collision data from VPhysics. These objects can be used to run (currently quite limited) collision tests, but do not represent actual physics objects.
+</p><p>Created by <a href="/page/Global/CreatePhysCollideBox" title="Global/CreatePhysCollideBox">CreatePhysCollideBox</a> or <a href="/page/Global/CreatePhysCollidesFromModel" title="Global/CreatePhysCollidesFromModel">CreatePhysCollidesFromModel</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "PhysCollide"</h2>
+<p>The following 3 pages are in this category, out of 3 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>P</h3>
+<ul><li><a href="/page/PhysCollide/Destroy" title="PhysCollide/Destroy">PhysCollide/Destroy</a></li><li><a href="/page/PhysCollide/IsValid" title="PhysCollide/IsValid">PhysCollide/IsValid</a></li><li><a href="/page/PhysCollide/TraceBox" title="PhysCollide/TraceBox">PhysCollide/TraceBox</a></li></ul></div>
+</div></div>

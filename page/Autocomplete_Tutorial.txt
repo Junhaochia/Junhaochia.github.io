@@ -1,0 +1,119 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Clientside_Console_commands"><span class="tocnumber">2</span> <span class="toctext">Clientside Console commands</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Let.27s_start"><span class="tocnumber">2.1</span> <span class="toctext">Let's start</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Serverside_Console_Commands"><span class="tocnumber">3</span> <span class="toctext">Serverside Console Commands</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#The_End"><span class="tocnumber">4</span> <span class="toctext">The End</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Disclaimer"><span class="tocnumber">4.1</span> <span class="toctext">Disclaimer</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction"> Introduction </span></h1>
+<div class="thumb tright"><div class="thumbinner" style="width:175px;"><a href="/page/File:autocomplete1.jpg" class="image"><img alt="" src="/images/5/5e/autocomplete1.jpg" width="173" height="190" class="thumbimage" /></a> <div class="thumbcaption">Autocomplete showing several DarkRP commands</div></div></div>
+<p>Autocomplete is a feature that predicts words and helps you increase the efficiency of your console commands. By general, Garry's Mod will give you some auto completion by showing you the available console commands, but you can (somewhat) easily extend this.<br />
+<br />
+This tutorial will help you create both a clientside and a (more advanced) serverside console commands with autocomplete.<br clear="all" />
+</p>
+<h1> <span class="mw-headline" id="Clientside_Console_commands"> Clientside Console commands </span></h1>
+<h2> <span class="mw-headline" id="Let.27s_start"> Let's start </span></h2>
+<p>We're going to create a clientside console command called "rp_steamid" which will find the SteamID by inputing a player's nick. Simple enough, but with the help of autocomplete we can make this a nice and fast experience.
+</p>
+<pre><code data-language="lua">
+local function GetSteamID( ply, cmd, args )
+	local nick = args[1]
+	nick = string.lower( nick )
+	
+	for k,v in pairs( player.GetAll() ) do
+		if string.find( string.lower( v:Nick() ), nick ) then
+			MsgN( &quot;SteamID: &quot; .. v:SteamID() )
+			return
+		end
+	end
+	
+	MsgN( &quot;Couldn't find player.&quot; )
+end
+concommand.Add( &quot;rp_steamid&quot;, GetSteamID )
+</code></pre>
+<p>This is how a simple steamid grabbing script could look like. We can now type in
+</p>
+<pre><code data-language="lua">rp_steamid Donkie</code></pre>
+<p>And out comes
+</p>
+<pre><code data-language="lua">&gt; SteamID: STEAM_0:0:16436609</code></pre>
+<div class="thumb tright"><div class="thumbinner" style="width:158px;"><a href="/page/File:autocomplete2.jpg" class="image"><img alt="" src="/images/3/37/autocomplete2.jpg" width="156" height="106" class="thumbimage" /></a> <div class="thumbcaption">The current state</div></div></div>
+<p>But as you can see on the image, we have no clue who on the server is called Don, there might be several people named similarly, which can give us a hard day finding who it actually was who we wanted the SteamID from, the player can also have a bunch of weird characters which is impossible for us to type into the field without a bunch of copypasting.<br />
+<br />
+To enable autocomplete, we have to create our own function that defines what we should display to the user. This is done like this:<br clear="all" />
+</p>
+<pre><code data-language="lua">
+local function AutoComplete( cmd, stringargs )
+	print( cmd, stringargs )
+end
+concommand.Add( &quot;rp_steamid&quot;, GetSteamID, AutoComplete )
+</code></pre>
+<p>Now, everytime the user types or removes a character from the console input, the function AutoComplete will get called along with the parameters.<br />
+</p>
+<ul><li> cmd: Will always be the command, not useful for us right now. (Gives "rp_steamid").
+</li><li> stringargs: Gives us the rest of the input. Typing in "rp_steamid Don" will make stringargs = " Don".
+</li></ul>
+<p>In this function we are also meant to return something, a table. This table should contain the set of values we want to display to the user in the autocomplete box.
+</p>
+<pre><code data-language="lua">
+local function AutoComplete( cmd, stringargs )
+	print( cmd, stringargs )
+	
+	local tbl = {}
+	table.insert(tbl, &quot;Test 1&quot;)
+	table.insert(tbl, &quot;Test 2&quot;)
+	table.insert(tbl, &quot;Test 3&quot;)
+	return tbl
+end
+</code></pre>
+<p>Gives us<br />
+<a href="/page/File:autocomplete3.jpg" class="image"><img alt="autocomplete3.jpg" src="/images/a/aa/autocomplete3.jpg" width="127" height="99" /></a><br />
+Which should give you a clear idea how this works. All we need to do now is to return all players matching "Don" instead of a bunch of test values.
+</p>
+<pre><code data-language="lua">
+local function AutoComplete( cmd, stringargs )
+	print( cmd, stringargs )
+	
+	stringargs = string.Trim(stringargs) -- Remove any spaces before or after.
+	stringargs = string.lower(stringargs)
+	
+	local tbl = {}
+	
+	for k,v in pairs(player.GetAll()) do
+		local nick = v:Nick()
+		if string.find( string.lower( nick ), stringargs ) then
+			nick = &quot;\&quot;&quot; .. nick .. &quot;\&quot;&quot; -- We put quotes around it in case players have spaces in their names.
+			nick = &quot;rp_steamid &quot; .. nick -- We also need to put the cmd before for it to work properly.
+			
+			table.insert(tbl, nick)
+		end
+	end
+	
+	return tbl
+end
+</code></pre>
+<p><a href="/page/File:autocomplete4.jpg" class="image"><img alt="autocomplete4.jpg" src="/images/1/1a/autocomplete4.jpg" width="137" height="70" /></a> <a href="/page/File:autocomplete5.jpg" class="image"><img alt="autocomplete5.jpg" src="/images/4/44/autocomplete5.jpg" width="131" height="115" /></a><br />
+And we can simply click one of the values to get the steamid of that person.
+</p>
+<h1> <span class="mw-headline" id="Serverside_Console_Commands"> Serverside Console Commands </span></h1>
+<p>Console commands registered in the server realm will not appear on clients connected to the server and as such there is no reason for autocomplete on such commands.
+</p><p>You can still do it via the same method as above, but it will only be usable in the very specific case where someone hosts the server (a listen server) from their game client, the autocomplete will only work for the host of the server since the command will only appear for them. Same applies to singleplayer games.
+</p>
+<h1> <span class="mw-headline" id="The_End"> The End </span></h1>
+<p>Thanks for reading this, I hope that more people will use autocomplete with their console commands in the future.
+</p><p>Over and out --<a href="/page/User:Donkie" title="User:Donkie">Donkie</a> 12:49, 26 February 2014 (UTC)
+</p>
+<h2> <span class="mw-headline" id="Disclaimer"> Disclaimer </span></h2>
+<p>I am well aware that my code can be optimized beyond max, I simply dumbed it down for it to be easier understood.
+</p>
+
+

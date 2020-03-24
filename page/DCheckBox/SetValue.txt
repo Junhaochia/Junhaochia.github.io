@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DCheckBox&#58;SetValue( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DCheckBox.SetValue">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DCheckBox/SetValue" title="Special:WhatLinksHere/DCheckBox/SetValue">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sets the checked state of the checkbox, and calls the checkbox's <a href="/page/Category_colon_DCheckBox" title="Category:DCheckBox">DCheckBox</a>:<a href="/page/DCheckBox/OnChange" title="DCheckBox/OnChange">OnChange</a> and <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/ConVarChanged" title="Panel/ConVarChanged">ConVarChanged</a> methods.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> checked</span>
+</p>
+<div style="margin-left: 32px;">
+Whether the box should be checked or not.</div>
+</div>
+
+

@@ -1,0 +1,80 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;ResetAllFades( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.ResetAllFades">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/ResetAllFades" title="Special:WhatLinksHere/Panel/ResetAllFades">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Resets all text fades in a <a href="/page/Category_colon_RichText" title="Category:RichText">RichText</a> element made with <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/InsertFade" title="Panel/InsertFade">InsertFade</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> hold</span>
+</p>
+<div style="margin-left: 32px;">
+True to reset fades, false otherwise.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> expiredOnly</span>
+</p>
+<div style="margin-left: 32px;">
+Any value equating to <i>true</i> will reset fades only on text segments that are completely faded out.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> newSustain</span>
+</p>
+<div style="margin-left: 32px;">
+The new sustain value of each faded text segment. Set to -1 to keep the old sustain value.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a RichText panel where two text segments slowly fade out and get reset to full alpha 5 seconds after being created.
+</p>
+<pre><code data-language="lua">-- Window frame
+TextFrame = vgui.Create(&quot;DFrame&quot;)
+TextFrame:SetSize(200, 100)
+TextFrame:Center()
+TextFrame:SetTitle(&quot;ResetAllFades&quot;)
+TextFrame:MakePopup()
+
+-- Rich Text panel
+local richtext = vgui.Create(&quot;RichText&quot;, TextFrame)
+richtext:Dock(FILL)
+
+-- Append text and start fading a few frames after creation (won't work otherwise)
+timer.Simple(0.05, function()
+
+	richtext:SetBGColor(Color(32, 32, 32))
+	richtext:SetFontInternal(&quot;GModNotify&quot;)
+
+	richtext:AppendText(&quot;This is &quot;)
+	richtext:InsertFade(5, 2)
+	
+	richtext:AppendText(&quot;a test...&quot;)
+	richtext:InsertFade(5, 1)
+	
+end)
+
+-- 5 seconds after creation, reset all the fades
+timer.Simple(5, function()
+
+	richtext:ResetAllFades(true, false, -1)
+
+end)</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><br /><br />
+<a href="/page/File:RichText_ResetAllFades_example1.gif" class="image"><img alt="RichText ResetAllFades example1.gif" src="/images/7/71/RichText_ResetAllFades_example1.gif" width="200" height="100" /></a></div>
+
+

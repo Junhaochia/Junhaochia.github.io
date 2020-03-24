@@ -1,0 +1,49 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What_you_need"><span class="tocnumber">1</span> <span class="toctext">What you need</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#A_Kinect"><span class="tocnumber">1.1</span> <span class="toctext">A Kinect</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Kinect_for_Windows_Runtime_v1.6"><span class="tocnumber">1.2</span> <span class="toctext">Kinect for Windows Runtime v1.6</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Kinect_for_Windows_SDK_v1.6"><span class="tocnumber">1.3</span> <span class="toctext">Kinect for Windows SDK v1.6</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#More_Room"><span class="tocnumber">1.4</span> <span class="toctext">More Room</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#How_to_play"><span class="tocnumber">2</span> <span class="toctext">How to play</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Troubleshooting"><span class="tocnumber">3</span> <span class="toctext">Troubleshooting</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Recording"><span class="tocnumber">4</span> <span class="toctext">Recording</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Kinect_for_XBox_One"><span class="tocnumber">5</span> <span class="toctext">Kinect for XBox One</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="What_you_need">What you need</span></h1>
+<p>To use the Kinect in Garry's Mod you need a few things.
+</p>
+<h2> <span class="mw-headline" id="A_Kinect">A Kinect</span></h2>
+<p>It doesn't have to be the Windows version of the Kinect - but you need one. You can't use your webcam, or some alternative. It needs to be a Kinect.
+</p><p>The Xbox 360 version of the Kinect uses a different connector, since the device needs a power supply. For older Xbox 360 models (non-slim) and, in our case, computers, you will need to buy a Kinect usb/power adapter.
+</p>
+<h2> <span class="mw-headline" id="Kinect_for_Windows_Runtime_v1.6">Kinect for Windows Runtime v1.6</span></h2>
+<p>The runtime files are <a rel="nofollow" class="external text" href="https://www.microsoft.com/en-us/download/details.aspx?id=34811">available here</a>. You might already have this installed if you've used your Kinect on your PC before. But you'd probably remember downloading it.
+</p>
+<h2> <span class="mw-headline" id="Kinect_for_Windows_SDK_v1.6">Kinect for Windows SDK v1.6</span></h2>
+<p>(These files may not be required but it may fix the Kinect features for you if they aren't working, as it has for some) The SDK files are <a rel="nofollow" class="external text" href="https://www.microsoft.com/en-us/download/details.aspx?id=34808">available here</a>. You might already have this installed if you've used your Kinect on your PC before (same as the Runtime). But you'd probably remember downloading it.
+</p>
+<h2> <span class="mw-headline" id="More_Room">More Room</span></h2>
+<p>It works best when the camera can see the whole of your body, from your head to your feet. So make sure your camera is set up properly so you can stand far enough away.
+</p>
+<h1> <span class="mw-headline" id="How_to_play">How to play</span></h1>
+<p>Go ingame, spawn a ragdoll, hold <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">C</span> (or whatever other key you may have your context menu bound to) and right click on it. In the menu choose "Control With Motion Sensor"
+</p><p>If the kinect option isn't there - then GMod can't detect your kinect for some reason.
+</p><p>Now stand infront of your kinect and the ragdoll should start to copy you.
+</p>
+<h1> <span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h1>
+<p>If you join the game and it shows the kinect options but they don't seem to do anything, then first try rebooting.
+</p><p>If that doesn't work, and you have an Xbox kinect - then you need to install the <a rel="nofollow" class="external text" href="https://www.microsoft.com/en-us/download/details.aspx?id=34808">Windows Kinect SDK</a> 1.6 too. Give that a go.
+</p>
+<h1> <span class="mw-headline" id="Recording">Recording</span></h1>
+<p>If you download the <a rel="nofollow" class="external text" href="https://www.microsoft.com/en-us/download/details.aspx?id=34807">Kinect for Windows Developer Toolkit v1.6</a> it includes a program called Kinect Studio which can be used to record your kinect input to a file - and play it back. This is useful in making movies by yourself, where you want to act something out and walk around recording it at the same time.
+</p>
+<h1> <span class="mw-headline" id="Kinect_for_XBox_One">Kinect for XBox One</span></h1>
+<p>Although Microsoft has officially released the Xbox One Kinect drivers for Windows, Garry's Mod doesn't officially support the Xbox One kinect yet. It may work, but there's no guarantee and the extended features (such as heart rate detection) aren't implemented yet.
+</p>
+
+

@@ -1,0 +1,9 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;StopParticles( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.StopParticles">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/StopParticles" title="Special:WhatLinksHere/Entity/StopParticles">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Stops any attached to the entity .pcf particles using <a href="/page/Global/ParticleEffectAttach" title="Global/ParticleEffectAttach">ParticleEffectAttach</a>.
+</p><p>On client, this is the same as <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/StopParticleEmission" title="Entity/StopParticleEmission">StopParticleEmission</a>. ( and you should use StopParticleEmission instead )<br />
+On server, this is the same as running <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/StopParticleEmission" title="Entity/StopParticleEmission">StopParticleEmission</a> on every client.
+</p>
+
+

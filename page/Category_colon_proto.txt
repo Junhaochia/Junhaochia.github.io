@@ -1,0 +1,9 @@
+<p>A proto is a <a href="/page/Category_colon_function" title="Category:function">function</a> prototype that has been described in code but not initialized as a callable object.
+</p><p>You can browse its bytecode and debug information with the jit.util functions, but it cannot be executed.
+</p><p>A proto has the same relationship with a function as classes have with its objects in OOP languages: a class can have multiple object instances, but objects are only of single class type.
+</p><p>See <a href="/page/Category_colon_jit" title="Category:jit">jit</a>.<a href="/page/jit/util.funck" title="jit/util.funck">util.funck</a> for an example.
+</p>
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

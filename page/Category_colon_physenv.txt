@@ -1,0 +1,19 @@
+<p>The physenv library allows you to control the physics environment created by the engine, and lets you modify constants such as gravity and maximum velocity.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "physenv"</h2>
+<p>The following 7 pages are in this category, out of 7 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>P</h3>
+<ul><li><a href="/page/physenv/AddSurfaceData" title="physenv/AddSurfaceData">physenv/AddSurfaceData</a></li>
+<li><a href="/page/physenv/GetAirDensity" title="physenv/GetAirDensity">physenv/GetAirDensity</a></li>
+<li><a href="/page/physenv/GetGravity" title="physenv/GetGravity">physenv/GetGravity</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/physenv/GetPerformanceSettings" title="physenv/GetPerformanceSettings">physenv/GetPerformanceSettings</a></li>
+<li><a href="/page/physenv/SetAirDensity" title="physenv/SetAirDensity">physenv/SetAirDensity</a></li>
+<li><a href="/page/physenv/SetGravity" title="physenv/SetGravity">physenv/SetGravity</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/physenv/SetPerformanceSettings" title="physenv/SetPerformanceSettings">physenv/SetPerformanceSettings</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

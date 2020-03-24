@@ -1,0 +1,56 @@
+<p>The Multiplayer aspect of Garry's Mod is most likely it's biggest and best feature. With literally hundreds of community servers and <a href="/index.php?title=gamemodes&amp;action=edit&amp;redlink=1" class="new" title="gamemodes (page does not exist)">gamemodes</a>, and even more players, it's difficult to not find something new.
+</p><p>As an obvious disclaimer, multiplayer experience will vary. The quality of servers will widely vary.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Finding_a_Multiplayer_Game"><span class="tocnumber">1</span> <span class="toctext">Finding a Multiplayer Game</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#The_Multiplayer_Menu"><span class="tocnumber">1.1</span> <span class="toctext">The Multiplayer Menu</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Multiplayer_Options"><span class="tocnumber">1.2</span> <span class="toctext">Multiplayer Options</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Using_the_Server_Browser"><span class="tocnumber">1.3</span> <span class="toctext">Using the Server Browser</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Finding_a_Multiplayer_Game">Finding a Multiplayer Game</span></h1>
+<p>To join an active Multiplayer, start at the <a href="/page/Main_Menu" title="Main Menu">Main Menu</a>. From here, select the "Find Multiplayer Game" button.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:326px;"><a href="/page/File:Tutorial_Multiplayer_MainMenu.png" class="image"><img alt="Tutorial Multiplayer MainMenu.png" src="/images/c/c7/Tutorial_Multiplayer_MainMenu.png" width="324" height="408" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:Tutorial_Multiplayer_MainMenu.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div></div></div></div></div>
+<h3> <span class="mw-headline" id="The_Multiplayer_Menu">The Multiplayer Menu</span></h3>
+<p>Selecting this option opens the multiplayer menu.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:502px;"><a href="/page/File:Tutorial_Multiplayer_MultiplayerMenu.png" class="image"><img alt="Tutorial Multiplayer MultiplayerMenu.png" src="/images/thumb/d/d6/Tutorial_Multiplayer_MultiplayerMenu.png/500px-Tutorial_Multiplayer_MultiplayerMenu.png" width="500" height="400" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:Tutorial_Multiplayer_MultiplayerMenu.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div></div></div></div></div>
+<p>To the left, you will see the different options available for browsing Multiplayer servers.
+</p><p>Unlike the older server browser, which simply showed all available servers, the newer browser groups servers by gamemode.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:151px;"><a href="/page/File:Tutorial_Multiplayer_MultiplayerOptions.png" class="image"><img alt="Tutorial Multiplayer MultiplayerOptions.png" src="/images/d/d3/Tutorial_Multiplayer_MultiplayerOptions.png" width="149" height="217" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:Tutorial_Multiplayer_MultiplayerOptions.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div></div></div></div></div>
+<p>To the right, you will see the <a href="/index.php?title=gamemodes&amp;action=edit&amp;redlink=1" class="new" title="gamemodes (page does not exist)">gamemodes</a> that are currently available to join.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:502px;"><a href="/page/File:Tutorial_Multiplayer_Servers.png" class="image"><img alt="Tutorial Multiplayer Servers.png" src="/images/thumb/8/85/Tutorial_Multiplayer_Servers.png/500px-Tutorial_Multiplayer_Servers.png" width="500" height="845" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:Tutorial_Multiplayer_Servers.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div></div></div></div></div>
+<h3> <span class="mw-headline" id="Multiplayer_Options">Multiplayer Options</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/page/File:Tutorial_Multiplayer_LegacyBrowser.png" class="image"><img alt="" src="/images/thumb/1/16/Tutorial_Multiplayer_LegacyBrowser.png/200px-Tutorial_Multiplayer_LegacyBrowser.png" width="200" height="144" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:Tutorial_Multiplayer_LegacyBrowser.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>The legacy server browser.</div></div></div>
+<p><b>Internet</b> will show all online gamemodes available.
+</p><p><b>Local Network</b> will show all gamemodes available locally ("LAN").
+</p><p><b>History</b> will show any servers that you have previously played.
+</p><p><b>Favorites</b> will show any servers that you have added to your favorites list.
+</p><p><b>Refresh Listings</b> will refresh the gamemode and server lists.
+</p><p><b>Legacy Browser</b> will bring up the original server browser.
+</p><p><br />
+</p>
+<h3> <span class="mw-headline" id="Using_the_Server_Browser">Using the Server Browser</span></h3>
+<p>To start, chose a gamemode that you would like to play. Gamemodes are sorted by how many players are currently in that game. Select your chosen gamemode. You can return to the gamemode menu by pressing the blue "Return to gamemodes" button.
+</p><p>After choosing your gamemode, you will continue to the <b>Server List</b>.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:502px;"><a href="/page/File:Tutorial_Multiplayer_ServerList.png" class="image"><img alt="" src="/images/thumb/a/ab/Tutorial_Multiplayer_ServerList.png/500px-Tutorial_Multiplayer_ServerList.png" width="500" height="563" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:Tutorial_Multiplayer_ServerList.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>The Server List</div></div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/page/File:Tutorial_Multiplayer_Search.png" class="image"><img alt="" src="/images/thumb/4/42/Tutorial_Multiplayer_Search.png/300px-Tutorial_Multiplayer_Search.png" width="300" height="44" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:Tutorial_Multiplayer_Search.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Searching for a server by map name.</div></div></div>
+<p>By default, servers are ordered by their <i>Ranking</i>, as seen on the far right of the server list. Servers are ranked by multiple variables such as ping, players in the server, and if you have the current map or not. Ranking is intended to help you find the best server possible.
+</p><p>Along with ranking, servers can also be ordered by <i>Name</i>, the current <i>Map</i>, the number of <i>Players</i> currently on the server, and the servers <i>Ping</i>.
+</p><p>It's also possible to search for servers. Simply enter your search terms in the box in the top-right of the server list. It will search server and map names.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/page/File:Tutorial_Multiplayer_ServerMenu.png" class="image"><img alt="" src="/images/thumb/7/72/Tutorial_Multiplayer_ServerMenu.png/200px-Tutorial_Multiplayer_ServerMenu.png" width="200" height="481" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:Tutorial_Multiplayer_ServerMenu.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>The Server Menu.</div></div></div>
+<p>Choose the server you want to play on. I recommend choosing the server that has the highest rank. Click on the server you want to join.
+</p><p>After clicking on the server you want to join, the <b>Server Menu</b> will appear to the right. This menu contains useful information such as the name of the server, the server's IP address, as well as a list of players, showing their names, game score, and time spent on the server.
+</p><p>To join a server, simply click the blue "Join Server" button on the server menu. You will connect to the server, and download any necessary files.
+</p>
+
+

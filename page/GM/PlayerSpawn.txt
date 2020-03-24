@@ -1,0 +1,69 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>GM:PlayerSpawn( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.PlayerSpawn">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/PlayerSpawn" title="Special:WhatLinksHere/GM/PlayerSpawn">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called whenever a player spawns, including respawns.
+</p><p>See <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerInitialSpawn" title="GM/PlayerInitialSpawn">PlayerInitialSpawn</a> for a hook called only the first time a player spawns.
+</p><p>See the <a href="/page/Game_Events" title="Game Events">player_spawn gameevent</a> for a shared version of this hook.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>By default, in "base" derived gamemodes, this hook will also call <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerLoadout" title="GM/PlayerLoadout">PlayerLoadout</a> and <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerSetModel" title="GM/PlayerSetModel">PlayerSetModel</a>, which may override your <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetModel" title="Entity/SetModel">SetModel</a> and <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/Give" title="Player/Give">Give</a> calls. Consider using the other hooks or a 0-second timer.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> player</span>
+</p>
+<div style="margin-left: 32px;">
+The player who spawned.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> transition</span>
+</p>
+<div style="margin-left: 32px;">
+If true, the player just spawned from a map transition. You probably want to not touch player's weapons if this is set to true from this hook.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Prints a message when a player spawns.
+</p>
+<pre><code data-language="lua">function GM:PlayerSpawn( ply )
+    MsgN( ply:Nick() .. &quot; has spawned!&quot; )
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<pre class="plain">Player1 has spawned!</code></pre>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Prints a message when a player spawns using a hook.
+</p>
+<pre><code data-language="lua">local function spawn( ply )
+	print( ply:Nick().. &quot; has spawned!.&quot;)
+end
+hook.Add( &quot;PlayerSpawn&quot;, &quot;some_unique_name&quot;, spawn )</code></pre>
+<p><b>Output:</b>
+</p>
+<pre class="plain">Player1 has spawned!</code></pre>
+
+

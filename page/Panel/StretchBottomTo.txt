@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;StretchBottomTo( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.StretchBottomTo">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/StretchBottomTo" title="Special:WhatLinksHere/Panel/StretchBottomTo">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Resizes the panel object's height so that its bottom is aligned with the top of the passed panel. An offset greater than zero will reduce the panel's height to leave a gap between it and the passed panel.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> tgtPanel</span>
+</p>
+<div style="margin-left: 32px;">
+The panel to align the bottom of this one with.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> offset=0</span>
+</p>
+<div style="margin-left: 32px;">
+The gap to leave between this and the passed panel. Negative values will cause the panel's height to increase, forming an overlap.</div>
+</div>
+
+

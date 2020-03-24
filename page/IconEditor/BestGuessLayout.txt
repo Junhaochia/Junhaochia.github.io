@@ -1,0 +1,8 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>IconEditor&#58;BestGuessLayout( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IconEditor.BestGuessLayout">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IconEditor/BestGuessLayout" title="Special:WhatLinksHere/IconEditor/BestGuessLayout">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Applies the best camera settings for the model in the <a href="/page/Category_colon_DAdjustableModelPanel" title="Category:DAdjustableModelPanel">DAdjustableModelPanel</a>, using the values returned by <a href="/page/Global/PositionSpawnIcon" title="Global/PositionSpawnIcon">PositionSpawnIcon</a>.
+</p><p>Called when a user clicks the <i>wand</i> button (See the <a href="/page/Category_colon_IconEditor" title="Category:IconEditor">example</a>) and when <a href="/page/Category_colon_IconEditor" title="Category:IconEditor">IconEditor</a>:<a href="/page/IconEditor/Refresh" title="IconEditor/Refresh">Refresh</a> is called.
+</p>
+
+

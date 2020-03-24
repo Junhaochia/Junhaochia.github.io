@@ -1,0 +1,8 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Entity&#58;InvalidateBoneCache( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.InvalidateBoneCache">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/InvalidateBoneCache" title="Special:WhatLinksHere/Entity/InvalidateBoneCache">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Resets the entity's bone cache values in order to prepare for a model change.
+</p><p>This should be called after calling <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetPoseParameter" title="Entity/SetPoseParameter">SetPoseParameter</a>.
+</p>
+
+

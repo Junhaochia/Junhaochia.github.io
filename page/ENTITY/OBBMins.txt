@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;OBBMins( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.OBBMins">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/OBBMins" title="Special:WhatLinksHere/Entity/OBBMins">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the lowest corner of an entity's bounding box as a local vector.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a></span>
+</p>
+<div style="margin-left: 32px;">
+The local position of the lowest corner of the entity's oriented bounding box.</div>
+</div>
+
+

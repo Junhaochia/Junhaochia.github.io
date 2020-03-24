@@ -1,0 +1,98 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/MOVETYPE" title="Special:WhatLinksHere/Enums/MOVETYPE">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetMoveType" title="Entity/SetMoveType">SetMoveType</a> and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetMoveType" title="Entity/GetMoveType">GetMoveType</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> MOVETYPE_NONE
+</td>
+<td> 0
+</td>
+<td> Don't move
+</td></tr>
+<tr>
+<td> MOVETYPE_ISOMETRIC
+</td>
+<td> 1
+</td>
+<td> For players, in TF2 commander view, etc
+</td></tr>
+<tr>
+<td> MOVETYPE_WALK
+</td>
+<td> 2
+</td>
+<td> Player only, moving on the ground
+</td></tr>
+<tr>
+<td> MOVETYPE_STEP
+</td>
+<td> 3
+</td>
+<td> Monster/NPC movement
+</td></tr>
+<tr>
+<td> MOVETYPE_FLY
+</td>
+<td> 4
+</td>
+<td> Fly, no gravity
+</td></tr>
+<tr>
+<td> MOVETYPE_FLYGRAVITY
+</td>
+<td> 5
+</td>
+<td> Fly, with gravity
+</td></tr>
+<tr>
+<td> MOVETYPE_VPHYSICS
+</td>
+<td> 6
+</td>
+<td> Physics movetype
+</td></tr>
+<tr>
+<td> MOVETYPE_PUSH
+</td>
+<td> 7
+</td>
+<td> No clip to world, but pushes and crushes things
+</td></tr>
+<tr>
+<td> MOVETYPE_NOCLIP
+</td>
+<td> 8
+</td>
+<td> Noclip
+</td></tr>
+<tr>
+<td> MOVETYPE_LADDER
+</td>
+<td> 9
+</td>
+<td> For players, when moving on a ladder
+</td></tr>
+<tr>
+<td> MOVETYPE_OBSERVER
+</td>
+<td> 10
+</td>
+<td> Spectator movetype. DO <b>NOT</b> use this to make player spectate
+</td></tr>
+<tr>
+<td> MOVETYPE_CUSTOM
+</td>
+<td> 11
+</td>
+<td> Custom movetype, can be applied to the player to prevent the default movement code from running, while still calling the related hooks
+</td></tr></table>
+
+

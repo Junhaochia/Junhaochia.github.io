@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;GWEN_SetDock( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.GWEN_SetDock">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/GWEN_SetDock" title="Special:WhatLinksHere/Panel/GWEN SetDock">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div> Used by <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/ApplyGWEN" title="Panel/ApplyGWEN">ApplyGWEN</a> to apply the <i>Dock</i> property to a panel object. This calls <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/Dock" title="Panel/Dock">Dock</a>.
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> dockState</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The dock mode to pass to the panel's <i>Dock</i> method. This reads a string and applies the approriate <a href="/page/Enums/DOCK" title="Enums/DOCK">DOCK_ Enums</a>.
+</p>
+<ul><li> <i>Right</i>: Dock right.
+</li><li> <i>Left</i>: Dock left.
+</li><li> <i>Bottom</i>: Dock at the bottom.
+</li><li> <i>Top</i>: Dock at the top.
+</li><li> <i>Fill</i>: Fill the parent panel.</div>
+</li></ul>
+</div>
+
+

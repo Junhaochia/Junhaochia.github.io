@@ -1,0 +1,96 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/DateData" title="Special:WhatLinksHere/Structures/DateData">What links here?</a></div>Table returned by <a href="/page/Category_colon_os" title="Category:os">os</a>.<a href="/page/os/date" title="os/date">date</a> and used by <a href="/page/Category_colon_os" title="Category:os">os</a>.<a href="/page/os/time" title="os/time">time</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> day
+</td>
+<td>
+<p>Day of the month
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> hour
+</td>
+<td>
+<p>Hour
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> isdst
+</td>
+<td>
+<p>Daylight saving enabled
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> min
+</td>
+<td>
+<p>Minute
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> month
+</td>
+<td>
+<p>Month<br />
+January: 1, December: 12
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> sec
+</td>
+<td>
+<p>Second
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> wday
+</td>
+<td>
+<p>Day of the week<br />
+Sunday: 1, Saturday: 7
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> yday
+</td>
+<td>
+<p>Day of the year
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> year
+</td>
+<td>
+<p>Year
+</p>
+</td></tr></table>
+
+

@@ -1,0 +1,146 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What_Are_Lua_Errors.3F"><span class="tocnumber">1</span> <span class="toctext">What Are Lua Errors?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Effects_of_Errors_on_Your_Scripts"><span class="tocnumber">2</span> <span class="toctext">Effects of Errors on Your Scripts</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Lua_Error_Format"><span class="tocnumber">3</span> <span class="toctext">Lua Error Format</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Printing_Your_Own"><span class="tocnumber">4</span> <span class="toctext">Printing Your Own</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Common_Errors"><span class="tocnumber">5</span> <span class="toctext">Common Errors</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Attempt_to_call_global_.27.3F.27_a_nil_value"><span class="tocnumber">5.1</span> <span class="toctext">Attempt to call global '?' a nil value</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Attempt_to_perform_arithmetic_on_global_.27.3F.27_.28a_nil_value.29"><span class="tocnumber">5.2</span> <span class="toctext">Attempt to perform arithmetic on global '?' (a nil value)</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Attempt_to_perform_arithmetic_on_.27.3F.27_.28a_type_value.29"><span class="tocnumber">5.3</span> <span class="toctext">Attempt to perform arithmetic on '?' (a type value)</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Attempt_to_index_global_.27varname.27_.28a_nil_value.29"><span class="tocnumber">5.4</span> <span class="toctext">Attempt to index global 'varname' (a nil value)</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Malformed_number_near_.27number.27"><span class="tocnumber">5.5</span> <span class="toctext">Malformed number near 'number'</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Unexpected_symbol_near_.27symbol.27"><span class="tocnumber">5.6</span> <span class="toctext">Unexpected symbol near 'symbol'</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#.27symbol1.27_expected_near_.27symbol2.27"><span class="tocnumber">5.7</span> <span class="toctext">'symbol1' expected near 'symbol2'</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="What_Are_Lua_Errors.3F"> What Are Lua Errors? </span></h1>
+<p>A Lua error is caused when the code that is being ran is improper. There are many reasons for why a Lua error might occur, but understanding what a Lua error is and how to read it is an important skill that any developer needs to have.
+</p>
+<h1> <span class="mw-headline" id="Effects_of_Errors_on_Your_Scripts"> Effects of Errors on Your Scripts </span></h1>
+<p>An error will halt your script's execution when it happens. That means that when an error is thrown, some elements of your script might break entirely. For example, if your gamemode has a syntax error which prevents init.lua from executing, your entire gamemode will break.
+</p>
+<h1> <span class="mw-headline" id="Lua_Error_Format"> Lua Error Format </span></h1>
+<p>The first line of the Lua error contains 3 important pieces of information:
+</p>
+<ul><li> The path to the file that is causing the error
+</li><li> The line that is causing the error
+</li><li> The error itself
+</li></ul>
+<p>Here is an example of a code that will cause a Lua error:
+</p>
+<pre><code data-language="lua">local text = &quot;Hello World&quot;
+Print( text )</code></pre>
+<p>The code will produce the following error:
+</p>
+<pre><code data-language="lua">[ERROR]addons/my_addon/lua/autorun/server/sv_my_addon_autorun.lua:2: attempt to call global 'Print' (a nil value)
+ 1. unknown - addons/my_addon/lua/autorun/server/sv_my_addon_autorun.lua:2</code></pre>
+<p>That is because <b>Print</b> is not an existing function (<b>print</b>, however, does exist).
+</p><p>The first line includes the path to the file that is causing the error - <b>addons/my_addon/lua/autorun/server/sv_my_addon_autorun.lua</b>
+</p><p>Afterwards, the line that's producing the error - <b>sv_my_addon_autorun.lua:2</b> (Line 2)
+</p><p>Lastly, the error itself - <b>attempt to call global 'Print' (a nil value)</b>
+</p><p>Below the error, we have the trace of the function. Simplified - If the error is inside a function/chunk of code that is called from somewhere else, it will state where the code is called from.
+</p><p>If the error happens serverside, the text color will be blue. If it happened clientside, it will be yellow. If it's menu code, it will be green (not a typical scenario). Messages which look like errors but are colored differently, such as red or white, are not Lua errors but rather engine errors.
+</p>
+<h1> <span class="mw-headline" id="Printing_Your_Own"> Printing Your Own </span></h1>
+<p>If you want to print your own error messages, there are three functions to do it:
+</p>
+<ul><li> <a href="/page/Global/error" title="Global/error">error</a> will print your message, halt execution, and print the stack. Normal error behavior.
+</li><li> <a href="/page/Global/ErrorNoHalt" title="Global/ErrorNoHalt">ErrorNoHalt</a> will print the file/line number and your message <b>without</b> halting the script. Useful for warning messages.
+</li><li> <a href="/page/Global/assert" title="Global/assert">assert</a> will check to make sure that something is true. If it's not, it will print your message and halt just like <a href="/page/Global/error" title="Global/error">error</a> does.
+</li></ul>
+<h1> <span class="mw-headline" id="Common_Errors"> Common Errors </span></h1>
+<h2> <span class="mw-headline" id="Attempt_to_call_global_.27.3F.27_a_nil_value"> Attempt to call global '?' a nil value </span></h2>
+<p><b>Description:</b> You tried to call a function that doesn't exist.
+</p><p><b>Possible causes:</b>
+</p>
+<ul><li> Your function might be defined in another Lua state. (e.g Calling a function on the client that only exists on the * server.)
+</li><li> You're using a metafunction on the wrong kind of object. (e.g. Calling&#160;:SteamID() on a Vector)
+</li><li> The function you're calling has an error in it which means it is not defined.
+</li><li> You've misspelled the name of the function.
+</li></ul>
+<p><b>Ways to fix:</b>
+</p>
+<ul><li> Make sure the function exists
+</li><li> Make sure your function is defined in the correct realm
+</li><li> Check your function calls for spelling errors
+</li></ul>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="Attempt_to_perform_arithmetic_on_global_.27.3F.27_.28a_nil_value.29"> Attempt to perform arithmetic on global '?' (a nil value) </span></h2>
+<p><b>Description:</b> You tried to perform arithmetic (+, -, *, /) on a global variable that is not defined.
+</p><p><b>Possible causes:</b>
+</p>
+<ul><li> You tried to use a local variable that was defined later in the code
+</li><li> You've misspelled the name of the global variable
+</li></ul>
+<p><b>Ways to fix:</b>
+</p>
+<ul><li> Make sure you define local variables before calling them in the code
+</li><li> Check for spelling errors
+</li></ul>
+<h2> <span class="mw-headline" id="Attempt_to_perform_arithmetic_on_.27.3F.27_.28a_type_value.29"> Attempt to perform arithmetic on '?' (a type value) </span></h2>
+<p><b>Description:</b> You tried to perform arithmetic (+, -, *, /) on a variable that cannot perform arithmetic. (e.g. 2 + "some string")
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Attempt_to_index_global_.27varname.27_.28a_nil_value.29"> Attempt to index global 'varname' (a nil value) </span></h2>
+<p><b>Description:</b> You tried to index an undefined variable (e.g. <i>print( variable.index )</i> where <i>variable</i> is undefined)
+</p><p><b>Possible causes:</b>
+</p>
+<ul><li> The variable is defined in a different realm
+</li><li> The variable is local and defined later in the code
+</li><li> You've misspelled the name of the variable
+</li></ul>
+<p><b>Ways to fix:</b>
+</p>
+<ul><li> Make sure the variable is only accessed in the realm it was defined in
+</li><li> If the variable is local, define it before accessing it
+</li></ul>
+<h2> <span class="mw-headline" id="Malformed_number_near_.27number.27"> Malformed number near 'number' </span></h2>
+<p><b>Description:</b> There is a malformed number in the code (e.g. 1.2.3, 2f)
+</p><p><b>Possible causes:</b>
+</p>
+<ul><li> An IP address was written as a number instead of a string
+</li><li> Incorrect writing of multiplication of a number and a variable
+</li><li> Trying to concatenate a number to a string without a space between the number and the operator.
+</li></ul>
+<p><b>Ways to fix:</b>
+</p>
+<ul><li> Store IP addresses as a string
+</li><li> Multiply variables with numbers by using the <b>*</b> operator
+</li><li> Put a space between the concat (<b>..</b>) operator and the number.
+</li></ul>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="Unexpected_symbol_near_.27symbol.27"> Unexpected symbol near 'symbol' </span></h2>
+<p><b>Description:</b> You typed a symbol in the code that Lua didn't know how to interpret.
+</p><p><b>Possible causes:</b>
+</p>
+<ul><li> Incorrect syntax (e.g. Forgot to write "then" after an if statement)
+</li><li> Not closing brackets and parentheses at the correct locations
+</li></ul>
+<p><b>Ways to fix:</b>
+</p>
+<ul><li> Make sure there are no mistypes in the code
+</li><li> Close brackets and parentheses correctly (See: Code Indentation)
+</li></ul>
+<h2> <span class="mw-headline" id=".27symbol1.27_expected_near_.27symbol2.27"> 'symbol1' expected near 'symbol2' </span></h2>
+<p><b>Description:</b> Lua expected symbol1 instead of symbol2.
+When 'symbol2' is &lt;eof&gt;, Lua expected a symbol before the end of the file
+</p><p><b>Possible causes:</b>
+</p>
+<ul><li> Not closing all brackets and parentheses before the end of the file
+</li><li> Wrong operator calling (e.g. "==" instead of "=")
+</li><li> Missing comma after table item.
+</li></ul>
+<p><b>Ways to Fix</b>
+</p>
+<ul><li> Close brackets and parentheses correctly (See: Code Indentation)
+</li><li> Use the correct operators
+</li><li> Add a comma after a table item
+</li></ul>
+
+

@@ -1,0 +1,71 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;DockPadding( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.DockPadding">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/DockPadding" title="Special:WhatLinksHere/Panel/DockPadding">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">6</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the dock padding of the panel.
+</p><p>The dock padding is the extra space that will be left around the edge when child elements are docked inside this element.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> paddingLeft</span>
+</p>
+<div style="margin-left: 32px;">
+The left padding to the parent.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> paddingTop</span>
+</p>
+<div style="margin-left: 32px;">
+The top padding to the parent.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> paddingRight</span>
+</p>
+<div style="margin-left: 32px;">
+The right padding to the parent.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> paddingBottom</span>
+</p>
+<div style="margin-left: 32px;">
+The bottom padding to the parent.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Example showing the effects of DockMargin and DockPadding
+</p>
+<pre><code data-language="lua">local frame = vgui.Create(&quot;DFrame&quot;)
+frame:SetSize(600, 300)
+frame:SetTitle(&quot;Docking Demonstration&quot;)
+frame:Center()
+frame:MakePopup(true)
+
+local panel = vgui.Create(&quot;DPanel&quot;, frame)
+panel:DockMargin(10, 20, 30, 40)
+panel:DockPadding(40, 30, 20, 10)
+panel:Dock(FILL)
+
+local button = vgui.Create(&quot;DButton&quot;, panel)
+button:SetText(&quot;Lopsided proportions!&quot;)
+button:Dock(FILL)</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><br /><br /><a href="/page/File:panel_dockmargin_dockpadding.png" class="image"><img alt="panel dockmargin dockpadding.png" src="/images/0/00/panel_dockmargin_dockpadding.png" width="602" height="302" /></a></div>
+
+

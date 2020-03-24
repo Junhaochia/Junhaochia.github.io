@@ -1,0 +1,18 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>CTakeDamageInfo&#58;GetInflictor( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CTakeDamageInfo.GetInflictor">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CTakeDamageInfo/GetInflictor" title="Special:WhatLinksHere/CTakeDamageInfo/GetInflictor">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the inflictor of the damage. This is not necessarily a weapon.
+</p><p>For hitscan weapons this is the weapon.<br />
+For projectile weapons this is the projectile.
+<br /><br />
+For a more reliable method of getting the weapon that damaged an entity, use <a href="/page/CTakeDamageInfo/GetAttacker" title="CTakeDamageInfo/GetAttacker">GetAttacker</a> with <a href="/page/Player/GetActiveWeapon" title="Player/GetActiveWeapon">GetActiveWeapon</a>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a></span>
+</p>
+<div style="margin-left: 32px;">
+The inflictor</div>
+</div>
+
+

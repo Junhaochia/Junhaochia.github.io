@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>WEAPON:HUDShouldDraw( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=WEAPON.HUDShouldDraw">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/WEAPON/HUDShouldDraw" title="Special:WhatLinksHere/WEAPON/HUDShouldDraw">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>This hook determines which parts of the HUD to draw.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> element</span>
+</p>
+<div style="margin-left: 32px;">
+The HUD element in question</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Return false to hide this HUD element</div>
+</div>
+
+

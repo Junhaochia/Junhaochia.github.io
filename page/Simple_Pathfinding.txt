@@ -1,0 +1,264 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Pathfinding_automatically_for_NextBots"><span class="tocnumber">1</span> <span class="toctext">Pathfinding automatically for NextBots</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Terminology"><span class="tocnumber">2</span> <span class="toctext">Terminology</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Pathfinding_manually_using_A.2A_and_navmesh_library"><span class="tocnumber">3</span> <span class="toctext">Pathfinding manually using A* and navmesh library</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Using_vectors_as_start_and_goal_positions"><span class="tocnumber">3.1</span> <span class="toctext">Using vectors as start and goal positions</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#A.2A_works_best_with_point_nodes.2C_not_areas"><span class="tocnumber">3.2</span> <span class="toctext">A* works best with point nodes, not areas</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Pathfinding_is_not_easy"><span class="tocnumber">3.3</span> <span class="toctext">Pathfinding is not easy</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Example_console_command_to_test_and_visualize_the_generated_path"><span class="tocnumber">3.4</span> <span class="toctext">Example console command to test and visualize the generated path</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Example_usage_with_player_bots"><span class="tocnumber">3.5</span> <span class="toctext">Example usage with player bots</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Pathfinding_automatically_for_NextBots"> Pathfinding automatically for NextBots </span></h1>
+<p><a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBots</a> use the <a href="/page/Category_colon_navmesh" title="Category:navmesh">navmesh library</a> to calculate how to get from their current position to their target.<br />This is done using helper classes like <a href="/page/Category_colon_PathFollower" title="Category:PathFollower">PathFollower</a> and most of the path construction is done internally.
+</p><p>You can however influence where the <a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBots</a> can and cannot go when computing the path with <a href="/page/Category_colon_PathFollower" title="Category:PathFollower">PathFollower</a>:<a href="/page/PathFollower/Compute" title="PathFollower/Compute">Compute</a> by using its 3rd argument.
+</p><p><br />
+Below you will find examples on how to have complete control over the path generation and so that it is not limited to <a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBots</a> only.
+</p>
+<h1> <span class="mw-headline" id="Terminology"> Terminology </span></h1>
+<ul><li> navmesh - <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Navigation_Meshes">The navigation mesh</a>.
+</li><li> agent - The agent will use the generated path, for example a player bot or an NPC.
+</li><li> path - The generated path, a set of nodes the agent must travel through to get to the goal
+</li><li> node - Points which are connected with each other that signify the positions that can be reached
+</li></ul>
+<h1> <span class="mw-headline" id="Pathfinding_manually_using_A.2A_and_navmesh_library"> Pathfinding manually using A* and navmesh library </span></h1>
+<p>The <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> provides you with methods which allow you to quickly set up a completely custom A* pathfinding algorithm for your own purposes, such as pathfinding for player bots.
+</p><p>These methods are:
+</p>
+<ul><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/SetCostSoFar" title="CNavArea/SetCostSoFar">SetCostSoFar</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/GetCostSoFar" title="CNavArea/GetCostSoFar">GetCostSoFar</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/SetTotalCost" title="CNavArea/SetTotalCost">SetTotalCost</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/GetTotalCost" title="CNavArea/GetTotalCost">GetTotalCost</a>
+</li></ul>
+<ul><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/AddToOpenList" title="CNavArea/AddToOpenList">AddToOpenList</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/AddToClosedList" title="CNavArea/AddToClosedList">AddToClosedList</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/ClearSearchLists" title="CNavArea/ClearSearchLists">ClearSearchLists</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/IsOpenListEmpty" title="CNavArea/IsOpenListEmpty">IsOpenListEmpty</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/PopOpenList" title="CNavArea/PopOpenList">PopOpenList</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/RemoveFromClosedList" title="CNavArea/RemoveFromClosedList">RemoveFromClosedList</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/UpdateOnOpenList" title="CNavArea/UpdateOnOpenList">UpdateOnOpenList</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/IsOpen" title="CNavArea/IsOpen">IsOpen</a>
+</li><li> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/IsClosed" title="CNavArea/IsClosed">IsClosed</a>
+</li></ul>
+<p>All of these are basic functions that are using in A* pathfinding algorithm.
+</p><p>Here's an example on how to use these methods to implement a basic <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* algorithm from wikipedia</a>:
+</p>
+<pre><code data-language="lua">
+function Astar( start, goal )
+	if (&#160;!IsValid( start ) ||&#160;!IsValid( goal ) ) then return false end
+	if ( start == goal ) then return true end
+
+	start:ClearSearchLists()
+
+	start:AddToOpenList()
+
+	local cameFrom = {}
+
+	start:SetCostSoFar( 0 )
+
+	start:SetTotalCost( heuristic_cost_estimate( start, goal ) )
+	start:UpdateOnOpenList()
+
+	while (&#160;!start:IsOpenListEmpty() ) do
+		local current = start:PopOpenList() // Remove the area with lowest cost in the open list and return it
+		if ( current == goal ) then
+			return reconstruct_path( cameFrom, current )
+		end
+
+		current:AddToClosedList()
+
+		for k, neighbor in pairs( current:GetAdjacentAreas() ) do
+			local newCostSoFar = current:GetCostSoFar() + heuristic_cost_estimate( current, neighbor )
+
+			if ( neighbor:IsUnderwater() ) then // Add your own area filters or whatever here
+				continue
+			end
+			
+			if ( ( neighbor:IsOpen() || neighbor:IsClosed() ) &amp;&amp; neighbor:GetCostSoFar() &lt;= newCostSoFar ) then
+				continue
+			else
+				neighbor:SetCostSoFar( newCostSoFar );
+				neighbor:SetTotalCost( newCostSoFar + heuristic_cost_estimate( neighbor, goal ) )
+
+				if ( neighbor:IsClosed() ) then
+				
+					neighbor:RemoveFromClosedList()
+				end
+
+				if ( neighbor:IsOpen() ) then
+					// This area is already on the open list, update its position in the list to keep costs sorted
+					neighbor:UpdateOnOpenList()
+				else
+					neighbor:AddToOpenList()
+				end
+
+				cameFrom[ neighbor:GetID() ] = current:GetID()
+			end
+		end
+	end
+
+	return false
+end
+
+function heuristic_cost_estimate( start, goal )
+	// Perhaps play with some calculations on which corner is closest/farthest or whatever
+	return start:GetCenter():Distance( goal:GetCenter() )
+end
+
+// using CNavAreas as table keys doesn't work, we use IDs
+function reconstruct_path( cameFrom, current )
+	local total_path = { current }
+
+	current = current:GetID()
+	while ( cameFrom[ current ] ) do
+		current = cameFrom[ current ]
+		table.insert( total_path, navmesh.GetNavAreaByID( current ) )
+	end
+	return total_path
+end
+</code></pre>
+<p>In this example, Astar() fucntion takes 2 arguments:
+The starting <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>, for example where the player bot or NPC currently is, and the goal <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>, where the bot or NPC wishes to get to.
+</p><p>The Astar() function will return one of the 3 values:
+</p>
+<ul><li> If it is physically impossible to get to the goal <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>, it returns false
+</li><li> If the start <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> is the same as the goal <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>, it returns true
+</li><li> Otherwise it will return an array of <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavAreas</a> which the bot/NPC has to travel through (one after another, the goal <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> being the very first entry in the array, use <a href="/page/Category_colon_table" title="Category:table">table</a>.<a href="/page/table/Reverse" title="table/Reverse">Reverse</a> to reverse the array order if necessary) to get to the goal.
+</li></ul>
+<p>Below you will find a few examples on how to use this example function to move player bots using pathfinding to a certain target.
+</p>
+<h2> <span class="mw-headline" id="Using_vectors_as_start_and_goal_positions"> Using vectors as start and goal positions </span></h2>
+<p>You can use the function <a href="/page/Category_colon_navmesh" title="Category:navmesh">navmesh</a>.<a href="/page/navmesh/GetNearestNavArea" title="navmesh/GetNearestNavArea">GetNearestNavArea</a> to find closest <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> to your desired <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> position.
+</p><p>Here's an example function that takes 2 vectors are input for Astar() function:
+</p>
+<pre><code data-language="lua">
+function AstarVector( start, goal )
+	local startArea = navmesh.GetNearestNavArea( start )
+	local goalArea = navmesh.GetNearestNavArea( goal )
+	return Astar( startArea, goalArea )
+end
+</code></pre>
+<h2> <span class="mw-headline" id="A.2A_works_best_with_point_nodes.2C_not_areas"> A* works best with point nodes, not areas </span></h2>
+<p>In Garry's Mod, the navigation mesh is made of <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavAreas</a>, not <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> positions. As a result, you will notice that examples here move the agent mostly from a center of one <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> to the center of another. This makes the generated paths look unnatural.
+</p><p>In order to achieve more natural paths, more advanced techniques will be needed when building positions the agent will need to traverse through, such as using the corners of <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavAreas</a>, using Line of Sight checks to cut corners or discard certain positions, etc.
+</p>
+<h2> <span class="mw-headline" id="Pathfinding_is_not_easy"> Pathfinding is not easy </span></h2>
+<p>Please keep in mind that all of these examples are kept as simple as possible for educational purposes. It may not generate the absolutely most efficient paths. More work will be necessary to be put into the agents movement code for the paths to feel natural or be efficient.
+</p>
+<h2> <span class="mw-headline" id="Example_console_command_to_test_and_visualize_the_generated_path"> Example console command to test and visualize the generated path </span></h2>
+<p>This example code contains a function that will draw the generated path, directly from the Astar() function using the <a href="/page/Category_colon_debugoverlay" title="Category:debugoverlay">debugoverlay library</a>.
+</p>
+<pre><code data-language="lua">function drawThePath( path, time )
+	local prevArea
+	for _, area in pairs( path ) do
+		debugoverlay.Sphere( area:GetCenter(), 8, time or 9, color_white, true  )
+		if ( prevArea ) then
+			debugoverlay.Line( area:GetCenter(), prevArea:GetCenter(), time or 9, color_white, true )
+		end
+
+		area:Draw()
+		prevArea = area
+	end
+end</code></pre>
+<p>Please keep in mind that the <a href="/page/Category_colon_debugoverlay" title="Category:debugoverlay">debugoverlay library</a> only works in multiplayer and only when the <b>developer</b> console command is set to a non zero value.
+</p><p>This example shows how you can use the Astar() and drawThePath() functions together to test and debug your path generation.
+</p>
+<pre><code data-language="lua">concommand.Add( &quot;test_astar&quot;, function( ply )
+
+	// Use the start position of the player who ran the console command
+	local start = navmesh.GetNearestNavArea( ply:GetPos() )
+
+	// Target position, use the player's aim position for this example
+	local goal = navmesh.GetNearestNavArea( ply:GetEyeTrace().HitPos )
+
+	local path = Astar( start, goal )
+	if (&#160;!istable( path ) ) then // We can't physically get to the goal or we are in the goal.
+		return
+	end
+
+	PrintTable( path ) // Print the generated path to console for debugging
+	drawThePath( path ) // Draw the generated path for 9 seconds
+
+end)
+</code></pre>
+<h2> <span class="mw-headline" id="Example_usage_with_player_bots"> Example usage with player bots </span></h2>
+<p>This example shows the most basic way to move a player bot (an agent) alongside the generated path:
+</p>
+<pre><code data-language="lua">
+local rePathDelay = 1 // How many seconds need to pass before we need to remake the path to keep it updated
+hook.Add( &quot;StartCommand&quot;, &quot;astar_example&quot;, function( ply, cmd )
+
+	// Only run this code on bots, and only if bot_mimic is set to 0
+	if (&#160;!ply:IsBot() || GetConVarNumber( &quot;bot_mimic&quot; )&#160;!= 0 ) then return end
+
+	cmd:ClearButtons()
+	cmd:ClearMovement()
+
+	local currentArea = navmesh.GetNearestNavArea( ply:GetPos() )
+
+	// internal variable to regenerate the path every X seconds to keep the pace with the target player
+	ply.lastRePath = ply.lastRePath or 0
+
+	// internal variable to limit how often the path can be (re)generated
+	ply.lastRePath2 = ply.lastRePath2 or 0 
+
+	if ( ply.path &amp;&amp; ply.lastRePath + rePathDelay &lt; CurTime() &amp;&amp; currentArea&#160;!= ply.targetArea ) then
+		ply.path = nil
+		ply.lastRePath = CurTime()
+	end
+
+	if (&#160;!ply.path &amp;&amp; ply.lastRePath2 + rePathDelay &lt; CurTime() ) then
+
+		local targetPos = Entity( 1 ):GetPos() // target position to go to, the first player on the server
+		local targetArea = navmesh.GetNearestNavArea( targetPos )
+
+		ply.targetArea = nil
+		ply.path = Astar( currentArea, targetArea )
+		if (&#160;!istable( ply.path ) ) then // We are in the same area as the target, or we can't navigate to the target
+			ply.path = nil // Clear the path, bail and try again next time
+			ply.lastRePath2 = CurTime()
+			return
+		end
+		//PrintTable( ply.path )
+
+		// TODO: Add inbetween points on area intersections
+		// TODO: On last area, move towards the target position, not center of the last area
+		table.remove( ply.path ) // Just for this example, remove the starting area, we are already in it!
+	end
+
+	// We have no path, or its empty (we arrived at the goal), try to get a new path.
+	if (&#160;!ply.path || #ply.path &lt; 1 ) then
+		ply.path = nil
+		ply.targetArea = nil
+		return
+	end
+
+	// We got a path to follow to our target!
+	drawThePath( ply.path, .1 ) // Draw the path for debugging
+
+	// Select the next area we want to go into
+	if (&#160;!IsValid( ply.targetArea ) ) then
+		ply.targetArea = ply.path[ #ply.path ]
+	end
+
+	// The area we selected is invalid or we are already there, remove it, bail and wait for next cycle
+	if (&#160;!IsValid( ply.targetArea ) || ( ply.targetArea == currentArea &amp;&amp; ply.targetArea:GetCenter():Distance( ply:GetPos() ) &lt; 64 ) ) then
+		table.remove( ply.path ) // Removes last element
+		ply.targetArea = nil
+		return
+	end
+
+	// We got the target to go to, aim there and MOVE
+	local targetang = ( ply.targetArea:GetCenter() - ply:GetPos() ):GetNormalized():Angle()
+	cmd:SetViewAngles( targetang )
+	cmd:SetForwardMove( 1000 )
+
+end )</code></pre>
+<p>This example will make all bots on the server move towards the first player on the server. The path generated is not pretty, but the point of this example to show how to use the path to move an agent alongside a generated path.
+</p>
+
+

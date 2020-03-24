@@ -1,0 +1,53 @@
+<p><b>Scripted Entities</b> (or <b>SENT</b>s for short) are custom entities coded entirely in Lua.
+</p><p>The difference from <b>Engine Entities</b> being that you cannot use <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">SENT Hooks</a> on engine entities.
+</p>
+<h1> <span class="mw-headline" id="Scripted_Entity_Types">Scripted Entity Types</span></h1>
+<p>There are 6 different types of Scripted Entities:
+</p>
+<table class="wikitable">
+<tr>
+<td>ai
+</td>
+<td>A scripted NPC. (Also known as SNPCs)<br />All <a href="/page/Category_colon_NPC" title="Category:NPC">NPC</a> functions and certain AI hooks are also usable on these entities.
+</td></tr>
+<tr>
+<td>nextbot
+</td>
+<td>A NextBot NPC. A newer "style" NPCs with better navigation.<br />All <a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBot</a> functions and <a href="/page/Category_colon_NEXTBOT_Hooks" title="Category:NEXTBOT Hooks">NEXTBOT</a> hooks are also usable on these entities.
+</td></tr>
+<tr>
+<td>anim
+</td>
+<td>A normal entity with visual and/or physical presence in the game world, such as props or whatever else you can imagine.
+</td></tr>
+<tr>
+<td>brush
+</td>
+<td>A serverside only trigger entity. Mostly used very closely with the Hammer Level Editor.
+</td></tr>
+<tr>
+<td>point
+</td>
+<td>A usually serverside only entity that doesn't have a visual or physical representation in the game world, such as logic entities.
+</td></tr>
+<tr>
+<td>filter
+</td>
+<td>A different kind of "point" entity used in conjunction with trigger ("brush" type) entities.
+</td></tr></table>
+<h1> <span class="mw-headline" id="Scripting">Scripting</span></h1>
+<p>The following is usable with <b>Scripted Entities</b>:
+</p>
+<ul><li> <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">SENT Hooks</a>
+</li><li> <a href="/page/Structures/ENT" title="Structures/ENT">ENT structure</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> functions
+</li></ul>
+<p>The following is usable with <b>Scripted Weapons</b> (Also known as <b>SWEP</b>s):
+</p>
+<ul><li> <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">SWEP Hooks</a>
+</li><li> <a href="/page/Structures/SWEP" title="Structures/SWEP">SWEP structure</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> functions
+</li><li> <a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a> functions
+</li></ul>
+
+

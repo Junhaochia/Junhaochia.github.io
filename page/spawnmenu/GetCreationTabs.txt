@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>spawnmenu.GetCreationTabs( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=spawnmenu.GetCreationTabs">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/spawnmenu/GetCreationTabs" title="Special:WhatLinksHere/spawnmenu/GetCreationTabs">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Gets the CreationMenus table, which was filled with creation menu tabs from <a href="/page/Category_colon_spawnmenu" title="Category:spawnmenu">spawnmenu</a>.<a href="/page/spawnmenu/AddCreationTab" title="spawnmenu/AddCreationTab">AddCreationTab</a>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+The CreationMenus table. See the <a href="/page/Structures/CreationMenus" title="Structures/CreationMenus">CreationMenus structure</a>.</div>
+</div>
+
+

@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>weapons.Get( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=weapons.Get">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/weapons/Get" title="Special:WhatLinksHere/weapons/Get">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Get a <i>copy</i> of weapon table by name. This function also inherits fields from the weapon's base class, unlike <a href="/page/Category_colon_weapons" title="Category:weapons">weapons</a>.<a href="/page/weapons/GetStored" title="weapons/GetStored">GetStored</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> classname</span>
+</p>
+<div style="margin-left: 32px;">
+Class name of weapon to retrieve</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+The retrieved table or nil</div>
+</div>
+
+

@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>PathFollower&#58;Invalidate( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PathFollower.Invalidate">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PathFollower/Invalidate" title="Special:WhatLinksHere/PathFollower/Invalidate">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Invalidates the current path
+</p>
+
+

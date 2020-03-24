@@ -1,0 +1,10 @@
+<p>To see more categories - please check out <a href="/page/Special:Categories" title="Special:Categories">Special:Categories</a>
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Modelling"</h2>
+<p>This category contains only the following page.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>P</h3>
+<ul><li><a href="/page/Player_model_LOD_settings" title="Player model LOD settings">Player model LOD settings</a></li></ul></div>
+</div></div>

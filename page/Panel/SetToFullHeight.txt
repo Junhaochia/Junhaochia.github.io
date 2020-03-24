@@ -1,0 +1,48 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetToFullHeight( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetToFullHeight">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetToFullHeight" title="Special:WhatLinksHere/Panel/SetToFullHeight">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the height of a <a href="/page/Category_colon_RichText" title="Category:RichText">RichText</a> element to accommodate the text inside.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This function internally relies on <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/GetNumLines" title="Panel/GetNumLines">GetNumLines</a>, so it should be called at least a couple frames after modifying the text using <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/AppendText" title="Panel/AppendText">AppendText</a>
+</p>
+</td></tr></table>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a <a href="/page/Category_colon_RichText" title="Category:RichText">RichText</a> panel with no set height. The proper height is applied 2 seconds after being created in order to show the difference.
+</p>
+<pre><code data-language="lua">-- Create a window frame
+TextFrame = vgui.Create(&quot;DFrame&quot;)
+TextFrame:SetSize(250, 210)
+TextFrame:Center()
+TextFrame:SetTitle(&quot;No set height&quot;)
+TextFrame:MakePopup()
+
+-- RichText panel
+local richtext = vgui.Create(&quot;RichText&quot;, TextFrame)
+richtext:SetPos(10, 30)
+richtext:SetWidth(230)
+
+-- Block of text
+richtext:AppendText(&quot;#ServerBrowser_ServerWarning_MaxPlayers&quot;)
+
+function richtext:PerformLayout() self:SetBGColor(Color(0, 0, 0)) end
+
+-- Set to full height after 2 seconds
+timer.Simple(2, function()
+
+	richtext:SetToFullHeight()
+	
+	TextFrame:SetTitle(&quot;Full set height&quot;)
+	
+end)</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><br /><br />
+<a href="/page/File:RichText_SetToFullHeight_example1.gif" class="image"><img alt="RichText SetToFullHeight example1.gif" src="/images/5/5c/RichText_SetToFullHeight_example1.gif" width="250" height="210" /></a></div>
+
+

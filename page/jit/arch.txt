@@ -1,0 +1,5 @@
+<h1> <span class="mw-headline" id="Not_a_function">Not a function</span></h1>
+<p>This is NOT a function, it's a variable containing the target architecture name: "x86", "x64", "arm", "ppc", "ppcspe", or "mips". This will be "x86" in GMod.
+</p>
+
+

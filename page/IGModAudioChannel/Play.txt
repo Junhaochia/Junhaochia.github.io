@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>IGModAudioChannel&#58;Play( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IGModAudioChannel.Play">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IGModAudioChannel/Play" title="Special:WhatLinksHere/IGModAudioChannel/Play">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Starts playing the stream.
+</p>
+
+

@@ -1,0 +1,26 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;LerpPositions( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.LerpPositions">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/LerpPositions" title="Special:WhatLinksHere/Panel/LerpPositions">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Redefines the panel object's <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetPos" title="Panel/SetPos">SetPos</a> method to operate using frame-by-frame linear interpolation (Lerp). When the panel's position is changed, it will move to the target position at the speed defined. You can undo this with <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/DisableLerp" title="Panel/DisableLerp">DisableLerp</a>.
+</p><p>Unlike the other panel animation functions, such as <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/MoveTo" title="Panel/MoveTo">MoveTo</a>, this animation method will not operate whilst the game is paused. This is because it relies on <a href="/page/Global/FrameTime" title="Global/FrameTime">FrameTime</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> speed</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The speed at which to move the panel. This is affected by the value of <i>easeOut</i>. Recommended values are:
+</p>
+<ul><li> <b>0.1 - 10</b> when <i>easeOut</i> is <i>false</i>.
+</li><li> <b>0.1 - 1</b> when <i>easeOut</i> is <i>true</i>.</div>
+</li></ul>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> easeOut</span>
+</p>
+<div style="margin-left: 32px;">
+This causes the panel object to 'jump' at the target, slowing as it approaches. This affects the <i>speed</i> value significantly, see above.</div>
+</div>
+
+

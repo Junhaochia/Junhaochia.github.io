@@ -1,0 +1,207 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What_is_a_Metamethod.3F"><span class="tocnumber">1</span> <span class="toctext">What is a Metamethod?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Notable_Uses"><span class="tocnumber">2</span> <span class="toctext">Notable Uses</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#A_List_of_All_the_Metamethods"><span class="tocnumber">3</span> <span class="toctext">A List of All the Metamethods</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Learn_By_Example"><span class="tocnumber">4</span> <span class="toctext">Learn By Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#A_Simple_Test"><span class="tocnumber">5</span> <span class="toctext">A Simple Test</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="What_is_a_Metamethod.3F">What is a Metamethod?</span></h1>
+<p>Metamethods are special functions that allow you to override specific operations performed on Lua tables.
+When a table of metamethods is applied to a table, it is then known as its <a href="/page/Meta_Tables" title="Meta Tables">Meta Tables</a>.
+When used correctly, they can allow tables to behave in very unique and complex ways that would not otherwise be possible.
+They are also the powerhouse behind object oriented programming in lua.
+</p><p>You can live a fulfilling life in Lua without metatables, but hopefully with a practical example you will see their usefulness.
+</p><p>Shown here is how all the parts of a metatable fit together. Don't expect this to make sense at first.
+</p>
+<pre><code data-language="lua">
+local meta={}
+function meta.__call( self, var )
+	self.myvar = var
+	return var + self:Cheese()
+end
+
+local metaIndex={}
+function metaIndex.Cheese( self )
+	return self.myvar
+end
+
+meta.__index = metaIndex
+
+local myObject = {}
+setmetatable( myObject, meta )
+
+print( myObject( 5 ) ) -- 10
+print( myObject.myvar ) -- 5
+
+myObject.myvar = 3
+print( myObject:Cheese() ) -- 3
+</code></pre>
+<p><br />
+</p>
+<h1> <span class="mw-headline" id="Notable_Uses">Notable Uses</span></h1>
+<p>Perhaps the most useful of the metamethods are the __call and __index entries.
+</p><p>__call allows tables that have a metatable to be called like a function, with the table being passed as the first argument.
+</p>
+<pre><code data-language="lua">
+local meta={}
+function meta.__call( self )
+	self.x=(self.x||0)+1
+	return self.x
+end
+local tbl = setmetatable( {x=5}, mymeta )
+
+print( tbl.x ) -- 5
+print( tbl() ) -- 6
+print( tbl.__call ) -- nil
+</code></pre>
+<p>__index is far more interesting and is what gives metamethods most of their power.
+It can either be a table, or a function.
+</p><p>If it's a table, the object will lookup entries in it for the specified key.
+This is what allows functions defined in the meta.__index table to be called on the object table.
+Refer to the "metaIndex" variable written in the first example.
+</p><p>If this index table also has its own metatable and does not find the key, then this new metatable will be used and it will follow the chain up until it reaches a return value or the end of the index chain, whichever comes first.
+Here is an example of what this looks like.
+</p>
+<pre><code data-language="lua">
+local metaApple={apple=&quot;apples&quot;}
+local metaPear={pear=&quot;pears&quot;}
+local metaOrange={orange=&quot;oranges&quot;}
+
+setmetatable( metaApple, {__index=metaPear} )
+setmetatable( metaPear, {__index=metaOrange} )
+
+local mytbl = {}
+setmetatable(mytbl, {__index=metaApple})
+
+print(mytbl.orange) -- &quot;oranges&quot;
+</code></pre>
+<p>Used correctly this will achieve outcomes very similar to how entity .Base inheritence works.
+</p><p>And if it's a function, it will call the function and provide the returned value.
+This example is the simplest way to give a table a "default value".
+</p>
+<pre><code data-language="lua">
+local meta={}
+function meta.__index( self, key )
+	return &quot;cheese&quot;
+end
+local tbl = setmetatable( {apple=&quot;Apples&quot;}, mymeta )
+
+print( tbl.apple ) -- &quot;Apples&quot;
+print( tbl.orange ) -- &quot;cheese&quot;
+</code></pre>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Trying to index a table from within its own index function can result in infinite looping if not written correctly. See also <a href="/page/Global/rawget" title="Global/rawget">rawget</a> and <a href="/page/Global/rawset" title="Global/rawset">rawset</a> which will act upon tables without calling metamethods such as __index and __newindex in their metatable, which can be used to prevent infinite looping.
+</p>
+</td></tr></table>
+<p>It's possible to write metatables much smaller than what is shown here, and with less complexity by setting the metatable __index entry to reference the metatable.
+This is an example of how to do that.
+</p>
+<pre><code data-language="lua">
+local meta={}
+meta.__index=meta
+function meta:Cheese() print(self.myvar) end
+
+local mytbl = {}
+setmetatable( mytbl, meta )
+mytbl.myvar = &quot;Kittens&quot;
+mytbl:Cheese()
+</code></pre>
+<p>There are many different ways to write metatables, and it all comes down to what you'll be using it for and what you need your lua objects to do.
+</p>
+<h1> <span class="mw-headline" id="A_List_of_All_the_Metamethods">A List of All the Metamethods</span></h1>
+<p>All metamethod names begin with __, and are named logically (e.g. __add corresponds to the + operator).
+see <a rel="nofollow" class="external text" href="https://www.tutorialspoint.com/lua/lua_metatables.htm">this page</a> for more thorough descriptions of each metamethod.
+</p><p><br />
+</p>
+<h1> <span class="mw-headline" id="Learn_By_Example">Learn By Example</span></h1>
+<p>One common programming task is to compare one item against many. For instance, when we want to check whether a player has said a keyword.
+</p>
+<pre><code data-language="lua"> local fruits = {"bananna", "apple", "strawberry", "orange"} -- plus 2000 other fruits
+ local word = "orange"
+ if fruits.HasValue(word) then
+   print("The word is a fruit!")
+ end
+</code></pre>
+<p>The issue with this approach is that HasValue is essentially a for loop checking if 'fruit == word'. With large tables, if you check HasValue frequently enough it will really slow down your program! Instead, we can make this more efficient by doing the following.
+</p>
+<pre><code data-language="lua"> local hasFruit = {bananna = true, apple = true, orange = true} -- plus 2000 other fruits
+ local word = "orange"
+ if hasFruit[word] then
+   print("The word is a fruit!")
+ end
+ 
+</code></pre>
+<p>Now this solution is pretty great! hasFruit[...] will return true if the word is in our table, and nil otherwise. We could make a method to do the '= true' part for us, but why stop there? Lets make this table so great that we will enjoy every moment of using it! What we're about to create is a Set data structure (see wiki or youtube if you want to get more in-depth). Sets might sound fancy, but they are just a table full of items just like our fruits from above.
+</p><p><br />
+</p>
+<hr />
+<p>You can easily run the following code by creating a custom .lua script in the lua/autorun folder. Happy learning!
+</p>
+<pre><code data-language="lua"> Set = {} -- This metatable will hold both metamethods and normal methods
+ 
+ -- Set.new is just the function 'new' in the 'Set' table, nothing magical.
+ -- This method makes our lives easier by building the table for us.
+ function Set:new(items)
+   local set = {} -- make an efficient search table like before
+   for key, item in pairs(items) do 
+     set[item] = true
+   end
+ 
+   -- assign our new search table to use the metamethods from the Set metatable.
+   setmetatable(set, Set)
+   return set
+ end
+</code></pre>
+<pre><code data-language="lua"> -- Returns true if our set contains the specified item, otherwise false.
+ -- The colon method is the same as Set.contain(self, item).  So,
+ -- 'self' is our table of values.
+ function Set:contain(item) 
+   return self[item] == true
+ end
+</code></pre>
+<pre><code data-language="lua"> -- If we don't overload tostring then it will print something useless like Table0x125.
+ function Set:__tostring() 
+   return "{" .. table.concat(table.GetKeys(self), ", ") .. "}" 
+ end
+</code></pre>
+<pre><code data-language="lua"> -- Overriding the '+' operator.  Adding to an existing set will look something like
+ -- 'set = set + 1'.  If you prefer 'set:Add(1)' use the contains method as your template.
+ function Set:__add(other)
+   if type(other) == "table" then -- sets get merged
+     if getmetatable(other) == nil then -- 'other' is a raw table
+       for key, item in pairs(other) do self[item] = true end
+     else -- 'other' is already a Set (its values are set to true)
+       for key, item in pairs(other) do self[key] = true end
+     end
+   else -- single values get appended
+       self[other] = true
+   end
+   
+   return self
+ end
+</code></pre>
+<pre><code data-language="lua"> -- A last bit of useful metamagic
+ setmetatable(Set, { __call = Set.new }) -- allow Set.new() or Set()
+ Set.__index = Set -- allow us to use the Set instance methods
+</code></pre>
+<h1> <span class="mw-headline" id="A_Simple_Test">A Simple Test</span></h1>
+<pre><code data-language="lua"> local fruits = Set({"bananna", "apple", "strawberry", "orange"}) + "grape"
+ local word = "grape"
+ if fruits:contain(word) then -- fruits[word] works as well
+   print(fruits)
+ end
+</code></pre>
+<p>All of the fruits are printed out as expected, though keep in mind this is an unordered set of elements. If you want them in a specific order you will have to sort them.
+</p>
+<h1> <span class="mw-headline" id="See_also"> See also </span></h1>
+<p><a rel="nofollow" class="external text" href="https://www.lua.org/pil/13.html">Metatables and Metamethods (Programming In Lua)</a>
+</p>
+
+

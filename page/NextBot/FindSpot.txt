@@ -1,0 +1,38 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NextBot&#58;FindSpot( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NextBot.FindSpot">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/gamemodes/base/entities/entities/base_nextbot/sv_nextbot.lua#L201">View Source</a> - <a href="/page/Special:WhatLinksHere/NextBot/FindSpot" title="Special:WhatLinksHere/NextBot/FindSpot">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">4</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Like <a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBot</a>:<a href="/page/NextBot/FindSpots" title="NextBot/FindSpots">FindSpots</a> but only returns a vector.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> type</span>
+</p>
+<div style="margin-left: 32px;">
+Either "random", "near", "far"</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> options</span>
+</p>
+<div style="margin-left: 32px;">
+<p>This table should contain the search info.<br /><br />
+</p>
+<a href="/page/Category_colon_string" title="Category:string">string</a> type - The type (Only'hiding' for now)<br /><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> pos - the position to search.<br /><a href="/page/Category_colon_number" title="Category:number">number</a> radius - the radius to search.<br /><a href="/page/Category_colon_number" title="Category:number">number</a> stepup - the highest step to step up.<br /><a href="/page/Category_colon_number" title="Category:number">number</a> stepdown - the highest we can step down without being hurt.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a></span>
+</p>
+<div style="margin-left: 32px;">
+If it finds a spot it will return a vector. If not it will return nil.</div>
+</div>
+
+

@@ -1,0 +1,24 @@
+<p>The player_manager library lets you manage players, such as setting their models or creating player classes.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "player manager"</h2>
+<p>The following 12 pages are in this category, out of 12 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>P</h3>
+<ul><li><a href="/page/player_manager/AddValidHands" title="player manager/AddValidHands">player manager/AddValidHands</a></li>
+<li><a href="/page/player_manager/AddValidModel" title="player manager/AddValidModel">player manager/AddValidModel</a></li>
+<li><a href="/page/player_manager/AllValidModels" title="player manager/AllValidModels">player manager/AllValidModels</a></li>
+<li><a href="/page/player_manager/ClearPlayerClass" title="player manager/ClearPlayerClass">player manager/ClearPlayerClass</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/player_manager/GetPlayerClass" title="player manager/GetPlayerClass">player manager/GetPlayerClass</a></li>
+<li><a href="/page/player_manager/OnPlayerSpawn" title="player manager/OnPlayerSpawn">player manager/OnPlayerSpawn</a></li>
+<li><a href="/page/player_manager/RegisterClass" title="player manager/RegisterClass">player manager/RegisterClass</a></li>
+<li><a href="/page/player_manager/RunClass" title="player manager/RunClass">player manager/RunClass</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/player_manager/SetPlayerClass" title="player manager/SetPlayerClass">player manager/SetPlayerClass</a></li>
+<li><a href="/page/player_manager/TranslatePlayerHands" title="player manager/TranslatePlayerHands">player manager/TranslatePlayerHands</a></li>
+<li><a href="/page/player_manager/TranslatePlayerModel" title="player manager/TranslatePlayerModel">player manager/TranslatePlayerModel</a></li>
+<li><a href="/page/player_manager/TranslateToPlayerModelName" title="player manager/TranslateToPlayerModelName">player manager/TranslateToPlayerModelName</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

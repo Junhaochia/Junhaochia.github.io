@@ -1,0 +1,9 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>SANDBOX:PopulateSTOOLMenu( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=SANDBOX.PopulateSTOOLMenu">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/SANDBOX/PopulateSTOOLMenu" title="Special:WhatLinksHere/SANDBOX/PopulateSTOOLMenu">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called to populate the Scripted Tool menu.
+</p>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />This hook is never called. Use <a href="/page/Category_colon_SANDBOX_Hooks" title="Category:SANDBOX Hooks">SANDBOX</a>:<a href="/page/SANDBOX/PopulateToolMenu" title="SANDBOX/PopulateToolMenu">PopulateToolMenu</a>, instead.</div>
+
+

@@ -1,0 +1,48 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>team.SetSpawnPoint( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=team.SetSpawnPoint">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/team/SetSpawnPoint" title="Special:WhatLinksHere/team/SetSpawnPoint">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets valid spawnpoint classes for use by a team.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>GM.TeamBased must be set to true for this to work
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> index</span>
+</p>
+<div style="margin-left: 32px;">
+Index of the team</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_any" title="Category:any">any</a> classes</span>
+</p>
+<div style="margin-left: 32px;">
+A spawnpoint classname or table of spawnpoint classnames</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Allows TEAM_BLUE to spawn at terrorist spawn points
+</p>
+<pre><code data-language="lua">team.SetSpawnPoint( TEAM_BLUE, {&quot;info_terror&quot;} )</code></pre>
+<p><br />
+</p>
+
+

@@ -1,0 +1,61 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Purpose"><span class="tocnumber">1</span> <span class="toctext">Purpose</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Overview"><span class="tocnumber">2</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Content"><span class="tocnumber">3</span> <span class="toctext">Content</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Menu_Bar"><span class="tocnumber">3.1</span> <span class="toctext">Menu Bar</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Drawing"><span class="tocnumber">3.1.1</span> <span class="toctext">Drawing</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#NPCs"><span class="tocnumber">3.1.2</span> <span class="toctext">NPCs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a href="#Desktop_Widgets"><span class="tocnumber">3.2</span> <span class="toctext">Desktop Widgets</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Player_Model"><span class="tocnumber">3.2.1</span> <span class="toctext">Player Model</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#Object_Context"><span class="tocnumber">3.3</span> <span class="toctext">Object Context</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Purpose">Purpose</span></h1>
+<p>Unlike the <a href="/page/Opening_The_Spawnmenu" title="Opening The Spawnmenu">Spawn Menu</a>, the context menu is, as the name indicates, a context related menu.
+</p><p>Except for the top bar it is mainly used to manipulate parameters of in-game objects.
+</p><p>You can also aim weapons with it without changing your aim angles.
+</p>
+<h1> <span class="mw-headline" id="Overview">Overview</span></h1>
+<p>Open the context menu by simply pressing and holding <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">C</span> or whatever button you have assigned in the <a href="/index.php?title=Game_Options&amp;action=edit&amp;redlink=1" class="new" title="Game Options (page does not exist)">Game Options</a>.
+You will notice that you no longer control the crosshair, but rather a mouse cursor. Choose the object you want to edit by pointing at it and then click right.
+</p><p><a href="/page/File:context_menu.jpg" class="image" title="The context menu"><img alt="The context menu" src="/images/thumb/d/d7/context_menu.jpg/800px-context_menu.jpg" width="800" height="450" /></a>
+</p>
+<h1> <span class="mw-headline" id="Content">Content</span></h1>
+<h2> <span class="mw-headline" id="Menu_Bar">Menu Bar</span></h2>
+<p>The top bar is always present and displays 2 options by default.
+</p>
+<h3> <span class="mw-headline" id="Drawing">Drawing</span></h3>
+<p>The drawing menu allows you to customize what will be drawn on your screen.
+</p><p><a href="/page/File:Menubar_Drawing.png" class="image" title="The Drawing menu"><img alt="The Drawing menu" src="/images/3/31/Menubar_Drawing.png" width="156" height="378" /></a>
+</p>
+<h3> <span class="mw-headline" id="NPCs">NPCs</span></h3>
+<p>The NPCs menu allows you to alter NPC behavior, and force spawned NPCs to have specific weapon.
+</p><p><a href="/page/File:Menubar_NPCs.png" class="image" title="The NPCs menu"><img alt="The NPCs menu" src="/images/a/ac/Menubar_NPCs.png" width="152" height="110" /></a>
+</p>
+<h2> <span class="mw-headline" id="Desktop_Widgets">Desktop Widgets</span></h2>
+<p>Desktop Widgets are also always visible and give you one option by default.
+</p>
+<h3> <span class="mw-headline" id="Player_Model">Player Model</span></h3>
+<p>The player model widget opens a window that allows you to customize your player model.<br />
+This includes choosing your player model, it's color if the model supports that and also your Physics Gun color.
+</p><p><a href="/page/File:Player_Model_Selector.png" class="image" title="Player model selector"><img alt="Player model selector" src="/images/thumb/a/a6/Player_Model_Selector.png/800px-Player_Model_Selector.png" width="800" height="538" /></a>
+</p><p>Please note that you are only selected your "preferred" model here, multiplayer servers may override your player model.
+</p><p>If you are using a model from an addon and server doesn't have that addon, you will appear to everybody as Dr. Kleiner, the default player model.
+</p>
+<h2> <span class="mw-headline" id="Object_Context">Object Context</span></h2>
+<p>By right clicking most objects you will open a menu that contains certain options relevant to the object you chose.
+</p><p>For example, an NPC's context options will look like this:
+</p><p><a href="/page/File:npc_context.png" class="image" title="Father Grigori&#39;s context menu"><img alt="Father Grigori&#39;s context menu" src="/images/8/85/npc_context.png" width="443" height="605" /></a>
+</p>
+
+

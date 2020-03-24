@@ -1,0 +1,10 @@
+<p>The object returned by <a href="/page/Category_colon_ai_schedule" title="Category:ai schedule">ai_schedule</a>.<a href="/page/ai_schedule/New" title="ai schedule/New">New</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Schedule"</h2>
+<p>The following 6 pages are in this category, out of 6 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>S</h3>
+<ul><li><a href="/page/Schedule/AddTask" title="Schedule/AddTask">Schedule/AddTask</a></li><li><a href="/page/Schedule/AddTaskEx" title="Schedule/AddTaskEx">Schedule/AddTaskEx</a></li><li><a href="/page/Schedule/EngTask" title="Schedule/EngTask">Schedule/EngTask</a></li><li><a href="/page/Schedule/GetTask" title="Schedule/GetTask">Schedule/GetTask</a></li><li><a href="/page/Schedule/Init" title="Schedule/Init">Schedule/Init</a></li><li><a href="/page/Schedule/NumTasks" title="Schedule/NumTasks">Schedule/NumTasks</a></li></ul></div>
+</div></div>

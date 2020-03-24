@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;IsLineOfSightClear( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.IsLineOfSightClear">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/IsLineOfSightClear" title="Special:WhatLinksHere/Entity/IsLineOfSightClear">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns true if the target is in line of sight. This will only work on CBaseCombatCharacter entities.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> target</span>
+</p>
+<div style="margin-left: 32px;">
+The target to test. You can also supply an <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> instead of a <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a></div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Returns true if the line of sight is clear</div>
+</div>
+
+

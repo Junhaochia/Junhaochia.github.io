@@ -1,0 +1,20 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DListView_Column&#58;SetTextAlign( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DListView_Column.SetTextAlign">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DListView_Column/SetTextAlign" title="Special:WhatLinksHere/DListView Column/SetTextAlign">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sets the text alignment for the column
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> alignment</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The direction of the content, based on the number pad.
+</p>
+<table>
+<tr><td><span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">7</span>: <b>top-left</b></td><td><span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">8</span>: <b>top-center</b></td><td><span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">9</span>: <b>top-right</b></td></tr>
+<tr><td><span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">4</span>: <b>middle-left</b></td><td><span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">5</span>: <b>center</b></td><td><span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">6</span>: <b>middle-right</b></td></tr>
+<tr><td><span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">1</span>: <b>bottom-left</b></td><td><span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">2</span>: <b>bottom-center</b></td><td><span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">3</span>: <b>bottom-right</b></td></tr>
+</table></div>
+</div>
+
+

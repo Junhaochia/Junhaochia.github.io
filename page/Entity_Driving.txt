@@ -1,0 +1,166 @@
+<p>Entity driving allows you to control other entities. This isn't particularly only cars - but any move type you want. It could be a simple ball that rolls around, noclip, a helicopter, a dog. It doesn't have to even move. Anything you can control.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_Drive_Class"><span class="tocnumber">1</span> <span class="toctext">The Drive Class</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#A_simple_Drive_Class"><span class="tocnumber">2</span> <span class="toctext">A simple Drive Class</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Making_the_player_drive"><span class="tocnumber">3</span> <span class="toctext">Making the player drive</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Internals"><span class="tocnumber">5</span> <span class="toctext">Internals</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="The_Drive_Class">The Drive Class</span></h2>
+<p>A drive class is simply a table of functions. Drive classes exist on both the client and the server - and are fully predicted - which means that driving feels the same in multiplayer as in singleplayer. Nice and responsive.
+</p>
+<h2> <span class="mw-headline" id="A_simple_Drive_Class">A simple Drive Class</span></h2>
+<p>Here's a simple drive class
+</p>
+<pre><code data-language="lua">
+-- Derive from drive_base (see lua/drive/drive_base.lua )
+DEFINE_BASECLASS( &quot;drive_base&quot; )
+
+drive.Register( &quot;drive_example&quot;, 
+{
+	--
+	-- Calculates the view when driving the entity
+	--
+	CalcView =  function( self, view )
+
+		--
+		-- Use the utility method on drive_base.lua to give us a 3rd person view
+		--
+		self:CalcView_ThirdPerson( view, 100, 2, { self.Entity } )
+		view.angles.roll = 0
+
+	end,
+
+	--
+	-- Called before each move. You should use your entity and cmd to 
+	-- fill mv with information you need for your move. 
+	--
+	StartMove =  function( self, mv, cmd )
+		-- Set observer mode to chase, so the entity will be drawn.
+		self.Player:SetObserverMode( OBS_MODE_CHASE )
+		--
+		-- Update move position and velocity from our entity
+		--
+		mv:SetOrigin( self.Entity:GetNetworkOrigin() )
+		mv:SetVelocity( self.Entity:GetAbsVelocity() )
+
+	end,
+
+	--
+	-- Runs the actual move. On the client when there's 
+	-- prediction errors this can be run multiple times.
+	-- You should try to only change mv.
+	--
+	Move = function( self, mv )
+
+		--
+		-- Set up a speed, go faster if shift is held down
+		--
+		local speed = 0.0005 * FrameTime()
+		if ( mv:KeyDown( IN_SPEED ) ) then speed = 0.005 * FrameTime() end
+
+		--
+		-- Get information from the movedata
+		--
+		local ang = mv:GetMoveAngles()
+		local pos = mv:GetOrigin()
+		local vel = mv:GetVelocity()
+
+		--
+		-- Add velocities. This can seem complicated. On the first line
+		-- we're basically saying get the forward vector, then multiply it
+		-- by our forward speed (which will be &gt; 0 if we're holding W, &lt; 0 if we're
+		-- holding S and 0 if we're holding neither) - and add that to velocity.
+		-- We do that for right and up too, which gives us our free movement.
+		--
+		vel = vel + ang:Forward() * mv:GetForwardSpeed() * speed
+		vel = vel + ang:Right() * mv:GetSideSpeed() * speed
+		vel = vel + ang:Up() * mv:GetUpSpeed() * speed
+
+		--
+		-- We don't want our velocity to get out of hand so we apply
+		-- a little bit of air resistance. If no keys are down we apply
+		-- more resistance so we slow down more.
+		--
+ 		if ( math.abs(mv:GetForwardSpeed()) + math.abs(mv:GetSideSpeed()) + math.abs(mv:GetUpSpeed()) &lt; 0.1 ) then
+			vel = vel * 0.90
+		else
+			vel = vel * 0.99
+		end
+
+		--
+		-- Add the velocity to the position (this is the movement)
+		--
+		pos = pos + vel
+
+		--
+		-- We don't set the newly calculated values on the entity itself
+		-- we instead store them in the movedata. These get applied in F inishMove.
+		--
+		mv:SetVelocity( vel )
+		mv:SetOrigin( pos )
+
+	end,
+
+	--
+	-- The move is finished. Use mv to set the new positions
+	-- on your entities/players.
+	--
+	FinishMove =  function( self, mv )
+
+		--
+		-- Update our entity!
+		--
+		self.Entity:SetNetworkOrigin( mv:GetOrigin() )
+		self.Entity:SetAbsVelocity( mv:GetVelocity() )
+		self.Entity:SetAngles( mv:GetMoveAngles() )
+
+		--
+		-- If we have a physics object update that too. But only on the server.
+		--
+		if ( SERVER &amp;&amp; IsValid( self.Entity:GetPhysicsObject() ) ) then
+
+			self.Entity:GetPhysicsObject():EnableMotion( true )
+			self.Entity:GetPhysicsObject():SetPos( mv:GetOrigin() )
+			self.Entity:GetPhysicsObject():Wake()
+			self.Entity:GetPhysicsObject():EnableMotion( false )
+
+		end
+
+	end,
+
+}, &quot;drive_base&quot; )
+</code></pre>
+<p>This might look complicated but it's actually pretty simple. It gives you a simple velocity based noclip mode.
+</p><p>Some things to note. When you register your drive mode you should register them in order. What this means is that if you're deriving your mode from a class you should register that class first.
+</p>
+<h2> <span class="mw-headline" id="Making_the_player_drive">Making the player drive</span></h2>
+<p>To make the player start driving, on the server call
+</p>
+<pre><code data-language="lua">drive.PlayerStartDriving( player, ent, drivemode )</code></pre>
+<p>for example
+</p>
+<pre><code data-language="lua">drive.PlayerStartDriving( player, ent, &quot;drive_mydriveclass&quot; )</code></pre>
+<p>To stop driving you can call
+</p>
+<pre><code data-language="lua">drive.PlayerStopDriving( player )</code></pre>
+<p>Or if you're inside the actual drive class you can call
+</p>
+<pre><code data-language="lua">self:Stop()</code></pre>
+<h2> <span class="mw-headline" id="Example">Example</span></h2>
+<p>For a more in depth example you can look at <b>lua/drive/drive_sandbox.lua</b>. This is the drive mode used to drive around entities in Sandbox mode.
+</p><p>It's worth checking out <b>lua/drive/drive_base.lua</b> too - as this is the common base shared by all of the default drive modes and displays all the hookable functions.
+</p>
+<h2> <span class="mw-headline" id="Internals">Internals</span></h2>
+<p>The class is created once and cached. On server it's pretty much guaranteed that this object will stick around for the duration of the drive - so it's safe to store variables on it. But on the client if there's lag - or prediction errors - it's possible that the object will be re-created.
+</p><p>The controlling player and entity aren't passed to each function because they're saved on the object itself. They're accessible via:
+</p>
+<pre><code data-language="lua">
+self.Player
+self.Entity
+</code></pre>
+
+

@@ -1,0 +1,23 @@
+<p>The system library provides functions that allow you to gather information about the system running the game, such as operating system, uptime and battery level.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "system"</h2>
+<p>The following 11 pages are in this category, out of 11 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>S</h3>
+<ul><li><a href="/page/system/AppTime" title="system/AppTime">system/AppTime</a></li>
+<li><a href="/page/system/BatteryPower" title="system/BatteryPower">system/BatteryPower</a></li>
+<li><a href="/page/system/FlashWindow" title="system/FlashWindow">system/FlashWindow</a></li>
+<li><a href="/page/system/GetCountry" title="system/GetCountry">system/GetCountry</a></li></ul></td>
+<td><h3>S cont.</h3>
+<ul><li><a href="/page/system/HasFocus" title="system/HasFocus">system/HasFocus</a></li>
+<li><a href="/page/system/IsLinux" title="system/IsLinux">system/IsLinux</a></li>
+<li><a href="/page/system/IsOSX" title="system/IsOSX">system/IsOSX</a></li>
+<li><a href="/page/system/IsWindowed" title="system/IsWindowed">system/IsWindowed</a></li></ul></td>
+<td><h3>S cont.</h3>
+<ul><li><a href="/page/system/IsWindows" title="system/IsWindows">system/IsWindows</a></li>
+<li><a href="/page/system/SteamTime" title="system/SteamTime">system/SteamTime</a></li>
+<li><a href="/page/system/UpTime" title="system/UpTime">system/UpTime</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

@@ -1,0 +1,29 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;SetLayerPriority( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetLayerPriority">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetLayerPriority" title="Special:WhatLinksHere/Entity/SetLayerPriority">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the priority of given layer.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This function only works on <a href="/page/BaseAnimatingOverlay" title="BaseAnimatingOverlay">BaseAnimatingOverlay</a> entites!
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> layerID</span>
+</p>
+<div style="margin-left: 32px;">
+The Layer ID</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> priority</span>
+</p>
+<div style="margin-left: 32px;">
+The new priority of the layer.</div>
+</div>
+
+

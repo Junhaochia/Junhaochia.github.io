@@ -1,0 +1,71 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>navmesh.GetNearestNavArea( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=navmesh.GetNearestNavArea">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/navmesh/GetNearestNavArea" title="Special:WhatLinksHere/navmesh/GetNearestNavArea">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_6"><span class="tocnumber">7</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">8</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the closest <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> to given position at the same height, or beneath it.
+</p><p>This function will ignore blocked <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavAreas</a>. See <a href="/page/Category_colon_navmesh" title="Category:navmesh">navmesh</a>.<a href="/page/navmesh/GetNavArea" title="navmesh/GetNavArea">GetNavArea</a> for a function that does see blocked areas.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> pos</span>
+</p>
+<div style="margin-left: 32px;">
+The position to look from</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> anyZ=false</span>
+</p>
+<div style="margin-left: 32px;">
+This argument is ignored and has no effect</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> maxDist=10000</span>
+</p>
+<div style="margin-left: 32px;">
+This is the maximum distance from the given position that the function will look for a <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a></div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> checkLOS=false</span>
+</p>
+<div style="margin-left: 32px;">
+<p>If this is set to true then the function will internally do a <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/TraceLine" title="util/TraceLine">TraceLine</a> from the starting position to each potential <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> with a MASK_NPCSOLID_BRUSHONLY <a href="/page/Enums/MASK" title="Enums/MASK">MASK_ Enums</a>. If the trace fails then the <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> is ignored.
+</p>
+If this is set to false then the function will find the closest <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> through anything, including the world.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> checkGround=true</span>
+</p>
+<div style="margin-left: 32px;">
+If checkGround is true then this function will internally call <a href="/page/Category_colon_navmesh" title="Category:navmesh">navmesh</a>.<a href="/page/navmesh/GetNavArea" title="navmesh/GetNavArea">GetNavArea</a> to check if there is a <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> directly below the position, and return it if so, before checking anywhere else.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_6">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> team=TEAM_ANY=-2</span>
+</p>
+<div style="margin-left: 32px;">
+This will internally call <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/IsBlocked" title="CNavArea/IsBlocked">IsBlocked</a> to check if the target <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> is not to be navigated by the given team. Currently this appears to do nothing.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a></span>
+</p>
+<div style="margin-left: 32px;">
+The closest <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> found with the given parameters.</div>
+</div>
+
+

@@ -1,0 +1,40 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DLabel&#58;UpdateColours( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DLabel.UpdateColours">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/vgui/dlabel.lua#L289-279">View Source</a> - <a href="/page/Special:WhatLinksHere/DLabel/UpdateColours" title="Special:WhatLinksHere/DLabel/UpdateColours">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>A hook called from within <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/index.php?title=DLabel/ApplySchemeSettings&amp;action=edit&amp;redlink=1" class="new" title="DLabel/ApplySchemeSettings (page does not exist)">ApplySchemeSettings</a> to determine the color of the text on display.
+</p>
+<table class="wikitable">
+<tr>
+<th> Condition
+</th>
+<th> Value
+</th></tr>
+<tr>
+<td> <i>Default</i>
+</td>
+<td> skin.Colours.Label.Default
+</td></tr>
+<tr>
+<td> self.m_bBright
+</td>
+<td> skin.Colours.Label.Bright
+</td></tr>
+<tr>
+<td> self.m_bDark
+</td>
+<td> skin.Colours.Label.Dark
+</td></tr>
+<tr>
+<td> self.m_bHighlight
+</td>
+<td> skin.Colours.Label.Highlight
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> skin</span>
+</p>
+<div style="margin-left: 32px;">
+A table supposed to contain the color values listed above.</div>
+</div>
+
+

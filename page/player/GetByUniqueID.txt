@@ -1,0 +1,29 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>player.GetByUniqueID( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=player.GetByUniqueID">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/player.lua#L59-L71">View Source</a> - <a href="/page/Special:WhatLinksHere/player/GetByUniqueID" title="Special:WhatLinksHere/player/GetByUniqueID">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Gets the player with the specified uniqueID (not recommended way to identify players).
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>It is highly recommended to use <a href="/page/Category_colon_player" title="Category:player">player</a>.<a href="/page/player/GetByAccountID" title="player/GetByAccountID">GetByAccountID</a>, <a href="/page/Category_colon_player" title="Category:player">player</a>.<a href="/page/player/GetBySteamID" title="player/GetBySteamID">GetBySteamID</a> or <a href="/page/Category_colon_player" title="Category:player">player</a>.<a href="/page/player/GetBySteamID64" title="player/GetBySteamID64">GetBySteamID64</a> instead as this function can have collisions ( be same for different people ) while SteamID is guaranteed to unique to each player.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> uniqueID</span>
+</p>
+<div style="margin-left: 32px;">
+The <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/UniqueID" title="Player/UniqueID">UniqueID</a> to find the player by.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a></span>
+</p>
+<div style="margin-left: 32px;">
+Player if one is found, false otherwise.</div>
+</div>
+
+

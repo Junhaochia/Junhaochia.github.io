@@ -1,0 +1,35 @@
+<p>Dedicated servers can install addons straight from workshop collections, but it requires an addition to the startup parameter. The server will download the collection at startup.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Create_collection"><span class="tocnumber">1</span> <span class="toctext">Create collection</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Applying_the_command-line_parameter"><span class="tocnumber">2</span> <span class="toctext">Applying the command-line parameter</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Still_Confused.3F"><span class="tocnumber">4</span> <span class="toctext">Still Confused?</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Create_collection">Create collection</span></h1>
+<p>First of all <a rel="nofollow" class="external text" href="https://steamcommunity.com/workshop/browse/?appid=4000&amp;section=collections">create a collection and find your collection ID</a>. Do note that your collection needs to be public, else, srcds won't be able to access it!
+</p>
+<h1> <span class="mw-headline" id="Applying_the_command-line_parameter">Applying the command-line parameter</span></h1>
+<p>Append the following parameter to the server startup command-line:
+</p>
+<pre>+host_workshop_collection WORKSHOPID
+</pre>
+<p>An example could be:
+</p>
+<pre>+host_workshop_collection 123456789
+</pre>
+<h1> <span class="mw-headline" id="Example">Example</span></h1>
+<p>The example below starts a dedicated server with 20 player slots. It downloads or updates all of the addons in collection <a rel="nofollow" class="external text" href="https://steamcommunity.com/sharedfiles/filedetails/?id=157384458">157384458</a>. This collection includes the Zombie Survival gamemode and a few maps. It sets the gamemode to zombiesurvival and loads one of the downloaded maps.
+</p>
+<pre>srcds.exe +maxplayers 20 -console +host_workshop_collection 157384458 +gamemode zombiesurvival +map zs_cleanoffice_v2
+</pre>
+<p>Every time you restart your server it will check that these addons are all up to date.
+</p>
+<h1> <span class="mw-headline" id="Still_Confused.3F">Still Confused?</span></h1>
+<p>View this short tutorial to see how it is set up.
+</p><p><a rel="nofollow" class="external free" href="https://www.youtube.com/watch?v=saCof9QqjnA">https://www.youtube.com/watch?v=saCof9QqjnA</a>
+</p>
+
+

@@ -1,0 +1,87 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>jit.util.funcinfo( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=jit.util.funcinfo">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/jit/util.funcinfo" title="Special:WhatLinksHere/jit/util.funcinfo">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">4</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Retrieves LuaJIT information about a given function, similarly to <a href="/page/Category_colon_debug" title="Category:debug">debug</a>.<a href="/page/debug/getinfo" title="debug/getinfo">getinfo</a>. Possible table fields:
+</p>
+<ul><li> linedefined: as for <a href="/page/Category_colon_debug" title="Category:debug">debug</a>.<a href="/page/debug/getinfo" title="debug/getinfo">getinfo</a>
+</li><li> lastlinedefined: as for <a href="/page/Category_colon_debug" title="Category:debug">debug</a>.<a href="/page/debug/getinfo" title="debug/getinfo">getinfo</a>
+</li><li> params: the number of parameters the function takes
+</li><li> stackslots: the number of stack slots the function's local variable use
+</li><li> upvalues: the number of upvalues the function uses
+</li><li> bytecodes: the number of bytecodes it the compiled function
+</li><li> gcconsts: the number of garbage collectable constants
+</li><li> nconsts: the number of lua_Number (double) constants
+</li><li> children: Boolean representing whether the function creates closures
+</li><li> currentline: as for <a href="/page/Category_colon_debug" title="Category:debug">debug</a>.<a href="/page/debug/getinfo" title="debug/getinfo">getinfo</a>
+</li><li> isvararg: if the function is a vararg function
+</li><li> source: as for <a href="/page/Category_colon_debug" title="Category:debug">debug</a>.<a href="/page/debug/getinfo" title="debug/getinfo">getinfo</a>
+</li><li> loc: a string describing the source and currentline, like "&lt;source&gt;:&lt;line&gt;"
+</li><li> ffid: the fast function id of the function (if it is one). In this case only upvalues above and addr below are valid
+</li><li> addr: the address of the function (if it is not a Lua function). If it's a C function rather than a fast function, only upvalues above is valid*
+</li></ul>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> func</span>
+</p>
+<div style="margin-left: 32px;">
+Function or Proto to retrieve info about.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> pos=0</span>
+</p>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+Information about the supplied function/proto.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Demonstrates output of this function.
+</p>
+<pre><code data-language="lua">PrintTable(jit.util.funcinfo(print))
+
+local print = print
+_G.print = function(...) print(...) end -- redefine print
+
+PrintTable(jit.util.funcinfo(print))</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><pre><code data-language="lua">-- First PrintTable output:
+addr	=	1773317824
+ffid	=	25
+upvalues	=	1
+
+-- Second PrintTable output:
+linedefined	=	1
+currentline	=	1
+params	=	0
+stackslots	=	2
+source	=	@lua_run
+lastlinedefined	=	1
+children	=	false
+upvalues	=	1
+nconsts	=	0
+isvararg	=	true
+loc	=	lua_run:1
+bytecodes	=	5
+gcconsts	=	0
+</code></pre></div>
+
+

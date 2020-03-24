@@ -1,0 +1,48 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DrawColorModify( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DrawColorModify">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/DrawColorModify" title="Special:WhatLinksHere/Global/DrawColorModify">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Draws the Color Modify shader, which can be used to adjust colors on screen.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> modifyParameters</span>
+</p>
+<div style="margin-left: 32px;">
+Color modification parameters. See <a href="/page/Shaders/g_colourmodify" title="Shaders/g colourmodify">g_colourmodify shader</a> and the example below. Note that if you leave out a field, it will retain its last value which may have changed if another caller uses this function.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Draws color modify with bright yellow and green colors.
+</p>
+<pre><code data-language="lua">local tab = {
+	[ &quot;$pp_colour_addr&quot; ] = 0.02,
+	[ &quot;$pp_colour_addg&quot; ] = 0.02,
+	[ &quot;$pp_colour_addb&quot; ] = 0,
+	[ &quot;$pp_colour_brightness&quot; ] = 0,
+	[ &quot;$pp_colour_contrast&quot; ] = 1,
+	[ &quot;$pp_colour_colour&quot; ] = 3,
+	[ &quot;$pp_colour_mulr&quot; ] = 0,
+	[ &quot;$pp_colour_mulg&quot; ] = 0.02,
+	[ &quot;$pp_colour_mulb&quot; ] = 0
+}
+
+hook.Add( &quot;RenderScreenspaceEffects&quot;, &quot;color_modify_example&quot;, function()
+
+	DrawColorModify( tab )
+
+end )</code></pre>
+<p><br />
+</p>
+
+

@@ -1,0 +1,137 @@
+<p>This article will handle as many aspects as possible about hosting a Garry's Mod server on Linux.
+</p><p><b>This article has been written for Debian and derivatives (Ubuntu, ChromiumOS, Mint...) so you may need to do some conversion on other distributions</b>
+</p><p>If you want a more automated solution with many built-in tools, easy support for multiple servers, etc, just use <a rel="nofollow" class="external free" href="https://linuxgsm.com/lgsm/gmodserver/">https://linuxgsm.com/lgsm/gmodserver/</a> instead
+</p><p><br />
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Requirements"><span class="tocnumber">1</span> <span class="toctext">Requirements</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Installing_SteamCMD"><span class="tocnumber">2</span> <span class="toctext">Installing SteamCMD</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#64-bit_Systems"><span class="tocnumber">2.1</span> <span class="toctext">64-bit Systems</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Installing_Garry.27s_Mod"><span class="tocnumber">3</span> <span class="toctext">Installing Garry's Mod</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Adding_content"><span class="tocnumber">4</span> <span class="toctext">Adding content</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Starting_the_server"><span class="tocnumber">5</span> <span class="toctext">Starting the server</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Updating_the_server"><span class="tocnumber">6</span> <span class="toctext">Updating the server</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Keeping_the_server_alive_after_a_reboot"><span class="tocnumber">7</span> <span class="toctext">Keeping the server alive after a reboot</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Additional_notes"><span class="tocnumber">7.1</span> <span class="toctext">Additional notes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Troubleshooting"><span class="tocnumber">8</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#32-bit_binaries"><span class="tocnumber">8.1</span> <span class="toctext">32-bit binaries</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#.27GLIBC_2.15.27_not_found"><span class="tocnumber">8.2</span> <span class="toctext">'GLIBC_2.15' not found</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Addons_Not_Working"><span class="tocnumber">8.3</span> <span class="toctext">Addons Not Working</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Requirements">Requirements</span></h1>
+<p>Make sure you meet the following requirements before you begin:
+</p>
+<ul><li> A user to run the server as ('steam' is recommended, with home directory /home/steam)
+</li><li> Enough disk space for the content you wish to install
+</li><li> An open command-line terminal running as the user 'steam' (<i>su - steam</i>) or an SSH session with steam as logged in user.
+</li><li> Experience with basic Linux command-line usage.
+</li></ul>
+<p><br />
+</p>
+<h1> <span class="mw-headline" id="Installing_SteamCMD">Installing SteamCMD</span></h1>
+<p>SteamCMD is needed to download and update the Garry's Mod server files. Follow the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/SteamCMD#Linux">Valve Developer Wiki</a> for recommendations on how to install SteamCMD.
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="64-bit_Systems"> 64-bit Systems </span></h2>
+<p>If you get "*/linux32/steamcmd: No such file or directory" error, this is most likely because you do not have the required 32-bit libraries. Go here for more information on how to fix this: <a rel="nofollow" class="external free" href="https://developer.valvesoftware.com/wiki/SteamCMD#32-bit_libraries_on_64-bit_Linux_systems">https://developer.valvesoftware.com/wiki/SteamCMD#32-bit_libraries_on_64-bit_Linux_systems</a>
+</p>
+<h1> <span class="mw-headline" id="Installing_Garry.27s_Mod">Installing Garry's Mod</span></h1>
+<div class="validatepage"><span>Validation required.</span><br />
+This page contains possibly incorrect or incomplete information. Further testing is required.<br /><br />Does the script provided here work when SteamCMD is installed from a package repository?</div>
+<p>The following script will download the latest version of Garry's Mod for you with a single command.
+</p><p>First, lets go to our home directory.
+</p><p><code>cd ~</code>
+</p><p>Then, we need to download the script:
+</p><p><code>wget <a rel="nofollow" class="external free" href="https://pastebin.com/raw/CRmMbJQA">http://pastebin.com/raw/CRmMbJQA</a> -O ./update_gmod.sh</code>
+</p><p>Before we can run this file, we need to give it 'execute' rights. This is done with the following command:
+</p><p><code>chmod +x ./update_gmod.sh</code>
+</p><p>Before we can run it correctly, we need to convert it from dos format to unix format:
+</p><p><code>dos2unix ./update_gmod.sh</code>
+</p><p>Now, lets update the server
+</p><p><code>./update_gmod.sh</code>
+</p><p>The server will now download the necessary content. Steam will show you the percentage of progress it is making with the download.
+</p><p>If you receive an error such as <code class="inline">/home/steam/update_gmod.sh: line 25: ./bin/steamcmd.sh: No such file or directory</code> open ./update_gmod.sh in an editor and change the line under "# Call SteamCMD with the app ID we provided and tell it to install" to the following:
+</p><p><code>steamcmd +login anonymous +force_install_dir "$HOME/$DIR" +app_update $APP_ID validate +quit</code>
+</p><p><br />
+</p>
+<h1> <span class="mw-headline" id="Adding_content"> Adding content </span></h1>
+<p>Of course, we want to be able to use stuff from Team Fortress 2, Counter-Strike: Source and other supported games. Using the script above, this is simple process.
+</p><p>However, since we want to save on download time, we are going to put all this content in a separate folder, so if we have 5 servers, we only need to update the content once if a content update gets released.
+</p><p>Now we are going to modify the script mentioned <a href="#Installing_Garry.27s_Mod">above</a>. Add the following line where it says "<i>Add any additional servers here</i>". Here, we add Team Fortress 2.
+</p><p><code>update_server 232250 "content/tf2"</code>
+</p><p>Now, when we run <i>update_gmod.sh</i> the script will verify (and, if required, update) Garry's Mod (since we downloaded it in the step above) and then install Team Fortress 2 in <i>~/content/tf2</i>.
+</p><p>For a list of IDs for the servers, you can have a look at the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Dedicated_Servers_List">Valve Developer Community page</a>. Remember that you can theoretically download any game here using its ID, but with these dedicated servers you don't need to login using your steam account.
+</p>
+<h1> <span class="mw-headline" id="Starting_the_server"> Starting the server </span></h1>
+<p>To start the server, we run the file called srcds_run, which is located in the root directory of each server. The command below starts the server with 12 slots on gm_flatgrass.
+</p><p><code>~/server_1/srcds_run -game garrysmod +maxplayers 12 +map gm_flatgrass</code>
+</p><p>The script (srcds_run) will keep the server alive, should it crash, but it won't restart when you restart linux and if you close the terminal the server will close. We will fix this later on in this article.
+</p>
+<h1> <span class="mw-headline" id="Updating_the_server"> Updating the server </span></h1>
+<p>To update the server, or to update the content, we simply call our download script. You need to make sure your servers are off, or else the update will fail.
+</p><p>Update our scripts by just calling this (from the home directory)
+</p><p><code>./update_gmod.sh</code>
+</p>
+<h1> <span class="mw-headline" id="Keeping_the_server_alive_after_a_reboot"> Keeping the server alive after a reboot </span></h1>
+<p>To keep the server alive we use crontab. We add an entry to crontab which will call srcds_run when the server has loaded.
+</p><p>Open crontab
+</p><p><code>crontab -e</code>
+</p><p>Now, add the following line at the end
+</p><p><code>@reboot /home/steam/server_1/srcds_run -game garrysmod +maxplayers 12 +map gm_flatgrass</code>
+</p><p>Now save the file. Usually crontab opens in nano so the commands would, again, be <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">Ctrl</span>+<span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">O</span>, <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">↵ Enter</span>, <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">Ctrl</span>+<span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">X</span>.
+</p><p>Now, after you reboot the linux server, the Garry's Mod Server will auto start.
+</p>
+<h2> <span class="mw-headline" id="Additional_notes"> Additional notes </span></h2>
+<p>Of course, there are better ways of keeping your server alive, but they can become quite complex in no-time so they are not discussed here. If you want to know more, Google around or ask on Facepunch.
+</p>
+<h1> <span class="mw-headline" id="Troubleshooting"> Troubleshooting </span></h1>
+<h2> <span class="mw-headline" id="32-bit_binaries">32-bit binaries</span></h2>
+<p>If you're running a 64-bit version of Linux, you need 32 bit binaries, since SteamCMD is only available as 32 bit.
+</p><p>If you get the error message
+</p><p><samp>./steamcmd.sh: line 29: /home/$USER/Steam/linux32/steamcmd: No such file or directory</samp>
+</p><p>then you are most likely running 64 a bit system and missing 32 bit libraries.
+</p><p>To do so, you need to install <b>ia32-libs</b>. To do so, run the following bit of code:
+</p><p><code>dpkg --add-architecture i386
+apt-get update
+apt-get install ia32-libs
+or
+apt-get install lib32ncurses5 lib32z1</code>
+</p><p>The package is big (~200MB isn't uncommon) and has a lot of dependancies so it may take some time.
+</p><p>For other linux distrubutions, see the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/SteamCMD#32-bit_libraries_on_64-bit_Linux_systems">Valve wiki article </a>
+</p>
+<h2> <span class="mw-headline" id=".27GLIBC_2.15.27_not_found">'GLIBC_2.15' not found</span></h2>
+<p>If you get the error message
+</p><p><samp>Failed to open dedicated_srv.so (/lib/i386-linux-gnu/libm.so.6: version `GLIBC_2.15' not found (required by bin/dedicated_srv.so))</samp>
+</p><p>You most likely have outdated GLIBC libraries and will need to update them.
+</p><p>This has happened because you chose to use a different distribution (or version of a distribution) than the one Valve used to create the tools. Those tools are expecting components from that Linux distribution. (See 'Notice' above!)
+</p><p>To deal with this without updating to Ubuntu 12.04 32-bit or later, run the following bit of code:
+</p><p><code>wget http://security.ubuntu.com/ubuntu/pool/main/e/eglibc/libc6_2.15-0ubuntu10.11_i386.deb
+dpkg -x libc6_2.15-0ubuntu10.11_i386.deb tmp/
+cd tmp/lib/i386-linux-gnu/
+cp * /your-garrysmod-directory/bin/
+</code>
+</p><p>For CentOS you need to install the <a rel="nofollow" class="external text" href="http://www.rackspace.com/knowledge_center/article/installing-rhel-epel-repo-on-centos-5x-or-6x">EPEL Repo</a> and dpkg first:
+</p><p><code>yum install dpkg</code>
+</p><p>Alternatively you could switch to:
+</p>
+<ul><li> Ubuntu Server 12.04+
+</li><li> CentOS 7
+</li></ul>
+<p>These distros have been confirmed working and are the most supported.
+</p>
+<h2> <span class="mw-headline" id="Addons_Not_Working">Addons Not Working</span></h2>
+<p>As you are getting your server up and running you may notice some issues with particular addons not working. This problem seems to be affecting legacy addons with folders containing capitals. To fix this issue it may be required to change all directories to lowercase names and all Lua code pointing to these directories accordingly.
+</p>
+
+

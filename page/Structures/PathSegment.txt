@@ -1,0 +1,113 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/PathSegment" title="Special:WhatLinksHere/Structures/PathSegment">What links here?</a></div>Structure represents a path segment, returned by <a href="/page/Category_colon_PathFollower" title="Category:PathFollower">PathFollower</a>:<a href="/page/PathFollower/GetCurrentGoal" title="PathFollower/GetCurrentGoal">GetCurrentGoal</a>, <a href="/page/Category_colon_PathFollower" title="Category:PathFollower">PathFollower</a>:<a href="/page/PathFollower/FirstSegment" title="PathFollower/FirstSegment">FirstSegment</a> and <a href="/page/Category_colon_PathFollower" title="Category:PathFollower">PathFollower</a>:<a href="/page/PathFollower/LastSegment" title="PathFollower/LastSegment">LastSegment</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>
+</td>
+<td> area
+</td>
+<td>
+<p>The navmesh area this segment occupies.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> curvature
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> distanceFromStart
+</td>
+<td>
+<p>Distance of this segment from the start of the path.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> forward
+</td>
+<td>
+<p>The direction of travel to reach the end of this segment from the start, represented as a normalised vector.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> how
+</td>
+<td>
+<p>The direction of travel to reach the end of this segment from the start, represented as a cardinal direction integer 0 to 3, or 9 for vertical movement.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_CNavLadder" title="Category:CNavLadder">CNavLadder</a>
+</td>
+<td> ladder
+</td>
+<td>
+<p>The navmesh ladder this segment occupies, if any.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> length
+</td>
+<td>
+<p>Length of this segment.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> m_portalCenter
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> m_portalHalfWidth
+</td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> pos
+</td>
+<td>
+<p>The position of the end of this segment.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> type
+</td>
+<td>
+<p>The movement type of this segment, indicating how bots are expected to move along this segment.<br />
+</p>
+<ul><li> 0 is ground movement
+</li><li> 1 is falling down
+</li><li> 2 is climbing up or jumping
+</li><li> 3 is jumping over a gap
+</li><li> 4 is climbing a ladder up (unused)
+</li><li> 5 is climbing a ladder down (unused)
+</li></ul>
+</td></tr></table>
+
+

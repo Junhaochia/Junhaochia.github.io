@@ -1,0 +1,9 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>RunStringEx( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=RunStringEx">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/RunStringEx" title="Special:WhatLinksHere/Global/RunStringEx">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Alias of <a href="/page/Global/RunString" title="Global/RunString">RunString</a>.
+</p>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />Use <a href="/page/Global/RunString" title="Global/RunString">RunString</a> instead.</div>
+
+

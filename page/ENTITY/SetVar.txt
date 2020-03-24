@@ -1,0 +1,29 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetVar( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetVar">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/entity.lua#L87-L94">View Source</a> - <a href="/page/Special:WhatLinksHere/Entity/SetVar" title="Special:WhatLinksHere/Entity/SetVar">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Allows to quickly set variable to entity's <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetTable" title="Entity/GetTable">GetTable</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This will not network the variable to client(s). You want <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetNWString" title="Entity/SetNWString">SetNWString</a> and similar functions for that
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_any" title="Category:any">any</a> key</span>
+</p>
+<div style="margin-left: 32px;">
+Key of the value to set</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_any" title="Category:any">any</a> value</span>
+</p>
+<div style="margin-left: 32px;">
+Value to set the variable to</div>
+</div>
+
+

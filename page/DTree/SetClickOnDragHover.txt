@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DTree&#58;SetClickOnDragHover( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DTree.SetClickOnDragHover">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DTree/SetClickOnDragHover" title="Special:WhatLinksHere/DTree/SetClickOnDragHover">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Enables the "click when drag-hovering" functionality.
+</p><p>If enabled, when hovering over any <a href="/page/Category_colon_DTree_Node" title="Category:DTree Node">DTree_Node</a> of this <a href="/page/Category_colon_DTree" title="Category:DTree">DTree</a> while dragging a panel, the node will be automatically clicked on (and subsequently <a href="/page/Category_colon_DTree" title="Category:DTree">DTree</a>:<a href="/page/DTree/OnNodeSelected" title="DTree/OnNodeSelected">OnNodeSelected</a> will be called) to open any attached panels, such as spawnlists in spawnmenu.
+</p><p>See also: <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/DragHoverClick" title="PANEL/DragHoverClick">DragHoverClick</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> enable</span>
+</p>
+</div>
+
+

@@ -1,0 +1,26 @@
+<p>CSoundPatch class.
+</p><p>Created with <a href="/page/Global/CreateSound" title="Global/CreateSound">CreateSound</a>
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "CSoundPatch"</h2>
+<p>The following 13 pages are in this category, out of 13 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>C</h3>
+<ul><li><a href="/page/CSoundPatch/ChangePitch" title="CSoundPatch/ChangePitch">CSoundPatch/ChangePitch</a></li>
+<li><a href="/page/CSoundPatch/ChangeVolume" title="CSoundPatch/ChangeVolume">CSoundPatch/ChangeVolume</a></li>
+<li><a href="/page/CSoundPatch/FadeOut" title="CSoundPatch/FadeOut">CSoundPatch/FadeOut</a></li>
+<li><a href="/page/CSoundPatch/GetDSP" title="CSoundPatch/GetDSP">CSoundPatch/GetDSP</a></li>
+<li><a href="/page/CSoundPatch/GetPitch" title="CSoundPatch/GetPitch">CSoundPatch/GetPitch</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CSoundPatch/GetSoundLevel" title="CSoundPatch/GetSoundLevel">CSoundPatch/GetSoundLevel</a></li>
+<li><a href="/page/CSoundPatch/GetVolume" title="CSoundPatch/GetVolume">CSoundPatch/GetVolume</a></li>
+<li><a href="/page/CSoundPatch/IsPlaying" title="CSoundPatch/IsPlaying">CSoundPatch/IsPlaying</a></li>
+<li><a href="/page/CSoundPatch/Play" title="CSoundPatch/Play">CSoundPatch/Play</a></li>
+<li><a href="/page/CSoundPatch/PlayEx" title="CSoundPatch/PlayEx">CSoundPatch/PlayEx</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CSoundPatch/SetDSP" title="CSoundPatch/SetDSP">CSoundPatch/SetDSP</a></li>
+<li><a href="/page/CSoundPatch/SetSoundLevel" title="CSoundPatch/SetSoundLevel">CSoundPatch/SetSoundLevel</a></li>
+<li><a href="/page/CSoundPatch/Stop" title="CSoundPatch/Stop">CSoundPatch/Stop</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

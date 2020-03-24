@@ -1,0 +1,167 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Variables.2C_what_are_they.3F"><span class="tocnumber">1</span> <span class="toctext">Variables, what are they?</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Recapitulation_and_the_print_function"><span class="tocnumber">1.1</span> <span class="toctext">Recapitulation and the print function</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Defining_variables"><span class="tocnumber">2</span> <span class="toctext">Defining variables</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Local_Variables"><span class="tocnumber">3</span> <span class="toctext">Local Variables</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Concatenation"><span class="tocnumber">4</span> <span class="toctext">Concatenation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Newlines"><span class="tocnumber">4.1</span> <span class="toctext">Newlines</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#What.27s_next.3F"><span class="tocnumber">5</span> <span class="toctext">What's next?</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Variables.2C_what_are_they.3F">Variables, what are they?</span></h1>
+<p>Variables let your script hold information. Using a variable you can put aside some data for later and then call it back whenever you want. Variables themselves don't have a type assigned to them and they can hold absolutely anything.
+</p>
+<h2> <span class="mw-headline" id="Recapitulation_and_the_print_function">Recapitulation and the print function</span></h2>
+<p>From now on it is assumed you don't need explanations about opening notepad, saving, and loading a script in Garry's Mod. Refer to the <a href="/page/Beginner_Tutorial_Intro" title="Beginner Tutorial Intro">first page</a> if you forgot.
+</p><p>Open up your editor, we'll be making a new script, with variables!
+</p><p>If you remember, last time we did this:
+</p>
+<pre><code data-language="lua">print( "Hello World!" )
+</code></pre>
+<p><br />
+This was simple enough. Whenever the script was opened, it said Hello World! in the console.
+</p><p><a href="/page/Global/print" title="Global/print">print</a>() is a function. A function is a command that does something when you call it. Many functions can take arguments, which is data you give the function to change exactly what it does. In this case, <a href="/page/Global/print" title="Global/print">print</a>() takes one argument, which is a string (a series of letters, numbers, spaces, and so on), and when <a href="/page/Global/print" title="Global/print">print</a>() is called, it puts that <a href="/page/Category_colon_string" title="Category:string">string</a> into the console.
+</p><p>So, let's take our script apart so we can understand it.
+</p>
+<pre><code data-language="lua">print( "Hello World!" )
+</code></pre>
+<p><br />
+print is the name of the binding.
+The ( and the ) (these symbols are called <b>parentheses</b>) are where you put the text for print to print.
+</p><p>"Hello World!" is the text we chose to print. Notice the "" (<b>quotation marks</b>). The quotation marks tell lua that everything in between them is a <a href="/page/Category_colon_string" title="Category:string">string</a>, and not the name of a variable. Doing this:
+</p>
+<pre><code data-language="lua">print( Hello World! )
+</code></pre>
+<p><br />
+doesn't work. Lua will think that Hello and World! are the name of a variable, instead of a <a href="/page/Category_colon_string" title="Category:string">string</a>.
+</p><p>Any time we want lua to know that the information we're giving it is text, we put it inbetween quotation marks. Text in quotation marks is called a <a href="/page/Category_colon_string" title="Category:string">string</a>.
+</p><p>Whew! Are you still with me? These are the words you need to remember so far:
+Variable
+Binding
+Function
+Print
+Parentheses
+Quotation Marks
+String
+</p><p>Okay, now that we've gone over how print works and about text and whatnot, we'll move onto how to write variables.
+</p>
+<h1> <span class="mw-headline" id="Defining_variables">Defining variables</span></h1>
+<p>A variable can be created by doing this:
+</p>
+<pre><code data-language="lua">myName = "Jeff"
+</code></pre>
+<p><br />
+The name of the variable is on the left. The equal sign says you want to set this variable to what's on the right. If you remembered well, "Jeff" is a <a href="/page/Category_colon_string" title="Category:string">string</a>, because it has quotation marks around it. myName is the name of a variable, because it doesn't have quotation marks around it! Getting the hang of it?
+</p><p>So now you're probably thinking, what's the point of this?
+Well, that's what we're here to see.
+</p><p>But first, let's see how to use <a href="/page/Global/print" title="Global/print">print</a>() with a variable instead of text.
+As you know by now, the first way we used message was like so.
+</p>
+<pre><code data-language="lua">print("Hello World!")
+</code></pre>
+<p><br />
+We're using a <a href="/page/Category_colon_string" title="Category:string">string</a> inside of <a href="/page/Global/print" title="Global/print">print</a>() to tell it what to print. But if we want to use a variable, we do this:
+</p>
+<pre><code data-language="lua">myName = "Jeff" 
+print( myName )
+</code></pre>
+<p><br />
+Whenever this runs, <a href="/page/Global/print" title="Global/print">print</a>() prints Jeff into the console, because myName is Jeff. Heh, see?
+</p><p>You can change variables the same way you make them. Like so:
+</p>
+<pre><code data-language="lua">myName = "Jeff"
+print( myName )
+myName = "Josh"
+print( myName )
+</code></pre>
+<p><br />
+The example above prints "Jeff" first, and "Josh" second.
+</p><p><br />
+</p>
+<h1> <span class="mw-headline" id="Local_Variables">Local Variables</span></h1>
+<p>Local variables are variables that are available only in the code block they are defined in, and in all child code blocks. They are defined like this:
+</p>
+<pre><code data-language="lua">local myName = "Jeff" 
+print( myName )
+</code></pre>
+<p>In most cases you want to use local variables, so other scripts can't override them or so that your script won't break other scripts.
+</p><p>This example shows the difference between a global variable and a local variable:
+</p>
+<pre><code data-language="lua">
+local myName = &quot;Jeff&quot;
+local myAge = 18
+myPetName = &quot;Peter&quot;
+filename = &quot;test.lua&quot;
+print( myName, myPetName, myLastName, myAge, filename )
+
+if ( true ) then
+	local myName = &quot;George&quot;
+	local myLastName = &quot;Jackson&quot;
+	local filename = &quot;nope.jpg&quot;
+	myPetName = &quot;Bob&quot;
+	myAge = 20
+	print( myName, myPetName, myLastName, myAge, filename )
+end
+
+print( myName, myPetName, myLastName, myAge, filename )
+</code></pre>
+<p>This code will have this output:
+</p><p><code>Jeff	Peter	nil	18	test.lua
+George	Bob	Jackson	20	nope.jpg
+Jeff	Bob	nil	20	test.lua
+</code>
+</p>
+<h1> <span class="mw-headline" id="Concatenation">Concatenation</span></h1>
+<p>Now the next thing we will learn is how to join two <a href="/page/Category_colon_string" title="Category:string">strings</a> together. Joining two types of data together to make a <a href="/page/Category_colon_string" title="Category:string">string</a> is called <b>concatenation</b>. To concatenate, you just need to use .. - See below:
+</p>
+<pre><code data-language="lua">print( "I don't like " .. "being apart. ")
+</code></pre>
+<p><br />
+"I don't like ".."being apart." becomes "I don't like being apart.".
+</p><p>Likewise, you can join a <a href="/page/Category_colon_string" title="Category:string">string</a> and a variable:
+</p>
+<pre><code data-language="lua">myName = "Jeff" 
+print( "Welcome to the Atlantic, " .. myName )
+</code></pre>
+<p>This prints "Welcome to the Atlantic, Jeff" because myName is "Jeff". So really what it's doing is: "Welcome to the Atlantic, ".."Jeff"
+</p><p>You can use .. as many times as you want. See below:
+</p>
+<pre><code data-language="lua">myName = "Jeff" 
+print( "Welcome to the Atlantic, "..myName..". As you know, we are very glad to have you. If you ever get uncomfortable " .. myName .. ", we have a sick bay on board to assist you." )
+</code></pre>
+<p>This prints&#160;:
+<code>Welcome to the Atlantic, Jeff. As you know, we are very glad to have you. If you ever get uncomfortable Jeff, we have a sick bay on board to assist you.</code>
+</p>
+<h2> <span class="mw-headline" id="Newlines">Newlines</span></h2>
+<p>Last thing we will cover here is how to use <b>newlines</b>. Newlines are denoted by <b>\n</b> in a <a href="/page/Category_colon_string" title="Category:string">string</a>. You can use newlines anywhere in the <a href="/page/Category_colon_string" title="Category:string">string</a> to make a new line (see below):
+</p>
+<pre><code data-language="lua">myName = "Jeff" 
+print( "Hello, " .. myName .. "!\nHow are you today?\nI'm feeling great." )
+</code></pre>
+<p>This prints this into the console:
+</p><p><code>Hello, Jeff!
+How are you today?
+I'm feeling great.</code>
+</p><p>Multiline <a href="/page/Category_colon_string" title="Category:string">strings</a> can also be defined by using double square brackets instead of quotes. This allows you to create newlines in the <a href="/page/Category_colon_string" title="Category:string">string</a> by just pressing enter.
+</p><p>Example:
+</p>
+<pre><code data-language="lua">print( [[Hello, Jeff!
+How are you today?
+I'm feeling great.]] )
+</code></pre>
+<p><code>Hello, Jeff!
+How are you today?
+I'm feeling great.</code>
+</p>
+<h1> <span class="mw-headline" id="What.27s_next.3F">What's next?</span></h1>
+<p>Next we will learn about <a href="/page/Beginner_Tutorial_If_Then_Else" title="Beginner Tutorial If Then Else">operators</a>.
+</p>
+
+

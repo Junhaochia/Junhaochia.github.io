@@ -1,0 +1,49 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DMenu&#58;AddPanel( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DMenu.AddPanel">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DMenu/AddPanel" title="Special:WhatLinksHere/DMenu/AddPanel">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelFunc"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelFunc</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Adds a panel to the <a href="/page/Category_colon_DMenu" title="Category:DMenu">DMenu</a> as if it were an option.
+</p><p>This invokes <a href="/page/Category_colon_DScrollPanel" title="Category:DScrollPanel">DScrollPanel</a>:<a href="/page/DScrollPanel/AddItem" title="DScrollPanel/AddItem">AddItem</a> and will not create a new panel if a class name is passed, unlike <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/Add" title="Panel/Add">Add</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> pnl</span>
+</p>
+<div style="margin-left: 32px;">
+The panel that you want to add.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a DMenu with some options and places a red DPanel between them.
+</p>
+<pre><code data-language="lua">local m = DermaMenu()
+
+m:AddOption( &quot;Kill yourself&quot;, function() RunConsoleCommand( &quot;kill&quot; ) end ) -- Add first option
+m:AddSpacer()
+
+-- Create a red DPanel
+local panel = vgui.Create( &quot;DPanel&quot;, m )
+panel:SetSize( 50, 100 )
+panel:SetBackgroundColor( Color( 255, 0, 0 ) )
+
+m:AddPanel( panel ) -- Add the panel
+
+m:AddSpacer()
+m:AddOption( &quot;Say hi&quot;, function() RunConsoleCommand( &quot;say&quot;, &quot;Hi!&quot; ) end ) -- Add second option
+
+m:Open() -- Show our menu</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><br /><br /><a href="/page/File:DMenu_AddPanel_eg.png" class="image"><img alt="DMenu AddPanel eg.png" src="/images/d/d6/DMenu_AddPanel_eg.png" width="124" height="158" /></a></div>
+
+

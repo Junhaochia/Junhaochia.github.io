@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>PANEL:OnDrop( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PANEL.OnDrop">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/client/panel/dragdrop.lua#L384">View Source</a> - <a href="/page/Special:WhatLinksHere/PANEL/OnDrop" title="Special:WhatLinksHere/PANEL/OnDrop">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>We're being dropped on something
+We can create a new panel here and return it, so that instead of dropping us - it drops the new panel instead! We remain where we are!
+</p><p>Only works for panels derived from <a href="/page/Category_colon_DDragBase" title="Category:DDragBase">DDragBase</a>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></span>
+</p>
+<div style="margin-left: 32px;">
+The panel to drop instead of us. By default you should return self.</div>
+</div>
+
+

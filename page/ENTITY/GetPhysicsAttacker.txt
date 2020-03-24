@@ -1,0 +1,30 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;GetPhysicsAttacker( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.GetPhysicsAttacker">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/GetPhysicsAttacker" title="Special:WhatLinksHere/Entity/GetPhysicsAttacker">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns player who is claiming kills of physics damage the entity deals.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> timeLimit</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The time to check if the entity was still a proper physics attacker.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Some entities such as the Combine Ball disregard the time limit and always return the physics attacker.
+</p>
+</td></tr></table></div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a></span>
+</p>
+<div style="margin-left: 32px;">
+The player. If entity that was set is not a player, it will return NULL entity.</div>
+</div>
+
+

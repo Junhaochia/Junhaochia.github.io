@@ -1,0 +1,87 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Tools"><span class="tocnumber">1</span> <span class="toctext">Tools</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Using_tools"><span class="tocnumber">1.1</span> <span class="toctext">Using tools</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Notes"><span class="tocnumber">1.2</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#List_of_tools"><span class="tocnumber">1.3</span> <span class="toctext">List of tools</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Constraints"><span class="tocnumber">1.3.1</span> <span class="toctext">Constraints</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Construction"><span class="tocnumber">1.3.2</span> <span class="toctext">Construction</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Posing"><span class="tocnumber">1.3.3</span> <span class="toctext">Posing</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Render"><span class="tocnumber">1.3.4</span> <span class="toctext">Render</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Tools"> Tools </span></h1>
+<p>Tools are used for construction. With it, you can weld (or stick) props together, rope one prop to another, give props another color or material and remove props. Tools can also be used for posing purposes.
+</p><p><b>For a list of tools, please scroll to the bottom of the page.</b>
+</p>
+<h2> <span class="mw-headline" id="Using_tools"> Using tools </span></h2>
+<ol><li> Select your tool. Open your spawn menu by holding down <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;">Q</span> and click on the tool you want to use. Here, we'll be using the <b>Winch</b> tool.<div class="center"><div class="floatnone"><a href="/page/File:tutorial_tools_1.png" class="image"><img alt="tutorial tools 1.png" src="/images/7/7e/tutorial_tools_1.png" width="720" height="405" /></a></div></div><br />
+</li><li> Configure your tool. Most tools come with one or more settings; you can set these up however you like! It's worth noting that you can type a number into the slider boxes.<div class="center"><div class="floatnone"><a href="/page/File:tutorial_tools_2.png" class="image"><img alt="tutorial tools 2.png" src="/images/thumb/d/dc/tutorial_tools_2.png/720px-tutorial_tools_2.png" width="720" height="405" /></a></div></div><br />
+</li><li> Aim at the first prop and <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;"><span title="Left mouse button"><img alt="LMB" src="/images/f/ff/Lmb.png" width="16" height="16" /></span></span> click!<div class="center"><div class="floatnone"><a href="/page/File:tutorial_tools_3.png" class="image"><img alt="tutorial tools 3.png" src="/images/e/eb/tutorial_tools_3.png" width="720" height="405" /></a></div></div><br />
+</li><li> Aim at the second prop and <span class="keyboard-key" style="display: inline-block; background-color: rgba(0, 0, 0, 0.1);border-radius: 4px;text-align: center; color: #000; padding: 0.2em 0.5em; font-size: 0.85em;"><span title="Left mouse button"><img alt="LMB" src="/images/f/ff/Lmb.png" width="16" height="16" /></span></span> click!<div class="center"><div class="floatnone"><a href="/page/File:tutorial_tools_4.png" class="image"><img alt="tutorial tools 4.png" src="/images/thumb/2/2f/tutorial_tools_4.png/720px-tutorial_tools_4.png" width="720" height="405" /></a></div></div><br />
+</li><li> Sit back and admire your mastery of roping things together. <div class="center"><div class="floatnone"><a href="/page/File:tutorial_tools_5.png" class="image"><img alt="tutorial tools 5.png" src="/images/1/15/tutorial_tools_5.png" width="720" height="405" /></a></div></div>
+</li></ol>
+<h2> <span class="mw-headline" id="Notes"> Notes </span></h2>
+<ul><li> Not all tools require two props, some only work on one prop, some can only be applied to the world and some require 4 points (The pulley tool, for example).
+</li><li> Servers may limit the usage of props to a certain maximum or not at all. Keep this in mind when building your vehicle.
+</li><li> As of now, there is no maximum number of welds, so you can weld forever.
+</li></ul>
+<h2> <span class="mw-headline" id="List_of_tools">List of tools</span></h2>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This page is only for tools that come shipped with Garry's Mod. This wiki does not explain community created content
+</p>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Constraints">Constraints</span></h3>
+<ul><li> <a href="/page/Tools/Axis" title="Tools/Axis">Axis</a>
+</li><li> <a href="/index.php?title=Tools/Ball_Socket&amp;action=edit&amp;redlink=1" class="new" title="Tools/Ball Socket (page does not exist)">Ball Socket</a>
+</li><li> <a href="/index.php?title=Tools/Elastic&amp;action=edit&amp;redlink=1" class="new" title="Tools/Elastic (page does not exist)">Elastic</a>
+</li><li> <a href="/index.php?title=Tools/Hydraulic&amp;action=edit&amp;redlink=1" class="new" title="Tools/Hydraulic (page does not exist)">Hydraulic</a>
+</li><li> <a href="/index.php?title=Tools/Motor&amp;action=edit&amp;redlink=1" class="new" title="Tools/Motor (page does not exist)">Motor</a>
+</li><li> <a href="/index.php?title=Tools/Muscle&amp;action=edit&amp;redlink=1" class="new" title="Tools/Muscle (page does not exist)">Muscle</a>
+</li><li> <a href="/index.php?title=Tools/Pulley&amp;action=edit&amp;redlink=1" class="new" title="Tools/Pulley (page does not exist)">Pulley</a>
+</li><li> <a href="/index.php?title=Tools/Rope&amp;action=edit&amp;redlink=1" class="new" title="Tools/Rope (page does not exist)">Rope</a>
+</li><li> <a href="/index.php?title=Tools/Slider&amp;action=edit&amp;redlink=1" class="new" title="Tools/Slider (page does not exist)">Slider</a>
+</li><li> <a href="/index.php?title=Tools/Weld&amp;action=edit&amp;redlink=1" class="new" title="Tools/Weld (page does not exist)">Weld</a>
+</li><li> <a href="/index.php?title=Tools/Pulley&amp;action=edit&amp;redlink=1" class="new" title="Tools/Pulley (page does not exist)">Pulley</a>
+</li><li> <a href="/index.php?title=Tools/Winch&amp;action=edit&amp;redlink=1" class="new" title="Tools/Winch (page does not exist)">Winch</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Construction">Construction</span></h3>
+<ul><li> <a href="/index.php?title=Tools/Balloons&amp;action=edit&amp;redlink=1" class="new" title="Tools/Balloons (page does not exist)">Balloon</a>
+</li><li> <a href="/index.php?title=Tools/Button&amp;action=edit&amp;redlink=1" class="new" title="Tools/Button (page does not exist)">Button</a>
+</li><li> <a href="/index.php?title=Tools/Duplicator&amp;action=edit&amp;redlink=1" class="new" title="Tools/Duplicator (page does not exist)">Duplicator</a>
+</li><li> <a href="/index.php?title=Tools/Dynamite&amp;action=edit&amp;redlink=1" class="new" title="Tools/Dynamite (page does not exist)">Dynamite</a>
+</li><li> <a href="/index.php?title=Tools/Emitter&amp;action=edit&amp;redlink=1" class="new" title="Tools/Emitter (page does not exist)">Emitter</a>
+</li><li> <a href="/index.php?title=Tools/Hover_Ball&amp;action=edit&amp;redlink=1" class="new" title="Tools/Hover Ball (page does not exist)">Hover Ball</a>
+</li><li> <a href="/index.php?title=Tools/Lamps&amp;action=edit&amp;redlink=1" class="new" title="Tools/Lamps (page does not exist)">Lamps</a>
+</li><li> <a href="/index.php?title=Tools/Light&amp;action=edit&amp;redlink=1" class="new" title="Tools/Light (page does not exist)">Light</a>
+</li><li> <a href="/index.php?title=Tools/No-Collide&amp;action=edit&amp;redlink=1" class="new" title="Tools/No-Collide (page does not exist)">No-Collide</a>
+</li><li> <a href="/index.php?title=Tools/Physical_Properties&amp;action=edit&amp;redlink=1" class="new" title="Tools/Physical Properties (page does not exist)">Physical Properties</a>
+</li><li> <a href="/page/Tools/Remover" title="Tools/Remover">Remover</a>
+</li><li> <a href="/index.php?title=Tools/Thruster&amp;action=edit&amp;redlink=1" class="new" title="Tools/Thruster (page does not exist)">Thruster</a>
+</li><li> <a href="/index.php?title=Tools/Wheel&amp;action=edit&amp;redlink=1" class="new" title="Tools/Wheel (page does not exist)">Wheel</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Posing">Posing</span></h3>
+<ul><li> <a href="/index.php?title=Tools/Eye_Poser&amp;action=edit&amp;redlink=1" class="new" title="Tools/Eye Poser (page does not exist)">Eye Poser</a>
+</li><li> <a href="/index.php?title=Tools/Face_Poser&amp;action=edit&amp;redlink=1" class="new" title="Tools/Face Poser (page does not exist)">Face Poser</a>
+</li><li> <a href="/index.php?title=Tools/Finger_Poser&amp;action=edit&amp;redlink=1" class="new" title="Tools/Finger Poser (page does not exist)">Finger Poser</a>
+</li><li> <a href="/index.php?title=Tools/Inflator&amp;action=edit&amp;redlink=1" class="new" title="Tools/Inflator (page does not exist)">Inflator</a>
+</li></ul>
+<h3> <span class="mw-headline" id="Render">Render</span></h3>
+<ul><li> <a href="/index.php?title=Tools/Camera&amp;action=edit&amp;redlink=1" class="new" title="Tools/Camera (page does not exist)">Camera</a>
+</li><li> <a href="/index.php?title=Tools/Color&amp;action=edit&amp;redlink=1" class="new" title="Tools/Color (page does not exist)">Color</a>
+</li><li> <a href="/index.php?title=Tools/Material&amp;action=edit&amp;redlink=1" class="new" title="Tools/Material (page does not exist)">Material</a>
+</li><li> <a href="/index.php?title=Tools/Paint&amp;action=edit&amp;redlink=1" class="new" title="Tools/Paint (page does not exist)">Paint</a>
+</li><li> <a href="/index.php?title=Tools/Trails&amp;action=edit&amp;redlink=1" class="new" title="Tools/Trails (page does not exist)">Trails</a>
+</li></ul>
+
+

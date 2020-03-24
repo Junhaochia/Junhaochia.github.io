@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>IMaterial&#58;SetVector( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IMaterial.SetVector">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IMaterial/SetVector" title="Special:WhatLinksHere/IMaterial/SetVector">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the specified material vector to the specified vector, does nothing on a type mismatch.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> MaterialVector</span>
+</p>
+<div style="margin-left: 32px;">
+The name of the material vector.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> vec</span>
+</p>
+<div style="margin-left: 32px;">
+The new vector.</div>
+</div>
+
+

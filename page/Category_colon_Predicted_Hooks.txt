@@ -1,0 +1,49 @@
+<p>Predicted hooks are hooks that are called both, on client and on server, and <b>must</b> return the same value on both, client and server, to get best results.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>As per nature of predicted hooks, most of them are not called clientside in singleplayer, for further explanation visit <a href="/page/Prediction" title="Prediction">Prediction</a>
+</p>
+</td></tr></table>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Predicted Hooks"</h2>
+<p>The following 29 pages are in this category, out of 29 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>G</h3>
+<ul><li><a href="/page/GM/FinishMove" title="GM/FinishMove">GM/FinishMove</a></li>
+<li><a href="/page/GM/KeyPress" title="GM/KeyPress">GM/KeyPress</a></li>
+<li><a href="/page/GM/KeyRelease" title="GM/KeyRelease">GM/KeyRelease</a></li>
+<li><a href="/page/GM/Move" title="GM/Move">GM/Move</a></li>
+<li><a href="/page/GM/OnPlayerHitGround" title="GM/OnPlayerHitGround">GM/OnPlayerHitGround</a></li>
+<li><a href="/page/GM/PhysgunPickup" title="GM/PhysgunPickup">GM/PhysgunPickup</a></li>
+<li><a href="/page/GM/PlayerButtonDown" title="GM/PlayerButtonDown">GM/PlayerButtonDown</a></li>
+<li><a href="/page/GM/PlayerButtonUp" title="GM/PlayerButtonUp">GM/PlayerButtonUp</a></li>
+<li><a href="/page/GM/PlayerNoClip" title="GM/PlayerNoClip">GM/PlayerNoClip</a></li>
+<li><a href="/page/GM/PlayerSwitchWeapon" title="GM/PlayerSwitchWeapon">GM/PlayerSwitchWeapon</a></li></ul></td>
+<td><h3>G cont.</h3>
+<ul><li><a href="/page/GM/PlayerTick" title="GM/PlayerTick">GM/PlayerTick</a></li>
+<li><a href="/page/GM/SetupMove" title="GM/SetupMove">GM/SetupMove</a></li>
+<li><a href="/page/GM/ShouldCollide" title="GM/ShouldCollide">GM/ShouldCollide</a></li>
+<li><a href="/page/GM/StartCommand" title="GM/StartCommand">GM/StartCommand</a></li>
+<li><a href="/page/GM/VehicleMove" title="GM/VehicleMove">GM/VehicleMove</a></li></ul><h3>S</h3>
+<ul><li><a href="/page/SANDBOX/CanDrive" title="SANDBOX/CanDrive">SANDBOX/CanDrive</a></li>
+<li><a href="/page/SANDBOX/CanProperty" title="SANDBOX/CanProperty">SANDBOX/CanProperty</a></li>
+<li><a href="/page/SANDBOX/CanTool" title="SANDBOX/CanTool">SANDBOX/CanTool</a></li></ul><h3>T</h3>
+<ul><li><a href="/page/TOOL/Deploy" title="TOOL/Deploy">TOOL/Deploy</a></li>
+<li><a href="/page/TOOL/Holster" title="TOOL/Holster">TOOL/Holster</a></li></ul></td>
+<td><h3>T cont.</h3>
+<ul><li><a href="/page/TOOL/LeftClick" title="TOOL/LeftClick">TOOL/LeftClick</a></li>
+<li><a href="/page/TOOL/Reload" title="TOOL/Reload">TOOL/Reload</a></li>
+<li><a href="/page/TOOL/RightClick" title="TOOL/RightClick">TOOL/RightClick</a></li></ul><h3>W</h3>
+<ul><li><a href="/page/WEAPON/Deploy" title="WEAPON/Deploy">WEAPON/Deploy</a></li>
+<li><a href="/page/WEAPON/Holster" title="WEAPON/Holster">WEAPON/Holster</a></li>
+<li><a href="/page/WEAPON/PrimaryAttack" title="WEAPON/PrimaryAttack">WEAPON/PrimaryAttack</a></li>
+<li><a href="/page/WEAPON/Reload" title="WEAPON/Reload">WEAPON/Reload</a></li>
+<li><a href="/page/WEAPON/SecondaryAttack" title="WEAPON/SecondaryAttack">WEAPON/SecondaryAttack</a></li>
+<li><a href="/page/WEAPON/Think" title="WEAPON/Think">WEAPON/Think</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

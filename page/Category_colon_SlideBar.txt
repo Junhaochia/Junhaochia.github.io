@@ -1,0 +1,26 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=SlideBar">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:SlideBar" title="Special:WhatLinksHere/Category:SlideBar">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+Used as scroll bar for <a href="/page/Category_colon_PanelList" title="Category:PanelList">PanelList</a><div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />Used in deprecated <a href="/page/Category_colon_PanelList" title="Category:PanelList">PanelList</a>. Use <a href="/page/Category_colon_DVScrollBar" title="Category:DVScrollBar">DVScrollBar</a> (Used in <a href="/page/Category_colon_DScrollPanel" title="Category:DScrollPanel">DScrollPanel</a>).</div>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

@@ -1,0 +1,30 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>CNavArea&#58;AddHidingSpot( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CNavArea.AddHidingSpot">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CNavArea/AddHidingSpot" title="Special:WhatLinksHere/CNavArea/AddHidingSpot">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Adds a hiding spot onto this nav area.
+</p><p>There's a limit of 255 hiding spots per area.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> pos</span>
+</p>
+<div style="margin-left: 32px;">
+The position on the nav area</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> flags=7</span>
+</p>
+<div style="margin-left: 32px;">
+<p>Flags describing what kind of hiding spot this is.
+</p>
+<ul><li> 0 = None (Not recommended)
+</li><li> 1 = In Cover/basically a hiding spot, in a corner with good hard cover nearby
+</li><li> 2 = good sniper spot, had at least one decent sniping corridor
+</li><li> 4 = perfect sniper spot, can see either very far, or a large area, or both
+</li><li> 8 = exposed, spot in the open, usually on a ledge or cliff
+</li></ul>
+Values over 255 will be clamped.</div>
+</div>
+
+

@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Tool&#58;Allowed( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Tool.Allowed">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/gamemodes/sandbox/entities/weapons/gmod_tool/stool.lua#L90">View Source</a> - <a href="/page/Special:WhatLinksHere/Tool/Allowed" title="Special:WhatLinksHere/Tool/Allowed">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Checks whether the tool is allowed on the server. This will always return true clientside and will not be affected by <a href="/page/Category_colon_SANDBOX_Hooks" title="Category:SANDBOX Hooks">SANDBOX</a>:<a href="/page/SANDBOX/CanTool" title="SANDBOX/CanTool">CanTool</a>.
+</p><p>This function uses <b>TOOL.AllowedCVar</b> which is a <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> object pointing to <b>toolmode_allow_<i>*toolname*</i></b> convar.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Returns true if the tool is allowed.</div>
+</div>
+
+

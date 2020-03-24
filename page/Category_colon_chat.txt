@@ -1,0 +1,10 @@
+<p>The chat library's purpose is to interface with the default chatbox.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "chat"</h2>
+<p>The following 6 pages are in this category, out of 6 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>C</h3>
+<ul><li><a href="/page/chat/AddText" title="chat/AddText">chat/AddText</a></li><li><a href="/page/chat/Close" title="chat/Close">chat/Close</a></li><li><a href="/page/chat/GetChatBoxPos" title="chat/GetChatBoxPos">chat/GetChatBoxPos</a></li><li><a href="/page/chat/GetChatBoxSize" title="chat/GetChatBoxSize">chat/GetChatBoxSize</a></li><li><a href="/page/chat/Open" title="chat/Open">chat/Open</a></li><li><a href="/page/chat/PlaySound" title="chat/PlaySound">chat/PlaySound</a></li></ul></div>
+</div></div>

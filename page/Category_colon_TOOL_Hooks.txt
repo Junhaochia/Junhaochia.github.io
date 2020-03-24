@@ -1,0 +1,23 @@
+<div class="derivedonly"><span>This function or feature is only available in the Sandbox gamemode and its <a href="/page/Global/DeriveGamemode" title="Global/DeriveGamemode">derivatives</a>.</span></div>
+<p>A list of hooks (or callbacks) that are available for you to override in a tool. This is only applicable to sandbox and sandbox-derived gamemodes.
+</p><p>See also: <a href="/page/Structures/TOOL" title="Structures/TOOL">TOOL structure</a> and <a href="/page/Category_colon_Tool" title="Category:Tool">Tool Functions</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "TOOL Hooks"</h2>
+<p>The following 9 pages are in this category, out of 9 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>T</h3>
+<ul><li><a href="/page/TOOL/Deploy" title="TOOL/Deploy">TOOL/Deploy</a></li>
+<li><a href="/page/TOOL/DrawHUD" title="TOOL/DrawHUD">TOOL/DrawHUD</a></li>
+<li><a href="/page/TOOL/DrawToolScreen" title="TOOL/DrawToolScreen">TOOL/DrawToolScreen</a></li></ul></td>
+<td><h3>T cont.</h3>
+<ul><li><a href="/page/TOOL/FreezeMovement" title="TOOL/FreezeMovement">TOOL/FreezeMovement</a></li>
+<li><a href="/page/TOOL/Holster" title="TOOL/Holster">TOOL/Holster</a></li>
+<li><a href="/page/TOOL/LeftClick" title="TOOL/LeftClick">TOOL/LeftClick</a></li></ul></td>
+<td><h3>T cont.</h3>
+<ul><li><a href="/page/TOOL/Reload" title="TOOL/Reload">TOOL/Reload</a></li>
+<li><a href="/page/TOOL/RightClick" title="TOOL/RightClick">TOOL/RightClick</a></li>
+<li><a href="/page/TOOL/Think" title="TOOL/Think">TOOL/Think</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

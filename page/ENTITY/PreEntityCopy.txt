@@ -1,0 +1,26 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>ENTITY:PreEntityCopy( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ENTITY.PreEntityCopy">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ENTITY/PreEntityCopy" title="Special:WhatLinksHere/ENTITY/PreEntityCopy">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called before the duplicator copies the entity.
+</p><p>If you are looking for a way to make the duplicator spawn another entity when duplicated. ( For example, you duplicate a "prop_physics", but you want the duplicator to spawn "prop_physics_my" ), you should add prop_physics.ClassOverride = "prop_physics_my". The duplication table should be also stored on that prop_physics, not on prop_physics_my.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Example on how to store values for duplicator, and then restore them afterwards
+</p>
+<pre><code data-language="lua">-- Store the value for duplicator
+function ENT:PreEntityCopy()
+	self.MyDuplicatorVariasble = self:GetSequence()
+end
+
+-- Restore the saved value
+function ENT:PostEntityPaste()
+	-- Always validate data before using it
+	if (&#160;!self.MyDuplicatorVariasble ) then return end
+
+	self:ResetSequence( self.MyDuplicatorVariasble )
+end</code></pre>
+<p><br />
+</p>
+
+

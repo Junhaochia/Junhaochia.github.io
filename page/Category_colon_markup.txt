@@ -1,0 +1,10 @@
+<p>The markup library only contains a single function to create a <a href="/page/Category_colon_MarkupObject" title="Category:MarkupObject">MarkupObject</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "markup"</h2>
+<p>This category contains only the following page.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>M</h3>
+<ul><li><a href="/page/markup/Parse" title="markup/Parse">markup/Parse</a></li></ul></div>
+</div></div>

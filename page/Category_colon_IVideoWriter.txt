@@ -1,0 +1,10 @@
+<p>This is returned from <a href="/page/Category_colon_video" title="Category:video">video</a>.<a href="/page/video/Record" title="video/Record">Record</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "IVideoWriter"</h2>
+<p>The following 5 pages are in this category, out of 5 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>I</h3>
+<ul><li><a href="/page/IVideoWriter/AddFrame" title="IVideoWriter/AddFrame">IVideoWriter/AddFrame</a></li><li><a href="/page/IVideoWriter/Finish" title="IVideoWriter/Finish">IVideoWriter/Finish</a></li><li><a href="/page/IVideoWriter/Height" title="IVideoWriter/Height">IVideoWriter/Height</a></li><li><a href="/page/IVideoWriter/SetRecordSound" title="IVideoWriter/SetRecordSound">IVideoWriter/SetRecordSound</a></li><li><a href="/page/IVideoWriter/Width" title="IVideoWriter/Width">IVideoWriter/Width</a></li></ul></div>
+</div></div>

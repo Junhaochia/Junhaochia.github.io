@@ -1,0 +1,72 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>GM:ScalePlayerDamage( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.ScalePlayerDamage">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/ScalePlayerDamage" title="Special:WhatLinksHere/GM/ScalePlayerDamage">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">5</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">6</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>This hook allows you to change how much damage a player receives when one takes damage to a specific body part.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is not called for all damage a player receives ( For example fall damage or NPC melee damage ), so you should use <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/EntityTakeDamage" title="GM/EntityTakeDamage">EntityTakeDamage</a> instead if you need to detect ALL damage.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply</span>
+</p>
+<div style="margin-left: 32px;">
+The player taking damage.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> hitgroup</span>
+</p>
+<div style="margin-left: 32px;">
+The hitgroup where the player took damage. See <a href="/page/Enums/HITGROUP" title="Enums/HITGROUP">HITGROUP_ Enums</a></div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_CTakeDamageInfo" title="Category:CTakeDamageInfo">CTakeDamageInfo</a> dmginfo</span>
+</p>
+<div style="margin-left: 32px;">
+The damage info.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>Return true to prevent damage that this hook is called for, stop blood particle effects and blood decals.<br /><br />
+</p>
+It is possible to return true only on client ( This will work <b>only in multiplayer</b> ) to stop the effects but still take damage.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Makes the player take twice as much damage when shot in the head, and only half damage when shot in the limbs.
+</p>
+<pre><code data-language="lua">function GM:ScalePlayerDamage( ply, hitgroup, dmginfo )
+	 if ( hitgroup == HITGROUP_HEAD ) then
+		dmginfo:ScaleDamage( 2 ) // More damage when we're shot in the head
+ 	 else
+		dmginfo:ScaleDamage( 0.50 )  // Less damage when shot anywhere else
+	 end
+end</code></pre>
+<p><br />
+</p>
+
+

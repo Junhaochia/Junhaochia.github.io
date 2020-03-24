@@ -1,0 +1,60 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>CNewParticleEffect&#58;AddControlPoint( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CNewParticleEffect.AddControlPoint">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CNewParticleEffect/AddControlPoint" title="Special:WhatLinksHere/CNewParticleEffect/AddControlPoint">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Adds a control point to the particle system.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This function will not work if the <a href="/page/Category_colon_CNewParticleEffect" title="Category:CNewParticleEffect">CNewParticleEffect</a>:<a href="/page/CNewParticleEffect/GetOwner" title="CNewParticleEffect/GetOwner">GetOwner</a> entity is not valid
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> cpID</span>
+</p>
+<div style="margin-left: 32px;">
+The control point ID, 0 to 63.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ent</span>
+</p>
+<div style="margin-left: 32px;">
+The entity to attach the control point to.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> partAttachment</span>
+</p>
+<div style="margin-left: 32px;">
+See <a href="/page/Enums/PATTACH" title="Enums/PATTACH">PATTACH_ Enums</a>.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> entAttachment=0</span>
+</p>
+<div style="margin-left: 32px;">
+The attachment ID on the entity to attach the particle system to</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> offset=Vector( 0, 0, 0 )</span>
+</p>
+<div style="margin-left: 32px;">
+The offset from the <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetPos" title="Entity/GetPos">GetPos</a> of the entity we are attaching this CP to.</div>
+</div>
+
+

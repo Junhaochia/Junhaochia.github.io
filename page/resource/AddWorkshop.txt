@@ -1,0 +1,51 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>resource.AddWorkshop( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=resource.AddWorkshop">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/resource/AddWorkshop" title="Special:WhatLinksHere/resource/AddWorkshop">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Adds a workshop addon for the client to download before entering the server.
+</p><p>Having the raw files from a workshop item does not count as having already downloaded it.<br />
+So players who previously downloaded a map through Fast Download will have to re-download it if you use the workshop.
+</p><p>You should try to only add addons that have custom content ( models, sounds, etc ).
+</p><p>Gamemodes that are <a href="/page/Gamemode_Creation#Gamemode_Text_File" title="Gamemode Creation">workshop enabled</a> are automatically added to this list - so there's no need to add them.<br />
+The server's current map is also automatically added, if it is loaded from a workshop addon.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This will not "install" the addon on your server, see <a href="/page/Workshop_for_Dedicated_Servers" title="Workshop for Dedicated Servers">Workshop for Dedicated Servers</a> for installing Steam Workshop addons onto your servers
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> workshopid</span>
+</p>
+<div style="margin-left: 32px;">
+The workshop id of the file. This cannot be a collection.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Adds the Achievement Viewer addon (workshop id 104606562).<br />
+Any clients that join will download this addon if they haven't previously downloaded it from the workshop or from the server (via the workshop).
+</p><p>You get the ID from the URL of the workshop addon.<br />
+For example, here's the URL of the Achievement Viewer addon's page:<br />
+<a rel="nofollow" class="external free" href="https://steamcommunity.com/sharedfiles/filedetails/?id=104606562">http://steamcommunity.com/sharedfiles/filedetails/?id=104606562</a><br />
+The ID is 104606562.
+</p>
+<pre><code data-language="lua">resource.AddWorkshop( &quot;104606562&quot; )</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">Players joining the server will now be forced to download the Achievement Viewer addon.</div>
+
+

@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>game.GetAmmoData( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=game.GetAmmoData">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/game/GetAmmoData" title="Special:WhatLinksHere/game/GetAmmoData">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the <a href="/page/Structures/AmmoData" title="Structures/AmmoData">AmmoData structure</a> for given ID.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> id</span>
+</p>
+<div style="margin-left: 32px;">
+ID of the ammo type to look up the data for</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+The <a href="/page/Structures/AmmoData" title="Structures/AmmoData">AmmoData structure</a> containing all ammo data</div>
+</div>
+
+

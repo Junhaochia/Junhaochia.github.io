@@ -1,0 +1,87 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/NavTraverseType" title="Special:WhatLinksHere/Enums/NavTraverseType">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/GetParentHow" title="CNavArea/GetParentHow">GetParentHow</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>These enumerations do not exist in game and are listed here only for reference!
+</p>
+</td></tr></table><br /><br />
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> GO_NORTH
+</td>
+<td> 0
+</td>
+<td>
+</td></tr>
+<tr>
+<td> GO_EAST
+</td>
+<td> 1
+</td>
+<td>
+</td></tr>
+<tr>
+<td> GO_SOUTH
+</td>
+<td> 2
+</td>
+<td>
+</td></tr>
+<tr>
+<td> GO_WEST
+</td>
+<td> 3
+</td>
+<td>
+<p><br />
+</p>
+</td></tr>
+<tr>
+<td> GO_LADDER_UP
+</td>
+<td> 4
+</td>
+<td>
+</td></tr>
+<tr>
+<td> GO_LADDER_DOWN
+</td>
+<td> 5
+</td>
+<td>
+</td></tr>
+<tr>
+<td> GO_JUMP
+</td>
+<td> 6
+</td>
+<td>
+</td></tr>
+<tr>
+<td> GO_ELEVATOR_UP
+</td>
+<td> 7
+</td>
+<td>
+</td></tr>
+<tr>
+<td> GO_ELEVATOR_DOWN
+</td>
+<td> 8
+</td>
+<td>
+</td></tr></table>
+
+

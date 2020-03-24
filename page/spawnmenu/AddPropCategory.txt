@@ -1,0 +1,228 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>spawnmenu.AddPropCategory( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=spawnmenu.AddPropCategory">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/spawnmenu/AddPropCategory" title="Special:WhatLinksHere/spawnmenu/AddPropCategory">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_6"><span class="tocnumber">7</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_7"><span class="tocnumber">8</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">9</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">9.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Used to add addon spawnlists to the spawnmenu tree. This function should be called within <a href="/page/Category_colon_SANDBOX_Hooks" title="Category:SANDBOX Hooks">SANDBOX</a>:<a href="/page/SANDBOX/PopulatePropMenu" title="SANDBOX/PopulatePropMenu">PopulatePropMenu</a>.
+</p><p>Addon spawnlists will not save to disk if edited.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>You should never try to modify player customized spawnlists!
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> classname</span>
+</p>
+<div style="margin-left: 32px;">
+A unique classname of the list.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+The name of the category displayed to the player, e.g. <i>Comic Props</i>.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> contents</span>
+</p>
+<div style="margin-left: 32px;">
+<p>A table of entries for the spawn menu. It must be numerically indexed.
+</p><p>Each member of the table is a sub-table containing a type member, and other members depending on the type.
+</p>
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> type - "header" - a simple header for organization
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> text - The text that the header will display
+</li></ul>
+</li></ul>
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> type - "model" - spawns a model where the player is looking
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> model - The path to the model file
+</li><li> <a href="/page/Category_colon_number" title="Category:number">number</a> skin - The skin for the model to use (optional)
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> body - The bodygroups for the model (optional)
+</li><li> <a href="/page/Category_colon_number" title="Category:number">number</a> wide - The width of the spawnicon (optional)
+</li><li> <a href="/page/Category_colon_number" title="Category:number">number</a> tall - The height of the spawnicon (optional)
+</li></ul>
+</li></ul>
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> type - "entity" - spawns an entity where the player is looking (appears in the Entities tab by default)
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> spawnname - The filename of the entity, for example "sent_ball"
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> nicename - The name of the entity to display
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> material - The icon to display, this should be set to "entities/&lt;sent_name&gt;.png"
+</li><li> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> admin - Whether the entity is only spawnable by admins (optional)
+</li></ul>
+</li></ul>
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> type - "vehicle" - spawns a vehicle where the player is looking (appears in the Vehicles tab by default)
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> spawnname - The filename of the vehicle
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> nicename - The name of the vehicle to display
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> material - The icon to display
+</li><li> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> admin - Whether the vehicle is only spawnable by admins (optional)
+</li></ul>
+</li></ul>
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> type - "npc" - spawns an NPC where the player is looking (appears in the NPCs tab by default)
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> spawnname - The spawn name of the NPC
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> nicename - The name to display
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> material - The icon to display
+</li><li> <a href="/page/Category_colon_table" title="Category:table">table</a> weapon - A table of potential weapons (each a string) to give to the NPC. When spawned, one of these will be chosen randomly each time.
+</li><li> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> admin - Whether the NPC is only spawnable by admins (optional)
+</li></ul>
+</li></ul>
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> type - "weapon" - When clicked, gives the player a weapon; when middle-clicked, spawns a weapon where the player is looking (appears in the Weapons tab by default)
+<ul><li> <a href="/page/Category_colon_string" title="Category:string">string</a> spawnname - The spawn name of the weapon
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> nicename - The name to display
+</li><li> <a href="/page/Category_colon_string" title="Category:string">string</a> material - The icon to display
+</li><li> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> admin - Whether the weapon is only spawnable by admins (optional)</div>
+</li></ul>
+</li></ul>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> icon</span>
+</p>
+<div style="margin-left: 32px;">
+The icon to use in the tree.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> id=1000</span>
+</p>
+<div style="margin-left: 32px;">
+The unique ID number for the spawnlist category. Used to make sub categories. See "parentID" parameter below. If not set, it will be automatically set to ever increasing number, starting with 1000.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_6">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> parentID=0</span>
+</p>
+<div style="margin-left: 32px;">
+The unique ID of the parent category. This will make the created category a subcategory of category with given unique ID. <i>0</i> makes this a base category (such as <i>Builder</i>).</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_7">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> needsApp=""</span>
+</p>
+<div style="margin-left: 32px;">
+The needed game for this prop category, if one is needed. If the specified game is not mounted, the category isn't shown. This uses the shortcut name, e.g. <i>cstrike</i>, and not the Steam AppID.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Create a spawn menu with two icons for each type
+</p>
+<pre><code data-language="lua">hook.Add(&quot;PopulatePropMenu&quot;, &quot;Add Two Of Each&quot;, function()
+	
+	local contents = {}
+	
+	-- Props
+	table.insert( contents, {
+		type = &quot;header&quot;,
+		text = &quot;Props&quot;
+	} )
+	table.insert( contents, {
+		type = &quot;model&quot;,
+		model = &quot;models/props_c17/oildrum001.mdl&quot;
+	} )
+	table.insert( contents, {
+		type = &quot;model&quot;,
+		model = &quot;models/props_wasteland/cargo_container01.mdl&quot;,
+		skin = 1,
+		wide = 128,
+		tall = 64
+	} )
+
+	-- Entities
+	table.insert( contents, {
+		type = &quot;header&quot;,
+		text = &quot;Entities&quot;
+	} )
+	table.insert( contents, {
+		type = &quot;entity&quot;,
+		spawnname = &quot;sent_ball&quot;,
+		nicename = &quot;Bouncy Ball&quot;,
+		material = &quot;entities/sent_ball.png&quot;
+	} )
+	table.insert( contents, {
+		type = &quot;entity&quot;,
+		spawnname = &quot;combine_mine&quot;,
+		nicename = &quot;Hopper Mine&quot;,
+		material = &quot;entities/combine_mine.png&quot;
+	} )
+
+	-- Vehicles
+	table.insert( contents, {
+		type = &quot;header&quot;,
+		text = &quot;Vehicles&quot;
+	} )
+	table.insert( contents, {
+		type = &quot;vehicle&quot;,
+		spawnname = &quot;Airboat&quot;,
+		nicename = &quot;Half-Life 2 Airboat&quot;,
+		material = &quot;entities/Airboat.png&quot;
+	} )
+	table.insert( contents, {
+		type = &quot;vehicle&quot;,
+		spawnname = &quot;Chair_Office2&quot;,
+		nicename = &quot;Executive's Chair&quot;,
+		material = &quot;entities/Chair_Office2.png&quot;
+	} )
+
+	-- NPCs
+	table.insert( contents, {
+		type = &quot;header&quot;,
+		text = &quot;NPCs&quot;
+	} )
+	table.insert( contents, {
+		type = &quot;npc&quot;,
+		spawnname = &quot;npc_citizen&quot;,
+		nicename = &quot;A random citizen&quot;,
+		material = &quot;entities/npc_citizen.png&quot;,
+		weapon = { &quot;weapon_smg1&quot;, &quot;weapon_crowbar&quot; }
+	} )
+	table.insert( contents, {
+		type = &quot;npc&quot;,
+		spawnname = &quot;npc_headcrab&quot;,
+		nicename = &quot;Headhumper&quot;,
+		material = &quot;entities/npc_headcrab.png&quot;
+	} )
+
+	-- Weapons
+	table.insert( contents, {
+		type = &quot;header&quot;,
+		text = &quot;Weapons&quot;
+	} )
+	table.insert( contents, {
+		type = &quot;weapon&quot;,
+		spawnname = &quot;weapon_crowbar&quot;,
+		nicename = &quot;Crowbar&quot;,
+		material = &quot;entities/weapon_crowbar.png&quot;,
+	} )
+	table.insert( contents, {
+		type = &quot;weapon&quot;,
+		spawnname = &quot;weapon_smg1&quot;,
+		nicename = &quot;SMG&quot;,
+		material = &quot;entities/weapon_smg1.png&quot;,
+	} )
+
+	spawnmenu.AddPropCategory( &quot;TwoOfEach&quot;, &quot;Two of each type&quot;, contents, &quot;icon16/box.png&quot; )
+end )</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:AddPropCategory_Two_of_each.jpeg" class="image"><img alt="AddPropCategory Two of each.jpeg" src="/images/e/e8/AddPropCategory_Two_of_each.jpeg" width="594" height="939" /></a></div>
+
+

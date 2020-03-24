@@ -1,0 +1,72 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:DDrawer_ex1.png" class="image" title="Example DDrawer"><img alt="Example DDrawer" src="/images/thumb/6/66/DDrawer_ex1.png/300px-DDrawer_ex1.png" width="300" height="161" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DDrawer">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DDrawer" title="Special:WhatLinksHere/Category:DDrawer">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>A simple Derma Drawer
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a DDrawer in a DFrame; set the open size and time; add a panel in the drawer; open the DDrawer.
+</p>
+<pre><code data-language="lua">local Frame = vgui.Create( &quot;DFrame&quot; )
+Frame:SetSize( 400, 200 )
+Frame:Center()
+Frame:MakePopup()
+
+local Drawer = vgui.Create( &quot;DDrawer&quot;, Frame )
+Drawer:SetOpenSize( 75 )		-- Default OpenSize is 100
+Drawer:SetOpenTime( 0.2 )		-- Default OpenTime is 0.3
+Drawer:Open()				-- You can also use Drawer:Close()  and  Drawer:Toggle()
+
+//Let's add a panel, because Drawer is empty
+local PanelInDrawer = vgui.Create( &quot;DPanel&quot;, Drawer )
+PanelInDrawer:Dock( FILL )		-- Make PanelInDrawer fill place of Drawer
+PanelInDrawer:DockMargin( 3, 0, 3, 3 ) 	-- Margins for the dock. Search on wiki for more info</code></pre>
+<p><br />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DDrawer"</h2>
+<p>The following 7 pages are in this category, out of 7 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DDrawer/Close" title="DDrawer/Close">DDrawer/Close</a></li>
+<li><a href="/page/DDrawer/GetOpenSize" title="DDrawer/GetOpenSize">DDrawer/GetOpenSize</a></li>
+<li><a href="/page/DDrawer/GetOpenTime" title="DDrawer/GetOpenTime">DDrawer/GetOpenTime</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DDrawer/Open" title="DDrawer/Open">DDrawer/Open</a></li>
+<li><a href="/page/DDrawer/SetOpenSize" title="DDrawer/SetOpenSize">DDrawer/SetOpenSize</a></li>
+<li><a href="/page/DDrawer/SetOpenTime" title="DDrawer/SetOpenTime">DDrawer/SetOpenTime</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DDrawer/Toggle" title="DDrawer/Toggle">DDrawer/Toggle</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

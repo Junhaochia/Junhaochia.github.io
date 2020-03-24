@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>VMatrix&#58;Identity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=VMatrix.Identity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/VMatrix/Identity" title="Special:WhatLinksHere/VMatrix/Identity">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Initializes the matrix as Identity matrix.
+</p>
+
+

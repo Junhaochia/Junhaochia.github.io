@@ -1,0 +1,58 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Entity&#58;CreateParticleEffect( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.CreateParticleEffect">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/CreateParticleEffect" title="Special:WhatLinksHere/Entity/CreateParticleEffect">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">5</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Creates a clientside particle system attached to the entity. See also <a href="/page/Global/CreateParticleSystem" title="Global/CreateParticleSystem">CreateParticleSystem</a>
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>The particle effect must be precached with <a href="/page/Global/PrecacheParticleSystem" title="Global/PrecacheParticleSystem">PrecacheParticleSystem</a> and the file its from must be added via <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/AddParticles" title="game/AddParticles">AddParticles</a> before it can be used!
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> particle</span>
+</p>
+<div style="margin-left: 32px;">
+The particle name to create</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> attachment</span>
+</p>
+<div style="margin-left: 32px;">
+Attachment ID to attach the particle to</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> options=nil</span>
+</p>
+<div style="margin-left: 32px;">
+<p>A table of tables ( IDs 1 to 64 ) having the following structure:
+</p>
+<ul><li> <a href="/page/Category_colon_number" title="Category:number">number</a> attachtype - The particle attach type. See <a href="/page/Enums/PATTACH" title="Enums/PATTACH">PATTACH_ Enums</a>. <b>Default:</b> PATTACH_ABSORIGIN
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> entity - The parent entity? <b>Default:</b> NULL
+</li><li> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> position - The offset position for given control point. <b>Default:</b> nil
+</li></ul>
+This only affects the control points of the particle effects and will do nothing if the effect doesn't use control points.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_CNewParticleEffect" title="Category:CNewParticleEffect">CNewParticleEffect</a></span>
+</p>
+<div style="margin-left: 32px;">
+The created particle system.</div>
+</div>
+
+

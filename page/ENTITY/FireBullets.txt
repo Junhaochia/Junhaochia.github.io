@@ -1,0 +1,30 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;FireBullets( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.FireBullets">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/FireBullets" title="Special:WhatLinksHere/Entity/FireBullets">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Fires a bullet.
+</p><p>When used in a <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks"> WEAPON</a> hook such as <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/Think" title="WEAPON/Think">Think</a> or <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/PrimaryAttack" title="WEAPON/PrimaryAttack">PrimaryAttack</a>, it will use <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/LagCompensation" title="Player/LagCompensation">LagCompensation</a> internally.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Lag compensation will not work if this function is called in a timer, regardless if the timer was made in a <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a> hook.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> bulletInfo</span>
+</p>
+<div style="margin-left: 32px;">
+The bullet data to be used. See the <a href="/page/Structures/Bullet" title="Structures/Bullet">Bullet structure</a>.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> suppressHostEvents=false</span>
+</p>
+<div style="margin-left: 32px;">
+Has the effect of encasing the FireBullets call in <a href="/page/Global/SuppressHostEvents" title="Global/SuppressHostEvents">SuppressHostEvents</a>, only works in multiplayer.</div>
+</div>
+
+

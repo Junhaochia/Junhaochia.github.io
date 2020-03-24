@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Entity&#58;StopParticlesNamed( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.StopParticlesNamed">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/StopParticlesNamed" title="Special:WhatLinksHere/Entity/StopParticlesNamed">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Stops all particle effects parented to the entity with given name.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+The name of the particle to stop.</div>
+</div>
+
+

@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>NumModelSkins( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NumModelSkins">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/NumModelSkins" title="Special:WhatLinksHere/Global/NumModelSkins">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the amount of skins the specified model has.
+</p><p>See also <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SkinCount" title="Entity/SkinCount">SkinCount</a> if you have an entity.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> modelName</span>
+</p>
+<div style="margin-left: 32px;">
+Model to return amount of skins of</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+Amount of skins</div>
+</div>
+
+

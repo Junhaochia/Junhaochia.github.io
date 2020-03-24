@@ -1,0 +1,89 @@
+<p>A list of hooks <b>only</b> available for <a href="/page/Scripted_Entities" title="Scripted Entities">Scripted Entities</a>.
+</p><p>The only exceptions to this rule are <strong class="selflink">ENTITY</strong>:<a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">RenderOverride</a> and <strong class="selflink">ENTITY</strong>:<a href="/page/ENTITY/CalcAbsolutePosition" title="ENTITY/CalcAbsolutePosition">CalcAbsolutePosition</a>, which can also be applied to engine entities.
+</p><p>Some more "hooks" are available for all entities (including engine entities) with the function <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/AddCallback" title="Entity/AddCallback">AddCallback</a>.
+</p><p>See also: <a href="/page/Structures/ENT" title="Structures/ENT">ENT structure</a>
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>The hooks listed here are also dependent on the scripted entity type. For instance, a base scripted entity will not use <strong class="selflink">ENTITY</strong>:<a href="/page/ENTITY/DoSchedule" title="ENTITY/DoSchedule">DoSchedule</a> at all, that is only for scripted NPCs
+</p>
+</td></tr></table>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "ENTITY Hooks"</h2>
+<p>The following 66 pages are in this category, out of 66 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>E</h3>
+<ul><li><a href="/page/ENTITY/AcceptInput" title="ENTITY/AcceptInput">ENTITY/AcceptInput</a></li>
+<li><a href="/page/ENTITY/Blocked" title="ENTITY/Blocked">ENTITY/Blocked</a></li>
+<li><a href="/page/ENTITY/CalcAbsolutePosition" title="ENTITY/CalcAbsolutePosition">ENTITY/CalcAbsolutePosition</a></li>
+<li><a href="/page/ENTITY/CanProperty" title="ENTITY/CanProperty">ENTITY/CanProperty</a></li>
+<li><a href="/page/ENTITY/CreateSchedulesInternal" title="ENTITY/CreateSchedulesInternal">ENTITY/CreateSchedulesInternal</a></li>
+<li><a href="/page/ENTITY/DoImpactEffect" title="ENTITY/DoImpactEffect">ENTITY/DoImpactEffect</a></li>
+<li><a href="/page/ENTITY/DoingEngineSchedule" title="ENTITY/DoingEngineSchedule">ENTITY/DoingEngineSchedule</a></li>
+<li><a href="/page/ENTITY/DoSchedule" title="ENTITY/DoSchedule">ENTITY/DoSchedule</a></li>
+<li><a href="/page/ENTITY/Draw" title="ENTITY/Draw">ENTITY/Draw</a></li>
+<li><a href="/page/ENTITY/DrawTranslucent" title="ENTITY/DrawTranslucent">ENTITY/DrawTranslucent</a></li>
+<li><a href="/page/ENTITY/EndTouch" title="ENTITY/EndTouch">ENTITY/EndTouch</a></li>
+<li><a href="/page/ENTITY/EngineScheduleFinish" title="ENTITY/EngineScheduleFinish">ENTITY/EngineScheduleFinish</a></li>
+<li><a href="/page/ENTITY/ExpressionFinished" title="ENTITY/ExpressionFinished">ENTITY/ExpressionFinished</a></li>
+<li><a href="/page/ENTITY/FireAnimationEvent" title="ENTITY/FireAnimationEvent">ENTITY/FireAnimationEvent</a></li>
+<li><a href="/page/ENTITY/GetAttackSpread" title="ENTITY/GetAttackSpread">ENTITY/GetAttackSpread</a></li>
+<li><a href="/page/ENTITY/GetRelationship" title="ENTITY/GetRelationship">ENTITY/GetRelationship</a></li>
+<li><a href="/page/ENTITY/GetRenderMesh" title="ENTITY/GetRenderMesh">ENTITY/GetRenderMesh</a></li>
+<li><a href="/page/ENTITY/GravGunPickupAllowed" title="ENTITY/GravGunPickupAllowed">ENTITY/GravGunPickupAllowed</a></li>
+<li><a href="/page/ENTITY/GravGunPunt" title="ENTITY/GravGunPunt">ENTITY/GravGunPunt</a></li>
+<li><a href="/page/ENTITY/HandleAnimEvent" title="ENTITY/HandleAnimEvent">ENTITY/HandleAnimEvent</a></li>
+<li><a href="/page/ENTITY/ImpactTrace" title="ENTITY/ImpactTrace">ENTITY/ImpactTrace</a></li>
+<li><a href="/page/ENTITY/Initialize" title="ENTITY/Initialize">ENTITY/Initialize</a></li></ul></td>
+<td><h3>E cont.</h3>
+<ul><li><a href="/page/ENTITY/IsJumpLegal" title="ENTITY/IsJumpLegal">ENTITY/IsJumpLegal</a></li>
+<li><a href="/page/ENTITY/KeyValue" title="ENTITY/KeyValue">ENTITY/KeyValue</a></li>
+<li><a href="/page/ENTITY/NextTask" title="ENTITY/NextTask">ENTITY/NextTask</a></li>
+<li><a href="/page/ENTITY/OnCondition" title="ENTITY/OnCondition">ENTITY/OnCondition</a></li>
+<li><a href="/page/ENTITY/OnDuplicated" title="ENTITY/OnDuplicated">ENTITY/OnDuplicated</a></li>
+<li><a href="/page/ENTITY/OnEntityCopyTableFinish" title="ENTITY/OnEntityCopyTableFinish">ENTITY/OnEntityCopyTableFinish</a></li>
+<li><a href="/page/ENTITY/OnReloaded" title="ENTITY/OnReloaded">ENTITY/OnReloaded</a></li>
+<li><a href="/page/ENTITY/OnRemove" title="ENTITY/OnRemove">ENTITY/OnRemove</a></li>
+<li><a href="/page/ENTITY/OnRestore" title="ENTITY/OnRestore">ENTITY/OnRestore</a></li>
+<li><a href="/page/ENTITY/OnTakeDamage" title="ENTITY/OnTakeDamage">ENTITY/OnTakeDamage</a></li>
+<li><a href="/page/ENTITY/OnTaskComplete" title="ENTITY/OnTaskComplete">ENTITY/OnTaskComplete</a></li>
+<li><a href="/page/ENTITY/PassesDamageFilter" title="ENTITY/PassesDamageFilter">ENTITY/PassesDamageFilter</a></li>
+<li><a href="/page/ENTITY/PassesFilter" title="ENTITY/PassesFilter">ENTITY/PassesFilter</a></li>
+<li><a href="/page/ENTITY/PassesTriggerFilters" title="ENTITY/PassesTriggerFilters">ENTITY/PassesTriggerFilters</a></li>
+<li><a href="/page/ENTITY/PhysicsCollide" title="ENTITY/PhysicsCollide">ENTITY/PhysicsCollide</a></li>
+<li><a href="/page/ENTITY/PhysicsSimulate" title="ENTITY/PhysicsSimulate">ENTITY/PhysicsSimulate</a></li>
+<li><a href="/page/ENTITY/PhysicsUpdate" title="ENTITY/PhysicsUpdate">ENTITY/PhysicsUpdate</a></li>
+<li><a href="/page/ENTITY/PostEntityCopy" title="ENTITY/PostEntityCopy">ENTITY/PostEntityCopy</a></li>
+<li><a href="/page/ENTITY/PostEntityPaste" title="ENTITY/PostEntityPaste">ENTITY/PostEntityPaste</a></li>
+<li><a href="/page/ENTITY/PreEntityCopy" title="ENTITY/PreEntityCopy">ENTITY/PreEntityCopy</a></li>
+<li><a href="/page/ENTITY/RenderOverride" title="ENTITY/RenderOverride">ENTITY/RenderOverride</a></li>
+<li><a href="/page/ENTITY/RunAI" title="ENTITY/RunAI">ENTITY/RunAI</a></li></ul></td>
+<td><h3>E cont.</h3>
+<ul><li><a href="/page/ENTITY/RunEngineTask" title="ENTITY/RunEngineTask">ENTITY/RunEngineTask</a></li>
+<li><a href="/page/ENTITY/RunTask" title="ENTITY/RunTask">ENTITY/RunTask</a></li>
+<li><a href="/page/ENTITY/ScheduleFinished" title="ENTITY/ScheduleFinished">ENTITY/ScheduleFinished</a></li>
+<li><a href="/page/ENTITY/SelectSchedule" title="ENTITY/SelectSchedule">ENTITY/SelectSchedule</a></li>
+<li><a href="/page/ENTITY/SetAutomaticFrameAdvance" title="ENTITY/SetAutomaticFrameAdvance">ENTITY/SetAutomaticFrameAdvance</a></li>
+<li><a href="/page/ENTITY/SetTask" title="ENTITY/SetTask">ENTITY/SetTask</a></li>
+<li><a href="/page/ENTITY/SetupDataTables" title="ENTITY/SetupDataTables">ENTITY/SetupDataTables</a></li>
+<li><a href="/page/ENTITY/SpawnFunction" title="ENTITY/SpawnFunction">ENTITY/SpawnFunction</a></li>
+<li><a href="/page/ENTITY/StartEngineSchedule" title="ENTITY/StartEngineSchedule">ENTITY/StartEngineSchedule</a></li>
+<li><a href="/page/ENTITY/StartEngineTask" title="ENTITY/StartEngineTask">ENTITY/StartEngineTask</a></li>
+<li><a href="/page/ENTITY/StartSchedule" title="ENTITY/StartSchedule">ENTITY/StartSchedule</a></li>
+<li><a href="/page/ENTITY/StartTask" title="ENTITY/StartTask">ENTITY/StartTask</a></li>
+<li><a href="/page/ENTITY/StartTouch" title="ENTITY/StartTouch">ENTITY/StartTouch</a></li>
+<li><a href="/page/ENTITY/StoreOutput" title="ENTITY/StoreOutput">ENTITY/StoreOutput</a></li>
+<li><a href="/page/ENTITY/TaskFinished" title="ENTITY/TaskFinished">ENTITY/TaskFinished</a></li>
+<li><a href="/page/ENTITY/TaskTime" title="ENTITY/TaskTime">ENTITY/TaskTime</a></li>
+<li><a href="/page/ENTITY/TestCollision" title="ENTITY/TestCollision">ENTITY/TestCollision</a></li>
+<li><a href="/page/ENTITY/Think" title="ENTITY/Think">ENTITY/Think</a></li>
+<li><a href="/page/ENTITY/Touch" title="ENTITY/Touch">ENTITY/Touch</a></li>
+<li><a href="/page/ENTITY/TriggerOutput" title="ENTITY/TriggerOutput">ENTITY/TriggerOutput</a></li>
+<li><a href="/page/ENTITY/UpdateTransmitState" title="ENTITY/UpdateTransmitState">ENTITY/UpdateTransmitState</a></li>
+<li><a href="/page/ENTITY/Use" title="ENTITY/Use">ENTITY/Use</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

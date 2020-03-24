@@ -1,0 +1,24 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetDTBool( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetDTBool">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetDTBool" title="Special:WhatLinksHere/Entity/SetDTBool">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div>
+<p>This is called internally by the <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/NetworkVar" title="Entity/NetworkVar">NetworkVar</a> system, you can use this in cases where using NetworkVar is not possible.
+</p><p>Sets the specified bool on the entity's datatable.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> key</span>
+</p>
+<div style="margin-left: 32px;">
+Goes from 0 to 31.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> bool</span>
+</p>
+<div style="margin-left: 32px;">
+The boolean to write on the entity's metatable.</div>
+</div>
+
+

@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetDrawLanguageIDAtLeft( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetDrawLanguageIDAtLeft">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetDrawLanguageIDAtLeft" title="Special:WhatLinksHere/Panel/SetDrawLanguageIDAtLeft">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets where to draw the language selection box.
+</p><p>See <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetDrawLanguageID" title="Panel/SetDrawLanguageID">SetDrawLanguageID</a> for a function that hides or shows the language selection box.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> left</span>
+</p>
+<div style="margin-left: 32px;">
+true = left, false = right</div>
+</div>
+
+

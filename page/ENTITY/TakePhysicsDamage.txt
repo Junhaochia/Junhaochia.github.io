@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;TakePhysicsDamage( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.TakePhysicsDamage">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/TakePhysicsDamage" title="Special:WhatLinksHere/Entity/TakePhysicsDamage">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Applies forces to our physics object in response to damage.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_CTakeDamageInfo" title="Category:CTakeDamageInfo">CTakeDamageInfo</a> dmginfo</span>
+</p>
+<div style="margin-left: 32px;">
+The damageinfo to apply. Only <a href="/page/Category_colon_CTakeDamageInfo" title="Category:CTakeDamageInfo">CTakeDamageInfo</a>:<a href="/page/CTakeDamageInfo/GetDamageForce" title="CTakeDamageInfo/GetDamageForce">GetDamageForce</a> and <a href="/page/Category_colon_CTakeDamageInfo" title="Category:CTakeDamageInfo">CTakeDamageInfo</a>:<a href="/page/CTakeDamageInfo/GetDamagePosition" title="CTakeDamageInfo/GetDamagePosition">GetDamagePosition</a> are used.</div>
+</div>
+
+

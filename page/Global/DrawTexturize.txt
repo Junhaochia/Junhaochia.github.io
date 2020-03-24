@@ -1,0 +1,44 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DrawTexturize( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DrawTexturize">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/DrawTexturize" title="Special:WhatLinksHere/Global/DrawTexturize">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Draws the texturize shader, which replaces each pixel on your screen with a different part of the texture depending on its brightness. See <a href="/page/Shaders/g_texturize" title="Shaders/g texturize">g_texturize</a> for information on making the texture.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> Scale</span>
+</p>
+<div style="margin-left: 32px;">
+Scale of the texture. A smaller number creates a larger texture.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> BaseTexture</span>
+</p>
+<div style="margin-left: 32px;">
+This will be the texture to use in the effect. Make sure you use <a href="/page/Global/Material" title="Global/Material">Material</a> to get the texture number</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Draws the texturize shader with a pattern texture.
+</p>
+<pre><code data-language="lua">function GM:RenderScreenspaceEffects()
+
+ DrawTexturize(1, Material(&quot;pp/texturize/pattern1.png&quot;))
+
+end</code></pre>
+<p><br />
+</p>
+
+

@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Player&#58;GodEnable( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.GodEnable">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/player.lua#L251-L259">View Source</a> - <a href="/page/Special:WhatLinksHere/Player/GodEnable" title="Special:WhatLinksHere/Player/GodEnable">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Enables god mode on the player.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Enable god mode on all players
+</p>
+<pre><code data-language="lua">for k, v in pairs(player.GetAll()) do
+    v:GodEnable()
+end</code></pre>
+<p><br />
+</p>
+
+

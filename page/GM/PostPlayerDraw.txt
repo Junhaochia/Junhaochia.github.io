@@ -1,0 +1,104 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>GM:PostPlayerDraw( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.PostPlayerDraw">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/PostPlayerDraw" title="Special:WhatLinksHere/GM/PostPlayerDraw">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called after the player was drawn.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is a rendering hook with a 3D rendering context.<br />This means that the only rendering functions will work in it are <a href="/page/Category_colon_3D_Rendering_Functions" title="Category:3D Rendering Functions">functions with a 3D rendering context</a>.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply</span>
+</p>
+<div style="margin-left: 32px;">
+The player that was drawn.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Show each player's name above their model.
+</p>
+<pre><code data-language="lua">local function DrawName( ply )
+	if (&#160;!IsValid( ply ) ) then return end 
+	if ( ply == LocalPlayer() ) then return end -- Don't draw a name when the player is you
+	if (&#160;!ply:Alive() ) then return end -- Check if the player is alive 
+ 
+	local Distance = LocalPlayer():GetPos():Distance( ply:GetPos() ) --Get the distance between you and the player
+	
+	if ( Distance &lt; 1000 ) then --If the distance is less than 1000 units, it will draw the name
+ 
+		local offset = Vector( 0, 0, 85 )
+		local ang = LocalPlayer():EyeAngles()
+		local pos = ply:GetPos() + offset + ang:Up()
+	 
+		ang:RotateAroundAxis( ang:Forward(), 90 )
+		ang:RotateAroundAxis( ang:Right(), 90 )
+	 
+		
+		cam.Start3D2D( pos, Angle( 0, ang.y, 90 ), 0.25 )
+			draw.DrawText( ply:GetName(), &quot;HudSelectionText&quot;, 2, 2, team.GetColor(ply:Team()), TEXT_ALIGN_CENTER )
+		cam.End3D2D()
+	end
+end
+hook.Add( &quot;PostPlayerDraw&quot;, &quot;DrawName&quot;, DrawName )</code></pre>
+<p><br />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Draw a headcrab hat on all players.
+</p>
+<pre><code data-language="lua">local model = ClientsideModel( &quot;models/headcrabclassic.mdl&quot; )
+model:SetNoDraw( true )
+
+hook.Add( &quot;PostPlayerDraw&quot; , &quot;manual_model_draw_example&quot; , function( ply )
+	if not IsValid(ply) or not ply:Alive() then return end
+
+	local attach_id = ply:LookupAttachment('eyes')
+	if not attach_id then return end
+			
+	local attach = ply:GetAttachment(attach_id)
+			
+	if not attach then return end
+			
+	local pos = attach.Pos
+	local ang = attach.Ang
+		
+	model:SetModelScale(1.1, 0)
+	pos = pos + (ang:Forward() * 2.5)
+	ang:RotateAroundAxis(ang:Right(), 20)
+		
+	model:SetPos(pos)
+	model:SetAngles(ang)
+
+	model:SetRenderOrigin(pos)
+	model:SetRenderAngles(ang)
+	model:SetupBones()
+	model:DrawModel()
+	model:SetRenderOrigin()
+	model:SetRenderAngles()
+
+end )</code></pre>
+<p><br />
+</p>
+
+

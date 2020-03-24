@@ -1,0 +1,48 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>duplicator.RegisterConstraint( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=duplicator.RegisterConstraint">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/duplicator/RegisterConstraint" title="Special:WhatLinksHere/duplicator/RegisterConstraint">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Register a function used for creating a duplicated constraint.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+The unique name of new constraint</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> callback</span>
+</p>
+<div style="margin-left: 32px;">
+Function to be called when this constraint is created</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_any" title="Category:any">any</a> ...</span>
+</p>
+<div style="margin-left: 32px;">
+Arguments passed to the callback function</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>This is from lua/includes/modules/constraint.lua, it registers the Weld Constraint.
+</p>
+<pre><code data-language="lua">duplicator.RegisterConstraint( &quot;Weld&quot;, Weld, &quot;Ent1&quot;, &quot;Ent2&quot;, &quot;Bone1&quot;, &quot;Bone2&quot;, &quot;forcelimit&quot;, &quot;nocollide&quot;, &quot;deleteonbreak&quot; )</code></pre>
+<p><br />
+</p>
+
+

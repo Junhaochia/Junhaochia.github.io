@@ -1,0 +1,122 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:DIconLayout.png" class="image" title="Example DIconLayout"><img alt="Example DIconLayout" src="/images/thumb/9/9d/DIconLayout.png/300px-DIconLayout.png" width="300" height="192" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DDragBase" title="Category:DDragBase">DDragBase</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DIconLayout">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DIconLayout" title="Special:WhatLinksHere/Category:DIconLayout">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>DIconLayout is what replaced <a href="/page/Category_colon_DPanelList" title="Category:DPanelList">DPanelList</a> in Garry's Mod 13. DPanelList still exists in GMod but is deprecated and does not support the new GWEN skin.
+</p><p><strong class="selflink">DIconLayout</strong> is used to make a list of panels. Unlike DPanelList, DIconLayout does not automatically add a scroll bar - the example below shows you how you can do this.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DDragBase" title="Category:DDragBase">DDragBase</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DDragBase/DropAction_Copy" title="DDragBase/DropAction Copy">DDragBase/DropAction Copy</a></li>
+<li><a href="/page/DDragBase/DropAction_Normal" title="DDragBase/DropAction Normal">DDragBase/DropAction Normal</a></li>
+<li><a href="/page/DDragBase/DropAction_Simple" title="DDragBase/DropAction Simple">DDragBase/DropAction Simple</a></li>
+<li><a href="/page/DDragBase/GetDnD" title="DDragBase/GetDnD">DDragBase/GetDnD</a></li>
+<li><a href="/page/DDragBase/GetUseLiveDrag" title="DDragBase/GetUseLiveDrag">DDragBase/GetUseLiveDrag</a></li>
+<li><a href="/page/DDragBase/MakeDroppable" title="DDragBase/MakeDroppable">DDragBase/MakeDroppable</a></li>
+<li><a href="/page/DDragBase/SetDnD" title="DDragBase/SetDnD">DDragBase/SetDnD</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DDragBase/SetDropPos" title="DDragBase/SetDropPos">DDragBase/SetDropPos</a></li>
+<li><a href="/page/DDragBase/SetUseLiveDrag" title="DDragBase/SetUseLiveDrag">DDragBase/SetUseLiveDrag</a></li>
+<li><a href="/page/DDragBase/UpdateDropTarget" title="DDragBase/UpdateDropTarget">DDragBase/UpdateDropTarget</a></li>
+<li><a href="/page/DPanel/GetBackgroundColor" title="DPanel/GetBackgroundColor">DPanel/GetBackgroundColor</a></li>
+<li><a href="/page/DPanel/GetDisabled" title="DPanel/GetDisabled">DPanel/GetDisabled</a></li>
+<li><a href="/page/DPanel/GetDrawBackground" title="DPanel/GetDrawBackground">DPanel/GetDrawBackground</a></li>
+<li><a href="/page/DPanel/GetPaintBackground" title="DPanel/GetPaintBackground">DPanel/GetPaintBackground</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/SetBackgroundColor" title="DPanel/SetBackgroundColor">DPanel/SetBackgroundColor</a></li>
+<li><a href="/page/DPanel/SetDisabled" title="DPanel/SetDisabled">DPanel/SetDisabled</a></li>
+<li><a href="/page/DPanel/SetDrawBackground" title="DPanel/SetDrawBackground">DPanel/SetDrawBackground</a></li>
+<li><a href="/page/DPanel/SetPaintBackground" title="DPanel/SetPaintBackground">DPanel/SetPaintBackground</a></li>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<pre><code data-language="lua">local Frame = vgui.Create( &quot;DFrame&quot; ) -- Create a Frame to contain everything.
+Frame:SetTitle( &quot;DIconLayout Example&quot; )
+Frame:SetSize( 365, 240 )
+Frame:Center()
+Frame:MakePopup()
+
+local Scroll = vgui.Create( &quot;DScrollPanel&quot;, Frame ) -- Create the Scroll panel
+Scroll:Dock( FILL )
+
+local List = vgui.Create( &quot;DIconLayout&quot;, Scroll )
+List:Dock( FILL )
+List:SetSpaceY( 5 ) -- Sets the space in between the panels on the Y Axis by 5
+List:SetSpaceX( 5 ) -- Sets the space in between the panels on the X Axis by 5
+
+for i = 1, 20 do -- Make a loop to create a bunch of panels inside of the DIconLayout
+	local ListItem = List:Add( &quot;DPanel&quot; ) -- Add DPanel to the DIconLayout
+	ListItem:SetSize( 80, 40 ) -- Set the size of it
+	-- You don't need to set the position, that is done automatically.
+end
+
+local ListLabel = List:Add( &quot;DLabel&quot; ) -- Add a label that will be the only panel on its row
+ListLabel.OwnLine = true -- The magic variable that specifies this item has its own line all for itself
+ListLabel:SetText( &quot;Hello World!&quot; )
+
+for i = 1, 5 do
+	local ListItem = List:Add( &quot;DPanel&quot; )
+	ListItem:SetSize( 80, 40 )
+end</code></pre>
+<p><br />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DIconLayout"</h2>
+<p>The following 18 pages are in this category, out of 18 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DIconLayout/Copy" title="DIconLayout/Copy">DIconLayout/Copy</a></li>
+<li><a href="/page/DIconLayout/CopyContents" title="DIconLayout/CopyContents">DIconLayout/CopyContents</a></li>
+<li><a href="/page/DIconLayout/GetBorder" title="DIconLayout/GetBorder">DIconLayout/GetBorder</a></li>
+<li><a href="/page/DIconLayout/GetLayoutDir" title="DIconLayout/GetLayoutDir">DIconLayout/GetLayoutDir</a></li>
+<li><a href="/page/DIconLayout/GetSpaceX" title="DIconLayout/GetSpaceX">DIconLayout/GetSpaceX</a></li>
+<li><a href="/page/DIconLayout/GetSpaceY" title="DIconLayout/GetSpaceY">DIconLayout/GetSpaceY</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DIconLayout/GetStretchHeight" title="DIconLayout/GetStretchHeight">DIconLayout/GetStretchHeight</a></li>
+<li><a href="/page/DIconLayout/GetStretchWidth" title="DIconLayout/GetStretchWidth">DIconLayout/GetStretchWidth</a></li>
+<li><a href="/page/DIconLayout/Layout" title="DIconLayout/Layout">DIconLayout/Layout</a></li>
+<li><a href="/page/DIconLayout/LayoutIcons_LEFT" title="DIconLayout/LayoutIcons LEFT">DIconLayout/LayoutIcons LEFT</a></li>
+<li><a href="/page/DIconLayout/LayoutIcons_TOP" title="DIconLayout/LayoutIcons TOP">DIconLayout/LayoutIcons TOP</a></li>
+<li><a href="/page/DIconLayout/OnModified" title="DIconLayout/OnModified">DIconLayout/OnModified</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DIconLayout/SetBorder" title="DIconLayout/SetBorder">DIconLayout/SetBorder</a></li>
+<li><a href="/page/DIconLayout/SetLayoutDir" title="DIconLayout/SetLayoutDir">DIconLayout/SetLayoutDir</a></li>
+<li><a href="/page/DIconLayout/SetSpaceX" title="DIconLayout/SetSpaceX">DIconLayout/SetSpaceX</a></li>
+<li><a href="/page/DIconLayout/SetSpaceY" title="DIconLayout/SetSpaceY">DIconLayout/SetSpaceY</a></li>
+<li><a href="/page/DIconLayout/SetStretchHeight" title="DIconLayout/SetStretchHeight">DIconLayout/SetStretchHeight</a></li>
+<li><a href="/page/DIconLayout/SetStretchWidth" title="DIconLayout/SetStretchWidth">DIconLayout/SetStretchWidth</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

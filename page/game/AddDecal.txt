@@ -1,0 +1,29 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>game.AddDecal( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=game.AddDecal">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/game/AddDecal" title="Special:WhatLinksHere/game/AddDecal">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Registers a new decal.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>There's a rather low limit of around 256 for decals that may be registered and they are not cleared on map load.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> decalName</span>
+</p>
+<div style="margin-left: 32px;">
+The name of the decal.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> materialName</span>
+</p>
+<div style="margin-left: 32px;">
+The material to be used for the decal. May also be a list of material names, in which case a random material from that list will be chosen every time the decal is placed.</div>
+</div>
+
+

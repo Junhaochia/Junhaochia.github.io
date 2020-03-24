@@ -1,0 +1,118 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:DTree.jpg" class="image" title="Example DTree"><img alt="Example DTree" src="/images/thumb/8/8a/DTree.jpg/300px-DTree.jpg" width="300" height="286" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DScrollPanel" title="Category:DScrollPanel">DScrollPanel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DTree">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DTree" title="Special:WhatLinksHere/Category:DTree">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>A tree view element for Derma.
+</p><p>See also <a href="/page/Category_colon_DTree_Node" title="Category:DTree Node">DTree_Node</a>.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DScrollPanel" title="Category:DScrollPanel">DScrollPanel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/GetBackgroundColor" title="DPanel/GetBackgroundColor">DPanel/GetBackgroundColor</a></li>
+<li><a href="/page/DPanel/GetDisabled" title="DPanel/GetDisabled">DPanel/GetDisabled</a></li>
+<li><a href="/page/DPanel/GetDrawBackground" title="DPanel/GetDrawBackground">DPanel/GetDrawBackground</a></li>
+<li><a href="/page/DPanel/GetPaintBackground" title="DPanel/GetPaintBackground">DPanel/GetPaintBackground</a></li>
+<li><a href="/page/DPanel/SetBackgroundColor" title="DPanel/SetBackgroundColor">DPanel/SetBackgroundColor</a></li>
+<li><a href="/page/DPanel/SetDisabled" title="DPanel/SetDisabled">DPanel/SetDisabled</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/SetDrawBackground" title="DPanel/SetDrawBackground">DPanel/SetDrawBackground</a></li>
+<li><a href="/page/DPanel/SetPaintBackground" title="DPanel/SetPaintBackground">DPanel/SetPaintBackground</a></li>
+<li><a href="/page/DScrollPanel/AddItem" title="DScrollPanel/AddItem">DScrollPanel/AddItem</a></li>
+<li><a href="/page/DScrollPanel/GetCanvas" title="DScrollPanel/GetCanvas">DScrollPanel/GetCanvas</a></li>
+<li><a href="/page/DScrollPanel/GetPadding" title="DScrollPanel/GetPadding">DScrollPanel/GetPadding</a></li>
+<li><a href="/page/DScrollPanel/GetVBar" title="DScrollPanel/GetVBar">DScrollPanel/GetVBar</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DScrollPanel/InnerWidth" title="DScrollPanel/InnerWidth">DScrollPanel/InnerWidth</a></li>
+<li><a href="/page/DScrollPanel/Rebuild" title="DScrollPanel/Rebuild">DScrollPanel/Rebuild</a></li>
+<li><a href="/page/DScrollPanel/ScrollToChild" title="DScrollPanel/ScrollToChild">DScrollPanel/ScrollToChild</a></li>
+<li><a href="/page/DScrollPanel/SetCanvas" title="DScrollPanel/SetCanvas">DScrollPanel/SetCanvas</a></li>
+<li><a href="/page/DScrollPanel/SetPadding" title="DScrollPanel/SetPadding">DScrollPanel/SetPadding</a></li>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Example of using DTree
+</p>
+<pre><code data-language="lua">local frame = vgui.Create( &quot;DFrame&quot; )
+frame:SetSize( 300, 500 )
+frame:Center()
+frame:MakePopup()
+
+local dtree  = vgui.Create( &quot;DTree&quot;, frame )
+dtree:Dock( FILL )
+
+local node = dtree:AddNode( &quot;Node One&quot; )
+local node = dtree:AddNode( &quot;Node Two&quot; )
+local cnode = node:AddNode( &quot;Node 2.1&quot; )
+local cnode = node:AddNode( &quot;Node 2.2&quot; )
+local cnode = node:AddNode( &quot;Node 2.3&quot; )
+local cnode = node:AddNode( &quot;Node 2.4&quot; )
+local cnode = node:AddNode( &quot;Node 2.5&quot; )
+local gcnode = cnode:AddNode( &quot;Node 2.5&quot; )
+local cnode = node:AddNode( &quot;Node 2.6&quot; )
+local node = dtree:AddNode( &quot;Node Three ( Maps Folder )&quot; )
+node:MakeFolder( &quot;maps&quot;, &quot;GAME&quot;, true )
+local node = dtree:AddNode( &quot;Node Four&quot; )</code></pre>
+<p><br />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DTree"</h2>
+<p>The following 21 pages are in this category, out of 21 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DTree/AddNode" title="DTree/AddNode">DTree/AddNode</a></li>
+<li><a href="/page/DTree/ChildExpanded" title="DTree/ChildExpanded">DTree/ChildExpanded</a></li>
+<li><a href="/page/DTree/DoClick" title="DTree/DoClick">DTree/DoClick</a></li>
+<li><a href="/page/DTree/DoRightClick" title="DTree/DoRightClick">DTree/DoRightClick</a></li>
+<li><a href="/page/DTree/ExpandTo" title="DTree/ExpandTo">DTree/ExpandTo</a></li>
+<li><a href="/page/DTree/GetClickOnDragHover" title="DTree/GetClickOnDragHover">DTree/GetClickOnDragHover</a></li>
+<li><a href="/page/DTree/GetIndentSize" title="DTree/GetIndentSize">DTree/GetIndentSize</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DTree/GetLineHeight" title="DTree/GetLineHeight">DTree/GetLineHeight</a></li>
+<li><a href="/page/DTree/GetSelectedItem" title="DTree/GetSelectedItem">DTree/GetSelectedItem</a></li>
+<li><a href="/page/DTree/GetShowIcons" title="DTree/GetShowIcons">DTree/GetShowIcons</a></li>
+<li><a href="/page/DTree/LayoutTree" title="DTree/LayoutTree">DTree/LayoutTree</a></li>
+<li><a href="/page/DTree/MoveChildTo" title="DTree/MoveChildTo">DTree/MoveChildTo</a></li>
+<li><a href="/page/DTree/OnNodeSelected" title="DTree/OnNodeSelected">DTree/OnNodeSelected</a></li>
+<li><a href="/page/DTree/Root" title="DTree/Root">DTree/Root</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DTree/SetClickOnDragHover" title="DTree/SetClickOnDragHover">DTree/SetClickOnDragHover</a></li>
+<li><a href="/page/DTree/SetExpanded" title="DTree/SetExpanded">DTree/SetExpanded</a></li>
+<li><a href="/page/DTree/SetIndentSize" title="DTree/SetIndentSize">DTree/SetIndentSize</a></li>
+<li><a href="/page/DTree/SetLineHeight" title="DTree/SetLineHeight">DTree/SetLineHeight</a></li>
+<li><a href="/page/DTree/SetSelectedItem" title="DTree/SetSelectedItem">DTree/SetSelectedItem</a></li>
+<li><a href="/page/DTree/SetShowIcons" title="DTree/SetShowIcons">DTree/SetShowIcons</a></li>
+<li><a href="/page/DTree/ShowIcons" title="DTree/ShowIcons">DTree/ShowIcons</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

@@ -1,0 +1,127 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>HSVToColor( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=HSVToColor">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/HSVToColor" title="Special:WhatLinksHere/Global/HSVToColor">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">5</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">6</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">7</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">7.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_3"><span class="tocnumber">8</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_3"><span class="tocnumber">8.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Converts a color from <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/HSL_and_HSV">HSV color space</a> into RGB color space and returns a <a href="/page/Structures/Color" title="Structures/Color">Color structure</a>.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>The returned color will not have the color metatable.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/2407">#2407</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> hue</span>
+</p>
+<div style="margin-left: 32px;">
+The hue in degrees from 0-360.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> saturation</span>
+</p>
+<div style="margin-left: 32px;">
+The saturation from 0-1.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> value</span>
+</p>
+<div style="margin-left: 32px;">
+The value from 0-1.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+The <a href="/page/Structures/Color" title="Structures/Color">Color structure</a> created from the HSV color space.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>A helper function for drawing rainbow text.
+</p>
+<pre><code data-language="lua">local function DrawRainbowText( frequency, str, font, x, y )
+	
+	surface.SetFont( font )
+	
+	for i = 1, #str do
+		surface.SetTextColor( HSVToColor( i * frequency&#160;% 360, 1, 1 ) )
+		local w = surface.GetTextSize( string.sub( str, 1, i - 1 ) )
+		surface.SetTextPos( x + w, y )
+		surface.DrawText( string.sub( str, i, i ) )
+	end
+	
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:DrawRainbowText.png" class="image"><img alt="DrawRainbowText.png" src="/images/thumb/6/61/DrawRainbowText.png/300px-DrawRainbowText.png" width="300" height="92" /></a></div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>A helper function for printing rainbow text in the chat.
+</p>
+<pre><code data-language="lua">local function ChatPrintRainbow( frequency, str )
+	
+	local text = {}
+	
+	for i = 1, #str do
+		table.insert( text, HSVToColor( i * frequency&#160;% 360, 1, 1 ) )
+		table.insert( text, string.sub( str, i, i ) )
+	end
+
+	chat.AddText( unpack( text ) )
+	
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:ChatPrintRainbow.png" class="image"><img alt="ChatPrintRainbow.png" src="/images/thumb/e/ec/ChatPrintRainbow.png/300px-ChatPrintRainbow.png" width="300" height="118" /></a></div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_3">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_3">Example</span></h2>
+<p>A helper function for printing rainbow text in the console.
+</p>
+<pre><code data-language="lua">local function ConsolePrintRainbow( frequency, str )
+	
+	local text = {}
+	
+	for i = 1, #str do
+		table.insert( text, HSVToColor( i * frequency&#160;% 360, 1, 1 ) )
+		table.insert( text, string.sub( str, i, i ) )
+	end
+	
+	table.insert( text, &quot;\n&quot; )
+	
+	MsgC( unpack( text ) )
+	
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:ConsolePrintRainbow.png" class="image"><img alt="ConsolePrintRainbow.png" src="/images/thumb/5/5e/ConsolePrintRainbow.png/300px-ConsolePrintRainbow.png" width="300" height="113" /></a></div>
+
+

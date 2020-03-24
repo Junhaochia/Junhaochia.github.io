@@ -1,0 +1,203 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/ENT" title="Special:WhatLinksHere/Structures/ENT">What links here?</a></div>Information about the ENT structure.<br />
+<p>To learn more about scripted entities, <a href="/page/Scripted_Entities" title="Scripted Entities">see this page</a>.
+<br />
+For list of callbacks, see <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENT Hooks</a>.
+</p><p>While some of the fields may be serverside or clientside only, it is recommended to provide them on both so addons could use their values.
+<br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Base
+</td>
+<td>
+<p>The base entity to derive from. This <b>must</b> be a valid Lua entity
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Type
+</td>
+<td>
+<p>Type of the entity. This <b>must be one of these:</b>
+</p>
+<ul><li> <b>anim</b>
+</li><li> <b>brush</b>
+</li><li> <b>point</b>
+</li><li> <b>ai</b>
+</li><li> <b>nextbot</b>
+</li><li> <b>filter</b>
+</li></ul>
+<p>See <a href="/page/Scripted_Entities" title="Scripted Entities">Scripted Entities</a> for a more detailed explanation of what each one is.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> ClassName
+</td>
+<td>
+<p>Entity class name of the entity (File or folder name of your entity).
+<b>This is set automatically <i>after</i> the entity file is loaded.</b>
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Folder
+</td>
+<td>
+<p>The folder from where the entity was loaded. This should always be "entity/ent_myentity", regardless whether your entity is stored as a file, or multiple files in a folder. <b>This is set automatically <i>before</i> the entity file is loaded.</b>
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> AutomaticFrameAdvance
+</td>
+<td>
+<p>(Clientside) Set this to true if your entity has animations. You should also apply changes to the <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Think" title="ENTITY/Think">Think</a> function from the example on that page.
+</p><p><b>Default:</b> false
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Category
+</td>
+<td>
+<p>(Clientside) Spawnmenu category to put the entity into
+</p><p><b>Default:</b> Other
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> Spawnable
+</td>
+<td>
+<p>Whether this entity should be displayed and is spawnable in the spawn menu
+</p><p><b>Default:</b> false
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> Editable
+</td>
+<td>
+<p>Whether the entity supports Editing. See <a href="/page/Editable_Entities" title="Editable Entities">Editable Entities</a> for more info.
+</p><p><b>Default:</b> false
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> AdminOnly
+</td>
+<td>
+<p>Whether or not only admins can spawn the entity from their spawn menu
+</p><p><b>Default:</b> false
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> PrintName
+</td>
+<td>
+<p>(Clientside) Nice name of the entity to appear in the spawn menu
+</p><p><b>Default:</b> ""
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Author
+</td>
+<td>
+<p>(Clientside) The author of the entity
+</p><p><b>Default:</b> ""
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Contact
+</td>
+<td>
+<p>(Clientside) The contacts of the entity creator
+</p><p><b>Default:</b> ""
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Purpose
+</td>
+<td>
+<p>(Clientside) The purpose of the entity creation
+</p><p><b>Default:</b> ""
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Instructions
+</td>
+<td>
+<p>(Clientside) How to use your entity
+</p><p><b>Default:</b> ""
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> RenderGroup
+</td>
+<td>
+<p>(Clientside) The entity's render group, see <a href="/page/Enums/RENDERGROUP" title="Enums/RENDERGROUP">RENDERGROUP_ Enums</a>.
+</p><p><b>Default:</b> RENDERGROUP_OPAQUE
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> DisableDuplicator
+</td>
+<td>
+<p>(Serverside) Disable the ability for players to duplicate this entity.
+</p><p><b>Default:</b> false
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> ScriptedEntityType
+</td>
+<td>
+<p>(Clientside) Sets the spawnmenu content icon type for the entity, used by spawnmenu in the Sandbox-derived gamemodes.
+See <a href="/page/Category_colon_spawnmenu" title="Category:spawnmenu">spawnmenu</a>.<a href="/page/spawnmenu/AddContentType" title="spawnmenu/AddContentType">AddContentType</a> for more information.
+</p><p><b>Default:</b> "entity"
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> DoNotDuplicate
+</td>
+<td>
+<p>(Serverside) If set, the entity will not be duplicated via the built-in duplicator system.
+</p>
+</td></tr></table>
+
+

@@ -1,0 +1,18 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DOFModeHack( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DOFModeHack">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/DOFModeHack" title="Special:WhatLinksHere/Global/DOFModeHack">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>A hacky method used to fix some bugs regarding DoF.
+</p>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div>
+<div class="stubpage"><span>This article is a stub.</span><br />
+Please help the Garry's Mod wiki by adding to it.</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> enable</span>
+</p>
+<div style="margin-left: 32px;">
+Enables or disables depth-of-field mode</div>
+</div>
+
+

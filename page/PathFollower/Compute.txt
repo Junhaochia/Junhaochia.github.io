@@ -1,0 +1,105 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>PathFollower&#58;Compute( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PathFollower.Compute">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PathFollower/Compute" title="Special:WhatLinksHere/PathFollower/Compute">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">5</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">6</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Compute shortest path from bot to 'goal' via A* algorithm.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBot</a> from</span>
+</p>
+<div style="margin-left: 32px;">
+The nextbot we're generating for</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> to</span>
+</p>
+<div style="margin-left: 32px;">
+To point</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> generator=nil</span>
+</p>
+<div style="margin-left: 32px;">
+A funtion that allows you to alter the path generation. See example below for the default function.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p><br />
+</p>
+<ul><li> If returns true, path was found to the goal position.
+</li><li> If returns false, path may either be invalid (use IsValid() to check), or valid but doesn't reach all the way to the goal.</div>
+</li></ul>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>The default path generator. You <b>do not have</b> to provide the PathFollower.Compute any generator functions if you want to use the default generator.
+</p>
+<pre><code data-language="lua">path:Compute( self, pos, function( area, fromArea, ladder, elevator, length )
+	if (&#160;!IsValid( fromArea ) ) then
+
+		// first area in path, no cost
+		return 0
+	
+	else
+	
+		if (&#160;!self.loco:IsAreaTraversable( area ) ) then
+			// our locomotor says we can't move here
+			return -1
+		end
+
+		// compute distance traveled along path so far
+		local dist = 0
+
+		if ( IsValid( ladder ) ) then
+			dist = ladder:GetLength()
+		elseif ( length &gt; 0 ) then
+			// optimization to avoid recomputing length
+			dist = length
+		else
+			dist = ( area:GetCenter() - fromArea:GetCenter() ):GetLength()
+		end
+
+		local cost = dist + fromArea:GetCostSoFar()
+
+		// check height change
+		local deltaZ = fromArea:ComputeAdjacentConnectionHeightChange( area )
+		if ( deltaZ &gt;= self.loco:GetStepHeight() ) then
+			if ( deltaZ &gt;= self.loco:GetMaxJumpHeight() ) then
+				// too high to reach
+				return -1
+			end
+
+			// jumping is slower than flat ground
+			local jumpPenalty = 5
+			cost = cost + jumpPenalty * dist
+		elseif ( deltaZ &lt; -self.loco:GetDeathDropHeight() ) then
+			// too far to drop
+			return -1
+		end
+
+		return cost
+	end
+end )</code></pre>
+<p><br />
+</p>
+
+

@@ -1,0 +1,137 @@
+<p>Player model animations have been largely enhanced in Garry's Mod 13 (update 143). The movement system was switched to 9-way (used in Team Fortress 2), current sequences were polished/tweaked, IK rules added, and last but not least, new animations were added, which gamemodes can use for added eyecandy!
+</p><p>Keep in mind that this effectively segregates NPC models and playermodels, as the former use 8-way. <b>This makes most of the Half-Life 2 NPC animations incompatible with the player animation system.</b>
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Google_Code_repository"><span class="tocnumber">1</span> <span class="toctext">Google Code repository</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#For_creators"><span class="tocnumber">2</span> <span class="toctext">For creators</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Playermodels"><span class="tocnumber">2.1</span> <span class="toctext">Playermodels</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Animators"><span class="tocnumber">2.2</span> <span class="toctext">Animators</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#List_of_activities"><span class="tocnumber">3</span> <span class="toctext">List of activities</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Movement_types"><span class="tocnumber">3.1</span> <span class="toctext">Movement types</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Special_movement_activities"><span class="tocnumber">3.2</span> <span class="toctext">Special movement activities</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Aimlayers"><span class="tocnumber">3.3</span> <span class="toctext">Aimlayers</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Showoff"><span class="tocnumber">3.4</span> <span class="toctext">Showoff</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Taunts_.26_gestures"><span class="tocnumber">3.5</span> <span class="toctext">Taunts &amp; gestures</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Other"><span class="tocnumber">3.6</span> <span class="toctext">Other</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Multiplayer-oriented_activities"><span class="tocnumber">3.7</span> <span class="toctext">Multiplayer-oriented activities</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#9-way_and_8-way"><span class="tocnumber">3.8</span> <span class="toctext">9-way and 8-way</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Requests.3F"><span class="tocnumber">3.9</span> <span class="toctext">Requests?</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Google_Code_repository"> Google Code repository </span></h1>
+<p>The entirety of the animation sources are available on a GitHub repo:
+</p><p><a rel="nofollow" class="external free" href="https://github.com/robotboy655/gmod-animations">https://github.com/robotboy655/gmod-animations</a>
+</p>
+<h1> <span class="mw-headline" id="For_creators"> For creators </span></h1>
+<h2> <span class="mw-headline" id="Playermodels"> Playermodels </span></h2>
+<p>The skeleton used is the standard HL2 ValveBiped. It can be either Valve's male or female variants.
+</p><p>Playermodel creators should <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/$includemodel">include</a> the following in their QCs:
+</p>
+<ul><li> <code><b>m_anm.mdl</b></code> (men)
+</li><li> <code><b>f_anm.mdl</b></code> (women)
+</li><li> <code><b>z_anm.mdl</b></code> (zombies)
+</li></ul>
+<p>Make sure that your model's QC does not have any sequences that are tied to activities (including ACT_IDLE), or they may override the actual animations. As for making playermodels, the Valve Developer Wiki covers this already; nevertheless, here are <a rel="nofollow" class="external text" href="https://github.com/robotboy655/gmod-animations/raw/master/gm_anim_includes.7z">helpful .QCI includes</a>!
+</p>
+<h2> <span class="mw-headline" id="Animators"> Animators </span></h2>
+<p>A QC source set is available here: <a rel="nofollow" class="external free" href="https://github.com/robotboy655/gmod-animations/raw/master/gm_anim_src.7z">https://github.com/robotboy655/gmod-animations/raw/master/gm_anim_src.7z</a>
+</p><p>It contains examples for all movement types. You can then use this in your own player models (it is technically impossible at the moment to *add* onto the existing animations, sadly).
+</p>
+<h1> <span class="mw-headline" id="List_of_activities"> List of activities </span></h1>
+<p>Check the <a href="/page/Enums/ACT" title="Enums/ACT">ACT_ Enums</a>.
+</p>
+<h2> <span class="mw-headline" id="Movement_types"> Movement types </span></h2>
+<ul><li> <code><b>ACT_HL2MP_IDLE_***</b></code> (standing still)
+</li><li> <code><b>ACT_HL2MP_SIT_***</b></code> (sitting)
+</li><li> <code><b>ACT_HL2MP_WALK_***</b></code> (walking)
+</li><li> <code><b>ACT_HL2MP_RUN_***</b></code> (running)
+</li><li> <code><b>ACT_HL2MP_JUMP_***</b></code> (jumping)
+</li><li> <code><b>ACT_HL2MP_IDLE_CROUCH_***</b></code> (standing still while crouched)
+</li><li> <code><b>ACT_HL2MP_WALK_CROUCH_***</b></code> (walking while crouched)
+</li><li> <code><b>ACT_HL2MP_SWIM_IDLE_***</b></code> (swimming, not moving)
+</li><li> <code><b>ACT_HL2MP_SWIM_***</b></code> (swimming, moving)
+</li></ul>
+<h2> <span class="mw-headline" id="Special_movement_activities"> Special movement activities </span></h2>
+<ul><li> <code><b>ACT_HL2MP_RUN</b></code> (running without any weapons; resembles jogging, especially for the girls.)
+</li><li> <code><b>ACT_HL2MP_RUN_FAST</b></code> (equivalent to sprinting; looks a lot more like running, as if it were for a race)
+</li><li> <code><b>ACT_HL2MP_RUN_CHARGING</b></code> (left forearm forwards; similar to L4D2's charger in nature.)
+</li><li> <code><b>ACT_HL2MP_RUN_PANICKED</b></code> (arms in non-standard positions)
+</li><li> <code><b>ACT_HL2MP_RUN_PROTECTED</b></code> (left arm used to cover head)
+</li></ul>
+<h2> <span class="mw-headline" id="Aimlayers"> Aimlayers </span></h2>
+<p>Also known as <b>aim matrices</b> or <b>hold types</b>.
+</p>
+<ul><li> <code><b>ar2</b></code>
+</li><li> <code><b>camera</b></code>
+</li><li> <code><b>crossbow</b></code>
+</li><li> <code><b>duel</b></code> <i>(dual pistols)</i>
+</li><li> <code><b>fist</b></code>
+</li><li> <code><b>grenade</b></code>
+</li><li> <code><b>gravgun</b></code>
+</li><li> <code><b>knife</b></code>
+</li><li> <code><b>melee</b></code>
+</li><li> <code><b>melee2</b></code> <i>(two-handed melee weapons)</i>
+</li><li> <code><b>passive</b></code> <i>(not aiming in front)</i>
+</li><li> <code><b>pistol</b></code> (one-handed small firearms, some knockback on attack anim)
+</li><li> <code><b>revolver</b></code> (two-handed small firearms, heavier knockback on attack anim)
+</li><li> <code><b>rpg</b></code>
+</li><li> <code><b>shotgun</b></code>
+</li><li> <code><b>slam</b></code>
+</li><li> <code><b>smg</b></code>
+</li></ul>
+<h2> <span class="mw-headline" id="Showoff"> Showoff </span></h2>
+<p>There are several idle poses available to addon / gamemode creators under these activities.
+</p>
+<ul><li> <code><b>ACT_GMOD_SHOWOFF_STAND_**</b></code>
+</li><li> <code><b>ACT_GMOD_SHOWOFF_DUCK_**</b></code>
+</li></ul>
+<p>They were done with "showing off / posing next to something you built, for a picture" in mind — though you can of course use them for whatever else.
+</p>
+<h2> <span class="mw-headline" id="Taunts_.26_gestures"> Taunts &amp; gestures</span></h2>
+<p>Taunts are animations which were done with "no items held by the model" in mind. As such, weapons should be hidden while these activities play.
+</p>
+<ul><li> <code><b>ACT_GMOD_TAUNT_CHEER</b></code> <i>("hell yeah")</i>
+</li><li> <code><b>ACT_GMOD_TAUNT_LAUGH</b></code> <i>(self explanatory)</i>
+</li><li> <code><b>ACT_GMOD_TAUNT_LAUGH</b></code> <i>(also self explanatory)</i>
+</li><li> <code><b>ACT_GMOD_TAUNT_MUSCLE</b></code> <i>(long "sexy" dance)</i>
+</li><li> <code><b>ACT_GMOD_TAUNT_PERSISTENCE</b></code> <i>(wip, unused)</i>
+</li><li> <code><b>ACT_GMOD_TAUNT_ZOMBIE</b></code> <i>(zombie tantrum)</i>
+</li></ul>
+<ul><li> <code><b>ACT_GMOD_GESTURE_AGREE</b></code> <i>(thumbs up)</i>
+</li><li> <code><b>ACT_GMOD_GESTURE_BECON</b></code> <i>(waving to say "come on")</i>
+</li><li> <code><b>ACT_GMOD_GESTURE_DISAGREE</b></code> <i>(waving the finger to say "no")</i>
+</li><li> <code><b>ACT_GMOD_GESTURE_SALUTE</b></code> <i>(slightly silly military-style salute)</i>
+</li><li> <code><b>ACT_GMOD_GESTURE_WAVE</b></code> <i>(waving to say "hello")</i>
+</li></ul>
+<ul><li> <code><b>ACT_GMOD_GESTURE_ITEM_DROP</b></code>
+</li><li> <code><b>ACT_GMOD_GESTURE_ITEM_GIVE</b></code>
+</li><li> <code><b>ACT_GMOD_GESTURE_ITEM_PLACE</b></code>
+</li><li> <code><b>ACT_GMOD_GESTURE_ITEM_THROW</b></code>
+</li></ul>
+<p>The above are usually accessible by any player by using the "act" command, e.g. <code>act salute</code> — unless the gamemode restricts it.
+</p><p>Gmod will, by default, switch to a taunt cam while playing these.
+</p>
+<h2> <span class="mw-headline" id="Other"> Other </span></h2>
+<h2> <span class="mw-headline" id="Multiplayer-oriented_activities"> Multiplayer-oriented activities </span></h2>
+<ul><li> <code><b>ACT_LAND</b></code> links to a delta sequence that adds recoil to the player when landing from a jump.
+</li><li> <code><b>ACT_GMOD_IN_CHAT</b></code> will put the player's left hand to his ear. This is used when typing.
+</li><li> <code><b>ACT_GMOD_DEATH</b></code> links to <a rel="nofollow" class="external text" href="http://img.maxofs2d.net/gif/gmod_death_01.gif">death animations</a> (think TF2-style). The actual code implementation is up to you.
+</li></ul>
+<h2> <span class="mw-headline" id="9-way_and_8-way"> 9-way and 8-way </span></h2>
+<ul><li> 9-way: two pose parameters, move_x and move_y, control the direction and "intensity" of the movement.
+</li><li> 8-way: a single pose parameter, move_yaw, controls the angle of the movement.
+</li></ul>
+<p>The main difference is that 9-way allows for smooth transitions between idle and its closest movement states. The player animations were switched to 9-way for Gmod 13; Half-Life 2's NPCs, however, are still 8-way.
+</p>
+<h2> <span class="mw-headline" id="Requests.3F"> Requests? </span></h2>
+<p>Shoot an e-mail at maxofs2d *at* facepunchstudios.com for any animation-related enquiries. (only regarding content, though, not regarding code implementation)
+</p>
+
+

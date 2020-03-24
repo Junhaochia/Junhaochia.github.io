@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>cam.End2D( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=cam.End2D">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/cam/End2D" title="Special:WhatLinksHere/cam/End2D">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Switches the renderer back to the previous drawing mode from a 2D context.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This will crash the game if there is no context to end.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/1091">#1091</a></b>
+</p>
+</td></tr></table>
+
+

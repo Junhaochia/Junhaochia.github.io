@@ -1,0 +1,175 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/MAT" title="Special:WhatLinksHere/Enums/MAT">What links here?</a></div>
+<p>Enumerations used in <a href="/page/Structures/TraceResult" title="Structures/TraceResult">TraceResult structure</a> and by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetMaterialType" title="Entity/GetMaterialType">GetMaterialType</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> MAT_ANTLION
+</td>
+<td> 65
+</td>
+<td> Antlions
+</td></tr>
+<tr>
+<td> MAT_BLOODYFLESH
+</td>
+<td> 66
+</td>
+<td> Similar to MAT_FLESH, only used by "bloodyflesh" surface property, has different impact sound
+</td></tr>
+<tr>
+<td> MAT_CONCRETE
+</td>
+<td> 67
+</td>
+<td> Concrete
+</td></tr>
+<tr>
+<td> MAT_DIRT
+</td>
+<td> 68
+</td>
+<td> Dirt
+</td></tr>
+<tr>
+<td> MAT_EGGSHELL
+</td>
+<td> 69
+</td>
+<td> The egg sacs in the antlion tunnels in HL2: EP2
+</td></tr>
+<tr>
+<td> MAT_FLESH
+</td>
+<td> 70
+</td>
+<td> Flesh
+</td></tr>
+<tr>
+<td> MAT_GRATE
+</td>
+<td> 71
+</td>
+<td> Grates, chainlink fences
+</td></tr>
+<tr>
+<td> MAT_ALIENFLESH
+</td>
+<td> 72
+</td>
+<td> Alien flesh - headcrabs and vortigaunts
+</td></tr>
+<tr>
+<td> MAT_CLIP
+</td>
+<td> 73
+</td>
+<td> Unused
+</td></tr>
+<tr>
+<td> MAT_SNOW
+</td>
+<td> 74
+</td>
+<td> Snow
+</td></tr>
+<tr>
+<td> MAT_PLASTIC
+</td>
+<td> 76
+</td>
+<td> Plastic
+</td></tr>
+<tr>
+<td> MAT_METAL
+</td>
+<td> 77
+</td>
+<td> Metal
+</td></tr>
+<tr>
+<td> MAT_SAND
+</td>
+<td> 78
+</td>
+<td> Sand
+</td></tr>
+<tr>
+<td> MAT_FOLIAGE
+</td>
+<td> 79
+</td>
+<td> Plants, only used by the "foliage" surface property
+</td></tr>
+<tr>
+<td> MAT_COMPUTER
+</td>
+<td> 80
+</td>
+<td> Electronics, only used by "computer" surface property
+</td></tr>
+<tr>
+<td> MAT_SLOSH
+</td>
+<td> 83
+</td>
+<td> Water, slime
+</td></tr>
+<tr>
+<td> MAT_TILE
+</td>
+<td> 84
+</td>
+<td> Floor tiles
+</td></tr>
+<tr>
+<td> MAT_GRASS
+</td>
+<td> 85
+</td>
+<td> Grass
+</td></tr>
+<tr>
+<td> MAT_VENT
+</td>
+<td> 86
+</td>
+<td> Metallic vents
+</td></tr>
+<tr>
+<td> MAT_WOOD
+</td>
+<td> 87
+</td>
+<td> Wood
+</td></tr>
+<tr>
+<td> MAT_DEFAULT
+</td>
+<td> 88
+</td>
+<td> Skybox or nodraw texture
+</td></tr>
+<tr>
+<td> MAT_GLASS
+</td>
+<td> 89
+</td>
+<td> Glass
+</td></tr>
+<tr>
+<td> MAT_WARPSHIELD
+</td>
+<td> 90
+</td>
+<td> "wierd-looking jello effect for advisor shield."
+</td></tr></table>
+
+

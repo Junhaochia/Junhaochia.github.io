@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>input.WasMouseDoublePressed( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=input.WasMouseDoublePressed">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/input/WasMouseDoublePressed" title="Special:WhatLinksHere/input/WasMouseDoublePressed">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns whether a mouse key was double pressed in the same frame this function was called.<br />
+If this function returns true, <a href="/page/Category_colon_input" title="Category:input">input</a>.<a href="/page/input/WasMousePressed" title="input/WasMousePressed">WasMousePressed</a> will return false.
+</p><p>This function only works in Move hooks, and will detect mouse events even in main menu or when a typing in a text field.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> button</span>
+</p>
+<div style="margin-left: 32px;">
+The mouse button to test, see <a href="/page/Enums/MOUSE" title="Enums/MOUSE">MOUSE_ Enums</a></div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether the mouse key was double pressed or not.</div>
+</div>
+
+

@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DModelPanel&#58;PostDrawModel( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DModelPanel.PostDrawModel">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DModelPanel/PostDrawModel" title="Special:WhatLinksHere/DModelPanel/PostDrawModel">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Called when the entity of the <a href="/page/Category_colon_DModelPanel" title="Category:DModelPanel">DModelPanel</a> was drawn.
+</p><p>This is a rendering hook with 3d drawing context.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ent</span>
+</p>
+<div style="margin-left: 32px;">
+The clientside entity of the <a href="/page/Category_colon_DModelPanel" title="Category:DModelPanel">DModelPanel</a> that has been drawn.</div>
+</div>
+
+

@@ -1,0 +1,83 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Why_basic.3F"><span class="tocnumber">1</span> <span class="toctext">Why basic?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Getting_started"><span class="tocnumber">2</span> <span class="toctext">Getting started</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Setting_up"><span class="tocnumber">2.1</span> <span class="toctext">Setting up</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Hiding_the_default"><span class="tocnumber">2.2</span> <span class="toctext">Hiding the default</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Adding_messages"><span class="tocnumber">2.3</span> <span class="toctext">Adding messages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Finishing"><span class="tocnumber">3</span> <span class="toctext">Finishing</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Summary"><span class="tocnumber">3.1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Advanced_Chatboxes"><span class="tocnumber">3.2</span> <span class="toctext">Advanced Chatboxes</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Why_basic.3F"> Why basic? </span></h1>
+<p>This chatbox type can be considered basic because it merely acts a reskin of the default chatbox and doesn't actually have much in the way of user interaction. Its easier for sure and is perfect for someone who is trying to just spice up their chatbox without having to code a whole lot.
+</p>
+<h1> <span class="mw-headline" id="Getting_started"> Getting started </span></h1>
+<h2> <span class="mw-headline" id="Setting_up"> Setting up </span></h2>
+<p>I wont teach you it from scratch but at point I am assuming you have a <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a> for the background, <a href="/page/Category_colon_DTextEntry" title="Category:DTextEntry">DTextEntry</a> for entering chat, and a <a href="/page/Category_colon_RichText" title="Category:RichText">RichText</a> for storing the previous chats. I would recommend that you do not make these panels global but instead store their references in a global table to minimize confliction.
+</p>
+<pre><code data-language="lua">
+myChat = {}
+
+myChat.dFrame = ...
+myChat.dTextEntry = ...
+myChat.dRichText = ...
+</code></pre>
+<p>Here is a basic run down of how this type of chat box works by Facepunch user <a rel="nofollow" class="external text" href="http://facepunch.com/member.php?u=235325">PortalGod</a>
+</p>
+<ul><li> <i>Hide default chatbox in <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/StartChat" title="GM/StartChat">StartChat</a>, display vgui chatbox instead</i>
+</li><li> <i>Overwrite <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/OnPlayerChat" title="GM/OnPlayerChat">OnPlayerChat</a> and add any messages to vgui chatbox</i>
+</li><li> <i>Use <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/ChatTextChanged" title="GM/ChatTextChanged">ChatTextChanged</a> to change the vgui text entry (doesn't even have to be a text entry)</i>
+</li></ul>
+<h2> <span class="mw-headline" id="Hiding_the_default"> Hiding the default </span></h2>
+<p>Garry's Mod has a handy function that makes it easy to hide the default chat box, you just return true in this function. This is one function you should override
+</p>
+<pre><code data-language="lua">
+function GAMEMODE:StartChat()
+    return true
+end
+</code></pre>
+<p>You also want to hide the default chat
+</p>
+<pre><code data-language="lua">hook.Add(&quot;HUDShouldDraw&quot;, &quot;noMoreDefault&quot;, function( name )
+	if name == &quot;CHudChat&quot; then
+		return false
+	end
+end)
+</code></pre>
+<h2> <span class="mw-headline" id="Adding_messages"> Adding messages </span></h2>
+<p>Now we are going to hook onto OnPlayerChat, despite what PortalGod's instructions were, and update our chatbox
+</p>
+<pre><code data-language="lua">
+hook.Add(&quot;OnPlayerChat&quot;, &quot;myChat&quot;, function( player, strText, bTeamOnly, bPlayerIsDead )
+	local col = GAMEMODE:GetTeamColor( player) -- Get the player's team color
+	myChat.dRichText:InsertColorChange( col.r, col.g, col.b, 255 ) -- Make their name that color
+	myChat.dRichText:AppendText( obj:Nick() )
+
+	myChat.dRichText:InsertColorChange( 255, 255, 255, 255 )
+	myChat.dRichText:AppendText( &quot;: &quot;..strText..&quot;\n&quot; )
+end)
+</code></pre>
+<p>Lastly we hook ChatTextChanged to update our DTextEntry since technically the user won't have it focused because this chatbox has limited interaction
+</p>
+<pre><code data-language="lua">
+hook.Add(&quot;ChatTextChanged&quot;, &quot;myChat_Update&quot;, function( text )
+	myChat.dTextEntry:SetText( text )
+end
+</code></pre>
+<h1> <span class="mw-headline" id="Finishing"> Finishing </span></h1>
+<h2> <span class="mw-headline" id="Summary"> Summary </span></h2>
+<p>That about covers how the basic reskin of the default chatbox works. You dont actually allow the player to interact with the chatbox but give the illusion of doing so.
+</p>
+<h2> <span class="mw-headline" id="Advanced_Chatboxes"> Advanced Chatboxes </span></h2>
+<p><a href="/page/Advanced_Chatbox" title="Advanced Chatbox">Advanced Chatbox</a>
+</p>
+
+

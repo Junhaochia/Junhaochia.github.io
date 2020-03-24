@@ -1,0 +1,13 @@
+<h2> <span class="mw-headline" id="Purpose"> Purpose </span></h2>
+<p>Remove Entities <i>(Props, Vehicles, NPCs, Weapons and so on)</i> with a click of a button while aiming at the object.
+</p>
+<h2> <span class="mw-headline" id="Functions"> Functions </span></h2>
+<p><b>Left Click: </b>
+Remove a single entity.
+</p><p><b>Right Click: </b>
+Remove entity and all connected entities.
+</p><p><b>Reload: </b>
+Remove constraints.
+</p>
+
+

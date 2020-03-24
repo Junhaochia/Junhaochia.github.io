@@ -1,0 +1,47 @@
+<p>Creates a "sun beam" effect.
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $darken
+</td>
+<td> The strength of the darkening
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $multiply
+</td>
+<td> The strength of the multplier
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $sunx
+</td>
+<td> The screen x position of the sun (from 0 - 1)
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $suny
+</td>
+<td> The screen y position of the sun (from 0 - 1)
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $sunsize
+</td>
+<td> The "size" of the sun
+</td></tr></table>
+
+

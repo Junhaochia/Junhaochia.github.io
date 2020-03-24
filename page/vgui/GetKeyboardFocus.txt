@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>vgui.GetKeyboardFocus( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=vgui.GetKeyboardFocus">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/vgui/GetKeyboardFocus" title="Special:WhatLinksHere/vgui/GetKeyboardFocus">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the panel which is currently receiving keyboard input.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></span>
+</p>
+<div style="margin-left: 32px;">
+The panel with keyboard focus</div>
+</div>
+
+

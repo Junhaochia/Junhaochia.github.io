@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Vehicle&#58;SetSteering( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Vehicle.SetSteering">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Vehicle/SetSteering" title="Special:WhatLinksHere/Vehicle/SetSteering">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the steering of the vehicle.
+</p>
+<div class="validatepage"><span>Validation required.</span><br />
+This page contains possibly incorrect or incomplete information. Further testing is required.<br /><br />The correct range, 0 to 1 or -1 to 1</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> front</span>
+</p>
+<div style="margin-left: 32px;">
+Angle of the front wheels (-1 to 1)</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> rear</span>
+</p>
+<div style="margin-left: 32px;">
+Angle of the rear wheels (-1 to 1)</div>
+</div>
+
+

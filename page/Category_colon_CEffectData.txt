@@ -1,0 +1,44 @@
+<p>List of all possible functions available for effect data. This is the object returned by the <a href="/page/Global/EffectData" title="Global/EffectData">EffectData</a> function and is required for <a href="/page/util/Effect" title="util/Effect">util.Effect</a> function.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "CEffectData"</h2>
+<p>The following 32 pages are in this category, out of 32 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>C</h3>
+<ul><li><a href="/page/CEffectData/GetAngles" title="CEffectData/GetAngles">CEffectData/GetAngles</a></li>
+<li><a href="/page/CEffectData/GetAttachment" title="CEffectData/GetAttachment">CEffectData/GetAttachment</a></li>
+<li><a href="/page/CEffectData/GetColor" title="CEffectData/GetColor">CEffectData/GetColor</a></li>
+<li><a href="/page/CEffectData/GetDamageType" title="CEffectData/GetDamageType">CEffectData/GetDamageType</a></li>
+<li><a href="/page/CEffectData/GetEntIndex" title="CEffectData/GetEntIndex">CEffectData/GetEntIndex</a></li>
+<li><a href="/page/CEffectData/GetEntity" title="CEffectData/GetEntity">CEffectData/GetEntity</a></li>
+<li><a href="/page/CEffectData/GetFlags" title="CEffectData/GetFlags">CEffectData/GetFlags</a></li>
+<li><a href="/page/CEffectData/GetHitBox" title="CEffectData/GetHitBox">CEffectData/GetHitBox</a></li>
+<li><a href="/page/CEffectData/GetMagnitude" title="CEffectData/GetMagnitude">CEffectData/GetMagnitude</a></li>
+<li><a href="/page/CEffectData/GetMaterialIndex" title="CEffectData/GetMaterialIndex">CEffectData/GetMaterialIndex</a></li>
+<li><a href="/page/CEffectData/GetNormal" title="CEffectData/GetNormal">CEffectData/GetNormal</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CEffectData/GetOrigin" title="CEffectData/GetOrigin">CEffectData/GetOrigin</a></li>
+<li><a href="/page/CEffectData/GetRadius" title="CEffectData/GetRadius">CEffectData/GetRadius</a></li>
+<li><a href="/page/CEffectData/GetScale" title="CEffectData/GetScale">CEffectData/GetScale</a></li>
+<li><a href="/page/CEffectData/GetStart" title="CEffectData/GetStart">CEffectData/GetStart</a></li>
+<li><a href="/page/CEffectData/GetSurfaceProp" title="CEffectData/GetSurfaceProp">CEffectData/GetSurfaceProp</a></li>
+<li><a href="/page/CEffectData/SetAngles" title="CEffectData/SetAngles">CEffectData/SetAngles</a></li>
+<li><a href="/page/CEffectData/SetAttachment" title="CEffectData/SetAttachment">CEffectData/SetAttachment</a></li>
+<li><a href="/page/CEffectData/SetColor" title="CEffectData/SetColor">CEffectData/SetColor</a></li>
+<li><a href="/page/CEffectData/SetDamageType" title="CEffectData/SetDamageType">CEffectData/SetDamageType</a></li>
+<li><a href="/page/CEffectData/SetEntIndex" title="CEffectData/SetEntIndex">CEffectData/SetEntIndex</a></li>
+<li><a href="/page/CEffectData/SetEntity" title="CEffectData/SetEntity">CEffectData/SetEntity</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CEffectData/SetFlags" title="CEffectData/SetFlags">CEffectData/SetFlags</a></li>
+<li><a href="/page/CEffectData/SetHitBox" title="CEffectData/SetHitBox">CEffectData/SetHitBox</a></li>
+<li><a href="/page/CEffectData/SetMagnitude" title="CEffectData/SetMagnitude">CEffectData/SetMagnitude</a></li>
+<li><a href="/page/CEffectData/SetMaterialIndex" title="CEffectData/SetMaterialIndex">CEffectData/SetMaterialIndex</a></li>
+<li><a href="/page/CEffectData/SetNormal" title="CEffectData/SetNormal">CEffectData/SetNormal</a></li>
+<li><a href="/page/CEffectData/SetOrigin" title="CEffectData/SetOrigin">CEffectData/SetOrigin</a></li>
+<li><a href="/page/CEffectData/SetRadius" title="CEffectData/SetRadius">CEffectData/SetRadius</a></li>
+<li><a href="/page/CEffectData/SetScale" title="CEffectData/SetScale">CEffectData/SetScale</a></li>
+<li><a href="/page/CEffectData/SetStart" title="CEffectData/SetStart">CEffectData/SetStart</a></li>
+<li><a href="/page/CEffectData/SetSurfaceProp" title="CEffectData/SetSurfaceProp">CEffectData/SetSurfaceProp</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

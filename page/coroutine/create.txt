@@ -1,0 +1,70 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>coroutine.create( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=coroutine.create">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/coroutine/create" title="Special:WhatLinksHere/coroutine/create">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">3</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Creates a coroutine of the given function.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> func</span>
+</p>
+<div style="margin-left: 32px;">
+The function for the coroutine to use</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_thread" title="Category:thread">thread</a></span>
+</p>
+<div style="margin-left: 32px;">
+coroutine</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Display the location of each player in an endless loop, but only one player per frame.
+</p>
+<pre><code data-language="lua">do
+	local function displayer()
+		local players
+		while true do -- endless loop: you must guarantee that coroutine.yield() is always called!
+			players = player.GetAll()
+			if not next( players ) then -- empty table
+				coroutine.yield() -- guarantee a pause in coroutine even with an empty table
+			else
+				for _, ply in pairs( players ) do
+					coroutine.yield() -- We yield here so what you may do next will start immediatly when this for loop finishes.
+					if IsValid( ply ) then -- The player ply may be disconnected now!
+						print( ply:Nick(), &quot;is located at&quot;, ply:GetPos() )
+					end
+				end
+				
+			end
+		end
+	end
+	
+	local co
+	hook.Add( &quot;Think&quot;, &quot;DisplayPlayersLocation&quot;, function()
+		if not co or not coroutine.resume( co ) then
+			co = coroutine.create( displayer )
+			coroutine.resume( co )
+		end
+	end )
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<pre class="plain">Custom Nickname	is located at	10.102 59.04 -100.96
+SuperBoss	is located at	55.85 1209.11 -100.96
+Custom Nickname	is located at	11.126 51.92 -100.96
+...</code></pre>
+
+

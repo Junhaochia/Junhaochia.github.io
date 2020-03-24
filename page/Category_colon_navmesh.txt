@@ -1,0 +1,37 @@
+<p>The navigation mesh library. To be used with <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>.<br />
+The navigation mesh is used by <a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBot</a> to calculate path to its target.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "navmesh"</h2>
+<p>The following 24 pages are in this category, out of 24 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>N</h3>
+<ul><li><a href="/page/navmesh/AddWalkableSeed" title="navmesh/AddWalkableSeed">navmesh/AddWalkableSeed</a></li>
+<li><a href="/page/navmesh/BeginGeneration" title="navmesh/BeginGeneration">navmesh/BeginGeneration</a></li>
+<li><a href="/page/navmesh/ClearWalkableSeeds" title="navmesh/ClearWalkableSeeds">navmesh/ClearWalkableSeeds</a></li>
+<li><a href="/page/navmesh/CreateNavArea" title="navmesh/CreateNavArea">navmesh/CreateNavArea</a></li>
+<li><a href="/page/navmesh/Find" title="navmesh/Find">navmesh/Find</a></li>
+<li><a href="/page/navmesh/GetAllNavAreas" title="navmesh/GetAllNavAreas">navmesh/GetAllNavAreas</a></li>
+<li><a href="/page/navmesh/GetEditCursorPosition" title="navmesh/GetEditCursorPosition">navmesh/GetEditCursorPosition</a></li>
+<li><a href="/page/navmesh/GetGroundHeight" title="navmesh/GetGroundHeight">navmesh/GetGroundHeight</a></li></ul></td>
+<td><h3>N cont.</h3>
+<ul><li><a href="/page/navmesh/GetMarkedArea" title="navmesh/GetMarkedArea">navmesh/GetMarkedArea</a></li>
+<li><a href="/page/navmesh/GetMarkedLadder" title="navmesh/GetMarkedLadder">navmesh/GetMarkedLadder</a></li>
+<li><a href="/page/navmesh/GetNavArea" title="navmesh/GetNavArea">navmesh/GetNavArea</a></li>
+<li><a href="/page/navmesh/GetNavAreaByID" title="navmesh/GetNavAreaByID">navmesh/GetNavAreaByID</a></li>
+<li><a href="/page/navmesh/GetNavAreaCount" title="navmesh/GetNavAreaCount">navmesh/GetNavAreaCount</a></li>
+<li><a href="/page/navmesh/GetNavLadderByID" title="navmesh/GetNavLadderByID">navmesh/GetNavLadderByID</a></li>
+<li><a href="/page/navmesh/GetNearestNavArea" title="navmesh/GetNearestNavArea">navmesh/GetNearestNavArea</a></li>
+<li><a href="/page/navmesh/GetPlayerSpawnName" title="navmesh/GetPlayerSpawnName">navmesh/GetPlayerSpawnName</a></li></ul></td>
+<td><h3>N cont.</h3>
+<ul><li><a href="/page/navmesh/IsGenerating" title="navmesh/IsGenerating">navmesh/IsGenerating</a></li>
+<li><a href="/page/navmesh/IsLoaded" title="navmesh/IsLoaded">navmesh/IsLoaded</a></li>
+<li><a href="/page/navmesh/Load" title="navmesh/Load">navmesh/Load</a></li>
+<li><a href="/page/navmesh/Reset" title="navmesh/Reset">navmesh/Reset</a></li>
+<li><a href="/page/navmesh/Save" title="navmesh/Save">navmesh/Save</a></li>
+<li><a href="/page/navmesh/SetMarkedArea" title="navmesh/SetMarkedArea">navmesh/SetMarkedArea</a></li>
+<li><a href="/page/navmesh/SetMarkedLadder" title="navmesh/SetMarkedLadder">navmesh/SetMarkedLadder</a></li>
+<li><a href="/page/navmesh/SetPlayerSpawnName" title="navmesh/SetPlayerSpawnName">navmesh/SetPlayerSpawnName</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

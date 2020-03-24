@@ -1,0 +1,10 @@
+<p>The menubar library.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "menubar"</h2>
+<p>The following 3 pages are in this category, out of 3 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>M</h3>
+<ul><li><a href="/page/menubar/Init" title="menubar/Init">menubar/Init</a></li><li><a href="/page/menubar/IsParent" title="menubar/IsParent">menubar/IsParent</a></li><li><a href="/page/menubar/ParentTo" title="menubar/ParentTo">menubar/ParentTo</a></li></ul></div>
+</div></div>

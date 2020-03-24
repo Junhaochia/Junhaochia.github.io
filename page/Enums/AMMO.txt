@@ -1,0 +1,36 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/AMMO" title="Special:WhatLinksHere/Enums/AMMO">What links here?</a></div>
+<p>Used by <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/AddAmmoType" title="game/AddAmmoType">AddAmmoType</a>'s input structure - the <a href="/page/Structures/AmmoData" title="Structures/AmmoData">AmmoData structure</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>These enumerations do not exist in game and are listed here only for reference!
+</p>
+</td></tr></table><br /><br />
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> AMMO_FORCE_DROP_IF_CARRIED
+</td>
+<td> 1
+</td>
+<td> Forces player to drop the object they are carrying if the object was hit by this ammo type.
+</td></tr>
+<tr>
+<td> AMMO_INTERPRET_PLRDAMAGE_AS_DAMAGE_TO_PLAYER
+</td>
+<td> 2
+</td>
+<td> Uses <a href="/page/Structures/AmmoData" title="Structures/AmmoData">AmmoData</a>.plydmg of the ammo type as the damage to deal to shot players instead of <a href="/page/Structures/Bullet" title="Structures/Bullet">Bullet</a>.Damage.
+</td></tr></table>
+
+

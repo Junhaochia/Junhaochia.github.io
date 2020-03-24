@@ -1,0 +1,8 @@
+<p>Userdata is a type primarily used in the Lua C API. The userdata points to data in C, such as an object. There are two types of userdata: full userdata and light userdata. The word userdata alone implies full userdata. See also <a href="/page/Category_colon_light_userdata" title="Category:light userdata">light userdata</a>.
+</p><p>Full userdata is more commonly used than light userdata. You've probably already worked with full userdata, but are unaware of it. Types like panels and entities are userdata, but function very similarly to tables. This is due to the fact that, like tables, full userdata can have metatables. Unlike tables, however, full userdata cannot be indexed, and will not work with functions in the table library. Arbitrary values can be assigned to types like entities because of the entity userdatum's metatable, which uses the __newindex metamethod to set values in the entity's internal Lua table. Correspondingly, the __index metamethod checks the entity's internal Lua table for the key, and returns its value. It is through these functions that types like entities can be indexed as if they are tables. Full userdata is garbage collected, and Lua lets full userdata know it's about to be collected by calling the userdatum's __gc metamethod, passing the userdatum itself as an argument. This allows for any resources used by the userdatum to be freed on the C side, such as deleting an object or releasing a file handle.
+</p><p>You can create empty userdata with <a href="/page/Global/newproxy" title="Global/newproxy">newproxy</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

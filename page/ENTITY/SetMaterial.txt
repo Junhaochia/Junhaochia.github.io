@@ -1,0 +1,47 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;SetMaterial( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetMaterial">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetMaterial" title="Special:WhatLinksHere/Entity/SetMaterial">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the rendering material override of the entity.
+</p><p>To set a Lua material created with <a href="/page/Global/CreateMaterial" title="Global/CreateMaterial">CreateMaterial</a>, just prepend a "!" to the material name.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>If you wish to override a single material on the model, use <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetSubMaterial" title="Entity/SetSubMaterial">SetSubMaterial</a> instead.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Please note that to apply materials to models, that material <b>must</b> have VertexLitGeneric shader. For that reason you cannot apply map textures onto models, map textures use a different material shader - LightmappedGeneric.
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>The server's value takes priority on the client.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3362">#3362</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> materialName</span>
+</p>
+<div style="margin-left: 32px;">
+New material name. Use an empty string (<kbd>""</kbd>) to reset to the default materials.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> forceMaterial=false</span>
+</p>
+<div style="margin-left: 32px;">
+Use it if you wish to apply material other than VertexLitGeneric (such as tools/toolswhite).</div>
+</div>
+
+

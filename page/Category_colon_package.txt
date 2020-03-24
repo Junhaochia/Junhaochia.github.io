@@ -1,0 +1,10 @@
+<p>The package library is a standard Lua library, it's mainly for use with the module system built into Lua.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "package"</h2>
+<p>This category contains only the following page.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>P</h3>
+<ul><li><a href="/page/package/seeall" title="package/seeall">package/seeall</a></li></ul></div>
+</div></div>

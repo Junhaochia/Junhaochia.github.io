@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>IGModAudioChannel&#58;GetFileName( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IGModAudioChannel.GetFileName">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IGModAudioChannel/GetFileName" title="Special:WhatLinksHere/IGModAudioChannel/GetFileName">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the filename for the sound channel.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a></span>
+</p>
+<div style="margin-left: 32px;">
+The file name. This will not be always what you have put into the <a href="/page/Category_colon_sound" title="Category:sound">sound</a>.<a href="/page/sound/PlayURL" title="sound/PlayURL">PlayURL</a> as first argument.</div>
+</div>
+
+

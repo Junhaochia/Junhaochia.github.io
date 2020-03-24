@@ -1,0 +1,55 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;PhysicsInit( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.PhysicsInit">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/PhysicsInit" title="Special:WhatLinksHere/Entity/PhysicsInit">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Initializes the <a href="/page/Entity/GetPhysicsObject" title="Entity/GetPhysicsObject">physics object</a> of the entity using its current <a href="/page/Entity/GetModel" title="Entity/GetModel">model</a>. Deletes the previous physics object if it existed and the new object creation was successful.
+</p><p>If the entity's current model has no physics mesh associated to it, no physics object will be created and the previous object will still exist, if applicable.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>When called clientside, this will not create a valid <a href="/page/Category_colon_PhysObj" title="Category:PhysObj">PhysObj</a> if the model hasn't been <a href="/page/util/PrecacheModel" title="util/PrecacheModel">precached</a> serverside.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>If successful, this function will automatically call <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetSolid" title="Entity/SetSolid">SetSolid</a>( solidType ) and <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetSolidFlags" title="Entity/SetSolidFlags">SetSolidFlags</a>( 0 ).
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>Clientside physics objects are broken and do not move properly in some cases. Physics objects should only created on the server or you will experience incorrect physgun beam position, prediction issues, and other unexpected behavior.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> solidType</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The solid type of the physics object to create, see <a href="/page/Enums/SOLID" title="Enums/SOLID">SOLID_ Enums</a>. Should be SOLID_VPHYSICS in most cases.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Using SOLID_NONE will only delete the current physics object - it does not create a new one.
+</p>
+</td></tr></table></div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Returns true on success, false otherwise.</div>
+</div>
+
+

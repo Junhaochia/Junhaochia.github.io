@@ -1,0 +1,27 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Player&#58;StartSprinting( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.StartSprinting">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/StartSprinting" title="Special:WhatLinksHere/Player/StartSprinting">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />This appears to be a direct binding to internal functionality that is overridden by the engine every frame so calling these functions may not have any or expected effect.</div>
+<p>Doesn't appear to do anything.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>An example alternative to this function.
+</p>
+<pre><code data-language="lua">local vDelay = 0
+local prevDown = 0
+hook.Add( &quot;StartCommand&quot;, &quot;TestFunc&quot;, function( ply, cmd )
+    if ( cmd:KeyDown( IN_FORWARD ) and prevDown == false ) then
+        vDelay = CurTime() + 0.4
+    elseif ( cmd:KeyDown( IN_FORWARD ) ) then
+        if ( vDelay &lt; CurTime() )then
+            cmd:SetButtons( bit.bor( cmd:GetButtons(), IN_SPEED ) )
+        end
+    end
+	prevDown = cmd:KeyDown(IN_FORWARD)
+end )</code></pre>
+<p><br />
+</p>
+
+

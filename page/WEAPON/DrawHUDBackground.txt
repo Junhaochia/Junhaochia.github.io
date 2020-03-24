@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>WEAPON:DrawHUDBackground( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=WEAPON.DrawHUDBackground">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/WEAPON/DrawHUDBackground" title="Special:WhatLinksHere/WEAPON/DrawHUDBackground">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>This hook allows you to draw on screen while this weapon is in use. This hook is called <b>before</b> <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/DrawHUD" title="WEAPON/DrawHUD">DrawHUD</a> and is equivalent of <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDPaintBackground" title="GM/HUDPaintBackground">HUDPaintBackground</a>.
+</p>
+
+

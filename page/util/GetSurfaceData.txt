@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>util.GetSurfaceData( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=util.GetSurfaceData">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/util/GetSurfaceData" title="Special:WhatLinksHere/util/GetSurfaceData">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns data of a surface property at given ID.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> id</span>
+</p>
+<div style="margin-left: 32px;">
+Surface property ID. You can get it from <a href="/page/Structures/TraceResult" title="Structures/TraceResult">TraceResult structure</a>.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>The data or no value if there is no valid surface property at given index.
+</p>
+See <a href="/page/Structures/SurfacePropertyData" title="Structures/SurfacePropertyData">SurfacePropertyData structure</a></div>
+</div>
+
+

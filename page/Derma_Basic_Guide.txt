@@ -1,0 +1,165 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What_is_Derma.3F"><span class="tocnumber">1</span> <span class="toctext">What is Derma?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Starting_off"><span class="tocnumber">2</span> <span class="toctext">Starting off</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Code"><span class="tocnumber">2.1</span> <span class="toctext">Code</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Output"><span class="tocnumber">2.2</span> <span class="toctext">Output</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Painting_Derma"><span class="tocnumber">3</span> <span class="toctext">Painting Derma</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#What_is_it.3F"><span class="tocnumber">3.1</span> <span class="toctext">What is it?</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Example_Code"><span class="tocnumber">3.2</span> <span class="toctext">Example Code</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Output_2"><span class="tocnumber">3.3</span> <span class="toctext">Output</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#User_Inputs"><span class="tocnumber">4</span> <span class="toctext">User Inputs</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Example_Code_2"><span class="tocnumber">4.1</span> <span class="toctext">Example Code</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Example_Code_3"><span class="tocnumber">4.2</span> <span class="toctext">Example Code</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Output_3"><span class="tocnumber">4.3</span> <span class="toctext">Output</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Scaling"><span class="tocnumber">5</span> <span class="toctext">Scaling</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#What_is_it.3F_2"><span class="tocnumber">5.1</span> <span class="toctext">What is it?</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#How_do_I_do_it.3F"><span class="tocnumber">5.2</span> <span class="toctext">How do I do it?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Resources"><span class="tocnumber">6</span> <span class="toctext">Resources</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="What_is_Derma.3F"> What is Derma? </span></h1>
+<p>Derma was created by Garry and TAD2020 and is the easiest way to create on-screen menus for your gamemode or addon.
+</p><p>Derma differs from vgui in that its code only needs to be run once, therefore you should NEVER put Derma code inside
+<a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDPaint" title="GM/HUDPaint">HUDPaint</a> or similar function, as these are called each frame. To make your life easier, you should wrap your Derma code in a function and then call it whenever you need to create a menu and <b>always</b> use local variables. If you must use a global pointer, make it specific or a table member. <i>DLabel = vgui.Create( "DLabel" )</i> is bad coding practice and will likely override something.
+</p><p>Derma is <a href="/page/States" title="States">clientside</a> and if you would like to like to call it from the server, you will have to use the <a href="/page/Category_colon_net" title="Category:net">net library</a>.
+</p><p>Because of the age of Derma, some elements are broken or deprecated in Garry's Mod 13 like the <a href="/page/Category_colon_DLabelURL" title="Category:DLabelURL">DLabelURL</a> and <a href="/page/Category_colon_DPanelList" title="Category:DPanelList">DPanelList</a>. The majority of the Derma pages on this wiki lead to functional panels.
+</p>
+<h1> <span class="mw-headline" id="Starting_off"> Starting off </span></h1>
+<p>The very first thing you should do is create a <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a> as this will be your canvas, so to speak, for placing Derma on.
+</p>
+<h2> <span class="mw-headline" id="Code">Code</span></h2>
+<pre><code data-language="lua">
+local Frame = vgui.Create( &quot;DFrame&quot; )
+Frame:SetPos( 5, 5 ) 
+Frame:SetSize( 300, 150 ) 
+Frame:SetTitle( &quot;Name window&quot; ) 
+Frame:SetVisible( true ) 
+Frame:SetDraggable( false ) 
+Frame:ShowCloseButton( true ) 
+Frame:MakePopup() 
+</code></pre>
+<h2> <span class="mw-headline" id="Output">Output</span></h2>
+<div class="center"><div class="floatnone"><a href="/page/File:Derma_Full_Guide_DFrame.png" class="image"><img alt="Derma Full Guide DFrame.png" src="/images/d/d9/Derma_Full_Guide_DFrame.png" width="506" height="306" /></a></div></div>
+<h1> <span class="mw-headline" id="Painting_Derma"> Painting Derma </span></h1>
+<h2> <span class="mw-headline" id="What_is_it.3F"> What is it? </span></h2>
+<p>As useful as Derma is for the Lua coder, its ugly as sin and sometimes you want a really nice looking menu. You can solve this by overriding the panel's Paint function which you can do on every single Derma element. Overriding the function means that the panel will be invisible until you draw something on it; if you would like to draw on the current panel you might try the <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/PaintOver" title="PANEL/PaintOver">PaintOver</a> function.
+</p>
+<h2> <span class="mw-headline" id="Example_Code">Example Code</span></h2>
+<pre><code data-language="lua">
+local Frame = vgui.Create( &quot;DFrame&quot; )
+Frame:SetTitle( &quot;Test panel&quot; )
+Frame:SetSize( 300,300 )
+Frame:Center()			
+Frame:MakePopup()
+Frame.Paint = function( self, w, h ) -- 'function Frame:Paint( w, h )' works too
+	draw.RoundedBox( 0, 0, 0, w, h, Color( 231, 76, 60, 150 ) ) -- Draw a red box instead of the frame
+end
+		
+local Button = vgui.Create(&quot;DButton&quot;, Frame)
+Button:SetText( &quot;Click me I'm pretty!&quot; )
+Button:SetTextColor( Color(255,255,255) )
+Button:SetPos( 100, 100 )
+Button:SetSize( 100, 30 )
+Button.Paint = function( self, w, h )
+	draw.RoundedBox( 0, 0, 0, w, h, Color( 41, 128, 185, 250 ) ) -- Draw a blue button
+end
+Button.DoClick = function()
+	print( &quot;I was clicked!&quot; )
+end
+</code></pre>
+<h2> <span class="mw-headline" id="Output_2">Output</span></h2>
+<p><a href="/page/File:painted_dframe.png" class="image"><img alt="painted dframe.png" src="/images/4/4b/painted_dframe.png" width="290" height="294" /></a>
+</p>
+<h1> <span class="mw-headline" id="User_Inputs"> User Inputs </span></h1>
+<p>Your Derma menus might not be of much use if you don't know how to grab data from them; whether it would be user-typed text, a button click, or a checkbox.
+</p><p>Let's create a <a href="/page/Category_colon_DTextEntry" title="Category:DTextEntry">DTextEntry</a> so the player can input their name and when they press enter! We can then assign the entered value to a variable to reference later or even use the <a href="/page/Category_colon_net" title="Category:net">net library</a> and send their name to the server for saving.
+</p>
+<h2> <span class="mw-headline" id="Example_Code_2">Example Code</span></h2>
+<pre><code data-language="lua">
+local PlayerName = nil
+
+local NameEntry = vgui.Create( &quot;DTextEntry&quot;, Frame )
+NameEntry:SetPos( 25, 50 )
+NameEntry:SetSize( 75, 85 )
+NameEntry:SetText( &quot;Your Name&quot; )
+NameEntry.OnEnter = function( self )
+	PlayerName = self:GetValue()
+	print( &quot;This user's name is &quot;..PlayerName )	
+end
+</code></pre>
+<p><br />
+Now say we wanted the player to pick a color, which could be used for coloring their player or their name in chat, and then they would confirm it by pressing a button.
+</p>
+<h2> <span class="mw-headline" id="Example_Code_3">Example Code</span></h2>
+<pre><code data-language="lua">
+local ChosenColor = nil
+	
+local ColorPicker = vgui.Create( &quot;DColorMixer&quot;, Frame )
+ColorPicker:SetSize( 200, 200 )
+ColorPicker:SetPos(50, 50)
+ColorPicker:SetPalette( true )
+ColorPicker:SetAlphaBar( true ) 
+ColorPicker:SetWangs( true )
+ColorPicker:SetColor( Color( 255, 255, 255 ) )
+
+local ConfirmColor = vgui.Create(&quot;DButton&quot;, Frame)
+ConfirmColor:SetText( &quot;I want this color&quot; )
+ConfirmColor:SetSize( 90, 30 )
+ConfirmColor:SetPos( 100, Frame:GetTall() - 40 )
+ConfirmColor.DoClick = function()
+	ChosenColor = ColorPicker:GetColor() -- Grabs the red, green, blue, and alpha values as a Color object
+			
+	PrintTable(ChosenColor) 
+	--[[ Prints:
+	r = 255 
+	g = 255 
+	b = 255
+	a = 255
+	]]
+end
+</code></pre>
+<h2> <span class="mw-headline" id="Output_3">Output</span></h2>
+<p><a href="/page/File:dframe_colorpicker_example.png" class="image"><img alt="dframe colorpicker example.png" src="/images/8/88/dframe_colorpicker_example.png" width="279" height="279" /></a>
+</p>
+<h1> <span class="mw-headline" id="Scaling"> Scaling </span></h1>
+<h2> <span class="mw-headline" id="What_is_it.3F_2"> What is it? </span></h2>
+<p>Not everyone who plays Garry's Mod has the same resolution or monitor size as you and as such you should create your Derma to work on nearly everyone's monitors. You can accomplish this by using the <a href="/page/Global/ScrH" title="Global/ScrH">ScrH</a> and <a href="/page/Global/ScrW" title="Global/ScrW">ScrW</a> functions which return their respective dimensions as integers. This is not necessarily something you have to worry about when you start your project as working with constant sizes is quicker, but this is very important if your Derma is quite large.
+</p>
+<h2> <span class="mw-headline" id="How_do_I_do_it.3F"> How do I do it? </span></h2>
+<p>The first thing you need to do is figure out your monitor resolution, mine is 1920 x 1080 and I'll use that for this tutorial. The easiest way to find your resolution is just to use <a href="/page/Global/print" title="Global/print">print</a> and the screen size functions.
+</p><p>Now assume we created this frame and we want it to be in the center of the player's screen and be sized accordingly
+</p>
+<pre><code data-language="lua">
+MyFrame:SetSize( 400, 300 )
+</code></pre>
+<p>To do this in an efficient way, we can simply put a math into the <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetSize" title="Panel/SetSize">SetSize</a> method dividing the size we want by our screen resolution and using the <a href="/page/Global/ScrW" title="Global/ScrW">ScrW</a> and <a href="/page/Global/ScrH" title="Global/ScrH">ScrH</a> functions:
+</p>
+<pre><code data-language="lua">
+MyFrame:SetSize( ScrW() * 400/1920, ScrH() * 300/1080 )
+</code></pre>
+<p>Now this DFrame will be 400x300 on your resolution and it will size on any other resolution. You could then scale a DButton on this frame by dividing its size by the frame's size and it will scale according to it's parent.
+</p><p>It is recommended to replace static calculations later with the calculated values to reduce unnecessary operations in rendering code:
+</p>
+<pre><code data-language="lua">
+MyFrame:SetSize( ScrW() * 0.208, ScrH() * 0.277 )
+</code></pre>
+<h1> <span class="mw-headline" id="Resources"> Resources </span></h1>
+<p>Unfortunately, due to the large amount of functions in Derma not all of them are documented yet, but you can search through the source code yourself and figure out how those functions work!
+You can find an online repository here: <a rel="nofollow" class="external free" href="https://github.com/garrynewman/garrysmod/tree/master/garrysmod/lua/vgui">https://github.com/garrynewman/garrysmod/tree/master/garrysmod/lua/vgui</a> or look in <i>garrysmod\lua\vgui</i> in your local <i>Garry's Mod</i> directory.
+</p><p>A list of all Derma elements can be found <a href="/page/VGUI_Element_List" title="VGUI Element List">here</a>.
+</p>
+
+

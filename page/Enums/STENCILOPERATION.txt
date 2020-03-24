@@ -1,0 +1,80 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/STENCILOPERATION" title="Special:WhatLinksHere/Enums/STENCILOPERATION">What links here?</a></div>
+<p>Enumerations for use with <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/SetStencilPassOperation" title="render/SetStencilPassOperation">SetStencilPassOperation</a>, <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/SetStencilFailOperation" title="render/SetStencilFailOperation">SetStencilFailOperation</a> and <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/SetStencilZFailOperation" title="render/SetStencilZFailOperation">SetStencilZFailOperation</a>. Clientside only.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>These enumerations are also mirrored as <a href="/page/Enums/STENCIL" title="Enums/STENCIL">STENCIL_ Enums</a>.
+</p>
+</td></tr></table>
+<p>Also see this corresponding MSDN entry: <a rel="nofollow" class="external free" href="https://msdn.microsoft.com/en-us/library/windows/desktop/ff476219%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/windows/desktop/ff476219%28v=vs.85%29.aspx</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> STENCILOPERATION_KEEP
+</td>
+<td> 1
+</td>
+<td> Preserves the existing stencil buffer value.
+</td></tr>
+<tr>
+<td> STENCILOPERATION_ZERO
+</td>
+<td> 2
+</td>
+<td> Sets the value in the stencil buffer to 0.
+</td></tr>
+<tr>
+<td> STENCILOPERATION_REPLACE
+</td>
+<td> 3
+</td>
+<td> Sets the value in the stencil buffer to the reference value, set using <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/SetStencilReferenceValue" title="render/SetStencilReferenceValue">SetStencilReferenceValue</a>.
+</td></tr>
+<tr>
+<td> STENCILOPERATION_INCRSAT
+</td>
+<td> 4
+</td>
+<td> Increments the value in the stencil buffer by 1, clamping the result.
+</td></tr>
+<tr>
+<td> STENCILOPERATION_DECRSAT
+</td>
+<td> 5
+</td>
+<td> Decrements the value in the stencil buffer by 1, clamping the result.
+</td></tr>
+<tr>
+<td> STENCILOPERATION_INVERT
+</td>
+<td> 6
+</td>
+<td> Inverts the value in the stencil buffer.
+</td></tr>
+<tr>
+<td> STENCILOPERATION_INCR
+</td>
+<td> 7
+</td>
+<td> Increments the value in the stencil buffer by 1, wrapping around on overflow.
+</td></tr>
+<tr>
+<td> STENCILOPERATION_DECR
+</td>
+<td> 8
+</td>
+<td> Decrements the value in the stencil buffer by 1, wrapping around on overflow.
+</td></tr></table>
+
+

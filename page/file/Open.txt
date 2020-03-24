@@ -1,0 +1,81 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>file.Open( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=file.Open">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/file/Open" title="Special:WhatLinksHere/file/Open">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">5</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">6</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Attempts to open a file with the given mode.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> fileName</span>
+</p>
+<div style="margin-left: 32px;">
+The files name. See <a href="/page/Category_colon_file" title="Category:file">file</a>.<a href="/page/file/Write" title="file/Write">Write</a> for details on filename restrictions when writing to files.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> fileMode</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The mode to open the file in. Possible values are:
+</p>
+<ul><li> <b>r</b> - read mode
+</li><li> <b>w</b> - write mode
+</li><li> <b>a</b> - append mode
+</li></ul>
+<ul><li> <b>rb</b> - binary read mode
+</li><li> <b>wb</b> - binary write mode
+</li><li> <b>ab</b> - binary append mode</div>
+</li></ul>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> path</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The path type. See <a href="/page/File_Search_Paths" title="File Search Paths">File Search Paths</a>
+</p><p>Common paths are:
+</p>
+<ul><li> "GAME" - Structured like base folder (garrysmod/), searches all the mounted content (main folder, addons, mounted games etc)
+</li><li> "LUA" or "lsv" - All Lua folders (lua/) including gamesmodes and addons
+</li><li> "DATA" - Local to Data folder, has write access (garrysmod/data)
+</li><li> "MOD" - Strictly the game folder (garrysmod/), ignores mounting.</div>
+</li></ul>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_File" title="Category:File">File</a></span>
+</p>
+<div style="margin-left: 32px;">
+The opened file object, or nil if it failed to open due to it not existing or being used by another process.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Open a file in read only mode, reads a line, tells where the current file pointer is at and then closes the file handle.
+</p>
+<pre><code data-language="lua">local f = file.Open( &quot;cfg/mapcycle.txt&quot;, &quot;r&quot;, &quot;MOD&quot; )
+print( f:ReadLine() )
+print( f:ReadLine() )
+print( f:Tell() )
+f:Close()</code></pre>
+<p><b>Output:</b>
+</p>
+<pre class="plain">//
+
+// Default mapcycle file for Garry's Mod.
+
+45</code></pre>
+
+

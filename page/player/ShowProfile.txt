@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Player&#58;ShowProfile( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.ShowProfile">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/ShowProfile" title="Special:WhatLinksHere/Player/ShowProfile">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Opens the player steam profile page in the steam overlay browser.
+</p>
+
+

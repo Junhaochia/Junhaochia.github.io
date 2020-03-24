@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>TOOL:Deploy( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=TOOL.Deploy">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/TOOL/Deploy" title="Special:WhatLinksHere/TOOL/Deploy">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/Deploy" title="WEAPON/Deploy">Deploy</a> of the toolgun is called.
+</p><p>This is also called when switching from another tool on the server.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This hook is <a href="/page/Prediction" title="Prediction">predicted</a>. This means that in singleplayer, it will <i>not</i> be called in the Client realm.
+</p>
+</td></tr></table>
+
+

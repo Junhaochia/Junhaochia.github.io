@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>BuildNetworkedVarsTable( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=BuildNetworkedVarsTable">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/BuildNetworkedVarsTable" title="Special:WhatLinksHere/Global/BuildNetworkedVarsTable">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Dumps the networked variables of all entities into one table and returns it.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>Format:
+</p>
+<ul><li> key = <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> for NWVars or <a href="/page/Category_colon_number" title="Category:number">number</a> (always 0) for global vars
+</li><li> value = <a href="/page/Category_colon_table" title="Category:table">table</a> formatted as:
+<ul><li> key = <a href="/page/Category_colon_string" title="Category:string">string</a> var name
+</li><li> value = any type var value</div>
+</li></ul>
+</li></ul>
+</div>
+
+

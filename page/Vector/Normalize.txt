@@ -1,0 +1,17 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Vector&#58;Normalize( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Vector.Normalize">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Vector/Normalize" title="Special:WhatLinksHere/Vector/Normalize">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Normalizes the given vector. This changes the vector you call it on, if you want to return a normalized copy without affecting the original, use <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>:<a href="/page/Vector/GetNormalized" title="Vector/GetNormalized">GetNormalized</a>.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Normalizes Vector(4, 3, 2).
+</p>
+<pre><code data-language="lua">local test = Vector(4, 3, 2)
+test:Normalize()
+MsgN( test )</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">0.7428 0.5571 0.3714.</div>
+
+

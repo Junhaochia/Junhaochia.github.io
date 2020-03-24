@@ -1,0 +1,24 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Player&#58;SetDrivingEntity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.SetDrivingEntity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/SetDrivingEntity" title="Special:WhatLinksHere/Player/SetDrivingEntity">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div>
+<p>Sets the driving entity and driving mode.
+</p><p>Use <a href="/page/Category_colon_drive" title="Category:drive">drive</a>.<a href="/page/drive/PlayerStartDriving" title="drive/PlayerStartDriving">PlayerStartDriving</a> instead, see <a href="/page/Entity_Driving" title="Entity Driving">Entity Driving</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> drivingEntity=NULL</span>
+</p>
+<div style="margin-left: 32px;">
+The entity the player should drive.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> drivingMode</span>
+</p>
+<div style="margin-left: 32px;">
+The driving mode index.</div>
+</div>
+
+

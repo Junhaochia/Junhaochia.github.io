@@ -1,0 +1,6 @@
+<p>All numbers in Lua use the <a href="https://en.wikipedia.org/wiki/double-precision_floating-point_format" class="extiw" title="wikipedia:double-precision floating-point format">double-precision floating-point format</a>. Even integers are stored in this format. The <a href="/page/Category_colon_math" title="Category:math">math</a> library is often used with numbers.
+</p>
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

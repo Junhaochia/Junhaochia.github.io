@@ -1,0 +1,32 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;PaintManual( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.PaintManual">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/PaintManual" title="Special:WhatLinksHere/Panel/PaintManual">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Paints the panel at its current position. To use this you must call <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetPaintedManually" title="Panel/SetPaintedManually">SetPaintedManually</a>(true).
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Paints a simple panel inside a 3D rendering context.
+</p>
+<pre><code data-language="lua">local frame = vgui.Create( &quot;DFrame&quot; )
+frame:SetTitle( &quot;PaintManual Test&quot; )
+frame:SetSize( 500, 500 )
+frame:SetPaintedManually( true )
+
+hook.Add( &quot;PostDrawTranslucentRenderables&quot;, &quot;PaintManual Test&quot;, function()
+	if IsValid(frame) then
+		local eyePos = Entity(1):EyePos()
+		local forward = Entity(1):GetForward()
+		local forwardAngle = forward:Angle()
+
+		cam.Start3D2D(eyePos + (forward * 250), Angle(0, forwardAngle.y - 90, forwardAngle.r + 90), 0.2)
+			frame:PaintManual()
+		cam.End3D2D()
+	end
+end )</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">The panel will be drawn facing the player located on the player's crosshair.
+<div class="thumb tleft"><div class="thumbinner" style="width:182px;"><a href="/page/File:panel_paintmanual_example1_output.png" class="image"><img alt="panel paintmanual example1 output.png" src="/images/thumb/3/38/panel_paintmanual_example1_output.png/180px-panel_paintmanual_example1_output.png" width="180" height="180" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:panel_paintmanual_example1_output.png" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div></div></div></div>
+(click for higher resolution)</div>
+
+

@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>JS_Workshop( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=JS_Workshop">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/JS_Workshop" title="Special:WhatLinksHere/Global/JS Workshop">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Adds workshop related javascript functions to an HTML panel, used by the "Dupes" and "Saves" tabs in the spawnmenu.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> htmlPanel</span>
+</p>
+<div style="margin-left: 32px;">
+Panel to add javascript functions to.</div>
+</div>
+
+

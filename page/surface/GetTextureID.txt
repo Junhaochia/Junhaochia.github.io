@@ -1,0 +1,29 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>surface.GetTextureID( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=surface.GetTextureID">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/surface/GetTextureID" title="Special:WhatLinksHere/surface/GetTextureID">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the texture id of the material with the given name/path.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This function will not work with .png or .jpg images. For that, see <a href="/page/Global/Material" title="Global/Material">Material</a>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name/path</span>
+</p>
+<div style="margin-left: 32px;">
+Name or path of the texture.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The texture ID</div>
+</div>
+
+

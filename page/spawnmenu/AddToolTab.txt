@@ -1,0 +1,51 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>spawnmenu.AddToolTab( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=spawnmenu.AddToolTab">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/spawnmenu/AddToolTab" title="Special:WhatLinksHere/spawnmenu/AddToolTab">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Adds a new tool tab to the right side of the spawnmenu via the <a href="/page/Category_colon_SANDBOX_Hooks" title="Category:SANDBOX Hooks">SANDBOX</a>:<a href="/page/SANDBOX/AddToolMenuTabs" title="SANDBOX/AddToolMenuTabs">AddToolMenuTabs</a> hook.
+</p><p>This function is a inferior duplicate of <a href="/page/Category_colon_spawnmenu" title="Category:spawnmenu">spawnmenu</a>.<a href="/page/spawnmenu/GetToolMenu" title="spawnmenu/GetToolMenu">GetToolMenu</a>, just without its return value.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+The internal name of the tab. This is used for sorting.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> label=name</span>
+</p>
+<div style="margin-left: 32px;">
+The 'nice' name of the tab (Tip: <a href="/page/Category_colon_language" title="Category:language">language</a>.<a href="/page/language/Add" title="language/Add">Add</a>)</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> icon="icon16/wrench.png"</span>
+</p>
+<div style="margin-left: 32px;">
+The filepath to the icon of the tab. Should be a .png</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a new tab named, "Tab name!" with a unique name and a wrench icon.
+</p>
+<pre><code data-language="lua">hook.Add( &quot;AddToolMenuTabs&quot;, &quot;myHookClass&quot;, function()
+	spawnmenu.AddToolTab( &quot;Tab name!&quot;, &quot;#Unique_Name&quot;, &quot;icon16/wrench.png&quot; )
+end )</code></pre>
+<p><br />
+</p>
+
+

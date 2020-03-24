@@ -1,0 +1,31 @@
+<p>Blurs $basetexture in the x direction.
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_ITexture" title="Category:ITexture">ITexture</a>
+</td>
+<td> $basetexture
+</td>
+<td> The texture to blur.
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $size
+</td>
+<td> The strength of the blur. Actually the number of pixels between samples from $basetexture.
+</td></tr></table>
+<p>The response for a single white pixel (255) with $size 1 is { 0, 1, 2, 7, 16, 31, 45, 76, 45, 31, 16, 7, 2, 1, 0 }. [<a rel="nofollow" class="external text" href="https://www.wolframalpha.com/input/?i=plot+{+0%2C+1%2C+2%2C+7%2C+16%2C+31%2C+45%2C+76%2C+45%2C+31%2C+16%2C+7%2C+2%2C+1%2C+0+}">plot</a>]<br />
+The response for $size 2, is the same response but with 0s are inserted in between each sample.<br />
+This is not a gaussian blur.
+</p><p>Note that the terms of the response sum to 280, not 255 (1.098 gain). Repeated application of this shader will result in a very bright screen unless some compensation is done (eg. Multiply by 255/280 using UnlitGeneric, $color Vector(255/280, 255/280, 255/280)).
+</p>
+
+

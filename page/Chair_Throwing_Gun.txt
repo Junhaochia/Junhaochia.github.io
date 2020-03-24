@@ -1,0 +1,199 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#File_Layout"><span class="tocnumber">2</span> <span class="toctext">File Layout</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#The_Code"><span class="tocnumber">3</span> <span class="toctext">The Code</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Informational"><span class="tocnumber">3.1</span> <span class="toctext">Informational</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Spawn_Info"><span class="tocnumber">3.2</span> <span class="toctext">Spawn Info</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Clip_Info"><span class="tocnumber">3.3</span> <span class="toctext">Clip Info</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#More_Info"><span class="tocnumber">3.4</span> <span class="toctext">More Info</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Models"><span class="tocnumber">3.5</span> <span class="toctext">Models</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Precache_Sounds"><span class="tocnumber">3.6</span> <span class="toctext">Precache Sounds</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#The_actual_chair_throwing_code"><span class="tocnumber">3.7</span> <span class="toctext">The actual chair throwing code</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Challenges"><span class="tocnumber">4</span> <span class="toctext">Challenges</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction">Introduction</span></h1>
+<p>In this tutorial we will create a weapon that fires chairs.
+</p>
+<h1> <span class="mw-headline" id="File_Layout"> File Layout </span></h1>
+<ul><li> Open your garry's mod folder.
+</li><li> Open the 'addons' folder.
+</li><li> Create a folder called 'chairlauncher'
+</li><li> Create a folder inside called 'lua'
+</li><li> Create a folder inside called 'weapons'
+</li><li> Create a file called 'weapon_chairgun.lua'
+</li></ul>
+<p>Your folder structure should be like this:
+</p>
+<pre><code data-language="lua"> garrysmod/addons/chairlauncher/lua/weapons/weapon_chairgun.lua
+</code></pre>
+<p>You have created an addon called <b>chairlauncher</b> which contains a weapon called <b>weapon_chairgun</b>. Whenever you create a new weapon, most people use the <b>weapon_</b> prefix, since most of the default weapons names also start with <b>weapon_</b>.
+</p>
+<h1> <span class="mw-headline" id="The_Code"> The Code </span></h1>
+<p>Add these to your weapon after you understand them.
+</p>
+<h2> <span class="mw-headline" id="Informational"> Informational </span></h2>
+<p>This code is just informational. It shows up in the spawnmenu and the weapon selection menu.. so it will help people out if your weapon is complicated to use. You can also put your name in the author field so people know who made it.
+</p>
+<pre><code data-language="lua">SWEP.PrintName			= &quot;Chair Thrower&quot; -- This will be shown in the spawn menu, and in the weapon selection menu
+SWEP.Author			= &quot;(your name)&quot; -- These two options will be shown when you have the weapon highlighted in the weapon selection menu
+SWEP.Instructions		= &quot;Left mouse to fire a chair!&quot;</code></pre>
+<h2> <span class="mw-headline" id="Spawn_Info"> Spawn Info </span></h2>
+<p>Defines whether players can spawn this weapon from the spawnmenu.. and whether only admins can spawn it.
+</p>
+<pre><code data-language="lua">SWEP.Spawnable = true
+SWEP.AdminOnly = true</code></pre>
+<h2> <span class="mw-headline" id="Clip_Info"> Clip Info </span></h2>
+<p>Our weapon doesn't use any ammo or clips, so we just set the clip sizes to -1 and the ammo to "none".
+</p><p>We set primary to be automatic. This means that the player doesn't have to release the mouse button and press it again - it will continually fire.
+</p>
+<pre><code data-language="lua">SWEP.Primary.ClipSize		= -1
+SWEP.Primary.DefaultClip	= -1
+SWEP.Primary.Automatic		= true
+SWEP.Primary.Ammo		= &quot;none&quot;
+
+SWEP.Secondary.ClipSize		= -1
+SWEP.Secondary.DefaultClip	= -1
+SWEP.Secondary.Automatic	= false
+SWEP.Secondary.Ammo		= &quot;none&quot;</code></pre>
+<h2> <span class="mw-headline" id="More_Info"> More Info </span></h2>
+<p>These are mostly self explanatory. The higher the weight the more likely you are to switch to it. Slot and SlotPos decide where in your weapon menu the weapon will be.
+</p>
+<pre><code data-language="lua">SWEP.Weight			= 5
+SWEP.AutoSwitchTo		= false
+SWEP.AutoSwitchFrom		= false
+
+SWEP.Slot			= 1
+SWEP.SlotPos			= 2
+SWEP.DrawAmmo			= false
+SWEP.DrawCrosshair		= true</code></pre>
+<h2> <span class="mw-headline" id="Models"> Models </span></h2>
+<p>The view-model and the world-model to use.
+</p>
+<pre><code data-language="lua">SWEP.ViewModel			= &quot;models/weapons/v_pistol.mdl&quot;
+SWEP.WorldModel			= &quot;models/weapons/w_pistol.mdl&quot;</code></pre>
+<p><br />
+</p>
+<h2> <span class="mw-headline" id="Precache_Sounds"> Precache Sounds </span></h2>
+<p>You can precache sounds by defining them as locals using the Sound function. This prevents the sound loading when you first shoot the weapon - causing a hitch.
+</p>
+<pre><code data-language="lua">local ShootSound = Sound( &quot;Metal.SawbladeStick&quot; )</code></pre>
+<h2> <span class="mw-headline" id="The_actual_chair_throwing_code"> The actual chair throwing code </span></h2>
+<p>Commented for your learning pleasure
+</p>
+<pre><code data-language="lua">
+
+--
+-- Called when the left mouse button is pressed
+--
+function SWEP:PrimaryAttack()
+
+	-- This weapon is 'automatic'. This function call below defines
+	-- the rate of fire. Here we set it to shoot every 0.5 seconds.
+	self.Weapon:SetNextPrimaryFire( CurTime() + 0.5 )	
+
+	-- Call 'ThrowChair' on self with this model
+	self:ThrowChair( &quot;models/props/cs_office/Chair_office.mdl&quot; )
+
+end
+ 
+
+--
+-- Called when the rightmouse button is pressed
+--
+function SWEP:SecondaryAttack()
+
+	-- Note we don't call SetNextSecondaryFire here because it's not
+	-- automatic and so we let them fire as fast as they can click.	
+
+	-- Call 'ThrowChair' on self with this model
+	self:ThrowChair( &quot;models/props_c17/FurnitureChair001a.mdl&quot; )
+
+end
+
+--
+-- A custom function we added. When you call this the player will fire a chair!
+--
+function SWEP:ThrowChair( model_file )
+
+	-- 
+	-- Play the shoot sound we precached earlier!
+	--
+	self:EmitSound( ShootSound )
+
+ 
+	--
+	-- If we're the client then this is as much as we want to do.
+	-- We play the sound above on the client due to prediction.
+	-- ( if we didn't they would feel a ping delay during multiplayer )
+	--
+	if ( CLIENT ) then return end
+
+	--
+	-- Create a prop_physics entity
+	--
+	local ent = ents.Create( &quot;prop_physics&quot; )
+
+	--
+	-- Always make sure that created entities are actually created!
+	--
+	if (&#160;!IsValid( ent ) ) then return end
+
+	--
+	-- Set the entity's model to the passed in model
+	--
+	ent:SetModel( model_file )
+ 
+	--
+	-- Set the position to the player's eye position plus 16 units forward.
+	-- Set the angles to the player'e eye angles. Then spawn it.
+	--
+	ent:SetPos( self.Owner:EyePos() + (self.Owner:GetAimVector() * 16) )
+	ent:SetAngles( self.Owner:EyeAngles() )
+	ent:Spawn()
+ 
+
+	--
+	-- Now get the physics object. Whenever we get a physics object
+	-- we need to test to make sure its valid before using it.
+	-- If it isn't then we'll remove the entity.
+	--
+	local phys = ent:GetPhysicsObject()
+	if (&#160;!IsValid( phys ) ) then ent:Remove() return end
+ 
+ 
+	--
+	-- Now we apply the force - so the chair actually throws instead 
+	-- of just falling to the ground. You can play with this value here
+	-- to adjust how fast we throw it.
+	--
+	local velocity = self.Owner:GetAimVector()
+	velocity = velocity * 100 
+	velocity = velocity + (VectorRand() * 10) -- a random element
+	phys:ApplyForceCenter( velocity )
+ 
+	--
+	-- Assuming we're playing in Sandbox mode we want to add this
+	-- entity to the cleanup and undo lists. This is done like so.
+	--
+	cleanup.Add( self.Owner, &quot;props&quot;, ent )
+ 
+	undo.Create( &quot;Thrown_Chair&quot; )
+		undo.AddEntity( ent )
+		undo.SetPlayer( self.Owner )
+	undo.Finish()
+end
+</code></pre>
+<h1> <span class="mw-headline" id="Challenges">Challenges</span></h1>
+<p>Can you edit the new weapon to:
+</p>
+<ul><li> Use a different firing sound for left/right click
+</li><li> Throw a melon when you press reload? (tip: <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/Reload" title="WEAPON/Reload">Reload</a>)
+</li><li> Throw 3 chairs at a time
+</li></ul>
+
+

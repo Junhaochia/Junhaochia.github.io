@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;GetSelectedChildren( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.GetSelectedChildren">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/GetSelectedChildren" title="Special:WhatLinksHere/Panel/GetSelectedChildren">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns a table of all children of the panel object that are selected. This is recursive, and the returned table will include tables for any child objects that also have children. This means that not all first-level members in the returned table will be of type <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+A table of any child objects that are selected, including tables for children of the child objects (These tables may also contain table members, as the method is recursive).</div>
+</div>
+
+

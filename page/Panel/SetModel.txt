@@ -1,0 +1,42 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetModel( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetModel">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetModel" title="Special:WhatLinksHere/Panel/SetModel">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>Sets the model to be displayed by <a href="/page/Category_colon_SpawnIcon" title="Category:SpawnIcon">SpawnIcon</a>.
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This must be called after setting size if you wish to use a different size spawnicon
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> ModelPath</span>
+</p>
+<div style="margin-left: 32px;">
+The path of the model to set</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> skin=0</span>
+</p>
+<div style="margin-left: 32px;">
+The skin to set</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> bodygroups=""</span>
+</p>
+<div style="margin-left: 32px;">
+The body groups to set. Each single-digit number in the string represents a separate bodygroup, <b>up to 9 in total</b>.</div>
+</div>
+
+

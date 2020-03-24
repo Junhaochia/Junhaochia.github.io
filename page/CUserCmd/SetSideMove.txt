@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>CUserCmd&#58;SetSideMove( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CUserCmd.SetSideMove">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CUserCmd/SetSideMove" title="Special:WhatLinksHere/CUserCmd/SetSideMove">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets speed the client wishes to move sidewards with, positive to move right, negative to move left.
+</p><p>See also <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/SetForwardMove" title="CUserCmd/SetForwardMove">SetForwardMove</a> and <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/SetUpMove" title="CUserCmd/SetUpMove">SetUpMove</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> speed</span>
+</p>
+<div style="margin-left: 32px;">
+The new speed to request.</div>
+</div>
+
+

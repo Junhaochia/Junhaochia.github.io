@@ -1,0 +1,166 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DModelPanel&#58;SetEntity( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DModelPanel.SetEntity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DModelPanel/SetEntity" title="Special:WhatLinksHere/DModelPanel/SetEntity">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelFunc"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelFunc</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sets the entity to be rendered by the model panel.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>If you set <i>ent</i> to a shared entity you must set <i>ent</i> to nil before removing this panel or else a "Trying to remove server entity on client!" error is thrown
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ent</span>
+</p>
+<div style="margin-left: 32px;">
+The new panel entity.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Implementation of a function called <b>StartBreencast</b> which makes Dr. Breen recite his instinct speech within a model panel that's displayed to all clients. This mainly demonstrates how even shared entities such as NPCs can be used with <a href="/page/Category_colon_DModelPanel" title="Category:DModelPanel">DModelPanel</a> as long as they're networked properly.
+</p>
+<pre><code data-language="lua">g_Breen = nil	-- Breen NPC
+
+if(SERVER) then
+	-- Broadcast propaganda to clients
+	util.AddNetworkString(&quot;BreencastSentence&quot;)
+end
+
+-- Broadcast Breen to clients each time he starts a new sentence.
+function GM:EntityEmitSound(data)
+
+	if(data.Entity == g_Breen) then
+	
+		local st, en = string.find(data.SoundName, &quot;vo/&quot;)
+		local sentence = &quot;sound/&quot;..string.sub(data.SoundName, st)	-- Properly format sound name
+	
+		net.Start(&quot;BreencastSentence&quot;)
+			net.WriteEntity(data.Entity)
+			net.WriteString(sentence)
+		net.Broadcast()
+		
+	end
+	
+	return nil
+	
+end
+
+if(CLIENT) then
+
+	-- Receive latest breencast sound byte and update screen
+	function BreencastSentence()
+	
+		-- Client-side reference to Breen NPC
+		g_Breen = net.ReadEntity()
+		
+		local soundname = net.ReadString()
+		
+		-- Play sound byte
+		sound.PlayFile(soundname, &quot;&quot;, function(sentence, errnum, err)
+		
+			if(err) then
+				Error(err)
+			else
+				sentence:Play()
+				StartBreencast()	-- Update breencast monitor
+			end
+		
+		end)
+	
+	end
+	
+	net.Receive(&quot;BreencastSentence&quot;, BreencastSentence)
+	
+end
+
+-- Call this server-side to begin Breencast
+function StartBreencast()
+
+	if(SERVER) then
+
+		-- Remove existing Breen NPC
+		if(g_Breen &amp;&amp; IsValid(g_Breen)) then
+			g_Breen:Remove()
+		end
+
+		-- Create new Breen NPC
+		g_Breen = ents.Create(&quot;npc_breen&quot;)
+		g_Breen:Spawn()
+		
+		-- Hide NPC everywhere except inside model panel
+		g_Breen:SetSaveValue(&quot;m_takedamage&quot;, 0)
+		g_Breen:SetMoveType(MOVETYPE_NONE)
+		g_Breen:SetSolid(SOLID_NONE)
+		g_Breen:SetRenderMode(RENDERMODE_TRANSALPHA)
+		g_Breen:SetColor(Color(255, 255, 255, 0))
+		
+		-- Play propaganda		
+		g_Breen:PlayScene(&quot;scenes/breencast/instinct_tv.vcd&quot;)
+		g_Breen:SetEyeTarget(Vector(100, 0, 60))
+
+	elseif(CLIENT) then
+
+		-- Remove existing panel and clear model entity to prevent error
+		if(BGPanel) then
+			if(BGPanel:GetChild(0)) then BGPanel:GetChild(0):SetEntity(nil) end
+			BGPanel:Remove()
+			BGPanel = nil			
+		end
+		
+		-- Don't continue if Breen is undefined
+		if(!g_Breen or&#160;!IsValid(g_Breen)) then return end
+		
+		-- Black background panel
+		BGPanel = vgui.Create(&quot;DPanel&quot;)
+		BGPanel:SetPos(20, 20)
+		BGPanel:SetSize(200, 200)
+		BGPanel:SetBackgroundColor(Color(0, 0, 0, 255))
+		
+		-- Model panel
+		local mdl = vgui.Create(&quot;DModelPanel&quot;, BGPanel)
+		mdl:SetSize(BGPanel:GetSize())
+		mdl:SetFOV(40)	-- Default FOV is too jarring
+		
+		mdl:SetEntity(g_Breen)	-- Add Breen NPC to model panel
+		
+		-- Focus camera on Breen's head
+		function mdl:LayoutEntity(ent)
+		
+			-- If Breen has been removed somehow then remove screen
+			if(!IsValid(ent)) then
+				if(mdl:GetParent()) then mdl:GetParent():Remove() end
+				return
+			end
+		
+			local eyepos = ent:GetBonePosition(ent:LookupBone(&quot;ValveBiped.Bip01_Head1&quot;))
+		
+			mdl:SetLookAt(eyepos)
+			mdl:SetCamPos(eyepos+Vector(35, 0, -4))
+			
+			return
+			
+		end
+		
+	end
+	
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">"I find it helpful at times like these to remind myself that our true enemy is: Instinct."<br /><br />
+<a href="/page/File:Breencast_example.jpg" class="image"><img alt="Breencast example.jpg" src="/images/2/27/Breencast_example.jpg" width="200" height="200" /></a></div>
+
+

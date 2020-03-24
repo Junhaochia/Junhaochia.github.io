@@ -1,0 +1,9 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>PANEL:PreAutoRefresh( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PANEL.PreAutoRefresh">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PANEL/PreAutoRefresh" title="Special:WhatLinksHere/PANEL/PreAutoRefresh">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Only works on elements defined with <a href="/page/Category_colon_derma" title="Category:derma">derma</a>.<a href="/page/derma/DefineControl" title="derma/DefineControl">DefineControl</a> and only if the panel has <b>AllowAutoRefresh</b> set to true.
+</p><p>Called when <a href="/page/Category_colon_derma" title="Category:derma">derma</a>.<a href="/page/derma/DefineControl" title="derma/DefineControl">DefineControl</a> is called with this panel's class name before applying changes to this panel.
+</p><p>See also <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/PostAutoRefresh" title="PANEL/PostAutoRefresh">PostAutoRefresh</a>
+</p>
+
+

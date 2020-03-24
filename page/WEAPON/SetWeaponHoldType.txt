@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>WEAPON:SetWeaponHoldType( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=WEAPON.SetWeaponHoldType">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/WEAPON/SetWeaponHoldType" title="Special:WhatLinksHere/WEAPON/SetWeaponHoldType">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the hold type of the weapon. This must be called on <b>both</b> the server and the client to work properly.
+</p><p><b>NOTE:</b> You should avoid calling this function and call <a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a>:<a href="/page/Weapon/SetHoldType" title="Weapon/SetHoldType">SetHoldType</a> now.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+Name of the hold type. You can find all default hold types <a href="/page/Hold_Types" title="Hold Types">here</a></div>
+</div>
+
+

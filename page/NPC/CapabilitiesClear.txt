@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;CapabilitiesClear( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.CapabilitiesClear">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/CapabilitiesClear" title="Special:WhatLinksHere/NPC/CapabilitiesClear">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Removes all of Capabilities the NPC has.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Removes all of the Capabilities that the NPC has.
+</p>
+<pre><code data-language="lua">self:CapabilitiesClear()</code></pre>
+<p><br />
+</p>
+
+

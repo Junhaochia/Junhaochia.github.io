@@ -1,0 +1,23 @@
+<p>The draw library's purpose is to simplify the usage of the <a href="/page/surface" title="surface" class="mw-redirect">surface</a> library.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "draw"</h2>
+<p>The following 11 pages are in this category, out of 11 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/draw/DrawText" title="draw/DrawText">draw/DrawText</a></li>
+<li><a href="/page/draw/GetFontHeight" title="draw/GetFontHeight">draw/GetFontHeight</a></li>
+<li><a href="/page/draw/NoTexture" title="draw/NoTexture">draw/NoTexture</a></li>
+<li><a href="/page/draw/RoundedBox" title="draw/RoundedBox">draw/RoundedBox</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/draw/RoundedBoxEx" title="draw/RoundedBoxEx">draw/RoundedBoxEx</a></li>
+<li><a href="/page/draw/SimpleText" title="draw/SimpleText">draw/SimpleText</a></li>
+<li><a href="/page/draw/SimpleTextOutlined" title="draw/SimpleTextOutlined">draw/SimpleTextOutlined</a></li>
+<li><a href="/page/draw/Text" title="draw/Text">draw/Text</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/draw/TextShadow" title="draw/TextShadow">draw/TextShadow</a></li>
+<li><a href="/page/draw/TexturedQuad" title="draw/TexturedQuad">draw/TexturedQuad</a></li>
+<li><a href="/page/draw/WordBox" title="draw/WordBox">draw/WordBox</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

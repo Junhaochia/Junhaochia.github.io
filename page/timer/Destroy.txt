@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>timer.Destroy( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=timer.Destroy">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/timer/Destroy" title="Special:WhatLinksHere/timer/Destroy">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />You should be using <a href="/page/Category_colon_timer" title="Category:timer">timer</a>.<a href="/page/timer/Remove" title="timer/Remove">Remove</a> instead.</div> Stops and destroys the given timer. Alias of <a href="/page/Category_colon_timer" title="Category:timer">timer</a>.<a href="/page/timer/Remove" title="timer/Remove">Remove</a>.
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> identifier</span>
+</p>
+<div style="margin-left: 32px;">
+Identifier of the timer to destroy.</div>
+</div>
+
+

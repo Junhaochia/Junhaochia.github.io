@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetPopupStayAtBack( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetPopupStayAtBack">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetPopupStayAtBack" title="Special:WhatLinksHere/Panel/SetPopupStayAtBack">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>If this panel object has been made a popup with <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/MakePopup" title="Panel/MakePopup">MakePopup</a>, this method will prevent it from drawing in front of other panels when it receives input focus.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> stayAtBack</span>
+</p>
+<div style="margin-left: 32px;">
+If <i>true</i>, the popup panel will not draw in front of others when it gets focus, for example when it is clicked.</div>
+</div>
+
+

@@ -1,0 +1,74 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>duplicator.RegisterEntityClass( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=duplicator.RegisterEntityClass">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/duplicator/RegisterEntityClass" title="Special:WhatLinksHere/duplicator/RegisterEntityClass">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>This allows you to specify a specific function to be run when your SENT is pasted with the duplicator, instead of relying on the generic automatic functions.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Automatically calls <a href="/page/Category_colon_duplicator" title="Category:duplicator">duplicator</a>.<a href="/page/duplicator/Allow" title="duplicator/Allow">Allow</a> for the entity class.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+The ClassName of the entity you wish to register a factory for</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> function</span>
+</p>
+<div style="margin-left: 32px;">
+The factory function you want to have called. It should have the arguments (Player, ...) where ... is whatever arguments you request to be passed.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_vararg" title="Category:vararg">vararg</a> args</span>
+</p>
+<div style="margin-left: 32px;">
+Strings of the names of arguments you want passed to function the from the <a href="/page/Structures/EntityCopyData" title="Structures/EntityCopyData">EntityCopyData structure</a>. As a special case, "Data" will pass the whole structure.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Prints the datatable and then lets the duplicator do it's job
+</p>
+<pre><code data-language="lua">duplicator.RegisterEntityClass(&quot;prop_physics&quot;, function(ply, data)
+	PrintTable(data)
+	duplicator.GenericDuplicatorFunction(ply, data)
+end, &quot;Data&quot;)</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><pre><code data-language="lua">Skin = 0
+Mins = -14.357550 -14.390250 -25.934851
+Flex:
+	ColGroup = 0
+Pos = -292.415070 -157.575043 -12262.056641
+PhysicsObjects:
+	0:
+		Frozen = false
+		Pos = 13.750092 0.490356 -4.675781
+		Angle = 0.057 87.808 -0.031
+Class = prop_physics
+FlexScale = 1
+Maxs = 14.438149 14.405550 25.995348
+Model = models/props_borealis/bluebarrel001.mdl
+Angle = 0.057 134.318 -0.031</code></pre></div>
+
+

@@ -1,0 +1,40 @@
+<p>A bokeh blur shader which applies screen blur depending on distance.
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_IMaterial" title="Category:IMaterial">IMaterial</a>
+</td>
+<td> $depthtext
+</td>
+<td> The depth texture, usually should be "_rt_FullFrameFB"
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $focus
+</td>
+<td> The focus distance?
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $focusradius
+</td>
+<td> The focus radius?
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $size
+</td>
+<td> The strength of the blur
+</td></tr></table>
+
+

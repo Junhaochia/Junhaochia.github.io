@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Player&#58;SetAllowFullRotation( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.SetAllowFullRotation">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/SetAllowFullRotation" title="Special:WhatLinksHere/Player/SetAllowFullRotation">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Set if the players' model is allowed to rotate around the pitch and roll axis.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> Allowed</span>
+</p>
+<div style="margin-left: 32px;">
+Allowed to rotate</div>
+</div>
+
+

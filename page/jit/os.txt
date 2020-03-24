@@ -1,0 +1,5 @@
+<h1> <span class="mw-headline" id="Not_a_function">Not a function</span></h1>
+<p>This is NOT a function, it's a variable containing the target OS name: "Windows", "Linux", "OSX", "BSD", "POSIX" or "Other".
+</p>
+
+

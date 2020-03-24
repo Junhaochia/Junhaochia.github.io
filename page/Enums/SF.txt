@@ -1,0 +1,224 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/SF" title="Special:WhatLinksHere/Enums/SF">What links here?</a></div>
+<p>Enumerations describing certain spawnflags. Everything except for SF_PHYS* is serverside only.
+</p><p>Spawnflags are set using <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetKeyValue" title="Entity/SetKeyValue">SetKeyValue</a> with <b>"spawnflags"</b> as the key.
+</p>
+<ul><li> SF_CITIZEN_* spawnflags represent spawnflags only usable on <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Npc_citizen">npc_citizen</a>.
+</li><li> SF_NPC_* - Usable on all NPCs
+</li><li> SF_PHYSBOX_* - Usable on <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Func_physbox">func_physbox</a>
+</li><li> SF_PHYSPROP_* - Usable on <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Prop_physics">prop_physics</a> entities
+</li></ul>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is not a full list of available spawnflags, there are <i>a lot</i> more, each unique to each entity, you can find out more on the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Main_Page">Valve Developer Community</a> website for the entities in question.
+</p>
+</td></tr></table><br /><br />
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> SF_CITIZEN_AMMORESUPPLIER
+</td>
+<td> 524288
+</td>
+<td> Citizen that resupplies ammo
+</td></tr>
+<tr>
+<td> SF_CITIZEN_FOLLOW
+</td>
+<td> 65536
+</td>
+<td> "Follow the player as soon as I spawn"
+</td></tr>
+<tr>
+<td> SF_CITIZEN_IGNORE_SEMAPHORE
+</td>
+<td> 2097152
+</td>
+<td> "Work outside the speech semaphore system"
+</td></tr>
+<tr>
+<td> SF_CITIZEN_MEDIC
+</td>
+<td> 131072
+</td>
+<td> Makes the citizen a medic
+</td></tr>
+<tr>
+<td> SF_CITIZEN_NOT_COMMANDABLE
+</td>
+<td> 1048576
+</td>
+<td> Citizen cannot join players squad, and will not able to be commanded by the Half-Life 2 command system for Citizens
+</td></tr>
+<tr>
+<td> SF_CITIZEN_RANDOM_HEAD
+</td>
+<td> 262144
+</td>
+<td> Gives the citizen a random head
+</td></tr>
+<tr>
+<td> SF_CITIZEN_RANDOM_HEAD_FEMALE
+</td>
+<td> 8388608
+</td>
+<td> Gives the citizen a random female head
+</td></tr>
+<tr>
+<td> SF_CITIZEN_RANDOM_HEAD_MALE
+</td>
+<td> 4194304
+</td>
+<td> Gives the citizen a random male head
+</td></tr>
+<tr>
+<td> SF_CITIZEN_USE_RENDER_BOUNDS
+</td>
+<td> 16777216
+</td>
+<td> "Use render bounds instead of human hull for guys sitting in chairs, etc". Must be set before Spawn() is called to take effect
+</td></tr>
+<tr>
+<td> SF_FLOOR_TURRET_CITIZEN
+</td>
+<td> 512
+</td>
+<td> Makes the floor turret friendly
+</td></tr>
+<tr>
+<td> SF_NPC_ALTCOLLISION
+</td>
+<td> 4096
+</td>
+<td> Do Alternate collision for this NPC (player avoidance)
+</td></tr>
+<tr>
+<td> SF_NPC_ALWAYSTHINK
+</td>
+<td> 1024
+</td>
+<td> <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/NPC_Sensing">Think outside PVS</a>
+</td></tr>
+<tr>
+<td> SF_NPC_DROP_HEALTHKIT
+</td>
+<td> 8
+</td>
+<td> NPC Drops health kit when it dies
+</td></tr>
+<tr>
+<td> SF_NPC_FADE_CORPSE
+</td>
+<td> 512
+</td>
+<td> Fade Corpse
+</td></tr>
+<tr>
+<td> SF_NPC_FALL_TO_GROUND
+</td>
+<td> 4
+</td>
+<td> If not set, means *teleport* to ground
+</td></tr>
+<tr>
+<td> SF_NPC_GAG
+</td>
+<td> 2
+</td>
+<td> No IDLE sounds until angry
+</td></tr>
+<tr>
+<td> SF_NPC_LONG_RANGE
+</td>
+<td> 256
+</td>
+<td> Long Visibility/Shoot
+</td></tr>
+<tr>
+<td> SF_NPC_NO_PLAYER_PUSHAWAY
+</td>
+<td> 16384
+</td>
+<td> Ignore player push - Don't give way to player
+</td></tr>
+<tr>
+<td> SF_NPC_NO_WEAPON_DROP
+</td>
+<td> 8192
+</td>
+<td> NPC Doesn't drop weapon on death
+</td></tr>
+<tr>
+<td> SF_NPC_START_EFFICIENT
+</td>
+<td> 16
+</td>
+<td> Don't acquire enemies or avoid obstacles
+</td></tr>
+<tr>
+<td> SF_NPC_TEMPLATE
+</td>
+<td> 2048
+</td>
+<td> This entity is a template for the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Npc_template_maker">npc_template_maker</a>. It will not spawn automatically and cannot be used with <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Point_template">point_template</a>.
+</td></tr>
+<tr>
+<td> SF_NPC_WAIT_FOR_SCRIPT
+</td>
+<td> 128
+</td>
+<td> Wait for script
+</td></tr>
+<tr>
+<td> SF_NPC_WAIT_TILL_SEEN
+</td>
+<td> 1
+</td>
+<td> Wait till seen
+</td></tr>
+<tr>
+<td> SF_PHYSBOX_MOTIONDISABLED
+</td>
+<td> 32768
+</td>
+<td> If set, calls <a href="/page/Category_colon_PhysObj" title="Category:PhysObj">PhysObj</a>:<a href="/page/PhysObj/EnableMotion" title="PhysObj/EnableMotion">EnableMotion</a>( false ) on the func_physbox when the physics are created
+</td></tr>
+<tr>
+<td> SF_PHYSBOX_NEVER_PICK_UP
+</td>
+<td> 2097152
+</td>
+<td> Gravity gun is NOT allowed to pick this up.
+</td></tr>
+<tr>
+<td> SF_PHYSPROP_MOTIONDISABLED
+</td>
+<td> 8
+</td>
+<td> If set, calls <a href="/page/Category_colon_PhysObj" title="Category:PhysObj">PhysObj</a>:<a href="/page/PhysObj/EnableMotion" title="PhysObj/EnableMotion">EnableMotion</a>( false ) on the func_physbox when the physics are created. See <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Physics_optimization">Physics optimization</a>
+</td></tr>
+<tr>
+<td> SF_PHYSPROP_PREVENT_PICKUP
+</td>
+<td> 512
+</td>
+<td> Prevent that physbox from being picked up
+</td></tr>
+<tr>
+<td> SF_ROLLERMINE_FRIENDLY
+</td>
+<td> 65536
+</td>
+<td> Makes the rollermine friendly
+</td></tr></table>
+
+

@@ -1,0 +1,41 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>util.AddNetworkString( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=util.AddNetworkString">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/util/AddNetworkString" title="Special:WhatLinksHere/util/AddNetworkString">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Adds the specified string to a string table, which will cache it and network it to all clients automatically.<br />
+Whenever you want to create a net message with <a href="/page/Category_colon_net" title="Category:net">net</a>.<a href="/page/net/Start" title="net/Start">Start</a>, you must add the name of that message as a networked string via this function.
+</p><p>If the passed string already exists, nothing will happen and the ID of the existing item will be returned.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Each unique network name needs to be pooled once - do not put this function call into any other functions if you're using a constant string. Preferable place for this function is in a serverside lua file, or in a shared file with the <a href="/page/Category_colon_net" title="Category:net">net</a>.<a href="/page/net/Receive" title="net/Receive">Receive</a> function.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>The string table used for this function does not interfere with the engine string tables and has 2048 slots.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> str</span>
+</p>
+<div style="margin-left: 32px;">
+Adds the specified string to the string table.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>The id of the string that was added to the string table.<br />
+</p>
+Same as calling <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/NetworkStringToID" title="util/NetworkStringToID">NetworkStringToID</a>.</div>
+</div>
+
+

@@ -1,0 +1,39 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DProperties" title="Category:DProperties">DProperties</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DEntityProperties">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DEntityProperties" title="Special:WhatLinksHere/Category:DEntityProperties">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.<br /><br />Unless you know what you are doing and you benefit from this panel, you should be using the <a href="/page/Category_colon_DProperties" title="Category:DProperties">DProperties</a> instead.</div>
+<p>A panel used by the <a href="/page/Editable_Entities" title="Editable Entities">Editable Entities</a> system.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DProperties" title="Category:DProperties">DProperties</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DProperties/CreateRow" title="DProperties/CreateRow">DProperties/CreateRow</a></li>
+<li><a href="/page/DProperties/GetCanvas" title="DProperties/GetCanvas">DProperties/GetCanvas</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DProperties/GetCategory" title="DProperties/GetCategory">DProperties/GetCategory</a></li>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DEntityProperties"</h2>
+<p>The following 5 pages are in this category, out of 5 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>D</h3>
+<ul><li><a href="/page/DEntityProperties/EditVariable" title="DEntityProperties/EditVariable">DEntityProperties/EditVariable</a></li><li><a href="/page/DEntityProperties/EntityLost" title="DEntityProperties/EntityLost">DEntityProperties/EntityLost</a></li><li><a href="/page/DEntityProperties/OnEntityLost" title="DEntityProperties/OnEntityLost">DEntityProperties/OnEntityLost</a></li><li><a href="/page/DEntityProperties/RebuildControls" title="DEntityProperties/RebuildControls">DEntityProperties/RebuildControls</a></li><li><a href="/page/DEntityProperties/SetEntity" title="DEntityProperties/SetEntity">DEntityProperties/SetEntity</a></li></ul></div>
+</div></div>

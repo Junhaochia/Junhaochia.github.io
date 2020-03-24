@@ -1,0 +1,72 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>player_manager.RegisterClass( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=player_manager.RegisterClass">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/player_manager/RegisterClass" title="Special:WhatLinksHere/player manager/RegisterClass">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">6</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Register a class metatable to be assigned to players later
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> name</span>
+</p>
+<div style="margin-left: 32px;">
+Class name</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> table</span>
+</p>
+<div style="margin-left: 32px;">
+Class metatable</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> base</span>
+</p>
+<div style="margin-left: 32px;">
+Base class name</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>A quick look at registering a class table
+</p>
+<pre><code data-language="lua">local PLAYER = {}
+
+PLAYER.DisplayName = &quot;Default Class&quot;
+
+...
+
+player_manager.RegisterClass( &quot;player_default&quot;, PLAYER, nil )</code></pre>
+<p><br />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>You can retrieve the data you've set when registering the table using baseclass.Get( "&lt;classname&gt;" )
+</p>
+<pre><code data-language="lua">PrintTable(baseclass.Get( &quot;player_default&quot; ))</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><br />Walkspeed = 300<br />
+<p>RunSpeed = 500<br />
+CalcView = function: 0x00665988<br />
+UseVMHands = true<br />
+</p>
+etc...</div>
+
+

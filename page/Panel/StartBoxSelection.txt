@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;StartBoxSelection( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.StartBoxSelection">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/StartBoxSelection" title="Special:WhatLinksHere/Panel/StartBoxSelection">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Begins a box selection, enables mouse capture for the panel object, and sets the start point of the selection box to the mouse cursor's position, relative to this object. For this to work, either the object or its parent must be enabled as a selection canvas. This is set using <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetSelectionCanvas" title="Panel/SetSelectionCanvas">SetSelectionCanvas</a>.
+</p>
+
+

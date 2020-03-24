@@ -1,0 +1,104 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetSteamID( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetSteamID">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetSteamID" title="Special:WhatLinksHere/Panel/SetSteamID">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Used by <a href="/page/Category_colon_AvatarImage" title="Category:AvatarImage">AvatarImage</a> panels to load an avatar by its 64-bit Steam ID (community ID).
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> steamid</span>
+</p>
+<div style="margin-left: 32px;">
+The 64bit SteamID of the player to load avatar of</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> size</span>
+</p>
+<div style="margin-left: 32px;">
+The size of the avatar to use. Acceptable sizes are 32, 64, 184.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a grid of randomly generated Steam avatars which link to their corresponding Steam user pages.
+</p>
+<pre><code data-language="lua">-- Returns a random 64-bit Steam ID between STEAM_0:0:1 and STEAM_0:1:100000000
+function GetRandomSteamID()
+	return &quot;7656119&quot;..tostring(7960265728+math.random(1, 200000000))
+end
+
+-- Create the Steam User Grid
+-- Arg1: the size of each avatar
+-- Arg2: the size to load each avatar (16, 32, 64, 84, 128, 184)
+function CreateSteamUserGrid(av_size, av_res)
+
+	-- Remove this block of code if you do not mind loading thousands of avatars
+	if(av_size &lt; 64) then
+		Error(&quot;Avatar size cannot be less than 64 square pixels.\n&quot;)
+		return
+	end
+	
+	-- Delete existing grid
+	if(SteamUserGrid) then SteamUserGrid:Remove() end
+	
+	-- The amount of avatars we can fit width-wise and height-wise
+	local w_count = math.floor(ScrW()/av_size)
+	local h_count = math.floor((ScrH()-25)/av_size)	-- 25 = frame header size
+		
+	-- Container panel
+	SteamUserGrid = vgui.Create(&quot;DFrame&quot;)
+	SteamUserGrid:SetSize(w_count*av_size, (h_count*av_size)+25)
+	SteamUserGrid:Center()
+	SteamUserGrid:SetTitle(&quot;Randomly Generated Grid of Steam Users&quot;)
+	SteamUserGrid:MakePopup()
+	
+	-- Loop variables
+	local avatar, random_id
+	
+	-- Create enough avatars to fill up screen without overflowing
+	for i = 0, (w_count*h_count)-1 do
+	
+		random_id = GetRandomSteamID()
+		
+		-- Add avatar to container panel
+		avatar = vgui.Create(&quot;AvatarImage&quot;, SteamUserGrid)
+		
+		-- Layout the avatars in a grid
+		avatar:SetPos((i%w_count)*av_size, 25+math.floor(i/w_count)*av_size)
+		
+		-- Load the avatar image
+		avatar:SetSteamID(random_id, av_res)
+
+		avatar:SetSize(av_size, av_size)
+		
+		-- Open user's Steam page on avatar click
+		avatar.OnMousePressed = function(self)
+			
+			local url = &quot;http://steamcommunity.com/profiles/&quot;..random_id
+			
+			gui.OpenURL(url)
+			
+		end
+		
+	end
+	
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><i>CreateSteamUserGrid(64, 64)</i><br /><br />
+<p><a href="/page/File:AvatarImage_SetSteamID_example1.png" class="image"><img alt="AvatarImage SetSteamID example1.png" src="/images/4/49/AvatarImage_SetSteamID_example1.png" width="400" height="244" /></a><br /><br />
+</p>
+The white question mark avatars mean no custom icon used or the user hasn't set up a community profile. The blue question mark avatars mean the user doesn't exist.</div>
+
+

@@ -1,0 +1,53 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>ENTITY:RenderOverride( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ENTITY.RenderOverride">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ENTITY/RenderOverride" title="Special:WhatLinksHere/ENTITY/RenderOverride">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called instead of the engine drawing function of the entity. This hook works on any entity (scripted or not) it is applied on.
+</p><p>This does not work on "physgun_beam", use <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/DrawPhysgunBeam" title="GM/DrawPhysgunBeam">DrawPhysgunBeam</a> instead.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>As a downside of this implementation, only one RenderOverride may be applied at a time.
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>Drawing a viewmodel in this function will cause <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawViewModel" title="GM/PreDrawViewModel">PreDrawViewModel</a>, <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/PreDrawViewModel" title="WEAPON/PreDrawViewModel">PreDrawViewModel</a>, <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/ViewModelDrawn" title="WEAPON/ViewModelDrawn">ViewModelDrawn</a>, <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostDrawViewModel" title="GM/PostDrawViewModel">PostDrawViewModel</a>, and <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/PostDrawViewModel" title="WEAPON/PostDrawViewModel">PostDrawViewModel</a> to be called twice.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3292">#3292</a></b>
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This is called before PrePlayerDraw for players. If this function exists at all on a player, their worldmodel will always be rendered regardless of PrePlayerDraw's return.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3299">#3299</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Set the entity the player is looking at to not draw if the player is its owner.
+</p>
+<pre><code data-language="lua">local function DontDrawMe( self )
+	if ( self:GetOwner() == LocalPlayer() ) then
+		return
+	end
+	
+	self:DrawModel()
+end
+
+local pickent = LocalPlayer():GetEyeTrace().Entity
+
+if ( IsValid( pickent ) ) then
+	pickent.RenderOverride = DontDrawMe
+end</code></pre>
+<p><br />
+</p>
+
+

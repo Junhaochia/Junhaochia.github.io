@@ -1,0 +1,252 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/CONTENTS" title="Special:WhatLinksHere/Enums/CONTENTS">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/PointContents" title="util/PointContents">PointContents</a> and as tracer masks.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> CONTENTS_EMPTY
+</td>
+<td> 0
+</td>
+<td> Things that are not solid
+</td></tr>
+<tr>
+<td> CONTENTS_SOLID
+</td>
+<td> 1
+</td>
+<td> Things that are solid
+</td></tr>
+<tr>
+<td> CONTENTS_WINDOW
+</td>
+<td> 2
+</td>
+<td> Glass
+</td></tr>
+<tr>
+<td> CONTENTS_AUX
+</td>
+<td> 4
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_GRATE
+</td>
+<td> 8
+</td>
+<td> Bullets go through, solids don't
+</td></tr>
+<tr>
+<td> CONTENTS_SLIME
+</td>
+<td> 16
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_WATER
+</td>
+<td> 32
+</td>
+<td> Hits world but not skybox
+</td></tr>
+<tr>
+<td> CONTENTS_BLOCKLOS
+</td>
+<td> 64
+</td>
+<td> Things that block line of sight
+</td></tr>
+<tr>
+<td> CONTENTS_OPAQUE
+</td>
+<td> 128
+</td>
+<td> Things that block light
+</td></tr>
+<tr>
+<td> CONTENTS_TESTFOGVOLUME
+</td>
+<td> 256
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_TEAM4
+</td>
+<td> 512
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_TEAM3
+</td>
+<td> 1024
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_TEAM1
+</td>
+<td> 2048
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_TEAM2
+</td>
+<td> 4096
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_IGNORE_NODRAW_OPAQUE
+</td>
+<td> 8192
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_MOVEABLE
+</td>
+<td> 16384
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_AREAPORTAL
+</td>
+<td> 32768
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_PLAYERCLIP
+</td>
+<td> 65536
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_MONSTERCLIP
+</td>
+<td> 131072
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_CURRENT_0
+</td>
+<td> 262144
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_CURRENT_180
+</td>
+<td> 1048576
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_CURRENT_270
+</td>
+<td> 2097152
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_CURRENT_90
+</td>
+<td> 524288
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_CURRENT_DOWN
+</td>
+<td> 8388608
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_CURRENT_UP
+</td>
+<td> 4194304
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_DEBRIS
+</td>
+<td> 67108864
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_DETAIL
+</td>
+<td> 134217728
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_HITBOX
+</td>
+<td> 1073741824
+</td>
+<td> Hitbox
+</td></tr>
+<tr>
+<td> CONTENTS_LADDER
+</td>
+<td> 536870912
+</td>
+<td> Ladder
+</td></tr>
+<tr>
+<td> CONTENTS_MONSTER
+</td>
+<td> 33554432
+</td>
+<td> NPCs
+</td></tr>
+<tr>
+<td> CONTENTS_ORIGIN
+</td>
+<td> 16777216
+</td>
+<td>
+</td></tr>
+<tr>
+<td> CONTENTS_TRANSLUCENT
+</td>
+<td> 268435456
+</td>
+<td> Hits world but not skybox
+</td></tr>
+<tr>
+<td> LAST_VISIBLE_CONTENTS
+</td>
+<td> 128
+</td>
+<td> Last visible contents enumeration
+</td></tr>
+<tr>
+<td> ALL_VISIBLE_CONTENTS
+</td>
+<td> 255
+</td>
+<td> Sum of all the visible contents enumerations
+</td></tr></table>
+
+

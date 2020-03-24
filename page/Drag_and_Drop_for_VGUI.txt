@@ -1,0 +1,26 @@
+<h1> <span class="mw-headline" id="Drag_.27N.27_Drop">Drag 'N' Drop</span></h1>
+<p>This is a drag n drop tutorial since it barely documented.
+</p><p>It's very easy, all you need to have is have two panels; receiver and droppable panel.
+</p>
+<pre><code data-language="lua">
+local receiver = vgui.Create('DPanel')
+receiver:SetSize(ScrW()/2,ScrH()/2)
+
+local droppable = vgui.Create('DPanel')
+droppable:SetSize(100,100)
+</code></pre>
+<p>Now we need to assign receiver and droppable functions for the panels
+</p>
+<pre><code data-language="lua">
+receiver:Receiver('name',function(receiver, tableOfDroppedPanels, isDropped, menuIndex, mouseX, mouseY) end,{})
+droppable:Droppable('name')
+</code></pre>
+<p>Receiver metamethod takes three arguments, first one being the name of the DnD so it can receiver all droppable panels that have the same name as the receiver, callback function which gets executed as soon as a droppable panel is hovered over the receiver (if you want to detect it as soon as it was dropped, use isDropped argument) and last one is a table of strings that will act as a menu if drag'n'drop was performed with a right click.
+</p><p>Use the callback function for your stuff, setting position of the dropped panel or whatever you wanted to do.
+</p><p>Check <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/Receiver" title="Panel/Receiver">Receiver</a> for more information about the receiver metamethod.
+</p><p>The droppable method only takes one argument and it's the name of the receiver you want to drop it on.
+</p><p>More information at <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/Droppable" title="Panel/Droppable">Droppable</a>
+</p><p>Now you're able to drop droppable onto receiver.
+</p>
+
+

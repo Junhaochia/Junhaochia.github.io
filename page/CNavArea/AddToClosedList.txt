@@ -1,0 +1,9 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>CNavArea&#58;AddToClosedList( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CNavArea.AddToClosedList">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CNavArea/AddToClosedList" title="Special:WhatLinksHere/CNavArea/AddToClosedList">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Adds this <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> to the closed list, a list of areas that have been checked by A* pathfinding algorithm.
+</p><p>Used in pathfinding via the <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* algorithm</a>.<br />
+More information can be found on the <a href="/page/Simple_Pathfinding" title="Simple Pathfinding">Simple Pathfinding</a> page.
+</p>
+
+

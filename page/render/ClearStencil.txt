@@ -1,0 +1,43 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>render.ClearStencil( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.ClearStencil">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/ClearStencil" title="Special:WhatLinksHere/render/ClearStencil">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Resets all values in the stencil buffer to zero.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>A silly example that shows that nothing will render if you clear the stencil buffer. (From
+<a rel="nofollow" class="external text" href="https://github.com/Lexicality/stencil-tutorial">Lex's Stencil Tutorial</a>)
+</p>
+<pre><code data-language="lua">hook.Add( &quot;PostDrawOpaqueRenderables&quot;, &quot;Stencil Tutorial Example&quot;, function()
+
+	-- Reset everything to known good
+	render.SetStencilWriteMask( 0xFF )
+	render.SetStencilTestMask( 0xFF )
+	render.SetStencilReferenceValue( 0 )
+	render.SetStencilCompareFunction( STENCIL_ALWAYS )
+	render.SetStencilPassOperation( STENCIL_KEEP )
+	render.SetStencilFailOperation( STENCIL_KEEP )
+	render.SetStencilZFailOperation( STENCIL_KEEP )
+
+	-- Enable stencils
+	render.SetStencilEnable( true )
+	-- Set the reference value to 1. This is what the compare function tests against
+	render.SetStencilReferenceValue( 1 )
+	-- Refuse to write things to the screen unless that pixel's value is 1
+	render.SetStencilCompareFunction( STENCIL_EQUAL )
+	-- Set the entire screen to 0
+	render.ClearStencil()
+
+	-- Attempt to draw our entities. Nothing will draw, because nothing in the buffer is 1.
+	for _, ent in pairs( ents.FindByClass( &quot;sent_stencil_test&quot; ) ) do
+		ent:DrawModel()
+	end
+
+	-- Let everything render normally again
+	render.SetStencilEnable( false )
+end )</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><div class="thumb tleft"><div class="thumbinner" style="width:402px;"><a href="/page/File:stencil_clearbuffer_result.jpg" class="image"><img alt="stencil clearbuffer result.jpg" src="/images/thumb/3/3d/stencil_clearbuffer_result.jpg/400px-stencil_clearbuffer_result.jpg" width="400" height="224" class="thumbimage" /></a> <div class="thumbcaption"><div class="magnify"><a href="/page/File:stencil_clearbuffer_result.jpg" class="internal" title="Enlarge"><img src="/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div></div></div></div></div>
+
+

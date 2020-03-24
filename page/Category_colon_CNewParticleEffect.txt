@@ -1,0 +1,35 @@
+<p>This object represents a .pcf ( Orange Box ) particle system. Created by <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/CreateParticleEffect" title="Entity/CreateParticleEffect">CreateParticleEffect</a> and <a href="/page/Global/CreateParticleSystem" title="Global/CreateParticleSystem">CreateParticleSystem</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "CNewParticleEffect"</h2>
+<p>The following 23 pages are in this category, out of 23 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>C</h3>
+<ul><li><a href="/page/CNewParticleEffect/AddControlPoint" title="CNewParticleEffect/AddControlPoint">CNewParticleEffect/AddControlPoint</a></li>
+<li><a href="/page/CNewParticleEffect/GetAutoUpdateBBox" title="CNewParticleEffect/GetAutoUpdateBBox">CNewParticleEffect/GetAutoUpdateBBox</a></li>
+<li><a href="/page/CNewParticleEffect/GetEffectName" title="CNewParticleEffect/GetEffectName">CNewParticleEffect/GetEffectName</a></li>
+<li><a href="/page/CNewParticleEffect/GetHighestControlPoint" title="CNewParticleEffect/GetHighestControlPoint">CNewParticleEffect/GetHighestControlPoint</a></li>
+<li><a href="/page/CNewParticleEffect/GetOwner" title="CNewParticleEffect/GetOwner">CNewParticleEffect/GetOwner</a></li>
+<li><a href="/page/CNewParticleEffect/IsFinished" title="CNewParticleEffect/IsFinished">CNewParticleEffect/IsFinished</a></li>
+<li><a href="/page/CNewParticleEffect/IsValid" title="CNewParticleEffect/IsValid">CNewParticleEffect/IsValid</a></li>
+<li><a href="/page/CNewParticleEffect/IsViewModelEffect" title="CNewParticleEffect/IsViewModelEffect">CNewParticleEffect/IsViewModelEffect</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CNewParticleEffect/Render" title="CNewParticleEffect/Render">CNewParticleEffect/Render</a></li>
+<li><a href="/page/CNewParticleEffect/Restart" title="CNewParticleEffect/Restart">CNewParticleEffect/Restart</a></li>
+<li><a href="/page/CNewParticleEffect/SetControlPoint" title="CNewParticleEffect/SetControlPoint">CNewParticleEffect/SetControlPoint</a></li>
+<li><a href="/page/CNewParticleEffect/SetControlPointEntity" title="CNewParticleEffect/SetControlPointEntity">CNewParticleEffect/SetControlPointEntity</a></li>
+<li><a href="/page/CNewParticleEffect/SetControlPointForwardVector" title="CNewParticleEffect/SetControlPointForwardVector">CNewParticleEffect/SetControlPointForwardVector</a></li>
+<li><a href="/page/CNewParticleEffect/SetControlPointOrientation" title="CNewParticleEffect/SetControlPointOrientation">CNewParticleEffect/SetControlPointOrientation</a></li>
+<li><a href="/page/CNewParticleEffect/SetControlPointParent" title="CNewParticleEffect/SetControlPointParent">CNewParticleEffect/SetControlPointParent</a></li>
+<li><a href="/page/CNewParticleEffect/SetControlPointRightVector" title="CNewParticleEffect/SetControlPointRightVector">CNewParticleEffect/SetControlPointRightVector</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CNewParticleEffect/SetControlPointUpVector" title="CNewParticleEffect/SetControlPointUpVector">CNewParticleEffect/SetControlPointUpVector</a></li>
+<li><a href="/page/CNewParticleEffect/SetIsViewModelEffect" title="CNewParticleEffect/SetIsViewModelEffect">CNewParticleEffect/SetIsViewModelEffect</a></li>
+<li><a href="/page/CNewParticleEffect/SetShouldDraw" title="CNewParticleEffect/SetShouldDraw">CNewParticleEffect/SetShouldDraw</a></li>
+<li><a href="/page/CNewParticleEffect/SetSortOrigin" title="CNewParticleEffect/SetSortOrigin">CNewParticleEffect/SetSortOrigin</a></li>
+<li><a href="/page/CNewParticleEffect/StartEmission" title="CNewParticleEffect/StartEmission">CNewParticleEffect/StartEmission</a></li>
+<li><a href="/page/CNewParticleEffect/StopEmission" title="CNewParticleEffect/StopEmission">CNewParticleEffect/StopEmission</a></li>
+<li><a href="/page/CNewParticleEffect/StopEmissionAndDestroyImmediately" title="CNewParticleEffect/StopEmissionAndDestroyImmediately">CNewParticleEffect/StopEmissionAndDestroyImmediately</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

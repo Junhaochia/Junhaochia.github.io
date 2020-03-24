@@ -1,0 +1,13 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DLabel&#58;GetHighlight( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DLabel.GetHighlight">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DLabel/GetHighlight" title="Special:WhatLinksHere/DLabel/GetHighlight">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Returns whether the <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a> should set its text color to the current skin's highlighted text color.
+</p><p>See <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a>:<a href="/page/DLabel/SetHighlight" title="DLabel/SetHighlight">SetHighlight</a>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+</div>
+
+

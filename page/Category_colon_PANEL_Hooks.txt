@@ -1,0 +1,50 @@
+<p>This is a list of hooks that are available on all panels.
+</p><p>See also <a href="/page/Category_colon_Panel_Hooks" title="Category:Panel Hooks">Category:Panel_Hooks</a> for hooks that only work if your panel is based on other specific panels.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "PANEL Hooks"</h2>
+<p>The following 37 pages are in this category, out of 37 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>P</h3>
+<ul><li><a href="/page/PANEL/ActionSignal" title="PANEL/ActionSignal">PANEL/ActionSignal</a></li>
+<li><a href="/page/PANEL/AnimationThink" title="PANEL/AnimationThink">PANEL/AnimationThink</a></li>
+<li><a href="/page/PANEL/ApplySchemeSettings" title="PANEL/ApplySchemeSettings">PANEL/ApplySchemeSettings</a></li>
+<li><a href="/page/PANEL/DragHoverClick" title="PANEL/DragHoverClick">PANEL/DragHoverClick</a></li>
+<li><a href="/page/PANEL/DroppedOn" title="PANEL/DroppedOn">PANEL/DroppedOn</a></li>
+<li><a href="/page/PANEL/GenerateExample" title="PANEL/GenerateExample">PANEL/GenerateExample</a></li>
+<li><a href="/page/PANEL/Init" title="PANEL/Init">PANEL/Init</a></li>
+<li><a href="/page/PANEL/LoadCookies" title="PANEL/LoadCookies">PANEL/LoadCookies</a></li>
+<li><a href="/page/PANEL/OnActivate" title="PANEL/OnActivate">PANEL/OnActivate</a></li>
+<li><a href="/page/PANEL/OnChangeTargetURL" title="PANEL/OnChangeTargetURL">PANEL/OnChangeTargetURL</a></li>
+<li><a href="/page/PANEL/OnChangeTitle" title="PANEL/OnChangeTitle">PANEL/OnChangeTitle</a></li>
+<li><a href="/page/PANEL/OnChildAdded" title="PANEL/OnChildAdded">PANEL/OnChildAdded</a></li>
+<li><a href="/page/PANEL/OnChildRemoved" title="PANEL/OnChildRemoved">PANEL/OnChildRemoved</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/PANEL/OnChildViewCreated" title="PANEL/OnChildViewCreated">PANEL/OnChildViewCreated</a></li>
+<li><a href="/page/PANEL/OnCursorEntered" title="PANEL/OnCursorEntered">PANEL/OnCursorEntered</a></li>
+<li><a href="/page/PANEL/OnCursorExited" title="PANEL/OnCursorExited">PANEL/OnCursorExited</a></li>
+<li><a href="/page/PANEL/OnCursorMoved" title="PANEL/OnCursorMoved">PANEL/OnCursorMoved</a></li>
+<li><a href="/page/PANEL/OnDeactivate" title="PANEL/OnDeactivate">PANEL/OnDeactivate</a></li>
+<li><a href="/page/PANEL/OnDocumentReady" title="PANEL/OnDocumentReady">PANEL/OnDocumentReady</a></li>
+<li><a href="/page/PANEL/OnDrop" title="PANEL/OnDrop">PANEL/OnDrop</a></li>
+<li><a href="/page/PANEL/OnFocusChanged" title="PANEL/OnFocusChanged">PANEL/OnFocusChanged</a></li>
+<li><a href="/page/PANEL/OnKeyCodePressed" title="PANEL/OnKeyCodePressed">PANEL/OnKeyCodePressed</a></li>
+<li><a href="/page/PANEL/OnKeyCodeReleased" title="PANEL/OnKeyCodeReleased">PANEL/OnKeyCodeReleased</a></li>
+<li><a href="/page/PANEL/OnMousePressed" title="PANEL/OnMousePressed">PANEL/OnMousePressed</a></li>
+<li><a href="/page/PANEL/OnMouseReleased" title="PANEL/OnMouseReleased">PANEL/OnMouseReleased</a></li>
+<li><a href="/page/PANEL/OnMouseWheeled" title="PANEL/OnMouseWheeled">PANEL/OnMouseWheeled</a></li></ul></td>
+<td><h3>P cont.</h3>
+<ul><li><a href="/page/PANEL/OnRemove" title="PANEL/OnRemove">PANEL/OnRemove</a></li>
+<li><a href="/page/PANEL/OnScreenSizeChanged" title="PANEL/OnScreenSizeChanged">PANEL/OnScreenSizeChanged</a></li>
+<li><a href="/page/PANEL/OnSizeChanged" title="PANEL/OnSizeChanged">PANEL/OnSizeChanged</a></li>
+<li><a href="/page/PANEL/OnStartDragging" title="PANEL/OnStartDragging">PANEL/OnStartDragging</a></li>
+<li><a href="/page/PANEL/OnStopDragging" title="PANEL/OnStopDragging">PANEL/OnStopDragging</a></li>
+<li><a href="/page/PANEL/Paint" title="PANEL/Paint">PANEL/Paint</a></li>
+<li><a href="/page/PANEL/PaintOver" title="PANEL/PaintOver">PANEL/PaintOver</a></li>
+<li><a href="/page/PANEL/PerformLayout" title="PANEL/PerformLayout">PANEL/PerformLayout</a></li>
+<li><a href="/page/PANEL/PostAutoRefresh" title="PANEL/PostAutoRefresh">PANEL/PostAutoRefresh</a></li>
+<li><a href="/page/PANEL/PreAutoRefresh" title="PANEL/PreAutoRefresh">PANEL/PreAutoRefresh</a></li>
+<li><a href="/page/PANEL/Think" title="PANEL/Think">PANEL/Think</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

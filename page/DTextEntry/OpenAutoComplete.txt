@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DTextEntry&#58;OpenAutoComplete( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DTextEntry.OpenAutoComplete">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/vgui/dtextentry.lua#L213-232">View Source</a> - <a href="/page/Special:WhatLinksHere/DTextEntry/OpenAutoComplete" title="Special:WhatLinksHere/DTextEntry/OpenAutoComplete">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.<br /><br />You really should be using <a href="/page/Category_colon_DTextEntry" title="Category:DTextEntry">DTextEntry</a>:<a href="/page/DTextEntry/GetAutoComplete" title="DTextEntry/GetAutoComplete">GetAutoComplete</a> instead.</div>
+<p>Builds a <a href="/page/Category_colon_DMenu" title="Category:DMenu">DMenu</a> for the DTextEntry based on the input table.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> tab</span>
+</p>
+<div style="margin-left: 32px;">
+Table containing results from <a href="/page/Category_colon_DTextEntry" title="Category:DTextEntry">DTextEntry</a>:<a href="/page/DTextEntry/GetAutoComplete" title="DTextEntry/GetAutoComplete">GetAutoComplete</a>.</div>
+</div>
+
+

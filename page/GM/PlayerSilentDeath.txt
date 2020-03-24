@@ -1,0 +1,26 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>GM:PlayerSilentDeath( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.PlayerSilentDeath">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/PlayerSilentDeath" title="Special:WhatLinksHere/GM/PlayerSilentDeath">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when the player is killed by <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/KillSilent" title="Player/KillSilent">KillSilent</a>.<br />
+The player is already considered dead when this hook is called.
+</p>
+<ul><li> See <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerDeath" title="GM/PlayerDeath">PlayerDeath</a> for a hook which handles all other death causes.
+</li><li> <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PostPlayerDeath" title="GM/PostPlayerDeath">PostPlayerDeath</a> is called <b>after</b> this hook.
+</li></ul>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p><a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/Alive" title="Player/Alive">Alive</a> will return true in this hook.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply</span>
+</p>
+<div style="margin-left: 32px;">
+The player who was killed</div>
+</div>
+
+

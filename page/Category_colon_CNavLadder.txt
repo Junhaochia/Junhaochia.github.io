@@ -1,0 +1,34 @@
+<p>An object that represents a ladder for Nextbots.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "CNavLadder"</h2>
+<p>The following 22 pages are in this category, out of 22 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>C</h3>
+<ul><li><a href="/page/CNavLadder/ConnectTo" title="CNavLadder/ConnectTo">CNavLadder/ConnectTo</a></li>
+<li><a href="/page/CNavLadder/Disconnect" title="CNavLadder/Disconnect">CNavLadder/Disconnect</a></li>
+<li><a href="/page/CNavLadder/GetBottom" title="CNavLadder/GetBottom">CNavLadder/GetBottom</a></li>
+<li><a href="/page/CNavLadder/GetBottomArea" title="CNavLadder/GetBottomArea">CNavLadder/GetBottomArea</a></li>
+<li><a href="/page/CNavLadder/GetID" title="CNavLadder/GetID">CNavLadder/GetID</a></li>
+<li><a href="/page/CNavLadder/GetLength" title="CNavLadder/GetLength">CNavLadder/GetLength</a></li>
+<li><a href="/page/CNavLadder/GetNormal" title="CNavLadder/GetNormal">CNavLadder/GetNormal</a></li>
+<li><a href="/page/CNavLadder/GetPosAtHeight" title="CNavLadder/GetPosAtHeight">CNavLadder/GetPosAtHeight</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CNavLadder/GetTop" title="CNavLadder/GetTop">CNavLadder/GetTop</a></li>
+<li><a href="/page/CNavLadder/GetTopBehindArea" title="CNavLadder/GetTopBehindArea">CNavLadder/GetTopBehindArea</a></li>
+<li><a href="/page/CNavLadder/GetTopForwardArea" title="CNavLadder/GetTopForwardArea">CNavLadder/GetTopForwardArea</a></li>
+<li><a href="/page/CNavLadder/GetTopLeftArea" title="CNavLadder/GetTopLeftArea">CNavLadder/GetTopLeftArea</a></li>
+<li><a href="/page/CNavLadder/GetTopRightArea" title="CNavLadder/GetTopRightArea">CNavLadder/GetTopRightArea</a></li>
+<li><a href="/page/CNavLadder/GetWidth" title="CNavLadder/GetWidth">CNavLadder/GetWidth</a></li>
+<li><a href="/page/CNavLadder/IsConnectedAtSide" title="CNavLadder/IsConnectedAtSide">CNavLadder/IsConnectedAtSide</a></li>
+<li><a href="/page/CNavLadder/IsValid" title="CNavLadder/IsValid">CNavLadder/IsValid</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CNavLadder/Remove" title="CNavLadder/Remove">CNavLadder/Remove</a></li>
+<li><a href="/page/CNavLadder/SetBottomArea" title="CNavLadder/SetBottomArea">CNavLadder/SetBottomArea</a></li>
+<li><a href="/page/CNavLadder/SetTopBehindArea" title="CNavLadder/SetTopBehindArea">CNavLadder/SetTopBehindArea</a></li>
+<li><a href="/page/CNavLadder/SetTopForwardArea" title="CNavLadder/SetTopForwardArea">CNavLadder/SetTopForwardArea</a></li>
+<li><a href="/page/CNavLadder/SetTopLeftArea" title="CNavLadder/SetTopLeftArea">CNavLadder/SetTopLeftArea</a></li>
+<li><a href="/page/CNavLadder/SetTopRightArea" title="CNavLadder/SetTopRightArea">CNavLadder/SetTopRightArea</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>math.sinh( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=math.sinh">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/math/sinh" title="Special:WhatLinksHere/math/sinh">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the <a href="https://en.wikipedia.org/wiki/hyperbolic_sine" class="extiw" title="wikipedia:hyperbolic sine">hyperbolic sine</a> of the given angle.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> number</span>
+</p>
+<div style="margin-left: 32px;">
+Angle in radians.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The hyperbolic sine of the given angle.</div>
+</div>
+
+

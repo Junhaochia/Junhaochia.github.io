@@ -1,0 +1,63 @@
+<p>By default entities are only transmitted to a player if it's in the same PVS. What that means is that the player is only receiving information over the network about entities they can see.
+</p><p>You might not want this to happen.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#First_of_all"><span class="tocnumber">1</span> <span class="toctext">First of all</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Always_Transmit"><span class="tocnumber">2</span> <span class="toctext">Always Transmit</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Never_Transmit"><span class="tocnumber">3</span> <span class="toctext">Never Transmit</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#PVS_Transmit"><span class="tocnumber">4</span> <span class="toctext">PVS Transmit</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Hiding_from_certain_players"><span class="tocnumber">5</span> <span class="toctext">Hiding from certain players</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="First_of_all">First of all</span></h1>
+<p>This guide deals with both scripted and non-scripted entities.
+</p><p>On a scripted entity, you need to call <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/AddEFlags" title="Entity/AddEFlags">AddEFlags</a>( EFL_FORCE_CHECK_TRANSMIT ) every time <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/UpdateTransmitState" title="ENTITY/UpdateTransmitState">UpdateTransmitState</a> should be called. You can do it in <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/Initialize" title="ENTITY/Initialize">Initialize</a>:
+</p>
+<pre><code data-language="lua">function ENT:Initialize()
+	-- .....
+	self:AddEFlags( EFL_FORCE_CHECK_TRANSMIT )
+	-- .....
+end</code></pre>
+<p>Non-scripted entities will never have their <a href="/page/Category_colon_ENTITY_Hooks" title="Category:ENTITY Hooks">ENTITY</a>:<a href="/page/ENTITY/UpdateTransmitState" title="ENTITY/UpdateTransmitState">UpdateTransmitState</a> called so you should not use <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/AddEFlags" title="Entity/AddEFlags">AddEFlags</a>( EFL_FORCE_CHECK_TRANSMIT ).
+</p>
+<h1> <span class="mw-headline" id="Always_Transmit">Always Transmit</span></h1>
+<p>If you want your entity to always transmit to all players, add this to your entity server side.
+</p>
+<pre><code data-language="lua">function ENT:UpdateTransmitState()	
+	return TRANSMIT_ALWAYS 
+end</code></pre>
+<p>This is useful if you have an entity that controls gamerules. For instance - imagine your gamemode has a round timer. You could have an entity to represent the round timer with accessors for whether the round is started and what time it ends. Clientside when the entity was created you'd store a global variable with its entity pointer (set the value in the entity's Initialize function) and could update the information on the HUD based on that entity.
+</p><p>On a non-scripted entity, you only can force it to always be in PVS:
+</p>
+<pre><code data-language="lua">entity:AddEFlags( EFL_IN_SKYBOX )</code></pre>
+<p>Unlike TRANSMIT_ALWAYS, this will not force a non-networked entity to be networked.
+</p>
+<h1> <span class="mw-headline" id="Never_Transmit">Never Transmit</span></h1>
+<p>Sometimes entities are for serverside usage only. To make them never get sent to the client you can add this to your entity.
+</p>
+<pre><code data-language="lua">function ENT:UpdateTransmitState()	
+	return TRANSMIT_NEVER
+end</code></pre>
+<p>The client will never even know the entity exists. This is useful for things like player spawn points - which the server uses but the client doesn't need to be aware of.
+</p><p>This is the default setting of point based entities.
+</p>
+<h1> <span class="mw-headline" id="PVS_Transmit">PVS Transmit</span></h1>
+<p>The default setting is..
+</p>
+<pre><code data-language="lua">function ENT:UpdateTransmitState()	
+	return TRANSMIT_PVS
+end</code></pre>
+<p>If you make a base_point based entity and want it to transmit like a normal entity you'll need to add this.
+</p>
+<h1> <span class="mw-headline" id="Hiding_from_certain_players">Hiding from certain players</span></h1>
+<p>You can prevent certain entities from transmitting to certain players by calling
+</p>
+<pre><code data-language="lua">entity:SetPreventTransmit( ply, true )</code></pre>
+<p>If you want to allow it to transmit again you can call
+</p>
+<pre><code data-language="lua">entity:SetPreventTransmit( ply, false )</code></pre>
+<p>This only works to block the player from receiving - and not the other way around (you can't have the entity TRANSMIT_NEVER and use this function to only send to certain players).
+</p>
+
+

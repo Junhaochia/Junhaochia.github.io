@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>CNavArea&#58;HasAttributes( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CNavArea.HasAttributes">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CNavArea/HasAttributes" title="Special:WhatLinksHere/CNavArea/HasAttributes">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns true if the given <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> has this attribute flag set.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> attribs</span>
+</p>
+<div style="margin-left: 32px;">
+Attribute mask to check for, see <a href="/page/Enums/NAV_MESH" title="Enums/NAV MESH">NAV_MESH_ Enums</a></div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+True if the <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> matches the given mask. False otherwise.</div>
+</div>
+
+

@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>debug.getfenv( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=debug.getfenv">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/debug/getfenv" title="Special:WhatLinksHere/debug/getfenv">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the environment of the passed object. This can be set with <a href="/page/Category_colon_debug" title="Category:debug">debug</a>.<a href="/page/debug/setfenv" title="debug/setfenv">setfenv</a>
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> object</span>
+</p>
+<div style="margin-left: 32px;">
+Object to get environment of</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+Environment</div>
+</div>
+
+

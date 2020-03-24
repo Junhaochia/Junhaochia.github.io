@@ -1,0 +1,27 @@
+<div class="function_line">
+<span class="menu" title="Menu">&#160;</span>serverlist.PlayerList( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=serverlist.PlayerList">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/serverlist/PlayerList" title="Special:WhatLinksHere/serverlist/PlayerList">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Queries a server for its player list.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> ip</span>
+</p>
+<div style="margin-left: 32px;">
+The IP address of the server, including the port.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> callback</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The function to be called if and when the request finishes. Function has one argument, a table containing tables with player info.
+</p><p>Each table with player info has next fields:<br />
+<a href="/page/Category_colon_number" title="Category:number">number</a> time - The amount of time the player is playing on the server, in seconds<br />
+<a href="/page/Category_colon_string" title="Category:string">string</a> name - The player name<br />
+<a href="/page/Category_colon_number" title="Category:number">number</a> score - The players score<br />
+</p>
+<br /></div>
+</div>
+
+

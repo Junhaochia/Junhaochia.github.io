@@ -1,0 +1,44 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;SetLastPosition( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.SetLastPosition">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/SetLastPosition" title="Special:WhatLinksHere/NPC/SetLastPosition">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the last registered or memorized position for an npc. When using scheduling, the NPC will focus on navigating to the last position via nodes.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>The navigation requires ground nodes to function properly, otherwise the NPC could only navigate in a small area. (<a rel="nofollow" class="external free" href="https://developer.valvesoftware.com/wiki/Info_node">https://developer.valvesoftware.com/wiki/Info_node</a>)
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> Position</span>
+</p>
+<div style="margin-left: 32px;">
+Where the NPC's last position will be set.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Make an NPC chase a player
+</p>
+<pre><code data-language="lua">function NPCGoGoRun(npc, ply)
+	npc:SetLastPosition( ply:GetPos() )
+	npc:SetSchedule( SCHED_FORCED_GO_RUN )
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">The NPC will chase the player.</div>
+
+

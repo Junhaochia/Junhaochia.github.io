@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;DragClick( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.DragClick">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/DragClick" title="Special:WhatLinksHere/Panel/DragClick">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div> Called by <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/DragMouseRelease" title="Panel/DragMouseRelease">DragMouseRelease</a> when a user clicks one mouse button whilst dragging with another.
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Always returns <i>true</i>.</div>
+</div>
+
+

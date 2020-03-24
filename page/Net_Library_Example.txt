@@ -1,0 +1,106 @@
+<p>Here is a simple example of how to use the net library. You can save this file as <i>garrysmod/garrysmod/lua/autorun/net_example.lua</i>
+</p>
+<pre><code data-language="lua">
+
+
+
+--[[ 
+	Basic sequence of events:
+	
+		0. We register network strings and callback functions for &quot;MsgName&quot;. 
+			This happens WAY before we start sending or receiving messages.
+			In most cases, you do this as files are first loaded.
+	
+		1. net.Start() is called and the name of the net message is saved.
+		2. All future net.WriteBlah()'s are saved in a table somewhere.
+		3. net.Send(target) or net.SendToServer() is called.
+		4. All the saved data (including the message name) is encoded and sent directly to the receiver.
+		
+		5. The receiver gets the message.
+		6. The receiver reads the name of the message.
+		7. If a net.Receive() entry exists with that name (see step 0), we run the function attached to it.
+		8. Any net.ReadBlah()'s run inside that function will snag a chunk of data from the net message.
+		9. Once the function is finished, the unused part of the received message is discarded.
+		
+
+]]
+
+if SERVER then
+	
+	
+	-- Register &quot;MsgName&quot; as a net message we expect to see at some point.
+	util.AddNetworkString(&quot;MsgName&quot;)
+	
+	
+	
+	
+	--Define a callback function:
+		-- Player argument is server-only. 
+		-- Clients have only the length argument, which is the total size of the message in bytes (so 1024 is 1 KB of data received for example).
+	local MsgNameReceived = function( lengthOfMessageReceived, playerWhoSentTheMessageToUs )
+		
+		-- Note how we read them all in the same order as they are written:
+		local var1 = net.ReadType() --Read the first part of the message.
+		local var2 = net.ReadString() --Read the second part of the message.
+		local var3 = net.ReadEntity() --Read the third part of the message.
+		local var4 = net.ReadString() --Read the fourth part of the message.
+		
+		
+		-- Now let's print them out with tabs between each one:
+		print(lengthOfMessageReceived, playerWhoSentTheMessageToUs, var1, var2, var3, var4)
+		
+		
+	end
+	
+	-- Now that we defined a callback function, we register it with the net system using net.Receive()
+	net.Receive(&quot;MsgName&quot;, MsgNameReceived)
+
+	-- Now any time we receive a message named &quot;MsgName&quot;, we will run MsgNameReceived() with arguments 'lengthOfMessageReceived' and 'playerWhoSentTheMessageToUs'.
+	
+	
+	
+	
+elseif CLIENT then
+	
+	-- Define some data to be used in our test net message:
+	local data1 = 3
+	local data2 = &quot;swagswag&quot;
+	local data3 = Player(1)
+	local data4 = &quot;other string&quot;
+	
+	
+
+	function SendOurData()
+		-- Start building a packet. All further net.WriteBlah()'s will be stored until we say to send.
+		net.Start(&quot;MsgName&quot;)
+
+			--Item 1: unknown data type.
+			net.WriteType( data1 ) -- You can actually use this function if you're not sure what kind of data you're sending. (It secretly sends an integer which explains to the receiver what kind of data it is, so it's slightly less efficient.)
+			
+			-- Item 2: a string.
+			net.WriteString( data2 )
+			
+			-- Item 3: a pointer to an entity.
+			net.WriteEntity( data3 )
+			
+			-- Item 4: Another string.
+			net.WriteString( data4 )
+			
+			
+		net.SendToServer() --Send all the data between now and the last net.Start() to the server.
+	end
+	
+	-- To test this file, use the following console command.
+	concommand.Add(&quot;test_net_messages&quot;,SendOurData)
+	
+	
+	
+	
+	
+	
+end
+</code></pre>
+<p>--<a href="/page/User:Bobblehead" title="User:Bobblehead">Bobblehead</a> 18:21, 11 February 2016 (UTC)
+</p>
+
+

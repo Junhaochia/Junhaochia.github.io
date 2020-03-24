@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DMenu&#58;SetOpenSubMenu( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DMenu.SetOpenSubMenu">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DMenu/SetOpenSubMenu" title="Special:WhatLinksHere/DMenu/SetOpenSubMenu">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div>
+<p>Used internally to store the open submenu by <a href="/page/Category_colon_DMenu" title="Category:DMenu">DMenu</a>:<a href="/page/DMenu/Hide" title="DMenu/Hide">Hide</a>, <a href="/page/Category_colon_DMenu" title="Category:DMenu">DMenu</a>:<a href="/page/DMenu/OpenSubMenu" title="DMenu/OpenSubMenu">OpenSubMenu</a>, <a href="/page/Category_colon_DMenu" title="Category:DMenu">DMenu</a>:<a href="/page/DMenu/CloseSubMenu" title="DMenu/CloseSubMenu">CloseSubMenu</a>
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> item</span>
+</p>
+<div style="margin-left: 32px;">
+The menu to store</div>
+</div>
+
+

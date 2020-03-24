@@ -1,0 +1,141 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>debug.getlocal( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=debug.getlocal">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/debug/getlocal" title="Special:WhatLinksHere/debug/getlocal">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">5</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Returns_2"><span class="tocnumber">6</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">7</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">7.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Examples_2"><span class="tocnumber">8</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example_2"><span class="tocnumber">8.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Gets the name and value of a local variable indexed from the level
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>When a function has a tailcall return, you cannot access the locals of this function
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_thread" title="Category:thread">thread</a> thread=Current thread</span>
+</p>
+<div style="margin-left: 32px;">
+The thread</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> level</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The level above the thread.
+0 = the function that was called (most always this function)'s arguments
+</p><p>1 = the thread that had called this function.
+</p><p>2 = the thread that had called the function that started the thread that called this function.
+</p>
+A function defined in Lua can also be passed as the level. The index will specify the parameter's name to be returned (a parameter will have a value of nil).</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> index</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The variable's index you want to get.
+</p><p>1 = the first local defined in the thread
+</p><p>2 = the second local defined in the thread
+</p>
+etc...</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>The name of the variable
+</p><p>Sometimes this will be "(*temporary)" if the local variable had no name.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Variables with names starting with <b>(</b> are <b>internal variables</b>.
+</p>
+</td></tr></table></div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns_2">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_any" title="Category:any">any</a></span>
+</p>
+<div style="margin-left: 32px;">
+The value of the local variable.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Gets all the local variables of the current thread and stores them in a table.
+</p>
+<pre><code data-language="lua">local name, value;
+local NIL = {} -- to represent nil variables
+local locals = {}
+local i = 1
+while( true ) do
+    name, value = debug.getlocal( 1, i )
+    if ( name == nil ) then break end
+    locals[ name ] = value == nil and NIL or value
+	i = i + 1
+end
+
+for k,v in pairs( locals ) do 
+	print( k, v )
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><pre><code data-language="lua">
+locals	table: 0x274a8dc0
+value	table: 0x274a8d98
+NIL	table: 0x274a8d98
+name	table: 0x274a8d98
+i	5
+</code></pre></div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples_2">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example_2">Example</span></h2>
+<p>Prints the parameter names for <a href="/page/Category_colon_hook" title="Category:hook">hook</a>.<a href="/page/hook/Add" title="hook/Add">Add</a>
+</p>
+<pre><code data-language="lua">local print = print
+local getlocal = debug.getlocal
+
+local function PrintFunctionParameters(func)
+	local k = 2
+	local param = getlocal(func, 1)
+	while param ~= nil do
+		print(param)
+		param = getlocal(func, k)
+		k = k + 1
+	end
+end
+
+PrintFunctionParameters(hook.Add)</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><pre><code data-language="lua">
+event_name
+name
+func
+</code></pre></div>
+
+

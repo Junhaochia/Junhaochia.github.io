@@ -1,0 +1,61 @@
+<p>This is a list of all methods only available for vehicles. It is also possible to call <a rel="nofollow" class="external text" href="/index.php?title=Category:Entity">Entity</a> functions on vehicles.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Vehicle"</h2>
+<p>The following 49 pages are in this category, out of 49 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>V</h3>
+<ul><li><a href="/page/Vehicle/BoostTimeLeft" title="Vehicle/BoostTimeLeft">Vehicle/BoostTimeLeft</a></li>
+<li><a href="/page/Vehicle/CheckExitPoint" title="Vehicle/CheckExitPoint">Vehicle/CheckExitPoint</a></li>
+<li><a href="/page/Vehicle/EnableEngine" title="Vehicle/EnableEngine">Vehicle/EnableEngine</a></li>
+<li><a href="/page/Vehicle/GetAmmo" title="Vehicle/GetAmmo">Vehicle/GetAmmo</a></li>
+<li><a href="/page/Vehicle/GetCameraDistance" title="Vehicle/GetCameraDistance">Vehicle/GetCameraDistance</a></li>
+<li><a href="/page/Vehicle/GetDriver" title="Vehicle/GetDriver">Vehicle/GetDriver</a></li>
+<li><a href="/page/Vehicle/GetHLSpeed" title="Vehicle/GetHLSpeed">Vehicle/GetHLSpeed</a></li>
+<li><a href="/page/Vehicle/GetMaxSpeed" title="Vehicle/GetMaxSpeed">Vehicle/GetMaxSpeed</a></li>
+<li><a href="/page/Vehicle/GetOperatingParams" title="Vehicle/GetOperatingParams">Vehicle/GetOperatingParams</a></li>
+<li><a href="/page/Vehicle/GetPassenger" title="Vehicle/GetPassenger">Vehicle/GetPassenger</a></li>
+<li><a href="/page/Vehicle/GetPassengerSeatPoint" title="Vehicle/GetPassengerSeatPoint">Vehicle/GetPassengerSeatPoint</a></li>
+<li><a href="/page/Vehicle/GetRPM" title="Vehicle/GetRPM">Vehicle/GetRPM</a></li>
+<li><a href="/page/Vehicle/GetSpeed" title="Vehicle/GetSpeed">Vehicle/GetSpeed</a></li>
+<li><a href="/page/Vehicle/GetSteering" title="Vehicle/GetSteering">Vehicle/GetSteering</a></li>
+<li><a href="/page/Vehicle/GetSteeringDegrees" title="Vehicle/GetSteeringDegrees">Vehicle/GetSteeringDegrees</a></li>
+<li><a href="/page/Vehicle/GetThirdPersonMode" title="Vehicle/GetThirdPersonMode">Vehicle/GetThirdPersonMode</a></li>
+<li><a href="/page/Vehicle/GetThrottle" title="Vehicle/GetThrottle">Vehicle/GetThrottle</a></li></ul></td>
+<td><h3>V cont.</h3>
+<ul><li><a href="/page/Vehicle/GetVehicleClass" title="Vehicle/GetVehicleClass">Vehicle/GetVehicleClass</a></li>
+<li><a href="/page/Vehicle/GetVehicleParams" title="Vehicle/GetVehicleParams">Vehicle/GetVehicleParams</a></li>
+<li><a href="/page/Vehicle/GetVehicleViewPosition" title="Vehicle/GetVehicleViewPosition">Vehicle/GetVehicleViewPosition</a></li>
+<li><a href="/page/Vehicle/GetWheel" title="Vehicle/GetWheel">Vehicle/GetWheel</a></li>
+<li><a href="/page/Vehicle/GetWheelBaseHeight" title="Vehicle/GetWheelBaseHeight">Vehicle/GetWheelBaseHeight</a></li>
+<li><a href="/page/Vehicle/GetWheelContactPoint" title="Vehicle/GetWheelContactPoint">Vehicle/GetWheelContactPoint</a></li>
+<li><a href="/page/Vehicle/GetWheelCount" title="Vehicle/GetWheelCount">Vehicle/GetWheelCount</a></li>
+<li><a href="/page/Vehicle/GetWheelTotalHeight" title="Vehicle/GetWheelTotalHeight">Vehicle/GetWheelTotalHeight</a></li>
+<li><a href="/page/Vehicle/HasBoost" title="Vehicle/HasBoost">Vehicle/HasBoost</a></li>
+<li><a href="/page/Vehicle/HasBrakePedal" title="Vehicle/HasBrakePedal">Vehicle/HasBrakePedal</a></li>
+<li><a href="/page/Vehicle/IsBoosting" title="Vehicle/IsBoosting">Vehicle/IsBoosting</a></li>
+<li><a href="/page/Vehicle/IsEngineEnabled" title="Vehicle/IsEngineEnabled">Vehicle/IsEngineEnabled</a></li>
+<li><a href="/page/Vehicle/IsEngineStarted" title="Vehicle/IsEngineStarted">Vehicle/IsEngineStarted</a></li>
+<li><a href="/page/Vehicle/IsValidVehicle" title="Vehicle/IsValidVehicle">Vehicle/IsValidVehicle</a></li>
+<li><a href="/page/Vehicle/IsVehicleBodyInWater" title="Vehicle/IsVehicleBodyInWater">Vehicle/IsVehicleBodyInWater</a></li>
+<li><a href="/page/Vehicle/ReleaseHandbrake" title="Vehicle/ReleaseHandbrake">Vehicle/ReleaseHandbrake</a></li>
+<li><a href="/page/Vehicle/SetBoost" title="Vehicle/SetBoost">Vehicle/SetBoost</a></li></ul></td>
+<td><h3>V cont.</h3>
+<ul><li><a href="/page/Vehicle/SetCameraDistance" title="Vehicle/SetCameraDistance">Vehicle/SetCameraDistance</a></li>
+<li><a href="/page/Vehicle/SetHandbrake" title="Vehicle/SetHandbrake">Vehicle/SetHandbrake</a></li>
+<li><a href="/page/Vehicle/SetHasBrakePedal" title="Vehicle/SetHasBrakePedal">Vehicle/SetHasBrakePedal</a></li>
+<li><a href="/page/Vehicle/SetMaxReverseThrottle" title="Vehicle/SetMaxReverseThrottle">Vehicle/SetMaxReverseThrottle</a></li>
+<li><a href="/page/Vehicle/SetMaxThrottle" title="Vehicle/SetMaxThrottle">Vehicle/SetMaxThrottle</a></li>
+<li><a href="/page/Vehicle/SetSpringLength" title="Vehicle/SetSpringLength">Vehicle/SetSpringLength</a></li>
+<li><a href="/page/Vehicle/SetSteering" title="Vehicle/SetSteering">Vehicle/SetSteering</a></li>
+<li><a href="/page/Vehicle/SetSteeringDegrees" title="Vehicle/SetSteeringDegrees">Vehicle/SetSteeringDegrees</a></li>
+<li><a href="/page/Vehicle/SetThirdPersonMode" title="Vehicle/SetThirdPersonMode">Vehicle/SetThirdPersonMode</a></li>
+<li><a href="/page/Vehicle/SetThrottle" title="Vehicle/SetThrottle">Vehicle/SetThrottle</a></li>
+<li><a href="/page/Vehicle/SetVehicleClass" title="Vehicle/SetVehicleClass">Vehicle/SetVehicleClass</a></li>
+<li><a href="/page/Vehicle/SetVehicleEntryAnim" title="Vehicle/SetVehicleEntryAnim">Vehicle/SetVehicleEntryAnim</a></li>
+<li><a href="/page/Vehicle/SetVehicleParams" title="Vehicle/SetVehicleParams">Vehicle/SetVehicleParams</a></li>
+<li><a href="/page/Vehicle/SetWheelFriction" title="Vehicle/SetWheelFriction">Vehicle/SetWheelFriction</a></li>
+<li><a href="/page/Vehicle/StartEngine" title="Vehicle/StartEngine">Vehicle/StartEngine</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

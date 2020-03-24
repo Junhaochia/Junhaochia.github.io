@@ -1,0 +1,158 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_Button" title="Category:Button">Button</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ImageCheckBox">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/vgui/imagecheckbox.lua">View Source</a> - <a href="/page/Special:WhatLinksHere/Category:ImageCheckBox" title="Special:WhatLinksHere/Category:ImageCheckBox">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Hooks"><span class="tocnumber">2</span> <span class="toctext">Hooks</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">3</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>A checkbox panel similar to <a href="/page/Category_colon_DCheckBox" title="Category:DCheckBox">DCheckBox</a> and <a href="/page/Category_colon_DImageButton" title="Category:DImageButton">DImageButton</a> with customizable checked state image.
+</p><p>Uses the <a href="/page/Category_colon_Material" title="Category:Material">Material</a> panel internally. Can't have a label.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Will error if no material was set.
+</p>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Hooks"> Hooks </span></h1>
+<p>Overrides the following hooks excluding hooks used by <a href="/page/Category_colon_Button" title="Category:Button">Button</a>:
+</p>
+<div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+<ul><li> <a href="/page/PANEL/Paint" title="PANEL/Paint">PANEL/Paint</a>
+</li><li> <a href="/page/PANEL/PerformLayout" title="PANEL/PerformLayout">PANEL/PerformLayout</a>
+</li></ul>
+</div>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_Button" title="Category:Button">Button</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DLabel/DoClickInternal" title="DLabel/DoClickInternal">DLabel/DoClickInternal</a></li>
+<li><a href="/page/DLabel/DoDoubleClickInternal" title="DLabel/DoDoubleClickInternal">DLabel/DoDoubleClickInternal</a></li>
+<li><a href="/page/DLabel/DoRightClick" title="DLabel/DoRightClick">DLabel/DoRightClick</a></li>
+<li><a href="/page/DLabel/GetAutoStretchVertical" title="DLabel/GetAutoStretchVertical">DLabel/GetAutoStretchVertical</a></li>
+<li><a href="/page/DLabel/GetBright" title="DLabel/GetBright">DLabel/GetBright</a></li>
+<li><a href="/page/DLabel/GetColor" title="DLabel/GetColor">DLabel/GetColor</a></li>
+<li><a href="/page/DLabel/GetDark" title="DLabel/GetDark">DLabel/GetDark</a></li>
+<li><a href="/page/DLabel/GetDisabled" title="DLabel/GetDisabled">DLabel/GetDisabled</a></li>
+<li><a href="/page/DLabel/GetDoubleClickingEnabled" title="DLabel/GetDoubleClickingEnabled">DLabel/GetDoubleClickingEnabled</a></li>
+<li><a href="/page/DLabel/GetFont" title="DLabel/GetFont">DLabel/GetFont</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DLabel/GetHighlight" title="DLabel/GetHighlight">DLabel/GetHighlight</a></li>
+<li><a href="/page/DLabel/GetIsToggle" title="DLabel/GetIsToggle">DLabel/GetIsToggle</a></li>
+<li><a href="/page/DLabel/GetTextColor" title="DLabel/GetTextColor">DLabel/GetTextColor</a></li>
+<li><a href="/page/DLabel/GetTextStyleColor" title="DLabel/GetTextStyleColor">DLabel/GetTextStyleColor</a></li>
+<li><a href="/page/DLabel/GetToggle" title="DLabel/GetToggle">DLabel/GetToggle</a></li>
+<li><a href="/page/DLabel/SetAutoStretchVertical" title="DLabel/SetAutoStretchVertical">DLabel/SetAutoStretchVertical</a></li>
+<li><a href="/page/DLabel/SetBright" title="DLabel/SetBright">DLabel/SetBright</a></li>
+<li><a href="/page/DLabel/SetColor" title="DLabel/SetColor">DLabel/SetColor</a></li>
+<li><a href="/page/DLabel/SetDark" title="DLabel/SetDark">DLabel/SetDark</a></li>
+<li><a href="/page/DLabel/SetDisabled" title="DLabel/SetDisabled">DLabel/SetDisabled</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DLabel/SetDoubleClickingEnabled" title="DLabel/SetDoubleClickingEnabled">DLabel/SetDoubleClickingEnabled</a></li>
+<li><a href="/page/DLabel/SetFont" title="DLabel/SetFont">DLabel/SetFont</a></li>
+<li><a href="/page/DLabel/SetHighlight" title="DLabel/SetHighlight">DLabel/SetHighlight</a></li>
+<li><a href="/page/DLabel/SetIsToggle" title="DLabel/SetIsToggle">DLabel/SetIsToggle</a></li>
+<li><a href="/page/DLabel/SetTextColor" title="DLabel/SetTextColor">DLabel/SetTextColor</a></li>
+<li><a href="/page/DLabel/SetTextStyleColor" title="DLabel/SetTextStyleColor">DLabel/SetTextStyleColor</a></li>
+<li><a href="/page/DLabel/SetToggle" title="DLabel/SetToggle">DLabel/SetToggle</a></li>
+<li><a href="/page/DLabel/Toggle" title="DLabel/Toggle">DLabel/Toggle</a></li>
+<li><a href="/page/DLabel/UpdateColours" title="DLabel/UpdateColours">DLabel/UpdateColours</a></li>
+<li><a href="/page/DLabel/UpdateFGColor" title="DLabel/UpdateFGColor">DLabel/UpdateFGColor</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Example of <strong class="selflink">ImageCheckBox</strong> usage.
+</p>
+<pre><code data-language="lua">local DFrame = vgui.Create( &quot;DFrame&quot; ) -- Create DFrame
+DFrame:SetSize( 300, 305 ) -- Set its size
+DFrame:Center() -- Center it
+DFrame:SetTitle( &quot;Check list&quot; ) -- Set a title for it
+DFrame:MakePopup() -- Make popup
+DFrame.Items = {} -- Create table to store lines
+
+local Head = DFrame:Add( &quot;DPanel&quot; ) -- Create head line
+Head:Dock( TOP ) -- Dock it
+Head:SetHeight( 20 ) -- Set height
+
+function Head:Paint( w, h )
+	local completed = 0 -- Variable to store amount of checked ImageCheckBox'es
+
+	for k, v in ipairs( DFrame.Items ) do
+		if ( v.ImageCheckBox:GetChecked() ) then
+			completed = completed + 1 -- Get ImageCheckBox'es state and count checked
+		end
+	end
+
+	draw.SimpleText( &quot;You've completed &quot; .. completed .. &quot; of &quot; .. #DFrame.Items .. &quot; items&quot;, &quot;DermaDefaultBold&quot;, w / 2, h / 2, Color( 255, 255, 255 ), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER ) -- Draw the text
+end
+
+-- Convenience function to quickly add items
+local function addItem( text )
+	local RulePanel = DFrame:Add( &quot;DPanel&quot; ) -- Create container for this item
+	RulePanel:Dock( TOP ) -- Dock it
+	RulePanel:DockMargin( 0, 1, 0, 0 ) -- Add 1 pixel spacing in between each item
+	table.insert( DFrame.Items, RulePanel ) -- Add to list of lines
+
+	local ImageCheckBox = RulePanel:Add( &quot;ImageCheckBox&quot; ) -- Create checkbox with image
+	ImageCheckBox:SetMaterial( &quot;icon16/accept.png&quot; ) -- Set its image
+	ImageCheckBox:SetWidth( 24 ) -- Make the check box a bit wider than the image so it looks nicer
+	ImageCheckBox:Dock( LEFT ) -- Dock it
+	ImageCheckBox:SetChecked( false ) -- Set unchecked
+	RulePanel.ImageCheckBox = ImageCheckBox -- Add reference to call
+
+	local DLabel = RulePanel:Add( &quot;DLabel&quot; ) -- Create text
+	DLabel:SetText( text ) -- Set the text
+	DLabel:Dock( FILL ) -- Dock it
+	DLabel:DockMargin( 5, 0, 0, 0 ) -- Move the text to the right a little
+	DLabel:SetTextColor( Color( 0, 0, 0 ) ) -- Set text color to black
+end
+
+-- Adding items
+addItem( &quot;Learn something&quot; )
+addItem( &quot;Do something&quot; )
+addItem( &quot;Make something&quot; )
+addItem( &quot;Create something&quot; )
+addItem( &quot;Play something&quot; )
+addItem( &quot;Test something&quot; )
+addItem( &quot;Write a really long item for testing purposes&quot; )
+addItem( &quot;Break something&quot; )
+addItem( &quot;Rebuild something&quot; )
+addItem( &quot;Release something&quot; )</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:ImageCheckBox_Example.gif" class="image"><img alt="ImageCheckBox Example.gif" src="/images/c/c9/ImageCheckBox_Example.gif" width="300" height="305" /></a></div>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "ImageCheckBox"</h2>
+<p>The following 4 pages are in this category, out of 4 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>I</h3>
+<ul><li><a href="/page/ImageCheckBox/GetChecked" title="ImageCheckBox/GetChecked">ImageCheckBox/GetChecked</a></li><li><a href="/page/ImageCheckBox/Set" title="ImageCheckBox/Set">ImageCheckBox/Set</a></li><li><a href="/page/ImageCheckBox/SetChecked" title="ImageCheckBox/SetChecked">ImageCheckBox/SetChecked</a></li><li><a href="/page/ImageCheckBox/SetMaterial" title="ImageCheckBox/SetMaterial">ImageCheckBox/SetMaterial</a></li></ul></div>
+</div></div>

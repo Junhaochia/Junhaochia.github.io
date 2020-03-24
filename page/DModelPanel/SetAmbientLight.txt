@@ -1,0 +1,44 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DModelPanel&#58;SetAmbientLight( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DModelPanel.SetAmbientLight">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DModelPanel/SetAmbientLight" title="Special:WhatLinksHere/DModelPanel/SetAmbientLight">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelFunc"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelFunc</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sets the ambient lighting used on the rendered entity.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> color</span>
+</p>
+<div style="margin-left: 32px;">
+The color of the ambient lighting.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Displays a model panel with a watermelon that has red ambient lighting.
+</p>
+<pre><code data-language="lua">BGPanel = vgui.Create(&quot;DPanel&quot;)
+BGPanel:SetPos(20, 20)
+BGPanel:SetSize(200, 200)
+	
+local mdl = vgui.Create(&quot;DModelPanel&quot;, BGPanel)
+mdl:SetSize(BGPanel:GetSize())
+mdl:SetModel(&quot;models/props_junk/watermelon01.mdl&quot;)
+
+mdl:SetCamPos(Vector(15, 15, 0))
+mdl:SetLookAt(Vector(0, 0, 0))
+
+mdl:SetAmbientLight(Color(255, 0, 0, 255))</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><br /><br /><a href="/page/File:DModelPanel_SetAmbientLight_example1.jpg" class="image"><img alt="DModelPanel SetAmbientLight example1.jpg" src="/images/3/3a/DModelPanel_SetAmbientLight_example1.jpg" width="200" height="200" /></a></div>
+
+

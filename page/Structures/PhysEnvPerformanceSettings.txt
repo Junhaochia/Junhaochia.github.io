@@ -1,0 +1,85 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/PhysEnvPerformanceSettings" title="Special:WhatLinksHere/Structures/PhysEnvPerformanceSettings">What links here?</a></div>Table used by <a href="/page/Category_colon_physenv" title="Category:physenv">physenv</a>.<a href="/page/physenv/SetPerformanceSettings" title="physenv/SetPerformanceSettings">SetPerformanceSettings</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> LookAheadTimeObjectsVsObject
+</td>
+<td>
+<p>Maximum amount of seconds to precalculate collisions with objects.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> LookAheadTimeObjectsVsWorld
+</td>
+<td>
+<p>Maximum amount of seconds to precalculate collisions with world.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> MaxAngularVelocity
+</td>
+<td>
+<p>Maximum rotation velocity.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> MaxCollisionChecksPerTimestep
+</td>
+<td>
+<p>Maximum collision checks per tick.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> MaxCollisionsPerObjectPerTimestep
+</td>
+<td>
+<p>Maximum collision per object per tick.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> MaxFrictionMass
+</td>
+<td>
+<p>Maximum mass of an object to be affected by friction.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> MaxVelocity
+</td>
+<td>
+<p>Maximum speed of an object.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> MinFrictionMass
+</td>
+<td>
+<p>Minimum mass of an object to be affected by friction.
+</p>
+</td></tr></table>
+
+

@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DForm&#58;Help( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DForm.Help">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DForm/Help" title="Special:WhatLinksHere/DForm/Help">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Adds a <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a> onto the <a href="/page/Category_colon_DForm" title="Category:DForm">DForm</a> as a helper
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> help</span>
+</p>
+<div style="margin-left: 32px;">
+The help message to be displayed</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></span>
+</p>
+<div style="margin-left: 32px;">
+The created <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a></div>
+</div>
+
+

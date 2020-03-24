@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Player&#58;GetTool( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.GetTool">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/GetTool" title="Special:WhatLinksHere/Player/GetTool">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns TOOL table of players current tool, or of the one specified.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> mode=nil</span>
+</p>
+<div style="margin-left: 32px;">
+Classname of the tool to retrieve. ( Filename of the tool in gmod_tool/stools/ )</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+TOOL table, or nil if the table wasn't found or the player doesn't have a tool gun.</div>
+</div>
+
+

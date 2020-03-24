@@ -1,0 +1,121 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:DTileLayout.png" class="image" title="Example DTileLayout"><img alt="Example DTileLayout" src="/images/5/54/DTileLayout.png" width="300" height="300" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DDragBase" title="Category:DDragBase">DDragBase</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DTileLayout">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DTileLayout" title="Special:WhatLinksHere/Category:DTileLayout">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>Similarly to <a href="/page/Category_colon_DIconLayout" title="Category:DIconLayout">DIconLayout</a>, this lays out panels in two dimensions as tiles. The difference between this and <a href="/page/Category_colon_DIconLayout" title="Category:DIconLayout">DIconLayout</a> is that <a href="/page/Category_colon_DIconLayout" title="Category:DIconLayout">DIconLayout</a> items all have the same height while <strong class="selflink">DTileLayout</strong> items do not have this enforcement. <strong class="selflink">DTileLayout</strong> will find the best way to "pack" its chidren. For example, in a two column layout, a item of height 2 units will be placed in one column while two items of height 1 unit will be placed in the other column. It is worth noting however that because this panel iterates through its children in an undefined order and lays out while it is iterating, there is no guarentee that this packing will lead to the lowest possible height.
+</p><p>This is used by the spawnmenu to arrange spawnicons.
+</p><p>The base size defines the smallest a tile can be, and it will resize vertically to accommodate all child panels. The number of elements in each row is determinded by the base size and width.
+</p><p>It also optionally permits the rearrangement of these tiles. To enable this functionality, call <a href="/page/Category_colon_DDragBase" title="Category:DDragBase">DDragBase</a>:<a href="/page/DDragBase/MakeDroppable" title="DDragBase/MakeDroppable">MakeDroppable</a> on the DTileLayout with a unique identifier. All panels added following this will be moveable.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DDragBase" title="Category:DDragBase">DDragBase</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DDragBase/DropAction_Copy" title="DDragBase/DropAction Copy">DDragBase/DropAction Copy</a></li>
+<li><a href="/page/DDragBase/DropAction_Normal" title="DDragBase/DropAction Normal">DDragBase/DropAction Normal</a></li>
+<li><a href="/page/DDragBase/DropAction_Simple" title="DDragBase/DropAction Simple">DDragBase/DropAction Simple</a></li>
+<li><a href="/page/DDragBase/GetDnD" title="DDragBase/GetDnD">DDragBase/GetDnD</a></li>
+<li><a href="/page/DDragBase/GetUseLiveDrag" title="DDragBase/GetUseLiveDrag">DDragBase/GetUseLiveDrag</a></li>
+<li><a href="/page/DDragBase/MakeDroppable" title="DDragBase/MakeDroppable">DDragBase/MakeDroppable</a></li>
+<li><a href="/page/DDragBase/SetDnD" title="DDragBase/SetDnD">DDragBase/SetDnD</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DDragBase/SetDropPos" title="DDragBase/SetDropPos">DDragBase/SetDropPos</a></li>
+<li><a href="/page/DDragBase/SetUseLiveDrag" title="DDragBase/SetUseLiveDrag">DDragBase/SetUseLiveDrag</a></li>
+<li><a href="/page/DDragBase/UpdateDropTarget" title="DDragBase/UpdateDropTarget">DDragBase/UpdateDropTarget</a></li>
+<li><a href="/page/DPanel/GetBackgroundColor" title="DPanel/GetBackgroundColor">DPanel/GetBackgroundColor</a></li>
+<li><a href="/page/DPanel/GetDisabled" title="DPanel/GetDisabled">DPanel/GetDisabled</a></li>
+<li><a href="/page/DPanel/GetDrawBackground" title="DPanel/GetDrawBackground">DPanel/GetDrawBackground</a></li>
+<li><a href="/page/DPanel/GetPaintBackground" title="DPanel/GetPaintBackground">DPanel/GetPaintBackground</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/SetBackgroundColor" title="DPanel/SetBackgroundColor">DPanel/SetBackgroundColor</a></li>
+<li><a href="/page/DPanel/SetDisabled" title="DPanel/SetDisabled">DPanel/SetDisabled</a></li>
+<li><a href="/page/DPanel/SetDrawBackground" title="DPanel/SetDrawBackground">DPanel/SetDrawBackground</a></li>
+<li><a href="/page/DPanel/SetPaintBackground" title="DPanel/SetPaintBackground">DPanel/SetPaintBackground</a></li>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a DTileLayout within a <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a>, sets the base size and adds 32 <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabels</a>.
+</p>
+<pre><code data-language="lua">local frame = vgui.Create(&quot;DFrame&quot;)
+frame:SetSize(300, 300)
+frame:SetTitle(&quot;DTileLayout Example&quot;)
+frame:MakePopup()
+frame:Center()
+
+local layout = vgui.Create(&quot;DTileLayout&quot;, frame)
+layout:SetBaseSize(32) -- Tile size
+layout:Dock(FILL)
+
+//Draw a background so we can see what it's doing
+layout:SetDrawBackground(true)
+layout:SetBackgroundColor(Color(0, 100, 100))
+
+layout:MakeDroppable(&quot;unique_name&quot;) -- Allows us to rearrange children
+
+for i = 1, 32 do
+	layout:Add(Label(&quot; Label &quot; .. i))
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><i>See Preview above.</i></div>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DTileLayout"</h2>
+<p>The following 21 pages are in this category, out of 21 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DTileLayout/ClearTiles" title="DTileLayout/ClearTiles">DTileLayout/ClearTiles</a></li>
+<li><a href="/page/DTileLayout/ConsumeTiles" title="DTileLayout/ConsumeTiles">DTileLayout/ConsumeTiles</a></li>
+<li><a href="/page/DTileLayout/Copy" title="DTileLayout/Copy">DTileLayout/Copy</a></li>
+<li><a href="/page/DTileLayout/CopyContents" title="DTileLayout/CopyContents">DTileLayout/CopyContents</a></li>
+<li><a href="/page/DTileLayout/FindFreeTile" title="DTileLayout/FindFreeTile">DTileLayout/FindFreeTile</a></li>
+<li><a href="/page/DTileLayout/FitsInTile" title="DTileLayout/FitsInTile">DTileLayout/FitsInTile</a></li>
+<li><a href="/page/DTileLayout/GetBaseSize" title="DTileLayout/GetBaseSize">DTileLayout/GetBaseSize</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DTileLayout/GetBorder" title="DTileLayout/GetBorder">DTileLayout/GetBorder</a></li>
+<li><a href="/page/DTileLayout/GetMinHeight" title="DTileLayout/GetMinHeight">DTileLayout/GetMinHeight</a></li>
+<li><a href="/page/DTileLayout/GetSpaceX" title="DTileLayout/GetSpaceX">DTileLayout/GetSpaceX</a></li>
+<li><a href="/page/DTileLayout/GetSpaceY" title="DTileLayout/GetSpaceY">DTileLayout/GetSpaceY</a></li>
+<li><a href="/page/DTileLayout/GetTile" title="DTileLayout/GetTile">DTileLayout/GetTile</a></li>
+<li><a href="/page/DTileLayout/Layout" title="DTileLayout/Layout">DTileLayout/Layout</a></li>
+<li><a href="/page/DTileLayout/LayoutTiles" title="DTileLayout/LayoutTiles">DTileLayout/LayoutTiles</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DTileLayout/OnModified" title="DTileLayout/OnModified">DTileLayout/OnModified</a></li>
+<li><a href="/page/DTileLayout/SetBaseSize" title="DTileLayout/SetBaseSize">DTileLayout/SetBaseSize</a></li>
+<li><a href="/page/DTileLayout/SetBorder" title="DTileLayout/SetBorder">DTileLayout/SetBorder</a></li>
+<li><a href="/page/DTileLayout/SetMinHeight" title="DTileLayout/SetMinHeight">DTileLayout/SetMinHeight</a></li>
+<li><a href="/page/DTileLayout/SetSpaceX" title="DTileLayout/SetSpaceX">DTileLayout/SetSpaceX</a></li>
+<li><a href="/page/DTileLayout/SetSpaceY" title="DTileLayout/SetSpaceY">DTileLayout/SetSpaceY</a></li>
+<li><a href="/page/DTileLayout/SetTile" title="DTileLayout/SetTile">DTileLayout/SetTile</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

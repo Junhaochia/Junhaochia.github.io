@@ -1,0 +1,20 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=EditablePanel">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:EditablePanel" title="Special:WhatLinksHere/Category:EditablePanel">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>Base panel used by <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a>, this panel is needed so that elements such as the TextEntry can obtain focus.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "EditablePanel"</h2>
+<p>The following 3 pages are in this category, out of 3 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>P</h3>
+<ul><li><a href="/page/Panel/LoadControlsFromFile" title="Panel/LoadControlsFromFile">Panel/LoadControlsFromFile</a></li><li><a href="/page/Panel/LoadControlsFromString" title="Panel/LoadControlsFromString">Panel/LoadControlsFromString</a></li><li><a href="/page/Panel/SetFocusTopLevel" title="Panel/SetFocusTopLevel">Panel/SetFocusTopLevel</a></li></ul></div>
+</div></div>

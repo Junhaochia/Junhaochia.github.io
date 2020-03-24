@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>CNavArea&#58;IsClosed( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CNavArea.IsClosed">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CNavArea/IsClosed" title="Special:WhatLinksHere/CNavArea/IsClosed">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns whether this node is in the Closed List.
+</p><p>Used in pathfinding via the <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* algorithm</a>.<br />
+More information can be found on the <a href="/page/Simple_Pathfinding" title="Simple Pathfinding">Simple Pathfinding</a> page.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether this node is in the Closed List.</div>
+</div>
+
+

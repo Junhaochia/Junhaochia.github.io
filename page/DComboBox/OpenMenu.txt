@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DComboBox&#58;OpenMenu( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DComboBox.OpenMenu">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DComboBox/OpenMenu" title="Special:WhatLinksHere/DComboBox/OpenMenu">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Opens the combo box drop down menu. Called when the combo box is clicked.
+</p>
+
+

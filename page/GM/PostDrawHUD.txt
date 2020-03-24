@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>GM:PostDrawHUD( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.PostDrawHUD">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/PostDrawHUD" title="Special:WhatLinksHere/GM/PostDrawHUD">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called after <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreDrawHUD" title="GM/PreDrawHUD">PreDrawHUD</a>, <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDPaintBackground" title="GM/HUDPaintBackground">HUDPaintBackground</a> and <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/HUDPaint" title="GM/HUDPaint">HUDPaint</a> but before <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/DrawOverlay" title="GM/DrawOverlay">DrawOverlay</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is a rendering hook with a 2D rendering context.<br />This means that the only rendering functions will work in it are <a href="/page/Category_colon_2D_Rendering_Functions" title="Category:2D Rendering Functions">functions with a 2D rendering context</a>.
+</p>
+</td></tr></table>
+
+

@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>CNavArea&#58;GetAdjacentCountAtSide( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CNavArea.GetAdjacentCountAtSide">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CNavArea/GetAdjacentCountAtSide" title="Special:WhatLinksHere/CNavArea/GetAdjacentCountAtSide">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the amount of <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavAreas</a> that have a connection ( one or two way ) <b>from</b> this <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> in given direction.
+</p><p>See <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/GetAdjacentCount" title="CNavArea/GetAdjacentCount">GetAdjacentCount</a> for a function that returns <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> count from/in all sides/directions.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> navDir</span>
+</p>
+<div style="margin-left: 32px;">
+The direction, in which to look for <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavAreas</a>, see <a href="/page/Enums/NavDir" title="Enums/NavDir">NavDir_ Enums</a>.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The amount of <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavAreas</a> that have a connection ( one or two way ) <b>from</b> this <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a> in given direction.</div>
+</div>
+
+

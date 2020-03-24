@@ -1,0 +1,23 @@
+<p>The drag'n'drop library, used internally by certain base panels to allow for drag'n'drop functionality, like spawnmenu's customizations.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "dragndrop"</h2>
+<p>The following 11 pages are in this category, out of 11 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/dragndrop/CallReceiverFunction" title="dragndrop/CallReceiverFunction">dragndrop/CallReceiverFunction</a></li>
+<li><a href="/page/dragndrop/Clear" title="dragndrop/Clear">dragndrop/Clear</a></li>
+<li><a href="/page/dragndrop/Drop" title="dragndrop/Drop">dragndrop/Drop</a></li>
+<li><a href="/page/dragndrop/GetDroppable" title="dragndrop/GetDroppable">dragndrop/GetDroppable</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/dragndrop/HandleDroppedInGame" title="dragndrop/HandleDroppedInGame">dragndrop/HandleDroppedInGame</a></li>
+<li><a href="/page/dragndrop/HoverThink" title="dragndrop/HoverThink">dragndrop/HoverThink</a></li>
+<li><a href="/page/dragndrop/IsDragging" title="dragndrop/IsDragging">dragndrop/IsDragging</a></li>
+<li><a href="/page/dragndrop/StartDragging" title="dragndrop/StartDragging">dragndrop/StartDragging</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/dragndrop/StopDragging" title="dragndrop/StopDragging">dragndrop/StopDragging</a></li>
+<li><a href="/page/dragndrop/Think" title="dragndrop/Think">dragndrop/Think</a></li>
+<li><a href="/page/dragndrop/UpdateReceiver" title="dragndrop/UpdateReceiver">dragndrop/UpdateReceiver</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

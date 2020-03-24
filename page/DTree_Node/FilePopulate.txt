@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DTree_Node&#58;FilePopulate( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DTree_Node.FilePopulate">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DTree_Node/FilePopulate" title="Special:WhatLinksHere/DTree Node/FilePopulate">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.</div>
+<p>Called automatically from <a href="/page/Category_colon_DTree_Node" title="Category:DTree Node">DTree_Node</a>:<a href="/page/DTree_Node/PopulateChildrenAndSelf" title="DTree Node/PopulateChildrenAndSelf">PopulateChildrenAndSelf</a> and <a href="/page/Category_colon_DTree_Node" title="Category:DTree Node">DTree_Node</a>:<a href="/page/DTree_Node/PopulateChildren" title="DTree Node/PopulateChildren">PopulateChildren</a> to populate this node with child nodes of files and folders.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> bAndChildren</span>
+</p>
+<div style="margin-left: 32px;">
+Does nothing. Set to true if called from <a href="/page/Category_colon_DTree_Node" title="Category:DTree Node">DTree_Node</a>:<a href="/page/DTree_Node/PopulateChildren" title="DTree Node/PopulateChildren">PopulateChildren</a>.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> bExpand</span>
+</p>
+<div style="margin-left: 32px;">
+Expand self once population process is finished.</div>
+</div>
+
+

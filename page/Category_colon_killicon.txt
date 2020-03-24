@@ -1,0 +1,10 @@
+<p>The killicon library is used to add to and control the icons that appear in the top right of your screen when a player is killed.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "killicon"</h2>
+<p>The following 6 pages are in this category, out of 6 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>K</h3>
+<ul><li><a href="/page/killicon/Add" title="killicon/Add">killicon/Add</a></li><li><a href="/page/killicon/AddAlias" title="killicon/AddAlias">killicon/AddAlias</a></li><li><a href="/page/killicon/AddFont" title="killicon/AddFont">killicon/AddFont</a></li><li><a href="/page/killicon/Draw" title="killicon/Draw">killicon/Draw</a></li><li><a href="/page/killicon/Exists" title="killicon/Exists">killicon/Exists</a></li><li><a href="/page/killicon/GetSize" title="killicon/GetSize">killicon/GetSize</a></li></ul></div>
+</div></div>

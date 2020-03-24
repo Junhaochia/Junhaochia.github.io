@@ -1,0 +1,211 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/IN" title="Special:WhatLinksHere/Enums/IN">What links here?</a></div>
+<p>Unlike <a href="/page/Enums/BUTTON_CODE" title="Enums/BUTTON CODE">BUTTON_CODE_ Enums</a>, these enums are abstracted to allow the user to bind actions to any key they might prefer.
+</p><p>Keybinds using these actions work with two console commands, one starting with a plus and one with a minus symbol. A key press or release will call either the plus or minus command, adding or removing the corresponding enum in the current <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>.
+</p><p>Enumerations used by:
+</p>
+<ul><li> <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/KeyDown" title="Player/KeyDown">KeyDown</a>
+</li><li> <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/KeyDownLast" title="Player/KeyDownLast">KeyDownLast</a>
+</li><li> <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/KeyPressed" title="Player/KeyPressed">KeyPressed</a>
+</li><li> <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/KeyReleased" title="Player/KeyReleased">KeyReleased</a>
+</li><li> <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/AddKey" title="CMoveData/AddKey">AddKey</a>
+</li><li> <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/GetButtons" title="CMoveData/GetButtons">GetButtons</a>
+</li><li> <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/GetOldButtons" title="CMoveData/GetOldButtons">GetOldButtons</a>
+</li><li> <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/KeyDown" title="CMoveData/KeyDown">KeyDown</a>
+</li><li> <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/KeyPressed" title="CMoveData/KeyPressed">KeyPressed</a>
+</li><li> <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/KeyReleased" title="CMoveData/KeyReleased">KeyReleased</a>
+</li><li> <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/KeyWasDown" title="CMoveData/KeyWasDown">KeyWasDown</a>
+</li><li> <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/SetButtons" title="CMoveData/SetButtons">SetButtons</a>
+</li><li> <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/SetOldButtons" title="CMoveData/SetOldButtons">SetOldButtons</a>
+</li><li> <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/GetButtons" title="CUserCmd/GetButtons">GetButtons</a>
+</li><li> <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/KeyDown" title="CUserCmd/KeyDown">KeyDown</a>
+</li><li> <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/RemoveKey" title="CUserCmd/RemoveKey">RemoveKey</a>
+</li><li> <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/SetButtons" title="CUserCmd/SetButtons">SetButtons</a>
+</li><li> <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/KeyPress" title="GM/KeyPress">KeyPress</a>
+</li><li> <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/KeyRelease" title="GM/KeyRelease">KeyRelease</a><br /><br />
+</li></ul>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> IN_ATTACK
+</td>
+<td> 1
+</td>
+<td> +attack bound key ( Default: Left Mouse Button )
+</td></tr>
+<tr>
+<td> IN_JUMP
+</td>
+<td> 2
+</td>
+<td> +jump bound key ( Default: Space )
+</td></tr>
+<tr>
+<td> IN_DUCK
+</td>
+<td> 4
+</td>
+<td> +duck bound key ( Default: CTRL )
+</td></tr>
+<tr>
+<td> IN_FORWARD
+</td>
+<td> 8
+</td>
+<td> +forward bound key ( Default: W )
+</td></tr>
+<tr>
+<td> IN_BACK
+</td>
+<td> 16
+</td>
+<td> +back bound key ( Default: S )
+</td></tr>
+<tr>
+<td> IN_USE
+</td>
+<td> 32
+</td>
+<td> +use bound key ( Default: E )
+</td></tr>
+<tr>
+<td> IN_CANCEL
+</td>
+<td> 64
+</td>
+<td>
+</td></tr>
+<tr>
+<td> IN_LEFT
+</td>
+<td> 128
+</td>
+<td> +left bound key ( Look left )
+</td></tr>
+<tr>
+<td> IN_RIGHT
+</td>
+<td> 256
+</td>
+<td> +right bound key ( Look right )
+</td></tr>
+<tr>
+<td> IN_MOVELEFT
+</td>
+<td> 512
+</td>
+<td> +moveleft bound key ( Default: A )
+</td></tr>
+<tr>
+<td> IN_MOVERIGHT
+</td>
+<td> 1024
+</td>
+<td> +moveright bound key ( Default: D )
+</td></tr>
+<tr>
+<td> IN_ATTACK2
+</td>
+<td> 2048
+</td>
+<td> +attack2 bound key ( Default: Right Mouse Button )
+</td></tr>
+<tr>
+<td> IN_RUN
+</td>
+<td> 4096
+</td>
+<td>
+</td></tr>
+<tr>
+<td> IN_RELOAD
+</td>
+<td> 8192
+</td>
+<td> +reload bound key ( Default: R )
+</td></tr>
+<tr>
+<td> IN_ALT1
+</td>
+<td> 16384
+</td>
+<td> +alt1 bound key
+</td></tr>
+<tr>
+<td> IN_ALT2
+</td>
+<td> 32768
+</td>
+<td> +alt2 bound key
+</td></tr>
+<tr>
+<td> IN_SCORE
+</td>
+<td> 65536
+</td>
+<td> +showscores bound key ( Default: Tab )
+</td></tr>
+<tr>
+<td> IN_SPEED
+</td>
+<td> 131072
+</td>
+<td> +speed bound key ( Default: Shift )
+</td></tr>
+<tr>
+<td> IN_WALK
+</td>
+<td> 262144
+</td>
+<td> +walk bound key ( Slow walk )
+</td></tr>
+<tr>
+<td> IN_ZOOM
+</td>
+<td> 524288
+</td>
+<td> +zoom bound key ( Suit Zoom )
+</td></tr>
+<tr>
+<td> IN_WEAPON1
+</td>
+<td> 1048576
+</td>
+<td> For use in weapons. Set in the physgun when scrolling an object away from you.
+</td></tr>
+<tr>
+<td> IN_WEAPON2
+</td>
+<td> 2097152
+</td>
+<td> For use in weapons. Set in the physgun when scrolling an object towards you.
+</td></tr>
+<tr>
+<td> IN_BULLRUSH
+</td>
+<td> 4194304
+</td>
+<td>
+</td></tr>
+<tr>
+<td> IN_GRENADE1
+</td>
+<td> 8388608
+</td>
+<td> +grenade1 bound key
+</td></tr>
+<tr>
+<td> IN_GRENADE2
+</td>
+<td> 16777216
+</td>
+<td> +grenade2 bound key
+</td></tr></table>
+
+

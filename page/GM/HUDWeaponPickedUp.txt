@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>GM:HUDWeaponPickedUp( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.HUDWeaponPickedUp">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/HUDWeaponPickedUp" title="Special:WhatLinksHere/GM/HUDWeaponPickedUp">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when a weapon has been picked up. Override to disable the default HUD notification.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a> weapon</span>
+</p>
+<div style="margin-left: 32px;">
+The picked up weapon</div>
+</div>
+
+

@@ -1,0 +1,44 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What_is_Auto_Refresh.3F"><span class="tocnumber">1</span> <span class="toctext">What is Auto Refresh?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Restrictions"><span class="tocnumber">2</span> <span class="toctext">Restrictions</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Breaking_Code"><span class="tocnumber">3</span> <span class="toctext">Breaking Code</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Disabling_autorefresh"><span class="tocnumber">4</span> <span class="toctext">Disabling autorefresh</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="What_is_Auto_Refresh.3F"> What is Auto Refresh? </span></h2>
+<p>Since Garry's Mod 13 all Lua scripts are reloaded "live" when they are changed on disk. This is useful if you're coding because your changes show up immediately - as soon as you save.
+</p>
+<h2> <span class="mw-headline" id="Restrictions"> Restrictions </span></h2>
+<p>Autorefresh does not always work. Not knowing these restrictions can lead to confusion. These are the currently known limitations:
+</p>
+<ul><li> It only supports files that are automatically included by the gamemode, from autorun, effects, entities and weapons.
+<ul><li> Specifically, when editing SWEP/SENT base files, SWEPs/SENTs using this base will not refresh until they are refreshed themselves.
+</li></ul>
+</li><li> It doesn't work on OSX
+</li><li> It doesn't work if the file is inside a symbolic linked directory
+</li><li> It doesn't work if <a rel="nofollow" class="external text" href="https://www.sublimetext.com/">Sublime Text</a>'s "Atomic Save" is enabled
+</li><li> It doesn't work with <a rel="nofollow" class="external text" href="https://visualstudio.com">Visual Studio, VSCode</a> works fine tough
+</li></ul>
+<h2> <span class="mw-headline" id="Breaking_Code"> Breaking Code </span></h2>
+<p>Note that when code is refreshed, the entire file is run again. This can cause issues if global data is overwritten, especially tables. To prevent this sort of thing from happening, declare dynamic global variables as themselves or a literal, as such:
+</p>
+<pre><code data-language="lua">
+-- to prevent a specific file from autorefreshing, add something like this to the top of the file:
+if LangTable then return end
+--Declare global dynamic variables as themselves or a literal, rather than just a literal:
+LangTable = LangTable or {}
+</code></pre>
+<p>Furthermore, if your old file references <a href="/page/Category_colon_hook" title="Category:hook">hook</a>.<a href="/page/hook/Add" title="hook/Add">Add</a> and your new file has removed that reference, the original hook will remain in place unless you use <a href="/page/Category_colon_hook" title="Category:hook">hook</a>.<a href="/page/hook/Remove" title="hook/Remove">Remove</a>. The same goes for any callback function, including <a href="/page/Category_colon_net" title="Category:net">net</a>.<a href="/page/net/Receive" title="net/Receive">Receive</a>, <a href="/page/Category_colon_usermessage" title="Category:usermessage">usermessage</a>.<a href="/page/usermessage/Hook" title="usermessage/Hook">Hook</a>, and <a href="/page/Category_colon_concommand" title="Category:concommand">concommand</a>.<a href="/page/concommand/Add" title="concommand/Add">Add</a>.
+</p>
+<h2> <span class="mw-headline" id="Disabling_autorefresh"> Disabling autorefresh </span></h2>
+<p>Autorefresh can lag the server when certain Lua files are edited. This happens when the refreshing cascades. This can be unwanted behavior when editing the scripts of a large project on a live server.
+</p><p><br />
+To disable autorefresh, add
+</p>
+<pre><code data-language="lua"> -disableluarefresh
+</code></pre>
+<p>to the command line.
+</p>
+
+

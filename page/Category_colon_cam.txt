@@ -1,0 +1,28 @@
+<p>This directs all drawing to be done to a certain 2D or 3D plane or position, until the corresponding "End" function is called.
+</p><p>The matrix functions exist, but are mostly unusable unless you're familiar with the source engine's layout for each aspect.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "cam"</h2>
+<p>The following 15 pages are in this category, out of 15 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>C</h3>
+<ul><li><a href="/page/cam/ApplyShake" title="cam/ApplyShake">cam/ApplyShake</a></li>
+<li><a href="/page/cam/End" title="cam/End">cam/End</a></li>
+<li><a href="/page/cam/End2D" title="cam/End2D">cam/End2D</a></li>
+<li><a href="/page/cam/End3D" title="cam/End3D">cam/End3D</a></li>
+<li><a href="/page/cam/End3D2D" title="cam/End3D2D">cam/End3D2D</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/cam/EndOrthoView" title="cam/EndOrthoView">cam/EndOrthoView</a></li>
+<li><a href="/page/cam/GetModelMatrix" title="cam/GetModelMatrix">cam/GetModelMatrix</a></li>
+<li><a href="/page/cam/IgnoreZ" title="cam/IgnoreZ">cam/IgnoreZ</a></li>
+<li><a href="/page/cam/PopModelMatrix" title="cam/PopModelMatrix">cam/PopModelMatrix</a></li>
+<li><a href="/page/cam/PushModelMatrix" title="cam/PushModelMatrix">cam/PushModelMatrix</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/cam/Start" title="cam/Start">cam/Start</a></li>
+<li><a href="/page/cam/Start2D" title="cam/Start2D">cam/Start2D</a></li>
+<li><a href="/page/cam/Start3D" title="cam/Start3D">cam/Start3D</a></li>
+<li><a href="/page/cam/Start3D2D" title="cam/Start3D2D">cam/Start3D2D</a></li>
+<li><a href="/page/cam/StartOrthoView" title="cam/StartOrthoView">cam/StartOrthoView</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

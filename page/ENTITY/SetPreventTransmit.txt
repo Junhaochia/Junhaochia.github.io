@@ -1,0 +1,34 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;SetPreventTransmit( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.SetPreventTransmit">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/SetPreventTransmit" title="Special:WhatLinksHere/Entity/SetPreventTransmit">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Prevents the server from sending any further information about the entity to a player.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This does not work for nextbots.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/1736">#1736</a></b>
+</p>
+</td></tr></table>
+<div class="validatepage"><span>Validation required.</span><br />
+This page contains possibly incorrect or incomplete information. Further testing is required.</div>
+<p>UNCONFIRMED: When using this function, <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetFlexScale" title="Entity/SetFlexScale">SetFlexScale</a> will conflict with this function. Instead, consider using <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetFlexScale" title="Entity/SetFlexScale">SetFlexScale</a> on the client.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> player</span>
+</p>
+<div style="margin-left: 32px;">
+The player to stop networking the entity to.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> stopTransmitting</span>
+</p>
+<div style="margin-left: 32px;">
+true to stop the entity from networking, false to make it network again.</div>
+</div>
+
+

@@ -1,0 +1,10 @@
+<p>Used to store permanent variables/settings on clients that will persist between servers. They are stored in the cl.db SQLite database located in the root Garry's Mod folder.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "cookie"</h2>
+<p>The following 4 pages are in this category, out of 4 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>C</h3>
+<ul><li><a href="/page/cookie/Delete" title="cookie/Delete">cookie/Delete</a></li><li><a href="/page/cookie/GetNumber" title="cookie/GetNumber">cookie/GetNumber</a></li><li><a href="/page/cookie/GetString" title="cookie/GetString">cookie/GetString</a></li><li><a href="/page/cookie/Set" title="cookie/Set">cookie/Set</a></li></ul></div>
+</div></div>

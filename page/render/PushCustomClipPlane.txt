@@ -1,0 +1,59 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>render.PushCustomClipPlane( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.PushCustomClipPlane">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/PushCustomClipPlane" title="Special:WhatLinksHere/render/PushCustomClipPlane">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Pushes a new clipping plane of the clip plane stack and sets it as active.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>A max of 2 clip planes are supported on Linux/POSIX, and 6 on Windows.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> normal</span>
+</p>
+<div style="margin-left: 32px;">
+The normal of the clipping plane.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> distance</span>
+</p>
+<div style="margin-left: 32px;">
+The distance of the plane from the world origin. You can use <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>:<a href="/page/Vector/Dot" title="Vector/Dot">Dot</a> between the normal and any point on the plane to find this, see <a href="#Example">Example 1</a>.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Clips the lower half of your custom entity
+</p>
+<pre><code data-language="lua">function ENT:Draw()
+    local normal = self:GetUp() -- Everything &quot;behind&quot; this normal will be clipped
+    local position = normal:Dot( self:GetPos() ) -- self:GetPos() is the origin of the clipping plane
+
+    local oldEC = render.EnableClipping( true )
+    render.PushCustomClipPlane( normal, position )
+
+    self:DrawModel()
+
+    render.PopCustomClipPlane()
+    render.EnableClipping( oldEC )
+end</code></pre>
+<p><br />
+</p>
+
+

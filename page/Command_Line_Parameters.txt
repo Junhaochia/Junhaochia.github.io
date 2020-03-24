@@ -1,0 +1,77 @@
+<p>A full list of Source command-line options can be found <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Command_Line_Options">here</a>.
+</p>
+<h1> <span class="mw-headline" id="Garry.27s_Mod-Specific_Commands"> Garry's Mod-Specific Commands </span></h1>
+<table class="wikitable">
+<tr>
+<th>Command Line
+</th>
+<th>Description
+</th></tr>
+<tr>
+<td> -noworkshop
+</td>
+<td>Disables workshop addon system in the game. Works on Dedicated servers as well as your client. Does not affect folder/legacy addons or directly loaded .gma files
+</td></tr>
+<tr>
+<td> -noaddons
+</td>
+<td>Disables folder/legacy addons
+</td></tr>
+<tr>
+<td> -disableluarefresh
+</td>
+<td>Disables <a href="/page/Auto_Refresh" title="Auto Refresh">Auto Refresh</a>
+</td></tr>
+<tr>
+<td> -multirun
+</td>
+<td>Allows you to launch multiple instances of the game. You will not be able to connect to the same multiplayer server from both instances, unless the server has sv_lan set to 1.<br />Please note that the sv_lan 1 command must be set before the server is started or a changelevel is required.
+</td></tr>
+<tr>
+<td> -nochromium
+</td>
+<td>If on a Beta branch that runs Chromium, disables Chromium.
+</td></tr>
+<tr>
+<td> -allowlocalhttp
+</td>
+<td>
+<p>Allows local IP links (192.168.x.x) to be used with the <a href="/page/Category_colon_http" title="Category:http">http library</a> functions. This only works on the server.
+</p>
+</td></tr>
+<tr>
+<td> -fullwindowsdump
+</td>
+<td>
+<div class="nextupdate"><span><a href="/page/Dev_Branch" title="Dev Branch">Next Update</a> Change</span><br /><br />This feature is only available in the <a href="/page/Dev_Branch" title="Dev Branch">next update</a>.</div>
+<p>Generates more detailed crash dumps on Windows.
+</p>
+</td></tr>
+<tr>
+<td> -language
+</td>
+<td>
+<p>Overrides Steam's language setting for the primary game language, which controls captions and engine panels.
+</p>
+</td></tr>
+<tr>
+<td style="width:180px;"> +&lt;<a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> name&gt; &lt;value&gt;
+</td>
+<td>Sets value of a console variable after the game is started.
+</td></tr></table>
+<h1> <span class="mw-headline" id="Setting_up_Command_Line_Parameters_in_Steam"> Setting up Command Line Parameters in Steam </span></h1>
+<p>To set Command Line Parameters (Launch Options) in Steam for Garry's Mod:
+</p>
+<ul><li> Open your <b>Steam Library</b> and right click on <b>Garry's Mod</b> and click <b>Properties</b>
+</li></ul>
+<p><a href="/page/File:Right_Click_GMod.png" class="image"><img alt="Right Click GMod.png" src="/images/6/6f/Right_Click_GMod.png" width="326" height="488" /></a>
+</p>
+<ul><li> In the pop up window press <b>Set Launch Options...</b>
+</li><li> A new pop up window will appear, where you can enter your desired Launch Options, separated by space
+</li></ul>
+<p><a href="/page/File:Launch_Parameters_GMod.png" class="image"><img alt="Launch Parameters GMod.png" src="/images/3/37/Launch_Parameters_GMod.png" width="616" height="600" /></a>
+</p>
+<ul><li> After you are done, press OK and then Close and you are done
+</li></ul>
+
+

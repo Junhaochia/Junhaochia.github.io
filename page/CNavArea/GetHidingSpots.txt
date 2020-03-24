@@ -1,0 +1,30 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>CNavArea&#58;GetHidingSpots( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CNavArea.GetHidingSpots">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CNavArea/GetHidingSpots" title="Special:WhatLinksHere/CNavArea/GetHidingSpots">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns a table of good hiding spots in this area.
+</p><p>See also <a href="/page/Category_colon_CNavArea" title="Category:CNavArea">CNavArea</a>:<a href="/page/CNavArea/GetExposedSpots" title="CNavArea/GetExposedSpots">GetExposedSpots</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> type=1</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The type of spots to include.
+</p>
+<ul><li> 0 = None (Not recommended)
+</li><li> 1 = In Cover/basically a hiding spot, in a corner with good hard cover nearby
+</li><li> 2 = good sniper spot, had at least one decent sniping corridor
+</li><li> 4 = perfect sniper spot, can see either very far, or a large area, or both
+</li><li> 8 = exposed, spot in the open, usually on a ledge or cliff, same as GetExposedSpots
+</li><li> Values over 255 and below 0 will be clamped.</div>
+</li></ul>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+A table of <a href="/page/Category_colon_Vector" title="Category:Vector">Vectors</a></div>
+</div>
+
+

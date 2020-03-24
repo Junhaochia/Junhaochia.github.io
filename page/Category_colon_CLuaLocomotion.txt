@@ -1,0 +1,44 @@
+<p>This class is essentially what controls a <a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBot</a> NPC. You can access it in a <a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBot</a> NPC by using <b>self.loco</b> variable.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "CLuaLocomotion"</h2>
+<p>The following 32 pages are in this category, out of 32 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>C</h3>
+<ul><li><a href="/page/CLuaLocomotion/Approach" title="CLuaLocomotion/Approach">CLuaLocomotion/Approach</a></li>
+<li><a href="/page/CLuaLocomotion/ClearStuck" title="CLuaLocomotion/ClearStuck">CLuaLocomotion/ClearStuck</a></li>
+<li><a href="/page/CLuaLocomotion/FaceTowards" title="CLuaLocomotion/FaceTowards">CLuaLocomotion/FaceTowards</a></li>
+<li><a href="/page/CLuaLocomotion/GetAcceleration" title="CLuaLocomotion/GetAcceleration">CLuaLocomotion/GetAcceleration</a></li>
+<li><a href="/page/CLuaLocomotion/GetCurrentAcceleration" title="CLuaLocomotion/GetCurrentAcceleration">CLuaLocomotion/GetCurrentAcceleration</a></li>
+<li><a href="/page/CLuaLocomotion/GetDeathDropHeight" title="CLuaLocomotion/GetDeathDropHeight">CLuaLocomotion/GetDeathDropHeight</a></li>
+<li><a href="/page/CLuaLocomotion/GetDeceleration" title="CLuaLocomotion/GetDeceleration">CLuaLocomotion/GetDeceleration</a></li>
+<li><a href="/page/CLuaLocomotion/GetGravity" title="CLuaLocomotion/GetGravity">CLuaLocomotion/GetGravity</a></li>
+<li><a href="/page/CLuaLocomotion/GetGroundMotionVector" title="CLuaLocomotion/GetGroundMotionVector">CLuaLocomotion/GetGroundMotionVector</a></li>
+<li><a href="/page/CLuaLocomotion/GetJumpHeight" title="CLuaLocomotion/GetJumpHeight">CLuaLocomotion/GetJumpHeight</a></li>
+<li><a href="/page/CLuaLocomotion/GetMaxJumpHeight" title="CLuaLocomotion/GetMaxJumpHeight">CLuaLocomotion/GetMaxJumpHeight</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CLuaLocomotion/GetMaxYawRate" title="CLuaLocomotion/GetMaxYawRate">CLuaLocomotion/GetMaxYawRate</a></li>
+<li><a href="/page/CLuaLocomotion/GetNextBot" title="CLuaLocomotion/GetNextBot">CLuaLocomotion/GetNextBot</a></li>
+<li><a href="/page/CLuaLocomotion/GetStepHeight" title="CLuaLocomotion/GetStepHeight">CLuaLocomotion/GetStepHeight</a></li>
+<li><a href="/page/CLuaLocomotion/GetVelocity" title="CLuaLocomotion/GetVelocity">CLuaLocomotion/GetVelocity</a></li>
+<li><a href="/page/CLuaLocomotion/IsAreaTraversable" title="CLuaLocomotion/IsAreaTraversable">CLuaLocomotion/IsAreaTraversable</a></li>
+<li><a href="/page/CLuaLocomotion/IsAttemptingToMove" title="CLuaLocomotion/IsAttemptingToMove">CLuaLocomotion/IsAttemptingToMove</a></li>
+<li><a href="/page/CLuaLocomotion/IsClimbingOrJumping" title="CLuaLocomotion/IsClimbingOrJumping">CLuaLocomotion/IsClimbingOrJumping</a></li>
+<li><a href="/page/CLuaLocomotion/IsOnGround" title="CLuaLocomotion/IsOnGround">CLuaLocomotion/IsOnGround</a></li>
+<li><a href="/page/CLuaLocomotion/IsStuck" title="CLuaLocomotion/IsStuck">CLuaLocomotion/IsStuck</a></li>
+<li><a href="/page/CLuaLocomotion/IsUsingLadder" title="CLuaLocomotion/IsUsingLadder">CLuaLocomotion/IsUsingLadder</a></li>
+<li><a href="/page/CLuaLocomotion/Jump" title="CLuaLocomotion/Jump">CLuaLocomotion/Jump</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CLuaLocomotion/JumpAcrossGap" title="CLuaLocomotion/JumpAcrossGap">CLuaLocomotion/JumpAcrossGap</a></li>
+<li><a href="/page/CLuaLocomotion/SetAcceleration" title="CLuaLocomotion/SetAcceleration">CLuaLocomotion/SetAcceleration</a></li>
+<li><a href="/page/CLuaLocomotion/SetDeathDropHeight" title="CLuaLocomotion/SetDeathDropHeight">CLuaLocomotion/SetDeathDropHeight</a></li>
+<li><a href="/page/CLuaLocomotion/SetDeceleration" title="CLuaLocomotion/SetDeceleration">CLuaLocomotion/SetDeceleration</a></li>
+<li><a href="/page/CLuaLocomotion/SetDesiredSpeed" title="CLuaLocomotion/SetDesiredSpeed">CLuaLocomotion/SetDesiredSpeed</a></li>
+<li><a href="/page/CLuaLocomotion/SetGravity" title="CLuaLocomotion/SetGravity">CLuaLocomotion/SetGravity</a></li>
+<li><a href="/page/CLuaLocomotion/SetJumpHeight" title="CLuaLocomotion/SetJumpHeight">CLuaLocomotion/SetJumpHeight</a></li>
+<li><a href="/page/CLuaLocomotion/SetMaxYawRate" title="CLuaLocomotion/SetMaxYawRate">CLuaLocomotion/SetMaxYawRate</a></li>
+<li><a href="/page/CLuaLocomotion/SetStepHeight" title="CLuaLocomotion/SetStepHeight">CLuaLocomotion/SetStepHeight</a></li>
+<li><a href="/page/CLuaLocomotion/SetVelocity" title="CLuaLocomotion/SetVelocity">CLuaLocomotion/SetVelocity</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

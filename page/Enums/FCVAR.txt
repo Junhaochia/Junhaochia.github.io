@@ -1,0 +1,211 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Enums/FCVAR" title="Special:WhatLinksHere/Enums/FCVAR">What links here?</a></div>
+<p>Enumerations used by <a href="/page/Category_colon_concommand" title="Category:concommand">concommand</a>.<a href="/page/concommand/Add" title="concommand/Add">Add</a>, <a href="/page/Global/CreateClientConVar" title="Global/CreateClientConVar">CreateClientConVar</a> and <a href="/page/Global/CreateConVar" title="Global/CreateConVar">CreateConVar</a>.<br /><br />
+</p>
+<div style="text-align: center;"><b>Warning!</b> Decimal values are for reference only! The actual value may be different between two Garry's Mod versions.</div>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Name
+</th>
+<th scope="col"> Decimal
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> FCVAR_ARCHIVE
+</td>
+<td> 128
+</td>
+<td> Save the <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> value into config.cfg
+<p>Reported as "a" by <i>cvarlist</i>, except Lua <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVars</a>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_ARCHIVE_XBOX
+</td>
+<td> 16777216
+</td>
+<td> Save the <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> value into config.cfg on XBox
+</td></tr>
+<tr>
+<td> FCVAR_CHEAT
+</td>
+<td> 16384
+</td>
+<td> Requires sv_cheats to be enabled to change the <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> or run the command
+<p>Reported as "cheat" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_CLIENTCMD_CAN_EXECUTE
+</td>
+<td> 1073741824
+</td>
+<td> IVEngineClient::ClientCmd is allowed to execute this command
+<p>Reported as "clientcmd_can_execute" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_CLIENTDLL
+</td>
+<td> 8
+</td>
+<td> <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> is defined by the client DLL.<br />This flag is set automatically
+<p>Reported as "cl" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_DEMO
+</td>
+<td> 65536
+</td>
+<td> Force the <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> to be recorded by demo recordings.
+<p>Reported as "demo" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_DONTRECORD
+</td>
+<td> 131072
+</td>
+<td> Opposite of FCVAR_DEMO, ensures the <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> is not recorded in demos
+<p>Reported as "norecord" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_GAMEDLL
+</td>
+<td> 4
+</td>
+<td> <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> is defined by the game DLL.<br />This flag is set automatically
+<p>Reported as "sv" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_LUA_CLIENT
+</td>
+<td> 262144
+</td>
+<td> Set automatically on all ConVars and console commands created by the client Lua state.
+<p>Reported as "lua_client" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_LUA_SERVER
+</td>
+<td> 524288
+</td>
+<td> Set automatically on all ConVars and console commands created by the server Lua state.
+<p>Reported as "lua_server" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_NEVER_AS_STRING
+</td>
+<td> 4096
+</td>
+<td> Tells the engine to never print this variable as a string.
+<p>Reported as "numeric" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_NONE
+</td>
+<td> 0
+</td>
+<td> No flags
+</td></tr>
+<tr>
+<td> FCVAR_NOTIFY
+</td>
+<td> 256
+</td>
+<td> For serverside <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVars</a>, notifies all players with blue chat text when the value gets changed
+<p>Reported as "nf" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_NOT_CONNECTED
+</td>
+<td> 4194304
+</td>
+<td> Makes the <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> not changeable while connected to a server or in singleplayer
+</td></tr>
+<tr>
+<td> FCVAR_PRINTABLEONLY
+</td>
+<td> 1024
+</td>
+<td> Forces the <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> to only have printable characters ( No control characters )
+<p>Reported as "print" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_PROTECTED
+</td>
+<td> 32
+</td>
+<td> Makes the <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> value hidden from all clients ( For example sv_password )
+<p>Reported as "prot" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_REPLICATED
+</td>
+<td> 8192
+</td>
+<td> For serverside <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVars</a>, it will send its value to all clients. The <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> with the same name must also exist on the client!
+<p>Reported as "rep" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_SERVER_CANNOT_QUERY
+</td>
+<td> 536870912
+</td>
+<td> Prevents the server from querying value of this <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a>
+</td></tr>
+<tr>
+<td> FCVAR_SERVER_CAN_EXECUTE
+</td>
+<td> 268435456
+</td>
+<td> The server is allowed to execute this command on clients.
+<p>Reported as "server_can_execute" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_SPONLY
+</td>
+<td> 64
+</td>
+<td> Executing the command or changing the <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> is only allowed in singleplayer
+<p>Reported as "sp" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_UNLOGGED
+</td>
+<td> 2048
+</td>
+<td> Don't log the <a href="/page/Category_colon_ConVar" title="Category:ConVar">ConVar</a> changes to console/log files/users
+<p>Reported as "log" by <i>cvarlist</i>
+</p>
+</td></tr>
+<tr>
+<td> FCVAR_UNREGISTERED
+</td>
+<td> 1
+</td>
+<td> If this is set, the convar will become anonymous and won't show up in the 'find' results.
+</td></tr>
+<tr>
+<td> FCVAR_USERINFO
+</td>
+<td> 512
+</td>
+<td> For clientside commands, sends the value to the server
+<p>Reported as "user" by <i>cvarlist</i>
+</p>
+</td></tr></table>
+
+

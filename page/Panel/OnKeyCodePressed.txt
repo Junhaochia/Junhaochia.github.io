@@ -1,0 +1,30 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>PANEL:OnKeyCodePressed( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PANEL.OnKeyCodePressed">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PANEL/OnKeyCodePressed" title="Special:WhatLinksHere/PANEL/OnKeyCodePressed">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called whenever a keyboard key was pressed while the panel is focused.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This is not run for ESC/"cancelselect" binding.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/2886">#2886</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> keyCode</span>
+</p>
+<div style="margin-left: 32px;">
+The key code of the pressed key, see <a href="/page/Enums/KEY" title="Enums/KEY">KEY_ Enums</a>.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Return true to suppress default action.</div>
+</div>
+
+

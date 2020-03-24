@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>GM:CreateEntityRagdoll( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.CreateEntityRagdoll">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/CreateEntityRagdoll" title="Special:WhatLinksHere/GM/CreateEntityRagdoll">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when a serverside ragdoll of an entity has been created.
+</p><p>See <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/CreateClientsideRagdoll" title="GM/CreateClientsideRagdoll">CreateClientsideRagdoll</a> for clientside ragdolls.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> owner</span>
+</p>
+<div style="margin-left: 32px;">
+Entity that owns the ragdoll</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ragdoll</span>
+</p>
+<div style="margin-left: 32px;">
+The ragdoll entity</div>
+</div>
+
+

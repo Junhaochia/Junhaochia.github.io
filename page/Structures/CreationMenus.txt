@@ -1,0 +1,49 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/CreationMenus" title="Special:WhatLinksHere/Structures/CreationMenus">What links here?</a></div>Table that maintains information on the creation menu tabs. Each key of the table represents the name of the tab. See <a href="/page/Category_colon_spawnmenu" title="Category:spawnmenu">spawnmenu</a>.<a href="/page/spawnmenu/AddCreationTab" title="spawnmenu/AddCreationTab">AddCreationTab</a> and <a href="/page/Category_colon_spawnmenu" title="Category:spawnmenu">spawnmenu</a>.<a href="/page/spawnmenu/GetCreationTabs" title="spawnmenu/GetCreationTabs">GetCreationTabs</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_function" title="Category:function">function</a>
+</td>
+<td> Function
+</td>
+<td>
+<p>The function used to generate the content of the tab.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Icon
+</td>
+<td>
+<p>The icon material that will accompany the title of the tab.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> Order
+</td>
+<td>
+<p>The order in which a tab will be displayed relative to the other tabs.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> Tooltip
+</td>
+<td>
+<p>The tooltip to be shown with the tab.
+</p>
+</td></tr></table>
+
+

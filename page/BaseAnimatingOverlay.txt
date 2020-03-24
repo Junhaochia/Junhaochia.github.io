@@ -1,0 +1,42 @@
+<p><a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBots</a> and <a href="/page/Category_colon_Player" title="Category:Player">Players</a> are BaseAnimatingOverlay entities.
+</p><p>Only <a href="/page/Scripted_Entities" title="Scripted Entities">Scripted Entities</a> of the "anim" type are BaseAnimatingOverlay.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Playing gestures/creating new layers on <a href="/page/Category_colon_NextBot" title="Category:NextBot">NextBots</a> may not work correctly unless done in the <a href="/page/Category_colon_NEXTBOT_Hooks" title="Category:NEXTBOT Hooks">NEXTBOT</a>:<a href="/page/NEXTBOT/BehaveUpdate" title="NEXTBOT/BehaveUpdate">BehaveUpdate</a> hook.
+</p>
+</td></tr></table>
+<p>The following functions can only be used on <b>BaseAnimatingOverlay</b> entities:
+</p>
+<ul><li> Layer creation functions
+<ul><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/AddGesture" title="Entity/AddGesture">AddGesture</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/AddGestureSequence" title="Entity/AddGestureSequence">AddGestureSequence</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/AddLayeredSequence" title="Entity/AddLayeredSequence">AddLayeredSequence</a>
+</li></ul>
+</li></ul>
+<ul><li> Layer manipulation functions
+<ul><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/IsValidLayer" title="Entity/IsValidLayer">IsValidLayer</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetLayerDuration" title="Entity/SetLayerDuration">SetLayerDuration</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetLayerDuration" title="Entity/GetLayerDuration">GetLayerDuration</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetLayerCycle" title="Entity/SetLayerCycle">SetLayerCycle</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetLayerCycle" title="Entity/GetLayerCycle">GetLayerCycle</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetLayerPlaybackRate" title="Entity/SetLayerPlaybackRate">SetLayerPlaybackRate</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetLayerWeight" title="Entity/SetLayerWeight">SetLayerWeight</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/GetLayerWeight" title="Entity/GetLayerWeight">GetLayerWeight</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetLayerBlendIn" title="Entity/SetLayerBlendIn">SetLayerBlendIn</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetLayerBlendOut" title="Entity/SetLayerBlendOut">SetLayerBlendOut</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetLayerLooping" title="Entity/SetLayerLooping">SetLayerLooping</a>
+</li></ul>
+</li></ul>
+<ul><li> Other functions
+<ul><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/IsPlayingGesture" title="Entity/IsPlayingGesture">IsPlayingGesture</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/RestartGesture" title="Entity/RestartGesture">RestartGesture</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/RemoveGesture" title="Entity/RemoveGesture">RemoveGesture</a>
+</li><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/RemoveAllGestures" title="Entity/RemoveAllGestures">RemoveAllGestures</a>
+</li></ul>
+</li></ul>
+
+

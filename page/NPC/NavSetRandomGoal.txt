@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;NavSetRandomGoal( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.NavSetRandomGoal">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/NavSetRandomGoal" title="Special:WhatLinksHere/NPC/NavSetRandomGoal">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Creates a random path of specified minimum length between a closest start node and random node in the specified direction.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> minPathLength</span>
+</p>
+<div style="margin-left: 32px;">
+Minimum length of path in units</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> dir</span>
+</p>
+<div style="margin-left: 32px;">
+Unit vector pointing in the direction of the target random node</div>
+</div>
+
+

@@ -1,0 +1,38 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>IsUselessModel( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IsUselessModel">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/util.lua#L261-275">View Source</a> - <a href="/page/Special:WhatLinksHere/Global/IsUselessModel" title="Special:WhatLinksHere/Global/IsUselessModel">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns whether or not a model is useless by checking that the file path is that of a proper model.
+</p><p>If the string ".mdl" is not found in the model name, the function will return true.
+</p><p>The function will also return true if any of the following strings are found in the given model name:
+</p>
+<ul><li> "_gesture"
+</li><li> "_anim"
+</li><li> "_gst"
+</li><li> "_pst"
+</li><li> "_shd"
+</li><li> "_ss"
+</li><li> "_posture"
+</li><li> "_anm"
+</li><li> "ghostanim"
+</li><li> "_paths"
+</li><li> "_shared"
+</li><li> "anim_"
+</li><li> "gestures_"
+</li><li> "shared_ragdoll_"
+</li></ul>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> modelName</span>
+</p>
+<div style="margin-left: 32px;">
+The model name to be checked</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether or not the model is useless</div>
+</div>
+
+

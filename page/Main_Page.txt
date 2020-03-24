@@ -1,0 +1,36 @@
+<div class="center"><div class="floatnone"><a href="/page/File:gmod-logo-big.png" class="image"><img alt="gmod-logo-big.png" src="/images/thumb/1/11/gmod-logo-big.png/200px-gmod-logo-big.png" width="200" height="200" /></a></div></div>
+<table width="100%" style="margin-top: 32px;">
+<tr>
+<th> For Players </th>
+<th> For Developers
+</th></tr>
+<tr valign="top">
+<td>
+<div style="margin: 32px; margin-top: 8px; background-color: #EEE; border-radius: 4px; padding: 16px;">
+<ul><li> <a href="/page/Quick_Start" title="Quick Start">Getting Started</a>
+</li><li> <a href="/page/Help/FAQ" title="Help/FAQ">Frequently Asked Questions</a>
+</li><li> <a href="/page/Category_colon_Playing_Tutorials" title="Category:Playing Tutorials">Playing Tutorials</a>
+</li><li> <a href="/page/Category_colon_Server_Owners" title="Category:Server Owners">For Server Owners</a>
+</li></ul>
+</div>
+</td>
+<td>
+<div style="margin: 32px; margin-top: 8px; background-color: #EEE; border-radius: 4px; padding: 16px;">
+<ul><li> <a href="/page/Beginner_Tutorial_Intro" title="Beginner Tutorial Intro">Getting Started</a>
+</li><li> <a href="/page/Category_colon_Modding_Tutorials" title="Category:Modding Tutorials">Developer Tutorials</a>
+</li><li> <a href="/page/Category_colon_Lua_Tutorials" title="Category:Lua Tutorials">Lua Scripting Tutorials</a>
+</li><li> <a href="/page/Category_colon_Lua_Reference" title="Category:Lua Reference">Lua Reference</a>
+</li></ul>
+</div>
+</td>
+<td>
+</td></tr>
+<tr>
+<th colspan="2">
+<div style="margin: 0px 32px; background-color: #EEE; border-radius: 4px; padding: 16px;">
+<p><a href="/page/Help:Editing" title="Help:Editing">Wiki Editing Guide</a> - Please help us by filling in function definitions and adding new tutorials!
+</p>
+</div>
+</th></tr></table>
+
+

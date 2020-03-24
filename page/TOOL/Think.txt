@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>TOOL:Think( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=TOOL.Think">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/TOOL/Think" title="Special:WhatLinksHere/TOOL/Think">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/Think" title="WEAPON/Think">Think</a> of the toolgun is called. This only happens when the tool gun is currently equipped/selected by the player and the selected tool is this tool.
+</p>
+
+

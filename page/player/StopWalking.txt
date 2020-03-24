@@ -1,0 +1,18 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Player&#58;StopWalking( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.StopWalking">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/StopWalking" title="Special:WhatLinksHere/Player/StopWalking">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<div class="deprecatedfunc"><span>This feature is deprecated.</span><br />
+You should avoid using it as it may be removed in a future version.<br /><br />This appears to be a direct binding to internal functionality that is overridden by the engine every frame so calling these functions may not have any or expected effect.</div>
+<p>When used in a <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/SetupMove" title="GM/SetupMove">SetupMove</a> hook, this function behaves unexpectedly by preventing the player from sprinting similar to <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/StopSprinting" title="Player/StopSprinting">StopSprinting</a>.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Disables Sprinting, not Walking.
+</p>
+<pre><code data-language="lua">hook.Add( &quot;SetupMove&quot;, &quot;TestFunc&quot;, function( ply, mv, cmd )
+	ply:StopWalking()
+end )</code></pre>
+<p><br />
+</p>
+
+

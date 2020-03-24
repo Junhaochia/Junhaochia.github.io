@@ -1,0 +1,25 @@
+<p>List of all possible functions to manipulate Recipient Filters. Can be created with <a href="/page/Global/RecipientFilter" title="Global/RecipientFilter">RecipientFilter</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "CRecipientFilter"</h2>
+<p>The following 13 pages are in this category, out of 13 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>C</h3>
+<ul><li><a href="/page/CRecipientFilter/AddAllPlayers" title="CRecipientFilter/AddAllPlayers">CRecipientFilter/AddAllPlayers</a></li>
+<li><a href="/page/CRecipientFilter/AddPAS" title="CRecipientFilter/AddPAS">CRecipientFilter/AddPAS</a></li>
+<li><a href="/page/CRecipientFilter/AddPlayer" title="CRecipientFilter/AddPlayer">CRecipientFilter/AddPlayer</a></li>
+<li><a href="/page/CRecipientFilter/AddPVS" title="CRecipientFilter/AddPVS">CRecipientFilter/AddPVS</a></li>
+<li><a href="/page/CRecipientFilter/AddRecipientsByTeam" title="CRecipientFilter/AddRecipientsByTeam">CRecipientFilter/AddRecipientsByTeam</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CRecipientFilter/GetCount" title="CRecipientFilter/GetCount">CRecipientFilter/GetCount</a></li>
+<li><a href="/page/CRecipientFilter/GetPlayers" title="CRecipientFilter/GetPlayers">CRecipientFilter/GetPlayers</a></li>
+<li><a href="/page/CRecipientFilter/RemoveAllPlayers" title="CRecipientFilter/RemoveAllPlayers">CRecipientFilter/RemoveAllPlayers</a></li>
+<li><a href="/page/CRecipientFilter/RemovePAS" title="CRecipientFilter/RemovePAS">CRecipientFilter/RemovePAS</a></li>
+<li><a href="/page/CRecipientFilter/RemovePlayer" title="CRecipientFilter/RemovePlayer">CRecipientFilter/RemovePlayer</a></li></ul></td>
+<td><h3>C cont.</h3>
+<ul><li><a href="/page/CRecipientFilter/RemovePVS" title="CRecipientFilter/RemovePVS">CRecipientFilter/RemovePVS</a></li>
+<li><a href="/page/CRecipientFilter/RemoveRecipientsByTeam" title="CRecipientFilter/RemoveRecipientsByTeam">CRecipientFilter/RemoveRecipientsByTeam</a></li>
+<li><a href="/page/CRecipientFilter/RemoveRecipientsNotOnTeam" title="CRecipientFilter/RemoveRecipientsNotOnTeam">CRecipientFilter/RemoveRecipientsNotOnTeam</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

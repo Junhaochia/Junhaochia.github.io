@@ -1,0 +1,507 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#What_is_an_Object.3F"><span class="tocnumber">2</span> <span class="toctext">What is an Object?</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Objects_in_Lua"><span class="tocnumber">3</span> <span class="toctext">Objects in Lua</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Method_1:_module"><span class="tocnumber">3.1</span> <span class="toctext">Method 1: module</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Method_2:_Metatables"><span class="tocnumber">3.2</span> <span class="toctext">Method 2: Metatables</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction"> Introduction </span></h1>
+<p>This tutorial discusses the methods used by Garry's Mod to define new objects classes from files. Though this tutorial focuses on application in GMod, the code and concepts can be used elsewhere.
+</p>
+<h1> <span class="mw-headline" id="What_is_an_Object.3F"> What is an Object? </span></h1>
+<p>An <b>object</b> in programming is a collection of data which is organized and structured in a specific manner and is derived from a <b>class</b>. Examples of classes are Entities, Weapons (which are just fancy entities), and Panels. Things like Vectors and ConVars are also classes but they aren't created from files, which is the purpose of this tutorial.
+</p><p>Most classes have a <b>baseclass</b>, from which they inherit their properties. As more classes are created, a baseclass tree begins to form. An example of this is the HL2 "weapon_pistol", which is based off the "weapon" class, which is based off the "anim" class, which is based off the "entity" class. The weapon has all the properties of an entity, such as position and model, and it has its own special properties, such as clip size and damage.
+</p><p>This is an example of an inheritance hierarchy from a hypothetical system comprised of Weapons and Agents.
+<a href="/page/File:class-diagram-methods.png" class="image"><img alt="class-diagram-methods.png" src="/images/2/21/class-diagram-methods.png" width="401" height="312" /></a>
+</p><p>Objects are created using a <b>constructor</b>. A constructor basically makes a copy of the class and returns it as a new object. Examples of constructors in Garry's Mod are <a href="/page/Category_colon_ents" title="Category:ents">ents</a>.<a href="/page/ents/Create" title="ents/Create">Create</a>, <a href="/page/Category_colon_vgui" title="Category:vgui">vgui</a>.<a href="/page/vgui/Create" title="vgui/Create">Create</a>, and <a href="/page/Global/Vector" title="Global/Vector">Vector</a>.
+</p>
+<h1> <span class="mw-headline" id="Objects_in_Lua"> Objects in Lua </span></h1>
+<h2> <span class="mw-headline" id="Method_1:_module"> Method 1: module </span></h2>
+<p>In Lua, there are two types of objects: those defined in C++ (called userdata) and those defined within Lua (special tables). In this case, we're going to stick with Lua defined objects.
+Let's create a new class (we'll get to creating classes in separate files later).
+</p>
+<pre><code data-language="lua">--[[Define our class. We're going to create airport objects.
+We are going to preset the defaults for some of the required properties of all new airport objects made.]]
+local AirportClass = {}
+AirportClass.Name = &quot;Airport&quot;
+AirportClass.Code = &quot;ABC&quot;
+AirportClass.City = &quot;Cityville&quot;
+AirportClass.State = &quot;CA&quot;
+
+--[[So now we have a basic table which represents a non-existant airport which we will derive our airports objects from.
+Let's make a constructor so we can start creating airport objects. A basic constructor is as follows:]]
+function Airport(code) --Code is an optional argument.
+	
+	local newAirport = table.Copy(AirportClass)
+	--table.Copy is a Garry's Mod function. Look for it in the source code should you need to replicate it in a different API.
+	
+	--Override the old default Code property should we have a new code to replace it with:
+	if code then
+		newAirport.Code = code
+	end
+	
+	--Return our new Object.
+	return newAirport
+
+end
+
+--Now we're ready to create some Airport objects! Let's start by defining a few...
+local BWI = Airport(&quot;BWI&quot;)
+local LAX = Airport(&quot;LAX&quot;)
+local ORD = Airport(&quot;ORD&quot;)
+
+--[[Okay, they exist now.
+BUT WAIT! Our new airports are the same as the original BaseAirport class!
+This is unacceptable. Let's go ahead and change the specifics of our airports.]]
+BWI.Name = &quot;Thurgood Marshall&quot;
+BWI.City = &quot;Baltimore&quot;
+BWI.State = &quot;MD&quot;
+
+LAX.Name = &quot;Los Angeles International Airport&quot;
+LAX.City = &quot;Los Angeles&quot;
+-- LAX.State = &quot;CA&quot;
+-- The state is &quot;CA&quot; by default, so we don't need to change it here.
+
+ORD.City = &quot;Chicago&quot;
+ORD.State = &quot;IL&quot;
+ORD.Name = &quot;O'Hare Airport&quot;
+
+</code></pre>
+<p>That wasn't so hard right? Define a class, copy the class with a constructor, and modify it as needed. Let's move on to file-based classes.
+In Garry's Mod, there are a few systems which use folders to define each class, such as SWEPs, effects, and SENTs. In essence, these systems follow these steps:
+</p><p>Find all classes to be defined. For each class folder/file:
+</p>
+<ol><li> Create a table for the class to be defined into.
+</li><li> Run the file(s).
+</li><li> Save the class table somewhere for future use.
+</li><li> Refresh existing objects of that class. (We won't do this in our tutorial.)
+</li><li> Delete the class table. (But not the one we saved elsewhere. We use that later.)
+</li></ol>
+<p><br />
+</p><p>So let's make inventory items with this system. The following goes in "lua/includes/modules/invitem.lua":
+</p>
+<pre><code data-language="lua">
+
+local string = string
+local table = table
+local error = error
+local Material = Material
+local baseclass = baseclass
+
+module(&quot;invitem&quot;)
+
+--Create a list of all inventory items.
+local invitems = invitems or {}
+local allitems = allitems or {}
+
+--Create our root baseclass, with all items are based off somewhere down the line.
+invitems.item_baseitem = {}
+invitems.item_baseitem.Icon = Material(&quot;vgui/items/baseweapon.png&quot;)
+invitems.item_baseitem.Name = &quot;Base Item&quot;
+invitems.item_baseitem.Width = 1
+invitems.item_baseitem.Height = 1
+invitems.item_baseitem.Weight = 1
+invitems.item_baseitem.Owner = NULL
+invitems.item_baseitem.BaseClass = {}
+invitems.item_baseitem.UniqueID = -1 --We set this when we create the object.
+function invitems.item_baseitem:Init()
+
+end
+function invitems.item_baseitem:Remove()
+	allitems[self.id] = nil
+	self:OnRemove()
+end
+function invitems.item_baseitem:OnRemove()
+	--This is the function we can override per-class.
+end
+-- These two functions are for the Grid-Based Inventory Tutorial, which this system is compatable with.
+function invitems.item_baseitem:GetSize()
+	return self.Width, self.Height
+end
+function invitems.item_baseitem:GetIcon()
+	return self.Icon
+end
+--baseclass.Set is a GMod function. See lua/includes/modules/baseclass.lua
+baseclass.Set(&quot;item_baseitem&quot;, invitems.item_baseitem)
+
+
+--Saves a class to our internal list of items, and defines our class's baseclass.
+function Register(classtbl, name)
+
+	name = string.lower(name)
+	
+	baseclass.Set( name, classtbl )
+	
+	classtbl.BaseClass = baseclass.Get(classtbl.Base)
+	
+	invitems[ name ] = classtbl
+	
+end
+
+--Our constructor, which takes an argument to determine the class.
+function Create(class)
+	--Prevent non-existant classes from being created.
+	if not invitems[class] then error(&quot;Tried to create new inventory item from non-existant class: &quot;..class) end
+	
+	local newItem = table.Copy(invitems[class])
+	
+	--Add our new object to the list of all items currently in the game.
+	local id = table.insert(allitems, newItem)
+	--Give it a unique ID.
+	newItem.UniqueID = id
+	
+	--Call our Init function when we create the new item.
+	newItem:Init()
+	
+	return newItem
+end
+
+--Returns a table of all classes.
+function GetClasses()
+	return invitems
+end
+
+--Returns the class table of a given class from our saved list.
+function GetClassTable(classname)
+	return invitems[classname]
+end
+
+--Returns a COPY of the class table, so we don't modify the original.
+function GetClassTableCopy(classname)
+	return table.Copy(invitems[classname])
+end
+
+--Returns a list of all current items objects.
+function GetAll()
+	return allitems
+end
+</code></pre>
+<p>So now we have a module which registers our item classes, lets us create new item objects, allows us to view a given class on demand, and keeps track of all current item objects within the game. We also have a baseclass to base our new classes on.
+</p><p>In a new file, lua/autorun/inventory.lua, let's run all our files:
+</p>
+<pre><code data-language="lua">
+
+if SERVER then
+	AddCSLuaFile()--Only needed on Garry's Mod.
+	AddCSLuaFile(&quot;../includes/modules/invitem.lua&quot;)
+end
+
+
+--Run our module:
+require(&quot;invitem&quot;)
+
+
+--Let's run our class files:
+
+--Get a list of all files and folders in our classes folder.
+--file.Find is a Garry's Mod function. See the wiki if you want to remake it.
+local files,folders = file.Find(&quot;items/*&quot;, &quot;LUA&quot;) --Store our files in lua/items/
+
+--Consider any solo files to be shared, such as &quot;item_dildo.lua&quot;
+for k,File in pairs(files)do
+
+	local name = string.sub(File,1,string.find(File,&quot;%.lua&quot;)-1)
+	
+	--Create our class table, which the files write to.
+	ITEM = {}
+	
+	--Set our ClassName for future reference.
+	ITEM.ClassName = name
+
+	if SERVER then
+		AddCSLuaFile(&quot;items/&quot;..File)
+	end
+	include(&quot;items/&quot;..File)
+	
+	if not ITEM.Base then ITEM.Base = &quot;item_baseitem&quot; end
+	
+	--Register the class table.
+	invitem.Register(name,ITEM)
+	
+	--Delete the class table.
+	ITEM = nil
+end
+
+--Include each file, e.g. init.lua, shared.lua, and cl_init.lua, in their respective domains.
+for k,folder in pairs(folders)do
+
+	local name = string.sub(folder,1,string.find(folder,&quot;%.lua&quot;)-1)
+	
+	--Create our class table, which the files write to.
+	ITEM = {}
+	
+	--Set our ClassName for future reference.
+	ITEM.ClassName = name
+	
+	--Include all of our files for this item.
+	local dir = &quot;items/&quot;..folder..&quot;/&quot;
+	if SERVER then
+		--file.Exists is a Garry's Mod function. See the wiki if you want to remake it.
+		if file.Exists(dir..&quot;shared.lua&quot;, &quot;LUA&quot;) then
+			AddCSLuaFile(dir..&quot;shared.lua&quot;)
+		end
+		if file.Exists(dir..&quot;cl_init.lua&quot;, &quot;LUA&quot;) then
+			AddCSLuaFile(dir..&quot;cl_init.lua&quot;)
+		end
+		
+		if file.Exists(dir..&quot;init.lua&quot;, &quot;LUA&quot;) then
+			include(dir..&quot;init.lua&quot;)
+		end
+	end
+	
+	if file.Exists(dir..&quot;shared.lua&quot;, &quot;LUA&quot;) then
+		include(dir..&quot;shared.lua&quot;)
+	end
+	
+	if CLIENT then
+		if file.Exists(dir..&quot;cl_init.lua&quot;, &quot;LUA&quot;) then
+			include(dir..&quot;cl_init.lua&quot;)
+		end
+	end
+	
+	if not ITEM.Base then ITEM.Base = &quot;item_baseitem&quot; end
+	
+	--Register the class table.
+	invitem.Register(name,ITEM)
+	
+	--Delete the class table.
+	ITEM = nil
+end
+
+--Now that we've included all our class files, let's make them inherit their baseclasses.
+for classname,classtbl in pairs(invitem.GetClasses())do
+
+	--table.Inherit replaces nil values from one table with non-nil values from another table. See lua/includes/extensions/table.lua
+	table.Inherit(classtbl,classtbl.BaseClass)
+
+end
+</code></pre>
+<p>With that, your items should be automatically included, registered, and inherited.
+</p><p>You can download a working example of this system <a rel="nofollow" class="external text" href="https://www.dropbox.com/s/cn1w46q6oxmp05u/inventory.zip?dl=1">here</a>. The code is untested but should work.
+</p><p>--<a href="/page/User:Bobblehead" title="User:Bobblehead">Bobblehead</a> 00:01, 13 December 2014 (UTC)
+</p>
+<h2> <span class="mw-headline" id="Method_2:_Metatables"> Method 2: Metatables </span></h2>
+<p>Metatables are a comfortable tool for simulating object oriented programming because of the way they behave.
+</p><p>Objects with the same metatable will have access to the same metamethods and custom functions.
+</p><p>Lets begin by creating our metatable
+</p>
+<pre><code data-language="lua">Book = {} -- This is our metatable. It will represent our &quot;Class&quot;
+Book.__index = Book
+--[[
+If a key cannot be found in a table, it will look in it's metatable's __index.
+This means any function we define for the 'Book' table will be accessible by any object whose metatable is 'Book'
+]]</code></pre>
+<p>Now, we need a function that will return our object, most often called "new"
+</p>
+<pre><code data-language="lua">Book = {} -- This is our metatable. It will represent our &quot;Class&quot;
+Book.__index = Book
+
+function Book:new( series, seriesNum, title, text ) -- Variables are optional
+	-- This is the table we will return
+	local EmptyBook = {
+		series = series or &quot;&quot;,
+		seriesNum = seriesNum or 0,
+		title = title or &quot;&quot;,
+		text = text or &quot;&quot;,
+	}
+
+	setmetatable( EmptyBook, Book ) -- Set the metatable of 'EmptyBook' to 'Book'
+	return EmptyBook -- Return the 'EmptyBook' table, whose metatable is 'Book'. This is our object
+
+	--[[
+	More often than not, the table will be set inside the function itself, like so:
+
+	return setmetatable( {
+		series = series or &quot;&quot;,
+		seriesNum = seriesNum or 0,
+		title = title or &quot;&quot;,
+		text = text or &quot;&quot;,
+	}, Book )
+	]]
+end</code></pre>
+<p>Now that we've got our base set up, lets add some functions
+</p>
+<pre><code data-language="lua">-- First, a function to print our Book
+function Book:Print()
+	if self:IsEmpty() then return end -- No point in printing an empty book
+
+	print( &quot;\n====================================&quot; ) -- Lets make it clear when our print starts
+	if self.seriesNum &gt; 0 then -- Only print the series name if it's part of a series (And thus seriesNum &gt; 0)
+		print( self.series .. &quot; &quot; .. self.seriesNum .. &quot;: &quot; .. self.title .. &quot;\n&quot; ) -- Nice format
+	else 
+		print( self.title .. &quot;\n&quot; ) -- Otherwise, we can just print the title
+	end
+	print( self.text ) -- And of course, print the text
+	print( &quot;====================================\n&quot;) -- Lets make it clear when our print ends
+end
+
+-- We will now define some more functions, these are just the ones I felt like making
+function Book:IsEmpty()
+	return #self.text == 0
+end
+
+function Book:SetSeries( series )
+	self.series = series
+end
+
+function Book:GetSeries()
+	return self.series
+end
+
+function Book:SetSeriesNum( num )
+	self.seriesNum = num
+end
+
+function Book:GetSeriesNum()
+	return self.seriesNum
+end
+
+function Book:SetTitle( title )
+	self.title = title
+end
+
+function Book:GetTitle()
+	return self.title
+end
+
+function Book:AddText( text )
+	self.text = self.text .. text
+end
+
+function Book:AddLine()
+	self.text = self.text .. &quot;\n&quot;
+end
+
+-- Remove the last line of text
+function Book:RemoveLine()
+	if self:IsEmpty() then return end -- Can't remove a line if there's no text
+
+	local index = string.find( self.text, &quot;\n&quot; )
+	if not index then self.text = &quot;&quot; return end -- If there's only 1 line, set the text to nothing
+
+	local lastIndex = index
+	while index do
+		lastIndex = index
+		index = string.find( self.text, &quot;\n&quot;, index+1 )
+	end
+
+	self.text = string.sub( self.text, 1, lastIndex-1 )
+end</code></pre>
+<p>Lastly, we'll make a Book() function which is identical to Book:new() using some metamagic
+</p>
+<pre><code data-language="lua"> setmetatable( Book, {__call = Book.new } )
+</code></pre>
+<p>We have now successfully created our new simulated class - Book!
+</p>
+<pre><code data-language="lua">Book = {} -- This is our metatable. It will represent our &quot;Class&quot;
+Book.__index = Book
+
+function Book:new( series, seriesNum, title, text )
+	local EmptyBook = {
+		series = series or &quot;&quot;,
+		seriesNum = seriesNum or 0,
+		title = title or &quot;&quot;,
+		text = text or &quot;&quot;,
+	}
+
+	setmetatable( EmptyBook, Book )
+	return EmptyBook
+end
+
+function Book:Print()
+	if self:IsEmpty() then return end -- No point in printing an empty book
+
+	print( &quot;\n====================================&quot; )
+	if self.seriesNum &gt; 0 then
+		print( self.series .. &quot; &quot; .. self.seriesNum .. &quot;: &quot; .. self.title .. &quot;\n&quot; )
+	else 
+		print( self.title .. &quot;\n&quot; )
+	end
+	print( self.text )
+	print( &quot;====================================\n&quot;)
+end
+
+function Book:IsEmpty()
+	return #self.text == 0
+end
+
+function Book:SetSeries( series )
+	self.series = series
+end
+
+function Book:GetSeries()
+	return self.series
+end
+
+function Book:SetSeriesNum( num )
+	self.seriesNum = num
+end
+
+function Book:GetSeriesNum()
+	return self.seriesNum
+end
+
+function Book:SetTitle( title )
+	self.title = title
+end
+
+function Book:GetTitle()
+	return self.title
+end
+
+function Book:AddText( text )
+	self.text = self.text .. text
+end
+
+function Book:AddLine()
+	self.text = self.text .. &quot;\n&quot;
+end
+
+function Book:RemoveLine()
+	if self:IsEmpty() then return end
+
+	local index = string.find( self.text, &quot;\n&quot; )
+	if not index then self.text = &quot;&quot; return end
+
+	local lastIndex = index
+	while index do
+		lastIndex = index
+		index = string.find( self.text, &quot;\n&quot;, index+1 )
+	end
+
+	self.text = string.sub( self.text, 1, lastIndex-1 )
+end
+
+setmetatable( Book, {__call = Book.new } )</code></pre>
+<p>Here is an example code that utilizes the Book class
+</p>
+<pre><code data-language="lua">-- Option #1: Create an empty book then set its data with our defined metafunctions
+local myBook = Book()
+myBook:SetSeries( &quot;My First Series&quot; )
+myBook:SetSeriesNum( 1 ) -- First book in the series
+myBook:SetTitle( &quot;My First Book&quot; )
+myBook:AddText( &quot;This is my very first book.\nThe End&quot; )
+myBook:Print()
+
+-- Option #2: Create a new book with all (or some) of its data
+local myBook2 = Book( &quot;My First Series&quot;, 2, &quot;My Second Book&quot;, &quot;This is my second book.\nIt's a bit longer than the first one&quot; )
+myBook2:Print()
+
+myBook:RemoveLine()
+myBook:AddLine()
+myBook:AddText( &quot;I changed it a bit&quot; )
+myBook:AddLine()
+myBook:AddText( &quot;The End&quot; )
+myBook:SetSeries( &quot;&quot; )
+myBook:SetSeriesNum( 0 )
+myBook:Print()</code></pre>
+<p><b>Output</b>:
+</p><p><a href="/page/File:book_class_output.png" class="image"><img alt="book class output.png" src="/images/7/72/book_class_output.png" width="225" height="281" /></a>
+</p>
+
+

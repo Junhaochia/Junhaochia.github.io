@@ -1,0 +1,49 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DImage&#58;GetImage( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DImage.GetImage">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DImage/GetImage" title="Special:WhatLinksHere/DImage/GetImage">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelFunc"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelFunc</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">2</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Returns the image loaded in the image panel.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a></span>
+</p>
+<div style="margin-left: 32px;">
+The path to the image that is loaded.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a frame with a randomly chosen post process effect thumbnail and prints the image path to console.
+</p>
+<pre><code data-language="lua">-- Frame
+MainFrame = vgui.Create(&quot;DFrame&quot;)
+MainFrame:SetSize(200, 200)
+MainFrame:Center()
+MainFrame:SetTitle(&quot;Post process effect&quot;)
+
+-- Load post process effect thumbnail
+local postprocess = vgui.Create(&quot;DImage&quot;, MainFrame)
+postprocess:SetSize(128, 128)
+postprocess:Center()
+
+local materials = file.Find(&quot;materials/gui/postprocess/*.png&quot;, &quot;GAME&quot;)
+
+postprocess:SetImage(&quot;materials/gui/postprocess/&quot;..materials[math.random(1, #materials)])
+
+print(postprocess:GetImage())</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><pre><code data-language="lua">materials/gui/postprocess/colourmod.png</code></pre>
+<a href="/page/File:DImage_GetImage_example1.jpg" class="image"><img alt="DImage GetImage example1.jpg" src="/images/0/06/DImage_GetImage_example1.jpg" width="200" height="200" /></a></div>
+
+

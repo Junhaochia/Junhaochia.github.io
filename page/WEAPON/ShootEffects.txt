@@ -1,0 +1,20 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>WEAPON:ShootEffects( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=WEAPON.ShootEffects">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/WEAPON/ShootEffects" title="Special:WhatLinksHere/WEAPON/ShootEffects">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>A convenience function to create shoot effects.
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>As defined in weapon_base
+</p>
+<pre><code data-language="lua">function SWEP:ShootEffects()
+
+	self.Weapon:SendWeaponAnim( ACT_VM_PRIMARYATTACK )  -- View model animation
+	self.Owner:MuzzleFlash() -- Crappy muzzle light
+	self.Owner:SetAnimation( PLAYER_ATTACK1 ) -- 3rd Person Animation
+
+end</code></pre>
+<p><br />
+</p>
+
+

@@ -1,0 +1,126 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:dlistview.png" class="image" title="Example DListView"><img alt="Example DListView" src="/images/e/e0/dlistview.png" width="292" height="168" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_DPanel" title="Category:DPanel">DPanel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DListView">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DListView" title="Special:WhatLinksHere/Category:DListView">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>A data view with rows and columns.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_DPanel" title="Category:DPanel">DPanel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/GetBackgroundColor" title="DPanel/GetBackgroundColor">DPanel/GetBackgroundColor</a></li>
+<li><a href="/page/DPanel/GetDisabled" title="DPanel/GetDisabled">DPanel/GetDisabled</a></li>
+<li><a href="/page/DPanel/GetDrawBackground" title="DPanel/GetDrawBackground">DPanel/GetDrawBackground</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/GetPaintBackground" title="DPanel/GetPaintBackground">DPanel/GetPaintBackground</a></li>
+<li><a href="/page/DPanel/SetBackgroundColor" title="DPanel/SetBackgroundColor">DPanel/SetBackgroundColor</a></li>
+<li><a href="/page/DPanel/SetDisabled" title="DPanel/SetDisabled">DPanel/SetDisabled</a></li>
+</ul>
+</div>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/DPanel/SetDrawBackground" title="DPanel/SetDrawBackground">DPanel/SetDrawBackground</a></li>
+<li><a href="/page/DPanel/SetPaintBackground" title="DPanel/SetPaintBackground">DPanel/SetPaintBackground</a></li>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a DListView and populates it with two columns and three items, only one of which can be selected at a time.
+</p><p>Selecting a row will print a console message containing the text of the row and its index.
+</p>
+<pre><code data-language="lua">local f = vgui.Create( &quot;DFrame&quot; )
+f:SetSize( 500, 500 )
+f:Center()
+f:MakePopup()
+
+local AppList = vgui.Create( &quot;DListView&quot;, f )
+AppList:Dock( FILL )
+AppList:SetMultiSelect( false )
+AppList:AddColumn( &quot;Application&quot; )
+AppList:AddColumn( &quot;Size&quot; )
+
+AppList:AddLine( &quot;PesterChum&quot;, &quot;2mb&quot; )
+AppList:AddLine( &quot;Lumitorch&quot;, &quot;512kb&quot; )
+AppList:AddLine( &quot;Troj-on&quot;, &quot;661kb&quot; )
+
+AppList.OnRowSelected = function( lst, index, pnl )
+	print( &quot;Selected &quot; .. pnl:GetColumnText( 1 ) .. &quot; ( &quot; .. pnl:GetColumnText( 2 ) .. &quot; ) at index &quot; .. index )
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<pre class="plain">Selected Troj-on ( 661kb ) at index 3
+Selected Lumitorch ( 512kb ) at index 2</code></pre>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DListView"</h2>
+<p>The following 38 pages are in this category, out of 38 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DListView/AddColumn" title="DListView/AddColumn">DListView/AddColumn</a></li>
+<li><a href="/page/DListView/AddLine" title="DListView/AddLine">DListView/AddLine</a></li>
+<li><a href="/page/DListView/Clear" title="DListView/Clear">DListView/Clear</a></li>
+<li><a href="/page/DListView/ClearSelection" title="DListView/ClearSelection">DListView/ClearSelection</a></li>
+<li><a href="/page/DListView/ColumnWidth" title="DListView/ColumnWidth">DListView/ColumnWidth</a></li>
+<li><a href="/page/DListView/DataLayout" title="DListView/DataLayout">DListView/DataLayout</a></li>
+<li><a href="/page/DListView/DisableScrollbar" title="DListView/DisableScrollbar">DListView/DisableScrollbar</a></li>
+<li><a href="/page/DListView/DoDoubleClick" title="DListView/DoDoubleClick">DListView/DoDoubleClick</a></li>
+<li><a href="/page/DListView/FixColumnsLayout" title="DListView/FixColumnsLayout">DListView/FixColumnsLayout</a></li>
+<li><a href="/page/DListView/GetCanvas" title="DListView/GetCanvas">DListView/GetCanvas</a></li>
+<li><a href="/page/DListView/GetDataHeight" title="DListView/GetDataHeight">DListView/GetDataHeight</a></li>
+<li><a href="/page/DListView/GetDirty" title="DListView/GetDirty">DListView/GetDirty</a></li>
+<li><a href="/page/DListView/GetHeaderHeight" title="DListView/GetHeaderHeight">DListView/GetHeaderHeight</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DListView/GetHideHeaders" title="DListView/GetHideHeaders">DListView/GetHideHeaders</a></li>
+<li><a href="/page/DListView/GetInnerTall" title="DListView/GetInnerTall">DListView/GetInnerTall</a></li>
+<li><a href="/page/DListView/GetLine" title="DListView/GetLine">DListView/GetLine</a></li>
+<li><a href="/page/DListView/GetLines" title="DListView/GetLines">DListView/GetLines</a></li>
+<li><a href="/page/DListView/GetMultiSelect" title="DListView/GetMultiSelect">DListView/GetMultiSelect</a></li>
+<li><a href="/page/DListView/GetSelected" title="DListView/GetSelected">DListView/GetSelected</a></li>
+<li><a href="/page/DListView/GetSelectedLine" title="DListView/GetSelectedLine">DListView/GetSelectedLine</a></li>
+<li><a href="/page/DListView/GetSortable" title="DListView/GetSortable">DListView/GetSortable</a></li>
+<li><a href="/page/DListView/GetSortedID" title="DListView/GetSortedID">DListView/GetSortedID</a></li>
+<li><a href="/page/DListView/OnClickLine" title="DListView/OnClickLine">DListView/OnClickLine</a></li>
+<li><a href="/page/DListView/OnRequestResize" title="DListView/OnRequestResize">DListView/OnRequestResize</a></li>
+<li><a href="/page/DListView/OnRowRightClick" title="DListView/OnRowRightClick">DListView/OnRowRightClick</a></li>
+<li><a href="/page/DListView/OnRowSelected" title="DListView/OnRowSelected">DListView/OnRowSelected</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DListView/RemoveLine" title="DListView/RemoveLine">DListView/RemoveLine</a></li>
+<li><a href="/page/DListView/SelectFirstItem" title="DListView/SelectFirstItem">DListView/SelectFirstItem</a></li>
+<li><a href="/page/DListView/SelectItem" title="DListView/SelectItem">DListView/SelectItem</a></li>
+<li><a href="/page/DListView/SetDataHeight" title="DListView/SetDataHeight">DListView/SetDataHeight</a></li>
+<li><a href="/page/DListView/SetDirty" title="DListView/SetDirty">DListView/SetDirty</a></li>
+<li><a href="/page/DListView/SetHeaderHeight" title="DListView/SetHeaderHeight">DListView/SetHeaderHeight</a></li>
+<li><a href="/page/DListView/SetHideHeaders" title="DListView/SetHideHeaders">DListView/SetHideHeaders</a></li>
+<li><a href="/page/DListView/SetMultiSelect" title="DListView/SetMultiSelect">DListView/SetMultiSelect</a></li>
+<li><a href="/page/DListView/SetSortable" title="DListView/SetSortable">DListView/SetSortable</a></li>
+<li><a href="/page/DListView/SortByColumn" title="DListView/SortByColumn">DListView/SortByColumn</a></li>
+<li><a href="/page/DListView/SortByColumns" title="DListView/SortByColumns">DListView/SortByColumns</a></li></ul><h3>P</h3>
+<ul><li><a href="/page/Panel/SizeToContents" title="Panel/SizeToContents">Panel/SizeToContents</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

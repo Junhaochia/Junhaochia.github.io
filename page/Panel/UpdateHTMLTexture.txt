@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;UpdateHTMLTexture( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.UpdateHTMLTexture">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/UpdateHTMLTexture" title="Special:WhatLinksHere/Panel/UpdateHTMLTexture">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Forcibly updates the panels' HTML Material, similar to when Paint is called on it.<br />This is only useful if the panel is not normally visible, i.e the panel exists purely for its HTML Material.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Only works on with panels that have a HTML Material. See <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/GetHTMLMaterial" title="Panel/GetHTMLMaterial">GetHTMLMaterial</a> for more details.
+</p>
+</td></tr></table>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>A good place to call this is in the <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreRender" title="GM/PreRender">PreRender</a> hook
+</p>
+</td></tr></table>
+
+

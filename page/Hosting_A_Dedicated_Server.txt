@@ -1,0 +1,96 @@
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Windows"><span class="tocnumber">1</span> <span class="toctext">Windows</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#SteamCMD"><span class="tocnumber">1.1</span> <span class="toctext">SteamCMD</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Installing_.26_Updating_Garry.27s_Mod_Dedicated_Server"><span class="tocnumber">1.2</span> <span class="toctext">Installing &amp; Updating Garry's Mod Dedicated Server</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Automated"><span class="tocnumber">1.3</span> <span class="toctext">Automated</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Linux"><span class="tocnumber">2</span> <span class="toctext">Linux</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Installation"><span class="tocnumber">2.1</span> <span class="toctext">Installation</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Troubleshooting"><span class="tocnumber">2.2</span> <span class="toctext">Troubleshooting</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#macOS"><span class="tocnumber">3</span> <span class="toctext">macOS</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#The_Experimental_Branches"><span class="tocnumber">4</span> <span class="toctext">The Experimental Branches</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Windows">Windows</span></h1>
+<h2> <span class="mw-headline" id="SteamCMD">SteamCMD</span></h2>
+<p>Dedicated servers are now downloaded using SteamCMD. This is a command line version of Steam.
+</p><p>You can download it <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/SteamCMD">from this page</a>.
+</p><p>The first time you run it it will update and you will be left at a STEAM&gt; console. You will want to log in. You can log into an anonymous account by typing:
+</p><p><samp>login anonymous</samp>
+</p>
+<h2> <span class="mw-headline" id="Installing_.26_Updating_Garry.27s_Mod_Dedicated_Server">Installing &amp; Updating Garry's Mod Dedicated Server</span></h2>
+<p>If you want to specify a download folder then before you update enter this command:<br />
+<br />
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is known to cause problems when updating your server to a newer version. If your server fails to update, try not using the <i>force_install_dir</i> feature, or try reinstalling your server into another folder
+</p>
+</td></tr></table>
+<p><samp>force_install_dir c:\my_garrysmod_server\</samp>
+</p><p>You can then install or update the Garry's Mod Dedicated Server by using the command:
+<samp>app_update 4020</samp>
+</p><p>It will slowly download or update.
+</p><p>If you wish to verify your server, enter this instead of the above:
+<samp>app_update 4020 -validate</samp>
+</p><p>Once it's done you can type quit at the console to exit or just close the SteamCMD window.
+</p>
+<h2> <span class="mw-headline" id="Automated">Automated</span></h2>
+<p>You probably don't want to do that every time you want to install/update a server. Don't worry - it supports command lines too.
+</p><p><samp>steamcmd.exe +login anonymous +app_update 4020 validate +quit</samp>
+</p>
+<h1> <span class="mw-headline" id="Linux">Linux</span></h1>
+<p><i>Main article: <a href="/page/Linux_Dedicated_Server_Hosting" title="Linux Dedicated Server Hosting">Linux Dedicated Server Hosting</a></i>
+</p>
+<h2> <span class="mw-headline" id="Installation">Installation</span></h2>
+<p>Install SteamCMD as per the recommendations from the <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/SteamCMD#Linux">Valve Developer Wiki</a>.
+</p><p>Then install the GMod dedicated server in a similar manner to Windows:
+</p><p><samp>steamcmd +login anonymous +force_install_dir ../gmodds +app_update 4020 validate +quit
+</samp>
+</p><p>The server is now available in ~/gmodds/.
+</p><p><samp>cd ~/gmodds/
+./srcds_run -game garrysmod +maxplayers 32 +map gm_construct
+</samp>
+</p>
+<h2> <span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<p>If you get the error message
+<samp>./steamcmd.sh: line 29: /home/$USER/Steam/linux32/steamcmd: No such file or directory</samp>
+You are most likely running 64 a bit system and missing 32 bit libraries.
+</p><p>If the output of this command is x86_64, you are running a 64 bit system and need 32 bit libraries.
+<samp>uname -m</samp>
+See this article on the valve wiki.
+<a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/SteamCMD#32-bit_libraries_on_64-bit_Linux_systems">32-bit libraries on 64-bit Linux systems</a>
+</p>
+<h1> <span class="mw-headline" id="macOS">macOS</span></h1>
+<p>macOS dedicated servers are no longer shipped.
+</p><p><br />
+</p>
+<h1> <span class="mw-headline" id="The_Experimental_Branches">The Experimental Branches</span></h1>
+<p>To update your server to the development branch, you'll have to launch your SteamCMD and enter these commands <b>manually</b>:
+</p><p><samp>login anonymous
+app_update 4020 -beta dev validate
+quit
+</samp>
+</p><p>For the pre-release branch:
+<samp>login anonymous
+app_update 4020 -beta prerelease validate
+quit
+</samp>
+</p><p>To revert back to stable branch:
+<samp>login anonymous
+app_update 4020 -beta NONE validate
+quit
+</samp>
+</p><p>The development branch is updated regularly.
+</p>
+
+

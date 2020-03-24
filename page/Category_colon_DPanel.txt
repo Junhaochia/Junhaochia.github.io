@@ -1,0 +1,77 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:DPanel.png" class="image" title="Example DPanel"><img alt="Example DPanel" src="/images/3/38/DPanel.png" width="200" height="89" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DPanel">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DPanel" title="Special:WhatLinksHere/Category:DPanel">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-1"><a href="#Methods"><span class="tocnumber">4</span> <span class="toctext">Methods</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>A simple rectangular box, commonly used for parenting other elements to. Pretty much all elements are based on this.
+</p>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a DPanel and adds a <a href="/page/Category_colon_DLabel" title="Category:DLabel">DLabel</a> to it
+</p>
+<pre><code data-language="lua">local DPanel = vgui.Create( &quot;DPanel&quot; )
+DPanel:SetPos( 10, 30 ) -- Set the position of the panel
+DPanel:SetSize( 200, 200 ) -- Set the size of the panel
+
+local DLabel = vgui.Create( &quot;DLabel&quot;, DPanel )
+DLabel:SetPos( 10, 10 ) -- Set the position of the label
+DLabel:SetText( &quot;I'm a DLabel inside a DPanel!&#160;:)&quot; ) --  Set the text of the label
+DLabel:SizeToContents() -- Size the label to fit the text in it
+DLabel:SetDark( 1 ) -- Set the colour of the text inside the label to a darker one</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><br />
+<a href="/page/File:DPanel_large.png" class="image"><img alt="DPanel large.png" src="/images/e/ec/DPanel_large.png" width="230" height="260" /></a></div>
+<h1> <span class="mw-headline" id="Methods"> Methods </span></h1>
+<ul><li><a href="/page/Special:FormEdit/PanelFunc/DPanel/SetIsMenu" class=" new" title="">SetIsMenu</a>
+</li><li><a href="/page/Special:FormEdit/PanelFunc/DPanel/SetTabbingDisabled" class=" new" title="">SetTabbingDisabled</a>
+</li><li><a href="/page/Special:FormEdit/PanelFunc/DPanel/GetIsMenu" class=" new" title="">GetIsMenu</a>
+</li><li><a href="/page/Special:FormEdit/PanelFunc/DPanel/GetTabbingDisabled" class=" new" title="">GetTabbingDisabled</a>
+</li></ul>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DPanel"</h2>
+<p>The following 8 pages are in this category, out of 8 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DPanel/GetBackgroundColor" title="DPanel/GetBackgroundColor">DPanel/GetBackgroundColor</a></li>
+<li><a href="/page/DPanel/GetDisabled" title="DPanel/GetDisabled">DPanel/GetDisabled</a></li>
+<li><a href="/page/DPanel/GetDrawBackground" title="DPanel/GetDrawBackground">DPanel/GetDrawBackground</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DPanel/GetPaintBackground" title="DPanel/GetPaintBackground">DPanel/GetPaintBackground</a></li>
+<li><a href="/page/DPanel/SetBackgroundColor" title="DPanel/SetBackgroundColor">DPanel/SetBackgroundColor</a></li>
+<li><a href="/page/DPanel/SetDisabled" title="DPanel/SetDisabled">DPanel/SetDisabled</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DPanel/SetDrawBackground" title="DPanel/SetDrawBackground">DPanel/SetDrawBackground</a></li>
+<li><a href="/page/DPanel/SetPaintBackground" title="DPanel/SetPaintBackground">DPanel/SetPaintBackground</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

@@ -1,0 +1,10 @@
+<p>The pages below describe functionalities that will only be available in the next update. See <a href="/page/Dev_Branch" title="Dev Branch">Dev Branch</a> for more details.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Next Update Changes"</h2>
+<p>This category contains only the following page.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>C</h3>
+<ul><li><a href="/page/Command_Line_Parameters" title="Command Line Parameters">Command Line Parameters</a></li></ul></div>
+</div></div>

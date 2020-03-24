@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>dragndrop.HandleDroppedInGame( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=dragndrop.HandleDroppedInGame">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/client/panel/dragdrop.lua#L34">View Source</a> - <a href="/page/Special:WhatLinksHere/dragndrop/HandleDroppedInGame" title="Special:WhatLinksHere/dragndrop/HandleDroppedInGame">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>If returns true, calls <a href="/page/Category_colon_dragndrop" title="Category:dragndrop">dragndrop</a>.<a href="/page/dragndrop/StopDragging" title="dragndrop/StopDragging">StopDragging</a> in <a href="/page/Category_colon_dragndrop" title="Category:dragndrop">dragndrop</a>.<a href="/page/dragndrop/Drop" title="dragndrop/Drop">Drop</a>. Seems to be broken and does nothing. Is it for override?
+</p>
+
+

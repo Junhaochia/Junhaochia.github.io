@@ -1,0 +1,8 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>render.PopFilterMag( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.PopFilterMag">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/PopFilterMag" title="Special:WhatLinksHere/render/PopFilterMag">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Pops the current texture magnification filter from the filter stack.
+</p><p>See <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/PushFilterMag" title="render/PushFilterMag">PushFilterMag</a>
+</p>
+
+

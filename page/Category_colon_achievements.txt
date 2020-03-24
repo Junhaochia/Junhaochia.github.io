@@ -1,0 +1,29 @@
+<p>This library is used internally by Garry's Mod to help keep track of achievement progress and unlock the appropriate achievements once a certain number is reached.
+</p><p>However, this library can also be used by anyone else to forcefully unlock certain achievements.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "achievements"</h2>
+<p>The following 16 pages are in this category, out of 16 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>A</h3>
+<ul><li><a href="/page/achievements/BalloonPopped" title="achievements/BalloonPopped">achievements/BalloonPopped</a></li>
+<li><a href="/page/achievements/Count" title="achievements/Count">achievements/Count</a></li>
+<li><a href="/page/achievements/EatBall" title="achievements/EatBall">achievements/EatBall</a></li>
+<li><a href="/page/achievements/GetCount" title="achievements/GetCount">achievements/GetCount</a></li>
+<li><a href="/page/achievements/GetDesc" title="achievements/GetDesc">achievements/GetDesc</a></li>
+<li><a href="/page/achievements/GetGoal" title="achievements/GetGoal">achievements/GetGoal</a></li></ul></td>
+<td><h3>A cont.</h3>
+<ul><li><a href="/page/achievements/GetName" title="achievements/GetName">achievements/GetName</a></li>
+<li><a href="/page/achievements/IncBaddies" title="achievements/IncBaddies">achievements/IncBaddies</a></li>
+<li><a href="/page/achievements/IncBystander" title="achievements/IncBystander">achievements/IncBystander</a></li>
+<li><a href="/page/achievements/IncGoodies" title="achievements/IncGoodies">achievements/IncGoodies</a></li>
+<li><a href="/page/achievements/IsAchieved" title="achievements/IsAchieved">achievements/IsAchieved</a></li>
+<li><a href="/page/achievements/Remover" title="achievements/Remover">achievements/Remover</a></li></ul></td>
+<td><h3>A cont.</h3>
+<ul><li><a href="/page/achievements/SpawnedNPC" title="achievements/SpawnedNPC">achievements/SpawnedNPC</a></li>
+<li><a href="/page/achievements/SpawnedProp" title="achievements/SpawnedProp">achievements/SpawnedProp</a></li>
+<li><a href="/page/achievements/SpawnedRagdoll" title="achievements/SpawnedRagdoll">achievements/SpawnedRagdoll</a></li>
+<li><a href="/page/achievements/SpawnMenuOpen" title="achievements/SpawnMenuOpen">achievements/SpawnMenuOpen</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

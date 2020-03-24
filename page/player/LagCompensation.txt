@@ -1,0 +1,86 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Player&#58;LagCompensation( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.LagCompensation">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/LagCompensation" title="Special:WhatLinksHere/Player/LagCompensation">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>This allows the server to mitigate the lag of the player by moving back all the entities that can be lag compensated to the time the player attacked with his weapon.
+</p><p>This technique is most commonly used on things that hit other entities instantaneously, such as traces.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/FireBullets" title="Entity/FireBullets">FireBullets</a> calls this function internally.
+</p>
+</td></tr></table>
+<p>Lag compensation only works for players and entities that have been enabled with <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/SetLagCompensated" title="Entity/SetLagCompensated">SetLagCompensated</a>
+</p><p>Despite being defined shared, it can only be used server side in a <a href="/page/Category_colon_Predicted_Hooks" title="Category:Predicted Hooks">Predicted Hook</a>.
+</p>
+<table cellspacing="0" class="gmodwiki_note warning_note">
+<tr>
+<td>WARNING
+</td>
+<td>
+<p>This function NEEDS to be disabled after you're done with it or it will break the movement of the entities affected!
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>Lag compensation does not support pose parameters.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/3683">#3683</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> lagCompensation</span>
+</p>
+<div style="margin-left: 32px;">
+The state of the lag compensation, true to enable and false to disable.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Do a crowbar-like melee trace, enabling lag compensation before doing so.
+</p>
+<pre><code data-language="lua">function SWEP:PrimaryAttack()
+
+	local tracedata = {}
+	tracedata.start = self.Owner:GetShootPos()
+	tracedata.endpos = self.Owner:GetShootPos() + self.Owner:GetAimVector() * 75
+	tracedata.filter = self.Owner
+	tracedata.mins =  Vector( -8 , -8 , -8 )
+	tracedata.maxs =  Vector( 8 , 8 , 8 )
+	
+	-- It is recommended to use an IsPlayer check in case the weapon is being used by an NPC.
+	if ( self.Owner:IsPlayer() ) then
+		self.Owner:LagCompensation( true )
+	end
+	
+	local tr = util.TraceHull( tracedata )
+	
+	if ( self.Owner:IsPlayer() ) then
+		self.Owner:LagCompensation( false )
+	end
+	
+	if tr.Hit then
+		print( tr.Entity )	--your code here
+	end
+	
+	self:SetNextPrimaryFire( CurTime() + 0.5 )
+end</code></pre>
+<p><br />
+</p>
+
+

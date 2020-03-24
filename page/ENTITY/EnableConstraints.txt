@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>Entity&#58;EnableConstraints( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.EnableConstraints">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/EnableConstraints" title="Special:WhatLinksHere/Entity/EnableConstraints">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Toggles the constraints of this ragdoll entity on and off.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> toggleConstraints</span>
+</p>
+<div style="margin-left: 32px;">
+<p>Set to true to enable the constraints and false to disable them.
+</p>
+Disabling constraints will delete the constraint entities.</div>
+</div>
+
+

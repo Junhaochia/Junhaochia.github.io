@@ -1,0 +1,176 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/DynamicLight" title="Special:WhatLinksHere/Structures/DynamicLight">What links here?</a></div>Structure for <a href="/page/Global/DynamicLight" title="Global/DynamicLight">DynamicLight</a>.
+<p>All members are case insensitive.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is an actual class named <b>dlight_t</b>, not a table.
+</p>
+</td></tr></table>
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> brightness
+</td>
+<td>
+<p>The brightness of the light.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> decay
+</td>
+<td>
+<p>Fade out speed.
+Here's a formula for calculating Decay for your light: 1000 / fadeOutTimeInSeconds. For example setting decay to 1000 would fade out the light in 1 second, 2000 - 0.5 seconds.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> dietime
+</td>
+<td>
+<p>Time after which light will be removed.
+</p><p>This is relative to <a href="/page/Global/CurTime" title="Global/CurTime">CurTime</a>. If you put in a value that is less than or equal to <a href="/page/Global/CurTime" title="Global/CurTime">CurTime</a>, the light will not behave properly.
+</p><p>Note, that it does not affect fading out. Light will be removed regardless of it being fully faded out or not.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> dir
+</td>
+<td>
+<p>The light direction. Used with <b>InnerAngle</b> and <b>OuterAngle</b>.
+</p><p><b>Default:</b> Vector( 0, 0, 0 )
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> innerangle
+</td>
+<td>
+<p>The closer this is to zero, the smoother the light will be. Requires <b>Dir</b> and <b>OuterAngle</b> to be set.
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> outerangle
+</td>
+<td>
+<p>The angle of the Dynamic Light. Requires <b>Dir</b> to be set.
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> key
+</td>
+<td>
+<p>Makes the light brighter and flicker? Changing the value does not seem to affect anything.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> minlight
+</td>
+<td>
+<p>Minimum light
+</p><p><b>Default:</b> 0
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> noworld
+</td>
+<td>
+<p>Don't light the world. Has no effect for elights since they never light the world.
+</p><p><b>Default:</b> false
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> nomodel
+</td>
+<td>
+<p>Don't light models
+</p><p><b>Default:</b> false
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> pos
+</td>
+<td>
+<p>Position of the light
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> size
+</td>
+<td>
+<p>Radius of the light
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> style
+</td>
+<td>
+<p>Flicker style, see <a rel="nofollow" class="external text" href="https://developer.valvesoftware.com/wiki/Light_dynamic#Appearances">this page</a> for examples.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> b
+</td>
+<td>
+<p>The blue part of the color
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> g
+</td>
+<td>
+<p>The green part of the color
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> r
+</td>
+<td>
+<p>The red part of the color
+</p>
+</td></tr></table>
+
+

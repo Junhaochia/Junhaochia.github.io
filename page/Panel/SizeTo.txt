@@ -1,0 +1,64 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SizeTo( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SizeTo">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SizeTo" title="Special:WhatLinksHere/Panel/SizeTo">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_3"><span class="tocnumber">4</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_4"><span class="tocnumber">5</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_5"><span class="tocnumber">6</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_6"><span class="tocnumber">7</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Uses animation to resize the panel to the specified size.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> sizeW=0</span>
+</p>
+<div style="margin-left: 32px;">
+The target width of the panel. Use -1 to retain the current width.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> sizeH=0</span>
+</p>
+<div style="margin-left: 32px;">
+The target height of the panel. Use -1 to retain the current height.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_3">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> time</span>
+</p>
+<div style="margin-left: 32px;">
+The time to perform the animation within.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_4">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> delay=0</span>
+</p>
+<div style="margin-left: 32px;">
+The delay before the animation starts.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_5">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> ease=-1</span>
+</p>
+<div style="margin-left: 32px;">
+Easing of the start and/or end speed of the animation. See <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/NewAnimation" title="Panel/NewAnimation">NewAnimation</a> for how this works.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_6">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_function" title="Category:function">function</a> callback</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The function to be called once the animation finishes. Arguments are:
+</p>
+<ul><li> <a href="/page/Category_colon_table" title="Category:table">table</a> animData - The <a href="/page/Structures/AnimationData" title="Structures/AnimationData">AnimationData structure</a> that was used.
+</li><li> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> pnl - The panel object that was resized.</div>
+</li></ul>
+</div>
+
+

@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>IMaterial&#58;GetVectorLinear( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IMaterial.GetVectorLinear">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IMaterial/GetVectorLinear" title="Special:WhatLinksHere/IMaterial/GetVectorLinear">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the specified material linear color vector, or nil if the value is not set.
+</p><p>See <a rel="nofollow" class="external free" href="https://en.wikipedia.org/wiki/Gamma_correction">https://en.wikipedia.org/wiki/Gamma_correction</a>
+</p><p>See also <a href="/page/Category_colon_IMaterial" title="Category:IMaterial">IMaterial</a>:<a href="/page/IMaterial/GetVector" title="IMaterial/GetVector">GetVector</a>
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> materialVector</span>
+</p>
+<div style="margin-left: 32px;">
+The name of the material vector.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a></span>
+</p>
+<div style="margin-left: 32px;">
+The linear color vector</div>
+</div>
+
+

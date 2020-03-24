@@ -1,0 +1,16 @@
+<p>Functions in lua can also be put into variables just like a number or a string can.
+</p>
+<pre>local function killAllPlayers()
+	for k,v in pairs(player.GetAll()) do
+		v:Kill()
+	end
+end
+
+killAllPlayers()
+</pre>
+<p>They can be fed to other functions and methods, such as <a href="/page/Category_colon_concommand" title="Category:concommand">concommand</a>.<a href="/page/concommand/Add" title="concommand/Add">Add</a>, also be stored in tables.
+</p>
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

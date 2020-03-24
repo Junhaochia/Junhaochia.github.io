@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>CLuaLocomotion&#58;SetGravity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CLuaLocomotion.SetGravity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CLuaLocomotion/SetGravity" title="Special:WhatLinksHere/CLuaLocomotion/SetGravity">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the locomotion's gravity.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>With values 0 or below, or even lower positive values, the nextbot will start to drift sideways, use <a href="/page/Category_colon_CLuaLocomotion" title="Category:CLuaLocomotion">CLuaLocomotion</a>:<a href="/page/CLuaLocomotion/SetVelocity" title="CLuaLocomotion/SetVelocity">SetVelocity</a> to counteract this.
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> gravity</span>
+</p>
+<div style="margin-left: 32px;">
+New gravity to set. Default is 1000.</div>
+</div>
+
+

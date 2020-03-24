@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Panel&#58;SetVerticalScrollbarEnabled( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SetVerticalScrollbarEnabled">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SetVerticalScrollbarEnabled" title="Special:WhatLinksHere/Panel/SetVerticalScrollbarEnabled">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the visibility of the vertical scrollbar.
+</p><p>Works for <a href="/page/Category_colon_RichText" title="Category:RichText">RichText</a> and <a href="/page/Category_colon_TextEntry" title="Category:TextEntry">TextEntry</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a> display=false</span>
+</p>
+<div style="margin-left: 32px;">
+True to display the vertical text scroll bar, false to hide it.</div>
+</div>
+
+

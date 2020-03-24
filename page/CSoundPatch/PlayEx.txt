@@ -1,0 +1,21 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>CSoundPatch&#58;PlayEx( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CSoundPatch.PlayEx">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CSoundPatch/PlayEx" title="Special:WhatLinksHere/CSoundPatch/PlayEx">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Same as <a href="/page/Category_colon_CSoundPatch" title="Category:CSoundPatch">CSoundPatch</a>:<a href="/page/CSoundPatch/Play" title="CSoundPatch/Play">Play</a> but with 2 extra arguments allowing to set volume and pitch directly.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> volume</span>
+</p>
+<div style="margin-left: 32px;">
+The volume ranges from 0 to 1.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> pitch</span>
+</p>
+<div style="margin-left: 32px;">
+The pitch can range from 0-255.</div>
+</div>
+
+

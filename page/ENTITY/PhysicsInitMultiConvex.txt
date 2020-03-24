@@ -1,0 +1,116 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;PhysicsInitMultiConvex( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.PhysicsInitMultiConvex">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/PhysicsInitMultiConvex" title="Special:WhatLinksHere/Entity/PhysicsInitMultiConvex">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Returns"><span class="tocnumber">3</span> <span class="toctext">Returns</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>An advanced version of <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/PhysicsInitConvex" title="Entity/PhysicsInitConvex">PhysicsInitConvex</a> which initializes a physics object from multiple convex meshes. This should be used for physics objects with a custom shape which cannot be represented by a single convex mesh.
+</p><p>If successful, the previous physics object will be removed.
+</p>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>Clientside physics objects are broken and do not move properly in some cases. Physics objects should only created on the server or you will experience incorrect physgun beam position, prediction issues, and other unexpected behavior.
+</p><p>You can use the following work-around for movement, though clientside collisions will still be broken.
+</p>
+<pre><code data-language="lua">
+function ENT:Think()
+	if ( CLIENT ) then
+		local physobj = self:GetPhysicsObject()
+
+		if ( IsValid( physobj ) ) then
+			physobj:SetPos( self:GetPos() )
+			physobj:SetAngles( self:GetAngles() )
+		end
+	end
+end
+</code></pre>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a> vertices</span>
+</p>
+<div style="margin-left: 32px;">
+A table consisting of tables of <a href="/page/Category_colon_Vector" title="Category:Vector">Vectors</a>. Each sub-table defines a set of points to be used in the computation of one convex mesh.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Returns true on success, nil otherwise</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a physics mesh for the entity which consists of two boxes.
+</p>
+<pre><code data-language="lua">local min1 = Vector( -30, -10, 0 ) -- Box1 minimum corner
+local max1 = Vector( -10, 10, 20 ) -- Box1 maximum corner
+
+local min2 = Vector( 10, -5, 10 ) -- Box2 minimum corner
+local max2 = Vector( 30, 5, 40 ) -- Box2 maximum corner
+
+if SERVER then
+	function ENT:Initialize()
+		self:SetModel( &quot;models/props_c17/oildrum001.mdl&quot; )
+
+		-- Initializing the multi-convex physics mesh
+		self:PhysicsInitMultiConvex( {
+			{ -- Each sub-table is a set of vertices of a convex piece, order doesn't matter
+				Vector( min1.x, min1.y, min1.z ), -- The first box vertices
+				Vector( min1.x, min1.y, max1.z ),
+				Vector( min1.x, max1.y, min1.z ),
+				Vector( min1.x, max1.y, max1.z ),
+				Vector( max1.x, min1.y, min1.z ),
+				Vector( max1.x, min1.y, max1.z ),
+				Vector( max1.x, max1.y, min1.z ),
+				Vector( max1.x, max1.y, max1.z ),
+			},
+			{ -- All these tables together form a concave collision mesh
+				Vector( min2.x, min2.y, min2.z ), -- The second box vertices
+				Vector( min2.x, min2.y, max2.z ),
+				Vector( min2.x, max2.y, min2.z ),
+				Vector( min2.x, max2.y, max2.z ),
+				Vector( max2.x, min2.y, min2.z ),
+				Vector( max2.x, min2.y, max2.z ),
+				Vector( max2.x, max2.y, min2.z ),
+				Vector( max2.x, max2.y, max2.z ),
+			},
+		} )
+
+		self:SetSolid( SOLID_VPHYSICS ) -- Setting the solidity
+		self:SetMoveType( MOVETYPE_VPHYSICS ) -- Setting the movement type
+
+		self:EnableCustomCollisions( true ) -- Enabling the custom collision mesh
+
+		self:PhysWake() -- Enabling the physics motion
+	end
+else
+	local col = Color( 0, 0, 255, 255 )
+
+	-- Drawing collision boxes on the client
+	function ENT:Draw()
+		self:DrawModel()
+
+		local pos, ang = self:GetPos(), self:GetAngles()
+
+		render.DrawWireframeBox( pos, ang, min1, max1, col ) -- Drawing the first collision box
+		render.DrawWireframeBox( pos, ang, min2, max2, col ) -- Drawing the second collision box
+	end
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;"><a href="/page/File:PhysicsInitMultiConvexExample.gif" class="image"><img alt="PhysicsInitMultiConvexExample.gif" src="/images/3/3d/PhysicsInitMultiConvexExample.gif" width="474" height="438" /></a></div>
+
+

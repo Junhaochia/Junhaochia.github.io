@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>IconEditor&#58;SetFromEntity( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IconEditor.SetFromEntity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IconEditor/SetFromEntity" title="Special:WhatLinksHere/IconEditor/SetFromEntity">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Sets the editor's model and icon from an entity. Alternative to <a href="/page/Category_colon_IconEditor" title="Category:IconEditor">IconEditor</a>:<a href="/page/IconEditor/SetIcon" title="IconEditor/SetIcon">SetIcon</a>, with uses a <a href="/page/Category_colon_SpawnIcon" title="Category:SpawnIcon">SpawnIcon</a>.
+</p><p>You do not need to call <a href="/page/Category_colon_IconEditor" title="Category:IconEditor">IconEditor</a>:<a href="/page/IconEditor/Refresh" title="IconEditor/Refresh">Refresh</a> after this.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ent</span>
+</p>
+<div style="margin-left: 32px;">
+The entity to retrieve the model and skin from.</div>
+</div>
+
+

@@ -1,0 +1,23 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>CUserCmd&#58;SelectWeapon( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CUserCmd.SelectWeapon">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CUserCmd/SelectWeapon" title="Special:WhatLinksHere/CUserCmd/SelectWeapon">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Forces the associated player to select a weapon. This is used internally in the default HL2 weapon selection HUD.
+</p><p>This may not work immediately if the current command is in prediction. Use <a href="/page/Category_colon_input" title="Category:input">input</a>.<a href="/page/input/SelectWeapon" title="input/SelectWeapon">SelectWeapon</a> to switch the weapon from the client when the next available command can do so.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This is the ideal function to use to create a custom weapon selection HUD, as it allows prediction to run properly for <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/Deploy" title="WEAPON/Deploy">Deploy</a> and <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PlayerSwitchWeapon" title="GM/PlayerSwitchWeapon">PlayerSwitchWeapon</a>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a> weapon</span>
+</p>
+<div style="margin-left: 32px;">
+The weapon entity to select.</div>
+</div>
+
+

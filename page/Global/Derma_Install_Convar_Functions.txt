@@ -1,0 +1,53 @@
+<div class="function_line">
+<span class="client_m" title="Client and Menu">&#160;</span>Derma_Install_Convar_Functions( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Derma_Install_Convar_Functions">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/Derma_Install_Convar_Functions" title="Special:WhatLinksHere/Global/Derma Install Convar Functions">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Makes the panel (usually an input of sorts) respond to changes in console variables by adding next functions to the panel:
+</p>
+<ul><li> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetConVar" title="Panel/SetConVar">SetConVar</a>
+</li><li> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/ConVarChanged" title="Panel/ConVarChanged">ConVarChanged</a>
+</li><li> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/ConVarStringThink" title="Panel/ConVarStringThink">ConVarStringThink</a>
+</li><li> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/ConVarNumberThink" title="Panel/ConVarNumberThink">ConVarNumberThink</a>
+</li></ul>
+<p>The console variable value is saved in the <i>m_strConVar</i> property of the panel.
+</p><p>The panel should call
+<a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/ConVarStringThink" title="Panel/ConVarStringThink">ConVarStringThink</a> or
+<a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/ConVarNumberThink" title="Panel/ConVarNumberThink">ConVarNumberThink</a>
+in its <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/Think" title="PANEL/Think">Think</a> hook and should call <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/ConVarChanged" title="Panel/ConVarChanged">ConVarChanged</a> when the panel's value has changed.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> target</span>
+</p>
+<div style="margin-left: 32px;">
+The panel the functions should be added to.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Adds the functions to a panel (snippet of vgui/dcheckbox.lua)
+</p>
+<pre><code data-language="lua">local PANEL = {}
+
+Derma_Install_Convar_Functions( PANEL )
+
+function PANEL:Init()
+	-- Init function here
+end
+function PANEL:Think()
+	self:ConVarStringThink()
+end</code></pre>
+<p><b>Output:</b>
+</p>
+<div style="margin:2em;">The <code>PANEL</code> table now contains the functions SetConVar, ConVarChanged, ConVarStringThink and ConVarNumberThink (and an Init function and a Think function)</div>
+
+

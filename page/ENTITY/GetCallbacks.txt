@@ -1,0 +1,22 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;GetCallbacks( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.GetCallbacks">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/GetCallbacks" title="Special:WhatLinksHere/Entity/GetCallbacks">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the specified hook callbacks for this entity added with <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/AddCallback" title="Entity/AddCallback">AddCallback</a>
+</p><p>The callbacks can then be removed with <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/RemoveCallback" title="Entity/RemoveCallback">RemoveCallback</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> hook</span>
+</p>
+<div style="margin-left: 32px;">
+The hook to retrieve the callbacks from, see <a href="/page/Entity_Callbacks" title="Entity Callbacks">Entity Callbacks</a> for the possible hooks.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+A table containing the callbackid and function of all the callbacks for the specified hook</div>
+</div>
+
+

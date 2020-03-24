@@ -1,0 +1,16 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Entity&#58;DisableMatrix( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.DisableMatrix">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/DisableMatrix" title="Special:WhatLinksHere/Entity/DisableMatrix">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Disables an active matrix.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_string" title="Category:string">string</a> matrixType</span>
+</p>
+<div style="margin-left: 32px;">
+<p>The name of the matrix type to disable.<br /><br />
+</p>
+The only known matrix type is "RenderMultiply".</div>
+</div>
+
+

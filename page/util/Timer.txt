@@ -1,0 +1,27 @@
+<div class="function_line">
+<span class="shared_m" title="Shared and Menu">&#160;</span>util.Timer( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=util.Timer">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/util.lua#L213">View Source</a> - <a href="/page/Special:WhatLinksHere/util/Timer" title="Special:WhatLinksHere/util/Timer">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Creates a timer object.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> startdelay=0</span>
+</p>
+<div style="margin-left: 32px;">
+How long you want the timer to be.</div>
+</div>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_table" title="Category:table">table</a></span>
+</p>
+<div style="margin-left: 32px;">
+<p>A timer object. It has next methods:
+</p>
+<dl><dt>Reset() - Resets the timer to nothing
+</dt><dt>Start( time ) - Starts the timer, call with end time
+</dt><dt>Started() - Returns true if the timer has been started
+</dt><dt>Elapsed() - Returns true if the time has elapsed</div>
+</dt></dl>
+</div>
+
+

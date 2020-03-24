@@ -1,0 +1,103 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/HullTrace" title="Special:WhatLinksHere/Structures/HullTrace">What links here?</a></div>Table used by <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/TraceHull" title="util/TraceHull">TraceHull</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> start
+</td>
+<td>
+<p>The start position of the trace
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> endpos
+</td>
+<td>
+<p>The end position of the trace
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> maxs
+</td>
+<td>
+<p>The 3D vector local to the start/endpos with the highest values. This will represent the corner with the upper bounds of the box.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a>
+</td>
+<td> mins
+</td>
+<td>
+<p>The 3D vector local to the start/endpos with the lowest (often negative) values. This will represent the corner with the lower bounds of the box.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>
+</td>
+<td> filter
+</td>
+<td>
+<p>Things the trace should not hit. Can also be a table of entities or a function with one argument:<br />
+</p>
+<ul><li> <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a> ent - The entity that the trace hit
+</li></ul>
+<p>Using a function here is super slow. Try to avoid it.
+</p><p><b>Default:</b> {}
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> mask
+</td>
+<td>
+<p>The trace mask <a href="/page/Enums/MASK" title="Enums/MASK">MASK_ Enums</a>. This determines what the trace should hit and what it shouldn't hit.
+</p><p><b>Default:</b> MASK_SOLID
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> collisiongroup
+</td>
+<td>
+<p>The collision group <a href="/page/Enums/COLLISION_GROUP" title="Enums/COLLISION GROUP">COLLISION_GROUP_ Enums</a>. This determines what the trace should hit in regards to the entity's collision group.
+</p><p><b>Default:</b> COLLISION_GROUP_NONE
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a>
+</td>
+<td> ignoreworld
+</td>
+<td>
+<p>Should the trace ignore world or not.
+</p><p><b>Default:</b> false
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_table" title="Category:table">table</a>
+</td>
+<td> output
+</td>
+<td>
+<p>If set, the trace result will be written to the supplied table instead of returning a new table
+</p><p><b>Default:</b> nil
+</p>
+</td></tr></table>
+
+

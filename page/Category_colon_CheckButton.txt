@@ -1,0 +1,16 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<div>
+<table>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CheckButton">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:CheckButton" title="Special:WhatLinksHere/Category:CheckButton">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<div class="internalfunc"><span>This is an internal function or feature.</span><br />
+This means you will be able to use it, but you really shouldn't.<br /><br />Use <a href="/page/Category_colon_DCheckBoxLabel" title="Category:DCheckBoxLabel">DCheckBoxLabel</a> instead.</div>Engine checkbox
+
+
+<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
+</p></div>

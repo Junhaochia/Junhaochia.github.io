@@ -1,0 +1,68 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>GM:PlayerLeaveVehicle( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.PlayerLeaveVehicle">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/PlayerLeaveVehicle" title="Special:WhatLinksHere/GM/PlayerLeaveVehicle">What links here?</a></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1"><a href="#Arguments"><span class="tocnumber">2</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Arguments_2"><span class="tocnumber">3</span> <span class="toctext">Arguments</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Called when a player leaves a vehicle.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>For vehicles with exit animations, this will be called <b>at the end</b> of the animation, <b>not at the start</b>!
+</p>
+</td></tr></table>
+<table class="gmodwiki_note bug_note">
+<tr>
+<td>BUG
+</td>
+<td>
+<p>This is not called when a different vehicle is immediately entered with <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/EnterVehicle" title="Player/EnterVehicle">EnterVehicle</a>.
+</p><p><b>Issue Tracker: <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod-issues/issues/2619">#2619</a></b>
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Player" title="Category:Player">Player</a> ply</span>
+</p>
+<div style="margin-left: 32px;">
+Player who left a vehicle.</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vehicle" title="Category:Vehicle">Vehicle</a> veh</span>
+</p>
+<div style="margin-left: 32px;">
+Vehicle the player left.</div>
+</div>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Make the vehicle continue running (or more precisely start its engine again) when a player exists it, unless the player holds their Reload key.
+</p>
+<pre><code data-language="lua">hook.Add( &quot;PlayerLeaveVehicle&quot;, &quot;PlayerLeaveVehicleTurnOn&quot;, function( ply, veh )
+	if ( ply:KeyDown( IN_RELOAD ) ) then return end
+
+	-- We need to wait a few frames for the vehicle to stop working
+	timer.Create( &quot;magic timer&quot; .. veh:EntIndex(), 0, 2, function()
+		-- Only run on the last time the timer is fired
+		if ( timer.RepsLeft( &quot;magic timer&quot; .. veh:EntIndex() ) &gt; 0 ) then return end
+
+		veh:StartEngine( true ) -- Start the engine back up
+		veh:ReleaseHandbrake() -- Release the handbrake
+	end )
+end )</code></pre>
+<p><br />
+</p>
+
+

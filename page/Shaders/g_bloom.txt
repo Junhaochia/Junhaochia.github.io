@@ -1,0 +1,40 @@
+<p>A simple bloom shader. See <a href="/page/Global/DrawBloom" title="Global/DrawBloom">DrawBloom</a> if you wish to use it in your code.
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $levelb
+</td>
+<td> The multiplier for blue
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $levelg
+</td>
+<td> The multiplier for the green
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $levelr
+</td>
+<td> The multiplier for the red
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> $colormul
+</td>
+<td> The general multiplier for all colors
+</td></tr></table>
+
+

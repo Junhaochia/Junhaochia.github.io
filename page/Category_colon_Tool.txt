@@ -1,0 +1,43 @@
+<div class="derivedonly"><span>This function or feature is only available in the Sandbox gamemode and its <a href="/page/Global/DeriveGamemode" title="Global/DeriveGamemode">derivatives</a>.</span></div>
+<p>A list of functions available inside a Sandbox Toolgun tool.
+</p><p>You can find the hooks <a href="/page/Category_colon_TOOL_Hooks" title="Category:TOOL Hooks">here</a> and members <a href="/page/Structures/TOOL" title="Structures/TOOL">here</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Tool"</h2>
+<p>The following 29 pages are in this category, out of 29 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>T</h3>
+<ul><li><a href="/page/Tool/Allowed" title="Tool/Allowed">Tool/Allowed</a></li>
+<li><a href="/page/Tool/BuildConVarList" title="Tool/BuildConVarList">Tool/BuildConVarList</a></li>
+<li><a href="/page/Tool/CheckObjects" title="Tool/CheckObjects">Tool/CheckObjects</a></li>
+<li><a href="/page/Tool/ClearObjects" title="Tool/ClearObjects">Tool/ClearObjects</a></li>
+<li><a href="/page/Tool/Create" title="Tool/Create">Tool/Create</a></li>
+<li><a href="/page/Tool/CreateConVars" title="Tool/CreateConVars">Tool/CreateConVars</a></li>
+<li><a href="/page/Tool/GetBone" title="Tool/GetBone">Tool/GetBone</a></li>
+<li><a href="/page/Tool/GetClientInfo" title="Tool/GetClientInfo">Tool/GetClientInfo</a></li>
+<li><a href="/page/Tool/GetClientNumber" title="Tool/GetClientNumber">Tool/GetClientNumber</a></li>
+<li><a href="/page/Tool/GetEnt" title="Tool/GetEnt">Tool/GetEnt</a></li></ul></td>
+<td><h3>T cont.</h3>
+<ul><li><a href="/page/Tool/GetHelpText" title="Tool/GetHelpText">Tool/GetHelpText</a></li>
+<li><a href="/page/Tool/GetLocalPos" title="Tool/GetLocalPos">Tool/GetLocalPos</a></li>
+<li><a href="/page/Tool/GetMode" title="Tool/GetMode">Tool/GetMode</a></li>
+<li><a href="/page/Tool/GetNormal" title="Tool/GetNormal">Tool/GetNormal</a></li>
+<li><a href="/page/Tool/GetOperation" title="Tool/GetOperation">Tool/GetOperation</a></li>
+<li><a href="/page/Tool/GetOwner" title="Tool/GetOwner">Tool/GetOwner</a></li>
+<li><a href="/page/Tool/GetPhys" title="Tool/GetPhys">Tool/GetPhys</a></li>
+<li><a href="/page/Tool/GetPos" title="Tool/GetPos">Tool/GetPos</a></li>
+<li><a href="/page/Tool/GetServerInfo" title="Tool/GetServerInfo">Tool/GetServerInfo</a></li>
+<li><a href="/page/Tool/GetStage" title="Tool/GetStage">Tool/GetStage</a></li></ul></td>
+<td><h3>T cont.</h3>
+<ul><li><a href="/page/Tool/MakeGhostEntity" title="Tool/MakeGhostEntity">Tool/MakeGhostEntity</a></li>
+<li><a href="/page/Tool/NumObjects" title="Tool/NumObjects">Tool/NumObjects</a></li>
+<li><a href="/page/Tool/ReleaseGhostEntity" title="Tool/ReleaseGhostEntity">Tool/ReleaseGhostEntity</a></li>
+<li><a href="/page/Tool/SetObject" title="Tool/SetObject">Tool/SetObject</a></li>
+<li><a href="/page/Tool/SetOperation" title="Tool/SetOperation">Tool/SetOperation</a></li>
+<li><a href="/page/Tool/SetStage" title="Tool/SetStage">Tool/SetStage</a></li>
+<li><a href="/page/Tool/StartGhostEntity" title="Tool/StartGhostEntity">Tool/StartGhostEntity</a></li>
+<li><a href="/page/Tool/UpdateData" title="Tool/UpdateData">Tool/UpdateData</a></li>
+<li><a href="/page/Tool/UpdateGhostEntity" title="Tool/UpdateGhostEntity">Tool/UpdateGhostEntity</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

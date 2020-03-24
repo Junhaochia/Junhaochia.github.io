@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Entity&#58;StopMotionController( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.StopMotionController">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/StopMotionController" title="Special:WhatLinksHere/Entity/StopMotionController">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Stops the motion controller created with <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/StartMotionController" title="Entity/StartMotionController">StartMotionController</a>.
+</p>
+
+

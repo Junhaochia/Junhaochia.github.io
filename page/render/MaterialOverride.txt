@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>render.MaterialOverride( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.MaterialOverride">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/MaterialOverride" title="Special:WhatLinksHere/render/MaterialOverride">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Sets the render material override for all next calls of <a href="/page/Category_colon_Entity" title="Category:Entity">Entity</a>:<a href="/page/Entity/DrawModel" title="Entity/DrawModel">DrawModel</a>. Also overrides <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/MaterialOverrideByIndex" title="render/MaterialOverrideByIndex">MaterialOverrideByIndex</a>.
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_IMaterial" title="Category:IMaterial">IMaterial</a> material</span>
+</p>
+<div style="margin-left: 32px;">
+The material to use as override, use nil to disable.</div>
+</div>
+
+

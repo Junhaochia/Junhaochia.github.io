@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>SANDBOX:SpawnMenuEnabled( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=SANDBOX.SpawnMenuEnabled">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/SANDBOX/SpawnMenuEnabled" title="Special:WhatLinksHere/SANDBOX/SpawnMenuEnabled">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>If false is returned then the spawn menu is never created. This saves load times if your mod doesn't actually use the spawn menu for any reason.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_boolean" title="Category:boolean">boolean</a></span>
+</p>
+<div style="margin-left: 32px;">
+Whether to create spawnmenu or not.</div>
+</div>
+
+

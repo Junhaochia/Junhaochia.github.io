@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>CTakeDamageInfo&#58;GetDamageType( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CTakeDamageInfo.GetDamageType">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CTakeDamageInfo/GetDamageType" title="Special:WhatLinksHere/CTakeDamageInfo/GetDamageType">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns a bitflag which indicates the damage type(s) of the damage.
+</p><p>Consider using <a href="/page/Category_colon_CTakeDamageInfo" title="Category:CTakeDamageInfo">CTakeDamageInfo</a>:<a href="/page/CTakeDamageInfo/IsDamageType" title="CTakeDamageInfo/IsDamageType">IsDamageType</a> instead. Value returned by this function can contain multiple damage types.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+Damage type(s), a combination of <a href="/page/Enums/DMG" title="Enums/DMG">DMG_ Enums</a></div>
+</div>
+
+

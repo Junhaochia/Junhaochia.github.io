@@ -1,0 +1,41 @@
+<p>A sound channel returned by a callback of <a href="/page/Category_colon_sound" title="Category:sound">sound</a>.<a href="/page/sound/PlayURL" title="sound/PlayURL">PlayURL</a> and <a href="/page/Category_colon_sound" title="Category:sound">sound</a>.<a href="/page/sound/PlayFile" title="sound/PlayFile">PlayFile</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "IGModAudioChannel"</h2>
+<p>The following 29 pages are in this category, out of 29 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>I</h3>
+<ul><li><a href="/page/IGModAudioChannel/EnableLooping" title="IGModAudioChannel/EnableLooping">IGModAudioChannel/EnableLooping</a></li>
+<li><a href="/page/IGModAudioChannel/FFT" title="IGModAudioChannel/FFT">IGModAudioChannel/FFT</a></li>
+<li><a href="/page/IGModAudioChannel/Get3DCone" title="IGModAudioChannel/Get3DCone">IGModAudioChannel/Get3DCone</a></li>
+<li><a href="/page/IGModAudioChannel/Get3DFadeDistance" title="IGModAudioChannel/Get3DFadeDistance">IGModAudioChannel/Get3DFadeDistance</a></li>
+<li><a href="/page/IGModAudioChannel/GetAverageBitRate" title="IGModAudioChannel/GetAverageBitRate">IGModAudioChannel/GetAverageBitRate</a></li>
+<li><a href="/page/IGModAudioChannel/GetBitsPerSample" title="IGModAudioChannel/GetBitsPerSample">IGModAudioChannel/GetBitsPerSample</a></li>
+<li><a href="/page/IGModAudioChannel/GetFileName" title="IGModAudioChannel/GetFileName">IGModAudioChannel/GetFileName</a></li>
+<li><a href="/page/IGModAudioChannel/GetLength" title="IGModAudioChannel/GetLength">IGModAudioChannel/GetLength</a></li>
+<li><a href="/page/IGModAudioChannel/GetLevel" title="IGModAudioChannel/GetLevel">IGModAudioChannel/GetLevel</a></li>
+<li><a href="/page/IGModAudioChannel/GetPlaybackRate" title="IGModAudioChannel/GetPlaybackRate">IGModAudioChannel/GetPlaybackRate</a></li></ul></td>
+<td><h3>I cont.</h3>
+<ul><li><a href="/page/IGModAudioChannel/GetPos" title="IGModAudioChannel/GetPos">IGModAudioChannel/GetPos</a></li>
+<li><a href="/page/IGModAudioChannel/GetSamplingRate" title="IGModAudioChannel/GetSamplingRate">IGModAudioChannel/GetSamplingRate</a></li>
+<li><a href="/page/IGModAudioChannel/GetState" title="IGModAudioChannel/GetState">IGModAudioChannel/GetState</a></li>
+<li><a href="/page/IGModAudioChannel/GetTime" title="IGModAudioChannel/GetTime">IGModAudioChannel/GetTime</a></li>
+<li><a href="/page/IGModAudioChannel/GetVolume" title="IGModAudioChannel/GetVolume">IGModAudioChannel/GetVolume</a></li>
+<li><a href="/page/IGModAudioChannel/Is3D" title="IGModAudioChannel/Is3D">IGModAudioChannel/Is3D</a></li>
+<li><a href="/page/IGModAudioChannel/IsBlockStreamed" title="IGModAudioChannel/IsBlockStreamed">IGModAudioChannel/IsBlockStreamed</a></li>
+<li><a href="/page/IGModAudioChannel/IsLooping" title="IGModAudioChannel/IsLooping">IGModAudioChannel/IsLooping</a></li>
+<li><a href="/page/IGModAudioChannel/IsOnline" title="IGModAudioChannel/IsOnline">IGModAudioChannel/IsOnline</a></li>
+<li><a href="/page/IGModAudioChannel/IsValid" title="IGModAudioChannel/IsValid">IGModAudioChannel/IsValid</a></li></ul></td>
+<td><h3>I cont.</h3>
+<ul><li><a href="/page/IGModAudioChannel/Pause" title="IGModAudioChannel/Pause">IGModAudioChannel/Pause</a></li>
+<li><a href="/page/IGModAudioChannel/Play" title="IGModAudioChannel/Play">IGModAudioChannel/Play</a></li>
+<li><a href="/page/IGModAudioChannel/Set3DCone" title="IGModAudioChannel/Set3DCone">IGModAudioChannel/Set3DCone</a></li>
+<li><a href="/page/IGModAudioChannel/Set3DFadeDistance" title="IGModAudioChannel/Set3DFadeDistance">IGModAudioChannel/Set3DFadeDistance</a></li>
+<li><a href="/page/IGModAudioChannel/SetPlaybackRate" title="IGModAudioChannel/SetPlaybackRate">IGModAudioChannel/SetPlaybackRate</a></li>
+<li><a href="/page/IGModAudioChannel/SetPos" title="IGModAudioChannel/SetPos">IGModAudioChannel/SetPos</a></li>
+<li><a href="/page/IGModAudioChannel/SetTime" title="IGModAudioChannel/SetTime">IGModAudioChannel/SetTime</a></li>
+<li><a href="/page/IGModAudioChannel/SetVolume" title="IGModAudioChannel/SetVolume">IGModAudioChannel/SetVolume</a></li>
+<li><a href="/page/IGModAudioChannel/Stop" title="IGModAudioChannel/Stop">IGModAudioChannel/Stop</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>DFrame&#58;GetMinHeight( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DFrame.GetMinHeight">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DFrame/GetMinHeight" title="Special:WhatLinksHere/DFrame/GetMinHeight">What links here?</a></div>
+<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
+<p>Gets the minimum height the DFrame can be resized to by the user.
+</p><p>You must call <a href="/page/Category_colon_DFrame" title="Category:DFrame">DFrame</a>:<a href="/page/DFrame/SetSizable" title="DFrame/SetSizable">SetSizable</a> before the user can resize the frame.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a></span>
+</p>
+<div style="margin-left: 32px;">
+The minimum height the user can resize the frame to.</div>
+</div>
+
+

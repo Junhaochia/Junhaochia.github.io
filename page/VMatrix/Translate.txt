@@ -1,0 +1,15 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>VMatrix&#58;Translate( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=VMatrix.Translate">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/VMatrix/Translate" title="Special:WhatLinksHere/VMatrix/Translate">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Translates the matrix by the given vector aka. adds the vector to the translation.
+</p><p>Postmultiplies the matrix by a translation matrix (A = AT).
+</p>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_Vector" title="Category:Vector">Vector</a> translation</span>
+</p>
+<div style="margin-left: 32px;">
+Vector to translate the matrix by.</div>
+</div>
+
+

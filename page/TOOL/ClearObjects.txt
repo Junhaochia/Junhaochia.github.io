@@ -1,0 +1,7 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>Tool&#58;ClearObjects( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Tool.ClearObjects">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/gamemodes/sandbox/entities/weapons/gmod_tool/object.lua#L34">View Source</a> - <a href="/page/Special:WhatLinksHere/Tool/ClearObjects" title="Special:WhatLinksHere/Tool/ClearObjects">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Clears all objects previously set with <a href="/page/Category_colon_Tool" title="Category:Tool">Tool</a>:<a href="/page/Tool/SetObject" title="Tool/SetObject">SetObject</a>.
+</p>
+
+

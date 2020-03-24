@@ -1,0 +1,249 @@
+<div style="float:right;font-size:10px; font-weight: 100; margin: 0px 0px 10px 10px;"><a href="/page/Special:WhatLinksHere/Structures/SurfacePropertyData" title="Special:WhatLinksHere/Structures/SurfacePropertyData">What links here?</a></div>Table returned by <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/GetSurfaceData" title="util/GetSurfaceData">GetSurfaceData</a>.
+<p><br /><br />
+</p>
+<table class="wikitable sortable" border="1">
+<tr>
+<th scope="col"> Type
+</th>
+<th scope="col"> Name
+</th>
+<th scope="col"> Description
+</th></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> name
+</td>
+<td>
+<p>The name of the surface property, identical to <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/GetSurfacePropName" title="util/GetSurfacePropName">GetSurfacePropName</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> hardnessFactor
+</td>
+<td>
+<p>How hard a surface is. If this is greater than or equal to another surfaces's hardThreshold, a hard impact sound will be used.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> hardThreshold
+</td>
+<td>
+<p>Hardness threshold for impact sounds. HitSurface.hardnessFactor &gt;= InflictorSurface.hardThreshold - hard impact sound (depends on hardVelocityThreshold's value), HitSurface.hardnessFactor &lt; InflictorSurface.hardThreshold - soft impact sound (always).
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> hardVelocityThreshold
+</td>
+<td>
+<p>Velocity threshold for impact sounds. impactSpeed &gt;= HitSurface.hardVelocityThreshold - hard impact sound (depends on hardThreshold's value), impactSpeed &lt; HitSurface.hardVelocityThreshold - soft impact sound (always).
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> reflectivity
+</td>
+<td>
+<p>Amount of sound reflected from the surface represented as a number 0.0 - 1.0. 0 - no reflection, 1 - fully reflected.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> roughnessFactor
+</td>
+<td>
+<p>How rough a surface is. If this is greater than or equal to another surfaces's roughThreshold, a rough scrape sound will be used.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> roughThreshold
+</td>
+<td>
+<p>Roughness threshold for friction sounds. HitSurface.roughnessFactor &gt;= InflictorSurface.roughThreshold - rough friction sound, HitSurface.roughnessFactor &lt; InflictorSurface.roughThreshold - soft friction sound.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> climbable
+</td>
+<td>
+<p>Indicates whether or not the surface is a ladder. Used to detect whether a player is on a ladder. 0 - false, &gt; 0 - true.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> jumpFactor
+</td>
+<td>
+<p>Scalar multiplier for player jump height - or more accurately, applied z-axis velocity on a surface. For example, 1 - normal jump, 2 - twice as high, and 0.5 - half as high.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> material
+</td>
+<td>
+<p>The surface material. See <a href="/page/Enums/MAT" title="Enums/MAT">MAT_ Enums</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> maxSpeedFactor
+</td>
+<td>
+<p>Scalar multiplier for player speed. Achieves this by multiplying <a href="/page/Category_colon_CMoveData" title="Category:CMoveData">CMoveData</a>:<a href="/page/CMoveData/SetMaxSpeed" title="CMoveData/SetMaxSpeed">SetMaxSpeed</a> in <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/Move" title="GM/Move">Move</a>.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> dampening
+</td>
+<td>
+<p>This is the physical drag on an object when in contact with this surface (0 - x, 0 none to x a lot).
+</p>
+<div class="validatepage"><span>Validation required.</span><br />
+This page contains possibly incorrect or incomplete information. Further testing is required.</div>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> density
+</td>
+<td>
+<p>Material density in kg / m^3 (water is 1000). If a surface's density is &lt; 1000, it will float in water. This is used to calculate the total mass of an object.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> elasticity
+</td>
+<td>
+<p>Collision elasticity - used to compute coefficient of restitution represented as a number 0.0 - 1.0. 0.01 is soft, 1.0 is hard.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> friction
+</td>
+<td>
+<p>Physical friction used to slow entities touching the surface represented as a number 0.0 - 1.0. 0.01 is slick, 1.0 is completely rough.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_number" title="Category:number">number</a>
+</td>
+<td> thickness
+</td>
+<td>
+<p>Material thickness. If this is 0, the material is not volumetrically solid, and thus the object mass will be calculated as "volume * 0.0254^3 * density" where 0.0254 is meters per inch. If non-zero, the mass will be "surfacearea * thickness * 0.0254^3 * density".
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> breakSound
+</td>
+<td>
+<p>Sound to play when a prop or func_breakable is broken.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> bulletImpactSound
+</td>
+<td>
+<p>Bullet impact sound with this surface.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> impactHardSound
+</td>
+<td>
+<p>Physical impact sound when hitting surfaces hard.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> impactSoftSound
+</td>
+<td>
+<p>Physical impact sound when hitting surfaces softly.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> rollingSound
+</td>
+<td>
+<p>Unused sound.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> scrapeRoughSound
+</td>
+<td>
+<p>Friction sound when roughly scraping against an entity.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> scrapeSmoothSound
+</td>
+<td>
+<p>Friction sound when smoothly scraping against an entity.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> stepLeftSound
+</td>
+<td>
+<p>Footstep sound for left foot.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> stepRightSound
+</td>
+<td>
+<p>Footstep sound for right foot.
+</p>
+</td></tr>
+<tr>
+<td> <a href="/page/Category_colon_string" title="Category:string">string</a>
+</td>
+<td> strainSound
+</td>
+<td>
+<p>Unused sound.
+</p>
+</td></tr></table>
+
+

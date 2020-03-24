@@ -1,0 +1,9 @@
+<div class="function_line">
+<span class="client" title="Client">&#160;</span>Entity&#58;DestroyShadow( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.DestroyShadow">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/DestroyShadow" title="Special:WhatLinksHere/Entity/DestroyShadow">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Removes the shadow for the entity.
+</p><p>The shadow will be recreated as soon as the entity wakes.
+</p><p>Doesn't affect shadows from flashlight/lamps/env_projectedtexture.
+</p>
+
+

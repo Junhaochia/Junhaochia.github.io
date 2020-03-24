@@ -1,0 +1,86 @@
+<div class="thumb tright gmod_panel">
+<div class="thumbinner">
+<p> <a href="/page/File:Screenshot_1.png" class="image" title="Example DGrid"><img alt="Example DGrid" src="/images/a/a5/Screenshot_1.png" width="202" height="304" /></a>
+</p>
+<div>
+<table><tr><td><b>Parent:</b> <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></td></tr>
+<tr><td><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DGrid">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Category:DGrid" title="Special:WhatLinksHere/Category:DGrid">What links here?</a></td></tr>
+</table>
+</div>
+</div>
+</div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DescriptionPanelPage"><span class="tocnumber">1</span> <span class="toctext">DescriptionPanelPage</span></a></li>
+<li class="toclevel-1"><a href="#Inherited_Functions"><span class="tocnumber">2</span> <span class="toctext">Inherited Functions</span></a></li>
+<li class="toclevel-1"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">3.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DescriptionPanelPage">Description<span style="display: none;"><a href="/page/Form:PanelPage" title="Form:PanelPage">PanelPage</a></span></span></h1>
+<p>A really simple grid layout panel.
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>This panel will set its size automatically based on set column count. This makes it play badly with <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/Dock" title="Panel/Dock">Dock</a> and cause a <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/PerformLayout" title="PANEL/PerformLayout">PerformLayout</a> call every frame.
+</p>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Inherited_Functions"> Inherited Functions </span></h1>
+<p>Inherits the following functions from <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a> and its parents up to 3 levels deep:
+</p>
+<div style="float: left; width: 33%">
+<ul>
+<li><a href="/page/Panel/LoadTGAImage" title="Panel/LoadTGAImage">Panel/LoadTGAImage</a></li>
+</ul>
+</div>
+<p><br style="clear: both" />
+</p>
+<h1 class="first_example"> <span class="mw-headline" id="Examples">Examples</span></h1>
+<h2 class="examples_number"> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Creates a simple grid with numbered buttons.
+</p>
+<pre><code data-language="lua">local frame = vgui.Create( &quot;DFrame&quot; )
+frame:SetPos( 500, 500 )
+frame:SetSize( 200, 300 )
+frame:SetTitle( &quot;Frame&quot; )
+frame:MakePopup()
+ 
+local grid = vgui.Create( &quot;DGrid&quot;, frame )
+grid:SetPos( 10, 30 )
+grid:SetCols( 5 )
+grid:SetColWide( 36 )
+ 
+for i = 1, 30 do
+	local but = vgui.Create( &quot;DButton&quot; )
+	but:SetText( i )
+	but:SetSize( 30, 20 )
+	grid:AddItem( but )
+end</code></pre>
+<p><br />
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "DGrid"</h2>
+<p>The following 10 pages are in this category, out of 10 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>D</h3>
+<ul><li><a href="/page/DGrid/AddItem" title="DGrid/AddItem">DGrid/AddItem</a></li>
+<li><a href="/page/DGrid/GetCols" title="DGrid/GetCols">DGrid/GetCols</a></li>
+<li><a href="/page/DGrid/GetColWide" title="DGrid/GetColWide">DGrid/GetColWide</a></li>
+<li><a href="/page/DGrid/GetItems" title="DGrid/GetItems">DGrid/GetItems</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DGrid/GetRowHeight" title="DGrid/GetRowHeight">DGrid/GetRowHeight</a></li>
+<li><a href="/page/DGrid/RemoveItem" title="DGrid/RemoveItem">DGrid/RemoveItem</a></li>
+<li><a href="/page/DGrid/SetCols" title="DGrid/SetCols">DGrid/SetCols</a></li>
+<li><a href="/page/DGrid/SetColWide" title="DGrid/SetColWide">DGrid/SetColWide</a></li></ul></td>
+<td><h3>D cont.</h3>
+<ul><li><a href="/page/DGrid/SetRowHeight" title="DGrid/SetRowHeight">DGrid/SetRowHeight</a></li>
+<li><a href="/page/DGrid/SortByMember" title="DGrid/SortByMember">DGrid/SortByMember</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>

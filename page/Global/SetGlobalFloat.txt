@@ -1,0 +1,29 @@
+<div class="function_line">
+<span class="shared" title="Shared">&#160;</span>SetGlobalFloat( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=SetGlobalFloat">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/SetGlobalFloat" title="Special:WhatLinksHere/Global/SetGlobalFloat">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Defines a floating point number to be automatically networked to clients
+</p>
+<table cellspacing="0" class="gmodwiki_note">
+<tr>
+<td>NOTE
+</td>
+<td>
+<p>Running this function clientside will only set it clientside for the client it is called on!
+</p>
+</td></tr></table>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_any" title="Category:any">any</a> index</span>
+</p>
+<div style="margin-left: 32px;">
+Index to identify the global float with</div>
+</div>
+<h1 class="first_arg"> <span class="mw-headline" id="Arguments_2">Arguments</span></h1>
+<div class="argument">
+<p><span class="arg_number"></span> <span class="arg_chunk"><a href="/page/Category_colon_number" title="Category:number">number</a> float</span>
+</p>
+<div style="margin-left: 32px;">
+Float to be networked</div>
+</div>
+
+

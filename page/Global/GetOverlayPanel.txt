@@ -1,0 +1,14 @@
+<div class="function_line">
+<span class="menu" title="Menu">&#160;</span>GetOverlayPanel( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GetOverlayPanel">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/GetOverlayPanel" title="Special:WhatLinksHere/Global/GetOverlayPanel">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Returns the menu overlay panel, a container for panels like the error panel created in <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/OnLuaError" title="GM/OnLuaError">OnLuaError</a>.
+</p>
+<h1 class="first_ret"> <span class="mw-headline" id="Returns">Returns</span></h1>
+<div class="return" style="counter-increment: returns;">
+<p><span class="ret_number" style="counter-increment: returns -1;"></span> <span class="ret_chunk"><a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a></span>
+</p>
+<div style="margin-left: 32px;">
+The overlay panel</div>
+</div>
+
+

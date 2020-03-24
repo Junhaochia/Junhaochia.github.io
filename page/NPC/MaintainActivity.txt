@@ -1,0 +1,9 @@
+<div class="function_line">
+<span class="server" title="Server">&#160;</span>NPC&#58;MaintainActivity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=NPC.MaintainActivity">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/NPC/MaintainActivity" title="Special:WhatLinksHere/NPC/MaintainActivity">What links here?</a></div>
+<h1> <span class="mw-headline" id="Description">Description</span></h1>
+<p>Tries to achieve our ideal animation state, playing any transition sequences that we need to play to get there.
+</p>
+<div class="stubpage"><span>This article is a stub.</span><br />
+Please help the Garry's Mod wiki by adding to it.</div>
+
+

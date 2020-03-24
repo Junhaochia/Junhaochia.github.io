@@ -1,0 +1,127 @@
+<p>These hooks are available on both the server and client side. Listen to them using <a href="/page/hook/Add" title="hook/Add">hook.Add</a>.
+</p>
+
+
+<div lang="en" dir="ltr"><div id="mw-pages">
+<h2>Pages in category "Shared Hooks"</h2>
+<p>The following 115 pages are in this category, out of 115 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><table width="100%"><tr valign="top"><td><h3>E</h3>
+<ul><li><a href="/page/ENTITY/CalcAbsolutePosition" title="ENTITY/CalcAbsolutePosition">ENTITY/CalcAbsolutePosition</a></li>
+<li><a href="/page/ENTITY/CanProperty" title="ENTITY/CanProperty">ENTITY/CanProperty</a></li>
+<li><a href="/page/ENTITY/DoImpactEffect" title="ENTITY/DoImpactEffect">ENTITY/DoImpactEffect</a></li>
+<li><a href="/page/ENTITY/GravGunPunt" title="ENTITY/GravGunPunt">ENTITY/GravGunPunt</a></li>
+<li><a href="/page/ENTITY/Initialize" title="ENTITY/Initialize">ENTITY/Initialize</a></li>
+<li><a href="/page/ENTITY/OnReloaded" title="ENTITY/OnReloaded">ENTITY/OnReloaded</a></li>
+<li><a href="/page/ENTITY/OnRemove" title="ENTITY/OnRemove">ENTITY/OnRemove</a></li>
+<li><a href="/page/ENTITY/OnRestore" title="ENTITY/OnRestore">ENTITY/OnRestore</a></li>
+<li><a href="/page/ENTITY/PhysicsSimulate" title="ENTITY/PhysicsSimulate">ENTITY/PhysicsSimulate</a></li>
+<li><a href="/page/ENTITY/PhysicsUpdate" title="ENTITY/PhysicsUpdate">ENTITY/PhysicsUpdate</a></li>
+<li><a href="/page/ENTITY/SetAutomaticFrameAdvance" title="ENTITY/SetAutomaticFrameAdvance">ENTITY/SetAutomaticFrameAdvance</a></li>
+<li><a href="/page/ENTITY/SetupDataTables" title="ENTITY/SetupDataTables">ENTITY/SetupDataTables</a></li>
+<li><a href="/page/ENTITY/TestCollision" title="ENTITY/TestCollision">ENTITY/TestCollision</a></li>
+<li><a href="/page/ENTITY/Think" title="ENTITY/Think">ENTITY/Think</a></li></ul><h3>G</h3>
+<ul><li><a href="/page/GM/CalcMainActivity" title="GM/CalcMainActivity">GM/CalcMainActivity</a></li>
+<li><a href="/page/GM/CreateTeams" title="GM/CreateTeams">GM/CreateTeams</a></li>
+<li><a href="/page/GM/DoAnimationEvent" title="GM/DoAnimationEvent">GM/DoAnimationEvent</a></li>
+<li><a href="/page/GM/EndEntityDriving" title="GM/EndEntityDriving">GM/EndEntityDriving</a></li>
+<li><a href="/page/GM/EntityEmitSound" title="GM/EntityEmitSound">GM/EntityEmitSound</a></li>
+<li><a href="/page/GM/EntityFireBullets" title="GM/EntityFireBullets">GM/EntityFireBullets</a></li>
+<li><a href="/page/GM/EntityKeyValue" title="GM/EntityKeyValue">GM/EntityKeyValue</a></li>
+<li><a href="/page/GM/EntityNetworkedVarChanged" title="GM/EntityNetworkedVarChanged">GM/EntityNetworkedVarChanged</a></li>
+<li><a href="/page/GM/EntityRemoved" title="GM/EntityRemoved">GM/EntityRemoved</a></li>
+<li><a href="/page/GM/FindUseEntity" title="GM/FindUseEntity">GM/FindUseEntity</a></li>
+<li><a href="/page/GM/FinishMove" title="GM/FinishMove">GM/FinishMove</a></li>
+<li><a href="/page/GM/GetGameDescription" title="GM/GetGameDescription">GM/GetGameDescription</a></li>
+<li><a href="/page/GM/GrabEarAnimation" title="GM/GrabEarAnimation">GM/GrabEarAnimation</a></li>
+<li><a href="/page/GM/GravGunPunt" title="GM/GravGunPunt">GM/GravGunPunt</a></li>
+<li><a href="/page/GM/HandlePlayerDriving" title="GM/HandlePlayerDriving">GM/HandlePlayerDriving</a></li>
+<li><a href="/page/GM/HandlePlayerDucking" title="GM/HandlePlayerDucking">GM/HandlePlayerDucking</a></li>
+<li><a href="/page/GM/HandlePlayerJumping" title="GM/HandlePlayerJumping">GM/HandlePlayerJumping</a></li>
+<li><a href="/page/GM/HandlePlayerLanding" title="GM/HandlePlayerLanding">GM/HandlePlayerLanding</a></li>
+<li><a href="/page/GM/HandlePlayerNoClipping" title="GM/HandlePlayerNoClipping">GM/HandlePlayerNoClipping</a></li>
+<li><a href="/page/GM/HandlePlayerSwimming" title="GM/HandlePlayerSwimming">GM/HandlePlayerSwimming</a></li>
+<li><a href="/page/GM/HandlePlayerVaulting" title="GM/HandlePlayerVaulting">GM/HandlePlayerVaulting</a></li>
+<li><a href="/page/GM/Initialize" title="GM/Initialize">GM/Initialize</a></li>
+<li><a href="/page/GM/InitPostEntity" title="GM/InitPostEntity">GM/InitPostEntity</a></li>
+<li><a href="/page/GM/KeyPress" title="GM/KeyPress">GM/KeyPress</a></li>
+<li><a href="/page/GM/KeyRelease" title="GM/KeyRelease">GM/KeyRelease</a></li></ul></td>
+<td><h3>G cont.</h3>
+<ul><li><a href="/page/GM/MouthMoveAnimation" title="GM/MouthMoveAnimation">GM/MouthMoveAnimation</a></li>
+<li><a href="/page/GM/Move" title="GM/Move">GM/Move</a></li>
+<li><a href="/page/GM/OnEntityCreated" title="GM/OnEntityCreated">GM/OnEntityCreated</a></li>
+<li><a href="/page/GM/OnGamemodeLoaded" title="GM/OnGamemodeLoaded">GM/OnGamemodeLoaded</a></li>
+<li><a href="/page/GM/OnPlayerHitGround" title="GM/OnPlayerHitGround">GM/OnPlayerHitGround</a></li>
+<li><a href="/page/GM/OnReloaded" title="GM/OnReloaded">GM/OnReloaded</a></li>
+<li><a href="/page/GM/OnViewModelChanged" title="GM/OnViewModelChanged">GM/OnViewModelChanged</a></li>
+<li><a href="/page/GM/PhysgunDrop" title="GM/PhysgunDrop">GM/PhysgunDrop</a></li>
+<li><a href="/page/GM/PhysgunPickup" title="GM/PhysgunPickup">GM/PhysgunPickup</a></li>
+<li><a href="/page/GM/PlayerButtonDown" title="GM/PlayerButtonDown">GM/PlayerButtonDown</a></li>
+<li><a href="/page/GM/PlayerButtonUp" title="GM/PlayerButtonUp">GM/PlayerButtonUp</a></li>
+<li><a href="/page/GM/PlayerConnect" title="GM/PlayerConnect">GM/PlayerConnect</a></li>
+<li><a href="/page/GM/PlayerDriveAnimate" title="GM/PlayerDriveAnimate">GM/PlayerDriveAnimate</a></li>
+<li><a href="/page/GM/PlayerFootstep" title="GM/PlayerFootstep">GM/PlayerFootstep</a></li>
+<li><a href="/page/GM/PlayerNoClip" title="GM/PlayerNoClip">GM/PlayerNoClip</a></li>
+<li><a href="/page/GM/PlayerPostThink" title="GM/PlayerPostThink">GM/PlayerPostThink</a></li>
+<li><a href="/page/GM/PlayerStepSoundTime" title="GM/PlayerStepSoundTime">GM/PlayerStepSoundTime</a></li>
+<li><a href="/page/GM/PlayerSwitchWeapon" title="GM/PlayerSwitchWeapon">GM/PlayerSwitchWeapon</a></li>
+<li><a href="/page/GM/PlayerTick" title="GM/PlayerTick">GM/PlayerTick</a></li>
+<li><a href="/page/GM/PlayerTraceAttack" title="GM/PlayerTraceAttack">GM/PlayerTraceAttack</a></li>
+<li><a href="/page/GM/PostCleanupMap" title="GM/PostCleanupMap">GM/PostCleanupMap</a></li>
+<li><a href="/page/GM/PostGamemodeLoaded" title="GM/PostGamemodeLoaded">GM/PostGamemodeLoaded</a></li>
+<li><a href="/page/GM/PreCleanupMap" title="GM/PreCleanupMap">GM/PreCleanupMap</a></li>
+<li><a href="/page/GM/PreGamemodeLoaded" title="GM/PreGamemodeLoaded">GM/PreGamemodeLoaded</a></li>
+<li><a href="/page/GM/PropBreak" title="GM/PropBreak">GM/PropBreak</a></li>
+<li><a href="/page/GM/Restored" title="GM/Restored">GM/Restored</a></li>
+<li><a href="/page/GM/Saved" title="GM/Saved">GM/Saved</a></li>
+<li><a href="/page/GM/ScalePlayerDamage" title="GM/ScalePlayerDamage">GM/ScalePlayerDamage</a></li>
+<li><a href="/page/GM/SetPlayerSpeed" title="GM/SetPlayerSpeed">GM/SetPlayerSpeed</a></li>
+<li><a href="/page/GM/SetupMove" title="GM/SetupMove">GM/SetupMove</a></li>
+<li><a href="/page/GM/ShouldCollide" title="GM/ShouldCollide">GM/ShouldCollide</a></li>
+<li><a href="/page/GM/ShutDown" title="GM/ShutDown">GM/ShutDown</a></li>
+<li><a href="/page/GM/StartCommand" title="GM/StartCommand">GM/StartCommand</a></li>
+<li><a href="/page/GM/StartEntityDriving" title="GM/StartEntityDriving">GM/StartEntityDriving</a></li>
+<li><a href="/page/GM/Think" title="GM/Think">GM/Think</a></li>
+<li><a href="/page/GM/Tick" title="GM/Tick">GM/Tick</a></li>
+<li><a href="/page/GM/TranslateActivity" title="GM/TranslateActivity">GM/TranslateActivity</a></li>
+<li><a href="/page/GM/UpdateAnimation" title="GM/UpdateAnimation">GM/UpdateAnimation</a></li>
+<li><a href="/page/GM/VehicleMove" title="GM/VehicleMove">GM/VehicleMove</a></li></ul></td>
+<td><h3>P</h3>
+<ul><li><a href="/page/PLAYER/Init" title="PLAYER/Init">PLAYER/Init</a></li>
+<li><a href="/page/PLAYER/SetupDataTables" title="PLAYER/SetupDataTables">PLAYER/SetupDataTables</a></li></ul><h3>S</h3>
+<ul><li><a href="/page/SANDBOX/CanDrive" title="SANDBOX/CanDrive">SANDBOX/CanDrive</a></li>
+<li><a href="/page/SANDBOX/CanProperty" title="SANDBOX/CanProperty">SANDBOX/CanProperty</a></li>
+<li><a href="/page/SANDBOX/CanTool" title="SANDBOX/CanTool">SANDBOX/CanTool</a></li></ul><h3>T</h3>
+<ul><li><a href="/page/TOOL/Deploy" title="TOOL/Deploy">TOOL/Deploy</a></li>
+<li><a href="/page/TOOL/Holster" title="TOOL/Holster">TOOL/Holster</a></li>
+<li><a href="/page/TOOL/LeftClick" title="TOOL/LeftClick">TOOL/LeftClick</a></li>
+<li><a href="/page/TOOL/Reload" title="TOOL/Reload">TOOL/Reload</a></li>
+<li><a href="/page/TOOL/RightClick" title="TOOL/RightClick">TOOL/RightClick</a></li>
+<li><a href="/page/TOOL/Think" title="TOOL/Think">TOOL/Think</a></li></ul><h3>W</h3>
+<ul><li><a href="/page/WEAPON/Ammo1" title="WEAPON/Ammo1">WEAPON/Ammo1</a></li>
+<li><a href="/page/WEAPON/Ammo2" title="WEAPON/Ammo2">WEAPON/Ammo2</a></li>
+<li><a href="/page/WEAPON/CanPrimaryAttack" title="WEAPON/CanPrimaryAttack">WEAPON/CanPrimaryAttack</a></li>
+<li><a href="/page/WEAPON/CanSecondaryAttack" title="WEAPON/CanSecondaryAttack">WEAPON/CanSecondaryAttack</a></li>
+<li><a href="/page/WEAPON/Deploy" title="WEAPON/Deploy">WEAPON/Deploy</a></li>
+<li><a href="/page/WEAPON/DoImpactEffect" title="WEAPON/DoImpactEffect">WEAPON/DoImpactEffect</a></li>
+<li><a href="/page/WEAPON/FireAnimationEvent" title="WEAPON/FireAnimationEvent">WEAPON/FireAnimationEvent</a></li>
+<li><a href="/page/WEAPON/Holster" title="WEAPON/Holster">WEAPON/Holster</a></li>
+<li><a href="/page/WEAPON/Initialize" title="WEAPON/Initialize">WEAPON/Initialize</a></li>
+<li><a href="/page/WEAPON/OnReloaded" title="WEAPON/OnReloaded">WEAPON/OnReloaded</a></li>
+<li><a href="/page/WEAPON/OnRemove" title="WEAPON/OnRemove">WEAPON/OnRemove</a></li>
+<li><a href="/page/WEAPON/OnRestore" title="WEAPON/OnRestore">WEAPON/OnRestore</a></li>
+<li><a href="/page/WEAPON/OwnerChanged" title="WEAPON/OwnerChanged">WEAPON/OwnerChanged</a></li>
+<li><a href="/page/WEAPON/PrimaryAttack" title="WEAPON/PrimaryAttack">WEAPON/PrimaryAttack</a></li>
+<li><a href="/page/WEAPON/Reload" title="WEAPON/Reload">WEAPON/Reload</a></li>
+<li><a href="/page/WEAPON/SecondaryAttack" title="WEAPON/SecondaryAttack">WEAPON/SecondaryAttack</a></li>
+<li><a href="/page/WEAPON/SetDeploySpeed" title="WEAPON/SetDeploySpeed">WEAPON/SetDeploySpeed</a></li>
+<li><a href="/page/WEAPON/SetupDataTables" title="WEAPON/SetupDataTables">WEAPON/SetupDataTables</a></li>
+<li><a href="/page/WEAPON/SetWeaponHoldType" title="WEAPON/SetWeaponHoldType">WEAPON/SetWeaponHoldType</a></li>
+<li><a href="/page/WEAPON/ShootBullet" title="WEAPON/ShootBullet">WEAPON/ShootBullet</a></li>
+<li><a href="/page/WEAPON/ShootEffects" title="WEAPON/ShootEffects">WEAPON/ShootEffects</a></li>
+<li><a href="/page/WEAPON/TakePrimaryAmmo" title="WEAPON/TakePrimaryAmmo">WEAPON/TakePrimaryAmmo</a></li>
+<li><a href="/page/WEAPON/TakeSecondaryAmmo" title="WEAPON/TakeSecondaryAmmo">WEAPON/TakeSecondaryAmmo</a></li>
+<li><a href="/page/WEAPON/Think" title="WEAPON/Think">WEAPON/Think</a></li>
+<li><a href="/page/WEAPON/TranslateActivity" title="WEAPON/TranslateActivity">WEAPON/TranslateActivity</a></li>
+<li><a href="/page/WEAPON/TranslateFOV" title="WEAPON/TranslateFOV">WEAPON/TranslateFOV</a></li></ul></td>
+<td></td></tr></table></div>
+</div></div>
