@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>ContextBase&#58;TestForChanges( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ContextBase.TestForChanges">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ContextBase/TestForChanges" title="Special:WhatLinksHere/ContextBase/TestForChanges">What links here?</a></div>
-<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
-<p>You should override this function and use it to check whether your convar value changed.
-</p>
-
-

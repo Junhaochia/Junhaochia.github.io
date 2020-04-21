@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>render.EndBeam( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.EndBeam">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/EndBeam" title="Special:WhatLinksHere/render/EndBeam">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Ends the beam mesh of a beam started with <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/StartBeam" title="render/StartBeam">StartBeam</a>.
-</p>
-
-

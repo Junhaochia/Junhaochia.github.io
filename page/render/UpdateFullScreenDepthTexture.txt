@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>render.UpdateFullScreenDepthTexture( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.UpdateFullScreenDepthTexture">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/UpdateFullScreenDepthTexture" title="Special:WhatLinksHere/render/UpdateFullScreenDepthTexture">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Updates the texture returned by <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/GetFullScreenDepthTexture" title="render/GetFullScreenDepthTexture">GetFullScreenDepthTexture</a>.
-</p><p>Silently fails if <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/SupportsPixelShaders_2_0" title="render/SupportsPixelShaders 2 0">SupportsPixelShaders_2_0</a> returns false.
-</p>
-
-

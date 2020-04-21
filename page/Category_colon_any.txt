@@ -1,6 +1,0 @@
-<p>Any is not an actual class, it is a placeholder for an object that can be of any type.
-</p>
-
-
-<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
-</p></div>

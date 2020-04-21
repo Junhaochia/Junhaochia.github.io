@@ -1,9 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>CNewParticleEffect&#58;Render( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CNewParticleEffect.Render">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CNewParticleEffect/Render" title="Special:WhatLinksHere/CNewParticleEffect/Render">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Forces the particle system to render using current rendering context.
-</p><p>Can be used to render the particle system in vgui panels, etc.
-</p><p>Used in conjunction with <a href="/page/Category_colon_CNewParticleEffect" title="Category:CNewParticleEffect">CNewParticleEffect</a>:<a href="/page/CNewParticleEffect/SetShouldDraw" title="CNewParticleEffect/SetShouldDraw">SetShouldDraw</a>.
-</p>
-
-

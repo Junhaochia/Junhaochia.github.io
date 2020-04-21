@@ -1,9 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>DIconLayout&#58;LayoutIcons_LEFT( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DIconLayout.LayoutIcons_LEFT">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DIconLayout/LayoutIcons_LEFT" title="Special:WhatLinksHere/DIconLayout/LayoutIcons LEFT">What links here?</a></div>
-<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
-<div class="internalfunc"><span>This is an internal function or feature.</span><br />
-This means you will be able to use it, but you really shouldn't.</div>
-<p>Used internally to layout the child elements if the <a href="/page/Category_colon_DIconLayout" title="Category:DIconLayout">DIconLayout</a>:<a href="/page/DIconLayout/SetLayoutDir" title="DIconLayout/SetLayoutDir">SetLayoutDir</a> is set to LEFT (See <a href="/page/Enums/DOCK" title="Enums/DOCK">DOCK_ Enums</a>).
-</p>
-
-

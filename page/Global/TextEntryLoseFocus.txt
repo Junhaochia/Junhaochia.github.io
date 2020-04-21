@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client_m" title="Client and Menu">&#160;</span>TextEntryLoseFocus( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=TextEntryLoseFocus">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Global/TextEntryLoseFocus" title="Special:WhatLinksHere/Global/TextEntryLoseFocus">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Clears focus from any text entries player may have focused.
-</p>
-
-

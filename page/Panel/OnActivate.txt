@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client_m" title="Client and Menu">&#160;</span>PANEL:OnActivate( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PANEL.OnActivate">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PANEL/OnActivate" title="Special:WhatLinksHere/PANEL/OnActivate">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<div class="internalfunc"><span>This is an internal function or feature.</span><br />
-This means you will be able to use it, but you really shouldn't.</div>Called when we are activated during level load. Used by the loading screen panel.
-
-

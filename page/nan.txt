@@ -1,5 +1,0 @@
-<p>The value <b>nan</b>, which stands for <b>Not a Number</b>, represents the result of an illegal math operation. For example, infinity divided by infinity will produce <b>nan</b>.
-</p><p><a href="https://en.wikipedia.org/wiki/NaN" class="extiw" title="wikipedia:NaN">Read more about nan on Wikipedia.</a>
-</p>
-
-

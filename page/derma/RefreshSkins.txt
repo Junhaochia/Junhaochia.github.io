@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client_m" title="Client and Menu">&#160;</span>derma.RefreshSkins( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=derma.RefreshSkins">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/derma/RefreshSkins" title="Special:WhatLinksHere/derma/RefreshSkins">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Clears all cached panels so that they reassess which skin they should be using.
-</p>
-
-

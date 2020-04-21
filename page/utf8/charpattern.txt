@@ -1,4 +1,0 @@
-<h1> <span class="mw-headline" id="Not_a_function">Not a function</span></h1>
-This is NOT a function, it's the <a href="/page/Patterns" title="Patterns">pattern</a> (a string, not a function) <pre><code data-language="lua">&quot;[%z\x01-\x7F\xC2-\xF4][\x80-\xBF]*&quot;</code></pre>which matches exactly one UTF-8 byte sequence, assuming that the subject is a valid UTF-8 string.
-
-

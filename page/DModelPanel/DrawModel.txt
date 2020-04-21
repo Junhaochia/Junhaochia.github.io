@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>DModelPanel&#58;DrawModel( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DModelPanel.DrawModel">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DModelPanel/DrawModel" title="Special:WhatLinksHere/DModelPanel/DrawModel">What links here?</a></div>
-<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
-<div class="internalfunc"><span>This is an internal function or feature.</span><br />
-This means you will be able to use it, but you really shouldn't.</div> Used by the DModelPanel's paint hook to draw the model and background.
-
-

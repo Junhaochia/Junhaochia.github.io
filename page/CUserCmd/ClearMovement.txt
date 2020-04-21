@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="shared" title="Shared">&#160;</span>CUserCmd&#58;ClearMovement( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=CUserCmd.ClearMovement">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/CUserCmd/ClearMovement" title="Special:WhatLinksHere/CUserCmd/ClearMovement">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Clears the movement from the command.
-</p><p>See also <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/SetForwardMove" title="CUserCmd/SetForwardMove">SetForwardMove</a>, <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/SetSideMove" title="CUserCmd/SetSideMove">SetSideMove</a> and <a href="/page/Category_colon_CUserCmd" title="Category:CUserCmd">CUserCmd</a>:<a href="/page/CUserCmd/SetUpMove" title="CUserCmd/SetUpMove">SetUpMove</a>.
-</p>
-
-

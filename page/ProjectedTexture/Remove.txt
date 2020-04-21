@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>ProjectedTexture&#58;Remove( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ProjectedTexture.Remove">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ProjectedTexture/Remove" title="Special:WhatLinksHere/ProjectedTexture/Remove">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Removes the projected texture. After calling this, <a href="/page/Category_colon_ProjectedTexture" title="Category:ProjectedTexture">ProjectedTexture</a>:<a href="/page/ProjectedTexture/IsValid" title="ProjectedTexture/IsValid">IsValid</a> will return false, and any hooks with the projected texture as the identifier will be automatically deleted.
-</p>
-
-

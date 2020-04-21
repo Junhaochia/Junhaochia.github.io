@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="shared" title="Shared">&#160;</span>GM:PostCleanupMap( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.PostCleanupMap">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/GM/PostCleanupMap" title="Special:WhatLinksHere/GM/PostCleanupMap">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Called right after the map has cleaned up (usually because <a href="/page/Category_colon_game" title="Category:game">game</a>.<a href="/page/game/CleanUpMap" title="game/CleanUpMap">CleanUpMap</a> was called)
-</p><p>See also <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/PreCleanupMap" title="GM/PreCleanupMap">PreCleanupMap</a>.
-</p>
-
-

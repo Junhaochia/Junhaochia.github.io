@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="shared" title="Shared">&#160;</span>VMatrix&#58;Zero( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=VMatrix.Zero">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/VMatrix/Zero" title="Special:WhatLinksHere/VMatrix/Zero">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Sets all components of the matrix to 0, also known as a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Zero_matrix">null matrix</a>.
-</p><p>This function is more efficient than setting each element manually.
-</p>
-
-

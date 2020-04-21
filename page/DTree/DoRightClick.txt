@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>DTree&#58;DoRightClick( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DTree.DoRightClick">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DTree/DoRightClick" title="Special:WhatLinksHere/DTree/DoRightClick">What links here?</a></div>
-<h1> <span class="mw-headline" id="DescriptionPanelHook">Description<span style="display: none;"><a href="/page/Form:PanelHook" title="Form:PanelHook">PanelHook</a></span></span></h1>
-<p>Called when the any node is right clicked. Called by <a href="/page/Category_colon_DTree_Node" title="Category:DTree Node">DTree_Node</a>:<a href="/page/DTree_Node/DoRightClick" title="DTree Node/DoRightClick">DoRightClick</a>.
-</p>
-
-

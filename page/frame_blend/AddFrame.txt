@@ -1,9 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>frame_blend.AddFrame( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=frame_blend.AddFrame">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/frame_blend/AddFrame" title="Special:WhatLinksHere/frame blend/AddFrame">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<div class="internalfunc"><span>This is an internal function or feature.</span><br />
-This means you will be able to use it, but you really shouldn't.</div>
-<p>Adds a frame to the blend. Calls <a href="/page/Category_colon_frame_blend" title="Category:frame blend">frame_blend</a>.<a href="/page/frame_blend/CompleteFrame" title="frame blend/CompleteFrame">CompleteFrame</a> once enough frames have passed since last <a href="/page/Category_colon_frame_blend" title="Category:frame blend">frame_blend</a>.<a href="/page/frame_blend/CompleteFrame" title="frame blend/CompleteFrame">CompleteFrame</a> call.
-</p>
-
-

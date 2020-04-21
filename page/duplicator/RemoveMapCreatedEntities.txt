@@ -1,9 +1,0 @@
-<div class="function_line">
-<span class="server" title="Server">&#160;</span>duplicator.RemoveMapCreatedEntities( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=duplicator.RemoveMapCreatedEntities">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/duplicator/RemoveMapCreatedEntities" title="Special:WhatLinksHere/duplicator/RemoveMapCreatedEntities">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Help to remove certain map created entities before creating the saved entities
-This is obviously so we don't get duplicate props everywhere.
-It should be called before calling Paste.
-</p>
-
-

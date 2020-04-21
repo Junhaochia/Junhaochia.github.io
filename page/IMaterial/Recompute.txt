@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="shared" title="Shared">&#160;</span>IMaterial&#58;Recompute( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IMaterial.Recompute">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IMaterial/Recompute" title="Special:WhatLinksHere/IMaterial/Recompute">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Recomputes the material's snapshot. This needs to be called if you have changed variables on your material and it isn't changing.
-</p><p>Be careful though - this function is slow - so try to call it only when needed!
-</p>
-
-

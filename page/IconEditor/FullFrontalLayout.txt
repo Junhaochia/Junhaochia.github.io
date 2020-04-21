@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>IconEditor&#58;FullFrontalLayout( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=IconEditor.FullFrontalLayout">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/IconEditor/FullFrontalLayout" title="Special:WhatLinksHere/IconEditor/FullFrontalLayout">What links here?</a></div>
-<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
-<p>Applies the front view camera settings for the model in the <a href="/page/Category_colon_DAdjustableModelPanel" title="Category:DAdjustableModelPanel">DAdjustableModelPanel</a>.
-</p><p>Called when a user clicks the <i>Front</i> (second) button (See the <a href="/page/Category_colon_IconEditor" title="Category:IconEditor">example</a>).
-</p>
-
-

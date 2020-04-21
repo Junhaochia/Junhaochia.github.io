@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="shared" title="Shared">&#160;</span>PhysObj&#58;Sleep( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PhysObj.Sleep">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PhysObj/Sleep" title="Special:WhatLinksHere/PhysObj/Sleep">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Makes the physics object "sleep".
-</p><p>The physics object will no longer be moving unless it is "woken up" by either a collision with another moving object, or by <a href="/page/Category_colon_PhysObj" title="Category:PhysObj">PhysObj</a>:<a href="/page/PhysObj/Wake" title="PhysObj/Wake">Wake</a>. This is an optimization feature of the physics engine.
-</p>
-
-

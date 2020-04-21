@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>render.UpdateScreenEffectTexture( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=render.UpdateScreenEffectTexture">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/render/UpdateScreenEffectTexture" title="Special:WhatLinksHere/render/UpdateScreenEffectTexture">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Copies the entire screen to the screen effect texture, which can be acquired via <a href="/page/Category_colon_render" title="Category:render">render</a>.<a href="/page/render/GetScreenEffectTexture" title="render/GetScreenEffectTexture">GetScreenEffectTexture</a>. This function is mainly intended to be used in <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/RenderScreenspaceEffects" title="GM/RenderScreenspaceEffects">RenderScreenspaceEffects</a>
-</p>
-
-

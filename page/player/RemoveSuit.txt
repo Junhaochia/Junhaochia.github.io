@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="server" title="Server">&#160;</span>Player&#58;RemoveSuit( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.RemoveSuit">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/RemoveSuit" title="Special:WhatLinksHere/Player/RemoveSuit">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Strips the player's suit item.
-</p>
-
-

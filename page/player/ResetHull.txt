@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="shared" title="Shared">&#160;</span>Player&#58;ResetHull( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.ResetHull">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/ResetHull" title="Special:WhatLinksHere/Player/ResetHull">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Resets both normal and duck hulls to their default values.
-</p>
-
-

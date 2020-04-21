@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client_m" title="Client and Menu">&#160;</span>RestoreCursorPosition( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=RestoreCursorPosition">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/util.lua#L399-L404">View Source</a> - <a href="/page/Special:WhatLinksHere/Global/RestoreCursorPosition" title="Special:WhatLinksHere/Global/RestoreCursorPosition">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Restores position of your cursor on screen. You can save it by using <a href="/page/Global/RememberCursorPosition" title="Global/RememberCursorPosition">RememberCursorPosition</a>.
-</p>
-
-

@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>menubar.Init( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=menubar.Init">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/menubar/Init" title="Special:WhatLinksHere/menubar/Init">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Creates the menu bar ( The bar at the top of the screen when holding C or Q in sandbox ) and docks it to the top of the screen. It will not appear.<br />
-Calling this multiple times will <b>NOT</b> remove previous panel.
-</p>
-
-

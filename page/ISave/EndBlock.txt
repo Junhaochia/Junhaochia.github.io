@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="shared" title="Shared">&#160;</span>ISave&#58;EndBlock( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=ISave.EndBlock">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/ISave/EndBlock" title="Special:WhatLinksHere/ISave/EndBlock">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Ends current data block started with <a href="/page/Category_colon_ISave" title="Category:ISave">ISave</a>:<a href="/page/ISave/StartBlock" title="ISave/StartBlock">StartBlock</a> and returns to the parent block.
-</p><p>To avoid all sorts of errors, you <b>must</b> end all blocks you start.
-</p>
-
-

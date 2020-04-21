@@ -1,6 +1,0 @@
-<p>Created with <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/GetPixelVisibleHandle" title="util/GetPixelVisibleHandle">GetPixelVisibleHandle</a> and used by <a href="/page/Category_colon_util" title="Category:util">util</a>.<a href="/page/util/PixelVisible" title="util/PixelVisible">PixelVisible</a>.
-</p>
-
-
-<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
-</p></div>

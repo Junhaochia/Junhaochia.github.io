@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="server" title="Server">&#160;</span>Player&#58;SwitchToDefaultWeapon( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.SwitchToDefaultWeapon">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/player.lua#L195-L206">View Source</a> - <a href="/page/Special:WhatLinksHere/Player/SwitchToDefaultWeapon" title="Special:WhatLinksHere/Player/SwitchToDefaultWeapon">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Attempts to switch the player weapon to the one specified in the "cl_defaultweapon" convar, if the player does not own the specified weapon nothing will happen.
-</p><p>If you want to switch to a specific weapon, use: <a href="/page/Category_colon_Player" title="Category:Player">Player</a>:<a href="/page/Player/SetActiveWeapon" title="Player/SetActiveWeapon">SetActiveWeapon</a>
-</p>
-
-

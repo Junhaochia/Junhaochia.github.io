@@ -1,9 +1,0 @@
-<div class="function_line">
-<span class="client_m" title="Client and Menu">&#160;</span>dragndrop.StartDragging( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=dragndrop.StartDragging">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/client/panel/dragdrop.lua#L81">View Source</a> - <a href="/page/Special:WhatLinksHere/dragndrop/StartDragging" title="Special:WhatLinksHere/dragndrop/StartDragging">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<div class="internalfunc"><span>This is an internal function or feature.</span><br />
-This means you will be able to use it, but you really shouldn't.</div>
-<p>Starts the drag'n'drop.
-</p>
-
-

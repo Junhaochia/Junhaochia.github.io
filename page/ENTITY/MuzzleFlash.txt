@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="shared" title="Shared">&#160;</span>Entity&#58;MuzzleFlash( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Entity.MuzzleFlash">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Entity/MuzzleFlash" title="Special:WhatLinksHere/Entity/MuzzleFlash">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Fires the muzzle flash effect of the weapon the entity is carrying. This only creates a light effect and is often called alongside <a href="/page/Category_colon_Weapon" title="Category:Weapon">Weapon</a>:<a href="/page/Weapon/SendWeaponAnim" title="Weapon/SendWeaponAnim">SendWeaponAnim</a>
-</p>
-
-

@@ -1,6 +1,0 @@
-<p>The pages below contain functions or objects of an unknown <a href="/page/States" title="States">Lua state</a>. You can help by finding this out and adding it to the page.
-</p>
-
-
-<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
-</p></div>

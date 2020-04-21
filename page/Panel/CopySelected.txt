@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>Panel&#58;CopySelected( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.CopySelected">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/CopySelected" title="Special:WhatLinksHere/Panel/CopySelected">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Performs the "CONTROL + C" key combination effect ( Copy selection to clipboard ) on selected text.
-</p>
-
-

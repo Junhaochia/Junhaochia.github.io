@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>TOOL:DrawHUD( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=TOOL.DrawHUD">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/TOOL/DrawHUD" title="Special:WhatLinksHere/TOOL/DrawHUD">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Called when <a href="/page/Category_colon_WEAPON_Hooks" title="Category:WEAPON Hooks">WEAPON</a>:<a href="/page/WEAPON/DrawHUD" title="WEAPON/DrawHUD">DrawHUD</a> of the toolgun is called, only when the user has this tool selected.
-</p>
-
-

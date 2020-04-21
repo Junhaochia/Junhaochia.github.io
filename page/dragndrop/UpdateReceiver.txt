@@ -1,9 +1,0 @@
-<div class="function_line">
-<span class="client_m" title="Client and Menu">&#160;</span>dragndrop.UpdateReceiver( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=dragndrop.UpdateReceiver">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/includes/extensions/client/panel/dragdrop.lua#L127">View Source</a> - <a href="/page/Special:WhatLinksHere/dragndrop/UpdateReceiver" title="Special:WhatLinksHere/dragndrop/UpdateReceiver">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<div class="internalfunc"><span>This is an internal function or feature.</span><br />
-This means you will be able to use it, but you really shouldn't.</div>
-<p>Updates the receiver to drop the panels onto. Called from <a href="/page/Category_colon_dragndrop" title="Category:dragndrop">dragndrop</a>.<a href="/page/dragndrop/Think" title="dragndrop/Think">Think</a>.
-</p>
-
-

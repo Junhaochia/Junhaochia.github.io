@@ -1,9 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>DNotify&#58;Shuffle( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DNotify.Shuffle">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DNotify/Shuffle" title="Special:WhatLinksHere/DNotify/Shuffle">What links here?</a></div>
-<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
-<div class="internalfunc"><span>This is an internal function or feature.</span><br />
-This means you will be able to use it, but you really shouldn't.</div>
-<div class="stubpage"><span>This article is a stub.</span><br />
-Please help the Garry's Mod wiki by adding to it.</div>
-
-

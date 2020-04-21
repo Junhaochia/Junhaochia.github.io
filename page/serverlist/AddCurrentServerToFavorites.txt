@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="menu" title="Menu">&#160;</span>serverlist.AddCurrentServerToFavorites( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=serverlist.AddCurrentServerToFavorites">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/serverlist/AddCurrentServerToFavorites" title="Special:WhatLinksHere/serverlist/AddCurrentServerToFavorites">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<div class="internalfunc"><span>This is an internal function or feature.</span><br />
-This means you will be able to use it, but you really shouldn't.</div>Adds current server the player is on to their favorites.
-
-

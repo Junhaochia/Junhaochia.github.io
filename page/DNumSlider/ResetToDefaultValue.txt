@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>DNumSlider&#58;ResetToDefaultValue( <span class="function_args"></span> )</div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=DNumSlider.ResetToDefaultValue">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/DNumSlider/ResetToDefaultValue" title="Special:WhatLinksHere/DNumSlider/ResetToDefaultValue">What links here?</a></div>
-<h1> <span class="mw-headline" id="DescriptionPanelFunc">Description<span style="display: none;"><a href="/page/Form:PanelFunc" title="Form:PanelFunc">PanelFunc</a></span></span></h1>
-<p>Resets the slider to the default value, if one was set by <a href="/page/Category_colon_DNumSlider" title="Category:DNumSlider">DNumSlider</a>:<a href="/page/DNumSlider/SetDefaultValue" title="DNumSlider/SetDefaultValue">SetDefaultValue</a>.
-</p><p>This function is called by the <a href="/page/Category_colon_DNumSlider" title="Category:DNumSlider">DNumSlider</a> when user middle mouse clicks on the draggable knob of the slider.
-</p>
-
-

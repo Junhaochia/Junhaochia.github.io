@@ -1,7 +1,0 @@
-<h1> <span class="mw-headline" id="Not_a_function">Not a function</span></h1>
-<p>This is NOT a function, it's a variable that effectively represents infinity, in the sense that in any numerical comparison every number will be less than this.
-</p><p>For example, if x is a number, "x &gt; math.huge" will NEVER be true except in the case of overflow (see below).
-</p><p>Lua will consider any number greater than or equal to 2<sup>1024</sup> (the exponent limit of a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format">double</a>) as <i>inf</i> and hence equal to this.
-</p>
-
-

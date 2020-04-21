@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="shared" title="Shared">&#160;</span>Player&#58;DoReloadEvent( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Player.DoReloadEvent">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Player/DoReloadEvent" title="Special:WhatLinksHere/Player/DoReloadEvent">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Sends a third person reload animation event to the player.
-</p><p>Similar to other animation event functions, calls <a href="/page/Category_colon_GM_Hooks" title="Category:GM Hooks">GM</a>:<a href="/page/GM/DoAnimationEvent" title="GM/DoAnimationEvent">DoAnimationEvent</a> with <a href="/page/Enums/PLAYERANIMEVENT" title="Enums/PLAYERANIMEVENT">PLAYERANIMEVENT_RELOAD</a> as the event and no extra data.
-</p>
-
-

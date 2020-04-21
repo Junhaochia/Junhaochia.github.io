@@ -1,6 +1,0 @@
-<p>nil is Lua's representation of empty data. Unset variables and non-existent table keys will be nil. This will be treated as false in if-statement contexts, but is not equal to false.
-</p>
-
-
-<div lang="en" dir="ltr"><p><i>This category currently contains no pages or media.</i>
-</p></div>

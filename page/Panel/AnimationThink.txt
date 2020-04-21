@@ -1,9 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>PANEL:AnimationThink( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=PANEL.AnimationThink">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/PANEL/AnimationThink" title="Special:WhatLinksHere/PANEL/AnimationThink">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Called every frame unless <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/IsVisible" title="Panel/IsVisible">IsVisible</a> is set to false. Similar to <a href="/page/Category_colon_PANEL_Hooks" title="Category:PANEL Hooks">PANEL</a>:<a href="/page/PANEL/Think" title="PANEL/Think">Think</a>, but can be disabled by <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetAnimationEnabled" title="Panel/SetAnimationEnabled">SetAnimationEnabled</a> as explained below.
-</p><p>If you are overriding this, you must call <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/AnimationThinkInternal" title="Panel/AnimationThinkInternal">AnimationThinkInternal</a> every frame, else animations will cease to work.
-</p><p>If you want to "disable" this hook with <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetAnimationEnabled" title="Panel/SetAnimationEnabled">SetAnimationEnabled</a>, you must call it after defining this hook. Once disabled, a custom hook <b>will not</b> be re-enabled by <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/SetAnimationEnabled" title="Panel/SetAnimationEnabled">SetAnimationEnabled</a> again - the hook will have to be re-defined.
-</p>
-
-

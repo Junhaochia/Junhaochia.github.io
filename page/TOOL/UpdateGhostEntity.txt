@@ -1,9 +1,0 @@
-<div class="function_line">
-<span class="shared" title="Shared">&#160;</span>Tool&#58;UpdateGhostEntity( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Tool.UpdateGhostEntity">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/gamemodes/sandbox/entities/weapons/gmod_tool/ghostentity.lua#L101">View Source</a> - <a href="/page/Special:WhatLinksHere/Tool/UpdateGhostEntity" title="Special:WhatLinksHere/Tool/UpdateGhostEntity">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Updates the position and orientation of the ghost entity based on where the toolgun owner is looking along with data from object with id 1 set by <a href="/page/Category_colon_Tool" title="Category:Tool">Tool</a>:<a href="/page/Tool/SetObject" title="Tool/SetObject">SetObject</a>.
-</p><p>This should be called in the tool's <a href="/page/Category_colon_TOOL_Hooks" title="Category:TOOL Hooks">TOOL</a>:<a href="/page/TOOL/Think" title="TOOL/Think">Think</a> hook.
-</p><p>This command is only used for tools that move props, such as easy weld, axis and motor. If you want to update a ghost like the thruster tool does it for example, check its <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/gamemodes/sandbox/entities/weapons/gmod_tool/stools/thruster.lua#L179">source code</a>.
-</p>
-
-

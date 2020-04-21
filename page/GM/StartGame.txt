@@ -1,7 +1,0 @@
-<div class="function_line">
-<span class="menu" title="Menu">&#160;</span>GM:StartGame( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=GM.StartGame">Search on GitHub</a> - <a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/blob/master/garrysmod/html/js/menu/control.NewGame.js#L148">View Source</a> - <a href="/page/Special:WhatLinksHere/GM/StartGame" title="Special:WhatLinksHere/GM/StartGame">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Called when you start a new game via the menu.
-</p>
-
-

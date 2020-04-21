@@ -1,8 +1,0 @@
-<div class="function_line">
-<span class="client" title="Client">&#160;</span>Panel&#58;SaveUndoState( <span class="function_args"></span> ) </div><div class="gmodwiki_useful_links"><a rel="nofollow" class="external text" href="https://github.com/Facepunch/garrysmod/search?utf8=✓&amp;q=Panel.SaveUndoState">Search on GitHub</a> - <a href="/page/Special:WhatLinksHere/Panel/SaveUndoState" title="Special:WhatLinksHere/Panel/SaveUndoState">What links here?</a></div>
-<h1> <span class="mw-headline" id="Description">Description</span></h1>
-<p>Saves the current state (caret position and the text inside) of a <a href="/page/Category_colon_TextEntry" title="Category:TextEntry">TextEntry</a> as an undo state.
-</p><p>See also <a href="/page/Category_colon_Panel" title="Category:Panel">Panel</a>:<a href="/page/Panel/Undo" title="Panel/Undo">Undo</a>.
-</p>
-
-
