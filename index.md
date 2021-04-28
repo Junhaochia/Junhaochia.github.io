@@ -19,4 +19,4 @@ description: Truly my home.
 
 Okay then.
 
-###### I am going to stop right here so you are not going waste anymore of your life. <3
+###### I am going to stop right here so that you will not continue to waste anymore of your life reading this. <3
