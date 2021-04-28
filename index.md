@@ -7,12 +7,12 @@ description: Truly my home.
  > -Junɇ
 
 ### Things you could have done instead.
-- [x] Play computer games.
-- [x] Learn a new skill.
-- [x] Read a book.
-- [x] Sleep.
-- [x] Many more...
-- [ ] Reading this webpage.
+[x]  Play computer games.
+- [x]  Learn a new skill.
+- [x]  Read a book.
+- [x]  Sleep.
+- [x]  Many more...
+- [ ]  Reading this webpage.
 
 ### Reasons why you are still reading.
 - I dont know lol
