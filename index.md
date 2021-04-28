@@ -7,12 +7,11 @@ description: Truly my home.
  > -Junɇ
 
 ### Things you could have done instead.
-[x]  Play computer games.
-- [x]  Learn a new skill.
-- [x]  Read a book.
-- [x]  Sleep.
-- [x]  Many more...
-- [ ]  Reading this webpage.
+1. Play computer games.
+2. Learn a new skill.
+3. Read a book.
+4. Sleep.
+5. Many more...
 
 ### Reasons why you are still reading.
 - I dont know lol
@@ -20,4 +19,4 @@ description: Truly my home.
 
 Okay then.
 
-###### I am going to stop right here so you are not wasting your life. <3
+###### I am going to stop right here so you are not going waste anymore of your life. <3
