@@ -1,4 +1,8 @@
-## Theres nothing to see here. owO
+---
+title: Home
+description: Truly my home.
+---
+# Theres nothing to see here. owO
 There a millions things that you can do right now but you chose to be here.
 
 ### Things you could have done instead.
