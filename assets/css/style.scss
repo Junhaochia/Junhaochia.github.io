@@ -1,13 +1,6 @@
 ---
 ---
 
-// Override theme
-
-// Import theme
-@import "{{ site.theme }}";
-
-// Extras
-
 // 1. Navbar stuff
 ul.navbar-main {
   list-style-type: none;
@@ -74,4 +67,5 @@ ul.navbar-main .dropdown:hover .dropdown-content {
   display: block;
 }
 
-// 2. Others
+// Import theme
+@import "{{ site.theme }}";
