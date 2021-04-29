@@ -3,4 +3,73 @@
 // Import theme
 @import "{{ site.theme }}";
 
-// Add-ons
+// Extras
+
+// 1. Navbar stuff
+ul.navbar-main {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul.navbar-main .active {
+  color: lightslategrey;
+}
+
+ul.navbar-main li {
+  float: left;
+}
+
+ul.navbar-main li a, ul.navbar-main .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar-main li a:hover, ul.navbar-main .dropdown:hover .dropbtn {
+  border-radius: 5px;
+  color: lightslategrey;
+  //background-color: #008080;
+}
+
+ul.navbar-main li.dropdown {
+  display: inline-block;
+}
+
+ul.navbar-main .dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+ul.navbar-main .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+ul.navbar-main .dropdown-content a:hover {
+    color: lightslategrey;
+    border-radius: 5px;
+    //background-color: #008080;
+}
+
+ul.navbar-main .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+// 2. Others

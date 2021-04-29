@@ -24,6 +24,20 @@
   </head>
   <body>
     <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
+    {% unless page.hide_nav %}
+    <ul class="navbar-main">
+      <li><a href="../">Home</a></li>
+      <li><a href="/news">Blog</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Projects</a>
+        <div class="dropdown-content">
+          <a href="#">Nope</a>
+          <a href="#">Nah</a>
+          <a href="#">Never</a>
+        </div>
+      </li>
+    </ul>
+    {% endunless %}
     {% case page.header_type %}
       {% when "banner" %}
         <header class="page-header" role="banner">
