@@ -44,7 +44,7 @@ ul.navbar-main li.dropdown {
 
 ul.navbar-main .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   border-radius: 5px;
   background-color: #333;
   min-width: 160px;
