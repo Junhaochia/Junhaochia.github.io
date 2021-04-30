@@ -26,6 +26,7 @@ ul.navbar-main li {
 }
 
 ul.navbar-main .current {
+  padding: 7px 8px;
   color: white;
   background-color: black;
 }
@@ -45,7 +46,6 @@ ul.navbar-main li a, ul.navbar-main .dropbtn {
 }
 
 ul.navbar-main li a:hover, ul.navbar-main .dropdown:hover .dropbtn {
-  border-radius: 5px;
   color: lightslategrey;
   //background-color: #008080;
 }
