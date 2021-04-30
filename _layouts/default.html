@@ -22,8 +22,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
+  {% if page.background != "blank" %}
+  <body style='background-image:url("{{page.background | default: site.background}}")' class="page-bg">
+  {% else %}
   <body>
-    <img src="{{page.background | default: site.background}}" class="page-bg">
+  {% endif %}
     <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
     {% unless page.hide_nav %}
     <ul class="navbar-main">
@@ -45,22 +48,22 @@
     {% endunless %}
     {% case page.header_type %}
       {% when "banner" %}
-        <header class="page-header" role="banner">
-          <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-          {% if site.github.is_project_page %}
-            <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-          {% endif %}
-          {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-            <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-          {% endif %}
-        </header>
+      <header class="page-header" role="banner">
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+        {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        {% endif %}
+        {% if site.show_downloads %}
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+        {% endif %}
+      </header>
     {% endcase %}
     <br>
     <main id="content" class="main-content" role="main">
       {{ content }}
-
+      <br>
       <footer class="site-footer">
         <span class="site-footer-owner">
           <a href="https://f.junhao.page">f.junhao.page</a> is maintained by <a href="https://discord.junhao.page">Junɇ</a>

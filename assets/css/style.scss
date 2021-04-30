@@ -94,7 +94,9 @@ ul.navbar-main .dropdown:hover .dropdown-content {
 }
 
 // 2. page-bg
-div.page-bg {
-  background-size: cover;
-  background-position: center center;
+body.page-bg {
+  //background-size: cover;
+  //background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
