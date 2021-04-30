@@ -29,7 +29,7 @@
   {% endif %}
     <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
     {% unless page.hide_nav %}
-    <ul class="navbar-main">
+    <ul id="navbar-main" class="navbar-main" >
       <li><img src="/assets/site-logo.png" role="img" alt="Junhaochia" class="site-logo"></li>
       <div style="float:right">
         <li><a href="../" class="current">Home</a></li>
@@ -45,6 +45,16 @@
         </li>
       </div>
     </ul>
+    <script>
+    var navbar = document.getElementById("navbar-main");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        navbar.style.backgroundColor = "white";
+      } else {
+        navbar.style.backgroundColor = "transparent";
+      };
+    };
+    </script>
     {% endunless %}
     {% case page.header_type %}
       {% when "banner" %}
