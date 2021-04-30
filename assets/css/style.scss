@@ -93,4 +93,8 @@ ul.navbar-main .dropdown:hover .dropdown-content {
   display: block;
 }
 
-// 2. Others
+// 2. page-bg
+div.page-bg {
+  background-size: cover;
+  background-position: center center;
+}
