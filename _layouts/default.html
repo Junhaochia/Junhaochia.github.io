@@ -27,17 +27,19 @@
     {% unless page.hide_nav %}
     <ul class="navbar-main">
       <li class="logo"><img src="/assets/site-logo.png" role="img" alt="Junhaochia" class="site-logo"></li>
-      <li><a href="../">Home</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li class="dropdown">
-        <a class="dropbtn">Projects</a>
-        <div class="dropdown-content">
-          <a href="/projects/nope">Nope</a>
-          <a href="/projects/nah">Nah</a>
-          <a href="/projects/never">Never</a>
-          <a href="/projects">See All</a>
-        </div>
-      </li>
+      <div style="float:right">
+        <li><a href="../">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">Projects</a>
+          <div class="dropdown-content">
+            <a href="/projects/nope">Nope</a>
+            <a href="/projects/nah">Nah</a>
+            <a href="/projects/never">Never</a>
+            <a href="/projects">See All</a>
+          </div>
+        </li>
+      </div>
     </ul>
     <br>
     {% endunless %}
