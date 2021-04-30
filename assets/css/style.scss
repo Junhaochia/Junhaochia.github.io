@@ -22,8 +22,13 @@ ul.navbar-main {
 }
 
 ul.navbar-main li {
+  float: right;
+}
+
+ul.navbar-main li.logo {
   float: left;
 }
+
 
 ul.navbar-main li a, ul.navbar-main .dropbtn {
   display: inline-block;
