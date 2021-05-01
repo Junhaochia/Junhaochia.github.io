@@ -48,7 +48,7 @@
     <script>
     var navbar = document.getElementById("navbar-main");
     window.onscroll = function() {
-      navbar.style.backgroundColor = `hsla(0,0%,100%,${document.body.scrollTop/20})`;
+      navbar.style.backgroundColor = `hsla(0,0%,100%,${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
       /*
       if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
         navbar.style.backgroundColor = "white";
