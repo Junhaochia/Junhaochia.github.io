@@ -47,11 +47,13 @@
     </ul>
     <script>
     //Set active tab bg
-    var navbarLinks = document.getElementById("link");
-    for(i = 0; i < navbarLinks.length; i++){
-      let navLink = navbarLinks[i];
-      if(navLink.className == "navbar-links" && window.location.pathname.includes(navLink.getAttribute("href"))){
-        navLink.className = "current"; 
+    var navbarLinks = document.getElementById("navbar-links");
+    if (navbarLinks) {
+      for(i = 0; i < navbarLinks.length; i++) {
+        let navLink = navbarLinks[i];
+        if (window.location.pathname.includes(navLink.getAttribute("href"))){
+          navLink.className = "current"; 
+        }
       }
     }
     //Set bg when scrolled for navbar
