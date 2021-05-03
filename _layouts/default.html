@@ -35,7 +35,7 @@
         <li><a name="navbar-links" href="/">Home</a></li>
         <li><a name="navbar-links" href="/blog">Blog</a></li>
         <li class="dropdown">
-          <a name="navbar-links" class="dropbtn" >Projects</a>
+          <a name="navbar-dropbtn" class="dropbtn" >Projects</a>
           <div class="dropdown-content">
             <a name="navbar-links" href="/projects/nope">Nope</a>
             <a name="navbar-links" href="/projects/nah">Nah</a>
@@ -58,6 +58,14 @@
           navLink.style.backgroundColor = "black";
         }
       }
+      //temp-fix
+      if (window.location.pathname.includes("projects")) {
+        let navLink = document.getElementsByName("navbar-dropbtn")[0];
+        navLink.style.margin = "10px 6px";
+        navLink.style.padding = "4px 10px";
+        navLink.style.color = "white";
+        navLink.style.backgroundColor = "black";
+      } 
     }
     //Set bg when scrolled for navbar
     var navbar = document.getElementById("navbar-main");
