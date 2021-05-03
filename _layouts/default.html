@@ -52,7 +52,10 @@
       for(i = 0; i < navbarLinks.length; i++) {
         let navLink = navbarLinks[i];
         if (window.location.pathname.includes(navLink.getAttribute("href"))){
-          navLink.className = "current"; 
+          navLink.style.margin = "10px 6px";
+          navLink.style.padding = "4px 10px";
+          navLink.style.color = "white";
+          navLink.style.backgroundColor = "black";
         }
       }
     }
