@@ -32,30 +32,30 @@
     <ul id="navbar-main" class="navbar-main" >
       <li><img src="/assets/site-logo.png" role="img" alt="Junhaochia" class="site-logo"></li>
       <div style="float:right">
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog">Blog</a></li>
+        <li><a href="/" id="navbar-links">Home</a></li>
+        <li><a href="/blog" id="navbar-links">Blog</a></li>
         <li class="dropdown">
-          <a class="dropbtn">Projects</a>
+          <a id="navbar-links" class="dropbtn" >Projects</a>
           <div class="dropdown-content">
-            <a href="/projects/nope">Nope</a>
-            <a href="/projects/nah">Nah</a>
-            <a href="/projects/never">Never</a>
-            <a href="/projects">See All</a>
+            <a id="navbar-links" href="/projects/nope">Nope</a>
+            <a id="navbar-links" href="/projects/nah">Nah</a>
+            <a id="navbar-links" href="/projects/never">Never</a>
+            <a id="navbar-links" href="/projects">See All</a>
           </div>
         </li>
       </div>
     </ul>
     <script>
-    var navbar = document.getElementById("navbar-main");
-    var navbar_link;
     //Set active tab bg
-    for(i = 0; i < navbar.childNodes.length; i++){
-      navbar_link = navbar.childNodes[i];
-      if(navbar_link.getAttribute("href") == window.location.pathname){
-        navbar.className = "current"; 
+    var navbarLinks = document.getElementById("link");
+    for(i = 0; i < navbarLinks.length; i++){
+      let navLink = navbarLinks[i];
+      if(navLink.className == "navbar-links" && window.location.pathname.includes(navLink.getAttribute("href"))){
+        navLink.className = "current"; 
       }
     }
     //Set bg when scrolled for navbar
+    var navbar = document.getElementById("navbar-main");
     window.onscroll = function() {
       navbar.style.backgroundColor = `hsla(0,0%,100%,${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
       /*
