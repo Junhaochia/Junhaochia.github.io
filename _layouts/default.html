@@ -14,6 +14,7 @@
     {% endif %}
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
+    <meta name="theme-color" content="{{ page.color | default: '#FF7F50' }}">
     {% seo title=false %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
