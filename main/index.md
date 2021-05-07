@@ -2,6 +2,10 @@
 title: Home
 description: Truly my home.
 permalink: /
+seo:
+    name: Home
+image:
+  path: /assets/site-logo.png
 ---
 # Theres nothing to see here. owO
  > There are millions of things that you can do right now but you chose to be here
