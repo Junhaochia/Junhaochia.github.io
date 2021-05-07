@@ -2,8 +2,6 @@
 title: Home
 description: Truly my home.
 permalink: /
-seo:
-    name: Home
 image:
   path: /assets/site-logo.png
 ---
