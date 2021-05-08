@@ -2,4 +2,4 @@
 layout: raw
 permalink: /projects/pages.json
 ---
-{{ site | jsonify }}
+{{ site.projects | jsonify }}
