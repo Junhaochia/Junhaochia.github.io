@@ -1,7 +1,14 @@
 title: f.junhao.page
 description:
 background: /assets/site-bg.jpg
+theme: jekyll-theme-cayman
+
 show_downloads: false
 show_autogen: true
 google_analytics:
-theme: jekyll-theme-cayman
+
+collections_dir: collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
