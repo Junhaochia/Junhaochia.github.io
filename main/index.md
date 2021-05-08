@@ -1,6 +1,9 @@
 ---
 title: Home
-description: Truly my home.
+description: |
+  Truly my home.
+  Where all your dreams come true ;)
+  All the best -JuneY
 permalink: /
 image:
   path: /assets/site-logo_1200.png
