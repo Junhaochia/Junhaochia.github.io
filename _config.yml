@@ -11,4 +11,4 @@ collections_dir: collections
 collections:
   projects:
     output: true
-    permalink: /projects/:name
+    permalink: /:collection/:name.html
