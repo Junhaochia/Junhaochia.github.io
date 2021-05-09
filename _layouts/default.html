@@ -2,7 +2,6 @@
 <!-- https://shopify.github.io/liquid/tags/control-flow/ -->
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
@@ -13,9 +12,15 @@
       </script>
     {% endif %}
     <meta charset="UTF-8">
+    {% seo title=false %}
+    <!-- June's SEO override -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>{{ page.title }}</title>
     <meta name="theme-color" content="{{ page.color | default: '#CCCCFF' }}">
-    {% seo title=false %}
+    <meta name="twitter:card" content="">
+    <meta property="twitter:image" content="">
+    <meta property="twitter:title" content="">
+    <!-- End June's SEO override -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
