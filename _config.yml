@@ -1,5 +1,6 @@
 title: f.junhao.page
 description:
+theme_color: '#CCCCFF'
 background: /assets/site-bg.jpg
 theme: jekyll-theme-cayman
 

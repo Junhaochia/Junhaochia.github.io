@@ -16,7 +16,7 @@
     <!-- June's SEO override -->
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta name="theme-color" content="{{ page.color | default: '#CCCCFF' }}">
+    <meta name="theme-color" content="{{ page.color | default: site.theme_color }}">
     <!-- End June's SEO override -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -56,8 +56,8 @@
             navLink.style.margin = "10px 6px";
             navLink.style.padding = "4px 10px";
           }
-          navLink.style.color = "white";
-          navLink.style.backgroundColor = "black";
+          navLink.style.color = "{{ page.navbar_activetext | default: '#000000' }}";
+          navLink.style.backgroundColor = "{{ page.navbar_activebg | default: '#FFFFCC' }}";
         }
       }
     }
@@ -71,15 +71,16 @@
             navDropbtn.style.margin = "10px 6px";
             navDropbtn.style.padding = "4px 10px";
           }
-          navDropbtn.style.color = "white";
-          navDropbtn.style.backgroundColor = "black";
+          navDropbtn.style.color = "{{ page.navbar_activetext | default: '#000000' }}";
+          navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: '#FFFFCC' }}";
         }
       }
     }
     //Set bg when scrolled for navbar
     var navbar = document.getElementById("navbar-main");
     window.onscroll = function() {
-      navbar.style.backgroundColor = `hsla(0,0%,100%,${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
+      // todo use site.theme_color or page.navbar_color
+      navbar.style.backgroundColor = `hsla(240, 100%, 90%,${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
     };
     </script>
     {% endunless %}
