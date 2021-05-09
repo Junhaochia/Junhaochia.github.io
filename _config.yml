@@ -7,6 +7,10 @@ show_downloads: false
 show_autogen: true
 google_analytics:
 
+twitter:
+  username: 
+  card: 
+
 collections_dir: collections
 collections:
   projects:
