@@ -8,7 +8,6 @@ show_autogen: true
 google_analytics:
 
 twitter:
-  username: Junhao_sama
   card: summary
 
 collections_dir: collections

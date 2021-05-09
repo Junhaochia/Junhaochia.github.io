@@ -3,7 +3,7 @@ title: Home
 description: Truly my home ♥
 permalink: /
 image:
-  path: /assets/site-logo_1200.png
+  path: /assets/site-logo.webp
 ---
 # Theres nothing to see here. owO
  > There are millions of things that you can do right now but you chose to be here
