@@ -1,8 +1,16 @@
 ---
 ---
 
-// Override theme
+// Override variables
 
+
+
+// Import theme
+@import "{{ site.theme }}";
+  
+// Override CSS
+
+// Page Header
 .page-header {
   color: #FFF;
   text-align: center;
@@ -10,12 +18,7 @@
   background-image: linear-gradient(0deg, #9999CC, #5577EE);
 }
 
-// Import theme
-@import "{{ site.theme }}";
-  
-// Extras
-
-// 1. Navbar stuff
+// Navbar stuff
 ul.navbar-main {
   list-style-type: none;
   margin: 0;
@@ -92,7 +95,7 @@ ul.navbar-main .dropdown:hover .dropdown-content {
   display: block;
 }
 
-// 2. page-bg
+// Page background
 body.page-bg {
   background-position: center center;
   background-repeat: no-repeat;
