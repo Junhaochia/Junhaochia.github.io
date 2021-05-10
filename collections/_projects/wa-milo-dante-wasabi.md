@@ -2,6 +2,7 @@
 title: '[WA] Milo Dante Wasabi'
 description: 'Milo Dante Wasabi Whatsapp Sticker Android APK'
 header_type: banner
+background: blank
 layout: default
 date_created: 1588792799
 ---
