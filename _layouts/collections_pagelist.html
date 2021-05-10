@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{{ content }}
+<p id="data"></p>
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var data = JSON.parse(this.responseText);
+        document.getElementById("data").innerHTML = JSON.stringify(data);
+    } else if (this.readyState == 4 && this.status != 200) {
+        document.getElementById("data").innerHTML = `An error has occured (${this.status})`
+    }
+    };
+    xmlhttp.open("GET", "pages.json", true);
+    xmlhttp.send();
+</script>

@@ -2,6 +2,7 @@
 title: Projects
 description: 
 permalink: /projects.html
+layout: collections_pagelist
 ---
 
 # Work in progress (W.I.P)
