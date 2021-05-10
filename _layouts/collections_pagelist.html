@@ -13,6 +13,6 @@ layout: default
         document.getElementById("data").innerHTML = `An error has occured (${this.status})`
     }
     };
-    xmlhttp.open("GET", "pages.json", true);
+    xmlhttp.open("GET", "{{ page.url }}/pages.json", true);
     xmlhttp.send();
 </script>
