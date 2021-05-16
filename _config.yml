@@ -1,8 +1,8 @@
 title: f.junhao.page
 description:
-theme_color: '#5577EE'
 background: /assets/site-bg.webp
 theme: jekyll-theme-cayman
+theme_color: '#5577EE'
 
 show_downloads: false
 show_autogen: true
@@ -17,3 +17,6 @@ collections:
     output: true
     permalink: /:collection/:name:output_ext
     sort_by: date_created
+
+plugins:
+  - jekyll-sitemap
