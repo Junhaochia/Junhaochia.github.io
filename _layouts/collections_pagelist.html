@@ -18,9 +18,11 @@ layout: default
     }
     // Set Data
     function setPage(results) {
+        var pagelist = document.getElementsByName("pageListRes");
+
         queryResult["page"] = isNaN(queryResult["page"]) && 0 || parseInt(queryResult["page"], 10) - 1;
         let pageOffset = queryResult["page"] * (pagelist.length);
-        var pagelist = document.getElementsByName("pageListRes");
+        
         for(i = 0; i < pagelist.length; i++) {
             if (i+pageOffset >= results.length) break;
             pagelist[i].innerHTML = results[i+pageOffset].title;
