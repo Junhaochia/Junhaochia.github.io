@@ -21,7 +21,7 @@ layout: default
         var pagelist = document.getElementsByName("pageListRes");
 
         let curPage = parseInt(queryResult["page"], 10);
-        if (isNaN(curPage)) curPage = 1;
+        if (isNaN(curPage) || curPage < 1) curPage = 1;
         curPage -= 1;
 
         let pageOffset = curPage * (pagelist.length);
