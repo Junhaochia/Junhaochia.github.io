@@ -2,12 +2,12 @@
 layout: default
 ---
 {{ content }}
-<div id="pagelist-results">
-    <div name="pageListRes" class="pagelist"></div>
-    <div name="pageListRes" class="pagelist"></div>
-    <div name="pageListRes" class="pagelist"></div>
-    <div name="pageListRes" class="pagelist"></div>
-    <div name="pageListRes" class="pagelist"></div>
+<div class="pageList">
+    <div name="pageList-item"></div>
+    <div name="pageList-item"></div>
+    <div name="pageList-item"></div>
+    <div name="pageList-item"></div>
+    <div name="pageList-item"></div>
 </div>
 <p id="data"></p>
 <script>
@@ -18,7 +18,7 @@ layout: default
     }
     // Set Data
     function setPage(results) {
-        var pagelist = document.getElementsByName("pageListRes");
+        var pagelist = document.getElementsByName("pageList-item");
 
         let curPage = parseInt(queryResult["page"], 10);
         if (isNaN(curPage) || curPage < 1) curPage = 1;
