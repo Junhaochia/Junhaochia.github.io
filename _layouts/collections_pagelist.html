@@ -20,12 +20,16 @@ layout: default
     function setPage(results) {
         var pagelist = document.getElementsByName("pageListRes");
 
-        queryResult["page"] = isNaN(queryResult["page"]) && 0 || parseInt(queryResult["page"], 10) - 1;
-        let pageOffset = queryResult["page"] * (pagelist.length);
-        
+        let curPage = parseInt(queryResult["page"], 10);
+        if (isNaN(curPage)) curPage = 1;
+        curPage -= 1;
+
+        let pageOffset = curPage * (pagelist.length);
+
         for(i = 0; i < pagelist.length; i++) {
             if (i+pageOffset >= results.length) break;
-            pagelist[i].innerHTML = results[i+pageOffset].title;
+            pageData = results[i+pageOffset];
+            pagelist[i].innerHTML = `<a href="${pageData.id}">${pageData.title}</a>`;
         } 
     }
     // get Pagelist
@@ -39,6 +43,6 @@ layout: default
         document.getElementById("data").innerHTML = `An error has occured (${this.status})`
     }
     };
-    xmlhttp.open("GET", "{{ page.url }}/pages.json", true);
+    xmlhttp.open("GET", "pages.json", true);
     xmlhttp.send();
 </script>
