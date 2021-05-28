@@ -2,13 +2,37 @@
 layout: default
 ---
 {{ content }}
+<div id="pagelist-results">
+    <div name="pageListRes" class="pagelist"></div>
+    <div name="pageListRes" class="pagelist"></div>
+    <div name="pageListRes" class="pagelist"></div>
+    <div name="pageListRes" class="pagelist"></div>
+    <div name="pageListRes" class="pagelist"></div>
+</div>
 <p id="data"></p>
 <script>
+    // Get Query [https://stackoverflow.com/questions/647259/javascript-query-string]
+    var queryResult = {}, queryString = location.search.slice(1), queryRegex = /([^&=]+)=([^&]*)/g, queryMatch;
+    while (queryMatch = queryRegex.exec(queryString)) {
+        result[decodeURIComponent(queryMatch[1])] = decodeURIComponent(queryMatch[2]);
+    }
+    // Set Data
+    function setPage(results) {
+        queryResult["page"] = isNaN(queryResult["page"]) && 0 || parseInt(queryResult["page"], 10) - 1;
+        let pageOffset = queryResult["page"] * (pagelist.length);
+        var pagelist = document.getElementsByName("pageListRes");
+        for(i = 0; i < pagelist.length; i++) {
+            if (i+pageOffset >= results.length) break;
+            pagelist[i].innerHTML = results[i+pageOffset].title;
+        } 
+    }
+    // get Pagelist
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var data = JSON.parse(this.responseText);
         document.getElementById("data").innerHTML = JSON.stringify(data);
+        setPage(data);
     } else if (this.readyState == 4 && this.status != 200) {
         document.getElementById("data").innerHTML = `An error has occured (${this.status})`
     }
