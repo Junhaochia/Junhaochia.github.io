@@ -1,7 +1,7 @@
 ---
 title: Projects
 description: 
-permalink: /projects/
+permalink: /projects
 layout: collections_pagelist
 ---
 

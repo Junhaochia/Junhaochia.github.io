@@ -1,5 +1,5 @@
 ---
-title: '[Discord] Izumi Bot'
+title: '[Discord] Iruma Bot'
 description: 'Beep boop'
 header_type: banner
 background: blank
