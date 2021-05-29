@@ -16,7 +16,7 @@ I do things, I guess.
 
 [Join the Team Junhao Discord Server!](https://discord.junhao.page)
 
-[Join the Izumi Discord Server!](https://discord.com/invite/M79cK6g)
+[Join the Iruma Discord Server!](https://discord.com/invite/M79cK6g)
 
 # Donate
 [paypal.me/Junhaochia](https://paypal.me/Junhaochia)
