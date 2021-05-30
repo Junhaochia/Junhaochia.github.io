@@ -3,11 +3,17 @@ layout: default
 ---
 {{ content }}
 <div class="pageList">
+    <hr style="border-top: 1px dotted black;">
     <div name="pageList-item"></div>
+    <hr style="border-top: 1px dotted black;">
     <div name="pageList-item"></div>
+    <hr style="border-top: 1px dotted black;">
     <div name="pageList-item"></div>
+    <hr style="border-top: 1px dotted black;">
     <div name="pageList-item"></div>
+    <hr style="border-top: 1px dotted black;">
     <div name="pageList-item"></div>
+    <hr style="border-top: 1px dotted black;">
 </div>
 <p id="data"></p>
 <script>
@@ -29,7 +35,7 @@ layout: default
         for(i = 0; i < pagelist.length; i++) {
             if (i+pageOffset >= results.length) break;
             pageData = results[i+pageOffset];
-            pagelist[i].innerHTML = `<a href="${pageData.id}">${pageData.title}</a> - ${pageData.date} <br> ${pageData.description} <br> `;
+            pagelist[i].innerHTML = `[${i+pageOffset}] <a href="${pageData.id}">${pageData.title}</a> <br> ${pageData.description}`;
         } 
     }
     // get Pagelist
