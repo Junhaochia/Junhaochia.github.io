@@ -2,7 +2,7 @@
 layout: default
 ---
 {{ content }}
-<div class="pageList">
+<div id="pageList" style="display: none;">
     <hr class="black_dotted">
     <div name="pageList-item"></div><hr class="black_dotted">
     <div name="pageList-item"></div><hr class="black_dotted">
@@ -19,6 +19,7 @@ layout: default
     }
     // Set Data
     function setPage(results) {
+        document.getElementById("pageList").style.display = "block";
         var pagelist = document.getElementsByName("pageList-item");
 
         let curPage = parseInt(queryResult["page"], 10);
@@ -39,6 +40,7 @@ layout: default
     if (this.readyState == 4 && this.status == 200) {
         var data = JSON.parse(this.responseText).reverse();
         document.getElementById("data").innerHTML = JSON.stringify(data);
+        document.getElementById("pageList").style.display = "block";
         setPage(data);
     } else if (this.readyState == 4 && this.status != 200) {
         document.getElementById("data").innerHTML = `An error has occured (${this.status})`
