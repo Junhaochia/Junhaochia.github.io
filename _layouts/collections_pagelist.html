@@ -29,7 +29,7 @@ layout: default
         for(i = 0; i < pagelist.length; i++) {
             if (i+pageOffset >= results.length) break;
             pageData = results[i+pageOffset];
-            pagelist[i].innerHTML = `<a href="${pageData.id}">${pageData.title}</a>`;
+            pagelist[i].innerHTML = `<a href="${pageData.id}">${pageData.title}</a> - ${pageData.date} <br> ${pageData.description} <br> `;
         } 
     }
     // get Pagelist
