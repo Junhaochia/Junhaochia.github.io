@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+}
+
 .friendPlayerLevel {
 	display: inline-block;
 	font-size: 16px;
@@ -7,10 +11,8 @@
 	width: 28px;
 	line-height: 28px;
 	text-align: center;
-
 	cursor: default;
 }
-
 
 .friendPlayerLevel .friendPlayerLevelNum {
 	color: #e5e5e5;
@@ -86,9 +88,7 @@
 	border-radius: 0;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-
 	font-size: 14px;
-
 	height: 32px;
 	width: 32px;
 	line-height: 32px;
@@ -195,7 +195,6 @@
 .appHubIconHolder.offline,
 .avatar_block_status_offline,
 .appHubIconHolder.ignored {
-
 	background: -webkit-linear-gradient( top, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
 	background: linear-gradient( to bottom, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
 	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
@@ -216,7 +215,6 @@
 .appHubIconHolder.online,
 .avatar_block_status_online {
 	background-color: #57cbde;
-
 	background: -webkit-linear-gradient( top, rgba(83,164,196,1) 5%, rgba(69,128,151,1) 95%);
 	background: linear-gradient( to bottom, rgba(83,164,196,1) 5%, rgba(69,128,151,1) 95%);
 	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
@@ -237,7 +235,6 @@
 .appHubIconHolder.in-game,
 .avatar_block_status_in-game {
 	background-color: #90ba3c;
-
 	background: -webkit-linear-gradient( top, rgba(143,185,59,1) 5%, rgba(110,140,49,1) 95%);
 	background: linear-gradient( to bottom, rgba(143,185,59,1) 5%, rgba(110,140,49,1) 95%);
 	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
@@ -259,7 +256,6 @@
 .appHubIconHolder.golden,
 .avatar_block_status_golden {
 	background-color: #e4ca63;
-
 	background: -webkit-linear-gradient( 305deg, #d5bf6a 10%,#ffe2a9 40%,#ba995c 52%,#ba995c 61%,#d5bf6a 85%);
 	background: linear-gradient( 145deg, #d5bf6a 10%,#ffe2a9 40%,#ba995c 52%,#ba995c 61%,#d5bf6a 85%);
 }
@@ -346,7 +342,6 @@
 	width: 20px;
 	height: 20px;
 	z-index: 2;
-
 	cursor: pointer;
 }
 
@@ -401,21 +396,17 @@
 .miniprofile_container {
 	display: flex;
 	flex-direction: column;
-
 	position: relative;
 	overflow: hidden;
-
 	width: 328px;
-			font-family: "Motiva Sans", Sans-serif;
-		font-weight: normal; /* normal */
-
-		}
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal; 
+}
 
 .miniprofile_playersection {
 	position: relative;
 	display: flex;
 	flex-direction: row;
-
 	z-index: 1;
 	height: 62px;
 	padding: 16px;
@@ -455,9 +446,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	padding-left: 16px;
-
 	text-shadow: 1px 1px 4px #000;
 }
 
@@ -481,7 +470,6 @@
 	display: flex;
 	flex-direction: row;
 	position: relative;
-
 	min-height: 64px;
 }
 
@@ -496,10 +484,8 @@
 .miniprofile_gamesection .miniprofile_game_details {
 	display: flex;
 	flex-direction: column;
-
 	padding: 8px 8px 8px 122px;
 	font-size: 14px;
-
 	align-self: center;
 }
 
@@ -516,7 +502,6 @@
 .miniprofile_detailssection {
 	display: flex;
 	flex-direction: column;
-
 	padding: 16px 16px 8px 16px;
 }
 
@@ -527,7 +512,6 @@
 .miniprofile_featuredcontainer {
 	display: flex;
 	flex-direction: row;
-
 	height: 34px;
 	padding-left: 16px;
 	margin-bottom: 8px;
@@ -546,7 +530,6 @@
 	font-size: 14px;
 	overflow: hidden;
 	white-space: nowrap;
-
 	font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
 }
 
@@ -574,7 +557,6 @@
 	overflow: hidden;
 	z-index: -3;
 	background: radial-gradient( ellipse farthest-corner at 20% 30%, rgb( 76, 80, 91 ) 0%, rgb( 52, 55, 63 ) 50%, rgb( 40, 44, 50 ) 100% );
-
 }
 
 .miniprofile_backgroundblur {
@@ -602,10 +584,8 @@
 .miniprofile_content {
 	width: 302px;
 	border-radius: 3px;
-
 	color: #828282;
 	font-size: 14px;
-
 	position: relative;
 }
 
@@ -615,7 +595,6 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-
 	z-index: -1;
 }
 
