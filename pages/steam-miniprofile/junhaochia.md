@@ -4,7 +4,7 @@ description: Steam Miniprofile
 layout: direct
 permalink: /steam-miniprofile/junhaochia
 ---
-<div id="steam_miniprofile" width="328px" height="210px">
+<div class="miniprofile_container">
     <!-- Background -->
     <div class="miniprofile_nameplatecontainer">
         <video class="miniprofile_nameplate" playsinline="" autoplay="" muted="" loop="">
@@ -16,7 +16,7 @@ permalink: /steam-miniprofile/junhaochia
         <div class="playersection_avatar_frame">
             <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/570/c6a479fae8979bc9c1a02378e488e3ce06b52cb1.png" />
         </div>
-        <div class="playersection_avatar border_color_offline">
+        <div class="playersection_avatar border_color_online">
             <img
                 src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ff/ff83de9457750c666e89abe027e554331854f221_medium.jpg"
                 srcset="
@@ -26,8 +26,8 @@ permalink: /steam-miniprofile/junhaochia
             />
         </div>
         <div class="player_content">
-            <span class="persona offline">Junɇ</span>
-            <span class="friend_status_offline">Unknown</span>
+            <span class="persona online">Junɇ</span>
+            <span class="friend_status_online">Online</span>
         </div>
     </div>
     <div class="miniprofile_detailssection miniprofile_backdropblur not_in_game miniprofile_backdrop">
