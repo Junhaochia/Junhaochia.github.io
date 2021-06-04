@@ -55,4 +55,5 @@ link.type = 'text/css';
 link.href = 'https://www.junhao.page/assets/css/steam_miniprofile.css';
 link.media = 'all';
 head.appendChild(link);
+document.getElementsByTagName("body")[0].margin = "0"
 </script>
