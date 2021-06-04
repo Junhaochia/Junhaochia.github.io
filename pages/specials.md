@@ -13,7 +13,7 @@ I do things, I guess.
 
 # Links
 <a href="https://steamcommunity.com/id/Junhaochia">
-<iframe id="steam_miniprofile" width="328px" height="210px" src="http://junhao.page/steam-miniprofile/junhaochia"></iframe>
+<iframe id="steam_miniprofile" width="328px" height="210px" src="https://www.junhao.page/steam-miniprofile/junhaochia"></iframe>
 </a>
 
 
