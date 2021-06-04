@@ -12,9 +12,8 @@ N/A
 I do things, I guess.
 
 # Links
-<a href="https://steamcommunity.com/id/Junhaochia">
-<iframe id="steam_miniprofile" width="328px" height="210px" src="https://www.junhao.page/steam-miniprofile/junhaochia"></iframe>
-</a>
+[Steam Community :: June](https://steamcommunity.com/id/Junhaochia)
+<iframe id="steam_miniprofile" width="350" height="232px" src="https://www.junhao.page/steam-miniprofile/junhaochia" style="border: 0px;"></iframe>
 
 
 [![Team Junhao Discord Server](https://discord.com/api/guilds/661447151426994176/widget.png?style=banner2)](https://discord.gg/9QeEzAq)
