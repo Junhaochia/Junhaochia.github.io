@@ -18,11 +18,8 @@ permalink: /steam-miniprofile/junhaochia
         </div>
         <div class="playersection_avatar border_color_online">
             <img
-                src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ff/ff83de9457750c666e89abe027e554331854f221_medium.jpg"
-                srcset="
-                    https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ff/ff83de9457750c666e89abe027e554331854f221_medium.jpg 1x,
-                    https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ff/ff83de9457750c666e89abe027e554331854f221_full.jpg   2x
-                "
+                src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ff/ff83de9457750c666e89abe027e554331854f221_full.jpg"
+                srcset="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ff/ff83de9457750c666e89abe027e554331854f221_full.jpg"
             />
         </div>
         <div class="player_content">
