@@ -47,8 +47,14 @@ I do things, I guess.
 	</div>
 </div>
 <script>
-  document.getElementsByTagName('head')[0].appendChild( '<link rel="stylesheet" type="text/css" href="https://www.junhao.page/assets/css/steam_miniprofile.css">' );
-}
+var head  = document.getElementsByTagName('head')[0];
+var link  = document.createElement('link');
+link.id   = cssId;
+link.rel  = 'stylesheet';
+link.type = 'text/css';
+link.href = 'https://www.junhao.page/assets/css/steam_miniprofile.css';
+link.media = 'all';
+head.appendChild(link);
 </script>
 
 [![Team Junhao Discord Server](https://discord.com/api/guilds/661447151426994176/widget.png?style=banner2)](https://discord.gg/9QeEzAq)
