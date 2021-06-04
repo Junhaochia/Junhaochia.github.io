@@ -1,6 +1,7 @@
 ---
-title: Steam Community :: June
+title: 'Steam Community :: June'
 description: Steam Miniprofile
+layout: raw
 permalink: /steam-miniprofile/junhaochia
 ---
 <div id="steam_miniprofile" width="328px" height="210px">	<!-- Background -->
