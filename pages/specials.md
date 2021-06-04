@@ -13,12 +13,23 @@ I do things, I guess.
 
 # Links
 [Steam Community :: June](https://steamcommunity.com/id/Junhaochia)
-<iframe id="steam_miniprofile" width="328px" height="210px" src="https://steamcommunity.com/miniprofile/192010363"></iframe>
+<div id="steam_miniprofile" style="display: none;" width="328px" height="210px"></div>
 <script>
+var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+      var data = JSON.parse(this.responseText).reverse();
+      document.getElementById("steam_miniprofile").innerHTML = data;
+      document.getElementById("steam_miniprofile").style.display = "block";
+      setPage(data);
+  } else if (this.readyState == 4 && this.status != 200) {
+      document.getElementById("steam_miniprofile").innerHTML = `An error has occured (${this.status})`
+  }
+  };
+  xmlhttp.open("GET", "https://steamcommunity.com/miniprofile/192010363", true);
+  xmlhttp.send();
 window.onload = function() {
-  let myiFrame = document.getElementById("steam_miniprofile");
-  let doc = myiFrame.contentDocument;
-  doc.getElementsByTagName('head')[0].appendChild( '<link rel="stylesheet" type="text/css" href="https://www.junhao.page/assets/css/steam_miniprofile.css">' );
+  document.getElementsByTagName('head')[0].appendChild( '<link rel="stylesheet" type="text/css" href="https://www.junhao.page/assets/css/steam_miniprofile.css">' );
 }
 </script>
 
