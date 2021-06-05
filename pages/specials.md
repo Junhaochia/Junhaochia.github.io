@@ -19,4 +19,4 @@ I do things, I guess.
 [![Iruma Discord Server](https://discord.com/api/guilds/735144130484895797/widget.png?style=banner2)](https://discord.gg/M79cK6g)
 
 # Donate
-[paypal.me/Junhaochia](https://paypal.me/Junhaochia)
+[![Donate with PayPal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png)](https://paypal.me/Junhaochia)
