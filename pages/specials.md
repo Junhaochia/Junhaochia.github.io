@@ -9,7 +9,7 @@ image:
 I do things, I guess.
 
 # Links
-[Steam - Junɇ](https://steamcommunity.com/id/Junhaochia)
+<a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a><br>
 <iframe id="steam_miniprofile" width="350" height="232px" src="https://www.junhao.page/steam-miniprofile/junhaochia" style="border: 0px;"></iframe>
 
 [![Team Junhao Discord Server](https://discord.com/api/guilds/661447151426994176/widget.png?style=banner2)](https://discord.gg/9QeEzAq)
