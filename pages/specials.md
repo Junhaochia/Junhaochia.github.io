@@ -5,7 +5,7 @@ permalink: /specials
 image:
   path: /assets/site-logo.webp
 ---
-# About Me and only ME
+# About
 I do things, I guess.
 
 # Links
