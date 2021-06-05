@@ -1,7 +1,7 @@
 ---
 title: 'Steam Community :: June'
 description: Steam Miniprofile
-layout: direct
+layout: steam_miniprofile
 permalink: /steam-miniprofile/junhaochia
 ---
 <div class="miniprofile_container">
@@ -43,13 +43,3 @@ permalink: /steam-miniprofile/junhaochia
         </div>
     </div>
 </div>
-<script>
-var head  = document.getElementsByTagName('head')[0];
-var link  = document.createElement('link');
-link.id   = "steam_miniprofile";
-link.rel  = 'stylesheet';
-link.type = 'text/css';
-link.href = 'https://www.junhao.page/assets/css/steam_miniprofile.css';
-link.media = 'all';
-head.appendChild(link);
-</script>
