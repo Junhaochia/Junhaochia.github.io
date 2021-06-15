@@ -39,6 +39,7 @@ layout: default
     xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var data = JSON.parse(this.responseText).reverse();
+        data.shift();
         document.getElementById("data").innerHTML = JSON.stringify(data);
         document.getElementById("pageList").style.display = "block";
         setPage(data);

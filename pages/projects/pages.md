@@ -7,7 +7,7 @@ permalink: /projects/pages.json
 {
 "title": "{{project.title}}",
 "description": "{{project.description}}",
-"date_created": {{project.date_created}},
+"date_created": "{{ project.date | date: "%e %B %Y %l:%M %P" }}",
 "id": "{{project.id}}"
 },
 {% endfor %}
