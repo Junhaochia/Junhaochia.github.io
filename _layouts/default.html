@@ -22,11 +22,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
-  {% if page.background != "blank" %}
-  <body style='background-image:url("{{page.background | default: site.background}}")' class="page-bg">
-  {% else %}
   <body>
-  {% endif %}
+    {% if page.background != "blank" %}
+    <div style='background-image:url("{{page.background | default: site.background}}")' class="page-bg"></div>
+    {% endif %}
     <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
     {% unless page.hide_nav %}
     <ul id="navbar-main" class="navbar-main" >

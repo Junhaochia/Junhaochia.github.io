@@ -117,12 +117,15 @@ ul.navbar-main .dropdown:hover .dropdown-content {
   display: block;
 }
 
-// Page background
-body.page-bg {
-  background-position: 0;
-  background-repeat: repeat;
-  background-attachment: fixed;
+// Page background [https://stackoverflow.com/a/55360412]
+div.page-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   background-size: cover;
+  z-index: -1;
 }
 
 hr.black_dotted {
