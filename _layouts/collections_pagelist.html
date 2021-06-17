@@ -30,7 +30,7 @@ layout: default
 
         let curPage = parseInt(queryResult["page"], 10) - 1;
         // Math.min(Math.max(this, min), max) // Crazy math magick
-        curPage = Math.min(Math.max(curPage, 0), Math.ceil((results.length - 1)/pagelist.length)) || 0;
+        curPage = Math.min(Math.max(curPage, 0), Math.floor((results.length - 1)/pagelist.length)) || 0;
 
         let pageOffset = curPage * (pagelist.length);
         let pagelist_spacer = "<br><br>";
