@@ -28,9 +28,9 @@ layout: default
         document.getElementById("pageList").style.display = "block";
         var pagelist = document.getElementsByName("pageList-item");
 
-        let curPage = parseInt(queryResult["page"], 10);
-        if (isNaN(curPage) || curPage < 1) curPage = 1;
-        curPage -= 1;
+        let curPage = parseInt(queryResult["page"], 10) - 1;
+        // Math.min(Math.max(this, min), max) // Crazy math magick
+        curPage = Math.min(Math.max(curPage, 0), Math.ceil((results.length - 1)/pagelist.length));
 
         let pageOffset = curPage * (pagelist.length);
         let pagelist_spacer = "<br><br>";
