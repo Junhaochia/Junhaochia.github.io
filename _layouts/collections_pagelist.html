@@ -54,6 +54,6 @@ layout: default
         document.getElementById("data").innerHTML = `An error has occured (${this.status})`
     }
     };
-    xmlhttp.open("GET", `${window.location.href}/pages.json`, true);
+    xmlhttp.open("GET", `{{page.id}}/pages.json`, true);
     xmlhttp.send();
 </script>
