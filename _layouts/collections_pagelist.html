@@ -33,11 +33,12 @@ layout: default
         curPage -= 1;
 
         let pageOffset = curPage * (pagelist.length);
-
+        let pagelist_spacer = "<br><br>";
         for(i = 0; i < pagelist.length; i++) {
             if (i+pageOffset >= results.length) break;
             pageData = results[i+pageOffset];
-            pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><br>${pageData.description}<br><br>`;
+            if (i+pageOffset >= results.length + 1 || i == pagelist.length + 1) pagelist_spacer = "";
+            pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><br> ${pageData.description} ${pagelist_spacer}`;
         } 
     }
     // get Pagelist
