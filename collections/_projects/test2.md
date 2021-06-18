@@ -1,7 +1,6 @@
 ---
 title: test2
-description: 'Search the world's information, including webpages, images, videos and more. 
-Google has many special features to help you find exactly what you're looking ...'
+description: Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking ...
 layout: default
 date: 2015-05-06 19:19:59
 ---
