@@ -10,8 +10,18 @@
   
 // Override CSS
 
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  // Always show scrollbar
+  overflow-y: scroll;
+}
+
 // Custom Scrollbar
 /* Works on Firefox */
+
+
 * {
   scrollbar-width: thin;
   scrollbar-color: black lightgrey;
