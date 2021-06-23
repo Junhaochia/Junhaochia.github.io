@@ -366,19 +366,19 @@ body {
 }
 
 .border_color_offline {
-	border-color:#898989;
+	border-color: transparent;
 }
 
 .border_color_online {
-	border-color:#57cbde;
+	border-color: transparent;
 }
 
 .border_color_in-game {
-	border-color:#90ba3c;
+	border-color: transparent;
 }
 
 .border_color_golden {
-	border-color: #e4ca64;
+	border-color: transparent;
 }
 
 .miniprofile_hover {
