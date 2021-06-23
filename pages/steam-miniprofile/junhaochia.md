@@ -16,12 +16,12 @@ permalink: /steam-miniprofile/junhaochia
         <div class="playersection_avatar_frame">
             <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/322330/46461aaea39b18a4a3da2e6d3cf253006f2d6193.png" />
         </div>
-        <div class="playersection_avatar border_color_offline">
+        <div class="playersection_avatar border_color_online">
             <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/44/4401816c6bb737d30df3dae5fc94143146cd3c6c_full.jpg" />
         </div>
         <div class="player_content">
-            <span class="persona offline">Junɇ</span>
-            <span class="friend_status_offline">Last Online 6 hrs, 1 mins ago</span>
+            <span class="persona online">Junɇ</span>
+            <span class="friend_status_online">Online</span>
         </div>
     </div>
     <div class="miniprofile_detailssection miniprofile_backdropblur not_in_game miniprofile_backdrop">
