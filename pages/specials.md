@@ -11,7 +11,7 @@ I do things, I guess.
 # Links
 <div>
 <a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a><br>
-<iframe id="iframe-smp" width="328px" height="210px" src="https://smp.junhaochia.repl.co/192010363" style="border: 0px;"></iframe>
+<iframe id="iframe-smp" scrolling="no" width="328px" height="210px" src="https://smp.junhaochia.repl.co/192010363" style="border: 0px;"></iframe>
 <script>let smp = document.getElementById('iframe-smp');window.addEventListener("message", function(e) {if (e.data.includes(smp.src)) smp.height = e.data.slice(0,5);});</script>
 </div>
 
