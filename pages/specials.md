@@ -11,8 +11,7 @@ I do things, I guess.
 # Links
 <div>
 <a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a><br>
-<iframe id="iframe-smp" width="328px" height="210px" src="https://smp.junhaochia.repl.co/192010363" style="border: 0px;"></iframe>
-<script>let iframe_smp = document.getElementById("iframe-smp"); iframe_smp.contentWindow.onmessage = function(e) {iframe_smp.height = e.data;};</script>
+<iframe id="iframe-smp" width="328px" height="266px" src="https://smp.junhaochia.repl.co/192010363" style="border: 0px;"></iframe>
 </div>
 
 [![Team Junhao Discord Server](https://discord.com/api/guilds/661447151426994176/widget.png?style=banner2)](https://discord.gg/9QeEzAq)
