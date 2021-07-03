@@ -12,7 +12,7 @@ I do things, I guess.
 <div>
 <a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a><br>
 <iframe id="iframe-smp" width="328px" height="210px" src="https://smp.junhaochia.repl.co/192010363" style="border: 0px;"></iframe>
-<script>document.getElementById("iframe-smp").onmessage = function(event) {this.height = event.data;};</script>
+<script>document.getElementById("iframe-smp").onmessage = function(event) {document.getElementById("iframe-smp").height = event.data;};</script>
 </div>
 
 [![Team Junhao Discord Server](https://discord.com/api/guilds/661447151426994176/widget.png?style=banner2)](https://discord.gg/9QeEzAq)
