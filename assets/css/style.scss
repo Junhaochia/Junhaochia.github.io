@@ -86,9 +86,12 @@ img.site-logo {
   padding-left: 16px;
 }
 
+ul.navbar-main li a
+
 ul.navbar-main li a, ul.navbar-main .dropbtn {
   display: inline-block;
-  color: black;
+  color: white;
+  mix-blend-mode: difference;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
