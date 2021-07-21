@@ -16,7 +16,7 @@ collections_dir: collections
 collections:
   projects:
     output: true
-    permalink: /:collection/:name:output_ext
+    permalink: /:collection/:name/
 
 plugins:
   - jekyll-sitemap

@@ -1,7 +1,7 @@
 ---
 title: Specials
 description: Truly my home ♥
-permalink: /specials
+permalink: /specials/
 image:
   path: /assets/site-logo.webp
 ---
