@@ -5,4 +5,4 @@ permalink: /
 image:
   path: /assets/site-logo.webp
 ---
-<h1 class="full-page">Hello! :)</h1>
+<h1 class="full-page">Heyo!</h1>
