@@ -98,9 +98,9 @@
         <li class="dropdown">
           <a name="navbar-dropbtn" data-goto="/projects" class="dropbtn" >Projects</a>
           <div class="dropdown-content">
-            <a name="navbar-links" href="/projects/junhao-page" data-noborder="true">Junhao.page</a>
-            <a name="navbar-links" href="/projects/discord-iruma-bot" data-noborder="true">Iruma bot</a>
-            <a name="navbar-links" href="/projects/wa-milo-dante-wasabi" data-noborder="true">Milo Dante</a>
+            <a name="navbar-links" href="/projects/junhao-page" data-noborder="true" data-noinvert="true">Junhao.page</a>
+            <a name="navbar-links" href="/projects/discord-iruma-bot" data-noborder="true" data-noinvert="true">Iruma bot</a>
+            <a name="navbar-links" href="/projects/wa-milo-dante-wasabi" data-noborder="true" data-noinvert="true">Milo Dante</a>
             <a href="/projects">See All</a>
           </div>
         </li>
@@ -120,7 +120,7 @@
           }
           navLink.style.color = "{{ page.navbar_activetext | default: '#FFFFFF' }}";
           navLink.style.backgroundColor = "{{ page.navbar_activebg | default: '#000000' }}";
-        } else {
+        } else if (navLink.getAttribute("data-noinvert") != "true") {
           navLink.style.color = "{{ primaryColor }}";
         }
       }
@@ -137,7 +137,7 @@
           }
           navDropbtn.style.color = "{{ page.navbar_activetext | default: '#FFFFFF' }}";
           navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: '#000000' }}";
-        } else {
+        } else if (navDropbtn.getAttribute("data-noinvert") != "true") {
           navDropbtn.style.color = "{{ primaryColor }}";
         }
       }
