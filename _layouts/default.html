@@ -1,3 +1,12 @@
+{% liquid
+case page.invert
+when true
+  assign primaryColor = '#FFFFFF'
+  assign secondaryColor = '#000000'
+else
+  assign primaryColor = '#000000'
+  assign secondaryColor = '#FFFFFF'
+endcase %}  
 <!DOCTYPE html>
 <!-- https://shopify.github.io/liquid/tags/control-flow/ -->
 <html lang="{{ site.lang | default: 'en-US' }}">
@@ -28,11 +37,11 @@
     {% endif %}
     <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
     {% unless page.hide_nav %}
-    <ul id="navbar-main" class="navbar-main" >
+    <ul id="navbar-main" class="navbar-main" style="color: {{ primaryColor }};">
       <!--June logo.svg-->
       <a href="/" name="navbar-logo" style="padding: 8px 16px;display: inline-block;">
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="24pt" preserveAspectRatio="xMidYMid meet" viewBox="0 0 510.000000 288.000000">
-          <g transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+          <g transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)" fill="{{ primaryColor }}" stroke="none">
             <path d="M1425 2486 c-77 -12 -113 -21 -200 -53 -36 -14 -60 -25 -137 -66 -77
             -40 -187 -134 -241 -205 -58 -78 -71 -105 -92 -189 -18 -70 -18 -75 -1 -130
             21 -66 35 -86 88 -119 26 -16 52 -24 84 -24 44 0 46 1 38 23 -16 47 -16 217 1
@@ -92,8 +101,8 @@
           <a name="navbar-dropbtn" data-goto="/projects" class="dropbtn" >Projects</a>
           <div class="dropdown-content">
             <a name="navbar-links" href="/projects/junhao-page" data-noborder="true">Junhao.page</a>
-            <a name="navbar-links" href="/projects/discord-iruma-bot"  data-noborder="true">Iruma bot</a>
-            <a name="navbar-links" href="/projects/wa-milo-dante-wasabi"   data-noborder="true">Milo Dante</a>
+            <a name="navbar-links" href="/projects/discord-iruma-bot" data-noborder="true">Iruma bot</a>
+            <a name="navbar-links" href="/projects/wa-milo-dante-wasabi" data-noborder="true">Milo Dante</a>
             <a href="/projects">See All</a>
           </div>
         </li>
@@ -111,8 +120,8 @@
             navLink.style.margin = "10px 6px";
             navLink.style.padding = "4px 10px";
           }
-          navLink.style.color = "{{ page.navbar_activetext | default: '#FFFFFF' }}";
-          navLink.style.backgroundColor = "{{ page.navbar_activebg | default: '#000000' }}";
+          navLink.style.color = "{{ page.navbar_activetext | default: primaryColor }}";
+          navLink.style.backgroundColor = "{{ page.navbar_activebg | default: secondaryColor }}";
         }
       }
     }
@@ -126,8 +135,8 @@
             navDropbtn.style.margin = "10px 6px";
             navDropbtn.style.padding = "4px 10px";
           }
-          navDropbtn.style.color = "{{ page.navbar_activetext | default: '#FFFFFF' }}";
-          navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: '#000000' }}";
+          navDropbtn.style.color = "{{ page.navbar_activetext | default: primaryColor }}";
+          navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: secondaryColor }}";
         }
       }
     }

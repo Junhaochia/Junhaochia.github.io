@@ -2,6 +2,7 @@
 title: '[Discord] Iruma Bot'
 description: 'Beep boop'
 header_type: banner
+invert: true
 background: blank
 layout: default
 date: 2020-07-24 23:09:38
