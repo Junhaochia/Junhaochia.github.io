@@ -35,7 +35,7 @@
     {% endif %}
     <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
     {% unless page.hide_nav %}
-    <ul id="navbar-main" class="navbar-main" style="color: {{ primaryColor }};">
+    <ul id="navbar-main" class="navbar-main">
       <!--June logo.svg-->
       <a href="/" name="navbar-logo" style="padding: 8px 16px;display: inline-block;">
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="24pt" preserveAspectRatio="xMidYMid meet" viewBox="0 0 510.000000 288.000000">
@@ -118,8 +118,10 @@
             navLink.style.margin = "10px 6px";
             navLink.style.padding = "4px 10px";
           }
-          navLink.style.color = "{{ page.navbar_activetext | default: primaryColor }}";
-          navLink.style.backgroundColor = "{{ page.navbar_activebg | default: secondaryColor }}";
+          navLink.style.color = "{{ page.navbar_activetext | default: '#FFFFFF' }}";
+          navLink.style.backgroundColor = "{{ page.navbar_activebg | default: '#000000' }}";
+        } else {
+          navLink.style.color = "{{ primaryColor }}";
         }
       }
     }
@@ -133,8 +135,8 @@
             navDropbtn.style.margin = "10px 6px";
             navDropbtn.style.padding = "4px 10px";
           }
-          navDropbtn.style.color = "{{ page.navbar_activetext | default: primaryColor }}";
-          navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: secondaryColor }}";
+          navDropbtn.style.color = "{{ page.navbar_activetext | default: '#FFFFFF' }}";
+          navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: '#000000' }}";
         }
       }
     }
