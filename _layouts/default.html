@@ -137,6 +137,8 @@
           }
           navDropbtn.style.color = "{{ page.navbar_activetext | default: '#FFFFFF' }}";
           navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: '#000000' }}";
+        } else {
+          navLink.style.color = "{{ primaryColor }}";
         }
       }
     }
