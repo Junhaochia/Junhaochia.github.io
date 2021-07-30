@@ -16,7 +16,7 @@ layout: default
     <div name="pageList-item"></div>
     <hr class="black">
 </div>
-<p id="data"></p>
+<p id="data-info" style="display: none;"></p>
 <script>
     // Get Query [https://stackoverflow.com/questions/647259/javascript-query-string]
     var queryResult = {}, queryString = location.search.slice(1), queryRegex = /([^&=]+)=([^&]*)/g, queryMatch;
@@ -47,11 +47,13 @@ layout: default
     if (this.readyState == 4 && this.status == 200) {
         var data = JSON.parse(this.responseText).reverse();
         data.shift();
-        document.getElementById("data").innerHTML = JSON.stringify(data);
+        // document.getElementById("data-info").innerHTML = JSON.stringify(data); // debug
+        // document.getElementById("data-info").style.display = "block";
         document.getElementById("pageList").style.display = "block";
         setPage(data);
     } else if (this.readyState == 4 && this.status != 200) {
-        document.getElementById("data").innerHTML = `An error has occured (${this.status})`
+        document.getElementById("data-info").innerHTML = `An error has occured (${this.status})`
+        document.getElementById("data-info").style.display = "block";
     }
     };
     xmlhttp.open("GET", `{{page.permalink}}/pages.json`, true);
