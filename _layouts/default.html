@@ -1,12 +1,10 @@
-{% liquid
-case page.invert
-when true
-  assign primaryColor = '#FFFFFF'
-  assign secondaryColor = '#000000'
-else
-  assign primaryColor = '#000000'
-  assign secondaryColor = '#FFFFFF'
-endcase %}  
+{% if page.invert %}
+  {% assign primaryColor = '#FFFFFF' %}
+  {% assign secondaryColor = '#000000' %}
+{% else %}
+  {% assign primaryColor = '#000000' %}
+  {% assign secondaryColor = '#FFFFFF' %}
+{% endif %}
 <!DOCTYPE html>
 <!-- https://shopify.github.io/liquid/tags/control-flow/ -->
 <html lang="{{ site.lang | default: 'en-US' }}">
