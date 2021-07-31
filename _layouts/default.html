@@ -1,9 +1,11 @@
 {% if page.invert %}
   {% assign primaryColor = '#FFFFFF' %}
   {% assign secondaryColor = '#000000' %}
+  {% assign hslaLightness = '0%' %}
 {% else %}
   {% assign primaryColor = '#000000' %}
   {% assign secondaryColor = '#FFFFFF' %}
+  {% assign hslaLightness = '100%' %}
 {% endif %}
 <!DOCTYPE html>
 <!-- https://shopify.github.io/liquid/tags/control-flow/ -->
@@ -146,7 +148,7 @@
     var navbar = document.getElementById("navbar-main");
     window.onscroll = function() {
       // todo use site.theme_color or page.navbar_color
-      navbar.style.backgroundColor = `hsla(0, 0%, 100%,${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
+      navbar.style.backgroundColor = `hsla(0, 0%, {{ hslaLightness }}, ${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
     };
     </script>
     {% endunless %}
