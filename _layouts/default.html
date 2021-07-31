@@ -37,6 +37,21 @@
     {% endif %}
     <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
     {% unless page.hide_nav %}
+    {% if page.invert %}
+    <style>
+      ul.navbar-main .dropdown-content {
+        background-color: black;
+        box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
+        border-color: white;
+      }
+      ul.navbar-main li a, ul.navbar-main .dropbtn {
+        color: white;
+      }
+      ul.navbar-main .dropdown-content a {
+        color: white;
+      }
+    </style>
+    {% endif %}
     <ul id="navbar-main" class="navbar-main">
       <!--June logo.svg-->
       <a href="/" name="navbar-logo" style="padding: 8px 16px;display: inline-block;">
@@ -100,9 +115,9 @@
         <li class="dropdown">
           <a name="navbar-dropbtn" data-goto="/projects" class="dropbtn" >Projects</a>
           <div class="dropdown-content">
-            <a name="navbar-links" href="/projects/junhao-page" data-noborder="true" data-noinvert="true">Junhao.page</a>
-            <a name="navbar-links" href="/projects/discord-iruma-bot" data-noborder="true" data-noinvert="true">Iruma bot</a>
-            <a name="navbar-links" href="/projects/wa-milo-dante-wasabi" data-noborder="true" data-noinvert="true">Milo Dante</a>
+            <a name="navbar-links" href="/projects/junhao-page" data-noborder="true">Junhao.page</a>
+            <a name="navbar-links" href="/projects/discord-iruma-bot" data-noborder="true">Iruma bot</a>
+            <a name="navbar-links" href="/projects/wa-milo-dante-wasabi" data-noborder="true">Milo Dante</a>
             <a href="/projects">See All</a>
           </div>
         </li>
@@ -122,8 +137,6 @@
           }
           navLink.style.color = "{{ page.navbar_activetext | default: secondaryColor }}";
           navLink.style.backgroundColor = "{{ page.navbar_activebg | default: primaryColor }}";
-        } else if (navLink.getAttribute("data-noinvert") != "true") {
-          navLink.style.color = "{{ primaryColor }}";
         }
       }
     }
@@ -139,8 +152,6 @@
           }
           navDropbtn.style.color = "{{ page.navbar_activetext | default: secondaryColor }}";
           navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: primaryColor }}";
-        } else if (navDropbtn.getAttribute("data-noinvert") != "true") {
-          navDropbtn.style.color = "{{ primaryColor }}";
         }
       }
     }
