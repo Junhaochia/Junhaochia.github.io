@@ -120,8 +120,8 @@
             navLink.style.margin = "10px 6px";
             navLink.style.padding = "4px 10px";
           }
-          navLink.style.color = "{{ page.navbar_activetext | default: primaryColor }}";
-          navLink.style.backgroundColor = "{{ page.navbar_activebg | default: secondaryColor }}";
+          navLink.style.color = "{{ page.navbar_activetext | default: secondaryColor }}";
+          navLink.style.backgroundColor = "{{ page.navbar_activebg | default: primaryColor }}";
         } else if (navLink.getAttribute("data-noinvert") != "true") {
           navLink.style.color = "{{ primaryColor }}";
         }
@@ -137,8 +137,8 @@
             navDropbtn.style.margin = "10px 6px";
             navDropbtn.style.padding = "4px 10px";
           }
-          navDropbtn.style.color = "{{ page.navbar_activetext | default: primaryColor }}";
-          navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: secondaryColor }}";
+          navDropbtn.style.color = "{{ page.navbar_activetext | default: secondaryColor }}";
+          navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: primaryColor }}";
         } else if (navDropbtn.getAttribute("data-noinvert") != "true") {
           navDropbtn.style.color = "{{ primaryColor }}";
         }
