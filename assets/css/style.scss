@@ -122,17 +122,25 @@ ul.navbar-main li a[class=""]:hover, ul.navbar-main .dropdown-content a:hover {
   background-color: lightslategrey;
 }
 
+// Dropbtn-Title (hover)
+ul.navbar-main li a.dropbtn:hover {
+  margin-bottom: 0; // Remove the spacing
+  padding-bottom: 5px; // Increase to reach the box
+}
+
 // Dropdown
 ul.navbar-main li.dropdown {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  display: inline-block;
 }
 
 // Dropdown Contents
 ul.navbar-main .dropdown-content {
   display: none;
-  position: fixed;
-  transform: translate(0, 20%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
   background-color: var(--primary-color);
   min-width: 88px;
   z-index: 1;
