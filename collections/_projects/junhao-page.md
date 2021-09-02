@@ -1,5 +1,5 @@
 ---
-title: '[Github Pages] Junhao.page'
+title: 'Github Pages| Junhao.page'
 description: 'This current website :)'
 header_type: banner
 invert: true
