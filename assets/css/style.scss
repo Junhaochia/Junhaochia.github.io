@@ -17,9 +17,8 @@ html {
 }
 
 // Custom Scrollbar
+
 /* Works on Firefox */
-
-
 * {
   scrollbar-width: thin;
   scrollbar-color: black lightgrey;
@@ -39,6 +38,7 @@ html {
   border-radius: 20px;
   border: 3px solid transparent;
 }
+
 // header FULL PAGE
 h1.full-page {
   display: flex;
@@ -93,6 +93,8 @@ img.site-logo {
   padding-left: 16px;
 }
 
+// Dropdown box container
+
 ul.navbar-main li a, ul.navbar-main .dropbtn {
   display: inline-block;
   text-align: center;
@@ -105,13 +107,17 @@ ul.navbar-main li a:hover, ul.navbar-main .dropdown:hover .dropbtn {
   color: lightslategrey;
 }
 
+// Main-Title
 ul.navbar-main li.dropdown {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
+// Contents-Title
 ul.navbar-main .dropdown-content {
   display: none;
   position: fixed;
+  transform: translate(0, 25%);
 
   padding-top: 5px;
   padding-bottom: 5px;
@@ -137,7 +143,6 @@ ul.navbar-main .dropdown-content a {
 
 ul.navbar-main .dropdown-content a:hover {
     color: lightslategrey;
-    //background-color: #008080;
 }
 
 ul.navbar-main .dropdown:hover .dropdown-content {
