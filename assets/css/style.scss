@@ -7,6 +7,12 @@
   
 // Override CSS
 
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --hlsa-lightness: 100%;
+}
+
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -99,12 +105,12 @@ ul.navbar-main li a, ul.navbar-main .dropbtn {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  color: black;
+  color: var(--primary-color);
 }
 
-ul.navbar-main li a:hover, ul.navbar-main .dropdown:hover .dropbtn {
-  color: lightslategrey;
-  text-decoration: underline;
+ul.navbar-main li a:hover, ul.navbar-main .dropdown:hover .dropbtn, ul.navbar-main .dropdown-content a:hover {
+  color: white;
+  background-color: lightslategrey;
 }
 
 // Main-Title
@@ -117,38 +123,28 @@ ul.navbar-main li.dropdown {
 ul.navbar-main .dropdown-content {
   display: none;
   position: fixed;
-  transform: translate(0, 25%);
-
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 5px;
-
-  background-color: white;
-  min-width: 91.75px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transform: translate(0, 20%);
+  background-color: var(--secondary-color);
+  min-width: 88px;
   z-index: 1;
-
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
 }
 
 ul.navbar-main .dropdown-content a {
-  color: black;
+  color: var(--primary-color);
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
   text-align: left;
-}
-
-ul.navbar-main .dropdown-content a:hover {
-    color: lightslategrey;
 }
 
 ul.navbar-main .dropdown:hover .dropdown-content {
   display: block;
 }
 
+// Title-Active
+ul.navbar-main .active {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
 // Full image background
 
 div.page-bg {

@@ -1,12 +1,3 @@
-{% if page.invert %}
-  {% assign primaryColor = '#FFFFFF' %}
-  {% assign secondaryColor = '#000000' %}
-  {% assign hslaLightness = '0%' %}
-{% else %}
-  {% assign primaryColor = '#000000' %}
-  {% assign secondaryColor = '#FFFFFF' %}
-  {% assign hslaLightness = '100%' %}
-{% endif %}
 <!DOCTYPE html>
 <!-- https://shopify.github.io/liquid/tags/control-flow/ -->
 <html lang="{{ site.lang | default: 'en-US' }}">
@@ -39,18 +30,13 @@
     {% unless page.hide_nav %}
     {% if page.invert %}
     <style>
-      ul.navbar-main .dropdown-content {
-        background-color: black;
-        box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
-        border-color: white;
-      }
-      ul.navbar-main li a, ul.navbar-main .dropbtn {
-        color: white;
-      }
-      ul.navbar-main .dropdown-content a {
-        color: white;
+      :root {
+        --primary-color: white;
+        --secondary-color: black;
+        --hlsa-lightness: 0%;
       }
     </style>
+    {% else %}
     {% endif %}
     <ul id="navbar-main" class="navbar-main">
       <!--June logo.svg-->
@@ -115,9 +101,9 @@
         <li class="dropdown">
           <a name="navbar-dropbtn" data-goto="/projects" class="dropbtn" >Projects</a>
           <div class="dropdown-content">
-            <a name="navbar-links" href="/projects/junhao-page" data-noborder="true">Junhao.page</a>
-            <a name="navbar-links" href="/projects/discord-iruma-bot" data-noborder="true">Iruma bot</a>
-            <a name="navbar-links" href="/projects/wa-milo-dante-wasabi" data-noborder="true">Milo Dante</a>
+            <a name="navbar-links" href="/projects/junhao-page">Junhao.page</a>
+            <a name="navbar-links" href="/projects/discord-iruma-bot">Iruma bot</a>
+            <a name="navbar-links" href="/projects/wa-milo-dante-wasabi">Milo Dante</a>
             <a href="/projects">See All</a>
           </div>
         </li>
@@ -131,12 +117,8 @@
       for(i = 0; i < navbarLinks.length; i++) {
         const navLink = navbarLinks[i];
         if ((navLink.getAttribute("href").length != 1 && window.location.pathname.includes(navLink.getAttribute("href"))) || navLink.getAttribute("href") == window.location.pathname){
-          if (navLink.getAttribute("data-noborder") != "true") {
-            navLink.style.margin = "10px 6px";
-            navLink.style.padding = "4px 10px";
-          }
-          navLink.style.color = "{{ page.navbar_activetext | default: secondaryColor }}";
-          navLink.style.backgroundColor = "{{ page.navbar_activebg | default: primaryColor }}";
+          navLink.className += " active";
+          break;
         }
       }
     }
@@ -146,20 +128,15 @@
       for(i = 0; i < navbarDropbtns.length; i++) {
         const navDropbtn = navbarDropbtns[i];
         if ((navDropbtn.getAttribute("data-goto").length != 1 && window.location.pathname.includes(navDropbtn.getAttribute("data-goto"))) || window.location.pathname == navDropbtn.getAttribute("data-goto")) {
-          if (navDropbtn.getAttribute("data-noborder") != "true") {
-            navDropbtn.style.margin = "10px 6px";
-            navDropbtn.style.padding = "4px 10px";
-          }
-          navDropbtn.style.color = "{{ page.navbar_activetext | default: secondaryColor }}";
-          navDropbtn.style.backgroundColor = "{{ page.navbar_activebg | default: primaryColor }}";
+          navDropbtn.className += " active";
+          break;
         }
       }
     }
     //Set bg when scrolled for navbar
     const navbar = document.getElementById("navbar-main");
     window.onscroll = function() {
-      // todo use site.theme_color or page.navbar_color
-      navbar.style.backgroundColor = `hsla(0, 0%, {{ hslaLightness }}, ${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
+      navbar.style.backgroundColor = `hsla(0, 0%, var(--hlsa-lightness), ${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
     };
     </script>
     {% endunless %}
