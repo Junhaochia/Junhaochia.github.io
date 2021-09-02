@@ -105,6 +105,7 @@ ul.navbar-main li a, ul.navbar-main .dropbtn {
   margin: 10px 6px;
   padding: 4px 10px;
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 // Main-Title (active)
@@ -115,13 +116,15 @@ ul.navbar-main li a.active {
 }
 
 // Any-Title (hover) [except dropbtn]
-ul.navbar-main li a[class=""]:hover, ul.navbar-main .dropdown-content a:hover {
+ul.navbar-main li a:hover, ul.navbar-main .dropdown-content a:hover {
   color: white;
   background-color: lightslategrey;
 }
 
 // Dropbtn-Title (hover)
 ul.navbar-main li a.dropbtn:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   margin: 10px 6px 0 6px; // Remove the spacing
   padding: 4px 10px 5px 10px; // Increase to reach the box
 }
