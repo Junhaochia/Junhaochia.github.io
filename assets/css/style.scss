@@ -149,6 +149,8 @@ ul.navbar-main .dropdown:hover .dropdown-content {
   display: block;
 }
 
+// Full image background
+
 div.page-bg {
   position: fixed;
   top: 0;
@@ -159,7 +161,39 @@ div.page-bg {
   z-index: -1;
 }
 
+// Divider
+
 hr.black {
   border-top: 1px solid black;
   background-color: transparent;
+}
+
+// Tooltips - https://www.w3schools.com/css/css_tooltip.asp
+
+.hint {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.hint .hint-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000040;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the hint-text */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  padding: 4px 10px;
+  transform: translate(-50%, 0);
+}
+
+.hint:hover .hint-text {
+  visibility: visible;
 }
