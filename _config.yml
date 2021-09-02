@@ -4,7 +4,6 @@ background: /assets/site-bg.webp
 theme_color: '#5577EE'
 timezone: Asia/Singapore
 
-show_downloads: false
 show_autogen: true
 google_analytics:
 

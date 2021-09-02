@@ -126,10 +126,10 @@
     </ul>
     <script>
     //Set active tab bg (tabs)
-    var navbarLinks = document.getElementsByName("navbar-links");
+    const navbarLinks = document.getElementsByName("navbar-links");
     if (navbarLinks) {
       for(i = 0; i < navbarLinks.length; i++) {
-        let navLink = navbarLinks[i];
+        const navLink = navbarLinks[i];
         if ((navLink.getAttribute("href").length != 1 && window.location.pathname.includes(navLink.getAttribute("href"))) || navLink.getAttribute("href") == window.location.pathname){
           if (navLink.getAttribute("data-noborder") != "true") {
             navLink.style.margin = "10px 6px";
@@ -141,10 +141,10 @@
       }
     }
     //Set active tab bg (Dropdowns)
-    var navbarDropbtns = document.getElementsByName("navbar-dropbtn");
+    const navbarDropbtns = document.getElementsByName("navbar-dropbtn");
     if (navbarDropbtns) {
       for(i = 0; i < navbarDropbtns.length; i++) {
-        let navDropbtn = navbarDropbtns[i];
+        const navDropbtn = navbarDropbtns[i];
         if ((navDropbtn.getAttribute("data-goto").length != 1 && window.location.pathname.includes(navDropbtn.getAttribute("data-goto"))) || window.location.pathname == navDropbtn.getAttribute("data-goto")) {
           if (navDropbtn.getAttribute("data-noborder") != "true") {
             navDropbtn.style.margin = "10px 6px";
@@ -156,7 +156,7 @@
       }
     }
     //Set bg when scrolled for navbar
-    var navbar = document.getElementById("navbar-main");
+    const navbar = document.getElementById("navbar-main");
     window.onscroll = function() {
       // todo use site.theme_color or page.navbar_color
       navbar.style.backgroundColor = `hsla(0, 0%, {{ hslaLightness }}, ${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
@@ -169,13 +169,6 @@
         <br>
         <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
         <h2 class="project-tagline" style="display: inline-block">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-        {% endif %}
-        {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-        {% endif %}
         <br>
       </header>
     {% endcase %}
