@@ -168,21 +168,26 @@ hr.black {
   background-color: transparent;
 }
 
+// Text container for hint
+
 .hint {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
 }
 
+// Hint
+
 .hint .hint-text {
   visibility: hidden;
   background-color: #000040;
   color: #fff;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
-  white-space:nowrap;
-  
+  white-space: nowrap;
+  max-width: 100%;
+
   /* Position the hint-text */
   position: absolute;
   z-index: 1;
