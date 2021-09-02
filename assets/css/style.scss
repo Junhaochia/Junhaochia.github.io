@@ -113,10 +113,11 @@ ul.navbar-main li a, ul.navbar-main .dropbtn {
 ul.navbar-main li a.active {
   color: var(--secondary-color);
   background-color: var(--primary-color);
+  pointer-events: none;
 }
 
 // Any-Title (hover) [except dropbtn]
-ul.navbar-main li a:hover, ul.navbar-main .dropdown-content a:hover {
+ul.navbar-main li a[class=""]:hover, ul.navbar-main .dropdown-content a:hover {
   color: white;
   background-color: lightslategrey;
 }
@@ -143,12 +144,14 @@ ul.navbar-main .dropdown-content a {
   padding: 12px 16px;
   display: block;
   text-align: center;
+  margin: 1px;
 }
 
 // Dropdown Contents-Title (active)
 ul.navbar-main .dropdown-content a.active {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  pointer-events: none;
 }
 
 // Dropdown contents show (hover)
