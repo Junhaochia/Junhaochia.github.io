@@ -79,7 +79,6 @@ ul.navbar-main {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: transparent;
 
   z-index: 1;
@@ -105,7 +104,6 @@ ul.navbar-main li a, ul.navbar-main .dropbtn {
   text-align: center;
   margin: 10px 6px;
   padding: 4px 10px;
-  text-decoration: none;
   color: var(--primary-color);
 }
 
@@ -124,8 +122,8 @@ ul.navbar-main li a[class=""]:hover, ul.navbar-main .dropdown-content a:hover {
 
 // Dropbtn-Title (hover)
 ul.navbar-main li a.dropbtn:hover {
-  margin-bottom: 0; // Remove the spacing
-  padding-bottom: 5px; // Increase to reach the box
+  margin: 10px 6px 0 6px; // Remove the spacing
+  padding: 4px 10px 5px 10px; // Increase to reach the box
 }
 
 // Dropdown
@@ -139,7 +137,6 @@ ul.navbar-main .dropdown-content {
   display: none;
   position: absolute;
   left: 50%;
-  top: 50%;
   transform: translate(-50%, 0);
   background-color: var(--primary-color);
   min-width: 88px;
