@@ -186,7 +186,7 @@ hr.black {
   border-radius: 6px;
   padding: 5px 0;
   white-space: nowrap;
-  max-width: 100%;
+  max-width: calc(100% + 20px);
 
   /* Position the hint-text */
   position: absolute;
