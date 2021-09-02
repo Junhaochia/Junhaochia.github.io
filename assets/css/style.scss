@@ -133,7 +133,7 @@ ul.navbar-main .dropdown-content a {
   color: var(--primary-color);
   padding: 12px 16px;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 ul.navbar-main .dropdown:hover .dropdown-content {
@@ -141,10 +141,15 @@ ul.navbar-main .dropdown:hover .dropdown-content {
 }
 
 // Title-Active
-ul.navbar-main .active {
+ul.navbar-main li a.active {
+  margin: 10px 6px;
+  padding: 4px 10px;
+}
+ul.navbar-main a.active {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
+
 // Full image background
 
 div.page-bg {
