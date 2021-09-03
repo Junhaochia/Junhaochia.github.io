@@ -97,42 +97,20 @@
         </svg>
       </a>
       <div style="float:right">
-        <li><a name="navbar-links" href="/">Home</a></li>
+        <li><a name="navbar-links" href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
         <li class="dropdown">
-          <a name="navbar-dropbtn" data-goto="/projects" class="dropbtn" >Projects</a>
+          <a name="navbar-dropbtn" data-goto="/projects" class="dropbtn" {% if page.url contains '/projects' %}class="active"{% endif %}>Projects</a>
           <div class="dropdown-content">
-            <a name="navbar-links" href="/projects/junhao-page">Junhao.page</a>
-            <a name="navbar-links" href="/projects/iruma">Iruma</a>
-            <a name="navbar-links" href="/projects/milo-dante-wasabi">Milo Dante Wasabi</a>
-            <a href="/projects">See All</a>
+            <a name="navbar-links" href="/projects/junhao-page" {% if page.url contains '/projects/junhao-page' %}class="active"{% endif %}>Junhao.page</a>
+            <a name="navbar-links" href="/projects/iruma" {% if page.url contains '/projects/iruma' %}class="active"{% endif %}>Iruma</a>
+            <a name="navbar-links" href="/projects/milo-dante-wasabi" {% if page.url contains '/projects/milo-dante-wasabi' %}class="active"{% endif %}>Milo Dante Wasabi</a>
+            <a href="/projects" {% if page.url == '/projects' %}class="active"{% endif %}>See All</a>
           </div>
         </li>
-        <li><a name="navbar-links" href="/blog">Blog</a></li>
+        <li><a name="navbar-links" href="/blog" {% if page.url contains '/blog' %}class="active"{% endif %}>Blog</a></li>
       </div> 
     </ul>
     <script>
-    //Set active tab bg (tabs)
-    const navbarLinks = document.getElementsByName("navbar-links");
-    if (navbarLinks) {
-      for(i = 0; i < navbarLinks.length; i++) {
-        const navLink = navbarLinks[i];
-        if ((navLink.getAttribute("href").length != 1 && window.location.pathname.includes(navLink.getAttribute("href"))) || navLink.getAttribute("href") == window.location.pathname){
-          navLink.className += " active";
-          break;
-        }
-      }
-    }
-    //Set active tab bg (Dropdowns)
-    const navbarDropbtns = document.getElementsByName("navbar-dropbtn");
-    if (navbarDropbtns) {
-      for(i = 0; i < navbarDropbtns.length; i++) {
-        const navDropbtn = navbarDropbtns[i];
-        if ((navDropbtn.getAttribute("data-goto").length != 1 && window.location.pathname.includes(navDropbtn.getAttribute("data-goto"))) || window.location.pathname == navDropbtn.getAttribute("data-goto")) {
-          navDropbtn.className += " active";
-          break;
-        }
-      }
-    }
     //Set bg when scrolled for navbar
     const navbar = document.getElementById("navbar-main");
     window.onscroll = function() {
