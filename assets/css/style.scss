@@ -136,6 +136,20 @@ ul.navbar-main .dropdown-content {
   background-color: white;
   min-width: 88px;
   z-index: 1;
+  border: solid black;
+  border-width: 1px;
+}
+
+// Top arrow
+ul.navbar-main .dropdown-content::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
 }
 
 // Dropdown Contents-Title
@@ -162,10 +176,7 @@ ul.navbar-main .dropdown:hover .dropdown-content {
 
 // Dropbtn-Title size correction (hover)
 ul.navbar-main .dropdown:hover .dropbtn {
-  color: black;
-  background-color: white;
   margin: 10px 6px 0 6px; // Remove the spacing
-  padding: 4px 10px 5px 10px; // Increase to reach the box
 }
 
 // Full image background
