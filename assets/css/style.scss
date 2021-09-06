@@ -136,9 +136,8 @@ ul.navbar-main .dropdown-content {
   background-color: white;
   min-width: 88px;
   z-index: 1;
-  border: solid #2d2dad;
-  border-width: 2px;
-}
+  border: solid black 2px;
+  outline: solid white 2px;
 
 // Top arrow
 ul.navbar-main .dropdown-content::after {
