@@ -137,7 +137,17 @@ ul.navbar-main .dropdown-content {
   min-width: 88px;
   z-index: 1;
   border: solid black 2px;
-  outline: solid white 2px;
+  box-shadow: 0 0 0 2pt white;
+  border-radius: 10px;
+}
+
+// Dropdown Highlight first/last child Outline fix
+ul.navbar-main .dropdown-content:first-child a {
+  border-radius: 10px 10px 0 0;
+}
+
+ul.navbar-main .dropdown-content:last-child a {
+  border-radius: 0 0 10px 10px;
 }
 
 // Top arrow
@@ -152,6 +162,7 @@ ul.navbar-main .dropdown-content::after {
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
+
 // Top arrow outline
 ul.navbar-main .dropdown-content::before {
   content: "";
