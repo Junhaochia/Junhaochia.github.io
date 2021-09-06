@@ -138,6 +138,7 @@ ul.navbar-main .dropdown-content {
   z-index: 1;
   border: solid black 2px;
   outline: solid white 2px;
+}
 
 // Top arrow
 ul.navbar-main .dropdown-content::after {
@@ -149,7 +150,19 @@ ul.navbar-main .dropdown-content::after {
   margin-left: -8px;
   border-width: 8px;
   border-style: solid;
-  border-color: transparent transparent #2d2dad transparent;
+  border-color: transparent transparent black transparent;
+}
+// Top arrow outline
+ul.navbar-main .dropdown-content::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 1px;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
 }
 
 // Dropdown Contents-Title
