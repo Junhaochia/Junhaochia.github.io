@@ -142,12 +142,12 @@ ul.navbar-main .dropdown-content {
 }
 
 // Dropdown Highlight first/last child Outline fix
-ul.navbar-main .dropdown-content:first-child a {
-  border-radius: 10px 10px 0 0;
+ul.navbar-main .dropdown-content a:first-child {
+  border-radius: 8px 8px 0 0;
 }
 
-ul.navbar-main .dropdown-content:last-child a {
-  border-radius: 0 0 10px 10px;
+ul.navbar-main .dropdown-content a:last-child {
+  border-radius: 0 0 8px 8px;
 }
 
 // Top arrow
