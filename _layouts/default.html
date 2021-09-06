@@ -110,7 +110,11 @@
         <li><a name="navbar-links" href="/blog" {% if page.url contains '/blog' %}class="active"{% endif %}>Blog</a></li>
       </div> 
     </ul>
-    <script>
+    <script id="scriptAutoRemove">
+    // Remove self
+    const elem = document.getElementById("scriptAutoRemove");
+    elem.parentNode.removeChild(elem);
+    
     //Set bg when scrolled for navbar
     const navbar = document.getElementById("navbar-main");
     window.onscroll = function() {
