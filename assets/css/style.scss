@@ -116,7 +116,7 @@ ul.navbar-main li a.active {
 }
 
 // Any-Title (hover)
-ul.navbar-main li a:hover, ul.navbar-main .dropdown-content a:hover, ul.navbar-main .dropdown:hover a {
+ul.navbar-main li a:hover, ul.navbar-main .dropdown-content a:hover, ul.navbar-main .dropdown:hover a.dropbtn {
   color: white;
   background-color: lightslategrey;
 }
