@@ -111,12 +111,13 @@
       </div> 
     </ul>
     <script name="scriptAutoRemove">
-    // Remove self
-    const x = document.getElementsByName("scriptAutoRemove");
-    for (let i = 0; i < x.length; i++) {
-      const elem = x[i];
-      elem.parentNode.removeChild(elem);
-    }
+    setTimeout(function(){
+      const x = document.getElementsByName("scriptAutoRemove");
+      for (let i = 0; i < x.length; i++) {
+        const elem = x[i];
+        elem.parentNode.removeChild(elem);
+      }
+    }, 777);
     
     //Set bg when scrolled for navbar
     const navbar = document.getElementById("navbar-main");
