@@ -15,7 +15,7 @@ layout: default
     <div name="pageList-item"></div>
     <center>
         *back*
-        <select id="page" onchange="page(document.getElementById('page').value)">
+        <select id="pageSelect" onchange="page(document.getElementById('pageSelect').value)">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -61,6 +61,7 @@ layout: default
                 pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><br> ${pageData.description} ${pagelist_spacer}`;
             } 
         }
+        document.getElementById('pageSelect').value = curPage;
     }
     // get Pagelist
     let pageList_data = new XMLHttpRequest();
