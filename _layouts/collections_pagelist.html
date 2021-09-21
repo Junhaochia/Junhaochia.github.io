@@ -35,7 +35,7 @@ layout: default
     // Get Query [https://stackoverflow.com/questions/647259/javascript-query-string]
     var queryResult = {}
     function getParams() {
-        var queryString = location.search.slice(1), queryRegex = /([^/?&=]+)=([^&]*)/g, queryMatch;
+        let queryString = location.search.slice(1), queryRegex = /([^/?&=]+)=([^&]*)/g, queryMatch;
         while (queryMatch = queryRegex.exec(queryString)) {
             queryResult[decodeURIComponent(queryMatch[1])] = decodeURIComponent(queryMatch[2]);
         }
@@ -45,7 +45,7 @@ layout: default
     function setPage() {
         getParams();
         document.getElementById("pageList").style.display = "block";
-        var pagelist = document.getElementsByName("pageList-item");
+        let pagelist = document.getElementsByName("pageList-item");
 
         let curPage = parseInt(queryResult["page"], 10) - 1;
         curPage = Math.min(Math.max(curPage, 0), Math.floor((pageList_data.length - 1)/pagelist.length)) || 0;
@@ -62,7 +62,10 @@ layout: default
             } 
         }
         
+        // Update the select page if its not the correct page already
         if (document.getElementById('pageSelect').value != curPage+1) document.getElementById('pageSelect').value = curPage+1;
+        // Fix the page url if the page exceeds the maxpage available
+        if ((parseInt(queryResult["page"], 10) || 0) != curPage+1) history.replaceState(null, null, `?page=${curPage+1}`);
     }
     // get Pagelist
     let pageList_data = new XMLHttpRequest();
