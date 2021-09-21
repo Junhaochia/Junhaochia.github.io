@@ -32,46 +32,43 @@ layout: default
         queryResult[decodeURIComponent(queryMatch[1])] = decodeURIComponent(queryMatch[2]);
     }
     // Set Data
-    function setPage(results) {
+    function setPage() {
         document.getElementById("pageList").style.display = "block";
         var pagelist = document.getElementsByName("pageList-item");
 
         let curPage = parseInt(queryResult["page"], 10) - 1;
         // Math.min(Math.max(this, min), max) // Crazy math magick
-        curPage = Math.min(Math.max(curPage, 0), Math.floor((results.length - 1)/pagelist.length)) || 0;
+        curPage = Math.min(Math.max(curPage, 0), Math.floor((pageList_data.length - 1)/pagelist.length)) || 0;
 
         let pageOffset = curPage * (pagelist.length);
         let pagelist_spacer = "<br><br>";
         for(i = 0; i < pagelist.length; i++) {
-            if (i+pageOffset >= results.length) break;
-            pageData = results[i+pageOffset];
-            if (i+pageOffset == results.length - 1 || i == pagelist.length - 1) pagelist_spacer = "";
+            if (i+pageOffset >= pageList_data.length) break;
+            pageData = pageList_data[i+pageOffset];
+            if (i+pageOffset == pageList_data.length - 1 || i == pagelist.length - 1) pagelist_spacer = "";
             pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><br> ${pageData.description} ${pagelist_spacer}`;
         } 
     }
     // get Pagelist
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
+    let pageList_data = new XMLHttpRequest();
+    pageList_data.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        var data = JSON.parse(this.responseText).reverse();
-        data.shift();
+        pageList_data = JSON.parse(this.responseText).reverse();
+        pageList_data.shift();
         // document.getElementById("data-info").innerHTML = JSON.stringify(data); // debug
         // document.getElementById("data-info").style.display = "block";
         document.getElementById("pageList").style.display = "block";
-        setPage(data);
+        setPage();
     } else if (this.readyState == 4 && this.status != 200) {
         document.getElementById("data-info").innerHTML = `An error has occured (${this.status})`
         document.getElementById("data-info").style.display = "block";
     }
     };
-    xmlhttp.open("GET", `{{page.permalink}}/pages.json`, true);
-    xmlhttp.send();
+    pageList_data.open("GET", `{{page.permalink}}/pages.json`, true);
+    pageList_data.send();
 
     function page(number){
         history.replaceState(null, null, `?page=${number}`);
+        setPage();
     }
-
-    window.onpopstate = function(event) {
-        alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
-    };
 </script>
