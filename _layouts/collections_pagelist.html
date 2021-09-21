@@ -27,13 +27,17 @@ layout: default
 <p id="data-info" style="display: none;"></p>
 <script name="scriptAutoRemove">
     // Get Query [https://stackoverflow.com/questions/647259/javascript-query-string]
-    var queryResult = {}, queryString = location.search.slice(1), queryRegex = /([^/?&=]+)=([^&]*)/g, queryMatch;
-    while (queryMatch = queryRegex.exec(queryString)) {
-        queryResult[decodeURIComponent(queryMatch[1])] = decodeURIComponent(queryMatch[2]);
+    var queryResult = {}
+    function getParams() {
+        var queryString = location.search.slice(1), queryRegex = /([^/?&=]+)=([^&]*)/g, queryMatch;
+        while (queryMatch = queryRegex.exec(queryString)) {
+            queryResult[decodeURIComponent(queryMatch[1])] = decodeURIComponent(queryMatch[2]);
+        }
     }
 
     // Set Data
     function setPage() {
+        getParams();
         document.getElementById("pageList").style.display = "block";
         var pagelist = document.getElementsByName("pageList-item");
 
