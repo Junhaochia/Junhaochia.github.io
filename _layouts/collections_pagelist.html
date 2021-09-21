@@ -25,7 +25,7 @@ layout: default
     </center>
 </div>
 <p id="data-info" style="display: none;"></p>
-<script name="scriptAutoRemove">
+<script>
     // Get Query [https://stackoverflow.com/questions/647259/javascript-query-string]
     var queryResult = {}
     function getParams() {
@@ -42,18 +42,22 @@ layout: default
         var pagelist = document.getElementsByName("pageList-item");
 
         let curPage = parseInt(queryResult["page"], 10) - 1;
-        // Math.min(Math.max(this, min), max) // Crazy math magick
+        console.log(curPage);
         curPage = Math.min(Math.max(curPage, 0), Math.floor((pageList_data.length - 1)/pagelist.length)) || 0;
 
         let pageOffset = curPage * (pagelist.length);
+        console.log(pageOffset);
         let pagelist_spacer = "<br><br>";
         for(let i = 0; i < pagelist.length; i++) {
+            console.log("Looping");
             if (i+pageOffset >= pageList_data.length) {
                 pagelist[i].innerHTML = '';
+                console.log("Clearing...");
             } else {
                 let pageData = pageList_data[i+pageOffset];
                 if (i+pageOffset == pageList_data.length - 1 || i == pagelist.length - 1) pagelist_spacer = "";
                 pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><br> ${pageData.description} ${pagelist_spacer}`;
+                console.log("Updating...");
             } 
         }
     }
@@ -76,7 +80,7 @@ layout: default
     pageList_data.send();
 
     function page(number){
-        history.replaceState(null, null, `?page=${number}`);
         setPage();
+        history.replaceState(null, null, `?page=${number}`);
     }
 </script>
