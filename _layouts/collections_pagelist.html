@@ -27,10 +27,11 @@ layout: default
 <p id="data-info" style="display: none;"></p>
 <script name="scriptAutoRemove">
     // Get Query [https://stackoverflow.com/questions/647259/javascript-query-string]
-    var queryResult = {}, queryString = location.search.slice(1), queryRegex = /([^&=]+)=([^&]*)/g, queryMatch;
+    var queryResult = {}, queryString = location.search.slice(1), queryRegex = /([^/?&=]+)=([^&]*)/g, queryMatch;
     while (queryMatch = queryRegex.exec(queryString)) {
         queryResult[decodeURIComponent(queryMatch[1])] = decodeURIComponent(queryMatch[2]);
     }
+
     // Set Data
     function setPage() {
         document.getElementById("pageList").style.display = "block";
@@ -42,7 +43,7 @@ layout: default
 
         let pageOffset = curPage * (pagelist.length);
         let pagelist_spacer = "<br><br>";
-        for(i = 0; i < pagelist.length; i++) {
+        for(let i = 0; i < pagelist.length; i++) {
             if (i+pageOffset >= pageList_data.length) {
                 pagelist[i].innerHTML = '';
             } else {
