@@ -3,7 +3,6 @@ layout: default
 ---
 {{ content }}
 <div id="pageList" style="display: none;">
-    <hr class="black">
     <div name="pageList-item"></div>
     <div name="pageList-item"></div>
     <div name="pageList-item"></div>
@@ -14,10 +13,19 @@ layout: default
     <div name="pageList-item"></div>
     <div name="pageList-item"></div>
     <div name="pageList-item"></div>
-    <hr class="black">
+    <center>
+        >back<
+        <select id="page" onchange="page(document.getElementById('page').value)">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        >next<
+    </center>
 </div>
 <p id="data-info" style="display: none;"></p>
-<script>
+<script name="scriptAutoRemove">
     // Get Query [https://stackoverflow.com/questions/647259/javascript-query-string]
     var queryResult = {}, queryString = location.search.slice(1), queryRegex = /([^&=]+)=([^&]*)/g, queryMatch;
     while (queryMatch = queryRegex.exec(queryString)) {
@@ -58,4 +66,12 @@ layout: default
     };
     xmlhttp.open("GET", `{{page.permalink}}/pages.json`, true);
     xmlhttp.send();
+
+    function page(number){
+        history.replaceState(null, null, `?page=${number}`);
+    }
+
+    window.onpopstate = function(event) {
+        alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
+    };
 </script>
