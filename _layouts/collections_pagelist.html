@@ -61,7 +61,8 @@ layout: default
                 pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><br> ${pageData.description} ${pagelist_spacer}`;
             } 
         }
-        document.getElementById('pageSelect').value = curPage;
+        
+        if (document.getElementById('pageSelect').value != curPage+1) document.getElementById('pageSelect').value = curPage+1;
     }
     // get Pagelist
     let pageList_data = new XMLHttpRequest();
