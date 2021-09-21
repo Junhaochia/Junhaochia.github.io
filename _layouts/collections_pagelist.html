@@ -43,11 +43,14 @@ layout: default
         let pageOffset = curPage * (pagelist.length);
         let pagelist_spacer = "<br><br>";
         for(i = 0; i < pagelist.length; i++) {
-            if (i+pageOffset >= pageList_data.length) break;
-            pageData = pageList_data[i+pageOffset];
-            if (i+pageOffset == pageList_data.length - 1 || i == pagelist.length - 1) pagelist_spacer = "";
-            pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><br> ${pageData.description} ${pagelist_spacer}`;
-        } 
+            if (i+pageOffset >= pageList_data.length) {
+                pagelist[i].innerHTML = '';
+            } else {
+                let pageData = pageList_data[i+pageOffset];
+                if (i+pageOffset == pageList_data.length - 1 || i == pagelist.length - 1) pagelist_spacer = "";
+                pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><br> ${pageData.description} ${pagelist_spacer}`;
+            } 
+        }
     }
     // get Pagelist
     let pageList_data = new XMLHttpRequest();
