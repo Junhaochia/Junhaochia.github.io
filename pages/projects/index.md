@@ -5,5 +5,5 @@ permalink: /projects/
 layout: collections_pagelist
 ---
 
-# Work in progress (W.I.P)
-This page will be a interactive page that shows all the projects.
+# Projects
+This page is an interactive page which contains all the projects that have been worked on.
