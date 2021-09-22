@@ -4,6 +4,7 @@ layout: default
 {{ content }}
 <div id="pageList" style="display: none;">
     <center style="margin: 5px 0;">
+        <div id="pageNo" style="margin-bottom: 5px;"></div>
         <input type="button" value="⮜" onclick="setPage(parseInt(document.getElementById('pageSelect').value, 10)-1)"> 
         <input class="numhidden" type="number" id="pageSelect" min="1" max="999" onchange="setPage(parseInt(document.getElementById('pageSelect').value, 10))"> 
         <input type="button" value="⮞" onclick="setPage(parseInt(document.getElementById('pageSelect').value, 10)+1)">
@@ -42,11 +43,12 @@ layout: default
         document.getElementById("pageList").style.display = "block";
         document.getElementById("data-info").style.display = "none";
 
-        let pagelist = document.getElementsByName("pageList-item");
+        const pagelist = document.getElementsByName("pageList-item");
+        const maxPage = Math.floor((pageList_data.length - 1)/pagelist.length);
 
-        curPage = Math.min(Math.max((curPage || parseInt(queryResult["page"], 10)) - 1, 0), Math.floor((pageList_data.length - 1)/pagelist.length)) || 0;
+        curPage = Math.min(Math.max((curPage || parseInt(queryResult["page"], 10)) - 1, 0), maxPage) || 0;
 
-        let pageOffset = curPage * (pagelist.length);
+        const pageOffset = curPage * (pagelist.length);
         let pagelist_spacer = "<br><br>";
         for(let i = 0; i < pagelist.length; i++) {
             if (i+pageOffset >= pageList_data.length) {
@@ -57,7 +59,9 @@ layout: default
                 pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><br> ${pageData.description} ${pagelist_spacer}`;
             } 
         }
-        
+
+        // Update page number
+        document.getElementById("pageNo").innerHTML = `Page ${curPage+1} of ${maxPage+1}`;
         // Update the select page if its not the correct page already
         if (document.getElementById('pageSelect').value != curPage+1) document.getElementById('pageSelect').value = curPage+1;
         // Update the url if its not the correct page already
