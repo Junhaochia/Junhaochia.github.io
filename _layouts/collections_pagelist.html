@@ -61,7 +61,7 @@ layout: default
         }
 
         // Update page number
-        document.getElementById("pageNo").innerHTML = `Page ${curPage+1} of ${maxPage+1}`;
+        document.getElementById("pageNo").innerHTML = `Total of ${maxPage+1} pages with ${pagelist.length} entries.`;
         // Update the select page if its not the correct page already
         if (document.getElementById('pageSelect').value != curPage+1) document.getElementById('pageSelect').value = curPage+1;
         // Update the url if its not the correct page already
