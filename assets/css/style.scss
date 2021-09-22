@@ -258,3 +258,9 @@ input.numhidden[type=number]::-webkit-inner-spin-button {
 input.numhidden[type=number] {
   -moz-appearance: textfield;
 }
+
+// 5px top/bot margin
+
+.topbot5px {
+  margin: 5px 0;
+}

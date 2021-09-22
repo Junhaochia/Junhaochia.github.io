@@ -3,22 +3,22 @@ layout: default
 ---
 {{ content }}
 <div id="pageList" style="display: none;">
-    <center style="margin: 5px 0;">
+    <center class="topbot5px">
         <div id="pageNo" style="margin-bottom: 5px;"></div>
         <input type="button" value="⮜" onclick="setPage(parseInt(document.getElementById('pageSelect').value, 10)-1)"> 
         <input class="numhidden" type="number" id="pageSelect" min="1" max="999" onchange="setPage(parseInt(document.getElementById('pageSelect').value, 10))"> 
         <input type="button" value="⮞" onclick="setPage(parseInt(document.getElementById('pageSelect').value, 10)+1)">
     </center>
-    <div name="pageList-item"></div>
-    <div name="pageList-item"></div>
-    <div name="pageList-item"></div>
-    <div name="pageList-item"></div>
-    <div name="pageList-item"></div>
-    <div name="pageList-item"></div>
-    <div name="pageList-item"></div>
-    <div name="pageList-item"></div>
-    <div name="pageList-item"></div>
-    <div name="pageList-item"></div>
+    <div name="pageList-item" class="topbot5px"></div>
+    <div name="pageList-item" class="topbot5px"></div>
+    <div name="pageList-item" class="topbot5px"></div>
+    <div name="pageList-item" class="topbot5px"></div>
+    <div name="pageList-item" class="topbot5px"></div>
+    <div name="pageList-item" class="topbot5px"></div>
+    <div name="pageList-item" class="topbot5px"></div>
+    <div name="pageList-item" class="topbot5px"></div>
+    <div name="pageList-item" class="topbot5px"></div>
+    <div name="pageList-item" class="topbot5px"></div>
 </div>
 <p id="data-info" style="display: none;"></p>
 <script id="abcd1337">
@@ -49,14 +49,12 @@ layout: default
         curPage = Math.min(Math.max((curPage || parseInt(queryResult["page"], 10)) - 1, 0), maxPage) || 0;
 
         const pageOffset = curPage * (pagelist.length);
-        let pagelist_spacer = "<br><br>";
         for(let i = 0; i < pagelist.length; i++) {
             if (i+pageOffset >= pageList_data.length) {
                 pagelist[i].innerHTML = '';
             } else {
-                let pageData = pageList_data[i+pageOffset];
-                if (i+pageOffset == pageList_data.length - 1 || i == pagelist.length - 1) pagelist_spacer = "";
-                pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><br> ${pageData.description} ${pagelist_spacer}`;
+                const pageData = pageList_data[i+pageOffset];
+                pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><div>${pageData.description}</div>`;
             } 
         }
 
