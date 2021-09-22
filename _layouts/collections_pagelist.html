@@ -4,9 +4,9 @@ layout: default
 {{ content }}
 <div id="pageList" style="display: none;">
     <center style="margin: 5px 0;">
-        <input type="button" value="Back" onclick="setPage(parseInt(document.getElementById('pageSelect').value, 10)-1)"> 
+        <input type="button" value="⮜" onclick="setPage(parseInt(document.getElementById('pageSelect').value, 10)-1)"> 
         <input class="numhidden" type="number" id="pageSelect" min="1" max="999" onchange="setPage(parseInt(document.getElementById('pageSelect').value, 10))"> 
-        <input type="button" value="Next" onclick="setPage(parseInt(document.getElementById('pageSelect').value, 10)+1)">
+        <input type="button" value="⮞" onclick="setPage(parseInt(document.getElementById('pageSelect').value, 10)+1)">
     </center>
     <div name="pageList-item"></div>
     <div name="pageList-item"></div>
