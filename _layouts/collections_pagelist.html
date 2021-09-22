@@ -4,9 +4,9 @@ layout: default
 {{ content }}
 <div id="pageList" style="display: none;">
     <center style="margin: 5px 0;">
-        <input type="button" value="Back" onclick="page(parseInt(document.getElementById('pageSelect').value, 10)-1)"> 
-        <input class="numhidden" type="number" id="pageSelect" min="1" max="999" onchange="page(parseInt(document.getElementById('pageSelect').value, 10))"> 
-        <input type="button" value="Next" onclick="page(parseInt(document.getElementById('pageSelect').value, 10)+1)">
+        <input type="button" value="Back" onclick="setPage(parseInt(document.getElementById('pageSelect').value, 10)-1)"> 
+        <input class="numhidden" type="number" id="pageSelect" min="1" max="999" onchange="setPage(parseInt(document.getElementById('pageSelect').value, 10))"> 
+        <input type="button" value="Next" onclick="setPage(parseInt(document.getElementById('pageSelect').value, 10)+1)">
     </center>
     <div name="pageList-item"></div>
     <div name="pageList-item"></div>
@@ -34,13 +34,17 @@ layout: default
     }
 
     // Set Data
-    function setPage() {
+    function setPage(curPage) {
+        // Get URL params
         getParams();
+
+        // Show pagelist & hide info
         document.getElementById("pageList").style.display = "block";
+        document.getElementById("data-info").style.display = "none";
+
         let pagelist = document.getElementsByName("pageList-item");
 
-        let curPage = parseInt(queryResult["page"], 10) - 1;
-        curPage = Math.min(Math.max(curPage, 0), Math.floor((pageList_data.length - 1)/pagelist.length)) || 0;
+        curPage = Math.min(Math.max((curPage || parseInt(queryResult["page"], 10)) - 1, 0), Math.floor((pageList_data.length - 1)/pagelist.length)) || 0;
 
         let pageOffset = curPage * (pagelist.length);
         let pagelist_spacer = "<br><br>";
@@ -56,9 +60,10 @@ layout: default
         
         // Update the select page if its not the correct page already
         if (document.getElementById('pageSelect').value != curPage+1) document.getElementById('pageSelect').value = curPage+1;
-        // Fix the page url if the page exceeds the maxpage available
+        // Update the url if its not the correct page already
         if ((parseInt(queryResult["page"], 10) || 0) != curPage+1) history.replaceState(null, null, `?page=${curPage+1}`);
     }
+    
     // get Pagelist
     let pageList_data = new XMLHttpRequest();
     pageList_data.onreadystatechange = function() {
@@ -76,9 +81,4 @@ layout: default
     };
     pageList_data.open("GET", `{{page.permalink}}/pages.json`, true);
     pageList_data.send();
-
-    function page(number){
-        history.replaceState(null, null, `?page=${number}`);
-        setPage();
-    }
 </script>
