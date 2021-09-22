@@ -110,20 +110,16 @@
         <li><a name="navbar-links" href="/blog" {% if page.url contains '/blog' %}class="active"{% endif %}>Blog</a></li>
       </div> 
     </ul>
-    <script name="abcd1337">
-    setTimeout(function(){
-      const x = document.getElementsByName("abcd1337");
-      for (let i = 0; i < x.length; i++) {
-        const elem = x[i];
-        elem.parentNode.removeChild(elem);
-      }
-    }, 10_000);
-    
-    //Set bg when scrolled for navbar
-    const navbar = document.getElementById("navbar-main");
-    window.onscroll = function() {
-      navbar.style.backgroundColor = `hsla(0, 0%, var(--hlsa-lightness), ${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
-    };
+    <script id="abcd1337">
+      // Remove self
+      const elem = document.currentScript || document.getElementById("abcd1337");
+      elem.parentNode.removeChild(elem);
+
+      // Set bg when scrolled for navbar
+      const navbar = document.getElementById("navbar-main");
+      window.onscroll = function() {
+        navbar.style.backgroundColor = `hsla(0, 0%, var(--hlsa-lightness), ${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
+      };
     </script>
     {% endunless %}
     {% case page.header_type %}

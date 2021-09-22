@@ -4,9 +4,9 @@ layout: default
 {{ content }}
 <div id="pageList" style="display: none;">
     <center>
-        <input type="button" value="Back" onclick="page(document.getElementById('pageSelect').value-1)"> 
+        <input type="button" value="Back" onclick="page((document.getElementById('pageSelect').value)-1)"> 
         <input class="numhidden" type="number" id="pageSelect" min="1" max="999" onchange="page(document.getElementById('pageSelect').value)"> 
-        <input type="button" value="Next" onclick="page(document.getElementById('pageSelect').value+1)">
+        <input type="button" value="Next" onclick="page((document.getElementById('pageSelect').value)+1)">
     </center>
     <div name="pageList-item"></div>
     <div name="pageList-item"></div>
@@ -20,7 +20,11 @@ layout: default
     <div name="pageList-item"></div>
 </div>
 <p id="data-info" style="display: none;"></p>
-<script name="abcd1337">
+<script name="abcd1337">\
+    // Remove self
+    const elem = document.currentScript || document.getElementById("abcd1337");
+    elem.parentNode.removeChild(elem);
+
     // Get Query [https://stackoverflow.com/questions/647259/javascript-query-string]
     var queryResult = {}
     function getParams() {
