@@ -112,8 +112,7 @@
     </ul>
     <script id="abcd1337">
       // Remove self
-      const elem = document.currentScript || document.getElementById("abcd1337");
-      elem.parentNode.removeChild(elem);
+      {const elem = document.currentScript || document.getElementById("abcd1337");elem.parentNode.removeChild(elem);}
 
       // Set bg when scrolled for navbar
       const navbar = document.getElementById("navbar-main");

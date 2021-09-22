@@ -22,8 +22,7 @@ layout: default
 <p id="data-info" style="display: none;"></p>
 <script name="abcd1337">
     // Remove self
-    const elem = document.currentScript || document.getElementById("abcd1337");
-    elem.parentNode.removeChild(elem);
+    {const elem = document.currentScript || document.getElementById("abcd1337");elem.parentNode.removeChild(elem);}
 
     // Get Query [https://stackoverflow.com/questions/647259/javascript-query-string]
     var queryResult = {}
