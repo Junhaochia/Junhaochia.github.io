@@ -10,7 +10,7 @@ image:
 
 # Links
 <div>
-<div><a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a></div>w
+<div><a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a></div>
 <iframe id="iframe-smp" scrolling="no" width="328px" height="210px" src="https://smp.junhaochia.repl.co/192010363" style="border: 0px;"></iframe>
 <script id="remSelf">{const elem = document.currentScript || document.getElementById("remSelf");elem.parentNode.removeChild(elem);const smp = document.getElementById('iframe-smp');window.addEventListener("message", function(e) {if (e.data.includes(smp.src)) smp.height = e.data.slice(0,5);});}</script>
 </div>
