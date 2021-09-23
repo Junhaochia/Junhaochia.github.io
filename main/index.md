@@ -3,6 +3,6 @@ title: Home
 description: Truly my home ♥
 permalink: /
 image:
-  path: /assets/site-logo.webp
+  path: /assets/images/site-logo.webp
 ---
 <h1 class="full-page">Heyo!</h1>

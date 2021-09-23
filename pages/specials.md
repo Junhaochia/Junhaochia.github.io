@@ -3,7 +3,7 @@ title: Specials
 description: Truly my home ♥
 permalink: /specials/
 image:
-  path: /assets/site-logo.webp
+  path: /assets/images/site-logo.webp
 ---
 # About
 I do things, I guess.
