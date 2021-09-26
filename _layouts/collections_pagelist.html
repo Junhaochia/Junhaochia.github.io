@@ -54,7 +54,7 @@ layout: default
                 pagelist[i].innerHTML = '';
             } else {
                 const pageData = pageList_data[i+pageOffset];
-                pagelist[i].innerHTML = `<a href="${pageData.id}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><div>${pageData.description}</div>`;
+                pagelist[i].innerHTML = `<a href="${pageData.url}" style="font-size: 1.5rem;">${i+pageOffset+1}. ${pageData.title}</a><div>${pageData.description}</div>`;
             } 
         }
 
