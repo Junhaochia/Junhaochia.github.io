@@ -6,11 +6,9 @@ image:
   path: /assets/images/site-logo.webp
 ---
 # About me
-<div style="display:flex;align-items:center;">
 <span>I am</span>
-<img src="/assets/images/June.webp" width="24" height="24" style="border-radius: 50%;margin: 0 5px;">
+<img src="/assets/images/June.webp" width="24" height="24" style="border-radius: 50%;margin: 0 5px;vertical-align:middle;">
 <span>June, I want to do something for a change instead of procasinating.</span>
-</div>
 
 # Links
 <div>
