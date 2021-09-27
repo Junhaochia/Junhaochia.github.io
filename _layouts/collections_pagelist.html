@@ -89,10 +89,8 @@ layout: default
 
     pageList_req.open("GET", `{{page.permalink}}/pages.json`, true);
 
-    function fetchPagelist() {
+    (function fetchPagelist() {
         pageList_req.send();
-    }
-
-    setInterval(fetchPagelist, 900_000); // Refetches every 15 mins
-
+        setTimeout(fetchPagelist, 900_000); // Refetches every 15 mins
+    })();
 </script>
