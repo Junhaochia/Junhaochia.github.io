@@ -255,8 +255,15 @@ input.numhidden[type=number]::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input.numhidden[type=number] {
+input.numhidden[type=number]{
   -moz-appearance: textfield;
+}
+
+// Center align + no bg
+input.numhidden[type=number], input.numhidden[type=number]:active, input.numhidden[type=number]:focus {
+  text-align: center;
+  background: transparent;
+  outline: none
 }
 
 // 5px top/bot margin
