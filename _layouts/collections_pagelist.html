@@ -5,9 +5,9 @@ layout: default
 <div id="pageList" style="display: none;">
     <center class="topbot5px">
         <div id="pageNo" style="margin-bottom: 5px;"></div>
-        <a class="arrow left"  href="javascript:setPage(parseInt(document.getElementById('pageSelect1').value, 10)-1);"></a>
+        <a class="arrow left" id="pagePrev1" href="?page=1"></a>
         <input class="numhidden" type="number" id="pageSelect1" min="1" max="999" onchange="setPage(parseInt(document.getElementById('pageSelect1').value, 10))">
-        <a class="arrow right" href="javascript:setPage(parseInt(document.getElementById('pageSelect1').value, 10)+1);"></a>
+        <a class="arrow right" id="pageNext1" href="?page=2"></a>
     </center>
     <div name="pageList-item" class="topbot5px"></div>
     <div name="pageList-item" class="topbot5px"></div>
@@ -20,9 +20,9 @@ layout: default
     <div name="pageList-item" class="topbot5px"></div>
     <div name="pageList-item" class="topbot5px"></div>
     <center class="topbot5px">
-        <a class="arrow left"  href="javascript:setPage(parseInt(document.getElementById('pageSelect2').value, 10)-1);"></a>
+        <a class="arrow left" id="pagePrev2" href="?page=1"></a>
         <input class="numhidden" type="number" id="pageSelect2" min="1" max="999" onchange="setPage(parseInt(document.getElementById('pageSelect2').value, 10))">
-        <a class="arrow right" href="javascript:setPage(parseInt(document.getElementById('pageSelect2').value, 10)+1);"></a>
+        <a class="arrow right" id="pageNext2" href="?page=2"></a>
     </center>
 </div>
 <p id="data-info" style="display: none;"></p>
@@ -53,6 +53,9 @@ layout: default
 
     // Set Data
     let oldPage = -1;
+    const pagePrev1 = document.getElementById('pagePrev1'); const pagePrev2 = document.getElementById('pagePrev2');
+    const pageNext1 = document.getElementById('pageNext1'); const pageNext2 = document.getElementById('pageNext2');
+
     function setPage(curPage) {
         // Get URL params
         getParams();
@@ -71,7 +74,11 @@ layout: default
         if (pageSelect2.value != curPage+1) pageSelect2.value = curPage+1;
         
         // Update the url if its not the correct page already
-        if ((parseInt(queryResult["page"], 10) || 0) != curPage+1) history.replaceState(null, null, `?page=${curPage+1}`);
+        if ((parseInt(queryResult["page"], 10) || 0) != curPage+1) { 
+            const hrefPage = `?page=${curPage+1}`
+            history.replaceState(null, null, hrefPage);
+            pagePrev1.href = pagePrev2.href = pageNext1.href = pageNext2.href = hrefPage; 
+        }
 
         // if its the same page (dont bother updating the contents.)
         if (curPage+1 == oldPage) return;
