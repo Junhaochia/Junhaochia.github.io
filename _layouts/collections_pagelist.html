@@ -5,9 +5,9 @@ layout: default
 <div id="pageList" style="display: none;">
     <center class="topbot5px">
         <div id="pageNo" style="margin-bottom: 5px;"></div>
-        <a class="arrow left"  href="javascript:setPage(parseInt(document.getElementById('pageSelect').value, 10)-1);"></a>
-        <input class="numhidden" type="number" id="pageSelect1" min="1" max="999" onchange="setPage(parseInt(document.getElementById('pageSelect').value, 10))">
-        <a class="arrow right" href="javascript:setPage(parseInt(document.getElementById('pageSelect').value, 10)+1);"></a>
+        <a class="arrow left"  href="javascript:setPage(parseInt(document.getElementById('pageSelect1').value, 10)-1);"></a>
+        <input class="numhidden" type="number" id="pageSelect1" min="1" max="999" onchange="setPage(parseInt(document.getElementById('pageSelect1').value, 10))">
+        <a class="arrow right" href="javascript:setPage(parseInt(document.getElementById('pageSelect1').value, 10)+1);"></a>
     </center>
     <div name="pageList-item" class="topbot5px"></div>
     <div name="pageList-item" class="topbot5px"></div>
@@ -53,6 +53,7 @@ layout: default
     }
 
     // Set Data
+    let oldPage = -1;
     function setPage(curPage) {
         // Get URL params
         getParams();
@@ -65,6 +66,9 @@ layout: default
         const maxPage = Math.floor((pageList_data.length - 1)/pagelist.length);
 
         curPage = Math.min(Math.max((curPage || parseInt(queryResult["page"], 10)) - 1, 0), maxPage) || 0;
+
+        if (curPage+1 == oldPage) return;
+        oldPage = curPage+1;
 
         const pageOffset = curPage * (pagelist.length);
         for(let i = 0; i < pagelist.length; i++) {
@@ -79,9 +83,11 @@ layout: default
         // Update page number
         document.getElementById("pageNo").innerHTML = `Total of ${maxPage+1} pages with ${pageList_data.length} entries.`;
         // Update the select page if its not the correct page already
-        if (document.getElementById('pageSelect').value != curPage+1) {pageSelect1.value = curPage+1; pageSelect2.value = curPage+1;}
+        if (document.getElementById('pageSelect1').value != curPage+1) pageSelect1.value = curPage+1;
+        if (document.getElementById('pageSelect2').value != curPage+1) pageSelect2.value = curPage+1;
         // Update the url if its not the correct page already
         if ((parseInt(queryResult["page"], 10) || 0) != curPage+1) history.replaceState(null, null, `?page=${curPage+1}`);
+
     }
     
     // get Pagelist
