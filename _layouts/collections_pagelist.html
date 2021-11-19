@@ -72,12 +72,12 @@ layout: default
         // Update the select page if its not the correct page already
         if (pageSelect1.value != curPage+1) pageSelect1.value = curPage+1;
         if (pageSelect2.value != curPage+1) pageSelect2.value = curPage+1;
+        if (pagePrev1.href != `?page=${curpage}`) pagePrev1.href = pagePrev2.href = `?page=${curPage}`;
+        if (pageNext1.href != `?page=${curpage+2}`) pageNext1.href = pageNext2.href = `?page=${curPage+2}`; 
         
         // Update the url if its not the correct page already
         if ((parseInt(queryResult["page"], 10) || 0) != curPage+1) { 
-            const hrefPage = `?page=${curPage+1}`
-            history.replaceState(null, null, hrefPage);
-            pagePrev1.href = pagePrev2.href = pageNext1.href = pageNext2.href = hrefPage; 
+            history.replaceState(null, null, `?page=${curPage+1}`);
         }
 
         // if its the same page (dont bother updating the contents.)
