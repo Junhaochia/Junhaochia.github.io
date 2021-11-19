@@ -66,6 +66,14 @@ layout: default
 
         curPage = Math.min(Math.max((curPage || parseInt(queryResult["page"], 10)) - 1, 0), maxPage) || 0;
 
+        // Update the select page if its not the correct page already
+        if (pageSelect1.value != curPage+1) pageSelect1.value = curPage+1;
+        if (pageSelect2.value != curPage+1) pageSelect2.value = curPage+1;
+        
+        // Update the url if its not the correct page already
+        if ((parseInt(queryResult["page"], 10) || 0) != curPage+1) history.replaceState(null, null, `?page=${curPage+1}`);
+
+        // if its the same page (dont bother updating the contents.)
         if (curPage+1 == oldPage) return;
         oldPage = curPage+1;
 
@@ -81,12 +89,6 @@ layout: default
 
         // Update page number
         document.getElementById("pageNo").innerHTML = `Total of ${maxPage+1} pages with ${pageList_data.length} entries.`;
-        // Update the select page if its not the correct page already
-        if (document.getElementById('pageSelect1').value != curPage+1) pageSelect1.value = curPage+1;
-        if (document.getElementById('pageSelect2').value != curPage+1) pageSelect2.value = curPage+1;
-        // Update the url if its not the correct page already
-        if ((parseInt(queryResult["page"], 10) || 0) != curPage+1) history.replaceState(null, null, `?page=${curPage+1}`);
-
     }
     
     // get Pagelist
