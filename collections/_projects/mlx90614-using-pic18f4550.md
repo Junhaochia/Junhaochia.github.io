@@ -12,8 +12,8 @@ Explainations can be found @ https://docs.google.com/document/d/1_5mqVttXZUhZ_yZ
 I have only added one line as per what the datasheets says, because we need to clear the interrupt caused by the I2C.
 
 ```c
-	while(!SSPIF); // Wait Until Completion
-    SSPIF = 0; // Clear The Interrupt Flag Bit
+while(!SSPIF); // Wait Until Completion
+SSPIF = 0; // Clear The Interrupt Flag Bit
 ```
 
 # Complete code for PIC18F4550
