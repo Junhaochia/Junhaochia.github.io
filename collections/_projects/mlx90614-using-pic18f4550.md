@@ -7,7 +7,6 @@ background: blank
 layout: default
 date: 2022-02-05 19:20:05
 ---
-
 Explainations can be found @ https://docs.google.com/document/d/1_5mqVttXZUhZ_yZtjVG7S7VXeE-i3eONWqi9xh0mLtc/edit [Credits to (Shill, 2017)]
 
 I have only added one line as per what the datasheets says, because we need to clear the interrupt caused by the I2C.
@@ -17,7 +16,7 @@ I have only added one line as per what the datasheets says, because we need to c
     SSPIF = 0; // Clear The Interrupt Flag Bit
 ```
 
-Complete code for PIC18F4550
+# Complete code for PIC18F4550
 ```c
 #include <xc.h>
 
