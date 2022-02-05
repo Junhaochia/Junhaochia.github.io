@@ -113,9 +113,9 @@ unsigned char I2C_Master_Read(unsigned short a)
 	RCEN = 1;
 	I2C_Master_Wait();
 
-  // Added for PIC18F4550 -Yune
+	// Added for PIC18F4550 -Yune
 	while(!SSPIF); // Wait Until Completion
-  SSPIF = 0; // Clear The Interrupt Flag Bit
+	SSPIF = 0; // Clear The Interrupt Flag Bit
     
 	temp = SSPBUF;        // Read data from SSPBUF
 	I2C_Master_Wait();
