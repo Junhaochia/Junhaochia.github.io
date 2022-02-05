@@ -7,8 +7,8 @@ image:
 ---
 # About me
 <span>I am</span>
-<img src="/assets/images/June.webp" width="24" height="24" style="border-radius: 50%;margin: 0 5px;vertical-align:middle;">
-<span>June, I want to do something for a change instead of procasinating.</span>
+<img src="/assets/images/Yune.webp" width="24" height="24" style="border-radius: 50%;margin: 0 5px;vertical-align:middle;">
+<span>Yune, I want to do something for a change instead of procasinating.</span>
 
 # Links
 <div>
