@@ -1,5 +1,4 @@
 {
-    "short_name": "Junhao.page",
     "name": "Junhao.page",
     "start_url": "/",
     "display": "standalone",
@@ -14,10 +13,7 @@
             "type": "image/png",
             "sizes": "512x512"
         }
-    ],
-    "orientation": "landscape",
-    "description": "Junhao.page",
-    "background_color": "#FFFFFF",
-    "theme_color": "#5577EE",
-    "scope": "/"
+    ], 
+    "theme_color": "#FFFFFF",
+    "scope": "https://www.junhao.page/"
 }
