@@ -41,7 +41,7 @@
     {% else %}
     {% endif %}
 
-    <div class="navbar">
+    <div id="navbar" class="navbar">
       <div class="logo">
         <a href="/" title="Go to Home" class="logo">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="24pt" preserveAspectRatio="xMidYMid meet" viewBox="0 0 510.000000 288.000000">
@@ -104,7 +104,7 @@
 
       <div class="navitems">
         <a name="navbar-links" href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
-        <li class="dropdown">
+        <div class="dropdown">
           <a name="navbar-dropbtn" class="dropbtn {% if page.url contains '/projects' %}active{% endif %}" >Projects</a>
           <ul class="dropdown-content">
             <li><a name="navbar-links" href="/projects/junhao-page" class="links {% if page.url contains '/projects/junhao-page' %}active{% endif %}">Junhao.page</a></li>
@@ -112,7 +112,7 @@
             <li><a name="navbar-links" href="/projects/milo-dante-wasabi" class="links {% if page.url contains '/projects/milo-dante-wasabi' %}active{% endif %}">Milo Dante Wasabi</a></li>
             <li><a href="/projects" class="links {% if page.url == '/projects/' %}active{% endif %}">See All</a></li>
           </ul>
-        </li>
+        </div>
         <a name="navbar-links" href="/blog" class="links {% if page.url contains '/blog' %}active{% endif %}">Blog</a>
       </div>
     </div>
