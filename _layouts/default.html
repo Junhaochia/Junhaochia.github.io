@@ -24,6 +24,7 @@
     <link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
+
     {% if page.background != "blank" %}
     <div style='background-image:url("{{page.background | default: site.background}}")' class="page-bg"></div>
     {% endif %}
@@ -39,10 +40,10 @@
     </style>
     {% else %}
     {% endif %}
-    <ul id="navbar-main" class="navbar-main">
-      <!--Yune logo.svg-->
-      <li>
-        <a href="/" title="Go to Home" name="navbar-logo" class="logo">
+
+    <div class="navbar">
+      <div class="logo">
+        <a href="/" title="Go to Home" class="logo">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="24pt" preserveAspectRatio="xMidYMid meet" viewBox="0 0 510.000000 288.000000">
             <title>Junhao</title>
             <g transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -99,29 +100,29 @@
             </g>
           </svg>
         </a>
-      </li>
-      <li style="float:right">
-        <ul>
-          <li><a name="navbar-links" href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
-          <li class="dropdown">
-            <a name="navbar-dropbtn" class="dropbtn {% if page.url contains '/projects' %}active{% endif %}" >Projects</a>
-            <ul class="dropdown-content">
-              <li><a name="navbar-links" href="/projects/junhao-page" class="links {% if page.url contains '/projects/junhao-page' %}active{% endif %}">Junhao.page</a></li>
-              <li><a name="navbar-links" href="/projects/iruma" class="links {% if page.url contains '/projects/iruma' %}active{% endif %}">Iruma</a></li>
-              <li><a name="navbar-links" href="/projects/milo-dante-wasabi" class="links {% if page.url contains '/projects/milo-dante-wasabi' %}active{% endif %}">Milo Dante Wasabi</a></li>
-              <li><a href="/projects" class="links {% if page.url == '/projects/' %}active{% endif %}">See All</a></li>
-            </ul>
-          </li>
-          <li><a name="navbar-links" href="/blog" class="links {% if page.url contains '/blog' %}active{% endif %}">Blog</a></li>
-        </ul>
-      </li>
-    </ul>
+      </div>
+
+      <div class="navitems">
+        <a name="navbar-links" href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+        <li class="dropdown">
+          <a name="navbar-dropbtn" class="dropbtn {% if page.url contains '/projects' %}active{% endif %}" >Projects</a>
+          <ul class="dropdown-content">
+            <li><a name="navbar-links" href="/projects/junhao-page" class="links {% if page.url contains '/projects/junhao-page' %}active{% endif %}">Junhao.page</a></li>
+            <li><a name="navbar-links" href="/projects/iruma" class="links {% if page.url contains '/projects/iruma' %}active{% endif %}">Iruma</a></li>
+            <li><a name="navbar-links" href="/projects/milo-dante-wasabi" class="links {% if page.url contains '/projects/milo-dante-wasabi' %}active{% endif %}">Milo Dante Wasabi</a></li>
+            <li><a href="/projects" class="links {% if page.url == '/projects/' %}active{% endif %}">See All</a></li>
+          </ul>
+        </li>
+        <a name="navbar-links" href="/blog" class="links {% if page.url contains '/blog' %}active{% endif %}">Blog</a>
+      </div>
+    </div>
+
     <script>
       // Remove self
       {const elem = document.currentScript || document.getElementById("abcd1337");elem.parentNode.removeChild(elem);}
 
       // Set bg when scrolled for navbar
-      const navbar = document.getElementById("navbar-main");
+      const navbar = document.getElementById("navbar");
       window.onscroll = function() {
         navbar.style.backgroundColor = `hsla(0, 0%, var(--hlsa-lightness), ${Math.max(document.body.scrollTop/20,document.documentElement.scrollTop/20)}`;
       };
