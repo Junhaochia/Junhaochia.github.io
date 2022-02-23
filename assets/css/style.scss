@@ -128,9 +128,6 @@ div.navbar div.navitems a:hover, div.navbar div.navitems .dropdown-content a:hov
 div.navbar div.navitems div.dropdown {
   position: relative;
   display: inline-block;
-  list-style-type: none;
-  padding: 0;
-  margin-top: 0px;
 }
 
 // Dropdown Contents
@@ -142,9 +139,14 @@ div.navbar div.navitems .dropdown-content {
   background-color: white;
   min-width: 88px;
   z-index: 1;
+  
   border: solid black 2px;
   box-shadow: 0 0 0 2pt white;
-  border-radius: 10px;
+  border-radius: 10px; 
+
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0px;
 }
 
 // Dropdown Highlight first/last child Outline fix
