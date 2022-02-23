@@ -75,8 +75,7 @@ h1.full-page {
 }
 
 // Navbar
-ul.navbar-main, ul.navbar-main li ul {
-  list-style-type: none;
+div.navbar {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -87,19 +86,19 @@ ul.navbar-main, ul.navbar-main li ul {
   width: 100%;
 }
 
-ul.navbar-main li {
+div.navbar div.logo {  
   float: left;
 }
 
 // Logo
-ul.navbar-main li a.logo {
+div.navbar div.logo a.logo {
   padding: 8px 16px;
   display: inline-block;
   fill: var(--primary-color);
 }
 
 // Main-Title
-ul.navbar-main .links, ul.navbar-main .dropbtn {
+div.navbar div.navitems a, div.navbar div.navitems a.dropbtn {
   display: inline-block;
   text-align: center;
   margin: 10px 6px;
@@ -109,26 +108,26 @@ ul.navbar-main .links, ul.navbar-main .dropbtn {
 }
 
 // Main-Title (active)
-ul.navbar-main .active {
+div.navbar div.navitems a.active {
   color: var(--secondary-color);
   background-color: var(--primary-color);
   pointer-events: none;
 }
 
 // Any-Title (hover)
-ul.navbar-main .links:hover, ul.navbar-main .dropdown-content a:hover, ul.navbar-main .dropdown:hover a.dropbtn {
+div.navbar div.navitems a:hover, div.navbar div.navitems .dropdown-content a:hover, div.navbar div.navitems .dropdown:hover a.dropbtn {
   color: white;
   background-color: lightslategrey;
 }
 
 // Dropdown
-ul.navbar-main .dropdown {
+div.navbar div.navitems li.dropdown {
   position: relative;
   display: inline-block;
 }
 
 // Dropdown Contents
-ul.navbar-main .dropdown-content {
+div.navbar div.navitems .dropdown-content {
   display: none;
   position: absolute;
   left: 50%;
@@ -142,16 +141,16 @@ ul.navbar-main .dropdown-content {
 }
 
 // Dropdown Highlight first/last child Outline fix
-ul.navbar-main .dropdown-content a:first-child {
+div.navbar div.navitems .dropdown-content a:first-child {
   border-radius: 8px 8px 0 0;
 }
 
-ul.navbar-main .dropdown-content a:last-child {
+div.navbar div.navitems .dropdown-content a:last-child {
   border-radius: 0 0 8px 8px;
 }
 
 // Top arrow
-ul.navbar-main .dropdown-content::after {
+div.navbar div.navitems .dropdown-content::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -164,7 +163,7 @@ ul.navbar-main .dropdown-content::after {
 }
 
 // Top arrow outline
-ul.navbar-main .dropdown-content::before {
+div.navbar div.navitems .dropdown-content::before {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -177,7 +176,7 @@ ul.navbar-main .dropdown-content::before {
 }
 
 // Dropdown Contents-Title
-ul.navbar-main .dropdown-content a {
+div.navbar div.navitems .dropdown-content a {
   color: black;
   padding: 12px 16px;
   display: block;
@@ -187,14 +186,14 @@ ul.navbar-main .dropdown-content a {
 }
 
 // Dropdown Contents-Title (active)
-ul.navbar-main .dropdown-content a.active {
+div.navbar div.navitems .dropdown-content a.active {
   color: white;
   background-color: black;
   pointer-events: none;
 }
 
 // Dropdown contents show (hover)
-ul.navbar-main .dropdown:hover .dropdown-content {
+div.navbar div.navitems .dropdown:hover .dropdown-content {
   display: block;
 }
 
