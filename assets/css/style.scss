@@ -75,7 +75,7 @@ h1.full-page {
 }
 
 // Navbar
-ul.navbar-main {
+ul.navbar-main, ul.navbar-main li ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -92,14 +92,14 @@ ul.navbar-main li {
 }
 
 // Logo
-ul.navbar-main a.logo {
+ul.navbar-main li a.logo {
   padding: 8px 16px;
   display: inline-block;
   fill: var(--primary-color);
 }
 
 // Main-Title
-ul.navbar-main li a, ul.navbar-main .dropbtn {
+ul.navbar-main .links, ul.navbar-main .dropbtn {
   display: inline-block;
   text-align: center;
   margin: 10px 6px;
@@ -109,20 +109,20 @@ ul.navbar-main li a, ul.navbar-main .dropbtn {
 }
 
 // Main-Title (active)
-ul.navbar-main li a.active {
+ul.navbar-main .active {
   color: var(--secondary-color);
   background-color: var(--primary-color);
   pointer-events: none;
 }
 
 // Any-Title (hover)
-ul.navbar-main li a:hover, ul.navbar-main .dropdown-content a:hover, ul.navbar-main .dropdown:hover a.dropbtn {
+ul.navbar-main .links:hover, ul.navbar-main .dropdown-content a:hover, ul.navbar-main .dropdown:hover a.dropbtn {
   color: white;
   background-color: lightslategrey;
 }
 
 // Dropdown
-ul.navbar-main li.dropdown {
+ul.navbar-main .dropdown {
   position: relative;
   display: inline-block;
 }
