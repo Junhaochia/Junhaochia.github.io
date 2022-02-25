@@ -24,7 +24,7 @@
 
     <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');</script>
+    <script defer>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');</script>
   </head>
   <body>
 
@@ -121,9 +121,6 @@
     </div>
 
     <script>
-      // Remove self
-      {const elem = document.currentScript || document.getElementById("abcd1337");elem.parentNode.removeChild(elem);}
-
       // Set bg when scrolled for navbar
       const navbar = document.getElementById("navbar");
       window.onscroll = function() {

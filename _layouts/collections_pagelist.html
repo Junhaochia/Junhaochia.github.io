@@ -26,10 +26,7 @@ layout: default
     </center>
 </div>
 <p id="data-info" style="display: none;"></p>
-<script id="abcd1337">
-    // Remove self
-    {const elem = document.currentScript || document.getElementById("abcd1337");elem.parentNode.removeChild(elem);}
-
+<script>
     // Input sync
     const pageSelect1 = document.getElementById('pageSelect1');
     const pageSelect2 = document.getElementById('pageSelect2');
@@ -112,9 +109,8 @@ layout: default
         }
     };
 
-    pageList_req.open("GET", `{{page.permalink}}/pages.json`, true);
-
     (function fetchPagelist() {
+        pageList_req.open("GET", `{{page.permalink}}/pages.json`, true);
         pageList_req.send();
         setTimeout(fetchPagelist, 900_000); // Refetches every 15 mins
     })();

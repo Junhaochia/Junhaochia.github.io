@@ -142,7 +142,7 @@ div.navbar div.navitems .dropdown-content {
   
   border: solid black 2px;
   box-shadow: 0 0 0 2pt white;
-  border-radius: 10px; 
+  border-radius: 8px; 
 
   list-style-type: none;
   padding: 0;
@@ -151,11 +151,11 @@ div.navbar div.navitems .dropdown-content {
 
 // Dropdown Highlight first/last child Outline fix
 div.navbar div.navitems .dropdown-content li:first-child a {
-  border-radius: 8px 8px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 div.navbar div.navitems .dropdown-content li:last-child a {
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 5px 5px;
 }
 
 // Top arrow
