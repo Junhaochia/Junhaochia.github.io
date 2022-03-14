@@ -4,7 +4,7 @@ background: /assets/images/site-bg.webp
 theme_color: '#5577EE'
 timezone: Asia/Singapore
 
-url: "https://www.junhao.page"
+url: "https://junhao.page"
 
 show_autogen: true
 google_analytics:
