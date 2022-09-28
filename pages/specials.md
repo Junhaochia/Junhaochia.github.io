@@ -12,13 +12,13 @@ preload:
 ---
 # About me
 <span>I am</span>
-<img src="/assets/images/Yune.webp" width="24" height="24" style="border-radius: 50%;margin: 0 5px;vertical-align:middle;">
+<img src="/assets/images/Yune.webp" alt="Profile Picture of Yune" width="24" height="24" style="border-radius: 50%;margin: 0 5px;vertical-align:middle;">
 <span>Yune, I want to do something for a change instead of procasinating.</span>
 
 # Links
 <div>
 <div><a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a></div>
-<iframe id="iframe-smp" scrolling="no" width="328px" height="210px" src="https://smp.junhaochia.repl.co/192010363" style="border: 0px;"></iframe>
+<iframe title="Steam Miniprofile of Yune" id="iframe-smp" scrolling="no" width="328px" height="210px" src="https://smp.junhaochia.repl.co/192010363" style="border: 0px;"></iframe>
 <script>{const smp = document.getElementById('iframe-smp'); smp.contentWindow.location.reload(); window.addEventListener("message", function (e) { if (typeof(e.data) === "string" && e.data.includes(smp.src)) smp.height = e.data.slice(0, 5); });}</script>
 </div>
 
@@ -27,4 +27,4 @@ preload:
 [Iruma Discord Server](https://discord.gg/M79cK6g)
 
 # Donate
-[![Donate with PayPal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png)](https://paypal.me/Junhaochia)
+[![Donate with PayPal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png "Paypal Logo")](https://paypal.me/Junhaochia)
