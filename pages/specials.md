@@ -4,6 +4,8 @@ description: Truly my home ♥
 permalink: /specials/
 image:
   path: /assets/images/site-logo.webp
+preload:
+  - "https://smp.junhaochia.repl.co/192010363"
 ---
 # About me
 <span>I am</span>
