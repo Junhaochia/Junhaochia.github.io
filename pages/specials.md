@@ -5,8 +5,6 @@ permalink: /specials/
 image:
   path: /assets/images/site-logo.webp
 preload:
-  - url: "https://smp.junhaochia.repl.co/192010363"
-    type: "document"
   - url: "/assets/images/Yune.webp"
     type: "image"
   - url: "https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png"
