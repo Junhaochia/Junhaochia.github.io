@@ -5,7 +5,8 @@ permalink: /specials/
 image:
   path: /assets/images/site-logo.webp
 preload:
-  - "https://smp.junhaochia.repl.co/192010363"
+  - url: "https://smp.junhaochia.repl.co/192010363"
+    type: "document"
 ---
 # About me
 <span>I am</span>
