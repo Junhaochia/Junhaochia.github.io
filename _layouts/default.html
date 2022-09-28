@@ -20,8 +20,16 @@
     <!-- End Yune's SEO override -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <link rel="preload" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" as="style">
+    {% if page.background != "blank" %}
+    <link rel="preload" href="{{ page.background | default: site.background }}" as="image">
+    {% endif %}
+    {% for preload in page.preload %}
+    <link rel="preload" href="{{ preload.url }}" as="{{ preload.type }}">
+    {% endfor %}
+    
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen">
-
     <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
     <script defer>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');</script>
@@ -29,7 +37,7 @@
   <body>
 
     {% if page.background != "blank" %}
-    <div style='background-image:url("{{page.background | default: site.background}}")' class="page-bg"></div>
+    <div style='background-image:url("{{ page.background | default: site.background }}")' class="page-bg"></div>
     {% endif %}
     <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
     {% unless page.hide_nav %}
