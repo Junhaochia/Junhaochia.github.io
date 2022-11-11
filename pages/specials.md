@@ -18,8 +18,8 @@ preload:
 # Links
 <div>
 <div><a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a></div>
-<iframe title="Steam Miniprofile of Yune" id="iframe-smp" scrolling="no" width="328px" height="210px" src="https://smp.junhaochia.repl.co/192010363" style="border: 0px;"></iframe>
-<script>{const smp = document.getElementById('iframe-smp'); smp.contentWindow.location.reload(); window.addEventListener("message", function (e) { if (typeof(e.data) === "string" && e.data.includes(smp.src)) smp.height = e.data.slice(0, 5); });}</script>
+<iframe title="Steam Miniprofile of Yune" id="iframe-smp" scrolling="no" width="328px" height="210px" src="https://smp.junhao.page/192010363" style="border: 0px;"></iframe>
+<script id="steam-smp" type="application/javascript">{const smp = document.getElementById('iframe-smp'); smp.contentWindow.location.reload(); window.addEventListener("message", function (e) { if (typeof(e.data) === "string" && e.data.includes(smp.src)) smp.height = e.data.slice(0, 5); });}</script>
 </div>
 
 [Team Junhao Discord Server](https://discord.gg/9QeEzAq)
