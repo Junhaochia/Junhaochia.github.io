@@ -64,7 +64,7 @@ h1.full-page {
   color: #FFF;
   text-align: center;
   background-color: #4B0082;
-  background-image: linear-gradient(0deg, #FFD700, #4B0082);
+  background-image: linear-gradient(-45deg, #737DFE, #FFCAC9);
 }
 
 // Site footer
@@ -109,6 +109,7 @@ div.navbar div.navitems a, div.navbar div.navitems a.dropbtn {
   padding: 4px 10px;
   color: var(--primary-color);
   text-decoration: none;
+  border-style: solid
 }
 
 // Main-Title (active)
