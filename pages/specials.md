@@ -34,7 +34,8 @@ preload:
   direction="down"
   width="250"
   height="200"
+  scrollamount="4"
   behavior="alternate"
   style="border:solid">
-  <marquee behavior="alternate"><div style="width: 15px;height: 15px;background: black;"/></marquee>
+  <marquee scrollamount="4" behavior="alternate"><div style="width: 25px;height: 25px;background: black;"/></marquee>
 </marquee>
