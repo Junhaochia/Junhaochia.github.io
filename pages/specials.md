@@ -32,8 +32,8 @@ preload:
 # Extras
 <marquee
   direction="down"
-  width="250"
-  height="200"
+  width="222"
+  height="222"
   scrollamount="4"
   behavior="alternate"
   style="border:solid">
