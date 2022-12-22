@@ -28,3 +28,13 @@ preload:
 
 # Donate
 [![Donate with PayPal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png "Paypal Logo")](https://paypal.me/Junhaochia)
+
+# Extras
+<marquee
+  direction="down"
+  width="250"
+  height="200"
+  behavior="alternate"
+  style="border:solid">
+  <marquee behavior="alternate">■</marquee>
+</marquee>
