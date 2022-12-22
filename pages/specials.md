@@ -36,5 +36,5 @@ preload:
   height="200"
   behavior="alternate"
   style="border:solid">
-  <marquee behavior="alternate">■</marquee>
+  <marquee behavior="alternate"><div style="width: 15px;height: 15px;background: black;"/></marquee>
 </marquee>
