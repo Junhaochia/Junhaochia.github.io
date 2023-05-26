@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 description: Our Privacy Policy
-permalink: /specials/
+permalink: /privacy/
 image:
   path: /assets/images/site-logo.webp
 ---
