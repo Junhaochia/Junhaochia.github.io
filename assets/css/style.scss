@@ -167,9 +167,6 @@ div.navbar div.navitems .dropdown-content::after {
   left: 50%;
   margin-bottom: 1px;
   margin-left: -8px;
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
 }
 
 // Top arrow outline
@@ -180,9 +177,6 @@ div.navbar div.navitems .dropdown-content::before {
   left: 50%;
   margin-bottom: 2px;
   margin-left: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent white transparent;
 }
 
 // Dropdown Contents-Title
