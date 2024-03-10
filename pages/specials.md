@@ -3,23 +3,34 @@ title: Specials
 description: Truly my home ♥
 permalink: /specials/
 image:
-  path: /assets/images/site-logo.webp
+    path: /assets/images/site-logo.webp
 preload:
-  - url: "/assets/images/Yune.webp"
-    type: "image"
-  - url: "https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png"
-    type: "image"
+    - url: '/assets/images/Yune.webp'
+      type: 'image'
+    - url: 'https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png'
+      type: 'image'
 ---
+
 # About me
+
 <span>I am</span>
 <img src="/assets/images/Yune.webp" alt="Profile Picture of Yune" width="24" height="24" style="border-radius: 50%;margin: 0 5px;vertical-align:middle;">
 <span>Yune, I want to do something for a change instead of procasinating.</span>
 
 # Links
+
 <div>
-<div><a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a></div>
-<iframe title="Steam Miniprofile of Yune" id="iframe-smp" loading="lazy" scrolling="no" width="328px" height="210px" src="https://smp.junhaochia.repl.co/192010363" style="border: 0px;"></iframe>
-<script id="steam-smp" type="application/javascript">{const smp = document.getElementById('iframe-smp'); smp.src = smp.src; window.addEventListener("message", function (e) { if (typeof(e.data) === "string" && e.data.includes(smp.src)) smp.height = e.data.slice(0, 5); });}</script>
+  <div><a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a></div>
+  <iframe title="Steam Miniprofile of Yune" id="iframe-smp" loading="lazy" scrolling="no" width="328px" height="210px" style="border: 0px;"></iframe>
+  <script id="steam-smp" type="application/javascript">{
+    fetch('https://smp.junhaochia.repl.co/192010363')
+    .then(function(response) {
+      const smp = document.getElementById('iframe-smp');
+      smp.srcdoc = response.text();
+      window.addEventListener("message", function (e) { if (typeof(e.data) === "string" && e.data.includes(smp.src)) smp.height = e.data.slice(0, 5); });
+    })
+    }
+  </script>
 </div>
 
 [Team Junhao Discord Server](https://discord.gg/9QeEzAq)
@@ -27,9 +38,11 @@ preload:
 [Iruma Discord Server](https://discord.gg/M79cK6g)
 
 # Donate
-[![Donate with PayPal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png "Paypal Logo")](https://paypal.me/Junhaochia)
+
+[![Donate with PayPal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png 'Paypal Logo')](https://paypal.me/Junhaochia)
 
 # Extras
+
 <marquee
   direction="down"
   width="640"
@@ -37,5 +50,5 @@ preload:
   scrollamount="4"
   behavior="alternate"
   style="border:solid">
-  <marquee scrollamount="4" behavior="alternate"><div style="width: 25px;height: 25px;background: black;"/></marquee>
+<marquee scrollamount="4" behavior="alternate"><div style="width: 25px;height: 25px;background: black;"/></marquee>
 </marquee>
