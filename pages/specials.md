@@ -49,9 +49,10 @@ preload:
       border-color: transparent;
     }`;
 
+    const smp = document.getElementById('iframe-smp');
     fetch('https://www.whateverorigin.org/get?url=https://steamcommunity.com/miniprofile/192010363')
     .then((res) => res.json()).then((res) => {
-      const smp = document.getElementById('iframe-smp');
+      window.addEventListener("message", function (e) { if (typeof(e.data) === "string") smp.height = e.data; });
       smp.srcdoc = (
             '<!DOCTYPE html><html lang="en-US"><head><style>' +
             style +
@@ -59,7 +60,9 @@ preload:
             res.contents.replace(rm_srcset, '').replace('_medium.jpg', '_full.jpg') +
             decodeURI("%3Cscript%3Eparent.postMessage(%60$%7Bdocument.body.scrollHeight%7Dpx$%7Bwindow.location.href%7D%60,'*');%3C/script%3E%3C/body%3E%3C/html%3E")
         );
-      window.addEventListener("message", function (e) { if (typeof(e.data) === "string" && e.data.includes(smp.src)) smp.height = e.data.slice(0, 5); });
+    }).catch((err) => {
+      smp.height = "0px";
+      console.log(err);
     });
 
 }
