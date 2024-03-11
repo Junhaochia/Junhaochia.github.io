@@ -22,15 +22,49 @@ preload:
 <div>
   <div><a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a></div>
   <iframe title="Steam Miniprofile of Yune" id="iframe-smp" loading="lazy" scrolling="no" width="328px" height="210px" style="border: 0px;"></iframe>
-  <script id="steam-smp" type="application/javascript">{
-    fetch('http://www.whateverorigin.org/get?url=http://steamcommunity.com/miniprofile/192010363')
+  <script id="steam-smp" type="application/javascript">
+  {
+    const rm_srcset = /srcset=".*"/g;
+    const style = `@import url("https://community.akamai.steamstatic.com/public/shared/css/shared_global.css");
+
+    /* Remove Borders */
+    body {
+      margin: 0;
+    }
+
+    /* Make avatar border looks better */
+    .border_color_offline {
+      border-color: transparent;
+    }
+
+    .border_color_online {
+      border-color: transparent;
+    }
+
+    .border_color_in-game {
+      border-color: transparent;
+    }
+
+    .border_color_golden {
+      border-color: transparent;
+    }`;
+
+    fetch('https://www.whateverorigin.org/get?url=https://steamcommunity.com/miniprofile/192010363')
     .then((res) => res.json()).then((res) => {
       const smp = document.getElementById('iframe-smp');
-      smp.srcdoc = res.content;
+      smp.srcdoc = (
+            '<!DOCTYPE html><html lang="en-US"><head><style>' +
+            style +
+            '</style></head><body>' +
+            res.content.replace(rm_srcset, '').replace('_medium.jpg', '_full.jpg') +
+            "<script>parent.postMessage(`${document.body.scrollHeight}px${window.location.href}`,'*');</script></body></html>"
+        );
       window.addEventListener("message", function (e) { if (typeof(e.data) === "string" && e.data.includes(smp.src)) smp.height = e.data.slice(0, 5); });
     });
-    }
-  </script>
+
+}
+</script>
+
 </div>
 
 [Team Junhao Discord Server](https://discord.gg/9QeEzAq)
