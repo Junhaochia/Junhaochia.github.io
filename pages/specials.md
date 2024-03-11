@@ -58,7 +58,7 @@ preload:
             style +
             '</style></head><body>' +
             res.contents.replace(rm_srcset, '').replace('_medium.jpg', '_full.jpg') +
-            decodeURI("%3Cscript%3Eparent.postMessage(%60$%7Bdocument.body.scrollHeight%7Dpx$%7Bwindow.location.href%7D%60,'*');%3C/script%3E%3C/body%3E%3C/html%3E")
+            decodeURI("%3Cscript%3Eparent.postMessage(%60$%7Bdocument.body.scrollHeight%7Dpx%60,'*');%3C/script%3E%3C/body%3E%3C/html%3E")
         );
     }).catch((err) => {
       smp.height = "0px";
