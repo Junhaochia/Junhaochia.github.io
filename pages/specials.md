@@ -23,12 +23,12 @@ preload:
   <div><a href="https://steamcommunity.com/id/Junhaochia">steamcommunity.com/id/Junhaochia</a></div>
   <iframe title="Steam Miniprofile of Yune" id="iframe-smp" loading="lazy" scrolling="no" width="328px" height="210px" style="border: 0px;"></iframe>
   <script id="steam-smp" type="application/javascript">{
-    fetch('https://smp.junhaochia.repl.co/192010363')
-    .then(function(response) {
+    fetch('http://www.whateverorigin.org/get?url=http://steamcommunity.com/miniprofile/192010363')
+    .then((res) => res.json()).then((res) => {
       const smp = document.getElementById('iframe-smp');
-      smp.srcdoc = response.text();
+      smp.srcdoc = res.content;
       window.addEventListener("message", function (e) { if (typeof(e.data) === "string" && e.data.includes(smp.src)) smp.height = e.data.slice(0, 5); });
-    })
+    });
     }
   </script>
 </div>
