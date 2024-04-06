@@ -79,7 +79,7 @@ script:
       let width = 0;
       let height = 0;
       let intersects = [];
-      let hovered = {};
+      //let hovered = {};
 
       // setup
       const rootElement = document.getElementById('root')
@@ -128,34 +128,28 @@ script:
       rootElement.addEventListener('resize', resize);
       resize();
 
+      // mouseHover
+      let singleHover = false;
+      function isMouseHovering(){
+        raycaster.setFromCamera(mouse, camera);
+        raycaster.far = 50;
+        intersects = raycaster.intersectObjects(scene.children, true);
+
+        if (singleHover) singleHover.object.onPointerOut(singleHover);
+        const hit = intersects[0];
+        if (hit.object.onPointerOver) hit.object.onPointerOver(hit);
+        if (hit.object.onPointerMove) hit.object.onPointerMove(hit);
+
+        singleHover = hit;
+      }
+
       // events
       rootElement.addEventListener('pointermove', (e) => {
         mouse.set((e.offsetX / width) * 2 - 1, -(e.offsetY / height) * 2 + 1);
-        raycaster.setFromCamera(mouse, camera);
-        intersects = raycaster.intersectObjects(scene.children, true);
 
-        // If a previously hovered item is not among the hits we must call onPointerOut
-        Object.keys(hovered).forEach((key) => {
-          const hit = intersects.find((hit) => hit.object.uuid === key);
-          if (hit === undefined) {
-            const hoveredItem = hovered[key];
-            if (hoveredItem.object.onPointerOver) hoveredItem.object.onPointerOut(hoveredItem);
-            delete hovered[key];
-          }
-        });
-
-        intersects.forEach((hit) => {
-          // If a hit has not been flagged as hovered we must call onPointerOver
-          if (!hovered[hit.object.uuid]) {
-            hovered[hit.object.uuid] = hit;
-            if (hit.object.onPointerOver) hit.object.onPointerOver(hit);
-          }
-          // Call onPointerMove
-          if (hit.object.onPointerMove) hit.object.onPointerMove(hit);
-        });
       });
 
-      window.addEventListener('click', (e) => {
+      rootElement.addEventListener('click', (e) => {
         intersects.forEach((hit) => {
           // Call onClick
           if (hit.object.onClick) hit.object.onClick(hit);
@@ -164,6 +158,7 @@ script:
 
       // render-loop, called 60-times/second
       function animate(t) {
+        isMouseHovering();
         requestAnimationFrame(animate);
         scene.traverse((obj) => {
           if (obj.render) obj.render(t);
