@@ -84,14 +84,15 @@ script:
       let hovered = {};
 
       // setup
+      const rootElement = document.getElementById('root')
       const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      const camera = new THREE.PerspectiveCamera(75, rootElement.clientWidth / rootElement.clientHeight, 0.1, 1000);
       camera.position.z = 5;
       const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
       renderer.setPixelRatio(Math.min(Math.max(1, window.devicePixelRatio), 2));
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
       renderer.outputEncoding = THREE.sRGBEncoding;
-      document.getElementById('root').appendChild(renderer.domElement);
+      rootElement.appendChild(renderer.domElement);
       const raycaster = new THREE.Raycaster();
       const mouse = new THREE.Vector2();
 
@@ -111,8 +112,8 @@ script:
 
       // responsive
       function resize() {
-        width = window.innerWidth;
-        height = window.innerHeight;
+        width = rootElement.clientWidth;
+        height = rootElement.clientHeight;
         camera.aspect = width / height;
         const target = new THREE.Vector3(0, 0, 0);
         const distance = camera.position.distanceTo(target);
