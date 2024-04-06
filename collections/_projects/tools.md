@@ -36,6 +36,7 @@ script:
     <div id="root"></div>
     <script type="module">
       import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.163.0/three.module.min.js';
+      // One unit = 1cm
       class Cube extends THREE.Mesh {
         constructor() {
           super();
@@ -48,8 +49,8 @@ script:
           this.rotation.x = this.rotation.y += 0.01;
         }
         onResize(width, height, aspect) {
-          console.log(width);
-          this.cubeSize = width / 5; // 1/5 of the full width
+          //this.cubeSize = width / 5; // 1/5 of the full width
+          this.cubeSize = 5;
           this.scale.setScalar(this.cubeSize * (this.cubeActive ? 1.5 : 1));
         }
         onPointerOver(e) {
