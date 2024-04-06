@@ -48,8 +48,8 @@ script:
           this.rotation.x = this.rotation.y += 0.01;
         }
         onResize(width, height, aspect) {
-          //this.cubeSize = width / 5; // 1/5 of the full width
-          this.cubeSize = 50;
+          console.log(width);
+          this.cubeSize = width / 5; // 1/5 of the full width
           this.scale.setScalar(this.cubeSize * (this.cubeActive ? 1.5 : 1));
         }
         onPointerOver(e) {
