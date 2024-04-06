@@ -24,14 +24,10 @@ script:
     * {
       box-sizing: border-box;
     }
-
-    html,
-    body,
     #root {
       width: 100%;
       aspect-ratio: 1;
     }
-
     body {
       background: #f0f0f0;
     }
@@ -40,7 +36,6 @@ script:
     <div id="root"></div>
     <script type="module">
       import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.163.0/three.module.min.js';
-
       class Cube extends THREE.Mesh {
         constructor() {
           super();
@@ -49,38 +44,33 @@ script:
           this.cubeSize = 0;
           this.cubeActive = false;
         }
-
         render() {
           this.rotation.x = this.rotation.y += 0.01;
         }
-
         onResize(width, height, aspect) {
-          this.cubeSize = width / 5; // 1/5 of the full width
+          //this.cubeSize = width / 5; // 1/5 of the full width
+          this.cubeSize = 50;
           this.scale.setScalar(this.cubeSize * (this.cubeActive ? 1.5 : 1));
         }
-
         onPointerOver(e) {
           this.material.color.set('hotpink');
           this.material.color.convertSRGBToLinear();
         }
-
         onPointerOut(e) {
           this.material.color.set('orange');
           this.material.color.convertSRGBToLinear();
         }
-
         onClick(e) {
           this.cubeActive = !this.cubeActive;
           this.scale.setScalar(this.cubeSize * (this.cubeActive ? 1.5 : 1));
         }
       }
-
       // state
       let width = 0;
       let height = 0;
       let intersects = [];
-      //let hovered = {};
-
+      // let hovered = {};
+      //
       // setup
       const rootElement = document.getElementById('root')
       const scene = new THREE.Scene();
@@ -93,7 +83,6 @@ script:
       rootElement.appendChild(renderer.domElement);
       const raycaster = new THREE.Raycaster();
       const mouse = new THREE.Vector2();
-
       // view
       const cube1 = new Cube();
       cube1.position.set(-1.5, 0, 0);
@@ -101,13 +90,13 @@ script:
       cube2.position.set(1.5, 0, 0);
       scene.add(cube1);
       scene.add(cube2);
-
+      //
       const ambientLight = new THREE.AmbientLight();
       const pointLight = new THREE.PointLight();
       pointLight.position.set(10, 10, 10);
       scene.add(ambientLight);
       scene.add(pointLight);
-
+      //
       // responsive
       function resize() {
         width = rootElement.clientWidth;
@@ -124,40 +113,40 @@ script:
           if (obj.onResize) obj.onResize(viewportWidth, viewportHeight, camera.aspect);
         });
       }
-
+      //
       rootElement.addEventListener('resize', resize);
       resize();
-
+      //
       // mouseHover
       let singleHover = false;
       function isMouseHovering(){
         raycaster.setFromCamera(mouse, camera);
         raycaster.far = 50;
         intersects = raycaster.intersectObjects(scene.children, true);
-
+        //
         if (singleHover) singleHover.object.onPointerOut(singleHover);
+        //
         const hit = intersects[0];
         if (hit) {
           if (hit.object.onPointerOver) hit.object.onPointerOver(hit);
           if (hit.object.onPointerMove) hit.object.onPointerMove(hit);
-
+          //
           singleHover = hit;
         }
       }
-
+      //
       // events
       rootElement.addEventListener('pointermove', (e) => {
         mouse.set((e.offsetX / width) * 2 - 1, -(e.offsetY / height) * 2 + 1);
-
       });
-
+      //
       rootElement.addEventListener('click', (e) => {
         intersects.forEach((hit) => {
           // Call onClick
           if (hit.object.onClick) hit.object.onClick(hit);
         });
       });
-
+      //
       // render-loop, called 60-times/second
       function animate(t) {
         isMouseHovering();
@@ -167,9 +156,8 @@ script:
         });
         renderer.render(scene, camera);
       }
-
+      //
       animate();
-
   </script>
 
 </div>
