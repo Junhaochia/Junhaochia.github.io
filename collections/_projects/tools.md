@@ -29,9 +29,7 @@ script:
     body,
     #root {
       width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
+      aspect-ratio: 1;
     }
 
     body {
@@ -127,12 +125,12 @@ script:
         });
       }
 
-      window.addEventListener('resize', resize);
+      rootElement.addEventListener('resize', resize);
       resize();
 
       // events
-      window.addEventListener('pointermove', (e) => {
-        mouse.set((e.clientX / width) * 2 - 1, -(e.clientY / height) * 2 + 1);
+      rootElement.addEventListener('pointermove', (e) => {
+        mouse.set((e.offsetX / width) * 2 - 1, -(e.offsetY / height) * 2 + 1);
         raycaster.setFromCamera(mouse, camera);
         intersects = raycaster.intersectObjects(scene.children, true);
 
