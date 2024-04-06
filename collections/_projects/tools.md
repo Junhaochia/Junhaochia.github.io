@@ -137,10 +137,12 @@ script:
 
         if (singleHover) singleHover.object.onPointerOut(singleHover);
         const hit = intersects[0];
-        if (hit.object.onPointerOver) hit.object.onPointerOver(hit);
-        if (hit.object.onPointerMove) hit.object.onPointerMove(hit);
+        if (hit) {
+          if (hit.object.onPointerOver) hit.object.onPointerOver(hit);
+          if (hit.object.onPointerMove) hit.object.onPointerMove(hit);
 
-        singleHover = hit;
+          singleHover = hit;
+        }
       }
 
       // events
