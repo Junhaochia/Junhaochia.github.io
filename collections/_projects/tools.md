@@ -29,6 +29,7 @@ script:
     #root {
       width: 100%;
       aspect-ratio: 1;
+      border-style: solid;
     }
     body {
       background: #f0f0f0;
