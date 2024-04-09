@@ -31,6 +31,9 @@ script:
       aspect-ratio: 1;
       border-style: solid;
     }
+    #root canvas {
+      cursor: pointer;
+    }
     body {
       background: #f0f0f0;
     }
