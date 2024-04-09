@@ -54,6 +54,7 @@ renderer.outputEncoding = THREE.sRGBEncoding;
 rootElement.appendChild(renderer.domElement);
 
 const raycaster = new THREE.Raycaster();
+raycaster.far = 50;
 const mouse = new THREE.Vector2(); // Track where the mouse is (and used for raycasting)
 
 // view
@@ -96,7 +97,6 @@ resize();
 let singleHover = false;
 function isMouseHovering() {
     raycaster.setFromCamera(mouse, camera);
-    raycaster.far = 50;
     intersects = raycaster.intersectObjects(scene.children, true);
 
     if (singleHover) singleHover.object.onPointerOut(singleHover);
@@ -116,6 +116,11 @@ rootElement.addEventListener('pointermove', (e) => {
 });
 
 rootElement.addEventListener('click', (e) => {
+    // Update also
+    mouse.set((e.offsetX / width) * 2 - 1, -(e.offsetY / height) * 2 + 1);
+    raycaster.setFromCamera(mouse, camera);
+    intersects = raycaster.intersectObjects(scene.children, true);
+
     intersects.forEach((hit) => {
         // Call onClick
         if (hit.object.onClick) hit.object.onClick(hit);
