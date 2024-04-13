@@ -26,31 +26,40 @@ preload:
   {
     const rm_srcset = /srcset=".*"/g;
     const style = `@import url("https://community.akamai.steamstatic.com/public/shared/css/shared_global.css");
-
     /* Remove Borders */
     body {
       margin: 0;
     }
-
     /* Make avatar border looks better */
     .border_color_offline {
       border-color: transparent;
     }
-
     .border_color_online {
       border-color: transparent;
     }
-
     .border_color_in-game {
       border-color: transparent;
     }
-
     .border_color_golden {
       border-color: transparent;
     }`;
-
+    // Custom Fetch (w retries)
+    function wait(delay){
+      return new Promise((resolve) => setTimeout(resolve, delay));
+    }
+    function fetchRetry(url, delay, tries, fetchOptions = {}) {
+      function onError(err){
+        const triesLeft = tries - 1;
+        if (!triesLeft) {
+          throw err;
+        }
+        return wait(delay).then(() => fetchRetry(url, delay, triesLeft, fetchOptions));
+      }
+      return fetch(url,fetchOptions).catch(onError);
+    }
+    // Get Steam Miniprofile
     const smp = document.getElementById('iframe-smp');
-    fetch('https://www.whateverorigin.org/get?url=https://steamcommunity.com/miniprofile/192010363')
+    fetchRetry('https://www.whateverorigin.org/get?url=https://steamcommunity.com/miniprofile/192010363', 300, 3)
     .then((res) => res.json()).then((res) => {
       window.addEventListener("message", function (e) { if (typeof(e.data) === "string") smp.height = e.data; });
       smp.srcdoc = (
@@ -61,10 +70,9 @@ preload:
             decodeURI("%3Cscript%3Eparent.postMessage(%60$%7Bdocument.body.scrollHeight%7Dpx%60,'*');%3C/script%3E%3C/body%3E%3C/html%3E")
         );
     }).catch((err) => {
-      smp.height = "0px";
+      smp.srcdoc='<!DOCTYPE html><html lang="en-US"><body><p>Failed to load Steam Mini Profile in 3 attempts.</p></body></html>';
       console.log(err);
     });
-
 }
 </script>
 
