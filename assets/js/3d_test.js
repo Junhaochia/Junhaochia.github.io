@@ -1,5 +1,6 @@
 // @ts-nocheck
-import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.163.0/three.module.min.js';
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // One unit = 1cm
 class Cube extends THREE.Mesh {
@@ -36,8 +37,6 @@ class Cube extends THREE.Mesh {
 let width = 0;
 let height = 0;
 let intersects = [];
-// let hovered = {};
-
 // setup
 const rootElement = document.getElementById('root');
 const scene = new THREE.Scene();
@@ -119,22 +118,23 @@ rootElement.addEventListener('click', (e) => {
     // Update also
     mouse.set((e.offsetX / width) * 2 - 1, -(e.offsetY / height) * 2 + 1);
     raycaster.setFromCamera(mouse, camera);
-    intersects = raycaster.intersectObjects(scene.children, true);
 
-    intersects.forEach((hit) => {
-        // Call onClick
-        if (hit.object.onClick) hit.object.onClick(hit);
-    });
+    const hit = raycaster.intersectObjects(scene.children, true)[0];
+    if (hit && hit.object.onClick) hit.object.onClick(hit);
 });
 
-// render-loop, called (Monitor Refresh Rate)/second
-function animate(t) {
+function render_frame(timestamp) {
+    // Tell the Browser to call this render function on next frame
+    requestAnimationFrame(render_frame);
+
+    // Check if mouse is hovering over any selectable object.
     isMouseHovering();
-    requestAnimationFrame(animate);
+
     scene.traverse((obj) => {
-        if (obj.render) obj.render(t);
+        if (obj.render) obj.render(timestamp);
     });
+
     renderer.render(scene, camera);
 }
 
-animate();
+render_frame();
