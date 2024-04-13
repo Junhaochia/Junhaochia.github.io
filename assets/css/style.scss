@@ -10,6 +10,7 @@
 :root {
     --primary-color: black;
     --secondary-color: white;
+    --invert-color: invert(0%);
     --hlsa-lightness: 100%;
 }
 
@@ -99,7 +100,7 @@ div.navbar div.navitems {
 div.navbar div.logo a.logo img.logo {
     margin: 12px 16px 10px 16px;
     display: inline-block;
-    fill: var(--primary-color);
+    filter: var(--invert-color);
 }
 
 // Main-Title
