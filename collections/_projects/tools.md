@@ -32,6 +32,9 @@ script:
     }
     #root canvas {
       cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
     }
     body {
       background: #f0f0f0;
