@@ -35,6 +35,7 @@ script:
       user-select: none;
       -webkit-user-select: none;
       -moz-user-select: none;
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     }
     body {
       background: #f0f0f0;
