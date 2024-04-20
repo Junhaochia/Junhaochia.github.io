@@ -1,52 +1,37 @@
-const CACHE_NAME = 'offline';
-const OFFLINE_URL = '/offline.html';
+// https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Caching
+const cacheName = "Junhao.page";
+const precachedResources = ["/", "/assets/images/Junhao.svg", "/assets/css/style.css"];
 
-self.addEventListener('install', function(event) {
-  console.log('[ServiceWorker] Install');
-  
-  event.waitUntil((async () => {
-    const cache = await caches.open(CACHE_NAME);
-    // Setting {cache: 'reload'} in the new request will ensure that the response
-    // isn't fulfilled from the HTTP cache; i.e., it will be from the network.
-    await cache.add(new Request(OFFLINE_URL, {cache: 'reload'}));
-  })());
-  
-  self.skipWaiting();
+async function precache() {
+  const cache = await caches.open(cacheName);
+  return cache.addAll(precachedResources);
+}
+
+// On Service Worker install, preCache resources from precachedResources Array
+self.addEventListener("install", (event) => {
+  event.waitUntil(precache());
 });
 
-self.addEventListener('activate', (event) => {
-  console.log('[ServiceWorker] Activate');
-  event.waitUntil((async () => {
-    // Enable navigation preload if it's supported.
-    // See https://developers.google.com/web/updates/2017/02/navigation-preload
-    if ('navigationPreload' in self.registration) {
-      await self.registration.navigationPreload.enable();
+async function networkFirst(request) {
+  const cache = await caches.open(cacheName);
+  try {
+    const networkResponse = await fetch(request);
+    if (networkResponse.ok) {
+      cache.put(request, networkResponse.clone());
     }
-  })());
+    return networkResponse;
+  } catch (error) {
+    const cachedResponse = await cache.match(request);
+    return cachedResponse || Response.error();
+  }
+}
 
-  // Tell the active service worker to take control of the page immediately.
-  self.clients.claim();
+// When there is a fetch request, try to fetch Page if not load from Cache.
+self.addEventListener("fetch", (event) => {
+  event.respondWith(networkFirst(event.request);
 });
 
-self.addEventListener('fetch', function(event) {
-  // console.log('[Service Worker] Fetch', event.request.url);
-  if (event.request.mode === 'navigate') {
-    event.respondWith((async () => {
-      try {
-        const preloadResponse = await event.preloadResponse;
-        if (preloadResponse) {
-          return preloadResponse;
-        }
-
-        const networkResponse = await fetch(event.request);
-        return networkResponse;
-      } catch (error) {
-        console.log('[Service Worker] Fetch failed; returning offline page instead.', error);
-
-        const cache = await caches.open(CACHE_NAME);
-        const cachedResponse = await cache.match(OFFLINE_URL);
-        return cachedResponse;
-      }
-    })());
-  }
+// Purge Cache when there is new Service Worker
+self.addEventListener("activate", (event) => {
+  event.waitUntil(caches.delete(cacheName));
 });
