@@ -15,12 +15,132 @@
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
         <link rel="manifest" href="/assets/manifests/ord.webmanifest" />
         <script defer>
             if ('serviceWorker' in navigator) navigator.serviceWorker.register('/assets/js/serviceworker/ord.js');
         </script>
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler border-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <style>
+                    .navbar-brand-custom {
+                        margin-left: var(--bs-navbar-brand-margin-end);
+                    }
+                </style>
+                <span class="navbar-brand navbar-brand-custom" href="#">ORD Countdown</span>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">IPPT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Holidays</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <style>
+                    .navbar-button-custom {
+                        padding: calc(var(--bs-navbar-toggler-padding-y) + 5px) var(--bs-navbar-toggler-padding-x);
+                    }
+                </style>
+                <button class="navbar-toggler d-block border-0" type="button">
+                    <span class="bi bi-share-fill"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="p-2" id="content">
+            <div class="row row-cols-1 row-cols-md-1 g-2">
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">553</h5>
+                            <div class="card-text">Days to Owadio!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-md-2 g-2">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">24.45%</h5>
+                                    <p class="card-text">Completion</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">394.0</h5>
+                                    <p class="card-text">Remaining Work Days</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">20</h5>
+                                    <p class="card-text">Remaning Paydays</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">10</h5>
+                                    <p class="card-text">Days til next holiday (Labour Day)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">12.0/12.0</h5>
+                                    <p class="card-text">Remaining Leaves</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">29.76</h5>
+                                    <p class="card-text">BMI (kg/m²)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">11</h5>
+                            <p class="card-text">IPPT Points</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
