@@ -38,7 +38,7 @@
                         margin-left: var(--bs-navbar-brand-margin-end);
                     }
                 </style>
-                <span class="navbar-brand navbar-brand-custom" href="#">ORD Countdown</span>
+                <span class="navbar-brand navbar-brand-custom" href="#">ORD Buddy</span>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                         <h5 id="offcanvasRightLabel">Menu</h5>
@@ -47,14 +47,17 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="/projects/ord/">Home</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="badge text-bg-warning">W.I.P</span> Settings</a>
+                            </li>
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#">IPPT</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Holidays</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -73,8 +76,21 @@
                 <div class="col">
                     <div class="card text-center">
                         <div class="card-body">
-                            <h5 class="card-title">553</h5>
-                            <div class="card-text">Days to Owadio!</div>
+                            <h5 class="card-title" id="days-ord">0</h5>
+                            <div class="card-text" style="margin-bottom: var(--bs-card-title-spacer-y)">
+                                <span class="badge text-bg-secondary">New</span> Days to ORD
+                            </div>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar-striped bg-success progress-bar-animated"
+                                    role="progressbar"
+                                    style="width: 0%"
+                                    aria-valuenow="0"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                    id="service-progressbar"
+                                ></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,63 +100,170 @@
                         <div class="col">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">24.45%</h5>
-                                    <p class="card-text">Completion</p>
+                                    <h5 class="card-title" id="service-percent">100.00%</h5>
+                                    <p class="card-text"><span class="badge text-bg-secondary">New</span> Service Completion</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">394.0</h5>
-                                    <p class="card-text">Remaining Work Days</p>
+                                    <h5 class="card-title" id="days-working">0</h5>
+                                    <p class="card-text"><span class="badge text-bg-warning">W.I.P</span> Working Days</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">20</h5>
-                                    <p class="card-text">Remaning Paydays</p>
+                                    <h5 class="card-title" id="days-payday">0</h5>
+                                    <p class="card-text"><span class="badge text-bg-secondary">New</span> Days to Payday</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">10</h5>
-                                    <p class="card-text">Days til next holiday (Labour Day)</p>
+                                    <h5 class="card-title" id="days-holiday">0</h5>
+                                    <p class="card-text"><span class="badge text-bg-warning">W.I.P</span> Days to <span id="holiday-name">%Holiday%</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">12.0/12.0</h5>
-                                    <p class="card-text">Remaining Leaves</p>
+                                    <h5 class="card-title">
+                                        <span id="leaves-left">0.0</span>
+                                        <span>/</span>
+                                        <span id="leaves-total">12.0</span>
+                                    </h5>
+                                    <p class="card-text"><span class="badge text-bg-warning">W.I.P</span> Leaves</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">29.76</h5>
-                                    <p class="card-text">BMI (kg/m²)</p>
+                                    <h5 class="card-title">
+                                        <span id="oil-left">0.0</span>
+                                    </h5>
+                                    <p class="card-text"><span class="badge text-bg-warning">W.I.P</span> Off-In-Lieu</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">11</h5>
-                            <p class="card-text">IPPT Points</p>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <span id="bmi-score">29.76</span>
+                                        <span>kg/m²</span>
+                                    </h5>
+                                    <p class="card-text"><span class="badge text-bg-secondary">New</span> BMI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">11</h5>
+                                    <p class="card-text"><span class="badge text-bg-warning">W.I.P</span> IPPT Points</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            const ORDCD_Data = JSON.parse(localStorage.getItem('ORDCD_data') || '{}');
+
+            function updateWidgets() {
+                // Calculate days to ORD
+                const ordDate = (ORDCD_Data['ORD Date'] && new Date(ORDCD_Data['ORD Date'])) || new Date(1761321600000);
+
+                const currentDate = new Date();
+                currentDate.setHours(0);
+                currentDate.setMinutes(0);
+                currentDate.setSeconds(0);
+                currentDate.setMilliseconds(0);
+
+                const days_ORD = Math.round((ordDate - currentDate) / (24 * 60 * 60 * 1000));
+                {
+                    const daysORD_elem = document.querySelector('#days-ord');
+                    const newInnerHTML = `${days_ORD}`;
+                    if (daysORD_elem.innerHTML != newInnerHTML) daysORD_elem.innerHTML = newInnerHTML;
+                }
+
+                // Calculate Service Percentage
+                const startDate = new Date(ordDate);
+                const serviceTerm = ORDCD_Data['Service Term'] || 24;
+                startDate.setMonth(startDate.getMonth() - serviceTerm);
+                startDate.setDate(startDate.getDate() + 1);
+
+                const servicePercent = ((new Date() - startDate) / (ordDate - startDate)) * 100;
+                {
+                    const servicePercent_elem = document.querySelector('#service-percent');
+                    const newInnerHTML = `${servicePercent.toFixed(2)}%`;
+                    if (servicePercent_elem.innerHTML != newInnerHTML) {
+                        servicePercent_elem.innerHTML = newInnerHTML;
+                        console.log('Service %: ', `${servicePercent.toFixed(4)}%`);
+                    }
+                }
+
+                {
+                    const serviceProgressBar_elem = document.querySelector('#service-progressbar');
+                    const newWidth = `${servicePercent.toFixed(2)}%`;
+                    if (serviceProgressBar_elem.style.width != newWidth) {
+                        serviceProgressBar_elem.style.width = newWidth;
+                        serviceProgressBar_elem.ariaValueNow = servicePercent.toFixed(2);
+                    }
+                }
+
+                // Calculate days to Payday
+                const paydayDay = ORDCD_Data['Payday day'] || 10;
+                const paydayDate = new Date(currentDate);
+                if (paydayDate.getDate() >= paydayDay) {
+                    paydayDate.setMonth(paydayDate.getMonth() + 1);
+                }
+                paydayDate.setDate(paydayDay);
+
+                const days_Payday = Math.round((paydayDate - currentDate) / (24 * 60 * 60 * 1000));
+                {
+                    const payday_elem = document.querySelector('#days-payday');
+                    const newInnerHTML = `${days_Payday}`;
+                    if (payday_elem.innerHTML != newInnerHTML) payday_elem.innerHTML = newInnerHTML;
+                }
+
+                // Calculate Working Days
+
+                // Calculate BMI
+                const weight = ORDCD_Data['Weight'] || 86.0;
+                const height = (ORDCD_Data['Height'] || 169.0) / 100;
+
+                const bmiScore = weight / (height * height);
+                {
+                    const bmi_elem = document.querySelector('#bmi-score');
+                    const newInnerHTML = `${bmiScore.toFixed(2)}`;
+                    if (bmi_elem.innerHTML != newInnerHTML) bmi_elem.innerHTML = newInnerHTML;
+                }
+
+                // Calculate IPPT Score
+            }
+
+            {
+                function render() {
+                    updateWidgets();
+                    setTimeout(render, 1234);
+                    // const nextDayTime = new Date();
+                    // nextDayTime.setHours(24);
+                    // nextDayTime.setMinutes(0);
+                    // nextDayTime.setSeconds(0);
+                    // nextDayTime.setMilliseconds(321);
+                    // setTimeout(render, nextDayTime - new Date());
+                }
+                render();
+            }
+        </script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
