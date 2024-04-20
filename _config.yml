@@ -4,19 +4,20 @@ background: /assets/images/site-bg.webp
 theme_color: '#5577EE'
 timezone: Asia/Singapore
 
-url: "https://www.junhao.page"
+url: 'https://www.junhao.page'
 
 show_autogen: true
 google_analytics:
 
 twitter:
-  card: summary
+    card: summary
 
+future: false
 collections_dir: collections
 collections:
-  projects:
-    output: true
-    permalink: /:collection/:name/
+    projects:
+        output: true
+        permalink: /:collection/:name/
 
 plugins:
-  - jekyll-sitemap
+    - jekyll-sitemap
