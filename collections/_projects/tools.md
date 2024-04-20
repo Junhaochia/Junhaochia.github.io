@@ -4,7 +4,7 @@ description: 'A bunch of random tools & generators.'
 header_type: banner
 invert: true
 background: blank
-layout: projects/ord
+layout: default
 date: 2023-03-10 22:00:48
 script:
     - content: '{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@<0.163.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/"}}'
