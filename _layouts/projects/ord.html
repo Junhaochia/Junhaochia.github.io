@@ -23,6 +23,11 @@
         </script>
     </head>
     <body>
+        <style>
+            :root {
+                --bs-body-font-size: 0.65rem;
+            }
+        </style>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <button
@@ -42,7 +47,7 @@
                 <span class="navbar-brand navbar-brand-custom" href="#">ORD Buddy</span>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
-                        <h5 id="offcanvasRightLabel">Menu</h5>
+                        <h6 id="offcanvasRightLabel">Menu</h6>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -51,7 +56,7 @@
                                 <a class="nav-link active" aria-current="page" href="/projects/ord/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="badge text-bg-warning">W.I.P</span> Settings</a>
+                                <a class="nav-link" href="#"><span class="badge text-bg-warning float-start me-1">W.I.P</span>Settings</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a class="nav-link" href="#">IPPT</a>
@@ -77,7 +82,7 @@
                 <div class="col">
                     <div class="card text-center">
                         <div class="card-body">
-                            <h5 class="card-title" id="days-ord">0</h5>
+                            <h6 class="card-title" id="days-ord">0</h6>
                             <div class="card-text" style="margin-bottom: var(--bs-card-title-spacer-y)">
                                 Days to ORD
                             </div>
@@ -95,13 +100,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col">
                     <div class="row row-cols-1 row-cols-md-2 g-2">
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title" id="service-percent">100.00%</h5>
+                                    <h6 class="card-title" id="service-percent">100.00%</h6>
                                     <p class="card-text">NSF Completion</p>
                                 </div>
                             </div>
@@ -109,7 +113,8 @@
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title" id="days-working"><span class="badge text-bg-warning">W.I.P</span> 0</h5>
+                                    
+                                    <h6 class="card-title" id="days-working"><span class="badge text-bg-warning float-start me-1">W.I.P</span>0</h6>
                                     <p class="card-text">Working Days</p>
                                 </div>
                             </div>
@@ -117,7 +122,7 @@
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title" id="days-payday">0</h5>
+                                    <h6 class="card-title" id="days-payday">0</h6>
                                     <p class="card-text">Days to Payday</p>
                                 </div>
                             </div>
@@ -125,7 +130,7 @@
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title" id="days-holiday"><span class="badge text-bg-warning">W.I.P</span> 0</h5>
+                                    <h6 class="card-title" id="days-holiday"><span class="badge text-bg-warning float-start me-1">W.I.P</span>0</h6>
                                     <p class="card-text">Days to <span id="holiday-name">%Holiday%</span></p>
                                 </div>
                             </div>
@@ -133,12 +138,12 @@
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">
-										<span class="badge text-bg-warning">W.I.P</span> 
+                                    <h6 class="card-title">
+										<span class="badge text-bg-warning float-start me-1">W.I.P</span>
                                         <span id="leaves-left">0.0</span>
                                         <span>/</span>
                                         <span id="leaves-total">12.0</span>
-                                    </h5>
+                                    </h6>
                                     <p class="card-text">Leaves</p>
                                 </div>
                             </div>
@@ -146,10 +151,10 @@
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">
-										<span class="badge text-bg-warning">W.I.P</span> 
+                                    <h6 class="card-title">
+										<span class="badge text-bg-warning float-start me-1">W.I.P</span>
                                         <span id="oil-left">0.0</span>
-                                    </h5>
+                                    </h6>
                                     <p class="card-text">Off-In-Lieu</p>
                                 </div>
                             </div>
@@ -157,10 +162,10 @@
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">
+                                    <h6 class="card-title">
                                         <span id="bmi-score">29.76</span>
                                         <span>kg/m²</span>
-                                    </h5>
+                                    </h6>
                                     <p class="card-text">BMI</p>
                                 </div>
                             </div>
@@ -168,7 +173,7 @@
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title"><span class="badge text-bg-warning">W.I.P</span> 11</h5>
+                                    <h6 class="card-title"><span class="badge text-bg-warning float-start me-1">W.I.P</span>11</h6>
                                     <p class="card-text">IPPT Points</p>
                                 </div>
                             </div>
