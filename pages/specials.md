@@ -82,13 +82,11 @@ preload:
 
 [Iruma Discord Server](https://discord.gg/M79cK6g)
 
-# Donate
+<!--# Donate -->
 
-[![Donate with PayPal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png 'Paypal Logo')](https://paypal.me/Junhaochia)
+<!--# Extras -->
 
-# Extras
-
-<marquee
+<!--<marquee
   direction="down"
   width="640"
   height="360"
@@ -96,4 +94,4 @@ preload:
   behavior="alternate"
   style="border:solid">
 <marquee scrollamount="4" behavior="alternate"><div style="width: 25px;height: 25px;background: black;"/></marquee>
-</marquee>
+</marquee>-->
