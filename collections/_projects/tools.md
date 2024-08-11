@@ -13,10 +13,6 @@ script:
 
 # Tools
 
-## Daily Number Generator
-
-[ ][ ][ ]
-
 ## 3D Clickables
 
 <div>
