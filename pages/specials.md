@@ -78,8 +78,6 @@ preload:
 
 [Team Junhao Discord Server](https://discord.gg/9QeEzAq)
 
-[Iruma Discord Server](https://discord.gg/M79cK6g)
-
 <!--# Donate -->
 
 <!--# Extras -->
