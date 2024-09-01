@@ -2,7 +2,32 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-// One unit = 1cm
+// State
+let width = 0;
+let height = 0;
+let intersects = [];
+// setup
+const rootElement = document.getElementById('root');
+const scene = new THREE.Scene();
+
+const camera = new THREE.PerspectiveCamera(75, rootElement.clientWidth / rootElement.clientHeight, 0.1, 1000);
+camera.position.z = 5;
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setPixelRatio(Math.min(Math.max(1, window.devicePixelRatio), 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.outputEncoding = THREE.sRGBEncoding;
+// Update cursor to not clickable state
+renderer.domElement.style.cursor = 'default';
+
+// Add three.js Canvas to rootElement
+rootElement.appendChild(renderer.domElement);
+
+const raycaster = new THREE.Raycaster();
+raycaster.far = 50;
+const mouse = new THREE.Vector2(); // Track where the mouse is (and used for raycasting)
+
+// Cube Mesh Class (One unit = 1cm)
 class Cube extends THREE.Mesh {
     constructor() {
         super();
@@ -22,39 +47,20 @@ class Cube extends THREE.Mesh {
     onPointerOver(e) {
         this.material.color.set('hotpink');
         this.material.color.convertSRGBToLinear();
+        // Update cursor to clickable state
+        renderer.domElement.style.cursor = 'pointer';
     }
     onPointerOut(e) {
         this.material.color.set('orange');
         this.material.color.convertSRGBToLinear();
+        // Update cursor to not clickable state
+        renderer.domElement.style.cursor = 'default';
     }
     onClick(e) {
         this.cubeActive = !this.cubeActive;
         this.scale.setScalar(this.cubeSize * (this.cubeActive ? 1.5 : 1));
     }
 }
-
-// State
-let width = 0;
-let height = 0;
-let intersects = [];
-// setup
-const rootElement = document.getElementById('root');
-const scene = new THREE.Scene();
-
-const camera = new THREE.PerspectiveCamera(75, rootElement.clientWidth / rootElement.clientHeight, 0.1, 1000);
-camera.position.z = 5;
-
-const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-renderer.setPixelRatio(Math.min(Math.max(1, window.devicePixelRatio), 2));
-renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.outputEncoding = THREE.sRGBEncoding;
-
-// Add three.js Canvas to rootElement
-rootElement.appendChild(renderer.domElement);
-
-const raycaster = new THREE.Raycaster();
-raycaster.far = 50;
-const mouse = new THREE.Vector2(); // Track where the mouse is (and used for raycasting)
 
 // view
 const cube1 = new Cube();
