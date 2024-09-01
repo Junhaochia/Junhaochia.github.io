@@ -7,14 +7,12 @@ image:
 preload:
     - url: '/assets/images/Yune.webp'
       type: 'image'
-    - url: 'https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png'
-      type: 'image'
 ---
 
 # About me
 
 <span>I am</span>
-<img src="/assets/images/Yune.webp" alt="Profile Picture of Yune" width="24" height="24" style="border-radius: 50%;border-width: 0.1px;border-color: black;border-style: solid;margin: 0 5px;vertical-align:middle;">
+<img src="/assets/images/Yune.webp" alt="Profile Picture of Yune" width="24" height="24" style="border-radius: 50%;border-width: 0.1px;border-color: black;border-style: solid;margin: 0 2.5px;vertical-align:middle;">
 <span>Yune, I want to do something for a change instead of procasinating.</span>
 
 # Links
